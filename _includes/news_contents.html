@@ -2,10 +2,10 @@
   <aside>
     <ul>
       <li class="{% if page.title == 'News' %}current{% endif %}">
-        <a href="/news/">All News</a>
+        <a href="{{ site.url }}/news/">All News</a>
       </li>
       <li class="{% if page.title == 'Releases' %}current{% endif %}">
-        <a href="/news/releases/">Jekyll Releases</a>
+        <a href="{{ site.url }}/news/releases/">Jekyll Releases</a>
       </li>
     </ul>
     <h4>Recent Releases</h4>
@@ -16,7 +16,7 @@
       </li>
       {% endfor %}
       <li>
-        <a href="/docs/history/">History »</a>
+        <a href="{{ site.url }}/docs/history/">History »</a>
       </li>
     </ul>
   </aside>
