@@ -1,4 +1,4 @@
-/* Base */
+﻿/* Base */
 
 * {
   box-sizing: border-box;
@@ -314,7 +314,7 @@ body > footer a:hover img {
 }
 
 .free-hosting img {
-  margin: -30px 0 0;
+  margin: 0px 0 0;
   width: 180px;
   height: 150px;
 }
