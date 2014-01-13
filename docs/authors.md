@@ -1,7 +1,8 @@
 ---
 layout: docs
-title: Troubleshooting
-permalink: /docs/troubleshooting/
+title: Contributors
+next_section: contributing
+permalink: /docs/authors/
 ---
 
 {% include not-done.html %}

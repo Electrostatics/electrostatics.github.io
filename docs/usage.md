@@ -2,9 +2,11 @@
 layout: docs
 title: Basic Usage
 prev_section: installation
-next_section: structure
+next_section: input-overview
 permalink: /docs/usage/
 ---
+
+{% include not-done.html %}
 
 The Jekyll gem makes a `jekyll` executable available to you in your Terminal
 window. You can use this command in a number of ways:

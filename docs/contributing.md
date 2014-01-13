@@ -1,10 +1,12 @@
 ---
 layout: docs
 title: Contributing
-prev_section: upgrading
+prev_section: troubleshooting
 next_section: history
 permalink: /docs/contributing/
 ---
+
+{% include not-done.html %} 
 
 So you've got an awesome idea to throw into Jekyll. Great! Please keep the
 following in mind:

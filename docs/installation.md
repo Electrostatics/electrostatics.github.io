@@ -1,10 +1,12 @@
 ---
 layout: docs
 title: Installation
-prev_section: quickstart
+prev_section: downloads
 next_section: usage
 permalink: /docs/installation/
 ---
+
+{% include not-done.html %}
 
 Getting Jekyll installed and ready-to-go should only take a few minutes. If it
 ever becomes a pain in the ass, please [file an

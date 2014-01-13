@@ -5,6 +5,8 @@ permalink: "/docs/history/"
 prev_section: contributing
 ---
 
+{% include not-done.html %}
+
 ## 1.4.2 / 2013-12-16
 
 ### Bug Fixes
