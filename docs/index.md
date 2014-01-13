@@ -5,30 +5,23 @@ next_section: quickstart
 permalink: /docs/home/
 ---
 
-This site aims to be a comprehensive guide to Jekyll. We’ll cover topics such
+This site aims to be a comprehensive guide to APBS and PDB2PQR.
+We’ll cover topics such
 as getting your site up and running, creating and managing your content,
 customizing the way your site works and looks, deploying to various
 environments, and give you some advice on participating in the future
 development of Jekyll itself.
 
-## So what is Jekyll, exactly?
+## What are APBS and PDB2PQR?
 
-Jekyll is a simple, blog-aware, static site generator. It takes a template
-directory containing raw text files in various formats, runs it through
-[Markdown](http://daringfireball.net/projects/markdown/) (or
-[Textile](http://textile.sitemonks.com/)) and
-[Liquid](http://wiki.shopify.com/Liquid)
-converters, and spits out a complete, ready-to-publish static website suitable
-for serving with your favorite web server. Jekyll also happens to be the engine
-behind [GitHub Pages](http://pages.github.com), which means you can use Jekyll
-to host your project’s page, blog, or website from GitHub’s servers **for
-free**.
+<!-- TODO:  Add links to APBS and PDBPQR -->
+APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems.
+<!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. -->
 
 ## ProTips™, Notes, and Warnings
 
-Throughout this guide there are a number of small-but-handy pieces of
-information that can make using Jekyll easier, more interesting, and less
-hazardous. Here’s what to look out for.
+Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
+These are formatted using [Jekyll](http://jekyllrb.com/) in the following way.
 
 <div class="note">
   <h5>ProTips™ help you get more from Jekyll</h5>
@@ -46,7 +39,4 @@ hazardous. Here’s what to look out for.
   <p>Be aware of these messages if you wish to avoid certain death.</p>
 </div>
 
-If you come across anything along the way that we haven’t covered, or if you
-know of a tip you think others would find handy, please [file an
-issue]({{ site.repository }}/issues/new) and we’ll see about
-including it in this guide.
+If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please [file an issue]({{ site.repository }}/issues/new) and we’ll work on including it in this guide.
