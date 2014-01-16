@@ -1,14 +1,10 @@
 <article>
-  <h2>
-    <a href="{{ post.url }}">
-      {{ post.title }}
-    </a>
-  </h2>
-  <span class="post-category">
-    {% for category in post.categories %}
-    <span class="label">{{ category }}</span>
-    {% endfor %}
-  </span>
+	<h2><a href="{{ post.url }}">{{ post.title }}</a></h2> 
+	<span class="post-category"> 
+		{% for category in post.categories %}
+			<span class="label">{{ category }}</span>
+		{% endfor %}
+	</span>
   <div class="post-meta">
     <span class="post-date">
       {{ post.date | date_to_string }}
@@ -22,3 +18,4 @@
     {{ post.content }}
   </div>
 </article>
+
