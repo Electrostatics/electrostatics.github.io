@@ -42,6 +42,9 @@ If you download the source code version of APBS, please follow the compilation a
 
 ### PDB2PQR downloads
 
-Foo
-
-{% include not-done.html %}
+PDB2PQR is currently available in source code form. 
+The best way to acquire PDB2PQR is to **[download it via the registration form](http://goo.gl/JdqHYd)**, which helps us track usage of the software for our funding agencies.
+<!-- TODO:  Add link to compilation instructions -->
+After downloading PDB2PQR, please follow the compilation and installation instructions outlined in this manual.
+<!-- TODO:  Add link to usage section -->
+After compilation, you can use it directly as outlined elsewhere in this manual.
