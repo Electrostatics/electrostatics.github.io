@@ -11,9 +11,9 @@
 \*                */
 {% include css/gridism.css %}
 /*                *\
- * $master.css     *
+ * $style.css     *
 \*                */
-{% include css/master.css %}
+{% include css/style.css %}
 /*                *\
  * $pygments.css  *
 \*                */
