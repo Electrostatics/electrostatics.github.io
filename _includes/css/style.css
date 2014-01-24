@@ -38,6 +38,10 @@ body > header, body > section, body > footer {
   clear: both;
 }
 
+body > footer{
+  width: 100%;
+}
+
 /* Header */
 
 body > header h1, body > header nav {
