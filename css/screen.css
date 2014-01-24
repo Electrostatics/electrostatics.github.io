@@ -6,6 +6,10 @@
  * $normalize.css *
 \*                */
 {% include css/normalize.css %}
+/*                *\
+ * $gridism.css   *
+\*                */
+{% include css/gridism.css %}
 
 {% endcapture %}
 
