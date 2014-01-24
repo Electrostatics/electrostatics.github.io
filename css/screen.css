@@ -5,11 +5,9 @@
 /*                *\
  * $normalize.css *
 \*                */
-{% include css/normalize.css %}
 /*                *\
  * $gridism.css   *
 \*                */
-{% include css/gridism.css %}
 /*                *\
  * $style.css     *
 \*                */
