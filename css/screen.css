@@ -11,7 +11,7 @@
 /*                *\
  * $style.css     *
 \*                */
-{% include css/style.css %}
+{% include css/master.css %}
 /*                *\
  * $pygments.css  *
 \*                */
