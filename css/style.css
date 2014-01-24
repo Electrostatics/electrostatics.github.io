@@ -1,4 +1,4 @@
-﻿/* Base */
+﻿/* Base - apbs pdb2pqr */
 
 * {
   box-sizing: border-box;
@@ -7,7 +7,6 @@
 }
 
 body {
-  display: none;
   font-family: Lato, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-size: 21px;
   font-weight: 300;
