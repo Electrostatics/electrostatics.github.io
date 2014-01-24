@@ -948,7 +948,7 @@ code.option, code.flag, code.filter, code.output {
 /*custom css*/
 /*ira blossom*/
 
-a .get_started_btn{
+a.get_started_btn{
   text-align: center;
   font-size: 55px;
   font-weight: normal;
@@ -963,11 +963,11 @@ a .get_started_btn{
   margin: 0 auto;
 }
 
-a:hover .get_started_btn{
+a.get_started_btn:hover{
   background-image: -webkit-linear-gradient(#56bdf9 0%, #358af0 100%);
 }
 
-a .get_started_btn h1{
+a.get_started_btn h1{
   font-size: 0.3em;
 }
 
