@@ -957,14 +957,14 @@ code.option, code.flag, code.filter, code.output {
   background-image: -webkit-linear-gradient(#45b3f3 0%, #3582df 100%);
   border-radius: 4px;
   text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
-  width: 240px;
+  width: 200px;
   padding: 12px 20px 14px 15px;
   box-shadow: 0 1px 2px rgba(0,0,0,0.3);
   margin: 0 auto;
 }
 
 .get_started_btn h1{
-  font-size: 0.4em;
+  font-size: 0.3em;
 }
 
 /* Responsive tables */
