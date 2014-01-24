@@ -32,7 +32,6 @@ body {
 /* Sections */
 
 body > header, body > section, body > footer {
-  float: left;
   width: 960px;
   margin: 0 auto;
   text-align: center;
