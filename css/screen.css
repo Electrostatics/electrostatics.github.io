@@ -2,6 +2,10 @@
 ---
 
 {% capture screen %}
+/*                *\
+ * $normalize.css *
+\*                */
+{% include css/normalize.css %}
 
 {% endcapture %}
 
