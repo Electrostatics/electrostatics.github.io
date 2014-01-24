@@ -237,7 +237,7 @@ body > footer a:hover img {
     float: right;
   }
   .quickstart h4 {
-    margin: 50px 0 0;
+    margin: 35px 0 0;
     text-align: center;
   }
 }
@@ -948,7 +948,7 @@ code.option, code.flag, code.filter, code.output {
 /*custom css*/
 /*ira blossom*/
 
-.get_started_btn{
+a .get_started_btn{
   text-align: center;
   font-size: 55px;
   font-weight: normal;
@@ -963,7 +963,7 @@ code.option, code.flag, code.filter, code.output {
   margin: 0 auto;
 }
 
-.get_started_btn h1{
+a .get_started_btn h1{
   font-size: 0.3em;
 }
 
