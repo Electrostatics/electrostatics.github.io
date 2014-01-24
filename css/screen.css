@@ -13,6 +13,7 @@
 /*                *\
  * $style.css     *
 \*                */
+{% include css/style.css %}
 /*                *\
  * $pygments.css  *
 \*                */
