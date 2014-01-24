@@ -328,15 +328,18 @@ body > footer a:hover img {
 
 .free-hosting h2 {
   font-size: 28px;
+  color: #222;
 }
 
 .free-hosting p,
 .free-hosting a {
   font-size: 16px;
+  color: #222;
 }
 
 .free-hosting p {
   margin: .75em 0;
+  color: #222;
 }
 
 @media (min-width: 768px){
@@ -949,6 +952,7 @@ code.option, code.flag, code.filter, code.output {
   text-align: center;
   font-size: 2.2em;
   color: #222;
+  background-color: #3582df;
 }
 
 /* Responsive tables */
