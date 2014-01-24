@@ -967,6 +967,10 @@ a .get_started_btn h1{
   font-size: 0.3em;
 }
 
+.features h2, .features p{
+  color: #222;
+}
+
 /* Responsive tables */
 
 @media (max-width: 768px){
