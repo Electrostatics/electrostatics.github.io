@@ -10,7 +10,10 @@
  * $gridism.css   *
 \*                */
 {% include css/gridism.css %}
-
+/*                *\
+ * $style.css     *
+\*                */
+{% include css/style.css %}
 /*                *\
  * $pygments.css  *
 \*                */
