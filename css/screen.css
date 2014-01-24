@@ -1,0 +1,12 @@
+---
+---
+
+{% capture screen %}
+
+{% endcapture %}
+
+{% if site.GH_ENV %}
+  {{ screen | strip_newlines | remove: '  ' }}
+{% else %}
+  {{ screen }}
+{% endif %}
