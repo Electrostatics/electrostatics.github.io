@@ -950,6 +950,7 @@ code.option, code.flag, code.filter, code.output {
 
 a.get_started_btn{
   text-align: center;
+  display: inline-block;
   font-size: 55px;
   font-weight: normal;
   color: #fff;
