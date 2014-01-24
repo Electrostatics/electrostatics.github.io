@@ -62,7 +62,8 @@ nav li {
 }
 
 .main-nav {
-  margin-top: 52px;
+  margin-top: 10px;
+  margin-bottom: 30px;
 }
 
 .main-nav li {
@@ -143,11 +144,12 @@ nav li {
 /* Footer */
 
 body > footer {
+  float: left;
   background: #222;
   font-size: 16px;
   padding-bottom: 5px;
   color: #888;
-  margin-top: 40px;
+  margin-top: 0px;
 }
 
 body > footer a {
