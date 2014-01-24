@@ -1,5 +1,9 @@
 ﻿/* Base */
 
+html{
+  display: none;
+}
+
 * {
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
