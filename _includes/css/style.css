@@ -57,6 +57,7 @@ div.cover{
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 0px;
+  text-align: center;
 }
 
 nav ul {
