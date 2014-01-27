@@ -14,8 +14,8 @@ body {
   background: white;
   border-top: 5px solid #222;
   box-shadow: inset 0 3px 30px rgba(0,0,0,.3);
-/*  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-*/}
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
 
 .clear {
   display: block;
@@ -56,6 +56,7 @@ div.cover{
   background-image: url(/apbs-pdb2pqr/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  padding: 30px 0px;
 }
 
 nav ul {
@@ -215,7 +216,7 @@ body > footer a:hover img {
 .quickstart {
   background: #eee;
   color: #222;
-  margin: 40px 0;
+  margin-bottom: 40px;
   box-shadow: inset 0 3px 10px rgba(0,0,0,.4);
   width: 100%;
 }
