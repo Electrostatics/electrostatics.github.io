@@ -1,5 +1,5 @@
-APBS and PDB2PQR - molecular solvation software
-===============================================
+#APBS and PDB2PQR - Molecular Solvation Software
+
 Live link at: http://sobolevnrm.github.io/apbs-pdb2pqr/
 
-NOTE: Updates to the site take ~3-4 minutes to push out to the live site.
+NOTE: Correct CSS directory is in the _includes directory, use other css directories as default backups
