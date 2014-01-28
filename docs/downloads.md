@@ -13,7 +13,9 @@ permalink: /docs/downloads/
 
 ## Web servers
 
-The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR functionality without the need to download and install additional programs. hello world
+The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR functionality without the need to download and install additional programs.
+
+Please Register First.
 
 <div class="note warning">
 	<h5>PDB2PQR funding is dependent on your support for continued development and support.</h5>
