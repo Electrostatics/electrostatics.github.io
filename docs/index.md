@@ -20,12 +20,12 @@ APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages des
 
 ## Register for an Account
 
-Before downloading the software or using our webserver, please <a href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA">register</a> and create an account. PDB2PQR funding is dependent on your support for continued development and support.
+Before downloading the software or using our webserver, please <a target="_blank" href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA">register</a> and create an account. PDB2PQR funding is dependent on your support for continued development and support.
 
 ## ProTips™, Notes, and Warnings
 
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
-These are formatted using [Jekyll](http://jekyllrb.com/) in the following way.
+These are formatted in the following way.
 
 <div class="note">
 	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
