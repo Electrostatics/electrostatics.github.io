@@ -15,8 +15,6 @@ permalink: /docs/downloads/
 
 The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR functionality without the need to download and install additional programs.
 
-Please Register First.
-
 <div class="note warning">
 	<h5>PDB2PQR funding is dependent on your support for continued development and support.</h5>
 	<p>Please <a href="http://goo.gl/JdqHYd">register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
