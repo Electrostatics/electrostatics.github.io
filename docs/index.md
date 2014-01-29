@@ -6,7 +6,10 @@ permalink: /docs/home/
 ---
 
 This site aims to be a comprehensive guide to APBS and PDB2PQR.
-Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="">registering</a> for an account.
+Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA) for an account.
+Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA) for an account.
+
+>>>>>>> parent of 5176780... changed file
 ## What are APBS and PDB2PQR?
 
 <!-- TODO:  Add links to APBS and PDBPQR -->
