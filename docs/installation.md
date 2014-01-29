@@ -33,21 +33,34 @@ There are multiple installation types; however, binary installation is the prefe
 - [Binary installation]({{ site.url/docs/installation#binary }})
 - [Installation from source]({{ site.url/docs/installation#source }})
 
-## Install with RubyGems
+<h2 id="binary">Binary Installation</h2>
 
-The best way to install Jekyll is via
-[RubyGems](http://docs.rubygems.org/read/chapter/3). At the terminal prompt,
-simply run the following command to install Jekyll:
+The best way to install APBS is via the binary installation.
+
+We currently offer binaries for the RedHat Linux platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.
+
+<div class="note warning">
+  <h5>Attention Windows Users</h5>
+  <p>If you are using APBS on a Windows system, you may not want to install it in a directory with spaces in the path name (e.g., C:\Program Files\) as this can cause problems with some visualization programs. </p>
+</div>
+
+For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by
 
 {% highlight bash %}
-$ gem install jekyll
+gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 {% endhighlight %}
 
-All of Jekyll’s gem dependencies are automatically installed by the above
-command, so you won’t have to worry about them at all. If you have problems
-installing Jekyll, check out the [troubleshooting](../troubleshooting/) page or
-[report an issue]({{ site.repository }}/issues/new) so the Jekyll
-community can improve the experience for everyone.
+where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:
+
+- [bin] -- contains the main APBS executable
+- [share/apbs] -- contains additional APBS-related files
+-- [doc] -- the APBS programmer guide
+-- [examples] -- APBS examples
+-- [tests] -- the APBS test suite
+-- [tools] -- useful programs to help process APBS input and output
+- [include] -- header files for building software that calls APBS
+- [lib] -- libraries for building software that calls APBS
+
 
 <div class="note info">
   <h5>Installing Xcode Command-Line Tools</h5>
@@ -58,22 +71,3 @@ community can improve the experience for everyone.
     <code>Preferences &#8594; Downloads &#8594; Components</code>.
   </p>
 </div>
-
-## Optional Extras
-
-There are a number of (optional) extra features that Jekyll supports that you
-may want to install, depending on how you plan to use Jekyll. These extras
-include LaTeX support, and the use of alternative content rendering engines.
-Check out [the extras page](../extras/) for more information.
-
-<div class="note">
-  <h5>ProTip™: Enable Syntax Highlighting</h5>
-  <p>
-    If you’re the kind of person who is using Jekyll, then chances are you’ll
-    want to enable syntax highlighting using Pygments. You should really
-    <a href="../templates/#code_snippet_highlighting">check out how to do
-    that</a> before you go any further.
-  </p>
-</div>
-
-Now that you’ve got everything installed, let’s get to work!
