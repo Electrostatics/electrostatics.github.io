@@ -6,11 +6,7 @@ permalink: /docs/home/
 ---
 
 This site aims to be a comprehensive guide to APBS and PDB2PQR.
-We’ll cover topics such
-as getting your site up and running, creating and managing your content,
-customizing the way your site works and looks, deploying to various
-environments, and give you some advice on participating in the future
-development of Jekyll itself.
+Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA" target="_blank">registering</a> for an account.
 
 ## What are APBS and PDB2PQR?
 
