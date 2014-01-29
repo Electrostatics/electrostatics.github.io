@@ -8,7 +8,7 @@ permalink: /docs/downloads/
 
 <div class="note">
 	<h5>Get up and running quickly with the web server!</h5>
-	<p>Most APBS and PDB2PQR functionality is available through our online web servers. If you prefer to download the software, **<a href="#downloads">skip to the downloads section</a>.**</p>
+	<p>Most APBS and PDB2PQR functionality is available through our online web servers. If you prefer to download the software, <a href="#downloads"><b>skip to the downloads section</b></a>.</p>
 </div>
 
 ## Web servers
@@ -25,7 +25,7 @@ After you have <a href="http://goo.gl/HkN4kj" target="_blank" >registered</a> an
 The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 1.8.
 <!-- TODO: Add link to Version 1.8 release notes -->
 
-## <span id="downloads">Downloads</span>
+<h2 id="downloads">Downloads</h2>
 
 Both APBS and PDB2PQR are also available for download to use in standalone mode.
 <!-- TODO:  Add links to source compilation instructions -->
@@ -33,17 +33,17 @@ Users can either download binaries for their platform or compile the software fr
 
 ### APBS downloads
 
-Both binary executables and source code are available for APBS.
-The best way to acquire APBS is to **<a href="http://goo.gl/HkN4kj" target="_blank" >download it via the registration form</a>**, which helps us track usage of the software for our funding agencies.
+<p>Both binary executables and source code are available for APBS.
+The best way to acquire APBS is to <a href="http://goo.gl/HkN4kj" target="_blank" ><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.
 <!-- TODO:  Add link to usage section -->
 If you download the binary version of APBS, you can use it directly as outlined elsewhere in this manual.
 <!-- TODO:  Add link to compilation instructions -->
-If you download the source code version of APBS, please follow the compilation and installation instructions outlined in this manual.
+If you download the source code version of APBS, please follow the compilation and installation instructions outlined in this manual.</p>
 
 ### PDB2PQR downloads
 
-PDB2PQR is currently available in source code form. 
-The best way to acquire PDB2PQR is to **<a href="http://goo.gl/HkN4kj" target="_blank">download it via the registration form</a>**, which helps us track usage of the software for our funding agencies.
+<p>PDB2PQR is currently available in source code form. 
+The best way to acquire PDB2PQR is to <a href="http://goo.gl/HkN4kj" target="_blank"><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.</p>
 <!-- TODO:  Add link to compilation instructions -->
 After downloading PDB2PQR, please follow the compilation and installation instructions outlined in this manual.
 <!-- TODO:  Add link to usage section -->
