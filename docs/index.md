@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Welcome
-next_section: downloads
+next_section: quickstart
 permalink: /docs/home/
 ---
 
@@ -18,14 +18,10 @@ development of Jekyll itself.
 APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems.
 <!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. -->
 
-## Register for an Account
-
-Before downloading the software or using our webserver, please <a target="_blank" href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA">register</a> and create an account. PDB2PQR funding is dependent on your support for continued development and support.
-
 ## ProTips™, Notes, and Warnings
 
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
-These are formatted in the following way.
+These are formatted using [Jekyll](http://jekyllrb.com/) in the following way.
 
 <div class="note">
 	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
