@@ -54,10 +54,10 @@ where XYZ is the particular architecture of the binary you downloaded and #.#.# 
 
 - [bin] -- contains the main APBS executable
 - [share/apbs] -- contains additional APBS-related files
--- [doc] -- the APBS programmer guide
--- [examples] -- APBS examples
--- [tests] -- the APBS test suite
--- [tools] -- useful programs to help process APBS input and output
+- [doc] -- the APBS programmer guide
+- [examples] -- APBS examples
+- [tests] -- the APBS test suite
+- [tools] -- useful programs to help process APBS input and output
 - [include] -- header files for building software that calls APBS
 - [lib] -- libraries for building software that calls APBS
 
