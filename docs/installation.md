@@ -5,6 +5,7 @@ prev_section: downloads
 next_section: usage
 permalink: /docs/installation/
 ---
+
 <div class="note info">
   <h5>Installation Options</h5>
   <p>
@@ -15,7 +16,7 @@ View the sections below to learn more about each installation type.
 
 ### APBS Directory Structure
 
-The APBS installation process (whether compiled from source or installed as pre-compiled binaries) will create several directories under ${APBS_PREFIX}:
+The APBS installation process (whether compiled from source or installed as pre-compiled binaries) will create several directories under $APBS_PREFIX:
 
 - [bin] -- where the main apbs binary resides
 - [share] -- contains the documentation (user guide, tutorial, programmer's guide) as well as a number of examples  and test cases for APBS
