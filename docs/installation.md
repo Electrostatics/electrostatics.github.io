@@ -49,25 +49,3 @@ For all platforms besides Windows, APBS binaries are provided in compressed tar 
 {% highlight bash %}
 gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 {% endhighlight %}
-
-where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:
-
-- [bin] -- contains the main APBS executable
-- [share/apbs] -- contains additional APBS-related files
-- [doc] -- the APBS programmer guide
-- [examples] -- APBS examples
-- [tests] -- the APBS test suite
-- [tools] -- useful programs to help process APBS input and output
-- [include] -- header files for building software that calls APBS
-- [lib] -- libraries for building software that calls APBS
-
-
-<div class="note info">
-  <h5>Installing Xcode Command-Line Tools</h5>
-  <p>
-    If you run into issues installing Jekyll's dependencies which make use of
-    native extensions and are using Mac OS X, you will need to install Xcode
-    and the Command-Line Tools it ships with. Download in
-    <code>Preferences &#8594; Downloads &#8594; Components</code>.
-  </p>
-</div>
