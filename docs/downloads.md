@@ -20,7 +20,7 @@ The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR function
 	<p>PDB2PQR funding is dependent on your support for continued development and support. Please <a href="http://goo.gl/JdqHYd" target="_blank" >register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
 </div>
 
-After you have <a href="http://goo.gl/HkN4kj" target="_blank" >registered</a> and reviewed the terms of the [PDB2PQR license](https://raw.github.com/sobolevnrm/apbs-pdb2pqr/master/pdb2pqr/COPYING), you are ready to **skip to the [Run PDB2PQR]({{ site.url }}/docs/usage)** section.
+After you have <a href="http://goo.gl/HkN4kj" target="_blank" >registered</a> and reviewed the terms of the [PDB2PQR license](https://raw.github.com/sobolevnrm/apbs-pdb2pqr/master/pdb2pqr/COPYING), you are ready to **[skip to the Run PDB2PQR]({{ site.url }}/docs/usage)** section.
 
 The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 1.8.
 <!-- TODO: Add link to Version 1.8 release notes -->
