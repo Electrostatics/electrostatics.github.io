@@ -8,19 +8,20 @@ permalink: /docs/installation/
 
 {% include not-done.html %}
 
-Getting Jekyll installed and ready-to-go should only take a few minutes. If it
-ever becomes a pain in the ass, please [file an
+Several installation options are available for APBS; however, <a href="#source">binary</a> installation is the preferred mechanism.
+
+If you have persistent issues, please [file an
 issue]({{ site.repository }}/issues/new) (or submit a pull request)
 describing the issue you encountered and how we might make the process easier.
 
 ### Requirements
 
-Installing Jekyll is easy and straight-forward, but there are a few requirements
-you’ll need to make sure your system has before you start.
+Please visit the sections below to learn more about each installation type.
 
-- [Ruby](http://www.ruby-lang.org/en/downloads/)
-- [RubyGems](http://rubygems.org/pages/download)
-- Linux, Unix, or Mac OS X
+- [Binary Installation](http://www.ruby-lang.org/en/downloads/)
+- [Installation from Source](http://rubygems.org/pages/download)
+- [Developmental versionsof APBS with Git]()
+- [Building APBS with cmake]()
 
 <div class="note info">
   <h5>Running Jekyll on Windows</h5>

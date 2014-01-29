@@ -8,7 +8,7 @@ permalink: /docs/downloads/
 
 <div class="note">
 	<h5>Get up and running quickly with the web server!</h5>
-	<p>Most APBS and PDB2PQR functionality is available through our online web servers</p>
+	<p>Most APBS and PDB2PQR functionality is available through our online web servers. If you prefer to download the software, **<a href="#downloads">skip to the downloads section</a>.**</p>
 </div>
 
 ## Web servers
@@ -25,7 +25,7 @@ After you have <a href="http://goo.gl/HkN4kj" target="_blank" >registered</a> an
 The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 1.8.
 <!-- TODO: Add link to Version 1.8 release notes -->
 
-## Downloads
+## <span id="downloads">Downloads</span>
 
 Both APBS and PDB2PQR are also available for download to use in standalone mode.
 <!-- TODO:  Add links to source compilation instructions -->
