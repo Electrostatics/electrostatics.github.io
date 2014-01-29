@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Welcome
-next_section: quickstart
+next_section: downloads
 permalink: /docs/home/
 ---
 
@@ -21,7 +21,6 @@ APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages des
 ## ProTips™, Notes, and Warnings
 
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
-These are formatted using [Jekyll](http://jekyllrb.com/) in the following way.
 
 <div class="note">
 	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
