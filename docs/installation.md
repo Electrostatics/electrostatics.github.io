@@ -6,6 +6,7 @@ next_section: usage
 permalink: /docs/installation/
 ---
 
+{% include not-done.html %}
 
 Several installation options are available for APBS; however, <a href="#source">binary</a> installation is the preferred mechanism.
 
