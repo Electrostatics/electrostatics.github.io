@@ -16,7 +16,7 @@ View the sections below to learn more about each installation type.
 
 ### APBS Directory Structure
 
-The APBS installation process (whether compiled from source or installed as pre-compiled binaries) will create several directories under $APBS_PREFIX:
+The APBS installation process (whether compiled from source or installed as pre-compiled binaries) will create several directories under ${APBS_PREFIX}:
 
 - [bin] -- where the main apbs binary resides
 - [share] -- contains the documentation (user guide, tutorial, programmer's guide) as well as a number of examples  and test cases for APBS
@@ -26,23 +26,12 @@ The APBS installation process (whether compiled from source or installed as pre-
 
 At this point you are ready to use APBS; either by calling the binary directly or adding the above directory to your path. As mentioned above, there are also several tools provided with APBS that remain in the APBS directory; these are described in later portions of this manual. You may wish to copy these to a global location (or the same place as your APBS binary) at this time.
 
-### Requirements
+### Installation Types
 
-Installing Jekyll is easy and straight-forward, but there are a few requirements
-you’ll need to make sure your system has before you start.
+There are multiple installation types; however, binary installation is the preferred method.
 
-- [Ruby](http://www.ruby-lang.org/en/downloads/)
-- [RubyGems](http://rubygems.org/pages/download)
-- Linux, Unix, or Mac OS X
-
-<div class="note info">
-  <h5>Running Jekyll on Windows</h5>
-  <p>
-    While Windows is not officially supported, it is possible to get it running
-    on Windows. Special instructions can be found on our
-    <a href="../windows/#installation">Windows-specific docs page</a>.
-  </p>
-</div>
+- [Binary installation]({{ site.url/docs/installation#binary }})
+- [Installation from source]({{ site.url/docs/installation#source }})
 
 ## Install with RubyGems
 
