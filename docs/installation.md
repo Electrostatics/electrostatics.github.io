@@ -9,12 +9,10 @@ permalink: /docs/installation/
 <div class="note info">
   <h5>Installation Options</h5>
   <p>
-    Several installation options are available for APBS; however, <a href="#binary">binary</a> installation is the preferred mechanism.
+    Several installation options are available for APBS; however, binary installation is the preferred mechanism.
 View the sections below to learn more about each installation type.
   </p>
 </div>
-
-
 
 ### APBS Directory Structure
 
