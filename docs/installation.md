@@ -56,18 +56,11 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 <p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
 
 <div>
-  <p>
+<p>
+There are multiple installation types; however, binary installation is the preferred method.
 <ul>
-<li>[bin] -- contains the main APBS executable
-<li>[share/apbs] -- contains additional APBS-related files</li>
-  <ul>
-    <li>[doc] -- the APBS programmer guide</li>
-    <li>[examples] -- APBS examples</li>
-    <li>[tests] -- the APBS test suite</li>
-    <li>[tools] -- useful programs to help process APBS input and output</li>
-  </ul>
-<li>[include] -- header files for building software that calls APBS</li>
-<li>[lib] -- libraries for building software that calls APBS</li>
+<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
+<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
 </ul>
 </p>
 </div>
