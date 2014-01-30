@@ -30,7 +30,11 @@ At this point you are ready to use APBS; either by calling the binary directly o
 
 There are multiple installation types; however, binary installation is the preferred method.
 
-- [Binary installation]({{ site.url/docs/installation#binary }})
-- [Installation from source]({{ site.url/docs/installation#source }})
+- [Binary installation]({{ site.url/docs/installation/#binary }})
+- [Installation from source]({{ site.url/docs/installation/#source }})
 
-### Binary Installation
+<h2 id="binary">Binary Installation</h2>
+
+The best way to install APBS is via the binary installation.
+
+We currently offer binaries for the RedHat Linux platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.
