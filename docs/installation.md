@@ -116,4 +116,4 @@ open apbs.xcodeproj`
 
 Windows is "special."  The following instructions may work for you:
 
-Documentation COMING SOON
+DOCUMENTATION COMING SOON

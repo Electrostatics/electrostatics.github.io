@@ -14,13 +14,13 @@ Before beginning, please make sure to support the APBS/PDB2PQR team by [register
 APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems.
 <!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. -->
 
-## ProTips™, Notes, and Warnings
+## Tips, Notes, and Warnings
 
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
 
 <div class="note">
 	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
-	<p>These are tips and tricks that will help you use the software more effectively.</p>
+	<p>These are tips and tricks that will help you use the APBS software more effectively.</p>
 </div>
 
 <div class="note info">
@@ -29,8 +29,8 @@ Throughout this guide there are several pieces of information that can make APBS
 </div>
 
 <div class="note warning">
-	<h5>Warnings help you not blow things up</h5>
-	<p>Be aware of these messages if you wish to avoid certain death.</p>
+	<h5>Warnings help you to not break things</h5>
+	<p>Be aware of these messages if you wish to have a successful use of the software.</p>
 </div>
 
-If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please [file an issue]({{ site.repository }}/issues/new) and we’ll work on including it in this guide.
+If you come across anything along the way that we haven’t covered, is incorrect information, or if you know of a tip you think others would find useful, please [file an issue]({{ site.repository }}/issues/new) and we’ll work on including it in this guide.
