@@ -13,10 +13,10 @@ APBS input files are loosely-formatted files which contain information about the
 
 APBS input files contain three basic sections which can be repeated any number of times:
 
--[READ]() section for specifying input.
--[ELEC]() section for specifying polar solvation (electrostatics) calculation parameters.
--[APOLAR]() section for specifying apolar solvation calculation parameters.
--[PRINT]() section for specifying summary output.
+- [READ] section for specifying input.
+- [ELEC] section for specifying polar solvation (electrostatics) calculation parameters.
+- [APOLAR] section for specifying apolar solvation calculation parameters.
+- [PRINT] section for specifying summary output.
 
 The APBS input file is constructed from these sections in the following format:
 
