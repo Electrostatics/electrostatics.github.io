@@ -21,5 +21,4 @@ APBS input files contain three basic sections which can be repeated any number o
 The APBS input file is constructed from these sections in the following format:
 
 `hello 
-
 world`
