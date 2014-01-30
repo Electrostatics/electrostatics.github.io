@@ -66,5 +66,12 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <h2 id="source">Installation from source</h2>
 
-<p>We recommend that most users compile APBS from our official releases, which can be downloaded <a href="#">here</a>.  However, particularly adventurous users may want to try the latest developmental versions available from our <a href="#">Git repository</a>.</p>
+##Stable Version
+
+<p>We recommend that most users compile APBS from our official releases, which can be downloaded <a href="http://www.poissonboltzmann.org/apbs/downloads" target="_blank">here</a>.</p>
+
+##Developmental Version
+
+<p>However, particularly adventurous users may want to try the latest developmental versions available from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">Git repository</a>. Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>
+
 <p>Regardless of where the source code is obtained, the next step is to <a href="">build the software using Cmake</a>.</p>
