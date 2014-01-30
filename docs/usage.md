@@ -6,24 +6,12 @@ next_section: input-overview
 permalink: /docs/usage/
 ---
 
-{% include not-done.html %}
+##Invocation
 
-The Jekyll gem makes a `jekyll` executable available to you in your Terminal
-window. You can use this command in a number of ways:
+In addition to using APBS through other programs, there are two ways to invoke APBS from the command line. The traditional approach uses the primary APBS binary to run APBS on local resources. However, in recent versions of APBS, we have added the ability to run APBS through a secondary Python-based program which can be invoked locally but uses Opal web services to run APBS on remote resources (with no expense to the user).
 
 {% highlight bash %}
-$ jekyll build
-# => The current folder will be generated into ./_site
-
-$ jekyll build --destination <destination>
-# => The current folder will be generated into <destination>
-
-$ jekyll build --source <source> --destination <destination>
-# => The <source> folder will be generated into <destination>
-
-$ jekyll build --watch
-# => The current folder will be generated into ./_site,
-#    watched for changes, and regenerated automatically.
+hello world
 {% endhighlight %}
 
 Jekyll also comes with a built-in development server that will allow you to
