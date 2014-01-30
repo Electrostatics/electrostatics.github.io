@@ -56,3 +56,5 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 {% endhighlight %}
 
 where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:
+  <p>If you are using APBS on a Windows system, you may not want to install it in a directory with spaces in the path name (e.g., C:\Program Files\) as this can cause problems with some visualization programs. </p>
+</div>
