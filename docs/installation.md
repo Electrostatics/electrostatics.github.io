@@ -48,11 +48,3 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
   <h5>Attention Windows Users</h5>
   <p>If you are using APBS on a Windows system, you may not want to install it in a directory with spaces in the path name (e.g., C:\Program Files\) as this can cause problems with some visualization programs. </p>
 </div>
-
-For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by
-
-{% highlight bash %}
-gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
-{% endhighlight %}
-
-where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:
