@@ -23,17 +23,13 @@ The APBS input file is constructed from these sections in the following format:
 `READ
  ...
  END
- ----------
  ELEC
  ...
  END
- ----------
  APOLAR
  ...
  END
- ----------
  PRINT
  ...
  END
- ----------
  QUIT`
