@@ -66,13 +66,13 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <h2 id="source">Installation from source</h2>
 
-####Installation of APBS is a two-step process
+####Installation of APBS from source is a two-step process
 
 <p>
-<ul>
-  <ol><a href="#stable">Download your preferred method of APBS (Stable or Developmental)</a></ol>
-  <ol><a href="#installing">Install APBS via CMAKE</a></ol>
-</ul>
+<ol>
+  <li><a href="#stable">Download your preferred method of APBS (Stable or Developmental)</a></li>
+  <li><a href="#installing">Install APBS via CMAKE</a></li>
+</ol>
 </p>
 
 <h4 id="stable">Stable Version</h4>
@@ -85,10 +85,35 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <h3 id="installing">Installing with Cmake</h3>
 
-<p>Regardless of where the source code is obtained, the next step is to <a href="">build the software using Cmake</a>.</p>
+<p>Regardless of where the source code is obtained, the next step is to build the software using <a href="http://www.cmake.org/" target="_blank">Cmake</a>.</p>
 
 #####Overview
 
-Starting with APBS 1.4, we have migrated to Cmake for cross-platform building from source code.  The following instructions assume that you have Cmake version 2.6 or later installed on your system.  In the instructions that follow, we will assume that the directory containing the APBS source code is located at ${APBS_SOURCE}.
+Starting with APBS 1.4, we have migrated to Cmake for cross-platform building from source code.  The following instructions assume that you have [Cmake](http://www.cmake.org/) version 2.6 or later installed on your system. In the instructions that follow, we will assume that the directory containing the APBS source code is located at ${APBS_SOURCE}.
 
 #####Generic system build
+
+If your system supports the "make" command, then installation should be pretty easy.  With this setup, the following steps should build APBS for you on most systems (except for  Windows):
+
+`cd ${APBS_SOURCE}/build
+cmake ..
+make`
+
+The default configuration (for development versions of APBS after 1.4) is for a static library build.  If you prefer a shared library build, please change the cmake variable:
+
+`BUILD_SHARED_LIBS=YES`
+
+#####Mac OS X System Build
+
+APBS can be built on Mac OS X following the instructions above (and assuming Xcode command line tools are installed or some other C/C++ compiler).  However, you can also build APBS through the Xcode IDE with Cmake:
+
+`cd ${APBS_SOURCE}/build
+cmake ..
+cmake -G "Xcode" ..
+open apbs.xcodeproj`
+
+#####Windows System Build
+
+Windows is "special."  The following instructions may work for you:
+
+Documentation COMING SOON
