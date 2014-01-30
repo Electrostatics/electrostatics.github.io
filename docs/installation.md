@@ -56,6 +56,7 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 <p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
 
 <div>
+  <p>
 <ul>
 <li>[bin] -- contains the main APBS executable
 <li>[share/apbs] -- contains additional APBS-related files</li>
@@ -68,6 +69,7 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 <li>[include] -- header files for building software that calls APBS</li>
 <li>[lib] -- libraries for building software that calls APBS</li>
 </ul>
+</p>
 </div>
 
 <h2 id="source">Installation from source</h2>
