@@ -51,6 +51,21 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <p>For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by</p>
 
+
+
 <p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
+
+<ul>
+<li>[bin] -- contains the main APBS executable
+<li>[share/apbs] -- contains additional APBS-related files</li>
+  <ul>
+    <li>[doc] -- the APBS programmer guide</li>
+    <li>[examples] -- APBS examples</li>
+    <li>[tests] -- the APBS test suite</li>
+    <li>[tools] -- useful programs to help process APBS input and output</li>
+  </ul>
+<li>[include] -- header files for building software that calls APBS</li>
+<li>[lib] -- libraries for building software that calls APBS</li>
+</ul>
 
 <h2 id="source">Installation from source</h2>
