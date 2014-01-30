@@ -23,4 +23,20 @@ The APBS input file is constructed from these sections in the following format:
 `Read
 ...
 END
+
+ELEC
+...
+END
+
+APOLA
+...
+END
+
+PRINT
+...
+END
+
+QUIT
 `
+
+These sections can occur in any order and can be repeated any number of times. However, the sections are interdependent. For example, PRINT requires ELEC and/or APOLAR while ELEC requires one or more READ sections. Sections can also be repeated; several READ statements may be used to load molecules and multiple ELEC or APOLAR sections would specify various electrostatics calculations on one or more molecules.
