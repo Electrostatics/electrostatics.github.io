@@ -51,7 +51,7 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by
 
-{% highlight bash %}
+{% highlight html %}
 gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 {% endhighlight %}
 
