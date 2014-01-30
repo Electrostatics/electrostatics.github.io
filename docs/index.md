@@ -19,7 +19,7 @@ APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages des
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
 
 <div class="note">
-	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
+	<h5>Tips help you get more from APBS &amp; PDB2PQR</h5>
 	<p>These are tips and tricks that will help you use the APBS software more effectively.</p>
 </div>
 
