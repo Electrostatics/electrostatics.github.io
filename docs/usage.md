@@ -2,7 +2,7 @@
 layout: docs
 title: Basic Usage
 prev_section: installation
-next_section: input-overview
+next_section: apbs-overview
 permalink: /docs/usage/
 ---
 
