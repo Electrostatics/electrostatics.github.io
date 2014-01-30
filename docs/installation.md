@@ -51,7 +51,9 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <p>For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by:</p>
 
-`gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -`
+{% highlight bash %}
+gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
+{% endhighlight %}
 
 <p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
 
@@ -95,22 +97,28 @@ Starting with APBS 1.4, we have migrated to Cmake for cross-platform building fr
 
 If your system supports the "make" command, then installation should be pretty easy.  With this setup, the following steps should build APBS for you on most systems (except for  Windows):
 
-`cd ${APBS_SOURCE}/build
+{% highlight bash %}
+cd ${APBS_SOURCE}/build
 cmake ..
-make`
+make
+{% endhighlight %}
 
 The default configuration (for development versions of APBS after 1.4) is for a static library build.  If you prefer a shared library build, please change the cmake variable:
 
-`BUILD_SHARED_LIBS=YES`
+{% highlight bash %}
+BUILD_SHARED_LIBS=YES
+{% endhighlight %}
 
 #####Mac OS X System Build
 
 APBS can be built on Mac OS X following the instructions above (and assuming Xcode command line tools are installed or some other C/C++ compiler).  However, you can also build APBS through the Xcode IDE with Cmake:
 
-`cd ${APBS_SOURCE}/build
+{% highlight bash %}
+cd ${APBS_SOURCE}/build
 cmake ..
 cmake -G "Xcode" ..
-open apbs.xcodeproj`
+open apbs.xcodeproj
+{% endhighlight %}
 
 #####Windows System Build
 
