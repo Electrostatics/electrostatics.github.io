@@ -51,18 +51,12 @@ We currently offer binaries for the RedHat Linux platform on a variety of archit
 
 <p>For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by</p>
 
+`Jekyll`
 
+<!--add source code here-->
 
 <p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
 
-<div>
-<p>
-There are multiple installation types; however, binary installation is the preferred method.
-<ul>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
-</ul>
-</p>
-</div>
+<!--add list here-->
 
 <h2 id="source">Installation from source</h2>
