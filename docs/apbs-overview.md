@@ -21,19 +21,19 @@ APBS input files contain three basic sections which can be repeated any number o
 The APBS input file is constructed from these sections in the following format:
 
 `READ
-   ...
-   END
+ ...
+ END
+ 
+ ELEC
+ ...
+ END
    
-   ELEC
-   ...
-   END
+ APOLAR
+ ...
+ END
    
-   APOLAR
-   ...
-   END
+ PRINT
+ ...
+ END
    
-   PRINT
-   ...
-   END
-   
-   QUIT`
+ QUIT`
