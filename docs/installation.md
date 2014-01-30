@@ -28,11 +28,15 @@ At this point you are ready to use APBS; either by calling the binary directly o
 
 ### Installation Types
 
+<div>
+<p>
 There are multiple installation types; however, binary installation is the preferred method.
 <ul>
 <li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
 <li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
 </ul>
+</p>
+</div>
 
 <h2 id="binary">Binary Installation</h2>
 
