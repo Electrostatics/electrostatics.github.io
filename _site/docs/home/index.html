@@ -12,7 +12,8 @@
 </head>
 
 <body class="wrap">
-  <header>
+  <div class="cover">
+<header>
   <nav class="mobile-nav show-on-mobiles">
     <ul>
 	<li class="">
@@ -32,15 +33,10 @@
 
   </nav>
   <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">
-          <span>Jekyll</span>
-          <img src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/logo.gif" width="202" height="180" alt="">
-        </a>
-      </h1>
+    <div style="margin-top: 25px; text-align: center">
+      <img class="logo" src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/apbslogo.png">
     </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
+    <nav class="main-nav unit hide-on-mobiles">
       <ul>
 	<li class="">
 		<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">Overview</a>
@@ -1059,27 +1055,26 @@
       <div class="unit four-fifths">
         <article>
           <h1>Welcome</h1>
-          <p>This site is a comprehensive guide to APBS and PDB2PQR. We’ll cover topics such as getting your site up and running, creating and managing your content, customizing the way your site works and looks, deploying to various environments, and give you some advice on participating in the future development of Jekyll itself.</p>
+          <p>This site aims to be a comprehensive guide to APBS and PDB2PQR. Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="https://spreadsheets.google.com/viewform?hl=en&formkey=dHFpa3Nvcnl0cjR1U3g3UTdSYU1pWWc6MA">registering</a> for an account.</p>
 
 <h2 id="what_are_apbs_and_pdb2pqr">What are APBS and PDB2PQR?</h2>
 <!-- TODO:  Add links to APBS and PDBPQR -->
 <p>APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems. <!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. --></p>
 
-<h2 id="protips_notes_and_warnings">ProTips™, Notes, and Warnings</h2>
+<h2 id="tips_notes_and_warnings">Tips, Notes, and Warnings</h2>
 
-<p>Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.<br />These are formatted in the following way.</p>
-<p>Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.<br />These are formatted using <a href="http://jekyllrb.com/">Jekyll</a> in the following way.</p>
+<p>Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.</p>
 <div class='note'>
-	<h5>ProTips™ help you get more from APBS &amp; PDB2PQR</h5>
-	<p>These are tips and tricks that will help you use the software more effectively.</p>
+	<h5>Tips help you get more from APBS &amp; PDB2PQR</h5>
+	<p>These are tips and tricks that will help you use the APBS software more effectively.</p>
 </div><div class='note info'>
 	<h5>Notes are handy pieces of information</h5>
 	<p>These are for the extra tidbits sometimes necessary to understand APBS &amp; PDB2PQR.</p>
 </div><div class='note warning'>
-	<h5>Warnings help you not blow things up</h5>
-	<p>Be aware of these messages if you wish to avoid certain death.</p>
+	<h5>Warnings help you to not break things</h5>
+	<p>Be aware of these messages if you wish to have a successful use of the software.</p>
 </div>
-<p>If you come across anything along the way that we haven’t covered, or if you know of a tip you think others would find handy, please <a href="https://github.com/sobolevnrm/apbs-pdb2pqr/issues/new">file an issue</a> and we’ll work on including it in this guide.</p>
+<p>If you come across anything along the way that we haven’t covered, is incorrect information, or if you know of a tip you think others would find useful, please <a href="https://github.com/sobolevnrm/apbs-pdb2pqr/issues/new">file an issue</a> and we’ll work on including it in this guide.</p>
           <div class="section-nav">
   <div class="left align-right">
     
@@ -1089,7 +1084,6 @@
   <div class="right align-left">
     
       <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/" class="next">
-      <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/quickstart/" class="next">
         Next
       </a>
     
@@ -1712,7 +1706,8 @@
   </section>
 
 
-  <footer>
+  </div>
+<footer>
 	<div class="grid">
 		<div class="unit one-third center-on-mobiles">
 			<p>This website was created by the APBS/PDB2PQR development team using <a href="http://jekyllrb.com/">Jekyll</a> templates.</p>
@@ -1726,7 +1721,6 @@
 		</div>
 	</div>
 </footer>
-
   <script type="text/javascript">
 
     var _gaq = _gaq || [];

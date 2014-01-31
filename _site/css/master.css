@@ -1,130 +1,4 @@
-
-
-
-  
-/*                *\
- * $normalize.css *
-\*                */
-/*! normalize.css v2.1.3 | MIT License | git.io/normalize */article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display:block}audio,canvas,video{display:inline-block}audio:not([controls]){display:none;height:0}[hidden],template{display:none}html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}body{margin:0}a{background:transparent}a:focus{outline:thin dotted}a:active,a:hover{outline:0}h1{font-size:2em;margin:0.67em 0}abbr[title]{border-bottom:1px dotted}b,strong{font-weight:bold}dfn{font-style:italic}hr{-moz-box-sizing:content-box;box-sizing:content-box;height:0}mark{background:#ff0;color:#000}code,kbd,pre,samp{font-family:monospace, serif;font-size:1em}pre{white-space:pre-wrap}q{quotes:"\201C" "\201D" "\2018" "\2019"}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sup{top:-0.5em}sub{bottom:-0.25em}img{border:0}svg:not(:root){overflow:hidden}figure{margin:0}fieldset{border:1px solid #c0c0c0;margin:0 2px;padding:0.35em 0.625em 0.75em}legend{border:0;padding:0}button,input,select,textarea{font-family:inherit;font-size:100%;margin:0}button,input{line-height:normal}button,select{text-transform:none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance:button;cursor:pointer}button[disabled],html input[disabled]{cursor:default}input[type="checkbox"],input[type="radio"]{box-sizing:border-box;padding:0}input[type="search"]{-webkit-appearance:textfield;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance:none}button::-moz-focus-inner,input::-moz-focus-inner{border:0;padding:0}textarea{overflow:auto;vertical-align:top}table{border-collapse:collapse;border-spacing:0}
-
-/*                *\ 
- * $gridism.css   *
-\*                */
-/*
- * Gridism
- * A simple, responsive, and handy CSS grid by @cobyism
- * https://github.com/cobyism/gridism
- */
-
-/* Preserve some sanity */
-.grid,
-.unit {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
-
-/* Set up some rules to govern the grid */
-.grid {
-  display: block;
-  clear: both;
-}
-.grid .unit {
-  float: left;
-  width: 100%;
-  padding: 10px;
-}
-
-/* This ensures the outer gutters are equal to the (doubled) inner gutters. */
-.grid .unit:first-child { padding-left: 20px; }
-.grid .unit:last-child { padding-right: 20px; }
-
-/* Nested grids already have padding though, so let’s nuke it */
-.unit .unit:first-child { padding-left: 0; }
-.unit .unit:last-child { padding-right: 0; }
-.unit .grid:first-child > .unit { padding-top: 0; }
-.unit .grid:last-child > .unit { padding-bottom: 0; }
-
-/* Let people nuke the gutters/padding completely in a couple of ways */
-.no-gutters .unit,
-.unit.no-gutters {
-  padding: 0 !important;
-}
-
-/* Wrapping at a maximum width is optional */
-.wrap .grid,
-.grid.wrap {
-  max-width: 978px;
-  margin: 0 auto;
-}
-
-/* Width classes also have shorthand versions numbered as fractions
- * For example: for a grid unit 1/3 (one third) of the parent width,
- * simply apply class="w-1-3" to the element. */
-.grid .whole,          .grid .w-1-1 { width: 100%; }
-.grid .half,           .grid .w-1-2 { width: 50%; }
-.grid .one-third,      .grid .w-1-3 { width: 33.3332%; }
-.grid .two-thirds,     .grid .w-2-3 { width: 66.6665%; }
-.grid .one-quarter,    .grid .w-1-4 { width: 25%; }
-.grid .three-quarters, .grid .w-3-4 { width: 75%; }
-.grid .one-fifth,      .grid .w-1-5 { width: 20%; }
-.grid .two-fifths,     .grid .w-2-5 { width: 40%; }
-.grid .three-fifths,   .grid .w-3-5 { width: 60%; }
-.grid .four-fifths,    .grid .w-4-5 { width: 80%; }
-.grid .golden-small,   .grid .w-g-s { width: 38.2716%; } /* Golden section: smaller piece */
-.grid .golden-large,   .grid .w-g-l { width: 61.7283%; } /* Golden section: larger piece */
-
-/* Utility classes */
-.align-center { text-align: center; }
-.align-left   { text-align: left; }
-.align-right  { text-align: right; }
-.pull-left    { float: left; }
-.pull-right   { float: right; }
-
-.show-on-mobiles {
-  display: none;
-}
-
-/* Responsive Stuff */
-@media screen and (max-width: 568px) {
-  /* Stack anything that isn’t full-width on smaller screens */
-  .grid .unit {
-    width: 100% !important;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .unit .grid .unit {
-    padding-left: 0px;
-    padding-right: 0px;
-  }
-
-  /* Sometimes, you just want to be different on small screens */
-  .center-on-mobiles {
-    text-align: center !important;
-  }
-  .hide-on-mobiles {
-    display: none !important;
-  }
-  .show-on-mobiles {
-    display: block !important;
-  }
-  a .show-on-mobiles {
-    display: inline !important;
-  }
-}
-
-/* Expand the wrap a bit further on larger screens */
-/*@media screen and (min-width: 1180px) {
-  .wrap .grid {
-    max-width: 1180px;
-    margin: 0 auto;
-  }
-}*/
-
-/*                *\
- * $style.css     *
-\*                */
-/* Base */
+/* Base - apbs pdb2pqr */
 
 * {
   box-sizing: border-box;
@@ -137,9 +11,10 @@ body {
   font-size: 21px;
   font-weight: 300;
   color: #ddd;
-  background: white;
-  border-top: 5px solid #222;
+  background: #fff;
+  border-top: 5px solid #fc0;
   box-shadow: inset 0 3px 30px rgba(0,0,0,.3);
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
 }
 
 .clear {
@@ -157,14 +32,9 @@ body {
 /* Sections */
 
 body > header, body > section, body > footer {
-  width: 960px;
-  margin: 0 auto;
-  text-align: center;
-  clear: both;
-}
-
-body > footer{
+  float: left;
   width: 100%;
+  clear: both;
 }
 
 /* Header */
@@ -177,14 +47,6 @@ body > header h1 span {
   display: none;
 }
 
-div.cover{
-  background-image: url(/apbs-pdb2pqr/img/bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding: 30px 0px;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
-}
-
 nav ul {
   padding: 0;
   margin: 0;
@@ -195,9 +57,7 @@ nav li {
 }
 
 .main-nav {
-  margin-top: 20px;
-  margin-bottom: 30px;
-  text-align: center;
+  margin-top: 52px;
 }
 
 .main-nav li {
@@ -278,12 +138,11 @@ nav li {
 /* Footer */
 
 body > footer {
-  float: left;
   background: #222;
   font-size: 16px;
   padding-bottom: 5px;
   color: #888;
-  margin-top: 0px;
+  margin-top: 40px;
 }
 
 body > footer a {
@@ -334,18 +193,17 @@ body > footer a:hover img {
 
 @media (min-width: 569px){
   .intro p {
-    font-size: 2.5em;
+    font-size: 3.2em;
   }
 }
 
 /* Quickstart */
 
 .quickstart {
-  background: #eee;
-  color: #222;
-  margin-bottom: 40px;
+  background: #3F1F1F;
+  color: #fff;
+  margin: 60px 0;
   box-shadow: inset 0 3px 10px rgba(0,0,0,.4);
-  width: 100%;
 }
 
 .quickstart .content {
@@ -354,9 +212,10 @@ body > footer a:hover img {
 
 .quickstart h4 {
   font-size: 24px;
+  line-height: 24px;
   margin-top: 20px;
-/*  text-shadow: 0 1px 3px rgba(0,0,0,.8);
-*/}
+  text-shadow: 0 1px 3px rgba(0,0,0,.8);
+}
 
 .quickstart .code {
   font-size: 12px;
@@ -371,7 +230,7 @@ body > footer a:hover img {
     float: right;
   }
   .quickstart h4 {
-    margin: 35px 0 0;
+    margin: 50px 0 0;
     text-align: center;
   }
 }
@@ -455,25 +314,22 @@ body > footer a:hover img {
 }
 
 .free-hosting img {
-  margin: -30px 0 0;
+  margin: 0px 0 0;
   width: 180px;
   height: 150px;
 }
 
 .free-hosting h2 {
   font-size: 28px;
-  color: #222;
 }
 
 .free-hosting p,
 .free-hosting a {
   font-size: 16px;
-  color: #222;
 }
 
 .free-hosting p {
   margin: .75em 0;
-  color: #222;
 }
 
 @media (min-width: 768px){
@@ -547,7 +403,7 @@ aside h4 {
   padding: 0 0 10px 30px;
   margin-left: -30px;
   display: inline-block;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #c00;
 }
 
 aside ul {
@@ -1079,37 +935,6 @@ code.option, code.flag, code.filter, code.output {
   text-shadow: 0 -1px 0 rgba(0,0,0,.5);
 }
 
-/*custom css*/
-/*ira blossom*/
-
-a.get_started_btn{
-  text-align: center;
-  display: inline-block;
-  font-size: 55px;
-  font-weight: normal;
-  color: #fff;
-  background-color: #3582df;
-  background-image: -webkit-linear-gradient(#45b3f3 0%, #3582df 100%);
-  border-radius: 4px;
-  text-shadow: 0 -1px 0 rgba(0,0,0,0.3);
-  width: 200px;
-  padding: 12px 20px 14px 15px;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
-  margin: 0 auto;
-}
-
-a.get_started_btn:hover{
-  background-image: -webkit-linear-gradient(#56bdf9 0%, #358af0 100%);
-}
-
-a.get_started_btn h1{
-  font-size: 0.3em;
-}
-
-.features h2, .features p{
-  color: #fff;
-}
-
 /* Responsive tables */
 
 @media (max-width: 768px){
@@ -1119,80 +944,3 @@ a.get_started_btn h1{
     padding: 0 10px;
   }
 }
-
-/*                *\
- * $pygments.css  *
-\*                */
-/*.highlight  { background: #333333; color: #ffffff}*/
-.highlight .hll { background-color: #ffffcc }
-.highlight .c { color: #87ceeb} /* Comment */
-.highlight .err { color: #ffffff} /* Error */
-.highlight .g { color: #ffffff} /* Generic */
-.highlight .k { color: #f0e68c} /* Keyword */
-.highlight .l { color: #ffffff} /* Literal */
-.highlight .n { color: #ffffff} /* Name */
-.highlight .o { color: #ffffff} /* Operator */
-.highlight .x { color: #ffffff} /* Other */
-.highlight .p { color: #ffffff} /* Punctuation */
-.highlight .cm { color: #87ceeb} /* Comment.Multiline */
-.highlight .cp { color: #cd5c5c} /* Comment.Preproc */
-.highlight .c1 { color: #87ceeb} /* Comment.Single */
-.highlight .cs { color: #87ceeb} /* Comment.Special */
-.highlight .gd { color: #0000c0; font-weight: bold; background-color: #008080 } /* Generic.Deleted */
-.highlight .ge { color: #c000c0; text-decoration: underline} /* Generic.Emph */
-.highlight .gr { color: #c0c0c0; font-weight: bold; background-color: #c00000 } /* Generic.Error */
-.highlight .gh { color: #cd5c5c} /* Generic.Heading */
-.highlight .gi { color: #ffffff; background-color: #0000c0 } /* Generic.Inserted */
-.highlight span.go { color: #add8e6; font-weight: bold; background-color: #4d4d4d } /* Generic.Output, qualified with span to prevent applying this style to the Go language, see #1153. */
-.highlight .gp { color: #ffffff} /* Generic.Prompt */
-.highlight .gs { color: #ffffff} /* Generic.Strong */
-.highlight .gu { color: #cd5c5c} /* Generic.Subheading */
-.highlight .gt { color: #c0c0c0; font-weight: bold; background-color: #c00000 } /* Generic.Traceback */
-.highlight .kc { color: #f0e68c} /* Keyword.Constant */
-.highlight .kd { color: #f0e68c} /* Keyword.Declaration */
-.highlight .kn { color: #f0e68c} /* Keyword.Namespace */
-.highlight .kp { color: #f0e68c} /* Keyword.Pseudo */
-.highlight .kr { color: #f0e68c} /* Keyword.Reserved */
-.highlight .kt { color: #bdb76b} /* Keyword.Type */
-.highlight .ld { color: #ffffff} /* Literal.Date */
-.highlight .m { color: #ffffff} /* Literal.Number */
-.highlight .s { color: #ffffff} /* Literal.String */
-.highlight .na { color: #ffffff} /* Name.Attribute */
-.highlight .nb { color: #ffffff} /* Name.Builtin */
-.highlight .nc { color: #ffffff} /* Name.Class */
-.highlight .no { color: #ffa0a0} /* Name.Constant */
-.highlight .nd { color: #ffffff} /* Name.Decorator */
-.highlight .ni { color: #ffdead} /* Name.Entity */
-.highlight .ne { color: #ffffff} /* Name.Exception */
-.highlight .nf { color: #ffffff} /* Name.Function */
-.highlight .nl { color: #ffffff} /* Name.Label */
-.highlight .nn { color: #ffffff} /* Name.Namespace */
-.highlight .nx { color: #ffffff} /* Name.Other */
-.highlight .py { color: #ffffff} /* Name.Property */
-.highlight .nt { color: #f0e68c} /* Name.Tag */
-.highlight .nv { color: #98fb98} /* Name.Variable */
-.highlight .ow { color: #ffffff} /* Operator.Word */
-.highlight .w { color: #ffffff} /* Text.Whitespace */
-.highlight .mf { color: #ffffff} /* Literal.Number.Float */
-.highlight .mh { color: #ffffff} /* Literal.Number.Hex */
-.highlight .mi { color: #ffffff} /* Literal.Number.Integer */
-.highlight .mo { color: #ffffff} /* Literal.Number.Oct */
-.highlight .sb { color: #ffffff} /* Literal.String.Backtick */
-.highlight .sc { color: #ffffff} /* Literal.String.Char */
-.highlight .sd { color: #ffffff} /* Literal.String.Doc */
-.highlight .s2 { color: #ffffff} /* Literal.String.Double */
-.highlight .se { color: #ffffff} /* Literal.String.Escape */
-.highlight .sh { color: #ffffff} /* Literal.String.Heredoc */
-.highlight .si { color: #ffffff} /* Literal.String.Interpol */
-.highlight .sx { color: #ffffff} /* Literal.String.Other */
-.highlight .sr { color: #ffffff} /* Literal.String.Regex */
-.highlight .s1 { color: #ffffff} /* Literal.String.Single */
-.highlight .ss { color: #ffffff} /* Literal.String.Symbol */
-.highlight .bp { color: #ffffff} /* Name.Builtin.Pseudo */
-.highlight .vc { color: #98fb98} /* Name.Variable.Class */
-.highlight .vg { color: #98fb98} /* Name.Variable.Global */
-.highlight .vi { color: #98fb98} /* Name.Variable.Instance */
-.highlight .il { color: #ffffff} /* Literal.Number.Integer.Long */
-
-
-

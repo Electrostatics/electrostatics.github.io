@@ -12,7 +12,8 @@
 </head>
 
 <body class="wrap">
-  <header>
+  <div class="cover">
+<header>
   <nav class="mobile-nav show-on-mobiles">
     <ul>
 	<li class="current">
@@ -32,15 +33,10 @@
 
   </nav>
   <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">
-          <span>Jekyll</span>
-          <img src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/logo.gif" width="202" height="180" alt="">
-        </a>
-      </h1>
+    <div style="margin-top: 25px; text-align: center">
+      <img class="logo" src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/apbslogo.png">
     </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
+    <nav class="main-nav unit hide-on-mobiles">
       <ul>
 	<li class="current">
 		<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">Overview</a>
@@ -62,17 +58,19 @@
 </header>
 
 
-  <section class="intro">
+  <style>div.cover{text-align: center}</style>
+<section class="intro">
 	<div class="grid">
 		<div class="unit whole center-on-mobiles">
-			<p class="first">APBS &amp; PDB2PQR: <br/> Electrostatic and solvation properties from complex molecules.</p>
+			<p class="first" style="color: #fff; font-weight: bold; margin-bottom: 50px;">APBS &amp; PDB2PQR: <br/> Electrostatic and solvation properties from complex molecules.</p>
+			<a class="get_started_btn" href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/home"><h1>Get Started Now <i style="width: 14px; height: 14px; display: inline-block; background-image: url(img/rightArrow.png); background-repeat: no-repeat; background-size: 9px; margin-top: 5px; float: right"></i></h1></a>
 		</div>
 	</div>
 </section>
 
 
 <section class="features">
-	<div class="grid">
+	<div style="padding-top: 10px;" class="grid">
 		<div class="unit one-third">
 			<h2>Repair and parameterize molecules</h2>
 			<!-- TODO:  add PDB2PQR link -->
@@ -92,16 +90,12 @@
 			<!-- TODO:  add links -->
 			<p>Solve the Poisson-Boltzmann and related equations to calculate solvation energies and electrostatic properties for analysis and visualization.</p>
 			<!-- TODO:  fix links -->
-<<<<<<< HEAD
-			<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/migrations/" class="">Visualizing your molecule &rarr;</a>
-=======
-			<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/migrations/" class="">Visualizing Molecules &rarr;</a>
->>>>>>> ba45b7616216e698d6b9ea6c47129ec540b5ff74
+			<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/migrations/" class="">Visualizing molecules &rarr;</a>
 		</div>
 		<div class="clear"></div>
 	</div>
 </section>
-
+</div>
 <section class="quickstart">
 	<div class="grid">
 		<div class="unit golden-small center-on-mobiles">
@@ -110,7 +104,7 @@
 		<div class="unit golden-large">
 			<div class="shell">
 				<!-- TODO:  Add links here -->
-				<p class="line">Download the software to your own computer <em>or</em> use it directly from the web.</p>
+				<p class="line"><a style="color: #000; text-decoration: underline" href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads">Download the software</a> to your own computer <i>or</i> use it directly from the web.</p>
 			</div>
 		</div>
 		<div class="clear"></div>
@@ -133,7 +127,8 @@
 </section>
 
 
-  <footer>
+  </div>
+<footer>
 	<div class="grid">
 		<div class="unit one-third center-on-mobiles">
 			<p>This website was created by the APBS/PDB2PQR development team using <a href="http://jekyllrb.com/">Jekyll</a> templates.</p>
@@ -147,7 +142,6 @@
 		</div>
 	</div>
 </footer>
-
   <script type="text/javascript">
 
     var _gaq = _gaq || [];

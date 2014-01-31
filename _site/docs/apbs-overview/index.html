@@ -12,7 +12,8 @@
 </head>
 
 <body class="wrap">
-  <header>
+  <div class="cover">
+<header>
   <nav class="mobile-nav show-on-mobiles">
     <ul>
 	<li class="">
@@ -32,15 +33,10 @@
 
   </nav>
   <div class="grid">
-    <div class="unit one-third center-on-mobiles">
-      <h1>
-        <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">
-          <span>Jekyll</span>
-          <img src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/logo.gif" width="202" height="180" alt="">
-        </a>
-      </h1>
+    <div style="margin-top: 25px; text-align: center">
+      <img class="logo" src="http://sobolevnrm.github.io/apbs-pdb2pqr/img/apbslogo.png">
     </div>
-    <nav class="main-nav unit two-thirds hide-on-mobiles">
+    <nav class="main-nav unit hide-on-mobiles">
       <ul>
 	<li class="">
 		<a href="http://sobolevnrm.github.io/apbs-pdb2pqr/">Overview</a>
@@ -1059,26 +1055,43 @@
       <div class="unit four-fifths">
         <article>
           <h1>APBS input files</h1>
-          <div class='note warning'>
-	<!-- TODO: FINISH -->
-	<h5>This page is not done</h5>
-	<p>The official documentation is at <a href='http://www.poissonboltzmann.org/'>http://www.poissonboltzmann.org</a>.</p>
+          <h2 id="input_files">Input Files</h2>
+
+<p>APBS input files are loosely-formatted files which contain information about the input, parameters, and output for each calculation. These files are whitespace- or linefeed-delimited. Comments can be added to the input files via the # character; all text between the # and the end of the line is not parsed by APBS. Specific examples of APBS input are described in the Examples section.</p>
+
+<h5 id="please_note_that_there_are_several_tools_which_help_prepare_apbs_input_files_based_on_molecular_structures_memory_constraints_etc_these_tools_are_described_in_more_detail_in_the_problem_setup_section">Please note that there are several tools which help prepare APBS input files based on molecular structures, memory constraints, etc. These tools are described in more detail in the Problem setup section.</h5>
+
+<p>APBS input files contain three basic sections which can be repeated any number of times:</p>
+<div>
+	<ul>
+		<li><a href='#read'>READ</a> section for specifying input.</li>
+		<li><a href='#elec'>ELEC</a> section for specifying polar solvation (electrostatics) calculation parameters.</li>
+		<li><a href='#apolar'>APOLAR</a> section for specifying apolar solvation calculation parameters.</li>
+		<li><a href='#print'>PRINT</a> section for specifying summary output.</li>
+	</ul>
 </div>
-<h2 id="web_servers">Web servers</h2>
+<p>The APBS input file is constructed from these sections in the following format:</p>
+<div class='highlight'><pre><code class='bash'>READ
+ ...
+ END
 
-<p>Foo</p>
+ ELEC
+ ...
+ END
 
-<h2 id="downloads">Downloads</h2>
+ APOLAR
+ ...
+ END
 
-<p>Foo</p>
+ PRINT
+ ...
+ END
 
-<h3 id="apbs_downloads">APBS downloads</h3>
-
-<p>Foo</p>
-
-<h3 id="pdb2pqr_downloads">PDB2PQR downloads</h3>
-
-<p>Foo</p>
+ QUIT
+ 
+</code></pre></div>
+<p>These sections can occur in any order and can be repeated any number of times. However, the sections are interdependent. For example, PRINT requires ELEC and/or APOLAR while ELEC requires one or more READ sections. Sections can also be repeated; several READ statements may be used to load molecules and multiple ELEC or APOLAR sections would specify various electrostatics calculations on one or more molecules.</p>
+<h5>NOTE: There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</h5><h3 id='read'>READ</h3><h3 id='elec'>ELEC</h3><h3 id='apolar'>APOLAR</h3><h3 id='print'>PRINT</h3>
           <div class="section-nav">
   <div class="left align-right">
     
@@ -1089,7 +1102,9 @@
   </div>
   <div class="right align-left">
     
-      <span class="next disabled">Next</span>
+      <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/pdb2pqr-overview/" class="next">
+        Next
+      </a>
     
   </div>
   <div class="clear"></div>
@@ -1710,7 +1725,8 @@
   </section>
 
 
-  <footer>
+  </div>
+<footer>
 	<div class="grid">
 		<div class="unit one-third center-on-mobiles">
 			<p>This website was created by the APBS/PDB2PQR development team using <a href="http://jekyllrb.com/">Jekyll</a> templates.</p>
@@ -1724,7 +1740,6 @@
 		</div>
 	</div>
 </footer>
-
   <script type="text/javascript">
 
     var _gaq = _gaq || [];

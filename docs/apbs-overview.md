@@ -49,7 +49,32 @@ READ
 
  <h5>NOTE: There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</h5>
 
-<h2 id="read">READ</h2>
-<h2 id="elec">ELEC</h2>
-<h2 id="apolar">APOLAR</h2>
-<h2 id="print">PRINT</h2>
+ Each section of the APBS input file has its own syntax, described in more detail in the following sections:
+
+<ul>
+	<li><a href="#apolar">APOLAR input file section</a>
+		<ul>
+			<li><a href="#">APOLAR keywords</a></li>
+			<li><a href="#">Basic APOLAR calculations</a></li>
+		</ul>
+	</li>
+	<li><a href="#elec">ELEC input file section</a>
+		<ul>
+			<li><a href="#">ELEC block naming</a></li>
+			<li><a href="#">ELEC keywords</a></li>
+			<li><a href="#">Types of ELEC calculations</a></li>
+		</ul>
+	</li>
+	<li><a href="#print">PRINT input file section</a></li>
+	<li><a href="#read">READ input file section</a>
+		<ul>
+			<li><a href="#">READ examples</a></li>
+			<li><a href="#">READ keywords</a></li>
+		</ul>
+	</li>
+</ul>
+
+<h3 id="read">READ</h3>
+<h3 id="elec">ELEC</h3>
+<h3 id="apolar">APOLAR</h3>
+<h3 id="print">PRINT</h3>

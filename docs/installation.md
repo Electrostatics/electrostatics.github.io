@@ -68,7 +68,7 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 
 <h2 id="source">Installation from source</h2>
 
-####Installation of APBS from source is a two-step process
+#### Installation of APBS from source is a two-step process
 
 <p>
 <ol>
