@@ -51,30 +51,49 @@ READ
 
  Each section of the APBS input file has its own syntax, described in more detail in the following sections:
 
+###Category List
+
 <ul>
 	<li><a href="#apolar">APOLAR input file section</a>
 		<ul>
-			<li><a href="#">APOLAR keywords</a></li>
-			<li><a href="#">Basic APOLAR calculations</a></li>
+			<li><a href="#apolarkeywords">APOLAR keywords</a></li>
+			<li><a href="#apolacalcs">Basic APOLAR calculations</a></li>
 		</ul>
 	</li>
 	<li><a href="#elec">ELEC input file section</a>
 		<ul>
-			<li><a href="#">ELEC block naming</a></li>
-			<li><a href="#">ELEC keywords</a></li>
-			<li><a href="#">Types of ELEC calculations</a></li>
+			<li><a href="#elecblocknaming">ELEC block naming</a></li>
+			<li><a href="#eleckeywords">ELEC keywords</a></li>
+			<li><a href="#eleccalcs">Types of ELEC calculations</a></li>
 		</ul>
 	</li>
 	<li><a href="#print">PRINT input file section</a></li>
 	<li><a href="#read">READ input file section</a>
 		<ul>
-			<li><a href="#">READ examples</a></li>
-			<li><a href="#">READ keywords</a></li>
+			<li><a href="#readexamples">READ examples</a></li>
+			<li><a href="#readkeywords">READ keywords</a></li>
 		</ul>
 	</li>
 </ul>
 
-<h3 id="read">READ</h3>
-<h3 id="elec">ELEC</h3>
 <h3 id="apolar">APOLAR</h3>
+
+This section is the main component for apolar solvation calculations in APBS runs. There may be several APOLAR sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The syntax of this section is:
+
+{% highlight bash %}
+APOLAR [name id]
+        {keywords...}
+    END
+{% endhighlight %}
+
+The first (optional) argument is:
+
+{% highlight bash %}
+name {id}
+{% endhighlight %}
+
+where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.url/apbs-overview/#print}) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.url/apbs-overview/#apolarkeywords}).  Basic APOLAR calculations are described in this section.
+
+<h3 id="elec">ELEC</h3>
 <h3 id="print">PRINT</h3>
+<h3 id="read">READ</h3>
