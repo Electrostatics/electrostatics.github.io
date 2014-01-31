@@ -21,7 +21,7 @@ APBS input files contain three basic sections which can be repeated any number o
 	<li><a href="print">PRINT</a> section for specifying summary output.</li>
 </ul>
 
-The APBS input file is constructed from these sections in the following format:
+<p>The APBS input file is constructed from these sections in the following format:</p>
 
 {% highlight bash %}
 READ
@@ -43,18 +43,12 @@ READ
  QUIT
  {% endhighlight %}
 
- These sections can occur in any order and can be repeated any number of times. However, the sections are interdependent. For example, PRINT requires ELEC and/or APOLAR while ELEC requires one or more READ sections. Sections can also be repeated; several READ statements may be used to load molecules and multiple ELEC or APOLAR sections would specify various electrostatics calculations on one or more molecules.
-
- ###NOTE: There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".
-
- Each section of the APBS input file has its own syntax.
-
 <div>
- <h2 id="APOLAR">APOLAR input file section</h2>
+<p>
+ These sections can occur in any order and can be repeated any number of times. However, the sections are interdependent. For example, PRINT requires ELEC and/or APOLAR while ELEC requires one or more READ sections. Sections can also be repeated; several READ statements may be used to load molecules and multiple ELEC or APOLAR sections would specify various electrostatics calculations on one or more molecules.
+</p>
 
- <h2 id="ELEC">ELEC input file section</h2>
+ <p>NOTE: There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</p>
 
- <h2 id="PRINT">PRINT input file section</h2>
-
- <h2 id="READ">READ input file section</h2>
+<p> Each section of the APBS input file has its own syntax.</p>
 </div>
