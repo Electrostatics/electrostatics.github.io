@@ -132,5 +132,77 @@ Note that the above expressions can easily be reduced to simpler apolar solvatio
 </div>
 
 <h3 id="elec">ELEC</h3>
+
+The ELEC block of an APBS input file is used for polar solvation (electrostatics) calculations and has the following syntax:
+
+{% highlight bash %}
+  ELEC [ name {id} ]
+        {type}
+        {keywords...}
+    END
+{% endhighlight %}
+
+where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The {id} tag allows the user to name ELEC blocks, as described in the [ELEC block naming]({site.url}/apbs-overview/#elecblocknaming) section.  The {type} command defines the Types of [ELEC calculation]({site.url}/apbs-overview/#eleccalcs) to be performed.  Finally, the {keywords} are calculation-specific commands that customize the particular type of calculation.
+This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions [(bcfl)]({site.url}/elec-keywords/#bcfl) can require information about previous calculations.
+
+###ELEC block naming
+
+Since numerous ELEC blocks may appear in an APBS input file, it can be difficult to keep track of them all. It is possible to assign an optional name to each ELEC block to simplify the organizational process. This syntax has the form
+
+{% highlight bash %}
+ELEC name {id}
+    ...
+{% endhighlight %}
+
+where ELEC is the start of the ELEC block and {id} is an alphanumeric string denoting the "name" of the calculation block.
+
+###Elec keywords
+
+- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
+- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
+- [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
+- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
+- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
+- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
+- [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
+- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
+- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
+- [domainLength](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#domainlength)
+- [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
+- [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
+- [fgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fgcent)
+- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
+- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
+- [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
+- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
+- [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
+- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
+- [maxsolve](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxsolve)
+- [maxvert](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxvert)
+- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#mol)
+- [nlev](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nlev)
+- [npbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#npbe)
+- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)
+- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)
+- [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
+- [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
+- [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdens)
+- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)
+- [smpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#smpbe)
+- [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srad)
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)
+- [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#swin)
+- [targetNum](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetnum)
+- [targetRes](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetres)
+- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#temp)
+- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)
+- [usemap](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemap)
+- [usemesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemesh)
+- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
+- [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)
+
+
 <h3 id="print">PRINT</h3>
 <h3 id="read">READ</h3>
