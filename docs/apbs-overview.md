@@ -94,19 +94,42 @@ name {id}
 
 where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.url}/apbs-overview/#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.url}/apbs-overview/#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
-- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords)
-- [calcenergy]
-- [calcforce]
-- [dpos]
-- [gamma]
-- [grid]
-- [mol]
-- [press]
-- [sdens]
-- [srad]
-- [srfm]
-- [swin]
-- [temp]
+###APOLAR Keywords
+
+- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
+- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
+- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
+- [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
+- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#mol)
+- [press](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#press)
+- [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#sdens)
+- [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srad)
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)
+- [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#swin)
+- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)
+
+###Basic APOLAR calculations
+
+APBS apolar calculations follow the very generic framework described in Wagoner JA, Baker NA. Assessing implicit models for nonpolar mean solvation forces: the importance of dispersion and volume terms. Proc Natl Acad Sci USA, 103, 8331-8336, 2006.(doi:10.1073/pnas.0600118103).
+
+In particular, nonpolar solvation potentials of mean force (energies) are calculated according to:
+
+<img src="/img/graphic-18.gif" />
+
+and mean nonpolar solvation forces are calculated according to:
+
+<img src="/img/graphic-19.gif" />
+
+In these equations, gamma is the repulsive (hard sphere) solvent surface tension, A is the conformation-dependent solute surface area (see srad and srfm keywords), p (see press keyword) is the repulsive (hard sphere) solvent pressure, V is the conformation-dependent solute volume (see srad and srfm keywords), rho (see bconc keywords) is the bulk solvent density, and the integral involves the attractive portion (defined in a Weeks-Chandler-Andersen sense) of the Lennard-Jones interactions between the solute and the solvent integrated over the region of the problem domain outside the solute volume V. Lennard-Jones parameters are taken from APBS parameter files as read in through an APBS input file READ statement.
+
+Note that the above expressions can easily be reduced to simpler apolar solvation formalisms by setting one or more of the coefficients to zero through the keywords.
+
+<div class="note info">
+	<h5>Important</h5>
+	<p>All APOLAR calculations require a parameter file which contains Lennard-Jones radius and well-depth parameters for all the atoms in the solute PDB. This parameter file must also contain radius and well-depth parameters for water (specifically: residue "WAT" and atom "OW").  Complete parameter files for protein and nucleic acid parameters are not currently available and are actively under development as a research project.  Please contact Nathan Baker for additional information about the state of this research, particularly if you are interested in helping.</p>
+</div>
 
 <h3 id="elec">ELEC</h3>
 <h3 id="print">PRINT</h3>
