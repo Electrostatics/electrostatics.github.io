@@ -96,7 +96,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 
 ####List of APOLAR Keywords
 
-- [bconc]({ site.url/docs/apolar-keywords })	
+- [bconc]({ site.url}/docs/apolar-keywords)	
 - [calcenergy]
 - [calcforce]
 - [dpos]
