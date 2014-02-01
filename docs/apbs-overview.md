@@ -94,7 +94,7 @@ name {id}
 
 where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.url}/apbs-overview/#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.url}/apbs-overview/#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
-- [bconc]({ site.url}/docs/apolar-keywords)	
+- [bconc]({site.url}/apolar-keywords)
 - [calcenergy]
 - [calcforce]
 - [dpos]
