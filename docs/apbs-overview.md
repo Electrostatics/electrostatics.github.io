@@ -116,11 +116,11 @@ APBS apolar calculations follow the very generic framework described in Wagoner 
 
 In particular, nonpolar solvation potentials of mean force (energies) are calculated according to:
 
-<img src="/img/graphic-18.gif" />
+<img src="{site.url}/img/graphic-18.gif" />
 
 and mean nonpolar solvation forces are calculated according to:
 
-<img src="/img/graphic-19.gif" />
+<img src="{site.url}/img/graphic-19.gif" />
 
 In these equations, gamma is the repulsive (hard sphere) solvent surface tension, A is the conformation-dependent solute surface area (see srad and srfm keywords), p (see press keyword) is the repulsive (hard sphere) solvent pressure, V is the conformation-dependent solute volume (see srad and srfm keywords), rho (see bconc keywords) is the bulk solvent density, and the integral involves the attractive portion (defined in a Weeks-Chandler-Andersen sense) of the Lennard-Jones interactions between the solute and the solvent integrated over the region of the problem domain outside the solute volume V. Lennard-Jones parameters are taken from APBS parameter files as read in through an APBS input file READ statement.
 
