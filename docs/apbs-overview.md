@@ -255,3 +255,55 @@ print energy complex_solv - complex_ref - ligand_solv + ligand_ref - protein_sol
 See the examples/ directory provided with the APBS distribution for more examples.
 
 <h3 id="read">READ</h3>
+
+The READ block of an APBS input file has the following general format:
+
+{% highlight bash %}
+READ
+    [ keywords... ]
+END
+{% endhighlight %}
+
+where keywords is or more of the keywords described in the Keyword section (the line breaks and indentation are for clarity; only whitespace is necessary).
+
+####Note: One of these sections must be present for every molecule involved in the APBS calculation. Molecule and "map" IDs are assigned implicitly assigned for each molecule/map read, based on order and starting at 1 and incremented independently for each input type. In other words, each input PQR file is assigned an ID 1, 2, 3, ...; each input dielectric map is assigned an independent ID 1, 2, 3, ...; etc.
+
+###READ keywords
+
+- [charge](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#charge)
+- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
+- [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
+- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
+- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
+- [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm)
+- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)
+
+###READ examples
+
+The following is an example of a minimal READ section that only imports PQR format molecular structure files.
+
+{% highlight bash %}
+READ
+   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) ligand.pqr
+   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) receptor.pqr
+   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) complex.pqr
+END
+{% endhighlight %}
+
+####Reading a PDB file with parameters
+
+{% highlight bash %}
+READ
+   [mol pdb](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) molecule.pdb
+   [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm) flat param.dat
+END
+{% endhighlight %}
+
+####Reading external dielectric maps
+
+{% highlight bash %}
+READ
+   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) molecule.pqr
+   [diel dx](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel) dielx.dx diely.dx dielz.dx
+END
+{% endhighlight %}

@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: APBS input files
+title: READ keywords
 permalink: /docs/read-keywords/
 ---
 
