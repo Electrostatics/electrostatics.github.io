@@ -284,9 +284,9 @@ The following is an example of a minimal READ section that only imports PQR form
 
 {% highlight bash %}
 READ
-   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) ligand.pqr
-   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) receptor.pqr
-   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) complex.pqr
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> ligand.pqr
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> receptor.pqr
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> complex.pqr
 END
 {% endhighlight %}
 
@@ -294,8 +294,8 @@ END
 
 {% highlight bash %}
 READ
-   [mol pdb](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) molecule.pdb
-   [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm) flat param.dat
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pdb</a> molecule.pdb
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm">parm</a> flat param.dat
 END
 {% endhighlight %}
 
@@ -303,7 +303,7 @@ END
 
 {% highlight bash %}
 READ
-   [mol pqr](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol) molecule.pqr
-   [diel dx](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel) dielx.dx diely.dx dielz.dx
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol" mol pqr</a> molecule.pqr
+   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel" diel dx</a> dielx.dx diely.dx dielz.dx
 END
 {% endhighlight %}
