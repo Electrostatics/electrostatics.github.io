@@ -284,9 +284,9 @@ The following is an example of a minimal READ section that only imports PQR form
 
 {% highlight bash %}
 READ
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> ligand.pqr
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> receptor.pqr
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pqr</a> complex.pqr
+   mol pqr ligand.pqr
+   mol pqr receptor.pqr
+   mol pqr complex.pqr
 END
 {% endhighlight %}
 
@@ -294,8 +294,8 @@ END
 
 {% highlight bash %}
 READ
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol">mol pdb</a> molecule.pdb
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm">parm</a> flat param.dat
+   mol pdb molecule.pdb
+   parm flat param.dat
 END
 {% endhighlight %}
 
@@ -303,7 +303,7 @@ END
 
 {% highlight bash %}
 READ
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol" mol pqr</a> molecule.pqr
-   <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel" diel dx</a> dielx.dx diely.dx dielz.dx
+   mol pqr molecule.pqr
+   diel dx dielx.dx diely.dx dielz.dx
 END
 {% endhighlight %}
