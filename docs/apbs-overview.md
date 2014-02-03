@@ -203,6 +203,55 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 - [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
 - [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)
 
+###Types of ELEC calculations
+
+- [fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#femanual)
+- [mg-auto: automatically-configured sequential focusing multigrid Posson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgauto)
+- [mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calculations/#mgdummy)
+- [mg-manual: manually-configured multigrid Poisson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgmanual)
+- [mg-para: automatically-configured paralle focusing multigrid Poisson-Boltzman calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgpara)
 
 <h3 id="print">PRINT</h3>
+This is a very simple section that allows linear combinations of calculated properties to be written to standard output.
+
+The syntax of this section is:
+
+{% highlight bash %}
+PRINT {what} [id op id op...] END 
+{% endhighlight %}
+
+The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
+
+- energy Print energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
+- force Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
+- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) ELEC command.
+- elecForce Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) ELEC command.
+- apolEnergy Print energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) APOLAR command.
+- apolForce Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) APOLAR command.
+
+The next arguments are a series of id op id op id op ... id commands where every id is immediately followed by an op and another id. These options have the following form:
+
+<ul>
+<li>id  This is a variable string or integer denoting the ID of a particular ELEC or APOLAR calculation. String values of id are assume to correspond to the optional "names" that can be assigned to ELEC or APOLAR calculations. Integer values of id are assumed to corresponding to the sequentially-assigned integer IDs for ELEC or APOLAR calculations. These IDs start at 1 and are incremented independently for each new ELEC or AOPLAR calculation.</li>
+<li>op  Specify the arithmetic operation to be performed on the calculated quantities:
+<ul>
+	<li>+ Addition</li>
+	<li>- Subtraction</li>
+</ul>
+</li>
+</ul>
+
+Given these options, a typical PRINT declaration might look like:
+
+{% highlight bash %}
+# Energy change due to binding
+print energy complex - ligand - protein end
+# Energy change due to solvation
+print energy solvated - reference end 
+# Solvation energy change due to binding
+print energy complex_solv - complex_ref - ligand_solv + ligand_ref - protein_solv + protein_ref end 
+{% endhighlight %}
+
+See the examples/ directory provided with the APBS distribution for more examples.
+
 <h3 id="read">READ</h3>
