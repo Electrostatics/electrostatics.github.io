@@ -18,11 +18,11 @@ A utility program designed to convert DelPhi-format map files (electrostatic pot
 del2dx delphi_file opendx_file
 {% endhighlight %}
 
- where delphi_file is the input file to be converted and opendx_file is the output OpenDX format file to be created.
+where delphi_file is the input file to be converted and opendx_file is the output OpenDX format file to be created.
 
- ###dxmath
+###dxmath
 
- dxmath performs simple arithmetic operations with Cartesian grid data.  It is invoked as:
+dxmath performs simple arithmetic operations with Cartesian grid data.  It is invoked as:
 
 {% highlight bash %}
 dx-math <path>
@@ -31,12 +31,12 @@ dx-math <path>
 where <path> is the path is the path to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:
 
 {% highlight bash %}
-	grid1
-    grid2 +
-    5.3 *
-    grid4 +
-    99.3 -
-    grid5 =
+grid1
+grid2 +
+5.3 *
+grid4 +
+99.3 -
+grid5 =
 {% endhighlight %}
 
 The file names, scalar values, and operations must be separated by tabs, line breaks, or white space.  Comments can be included between the character # and a new line (in the usual shell script fashion).
