@@ -14,9 +14,9 @@ In addition to using APBS through other programs, there are two ways to invoke A
 
 As mentioned in the [installation and availability section]({{site.url}}/apbs-pdb2pqr/docs/installation/), the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
 
-{ % highlight bash % }
+{% highlight bash %}
 apbs [options] input-file
-{ % endhighlight % }
+{% endhighlight %}
 
 Command line options include:
 
