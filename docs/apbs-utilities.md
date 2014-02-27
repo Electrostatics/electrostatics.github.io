@@ -28,5 +28,5 @@ dxmath performs simple arithmetic operations with Cartesian grid data.  It is in
 dx-math <path>
 {% endhighlight %}
 
-where <path> is the path is the path to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:
+where <path> is the path is to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:
 
