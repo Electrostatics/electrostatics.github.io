@@ -2,7 +2,7 @@
 layout: docs
 title: APBS Invocation
 prev_section: apbs-overview
-next_section: pdb2pqr-overview
+next_section: apbs-others
 permalink: /docs/apbs-invocation/
 ---
 

@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Using APBS with other programs
-prev_section: usage
-next_section: pdb2pqr-overview
+prev_section: apbs-invocation
+next_section: apbs-programmers
 permalink: /docs/apbs-others/
 ---
 
