@@ -50,3 +50,15 @@ As mentioned above, the basic invocation is the same as the main binary. The onl
 {% highlight bash %}
 ApbsClient.py [options] {input}
 {% endhighlight %}
+
+where options are described below and input is an APBS input file. Options available with ApbsClient.py include:
+
+<ul>
+<li>--fetch={dir}  By default, the resulting ﬁles will be saved to the directory from which ApbsClient.py was launched. The --fetch switch can be used to change the directory (dir) to which the resulting ﬁles should be saved.</li>
+<li>--help  This will cause a brief summary of the available options to be displayed.</li>
+<li>--job-id={id}  This command can be used to automatically fetch the results of an APBS calculation run with the --non-blocking option. The --fetch switch must also be present if the --job-id switch is in use.</li>
+<li>--local  This forces APBS to be run locally rather than on remote resources.</li>
+<li>--no-fetch  One can prevent the automatic retrieval of APBS calculation results with this flag. If used, APBS will output a URL from which the resulting data can be retrieved later via a web browser. Use of this switch will also cause APBS to output a job ID which can be used to automatically retrieve all files using ApbsClient.py with the --job-id switch.</li>
+<li>--non-blocking  By default, an Opal calculation will cause APBS to block (pause) until the remote calculation is complete. If you would instead like to manually retrieve the ﬁles, you can use the --non-blocking switch, which will cause APBS to output a URL from which the resulting data can be retrieved later via a web browser. Use of this switch will also cause APBS to output a job ID which can be used to automatically retrieve all files using ApbsClient.py with the --job-id switch.</li>
+<li>--service-location={URL}  By default, the Opal support in APBS makes use of the NBCR's Opal web services. However, the user can easily substitute in any functional Opal APBS installation by specifying the URL for the remote service with this option.</li>
+</ul>
