@@ -12,7 +12,7 @@ Note that many of the examples in this tutorial can also be run through Opal web
 This document is under continual construction and revision to provide up-to-date and timely examples. Many of the topics covered in the incomplete sections are also demonstrated in the examples/ directory provided with the APBS distribution.  If you have a question that isn't answered here, please visit the APBS-users mailing list. After you've looked for the answer to your question in the archive, please post it to the mailing list.
 
 Questions Listing
-- [How do I calculate a binding energy?]({{site.url/apbs-faq#binding-energy}}})
+- [How do I calculate a binding energy?]({{site.url/apbs-faq#binding-energy}}/apbs-faq#binding-energy)
 - [How do I calculate a pKa?]({{site.url/apbs-faq#calculate-pka}})
 - [How do I calculate a solvation energy?]({{site.url}}/apbs-faq#calculate-energy)
 - [How do I calculate solvation forces?]({{site.url}}/apbs-faq#calculate-forces)
@@ -31,6 +31,7 @@ Questions Listing
 - [What is Opal?]({{site.url}}/apbs-faq#opal)
 - [What is PMG?]({{site.url}}/apbs-faq#pmg)
 
+<h4 id="binding-energy">How do I calculate a binding energy?</h4>
 <h4 id="calculate-pka">How do I calculate a pka?</h4>
 <h4 id="calculate-energy">How do I calculate a solvation energy?</h4>
 <h4 id="calculate-forces">How do I calculate solvation forces?</h4>
