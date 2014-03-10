@@ -10,7 +10,7 @@ permalink: /docs/pdb2pqr-installation/
 
 <h3>Overview</h3>
 
-<p>Most users will likely interact with PDB2PQR through the servers listed at <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/">Web servers  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
+<p>Most users will likely interact with PDB2PQR through the servers listed at <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/">Web servers</a>  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
 The PDB2PQR source code can be downloaded. As the bulk of the PDB2PQR code is written Python, the PDB2PQR code itself is architecture- and compiler-independent. PDB2PQR has been tested using Python versions 2.6-2.7 and <a href="http://www.numpy.org/#older_array" target="_blank">Numeric</a> version 24.2 - problems may occur with other versions. Users who simply want to use the PDB2PQR without PROPKA or ligand parameterization support can unarchive the source code, change to the top-level source code directory, and type</p>
 
 {% highlight bash %}
