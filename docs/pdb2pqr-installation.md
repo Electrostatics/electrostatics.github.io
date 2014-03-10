@@ -78,5 +78,15 @@ $ make install
 
 <h3>Troubleshooting</h3>
 
-It is highly recommended that `--prefix` and `--with-url` point to the same directory. Specifying {% highlight bash %}--prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is recommened. On the other hand, specifying something like {% highlight bash%}--prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is not recommened because mypdb2pqr and pdb2pqr-test are different names.
+It is highly recommended that `--prefix` and `--with-url` point to the same directory. Specifying {% highlight bash %}
+--prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test
+{% endhighlight %}
+
+is recommened. On the other hand, specifying something like
+{% highlight bash%}
+--prefix=/var/www/html/mypdb2pqr
+--with-url=http://somedomain/pdb2pqr-test
+{% endhighlight %}
+
+is not recommened because mypdb2pqr and pdb2pqr-test are different names.
 If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the `<Directory "/var/www/html">` section of the Apache configuration file. If you modify this file, you will need to restart the web server.
