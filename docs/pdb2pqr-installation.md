@@ -19,3 +19,16 @@ $ make
 $ make install 
 {% endhighlight %}
 
+<p>or skip the configure/make process altogether.</p>
+
+<h3>PROPKA Support</h3>
+
+<p>To use PROPKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:</p>
+
+{% highlight bash %}
+$ ./configure
+$ make 
+$ make install
+{% endhighlight %}
+
+<p>This should compile the PROPKA wrappers necessary to interface with PDB2PQR. If the compilation fails, please send a bug report.</p>
