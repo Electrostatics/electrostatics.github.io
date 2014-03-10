@@ -32,3 +32,23 @@ $ make install
 {% endhighlight %}
 
 <p>This should compile the PROPKA wrappers necessary to interface with PDB2PQR. If the compilation fails, please send a bug report.</p>
+
+<h3>PDB2PKA Support</h3>
+
+<p>PDB2PKA is the PDB2PQR library that includes both ligand parameterization and Poisson-Boltzmann-based pKa calculation routines. This code is written in C++ and Python. This portion of the code also requires the Python Numeric or NumPy package. Note that PDB2PQR has only been extensively tested against Numeric. Unlike earlier versions, PDB2PKA is enabled by default in this version. To use PDB2PKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:<p>
+
+{% highlight bash %}
+$ ./configure
+$ make 
+$ make install
+{% endhighlight %}
+
+<p>This should compile the PDB2PKA wrappers necessary to interface with PDB2PQR. Note that this will also compile PROPKA supprot; this can be explicitly disabled by</p>
+
+{% highlight bash %}
+$ ./configure --enable-pdb2pka --disable-propka
+$ make 
+$ make install
+{% endhighlight %}
+
+<p>If the compilation fails, please send a bug report.</p>
