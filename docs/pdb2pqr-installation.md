@@ -52,3 +52,18 @@ $ make install
 {% endhighlight %}
 
 <p>If the compilation fails, please send a bug report.</p>
+
+<h3>Web server installation</h3>
+
+<p>All the necessary files for web server installation are available with the PDB2PQR software; however, we would appreciate if users contact us before installing a publicly-accessible version of the web server so we can ensure that you are informed of PBD2PQR updates, etc.
+<b>Note:</b> these instructions are intended for systems administrators with the ability to change the behavior of their web server software and/or install software in privileged locations. To set up a server, simply run</p>
+
+{% highlight bash %}
+$ ./configure 
+$ make 
+$ make install 
+{% endhighlight %}
+
+<p>By default, the server is installed in /var/www/html/pdb2pqr and the default URL is http://fully_qualified_domain_name/pdb2pqr. If the user does not have root permission, then the server is installed in ${HOME}/pdb2pqr.</p>
+
+<p>Configure options include:</p>
