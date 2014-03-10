@@ -67,3 +67,16 @@ $ make install
 <p>By default, the server is installed in /var/www/html/pdb2pqr and the default URL is http://fully_qualified_domain_name/pdb2pqr. If the user does not have root permission, then the server is installed in ${HOME}/pdb2pqr.</p>
 
 <p>Configure options include:</p>
+
+<ul>
+<li>- with-url -- URL for the server (e.g., http://somedomain/pdb2pqr)</li>
+<li>- disable-propka -- Disable PROPKA</li>
+<li>- with-python -- Path to Python (e.g., /usr/local/bin/python2.5)</li>
+<li>- with-opal -- Enable Opal service integration pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service.Enable the APBS web interface. Must be pointing to a local APBS binary.useful programs to help process APBS input and output</li>
+<li>- with-apbs-opal -- Enable Opal service integration for the APBS web interface pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service. Requires simultaneous use of the --with-apbs flag, which must be pointing to a version of APBS greater than 1.0.0 (or the current SVN revision).</li>
+</ul>
+
+<h3>Troubleshooting</h3>
+
+<p>It is highly recommended that --prefix and --with-url point to the same directory. Specifying --prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test is recommened. On the other hand, specifying something like --prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test is not recommened because mypdb2pqr and pdb2pqr-test are different names.
+If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the < Directory "/var/www/html"> section of the Apache configuration file. If you modify this file, you will need to restart the web server.</p>
