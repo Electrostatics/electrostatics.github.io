@@ -46,7 +46,7 @@ $ make install
 <p>This should compile the PDB2PKA wrappers necessary to interface with PDB2PQR. Note that this will also compile PROPKA supprot; this can be explicitly disabled by</p>
 
 {% highlight bash %}
-$ ./configure --enable-pdb2pka --disable-propka
+$ ./configure enable-pdb2pka disable-propka
 $ make 
 $ make install
 {% endhighlight %}
