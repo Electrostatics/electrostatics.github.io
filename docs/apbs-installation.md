@@ -5,123 +5,76 @@ prev_section: usage
 next_section: pdb2pqr-overview
 permalink: /docs/apbs-installation/
 ---
+##Installation and availability
 
-<div class="note info">
-  <h5>Installation Options</h5>
-  <p>
-    Several installation options are available for APBS; however, <a href="#binary">binary</a> installation is the preferred mechanism.
-View the sections below to learn more about each installation type.
-  </p>
-</div>
+### Overview
 
-### APBS Directory Structure
-
-The APBS installation process (whether compiled from source or installed as pre-compiled binaries) will create several directories under ${APBS_PREFIX}:
-
-- [bin] -- where the main apbs binary resides
-- [share] -- contains the documentation (user guide, tutorial, programmer's guide) as well as a number of examples  and test cases for APBS
-- [include] -- contains header files for using APBS libraries with other applications
-- [lib] -- contains library files for using APBS libraries with other applications
-- [tools] -- which contains a number of "helper" applications for use with APBS
-
-At this point you are ready to use APBS; either by calling the binary directly or adding the above directory to your path. As mentioned above, there are also several tools provided with APBS that remain in the APBS directory; these are described in later portions of this manual. You may wish to copy these to a global location (or the same place as your APBS binary) at this time.
-
-### Installation Types
-
-<div>
-<p>
-There are multiple installation types; however, binary installation is the preferred method.
-<ul>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
-</ul>
-</p>
-</div>
-
-<h2 id="binary">Binary Installation</h2>
-
-The best way to install APBS is via the binary installation.
-
-We currently offer binaries for the RedHat Linux platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.
-
-<div class="note warning">
-  <h5>Attention Windows Users</h5>
-  <p>If you are using APBS on a Windows system, you may not want to install it in a directory with spaces in the path name (e.g., C:\Program Files\) as this can cause problems with some visualization programs.</p>
-</div>
-
-<p>For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by:</p>
+Most users will likely interact with PDB2PQR through the servers listed at [Web servers](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/).  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
+The PDB2PQR source code can be downloaded. As the bulk of the PDB2PQR code is written Python, the PDB2PQR code itself is architecture- and compiler-independent. PDB2PQR has been tested using Python versions 2.6-2.7 and <a href="http://www.numpy.org/#older_array" target="_blank">Numeric</a> version 24.2 - problems may occur with other versions. Users who simply want to use the PDB2PQR without PROPKA or ligand parameterization support can unarchive the source code, change to the top-level source code directory, and type
 
 {% highlight bash %}
-gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
+$ ./configure --disable-propka --disable-pdb2pka
+$ make 
+$ make install 
 {% endhighlight %}
 
-<p>where XYZ is the particular architecture of the binary you downloaded and #.#.# is the version number. Note that this will expand into a directory called apbs-#.#.#-XYZ. The contents of this directory can be placed anywhere on your system that you prefer (and have access to) and follow the structure:</p>
+or skip the configure/make process altogether.
 
-- [bin] -- contains the main APBS executable
-- [share/apbs] -- contains additional APBS-related files
-- [doc] -- the APBS programmer guide
-- [examples] -- APBS examples
-- [tests] -- the APBS test suite
-- [tools] -- useful programs to help process APBS input and output
-- [include] -- header files for building software that calls APBS
-- [lib] -- libraries for building software that calls APBS
+###PROPKA Support
 
-<h2 id="source">Installation from source</h2>
-
-#### Installation of APBS from source is a two-step process
-
-<p>
-<ol>
-  <li><a href="#stable">Download your preferred method of APBS (Stable or Developmental)</a></li>
-  <li><a href="#installing">Install APBS via CMAKE</a></li>
-</ol>
-</p>
-
-<h4 id="stable">Stable Version</h4>
-
-<p>We recommend that most users compile APBS from our official releases, which can be downloaded <a href="http://www.poissonboltzmann.org/apbs/downloads" target="_blank">here</a>.</p>
-
-<h4 id="developmental">Developmental Version</h4>
-
-<p>However, particularly adventurous users may want to try the latest developmental versions available from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">Git repository</a>. Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>
-
-<h3 id="installing">Installing with Cmake</h3>
-
-<p>Regardless of where the source code is obtained, the next step is to build the software using <a href="http://www.cmake.org/" target="_blank">Cmake</a>.</p>
-
-#####Overview
-
-Starting with APBS 1.4, we have migrated to Cmake for cross-platform building from source code.  The following instructions assume that you have [Cmake](http://www.cmake.org/) version 2.6 or later installed on your system. In the instructions that follow, we will assume that the directory containing the APBS source code is located at ${APBS_SOURCE}.
-
-#####Generic system build
-
-If your system supports the "make" command, then installation should be pretty easy.  With this setup, the following steps should build APBS for you on most systems (except for  Windows):
+To use PROPKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:
 
 {% highlight bash %}
-cd ${APBS_SOURCE}/build
-cmake ..
-make
+$ ./configure
+$ make 
+$ make install
 {% endhighlight %}
 
-The default configuration (for development versions of APBS after 1.4) is for a static library build.  If you prefer a shared library build, please change the cmake variable:
+This should compile the PROPKA wrappers necessary to interface with PDB2PQR. If the compilation fails, please send a bug report.
+
+###PDB2PKA Support
+
+PDB2PKA is the PDB2PQR library that includes both ligand parameterization and Poisson-Boltzmann-based pKa calculation routines. This code is written in C++ and Python. This portion of the code also requires the Python Numeric or NumPy package. Note that PDB2PQR has only been extensively tested against Numeric. Unlike earlier versions, PDB2PKA is enabled by default in this version. To use PDB2PKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:
 
 {% highlight bash %}
-BUILD_SHARED_LIBS=YES
+$ ./configure
+$ make 
+$ make install
 {% endhighlight %}
 
-#####Mac OS X System Build
-
-APBS can be built on Mac OS X following the instructions above (and assuming Xcode command line tools are installed or some other C/C++ compiler).  However, you can also build APBS through the Xcode IDE with Cmake:
+This should compile the PDB2PKA wrappers necessary to interface with PDB2PQR. Note that this will also compile PROPKA supprot; this can be explicitly disabled by
 
 {% highlight bash %}
-cd ${APBS_SOURCE}/build
-cmake ..
-cmake -G "Xcode" ..
-open apbs.xcodeproj
+$ ./configure --enable-pdb2pka --disable-propka
+$ make 
+$ make install
 {% endhighlight %}
 
-#####Windows System Build
+If the compilation fails, please send a bug report.
 
-Windows is "special."  The following instructions may work for you:
+###Web server installation
 
-DOCUMENTATION COMING SOON
+All the necessary files for web server installation are available with the PDB2PQR software; however, we would appreciate if users contact us before installing a publicly-accessible version of the web server so we can ensure that you are informed of PBD2PQR updates, etc.
+<b>Note:</b> these instructions are intended for systems administrators with the ability to change the behavior of their web server software and/or install software in privileged locations. To set up a server, simply run
+
+{% highlight bash %}
+$ ./configure 
+$ make 
+$ make install 
+{% endhighlight %}
+
+By default, the server is installed in /var/www/html/pdb2pqr and the default URL is http://fully_qualified_domain_name/pdb2pqr. If the user does not have root permission, then the server is installed in ${HOME}/pdb2pqr.
+
+Configure options include
+
+- prefix -- Installation directory (e.g., /var/www/html/pdb2pqr)
+- with-url -- URL for the server (e.g., http://somedomain/pdb2pqr)
+- disable-propka -- Disable PROPKA
+- with-python -- Path to Python (e.g., /usr/local/bin/python2.5)
+- with-opal -- Enable Opal service integration pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service.Enable the APBS web interface. Must be pointing to a local APBS binary.useful programs to help process APBS input and output
+- with-apbs-opal -- Enable Opal service integration for the APBS web interface pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service. Requires simultaneous use of the --with-apbs flag, which must be pointing to a version of APBS greater than 1.0.0 (or the current SVN revision).
+
+###Troubleshooting
+
+It is highly recommended that --prefix and --with-url point to the same directory. Specifying --prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test is recommened. On the other hand, specifying something like --prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test is not recommened because mypdb2pqr and pdb2pqr-test are different names.
+If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI<code> in the <code><Directory "/var/www/html"> section of the Apache configuration file. If you modify this file, you will need to restart the web server.
