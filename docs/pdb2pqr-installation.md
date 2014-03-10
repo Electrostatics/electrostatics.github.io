@@ -13,7 +13,7 @@ permalink: /docs/pdb2pqr-installation/
 <p>Most users will likely interact with PDB2PQR through the servers listed at <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/">Web servers</a>  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
 The PDB2PQR source code can be downloaded. As the bulk of the PDB2PQR code is written Python, the PDB2PQR code itself is architecture- and compiler-independent. PDB2PQR has been tested using Python versions 2.6-2.7 and <a href="http://www.numpy.org/#older_array" target="_blank">Numeric</a> version 24.2 - problems may occur with other versions. Users who simply want to use the PDB2PQR without PROPKA or ligand parameterization support can unarchive the source code, change to the top-level source code directory, and type</p>
 
-{% highlight bash %}
+{% highlight text %}
 $ ./configure --disable-propka --disable-pdb2pka
 $ make 
 $ make install 
@@ -25,7 +25,7 @@ $ make install
 
 <p>To use PROPKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:</p>
 
-{% highlight bash %}
+{% highlight text %}
 $ ./configure
 $ make 
 $ make install
@@ -37,7 +37,7 @@ $ make install
 
 <p>PDB2PKA is the PDB2PQR library that includes both ligand parameterization and Poisson-Boltzmann-based pKa calculation routines. This code is written in C++ and Python. This portion of the code also requires the Python Numeric or NumPy package. Note that PDB2PQR has only been extensively tested against Numeric. Unlike earlier versions, PDB2PKA is enabled by default in this version. To use PDB2PKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:</p>
 
-{% highlight bash %}
+{% highlight text %}
 $ ./configure
 $ make 
 $ make install
@@ -45,7 +45,7 @@ $ make install
 
 <p>This should compile the PDB2PKA wrappers necessary to interface with PDB2PQR. Note that this will also compile PROPKA supprot; this can be explicitly disabled by</p>
 
-{% highlight bash %}
+{% highlight text %}
 $ ./configure --enable-pdb2pka --disable-propka
 $ make 
 $ make install
@@ -58,7 +58,7 @@ $ make install
 <p>All the necessary files for web server installation are available with the PDB2PQR software; however, we would appreciate if users contact us before installing a publicly-accessible version of the web server so we can ensure that you are informed of PBD2PQR updates, etc.
 <b>Note:</b> these instructions are intended for systems administrators with the ability to change the behavior of their web server software and/or install software in privileged locations. To set up a server, simply run</p>
 
-{% highlight bash %}
+{% highlight text %}
 $ ./configure 
 $ make 
 $ make install 
@@ -78,5 +78,5 @@ $ make install
 
 <h3>Troubleshooting</h3>
 
-<p>It is highly recommended that {% highlight bash %}--prefix{% endhighlight %} and {% highlight bash %}--with-url{% endhighlight %} point to the same directory. Specifying {% highlight bash %}--prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is recommened. On the other hand, specifying something like {% highlight bash %}--prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is not recommened because mypdb2pqr and pdb2pqr-test are different names.
-If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the {% highlight bash %}< Directory "/var/www/html">{% endhighlight %} section of the Apache configuration file. If you modify this file, you will need to restart the web server.</p>
+<p>It is highly recommended that {% highlight text %}--prefix{% endhighlight %} and {% highlight text %}--with-url{% endhighlight %} point to the same directory. Specifying {% highlight text %}--prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is recommened. On the other hand, specifying something like {% highlight text %}--prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test{% endhighlight %} is not recommened because mypdb2pqr and pdb2pqr-test are different names.
+If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the {% highlight text %}< Directory "/var/www/html">{% endhighlight %} section of the Apache configuration file. If you modify this file, you will need to restart the web server.</p>
