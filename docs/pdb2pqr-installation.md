@@ -10,7 +10,7 @@ permalink: /docs/pdb2pqr-installation/
 
 ### Overview
 
-Most users will likely interact with PDB2PQR through the servers listed at [Web servers](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/).  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
+Most users will likely interact with PDB2PQR through the servers listed at <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/">Web servers  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
 The PDB2PQR source code can be downloaded. As the bulk of the PDB2PQR code is written Python, the PDB2PQR code itself is architecture- and compiler-independent. PDB2PQR has been tested using Python versions 2.6-2.7 and <a href="http://www.numpy.org/#older_array" target="_blank">Numeric</a> version 24.2 - problems may occur with other versions. Users who simply want to use the PDB2PQR without PROPKA or ligand parameterization support can unarchive the source code, change to the top-level source code directory, and type
 
 {% highlight bash %}
@@ -66,16 +66,16 @@ $ make install
 
 By default, the server is installed in /var/www/html/pdb2pqr and the default URL is http://fully_qualified_domain_name/pdb2pqr. If the user does not have root permission, then the server is installed in ${HOME}/pdb2pqr.
 
-Configure options include
-
-- prefix -- Installation directory (e.g., /var/www/html/pdb2pqr)
-- with-url -- URL for the server (e.g., http://somedomain/pdb2pqr)
-- disable-propka -- Disable PROPKA
-- with-python -- Path to Python (e.g., /usr/local/bin/python2.5)
-- with-opal -- Enable Opal service integration pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service.Enable the APBS web interface. Must be pointing to a local APBS binary.useful programs to help process APBS input and output
-- with-apbs-opal -- Enable Opal service integration for the APBS web interface pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service. Requires simultaneous use of the --with-apbs flag, which must be pointing to a version of APBS greater than 1.0.0 (or the current SVN revision).
+Configure options include:
+<ul>
+<li>- with-url -- URL for the server (e.g., http://somedomain/pdb2pqr)</li>
+<li>- disable-propka -- Disable PROPKA</li>
+<li>- with-python -- Path to Python (e.g., /usr/local/bin/python2.5)</li>
+<li>- with-opal -- Enable Opal service integration pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service.Enable the APBS web interface. Must be pointing to a local APBS binary.useful programs to help process APBS input and output</lI>
+<li>- with-apbs-opal -- Enable Opal service integration for the APBS web interface pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service. Requires simultaneous use of the --with-apbs flag, which must be pointing to a version of APBS greater than 1.0.0 (or the current SVN revision).</li>
+</ul>
 
 ###Troubleshooting
 
 It is highly recommended that --prefix and --with-url point to the same directory. Specifying --prefix=/var/www/html/pdb2pqr-test --with-url=http://somedomain/pdb2pqr-test is recommened. On the other hand, specifying something like --prefix=/var/www/html/mypdb2pqr --with-url=http://somedomain/pdb2pqr-test is not recommened because mypdb2pqr and pdb2pqr-test are different names.
-If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI<code> in the <code><Directory "/var/www/html"> section of the Apache configuration file. If you modify this file, you will need to restart the web server.
+If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the <Directory "/var/www/html"> section of the Apache configuration file. If you modify this file, you will need to restart the web server.
