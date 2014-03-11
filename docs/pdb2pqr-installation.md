@@ -10,86 +10,88 @@ permalink: /docs/pdb2pqr-installation/
 
 <h3>Overview</h3>
 
-<p>Most users will likely interact with PDB2PQR through the servers listed at <a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/downloads/">Web servers</a>  However, it is also possible to install local versions of PDB2PQR. These local installations not only provide a web server but also give a command line version of the PDB2PQR software that can be customized through a variety of extensions.
-The PDB2PQR source code can be downloaded. As the bulk of the PDB2PQR code is written Python, the PDB2PQR code itself is architecture- and compiler-independent. PDB2PQR has been tested using Python versions 2.6-2.7 and <a href="http://www.numpy.org/#older_array" target="_blank">Numeric</a> version 24.2 - problems may occur with other versions. Users who simply want to use the PDB2PQR without PROPKA or ligand parameterization support can unarchive the source code, change to the top-level source code directory, and type</p>
+<p>Installation on most systems is rather straightforward - as the bulk of the PDB2PQR code is written in Python, the PDB2PQR code itself is architecture/compiler independent. PDB2PQR has been tested using Python versions 2.6 through 2.7 - problems will occur with other versions.
+
+If you would like to enable pdb2pka or ligand support, then you must have <a href="http://numpy.scipy.org/">Numpy</a> installed.</p>
+
+<h3>Configuration and Build</h3>
+
+<p>PDB2PQR will need to be configured and compiled in order to run:</p>
 
 {% highlight text %}
-$ ./configure --disable-propka --disable-pdb2pka
-$ make 
-$ make install 
+$ python scons/scons.py (see python scons/scons.py --help for more options)
 {% endhighlight %}
 
-<p>or skip the configure/make process altogether.</p>
+<p>This should configure pdb2pqr and compile the pdb2pka wrappers necessary to interface with PDB2PQR and ligand support.</p>
 
-<h3>PROPKA Support</h3>
+<h3>Configuration File</h3>
 
-<p>To use PROPKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:</p>
+<p>Compilation and installation can be configured by editing the build_config.py file. This is the preferred way to configure the program.
+Instructions and examples for each setting are included in the file.</p>
+
+<h3>Configuration Command Line Parameters</h3>
+
+<p>These will override any setting in build_config.py.</p>
 
 {% highlight text %}
-$ ./configure
-$ make 
-$ make install
+PREFIX=<DIR>                    Set install directory. Default is ~/pdb2pqr
+URL=<URL>                   Set url for the website.  Default http://<COMPUTER NAME>/pdb2pqr/
+APBS=<APBS_BINARY>            Location of APBS binary.
+OPAL=<OPAL_URL>             Set URL for Opal service
+APBS_OPAL=<APBS_OPAL_URL>       Set URL for APBS Opal service.
+MAX_ATOMS=<MAX_ATOMS>           Sets the maximum number of atoms in a protein for non-Opal job submission. Only affects web tools. Default is 10000
+BUILD_PDB2PKA=False           Disable pkb2pka compilation. Needed if no C++ compiler is installed or numpy is not installed. pdb2pka is required for ligand support.
 {% endhighlight %}
 
-<p>This should compile the PROPKA wrappers necessary to interface with PDB2PQR. If the compilation fails, please send a bug report.</p>
+<h3>Installation</h3>
 
-<h3>PDB2PKA Support</h3>
-
-<p>PDB2PKA is the PDB2PQR library that includes both ligand parameterization and Poisson-Boltzmann-based pKa calculation routines. This code is written in C++ and Python. This portion of the code also requires the Python Numeric or NumPy package. Note that PDB2PQR has only been extensively tested against Numeric. Unlike earlier versions, PDB2PKA is enabled by default in this version. To use PDB2PKA with PDB2PQR, a three step installation is necessary, making use of available C and Fortran compilers:</p>
+<p>Installing is only needed if you plan to set up the web service or to make the install available to all users. The installation location is specified by the PREFIX setting above.</p>
 
 {% highlight text %}
-$ ./configure
-$ make 
-$ make install
+$ python scons/scons.py install
 {% endhighlight %}
 
-<p>This should compile the PDB2PKA wrappers necessary to interface with PDB2PQR. Note that this will also compile PROPKA supprot; this can be explicitly disabled by</p>
+<h3>Using a different python.</h3>
 
-{% highlight text %}
-$ ./configure --enable-pdb2pka --disable-propka
-$ make 
-$ make install
-{% endhighlight %}
-
-<p>If the compilation fails, please send a bug report.</p>
-
-<h3>Web server installation</h3>
-
-<p>All the necessary files for web server installation are available with the PDB2PQR software; however, we would appreciate if users contact us before installing a publicly-accessible version of the web server so we can ensure that you are informed of PBD2PQR updates, etc.
-<b>Note:</b> these instructions are intended for systems administrators with the ability to change the behavior of their web server software and/or install software in privileged locations. To set up a server, simply run</p>
-
-{% highlight text %}
-$ ./configure 
-$ make 
-$ make install 
-{% endhighlight %}
-
-<p>By default, the server is installed in /var/www/html/pdb2pqr and the default URL is http://fully_qualified_domain_name/pdb2pqr. If the user does not have root permission, then the server is installed in ${HOME}/pdb2pqr.</p>
-
-<p>Configure options include:</p>
-
-<ul>
-<li>- with-url -- URL for the server (e.g., http://somedomain/pdb2pqr)</li>
-<li>- disable-propka -- Disable PROPKA</li>
-<li>- with-python -- Path to Python (e.g., /usr/local/bin/python2.5)</li>
-<li>- with-opal -- Enable Opal service integration pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service.Enable the APBS web interface. Must be pointing to a local APBS binary.useful programs to help process APBS input and output</li>
-<li>- with-apbs-opal -- Enable Opal service integration for the APBS web interface pointing to the remote clusters available at NBCR; optionally specify a URL for an alternate remote Opal service. Requires simultaneous use of the --with-apbs flag, which must be pointing to a version of APBS greater than 1.0.0 (or the current SVN revision).</li>
-</ul>
-
-<h3>Troubleshooting</h3>
-
-It is highly recommended that `--prefix` and `--with-url` point to the same directory. Specifying
-{% highlight bash %}
---prefix=/var/www/html/pdb2pqr-test
---with-url=http://somedomain/pdb2pqr-test
-{% endhighlight %}
-
-is recommened. On the other hand, specifying something like
+pdb2pqr will be configured to use whichever python was used to run the build script.
+If you would like to use a different installed python to run pdb2pqr run the scons/scons.py script with that python. For example:
 
 {% highlight bash%}
---prefix=/var/www/html/mypdb2pqr
---with-url=http://somedomain/pdb2pqr-test
+$ /opt/python27/python scons/scons.py 
 {% endhighlight %}
 
-is not recommened because mypdb2pqr and pdb2pqr-test are different names.
-If the server interface loads fine, but you cannot execute pdb2pqr by clicking the "Submit" button, make sure you have the permission to execute pdb2pqr.cgi file. In particular, ensure that the access mode of pdb2pqr.cgi allows execution by the webserver (e.g., chmod +x /var/www/html/pdb2pqr/pdb2pqr.cgi). Additionally, you may need to change the configuration of your webserver to enable CGI execution. For the Apache webserver, this involves editing httpd.conf to add ExecCGI to the option list for your server. In some installations, this may be as simple as adding a line like Options Indexes FollowSymLinks ExecCGI in the `< Directory "/var/www/html" >` section of the Apache configuration file. If you modify this file, you will need to restart the web server.
+If ligand support is required Numpy must be installed on the python used to build pdb2pqr.
+
+<h3>Windows Support</h3>
+
+Compilation of pdb2pka on Windows requires that mingw32 and msys be installed along with the gcc C++ compiler. Compilation with Visual Studio is not currently supported. Use MinGW-Get to install mingw. During installation select "C++ Compiler" and "MinGW Developer ToolKit" <a href="http://www.mingw.org/">http://www.mingw.org/</a>
+
+<h3>Numpy</h3>
+
+If numpy cannot be installed directly on the python used to run pdb2pqr you can either install numpy for your local user account or use virtualenv. Homebrew may be an option on OSX. <a href="http://docs.python.org/2/install/index.html#alternate-installation">http://docs.python.org/2/install/index.html#alternate-installation</a> <a href="http://stackoverflow.com/questions/7465445/how-to-install-python-modules-without-root-access">http://stackoverflow.com/questions/7465445/how-to-install-python-modules-without-root-access</a> <a href="http://www.virtualenv.org">http://www.virtualenv.org</a>
+
+<h3>Binary Builds</h3>
+
+A PyInstaller spec file is included if a stand alone binary build (no python install or compile required to run) is desired. <a href="http://www.pyinstaller.org/">http://www.pyinstaller.org/</a>
+
+PyInstaller 2.1 or newer installed as python library is required. To create standalone build, first build the application as normal then run
+
+{% highlight bash%}
+pyinstaller pdb2pqr.spec
+{% endhighlight %}
+
+in the root archive folder. The distributable program will be in the dist/pdb2pqr folder.
+
+Each supported platform has different needs when creating the binary build:
+
+<h4>Windows</h4>
+
+On windows pywin32 is required.
+
+<h4>Linux</h4>
+
+The built binaries will dynamically link against the system standard libs. For this reason the Linux binaries should be built on an older system to increase compatibility if needed.
+
+<h4>OSX</h4>
+
+On the Mac you must use homebrew and use the python that it installs with brew python. See <a href="http://brew.sh/">http://brew.sh/</a> and <a href="https://github.com/Homebrew/homebrew/wiki/Homebrew-and-Python">https://github.com/Homebrew/homebrew/wiki/Homebrew-and-Python</a>. Once homebrew python is setup and configured correctly pyinstaller and numpy can be installed with `pip install numpy` and `pip install pyinstaller`. If the global python is used the binary will fail when the `--ligand` option is used. Similar to Linux, this binary is dynamically linked against the system libraries. The binary will not work on OSX older than the version built on. We officially support OSX 10.6 or newer.
