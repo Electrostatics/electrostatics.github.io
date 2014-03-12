@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: APBS FAQ
+title: FAQ
 prev_section: apbs-programmers
 next_section: apbs-utilities
 permalink: /docs/apbs-faq/

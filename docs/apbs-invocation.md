@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: APBS Invocation
+title: Invocation
 prev_section: apbs-overview
 next_section: apbs-others
 permalink: /docs/apbs-invocation/

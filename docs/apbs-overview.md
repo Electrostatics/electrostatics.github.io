@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: APBS Input Files
+title: Input Files
 prev_section: usage
 next_section: pdb2pqr-overview
 permalink: /docs/apbs-overview/
