@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Visualizing Results
-prev_section: usage
-next_section: pdb2pqr-overview
+prev_section: calculating
+next_section: apbs-installation
 permalink: /docs/visualizing-results/
 ---
