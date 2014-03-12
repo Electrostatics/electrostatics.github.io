@@ -36,7 +36,7 @@ Once your downloads are completed, you must complete the [installation]({{ site.
 ### APBS downloads
 
 <p>Both binary executables and source code are available for APBS.
-The best way to acquire APBS is to <a href="http://goo.gl/HkN4kj" target="_blank" ><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.
+The best way to acquire APBS is to <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" ><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.
 <!-- TODO:  Add link to usage section -->
 If you download the binary version of APBS, you can use it directly as outlined elsewhere in this manual.
 <!-- TODO:  Add link to compilation instructions -->
@@ -45,7 +45,7 @@ If you download the source code version of APBS, please follow the compilation a
 ### PDB2PQR downloads
 
 <p>PDB2PQR is currently available in source code form. 
-The best way to acquire PDB2PQR is to <a href="http://goo.gl/HkN4kj" target="_blank"><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.</p>
+The best way to acquire PDB2PQR is to <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank"><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.</p>
 <!-- TODO:  Add link to compilation instructions -->
 After downloading PDB2PQR, please follow the compilation and installation instructions outlined in this manual.
 <!-- TODO:  Add link to usage section -->
