@@ -2,7 +2,7 @@
 layout: docs
 title: Accessing the Software
 prev_section: home
-next_section: installation
+next_section: structures-ready
 permalink: /docs/downloads/
 ---
 

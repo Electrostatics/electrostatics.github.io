@@ -9,12 +9,12 @@ permalink: /docs/structures-ready/
 ##Basic workflow
 
 
-##Using PDB2PQR through:
+###Using PDB2PQR through:
 
-###Web
+####Web
 Insert information on usage through web here
 
-###Command Line
+####Command Line
 Insert information on usage through command line here
 
 
