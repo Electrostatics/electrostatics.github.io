@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Using APBS with other programs
+title: Using with other programs
 prev_section: apbs-invocation
 next_section: apbs-programmers
 permalink: /docs/apbs-others/
