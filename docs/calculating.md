@@ -1,7 +1,9 @@
 ---
 layout: docs
 title: Calculating Electrostatics
-prev_section: usage
-next_section: pdb2pqr-overview
+prev_section: structures-ready
+next_section: visualizing-results
 permalink: /docs/calculating/
 ---
+
+Calculating and visualizing 
