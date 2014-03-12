@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Downloads &amp; web servers
+title: Accessing the Software
 prev_section: home
 next_section: installation
 permalink: /docs/downloads/
