@@ -8,7 +8,7 @@ permalink: /docs/reading-list/
 
 Suggested Readings from the APBS team
 
--[Insert Title of Paper](Insert link to paper here)
--[Insert Title of Paper](Insert link to paper here)
--[Insert Title of Paper](Insert link to paper here)
--[Insert Title of Paper](Insert link to paper here)
+1.) [Insert Title of Paper](Insert link to paper here)
+2.) [Insert Title of Paper](Insert link to paper here)
+3.) [Insert Title of Paper](Insert link to paper here)
+4.) [Insert Title of Paper](Insert link to paper here)
