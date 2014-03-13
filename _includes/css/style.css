@@ -462,7 +462,7 @@ aside li.current a:before {
 /* Documentation */
 
 .docs article {
-  min-height: 800px;
+  min-height: 1275px;
 }
 
 .docs .content {
