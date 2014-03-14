@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Installation
-prev_section: usage
-next_section: pdb2pqr-overview
+prev_section: visualizing-results
+next_section: usage
 permalink: /docs/apbs-installation/
 ---
 

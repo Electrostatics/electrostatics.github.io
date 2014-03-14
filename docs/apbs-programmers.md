@@ -1,8 +1,8 @@
 ---
 layout: docs
 title: Programmer's Guide
-prev_section: apbs-overview
-next_section: pdb2pqr-overview
+prev_section: apbs-others
+next_section: apbs-faq
 permalink: /docs/apbs-programmers/
 ---
 

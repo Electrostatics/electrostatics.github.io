@@ -2,7 +2,7 @@
 layout: docs
 title: Input Files
 prev_section: usage
-next_section: pdb2pqr-overview
+next_section: apbs-invocation
 permalink: /docs/apbs-overview/
 ---
 
