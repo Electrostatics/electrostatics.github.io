@@ -22,14 +22,11 @@ permalink: /docs/reading-list/
 
 * Baker NA, Sept D, Joseph S, Holst MJ, McCammon JA. Electrostatics of nanosystems: application to microtubules and the ribosome. Proc Natl Acad Sci USA, 98, 10037-41, 2001. [http://dx.doi.org/10.1073/pnas.181342398](http://dx.doi.org/10.1073/pnas.181342398)
 
-<h3>APBS parallel finite element solver</h3>
+### APBS parallel finite element solver
 
-<ol>
-<li>Holst M, Baker NA, Wang F. <a href="http://dx.doi.org/10.1002/1096-987X(20001130)21:15<1319::AID-JCC1>3.0.CO;2-8">Adaptive multilevel finite element solution of the Poisson-Boltzmann equation I: algorithms and examples</a>. J Comput Chem, 21, 1319-42, 2000.</li>
-
-<li>Baker N, Holst M, Wang F. <a href="http://dx.doi.org/10.1002/1096-987X(20001130)21:15<1343::AID-JCC2>3.0.CO;2-K">Adaptive multilevel finite element solution of the Poisson-Boltzmann equation II: refinement schemes based on solvent accessible surfaces</a>. J Comput Chem, 21, 1343-52, 2000.</li>
-<li>Baker NA, Sept D, Holst MJ, McCammon JA. <a href="http://dx.doi.org/10.1147/rd.453.0427](http://dx.doi.org/10.1147/rd.453.0427">The adaptive multilevel finite element solution of the Poisson-Boltzmann equation on massively parallel computers</a>. IBM J Res Devel, 45, 427-38, 2001.</li>
-</ol>
+* Holst M, Baker NA, Wang F. Adaptive multilevel finite element solution of the Poisson-Boltzmann equation I: algorithms and examples. J Comput Chem, 21, 1319-42, 2000. [http://dx.doi.org/10.1002/1096-987X(20001130)21:15<1319::AID-JCC1>3.0.CO;2-8](http://bit.ly/1goFAFE)
+* Baker N, Holst M, Wang F. Adaptive multilevel finite element solution of the Poisson-Boltzmann equation II: refinement schemes based on solvent accessible surfaces. J Comput Chem, 21, 1343-52, 2000. [http://dx.doi.org/10.1002/1096-987X(20001130)21:15<1343::AID-JCC2>3.0.CO;2-K](http://bit.ly/1dNSP8l)
+* Baker NA, Sept D, Holst MJ, McCammon JA. The adaptive multilevel finite element solution of the Poisson-Boltzmann equation on massively parallel computers. IBM J Res Devel, 45, 427-38, 2001. [http://dx.doi.org/10.1147/rd.453.0427](http://dx.doi.org/10.1147/rd.453.0427)
 
 ### APBS geometric flow solver
 
