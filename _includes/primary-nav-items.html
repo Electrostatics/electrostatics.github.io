@@ -1,15 +1,15 @@
 <ul>
 	<li class="{% if page.overview %}current{% endif %}">
-		<a href="http://electrostatics.github.io/apbs-pdb2pqr/">Overview</a>
+		<a href="{{ site.url }}/">Overview</a>
 	</li>
 	<li class="{% if page.url contains '/docs/' %}current{% endif %}">
-		<a href="http://electrostatics.github.io/apbs-pdb2pqr/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
+		<a href="{{ site.url }}/docs/home/">Doc<span class="show-on-mobiles">s</span><span class="hide-on-mobiles">umentation</span></a>
 	</li>
 	<li class="{% if page.author %}current{% endif %}">
-		<a href="http://electrostatics.github.io/apbs-pdb2pqr/news/">News</a>
+		<a href="{{ site.url }}/news/">News</a>
 	</li>
 	<li class="{% if page.url contains '/support/' %}current{% endif %}">
 		<!-- TODO:  Modeled off of docs/ directory; need to populate -->
-		<a href="http://electrostatics.github.io/apbs-pdb2pqr/support/home/">Support</a>
+		<a href="{{ site.url }}/support/home/">Support</a>
 	</li>
 </ul>
