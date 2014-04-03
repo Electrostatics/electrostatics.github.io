@@ -37,7 +37,7 @@ svg {
 /* Sections */
 
 body > header, body > section, body > footer {
-  width: 960px;
+  width: 100%;
   margin: 0 auto;
   text-align: center;
   clear: both;
