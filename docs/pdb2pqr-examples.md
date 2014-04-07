@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: FAQ
+title: Examples
 prev_section: pdb2pqr-faq
 next_section: viz-overview
 permalink: /docs/pdb2pqr-examples/
