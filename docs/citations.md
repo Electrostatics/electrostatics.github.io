@@ -28,6 +28,6 @@ Please acknowledge your use of the Holst group software by citing:
 - M. Holst and F. Saied, Multigrid solution of the Poisson-Boltzmann equation. J. Comput. Chem. 14, 105-113, 1993.
 - M. Holst and F. Saied, Numerical solution of the nonlinear Poisson-Boltzmann equation: Developing more robust and efficient methods. J. Comput. Chem. 16, 337-364, 1995.
 for PMG (the multigrid solver) or
-- M. Holst, Adaptive numerical treatment of elliptic systems on manifolds. Advances in Computational Mathematics 15, 139-191, 2001. [(Link)](http://dx.doi.org/10.1023/A:1014246117321).
+- M. Holst, Adaptive numerical treatment of elliptic systems on manifolds. Advances in Computational Mathematics 15, 139-191, 2001 [(Link)](http://dx.doi.org/10.1023/A:1014246117321).
 - R. Bank and M. Holst, A New Paradigm for Parallel Adaptive Meshing Algorithms. SIAM Review 45, 291-323, 2003. [(Link)](http://epubs.siam.org/doi/abs/10.1137/S003614450342061) for FEtk (the finite element solver).
 
