@@ -66,7 +66,7 @@ Mixing things up a little bit from above, we're now ready to look at the 1HPV cr
 - 3.) Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded here. You can select other options as well, if interested.
 - 4.) Hit the "Submit" button.
 
-<p>Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P81 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB file and compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.</p>
+Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P81 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB file and compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.
 
 #### L-Arabinose binding protein (1ABF)
 
@@ -77,7 +77,7 @@ Our next example uses PDB structure 1ABF of L-arabinose binding protein in compl
 - 3.) Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded here. You can select other options as well, if interested.
 - 4.) Hit the "Submit" button.
 
-<p>Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P66, K295, and K306 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB fileand compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.</p>
+Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P66, K295, and K306 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB fileand compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.
 
 ## Running APBS through the PDB2PQR web portal
 
@@ -90,8 +90,6 @@ The PDB2PQR web portal provides support for the execution of PDB2PQR and APBS as
 We'll perform this example with Fusarium solani cutinase (PDB ID 1CUS) a lipolytic enzyme with a catalytic serine accessible to solvent.
 First go to the PDB2PQR web portal, enter a PDB ID or upload a PDB file, choose your options for PDB2PQR, then click "Submit"
 
-<img src="https://cafae144-a-45666b79-s-sites.googlegroups.com/a/poissonboltzmann.org/software/pdb2pqr/examples/running-apbs-through-the-pdb2pqr-web-portal/Picture%201.png?attachauth=ANoY7cqnz3W62XJNlFw3CmgOgziJrUaPz6sPb15P3txpF1LsLbcieIASd-U5Hc_kw0Zyj4Y9UyXjfYodJmXFiEEcDTw1szxuRtw715Odpr63oBl3tQB-tsxZAH-xYRSCvcxdB6gTD_oksX7MDud3yO2q0oTFPfOinHbhSo_P1xwwysnmKc-TZ4LZaLZU2cQvyQOqSbFl93ZRjQW6XPHaA49oe9Wb4WBYFEI09-NPkP547e3-IvmL1711aXdiIow9iUFAkjYbJDN-nr8e8m2qvGSkFAemXYxJ68eVGhRrxMGbQ8AKcUffld4%3D&attredirects=0">
+![pdb2pqr img 1](https://cafae144-a-45666b79-s-sites.googlegroups.com/a/poissonboltzmann.org/software/pdb2pqr/examples/running-apbs-through-the-pdb2pqr-web-portal/Picture%201.png?attachauth=ANoY7cqnz3W62XJNlFw3CmgOgziJrUaPz6sPb15P3txpF1LsLbcieIASd-U5Hc_kw0Zyj4Y9UyXjfYodJmXFiEEcDTw1szxuRtw715Odpr63oBl3tQB-tsxZAH-xYRSCvcxdB6gTD_oksX7MDud3yO2q0oTFPfOinHbhSo_P1xwwysnmKc-TZ4LZaLZU2cQvyQOqSbFl93ZRjQW6XPHaA49oe9Wb4WBYFEI09-NPkP547e3-IvmL1711aXdiIow9iUFAkjYbJDN-nr8e8m2qvGSkFAemXYxJ68eVGhRrxMGbQ8AKcUffld4%3D&attredirects=0)
 
 On the PDB2PQR result page, click bottom link to run APBS with your results.
-
-<img src="https://cafae144-a-45666b79-s-sites.googlegroups.com/a/poissonboltzmann.org/software/pdb2pqr/examples/running-apbs-through-the-pdb2pqr-web-portal/Picture%202.png?attachauth=ANoY7cp6NsVPVyXUY4isxgAi1JKFyDRbHJF-MVVIIfnYEYy_Fdczmrtrjb6wACI5Na4nVUhFTkSQSW2zJB9vPi9_eVfMv27c2jROtySTRrPsl_QJJE0VoWpwtbqz4H33Yk3b664dvEPiRqg1OrZ3uMJ9S5wrIMlUZxEHxuiWboV7cnjDnsdOERE2GZwnY_2mJSlWp3uTf1P88_oSx-1p1Q4GS1x13ujms-Yi6rprWwnsSy0UBNpGzlA-rYCI3rvITWfbhsFLO_OqLt3rS-nIks4xcezACxOyNQVWgQ1rXpLwKU76jqC1PjA%3D&attredirects=0">
