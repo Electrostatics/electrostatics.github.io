@@ -1,9 +1,9 @@
 ---
 layout: docs
-title: Citations
+title: Citing
 prev_section: troubleshooting
 next_section: contributing
-permalink: /docs/citations/
+permalink: /docs/citing/
 ---
 
 ##Citing your use of PDB2PQR
