@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Contributing
-prev_section: troubleshooting
+prev_section: citations
 next_section: history
 permalink: /docs/contributing/
 ---

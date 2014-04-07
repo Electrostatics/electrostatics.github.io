@@ -1,6 +1,8 @@
 ---
 layout: docs
 title: Troubleshooting
+prev_section: contributors
+next_section: citations
 permalink: /docs/troubleshooting/
 ---
 
