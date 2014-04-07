@@ -133,3 +133,23 @@ Please be patient and wait until the visualization applet is fully loaded.
 </a></p>
 
 ±5 kT/e electrostatic potential of 1CUS rendered on the molecular surface. Figure made through Jmol.
+
+#### Offline rendering with POV-Ray
+
+Jmol also has the ability to generate scenes for higher-quality offline rendering with POV-Ray. This is particularly useful for transforming the images you generate with Jmol via the PDB2PQR web server into high-resolution figures for publication.  These instructions assume that you have POV-Ray installed.
+
+Set up the scene in Jmol to look the way you would like the rendered image to appear.
+
+Right click on the Jmol window and select File -> Export POV-Ray Image.
+
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/jmol-povray1.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/jmol-povray1.png?raw=true" />
+</a></p>
+
+Save the resulting *.pov and *.pov.ini file in the same directory.
+
+Run POV-Ray and load up the *.pov.ini file.  You may wish to edit some of the options in the file (particularly "Width" and "Height" to change resolution) to customize the rendering.
+
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/povray.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/povray.png?raw=true" />
+</a></p>
