@@ -131,3 +131,5 @@ Please be patient and wait until the visualization applet is fully loaded.
 <p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture7.png?raw=true">
 	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture7.png?raw=true" />
 </a></p>
+
+±5 kT/e electrostatic potential of 1CUS rendered on the molecular surface. Figure made through Jmol.
