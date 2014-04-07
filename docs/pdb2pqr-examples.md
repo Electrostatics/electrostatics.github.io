@@ -102,3 +102,14 @@ On the PDB2PQR result page, click bottom link to run APBS with your results.
 	<a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture2.png?raw=true">
 		<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture2.png?raw=true" />
 	</a></p>
+
+#### Performing the electrostatics calculation
+
+On the APBS web solver page, click "Launch" to use default parameters for APBS calculation; or, if you prefer to run APBS with custom parameters, check the check box and make your own selections.
+
+<p>
+<a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/APBS_options.png?raw=true">
+<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/APBS_options.png?raw=true" />
+</a></p>
+
+Wait until the calculation is complete, click the bottom link to visualize your results.
