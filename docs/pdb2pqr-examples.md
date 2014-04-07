@@ -113,3 +113,21 @@ On the APBS web solver page, click "Launch" to use default parameters for APBS c
 </a></p>
 
 Wait until the calculation is complete, click the bottom link to visualize your results.
+
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture5.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture5.png?raw=true" />
+</a></p>
+
+#### Visualizing the electrostatic potential
+
+Configure your visualization, then click "Submit"
+
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Visualization_configuration.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Visualization_configuration.png?raw=true" />
+</a></p>
+
+Please be patient and wait until the visualization applet is fully loaded.
+
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture7.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture7.png?raw=true" />
+</a></p>
