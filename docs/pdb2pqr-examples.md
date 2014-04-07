@@ -10,7 +10,7 @@ permalink: /docs/pdb2pqr-examples/
 
 #### Introduction
 
-<p>Interested users should read <a target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1002/prot.20660/abstract">Li H, Robertson AD, Jensen JH. Very Fast Empirical Prediction and Rationalization of Protein pKa Values. Proteins, 61, 704-721 (2005)</a>. for a much more complete description and analysis of titration state assignment usingPROPKA. The examples here are taken from this paper. Nearly all of these examples can be reproduced using PDB2PQR/PROPKA, we give a single example here for demonstration purposes.</p>
+<p>Interested users should read <a target="_blank" href="http://onlinelibrary.wiley.com/doi/10.1002/prot.20660/abstract">Li H, Robertson AD, Jensen JH. Very Fast Empirical Prediction and Rationalization of Protein pKa Values. Proteins, 61, 704-721 (2005)</a>. for a much more complete description and analysis of titration state assignment using PROPKA. The examples here are taken from this paper. Nearly all of these examples can be reproduced using PDB2PQR/PROPKA, we give a single example here for demonstration purposes.</p>
 
 #### HIV-1 protease (1HPX)
 
@@ -142,8 +142,12 @@ Set up the scene in Jmol to look the way you would like the rendered image to ap
 
 Right click on the Jmol window and select File -> Export POV-Ray Image.
 
-
 <p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/jmol-povray1.png?raw=true">
 	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/jmol-povray1.png?raw=true" />
 </a></p>
+
+Save the resulting *.pov and *.pov.ini file in the same directory.
+
+Run POV-Ray and load up the *.pov.ini file.  You may wish to edit some of the options in the file (particularly "Width" and "Height" to change resolution) to customize the rendering.
+
 
