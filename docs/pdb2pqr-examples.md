@@ -146,8 +146,10 @@ Right click on the Jmol window and select File -> Export POV-Ray Image.
 	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/jmol-povray1.png?raw=true" />
 </a></p>
 
-Save the resulting *.pov and *.pov.ini file in the same directory.
+Save the resulting `*.pov` and `*.pov.ini` file in the same directory.
 
-Run POV-Ray and load up the *.pov.ini file.  You may wish to edit some of the options in the file (particularly "Width" and "Height" to change resolution) to customize the rendering.
+Run POV-Ray and load up the `*.pov.ini` file.  You may wish to edit some of the options in the file (particularly "Width" and "Height" to change resolution) to customize the rendering.
 
-
+<p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/povray.png?raw=true">
+	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/povray.png?raw=true" />
+</a></p>
