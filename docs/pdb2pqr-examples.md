@@ -90,6 +90,6 @@ The PDB2PQR web portal provides support for the execution of PDB2PQR and APBS as
 We'll perform this example with Fusarium solani cutinase (PDB ID 1CUS) a lipolytic enzyme with a catalytic serine accessible to solvent.
 First go to the PDB2PQR web portal, enter a PDB ID or upload a PDB file, choose your options for PDB2PQR, then click "Submit"
 
-![pdb2pqr img 1](https://cafae144-a-45666b79-s-sites.googlegroups.com/a/poissonboltzmann.org/software/pdb2pqr/examples/running-apbs-through-the-pdb2pqr-web-portal/Picture%201.png?attachauth=ANoY7cqnz3W62XJNlFw3CmgOgziJrUaPz6sPb15P3txpF1LsLbcieIASd-U5Hc_kw0Zyj4Y9UyXjfYodJmXFiEEcDTw1szxuRtw715Odpr63oBl3tQB-tsxZAH-xYRSCvcxdB6gTD_oksX7MDud3yO2q0oTFPfOinHbhSo_P1xwwysnmKc-TZ4LZaLZU2cQvyQOqSbFl93ZRjQW6XPHaA49oe9Wb4WBYFEI09-NPkP547e3-IvmL1711aXdiIow9iUFAkjYbJDN-nr8e8m2qvGSkFAemXYxJ68eVGhRrxMGbQ8AKcUffld4%3D&attredirects=0 =400x)
+![pdb2pqr img 1](https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/9eef3d85f154ec1434fc5a9e66d908c789c8735b/img/Picture1.png =400x)
 
 On the PDB2PQR result page, click bottom link to run APBS with your results.
