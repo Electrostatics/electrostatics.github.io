@@ -95,3 +95,5 @@ First go to the PDB2PQR web portal, enter a PDB ID or upload a PDB file, choose 
 <img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/9eef3d85f154ec1434fc5a9e66d908c789c8735b/img/Picture1.png" />
 </a>
 </p>
+
+On the PDB2PQR result page, click bottom link to run APBS with your results.
