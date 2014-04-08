@@ -43,5 +43,5 @@ Running PDB2PQR with the same options shown above can be performed with the foll
 
 ### Notes on PDB2PQR
 - PDB2PQR was ported to Python by Todd Dolinsky while working with Nathan Baker at Washington University in St. Louis. The PDB2PQR code is based on C++ design and algorithms by Jens Erik Nielsen. PDB2PQR was originally designed to facilitate structure preparation for APBS.
-- PDB2PQR uses PROPKA to determine protein pKa values. PROPKA is developed by the Jensen Research Group at the University of Copenhagen. More information about PROPKA can be found at http://propka.ki.ku.dk/.
+- PDB2PQR uses PROPKA to determine protein pKa values. PROPKA is developed by the Jensen Research Group at the University of Copenhagen. More information about PROPKA can be found at [http://propka.ki.ku.dk/](http://propka.ki.ku.dk/).
 - PEOE_PB charges for ligand parameterization were developed by Paul Czodrowski in the Klebe Group at the Philipps University Marburg.
