@@ -22,7 +22,7 @@ The first method demonstrates how to use the pdb2pqr web server and the next met
 
 ## Web Server:
 
-- 1) Go to we server [http://nbcr-222.ucsd.edu/pdb2pqr_1.8/]
+- 1) Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr_1.8/)
 
 - 2) Identify your molecule:
 --	2.1) Enter the protein data bank ID
