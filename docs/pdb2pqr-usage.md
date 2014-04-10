@@ -12,6 +12,7 @@ This module takes a PDB file as input and performs optimizations before
 yielding a new PQR-style file in PQR_OUTPUT_PATH. If PDB_PATH is an ID it will
 automatically be obtained from the PDB archive.
 
-Options:
-  --version             show program's version number and exit
-  -h, --help            show this help message and exit
+<table><th>Options:</th>
+  <tr><td>--version</td><td>           show program's version number and exit</td></tr>
+  <tr><td>-h, --help</td><td>         show this help message and exit</td></tr>
+</table>
