@@ -56,5 +56,34 @@ is charged). Requires PARSE force field.</td></tr>
 	PQR file will not with APBS versions prior to 1.5</td></tr>
 </table>
 
-
+<table>
+<th>proPKA options</th>
+<tr><td>--with-ph=PH</td><td>Use propka to calculate pKas and apply them to the
+molecule given the pH value. Actual PropKa results
+will be output to output-path. propka.</td></tr>
+<tr><td>--reference=REFERENCE</td><td>Setting which reference to use for stability
+calculations. See PROPKA 3.0 documentation.</td></tr>
+<tr><td>--propka-verbose</td><td>Print extra proPKA information to stdout. WARNING:
+This produces an incredible level of output.</td></tr>
+</table>
+<table>
+<th>Extension options</th>
+<tr><td>--chi</td><td>Print the per-residue backbone chi angle to {output-
+path}.chi</td></tr>
+<tr><td>--summary</td><td>Print protein summary information to {output-
+path}.summary.</td>
+</tr>
+<tr><td>--contact</td><td>Print a list of contacts to {output-path}.con</td></tr>
+<tr><td>--newresinter</td><td>Print interaction energy between each residue pair in
+the protein to {output-path}.newresinter.</td></tr>
+<tr><td>--salt</td><td>Print a list of salt bridges to {output-path}.salt</td></tr></table>
+<table><th>Hbond extension options</th>
+<tr><td>--hbond</td><td>--hbond</td></tr>
+<tr><td>--whatif</td><td>Change hbond output to WHAT-IF format.</td></tr>
+<tr><td>--angle_cutoff=ANGLE_CUTOFF</td><td>Angle cutoff to use when creating hbond data (default 30.0)</td>
+</tr>
+<tr><td>--distance_cutoff=DISTANCE_CUTOFF</td><td>Distance cutoff to use when creating hbond data (default 3.4)</td></tr>
+<tr><td>--old_distance_method</td><td>Use distance from donor hydrogen to acceptor to
+calculate distance used with --distance_cutoff.</td></tr>
+</table>
 
