@@ -31,7 +31,7 @@ Questions Listing
 - [What is Opal?]({{site.url}}/docs/apbs-faq#opal)
 - [What is PMG?]({{site.url}}/docs/apbs-faq#pmg)
 
-<h4 id="binding-energy">How do I calculate a binding energy?</h4>
+<a name="binding-energy"></a><h4 id="binding-energy">How do I calculate a binding energy?</h4>
 <h4 id="calculate-pka">How do I calculate a pka?</h4>
 <h4 id="calculate-energy">How do I calculate a solvation energy?</h4>
 <h4 id="calculate-forces">How do I calculate solvation forces?</h4>
