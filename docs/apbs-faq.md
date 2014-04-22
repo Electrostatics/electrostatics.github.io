@@ -31,6 +31,7 @@ Questions Listing
 - [What is Opal?](#opal)
 - [What is PMG?](#pmg)
 
+
 <h4 id="binding-energy">How do I calculate a binding energy?</h4>
 
 
