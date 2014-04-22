@@ -31,9 +31,11 @@ Questions Listing
 - [What is Opal?]({{site.url}}/docs/apbs-faq#opal)
 - [What is PMG?]({{site.url}}/docs/apbs-faq#pmg)
 
-<a name="binding-energy"></a><h4 id="binding-energy">How do I calculate a binding energy?</h4>
-<h4 id="calculate-pka">How do I calculate a pka?</h4>
+<h4 id="binding-energy">How do I calculate a binding energy?</h4>
+<h4 id="calculate-pka">How do I calculate a pka?</h4>s
 <h4 id="calculate-energy">How do I calculate a solvation energy?</h4>
+APBS provides force calculations for both polar and nonpolar solvation following the same procedures used in the "<a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/how-do-i-calculate-a-solvation-energy">How do I calculate a solvation energy?</a>" section. In general, forces can be obtained by modifying input files used for solvation energy calculations to include calcforce total (for total forces on the entire solute) or calcforce comps to obtain detailed force information for each atom.  See the polar <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/cac">calcforce</a> and apolar <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/apolar-input-file-section/apolar-keywords/calcforce">calcforce</a> documentation.  For polar solvation forces, it is important to note that, like solvation energy calculations, "self-interaction" terms must be removed.
+
 <h4 id="calculate-forces">How do I calculate solvation forces?</h4>
 <h4 id="structures">How do I get my structures ready for electrostatics calculations?</h4>
 <h4 id="membrane">How do I model the inhomogeneous environment of a membrane?</h4>
