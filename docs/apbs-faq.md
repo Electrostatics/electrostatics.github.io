@@ -11,7 +11,7 @@ Note that many of the examples in this tutorial can also be run through Opal web
 
 This document is under continual construction and revision to provide up-to-date and timely examples. Many of the topics covered in the incomplete sections are also demonstrated in the examples/ directory provided with the APBS distribution.  If you have a question that isn't answered here, please visit the APBS-users mailing list. After you've looked for the answer to your question in the archive, please post it to the mailing list.
 
-Questions Listing
+Frequently Asked Questions
 - [How do I calculate a binding energy?](#binding-energy)
 - [How do I calculate a pKa?](#calculate-pka)
 - [How do I calculate a solvation energy?](#calculate-energy)
