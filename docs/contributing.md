@@ -6,7 +6,6 @@ next_section: history
 permalink: /docs/contributing/
 ---
 
-# Contributing to APBS and PDB2PQR 
 Contributions to the APBS and PDB2PQR are always welcome and can be shared through the mailing list or emailed directly to <a href="mailto:nathanandrewbaker@gmail.com">nathanandrewbaker@gmail.com</a>.
 
 # Contributors to date
@@ -23,6 +22,7 @@ The following is an alphabetical list of contributors to the APBS/PDB2PQR effort
 * Adrian Elcock:  APBS
 * Dave Gohara:  APBS
 * Michael Grabe:  APBS
+* Stephen Gradwohl:  APBS
 * Keith Fligg:  APBS
 * Tyler Harmon:  APBS
 * Yong Huang:  APBS, PDB2PQR
