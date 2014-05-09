@@ -22,17 +22,15 @@ The first method demonstrates how to use the pdb2pqr web server and the next met
 
 ## Web Server:
 
-* Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr_1.8/)
+1. Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr_1.8/)
 
-* Identify your molecule:
-  * Enter the protein data bank ID
+2. Identify your molecule:
+  * Enter the protein data bank ID or...
   * Load the protein data bank file (examples [here](http://www.rcsb.org/pdb/home/home.do))
-
 <p>
 <img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/apbs_web.png" />
 </p>
-
-* Press submit!
+3. Press submit!
 
 ## Command Line:
 
