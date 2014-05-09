@@ -43,7 +43,7 @@ from a PDB entry to a plot of structure & potential in PyMOL using APBS.
 
 Generating the PQR
 
-Please generate the PQR file using the steps outlined in the [Getting Structures Ready](structures-ready).
+Please generate the PQR file using the steps outlined in [Getting Structures Ready](structures-ready).
 We'll continue to perform the example with fasciculin-2 (PDB ID 1FAS), a snake
 neurotoxin which binds the negatively-charged acetylcholinesterase.
 
