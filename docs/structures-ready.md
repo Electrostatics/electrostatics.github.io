@@ -28,7 +28,7 @@ The first method demonstrates how to use the pdb2pqr web server and the next met
   * Enter the protein data bank ID or...
   * Load the protein data bank file (examples [here](http://www.rcsb.org/pdb/home/home.do))
 <p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/apbs_web.png" /></p>
-3. Press submit!
+* Press submit!
 
 ## Command Line:
 
