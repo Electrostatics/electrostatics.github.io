@@ -7,3 +7,5 @@ NOTE: Correct CSS directory is in the _includes directory, use other css directo
 Docs directory is in root, and uses Markdown
 
 Running PDB2PQR: http://nbcr-222.ucsd.edu/pdb2pqr
+
+[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/faf7ac19608b10a3ef5b797f3c2d78a6 "githalytics.com")](http://githalytics.com/electrostatics.github.io/apbs-pdb2pqr)
