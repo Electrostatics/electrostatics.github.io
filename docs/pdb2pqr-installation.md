@@ -10,7 +10,7 @@ permalink: /docs/pdb2pqr-installation/
 
 <h3>Overview</h3>
 
-<p>Installation on most systems is rather straightforward - as the bulk of the PDB2PQR code is written in Python, the PDB2PQR code itself is architecture/compiler independent. PDB2PQR has been tested using Python versions 2.6 through 2.7 - problems will occur with other versions.
+<p>If you choose to install PDB2PQR locally rather than accessing the Web Server, installation on most systems is rather straightforward. The bulk of the PDB2PQR code is written in Python and the PDB2PQR code itself is architecture/compiler independent. PDB2PQR has been tested using Python versions 2.6 through 2.7 - problems will occur with other versions.
 
 If you would like to enable pdb2pka or ligand support, then you must have <a href="http://numpy.scipy.org/">Numpy</a> installed.</p>
 
