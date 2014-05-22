@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Examples
+title: APBS Examples
 prev_section: pdb2pqr-examples
 next_section: viz-overview
 permalink: /docs/abps-examples/

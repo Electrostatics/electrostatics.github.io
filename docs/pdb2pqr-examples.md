@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Examples
+title: PDB2PQR Examples
 prev_section: pdb2pqr-faq
 next_section: viz-overview
 permalink: /docs/pdb2pqr-examples/
