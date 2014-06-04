@@ -1,6 +1,6 @@
 ---
-layout: docs
-title: Examples!
+layout: examples
+title: Examples
 permalink: /examples/home/
 ---
 
