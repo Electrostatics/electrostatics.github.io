@@ -1,6 +1,6 @@
 ---
 layout: examples
-title: Binding Energies
+title: Running APBS through the PDB2PQR web portal
 permalink: /examples/running_apbs_through_pdb2pqr_web_portal/
 ---
 
