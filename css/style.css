@@ -421,7 +421,7 @@ aside li {
 
 aside li a {
   font-size: 16px;
-  position: relative
+  position: relative;
   display:block !important;
   margin-bottom:30px !important;
 }
