@@ -4,9 +4,6 @@ title: Basic PDB File Operations
 permalink: /examples/basic_pdb_file_operations/
 ---
 
-
-## Basic PDB file operations
-
 #### Fasciculin-1 (1FAS)
 
 This 3-finger toxin structure is available at high resolution (1.9 Å) and has all its heavy atoms present in the PDB file. We'll use one of the PDB2PQR servers to add hydrogens to this protein and optimize their positions.
