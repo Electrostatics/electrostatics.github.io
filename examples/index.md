@@ -7,11 +7,10 @@ permalink: /examples/home/
 The following examples will help orient you in APBS/PDB2PQR.
 Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform) for an account.
 
-## What are APBS and PDB2PQR?
-
-<!-- TODO:  Add links to APBS and PDBPQR -->
-APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems.
-<!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. -->
+<div class="note">
+	<h5>Best use of examples</h5>
+	<p>Work through the examples in order, which begin with simple processes and end with advanced instances.</p>
+</div>
 
 <!---
 ## Tips, Notes, and Warnings
