@@ -1,6 +1,6 @@
 ---
 layout: examples
-title: Binding Energies
+title: Ligand Parameterization
 permalink: /examples/ligand_parameterization/
 ---
 
