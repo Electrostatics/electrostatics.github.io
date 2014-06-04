@@ -1,8 +1,6 @@
 ---
-layout: docs
+layout: examples
 title: Examples
-prev_section: news
-next_section: support
 permalink: /examples/home/
 ---
 
