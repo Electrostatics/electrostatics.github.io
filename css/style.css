@@ -422,8 +422,8 @@ aside li {
 aside li a {
   font-size: 16px;
   position: relative
-  display:block;
-  margin-bottom:30px;
+  display:block !important;
+  margin-bottom:30px !important;
 }
 
 aside li.current a:before {
