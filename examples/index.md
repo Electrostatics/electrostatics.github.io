@@ -1,7 +1,8 @@
 ---
 layout: docs
 title: Examples
-next_section: downloads
+previous_section: news
+next_section: support
 permalink: /examples/home/
 ---
 
