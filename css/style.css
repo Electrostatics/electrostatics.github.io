@@ -417,7 +417,8 @@ aside ul:first-child {
 
 aside li {
   list-style-type: none;
-  line-height:3em;
+  display:block;
+  margin-bottom:20px;
 }
 
 aside li a {
