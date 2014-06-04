@@ -415,6 +415,7 @@ aside ul:first-child {
   margin-top: 0;
 }
 
+/*** see screen.css for edit on aside li ***/
 aside li {
   list-style-type: none;
 }
