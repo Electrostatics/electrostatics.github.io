@@ -15,7 +15,7 @@ Before beginning, please make sure to support the APBS/PDB2PQR team by [register
 APBS (Adaptive Poisson-Boltzmann Software) and PDB2PQR are software packages designed to help you analyze the solvation properties of small and macro-molecules such as proteins, nucleic acids, and other complex systems.
 <!-- TODO:  Finish this with a description of APBS and PDB2PQR with links to PB equation overview, etc. -->
 
-!--
+<!--
 ## Tips, Notes, and Warnings
 
 Throughout this guide there are several pieces of information that can make APBS and PDB2PQR easier to use.  
