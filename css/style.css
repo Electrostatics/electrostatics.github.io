@@ -417,13 +417,13 @@ aside ul:first-child {
 
 aside li {
   list-style-type: none;
-  display:block !important;
-  margin-bottom:200px !important;
 }
 
 aside li a {
   font-size: 16px;
   position: relative
+  display:block;
+  margin-bottom:30px;
 }
 
 aside li.current a:before {
