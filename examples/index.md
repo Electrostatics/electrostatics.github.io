@@ -1,11 +1,11 @@
 ---
 layout: docs
-title: Welcome
+title: Examples
 next_section: downloads
-permalink: /docs/home/
+permalink: /examples/home/
 ---
 
-This site aims to be a comprehensive guide to APBS and PDB2PQR.
+The following examples will help orient you in APBS/PDB2PQR.
 Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform) for an account.
 
 ## What are APBS and PDB2PQR?
