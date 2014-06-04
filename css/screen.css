@@ -26,3 +26,8 @@
   {{ screen }}
 {% endif %}
 
+
+aside li {
+  display:block !important;
+  margin: 0 0 0 30px !important;
+}

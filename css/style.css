@@ -416,8 +416,7 @@ aside ul:first-child {
 }
 
 aside li {
-  display:block !important;
-  margin-bottom:30px !important;
+  list-style-type: none;
 }
 
 aside li a {
