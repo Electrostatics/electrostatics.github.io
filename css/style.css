@@ -416,15 +416,16 @@ aside ul:first-child {
 }
 
 aside li {
-  list-style-type: none;
+  display:block !important;
+  margin-bottom:30px !important;
 }
 
 aside li a {
   font-size: 16px;
   position: relative;
-  display:block !important;
-  margin-bottom:30px !important;
 }
+
+
 
 aside li.current a:before {
   content: "";

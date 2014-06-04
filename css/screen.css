@@ -25,3 +25,9 @@
 {% else %}
   {{ screen }}
 {% endif %}
+
+
+aside li {
+  display:block !important;
+  margin-bottom:30px !important;
+}
