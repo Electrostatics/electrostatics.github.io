@@ -26,7 +26,7 @@ The first method demonstrates how to use the pdb2pqr web server and the next met
 2. Identify your molecule:
   * Enter the protein data bank ID or...
   * Load the protein data bank file (examples [here](http://www.rcsb.org/pdb/home/home.do))
-<p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/apbs_web.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/pdb2pqr_web_server_screenshot.png" /></p>
 * Press submit!
 
 ## Command Line:
