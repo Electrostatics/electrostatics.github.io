@@ -4,3 +4,4 @@ permalink: /news/:year/:month/:day/:title/
 excerpt_separator: noifniof3nioaniof3nioafafinoafnoif
 repository: https://github.com/electrostatics/apbs-pdb2pqr
 url:  http://electrostatics.github.io/apbs-pdb2pqr
+markdown: kramdown
