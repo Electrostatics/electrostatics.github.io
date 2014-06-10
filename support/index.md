@@ -1,5 +1,5 @@
 ---
-layout: support
+layout: examples
 title: Support
 permalink: /support/home/
 ---
