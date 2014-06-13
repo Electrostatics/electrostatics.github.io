@@ -925,6 +925,33 @@ fgcent { mol id | xcent ycent zcent }
 
 
 
+
+<a href="javascript:ReverseDisplay('elec-keyword-gcent')">gcent</a>
+
+<div id="elec-keyword-gcent" style="display:none;">
+
+<p>SpecSpecify the center of the grid based on a molecule's center or absolute coordinates for a mg-manual multigrid calculation.</p>
+
+The syntax is:
+{% highlight bash %}
+gcent { mol id | xcent ycent zcent }
+{% endhighlight %}
+
+<p>where the user can specify <strong>either</strong>:<br />
+<code>mol {id}</code> Center the grid on molecule with integer ID id; as assigned in the READ section. Molecule IDs are assigned in the order they are read, starting at 1.<br />
+<strong>or the user can specify</strong><br />
+<code>xcent ycent zcent</code> The floating point coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
+</p>
+
+
+<hr />
+
+</div>
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -940,8 +967,8 @@ fgcent { mol id | xcent ycent zcent }
 - [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
 - [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
 - [fgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fgcent)
-- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)--->
-- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
+- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
+- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)--->
 - [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
 - [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
