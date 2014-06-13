@@ -131,6 +131,7 @@ where <code>density'</code> is a floating point number giving the bulk solvent d
 
 
 <a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
+
 <div id="calcenergy" style="display:none;">
 
 <p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is
@@ -189,8 +190,8 @@ print force 1 - 2 end
 
 
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)-->
-- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
+- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)-->
 - [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
 - [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
