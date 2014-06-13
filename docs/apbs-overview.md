@@ -991,6 +991,33 @@ grid {hx hy hz}
 </div>
 
 
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-ion')">ion</a>
+
+<div id="elec-keyword-ion" style="display:none;">
+
+<p>Specify the bulk concentrations of mobile ion species present in the system. This command can be repeated as necessary to specify multiple types of ions; however, only the largest ionic radius is used to determine the ion-accessibility function. The total bulk system of ions must be electroneutral which means the charge densities/concentrations of positive and negative ions must be equal.</p>
+
+The syntax is:
+{% highlight bash %}
+ion charge {charge} conc {conc} radius {radius}
+{% endhighlight %}
+
+<p>where<br />
+<code>charge</code>Mobile ion species charge (floating point number in e<sub>c</sub>)<br />
+<code>conc</code>Mobile ion species concentration (floating point number in M)<br />
+<code>radius</code>Mobile ion species radius (floating point number in Å)
+</p>
+
+<hr />
+
+</div>
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1009,8 +1036,8 @@ grid {hx hy hz}
 - [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
 - [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
 - [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)--->
-- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
+- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)--->
 - [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
 - [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
 - [maxsolve](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxsolve)
