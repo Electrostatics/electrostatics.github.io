@@ -372,6 +372,44 @@ where <code>flag</code> is a string that specifies the model used for surface an
 
 
 
+<a href="javascript:ReverseDisplay('swin')">swin</a>
+
+<div id="swin" style="display:none;">
+
+This keyword specifies the size of the support (i.e., the rate of change) for spline-based surface definitions (see srfm spl2). The value is usually set to 0.3 Å.
+
+The syntax is:
+{% highlight bash %}
+swin {win} 
+{% endhighlight %}
+
+where <code>win</code> is the floating point value of the spline window (in Å).
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('temp')">temp</a>
+
+<div id="temp" style="display:none;">
+
+This keyword specifies the temperature for the calculation.
+
+The syntax is:
+{% highlight bash %}
+temp {T} 
+{% endhighlight %}
+
+where <code>T</code> is the floating point value of the temperature for calculation.
+
+</div>
+
+
+
+
+
+
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
@@ -382,9 +420,9 @@ where <code>flag</code> is a string that specifies the model used for surface an
 - [press](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#press)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#sdens)
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)-->
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)
 - [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#swin)
-- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)
+- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)-->
 
 ###Basic APOLAR calculations
 
