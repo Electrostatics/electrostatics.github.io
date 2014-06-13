@@ -124,6 +124,8 @@ bconc {density}
 
 where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 
+<hr />
+
 </div>
 
 
@@ -157,6 +159,8 @@ print energy 1 - 2 end
 
 </div>
 
+<hr />
+
 </div>
 
 
@@ -188,6 +192,8 @@ print force 1 - 2 end
 
 </div>
 
+<hr />
+
 </div>
 
 
@@ -215,6 +221,8 @@ where displacement is a floating point number indicating the finite difference d
 
 </div>
 
+<hr />
+
 </div>
 
 
@@ -235,6 +243,8 @@ gamma { value }
 {% endhighlight %}
 
 where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å<sup>-1</sup>. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
+
+<hr />
 
 </div>
 
@@ -273,6 +283,8 @@ mol {id}
 
 where <code>id</code> is the integer ID of the molecule for which the apolar calculation is to be performed. The molecule IDs are based on the order in which molecules are read by read mol statements, starting from 1.
 
+<hr />
+
 </div>
 
 
@@ -290,6 +302,8 @@ press {value}
 {% endhighlight %}
 
 where <code>value</code> is the floating point value of the pressure coefficient in kJ mol-1 Å<sup>-3</sup>.
+
+<hr />
 
 </div>
 
@@ -319,6 +333,8 @@ where <code>density</code> is a floating point number indicating the number of g
 
 </div>
 
+<hr />
+
 </div>
 
 
@@ -338,6 +354,8 @@ srad {radius}
 {% endhighlight %}
 
 where <code>radius</code> is the floating point value of the solvent radius (in Å). This keyword is ignored for srfm spl2.
+
+<hr />
 
 </div>
 
@@ -367,6 +385,8 @@ where <code>flag</code> is a string that specifies the model used for surface an
 
 </div>
 
+<hr />
+
 </div>
 
 
@@ -385,6 +405,8 @@ swin {win}
 
 where <code>win</code> is the floating point value of the spline window (in Å).
 
+<hr />
+
 </div>
 
 
@@ -402,6 +424,8 @@ temp {T}
 {% endhighlight %}
 
 where <code>T</code> is the floating point value of the temperature for calculation.
+
+<hr />
 
 </div>
 
@@ -498,6 +522,8 @@ akeyPRE {key}
 <code>unif</code> Uniform refinement<br />
 <code>geom</code> Geometry-based refinement at molecular surfaces and charges</p>
 
+<hr />
+
 </div>
 
 
@@ -518,6 +544,8 @@ akeySOLVE {key}
 
 <p><code>resi</code> Residual-based a *posteriori* refinement.</p>
 
+<hr />
+
 </div>
 
 
@@ -535,6 +563,8 @@ async { rank }
 {% endhighlight %}
 
 <p>where <code>rank</code> is the integer ID of the particular processor to masquerade as. Processor IDs range from 0 to N-1, where N is the total number of processors in the run (see pdime). Processor IDs are related to their position in the overall grid by p = n<sub>x</sub> n<sub>y</sub> k + n<sub>x</sub> j + i &nbsp;where n<sub>x</sub> is the number of processors in the x-direction, n<sub>y</sub> is the number of processors in the y-direction, n<sub>z</sub> is the number of processors in the z-direction, i is the index of the processor in the x-direction, j is the index of the processor in the y-direction, k is the index of the processor in the z-direction, and p is the overall rank of the processor.</p>
+
+<hr />
 
 </div>
 
@@ -572,6 +602,8 @@ bcfl {flag}
 
 <!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl -->
 
+<hr />
+
 </div>
 
 
@@ -608,6 +640,8 @@ where epsilon is the dielectric function, rho is the charge distribution, phi is
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
+<hr />
+
 </div>
 
 
@@ -636,6 +670,8 @@ calcforce { flag }
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
 </p>
+
+<hr />
 
 </div>
 
