@@ -166,7 +166,7 @@ print energy 1 - 2 end
 
 <div id="calcforce" style="display:none;">
 
-<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is
+<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
 {% highlight bash %}
 calcforce {flag}
 {% endhighlight %}
@@ -201,7 +201,7 @@ print force 1 - 2 end
 
 <p>This is the displacement used for finite-difference-based calculations of surface area derivatives. I know, this is a terrible way to calculate surface area derivatives -- we're working on replacing it with an analytic version. In the meantime, please use this parameter with caution. If anyone has code for a better method, please share!</p>
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 dpos {displacement} 
 {% endhighlight %}
@@ -229,7 +229,7 @@ where displacement is a floating point number indicating the finite difference d
 
 <p>This keyword specifies the surface tension coefficient for apolar solvation models.</p>
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 gamma { value } 
 {% endhighlight %}
@@ -248,7 +248,7 @@ where <code>value</code> is a floating point number designating the surface tens
 
 This keyword specifies the quadrature grid spacing for volume integral calculations in apolar models.
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 grid {hx hy hz} 
 {% endhighlight %}
@@ -266,7 +266,7 @@ where <code>hx</code> <code>hy</code> <code>hz</code> are the quadrature spacing
 
 This term specifies the molecule for which the apolar calculation is to be performed.
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 mol {id} 
 {% endhighlight %}
@@ -284,7 +284,7 @@ where <code>id</code> is the integer ID of the molecule for which the apolar cal
 
 This term specifies the solvent pressure p in kJ mol-1 Å<sup>-3</sup>. This coefficient multiplies the volume term of the apolar model discussed here and can be set to zero to eliminate volume contributions to the apolar solvation calculation.
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 press {value} 
 {% endhighlight %}
@@ -303,9 +303,9 @@ where <code>value</code> is the floating point value of the pressure coefficient
 
 <div id="sdens" style="display:none;">
 
-This keyword specifies the number of quadrature points per Å<sup>2</sup> to use in surface terms (e.g., molecular surface, solvent accessible surface) for apolar calculations. The keyword is ignored when srad is 0.0 (e.g., for van der Waals surfaces) or when srfm is spl2 (e.g., for spline surfaces). The syntax is
+This keyword specifies the number of quadrature points per Å<sup>2</sup> to use in surface terms (e.g., molecular surface, solvent accessible surface) for apolar calculations. The keyword is ignored when srad is 0.0 (e.g., for van der Waals surfaces) or when srfm is spl2 (e.g., for spline surfaces). The syntax is:
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 sdens {density} 
 {% endhighlight %}
@@ -332,7 +332,7 @@ where <code>density</code> is a floating point number indicating the number of g
 
 This keyword specifies the radius of the solvent molecules; this parameter is used to define various solvent-related surfaces and volumes (see srfm). This value is usually set to 1.4 Å for a water-like molecular surface and set to 0 Å for a van der Waals surface.
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 srad {radius} 
 {% endhighlight %}
@@ -350,7 +350,7 @@ where <code>radius</code> is the floating point value of the solvent radius (in 
 
 This keyword specifies the model used to construct the solvent-related surface and volume.
 
-The syntax is
+The syntax is:
 {% highlight bash %}
 srfm {flag}
 {% endhighlight %}
