@@ -115,14 +115,45 @@ where id is a unique string which can be assigned to the calculation to facilita
 <a href="javascript:ReverseDisplay('bconc')">bconc</a>
 
 <div id="bconc" style="display:none;">
-This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is:
+	This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is:
 
-{% highlight bash %}
-bconc {density}
-{% endhighlight %}
+	{% highlight bash %}
+	bconc {density}
+	{% endhighlight %}
 
-where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
+	where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 </div>
+
+
+<a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
+<div id="calcenergy" style=display:none;">
+	This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
+
+	{% highlight bash %}
+	calcenergy {flag}
+	{% endhighlight %}
+
+	where  is a string denoting what type of energy to calculate:
+	<code>no</code>
+	(Deprecated) don't calculate any energies.
+
+	<code>total</code>
+	Calculate and return total apolar energy for the entire molecule.
+
+	<code>comps</code>
+	Calculate and return total apolar energy for the entire molecule as well as the energy components for each atom.
+
+	<div class="note warning">
+		<h5>Note</h5>
+		<p>This option must be used consistently for all calculations that will appear in subsequent <code>PRINT</code> statements. For example, if the statement</p>
+			{% highlight bash %}
+			print energy 1 - 2 end
+			{% endhighlight %}
+		<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+	</div>
+</div>
+
+
 
 
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)-->
