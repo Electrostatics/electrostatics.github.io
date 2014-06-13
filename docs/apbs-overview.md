@@ -756,6 +756,60 @@ chgm {flag}
 
 
 
+<a href="javascript:ReverseDisplay('elec-keyword-dime')">dime</a>
+
+<div id="elec-keyword-dime" style="display:none;">
+
+<p>Specifies the number of grid points per processor for grid-based discretization.</p>
+
+The syntax is:
+{% highlight bash %}
+dime {nx ny nz}
+{% endhighlight %}
+
+<p>For mg-manual calculations, the arguments are dependent on the choice of nlev by the formula:<br />
+n = c 2<sup>l + 1</sup> + 1<br />
+where n is the dime argument, c is a non-zero integer, l is the nlev value. The most common values for grid dimensions are 65, 97, 129, and 161 (they can be different in each direction); these are all compatible with a nlev value of 4. If you happen to pick a "bad" value for the dimensions (i.e., mismatch with nlev), the APBS code will adjust the specified dime downwards to more appropriate values. This means that "bad" values will typically result in lower resolution/accuracy calculations! The arguments for this keyword are:
+<code> nx ny nz</code><br />
+The (integer) number of grid points in the x-, y-, and z-directions, respectively.
+</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>dime should be interpreted as the number of grid points per processor for all calculations, including mg-para. This interpretation helps manage the amount of memory per-processor - generally the limiting resource for most calculations.</p>
+
+</div>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-domainLength')">domainLength</a>
+
+<div id="elec-keyword-domainLength" style="display:none;">
+
+<p>Specify the rectangular finite element mesh domain lengths for fe-manual finite element calculations.  This length may be different in each direction. If the usemesh keyword is included, then this command is ignored.</p>
+
+The syntax is:
+{% highlight bash %}
+domainLength {xlen ylen zlen}
+{% endhighlight %}
+
+<p>where the parameters <code>xlen</code>, <code>ylen</code>, <code>zlen</code> are floating point numbers that specify the mesh lengths in the x-, y-, and z-directions (respectively) in units of Å.</p>
+
+<hr />
+
+</div>
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -765,8 +819,8 @@ chgm {flag}
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
 - [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
-- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)--->
-- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
+- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
+- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)--->
 - [domainLength](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#domainlength)
 - [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
 - [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
