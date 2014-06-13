@@ -484,21 +484,37 @@ The syntax is:
 akeyPRE {key}
 {% endhighlight %}
 
-where <code>key</code> is a text string that specifies the method used to guide initial refinement and takes one of the values:
+<p>where <code>key</code> is a text string that specifies the method used to guide initial refinement and takes one of the values:
 <code>unif</code> Uniform refinement
-<code>geom</code> Geometry-based refinement at molecular surfaces and charges
+<code>geom</code> Geometry-based refinement at molecular surfaces and charges</p>
 
 </div>
 
 
 
 
+<a href="javascript:ReverseDisplay('akeySOLVE')">akeySOLVE</a>
+
+<div id="akeySOLVE" style="display:none;">
+
+Specifies how the the finite element mesh should be adaptively subdivided during the solve-estimate-refine iterations of a fe-manual finite element calculation. This allows for various a posteriori refinement schemes. 
+
+The syntax is:
+{% highlight bash %}
+akeySOLVE {key}
+{% endhighlight %}
+
+<p>where <code>key</code> is a text string that specifies the method used to guide adaptive refinement:</p>
+
+<code>resi</code> Residual-based a *posteriori* refinement
+
+</div>
 
 
 
 <!---
-- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)-->
-- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
+- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
+- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)-->
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
 - [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
