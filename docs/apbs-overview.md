@@ -602,12 +602,11 @@ The syntax is:
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
-![NPBE Energy](/apbs-pdb2pqr/img/NPBE-energy.png)
-<code>comps</code> "Multiple Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.<br />
+<img src="/apbs-pdb2pqr/img/NPBE-energy.png" /><br />
+where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral
+<img src="/apbs-pdb2pqr/img/LPBE-energy.png" /><br />
+<code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
-
-
-<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl --->
 
 </div>
 
