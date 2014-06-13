@@ -843,7 +843,7 @@ ekey { flag }
 
 <div id="elec-keyword-etol" style="display:none;">
 
-#### Finite difference multigrid methods
+<h3>Finite difference multigrid methods</h3>
 
 <p>Current developmental releases of APBS provide support for the optional etol keyword to specify the tolerance for iterations of the PMG partial differential equation solver.</p>
 
@@ -856,7 +856,7 @@ etol { tol }
 This keyword is optional and is intended for mg-manual, mg-auto, and mg-para calculation types.</p>
 
 
-#### Finite element methods
+<h4>Finite element methods</h4>
 
 <p>Specify the tolerance for error-based adaptive refinement during the solve-estimate-refine iterations of the finite element solver (fe-manual).</p>
 
