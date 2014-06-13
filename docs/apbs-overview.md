@@ -810,6 +810,67 @@ domainLength {xlen ylen zlen}
 
 
 
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-ekey')">ekey</a>
+
+<div id="elec-keyword-ekey" style="display:none;">
+
+<p>Specify the method used to determine the error tolerance in the solve-estimate-refine iterations of the finite element solver (fe-manual).</p>
+
+The syntax is:
+{% highlight bash %}
+ekey { flag }
+{% endhighlight %}
+
+<p>where <code>flag</code> is a text string that determines the method for error calculation.<br />
+<code>simp</code> Per-simplex error limit<br />
+<code>global</code> Global (whole domain) error limit<br />
+<code>frac</code> Fraction of simplices you'd like to see refined at each iteration
+</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-etol')">etol</a>
+
+<div id="elec-keyword-etol" style="display:none;">
+
+#### Finite difference multigrid methods
+
+<p>Current developmental releases of APBS provide support for the optional etol keyword to specify the tolerance for iterations of the PMG partial differential equation solver.</p>
+
+The syntax is:
+{% highlight bash %}
+etol { tol }
+{% endhighlight %}
+
+<p>where <code>tol</code> is the (floating point) numerical value for the error tolerance.<br />
+This keyword is optional and is intended for mg-manual, mg-auto, and mg-para calculation types.</p>
+
+
+#### Finite element methods
+
+<p>Specify the tolerance for error-based adaptive refinement during the solve-estimate-refine iterations of the finite element solver (fe-manual).</p>
+
+The syntax is:
+{% highlight bash %}
+etol { tol }
+{% endhighlight %}
+<p>where <code>tol</code> is the (floating point) numerical value for the error tolerance.</p>
+
+<hr />
+
+</div>
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
