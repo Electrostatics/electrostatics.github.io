@@ -472,7 +472,32 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 
 ###Elec keywords
 
-- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
+<a href="javascript:ReverseDisplay('akeypre')">akeypre</a>
+
+<div id="akeypre" style="display:none;">
+
+Specifies how the initial finite element mesh should be constructed (from refinement of a very coarse 8-tetrahedron mesh prior to the solve-estimate-refine iteration in fe-manual finite element calculations.
+
+
+The syntax is:
+{% highlight bash %}
+akeyPRE {key}
+{% endhighlight %}
+
+where <code>key</code> is a text string that specifies the method used to guide initial refinement and takes one of the values:
+<code>unif</code> Uniform refinement
+<code>geom</code> Geometry-based refinement at molecular surfaces and charges
+
+</div>
+
+
+
+
+
+
+
+<!---
+- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)-->
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
 - [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
