@@ -116,9 +116,11 @@ where id is a unique string which can be assigned to the calculation to facilita
 
 <div id="bconc" style="display:none;">
 This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is
+
 {% highlight bash %}
 bconc {density}
 {% endhighlight %}
+
 where `density` is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 </div>
 
