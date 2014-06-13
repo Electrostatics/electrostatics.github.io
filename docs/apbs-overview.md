@@ -910,7 +910,7 @@ fgcent { mol id | xcent ycent zcent }
 
 The syntax is:
 {% highlight bash %}
-fgcent { mol id | xcent ycent zcent }
+fglen {xlen ylen zlen}
 {% endhighlight %}
 
 <p>This should enclose the region of interest in the molecule. The arguments to this command are:<br />
