@@ -141,10 +141,11 @@ This optional keyword controls energy output from an apolar solvation calculatio
 calcenergy {flag}
 {% endhighlight %}
 
-<p>where is a string denoting what type of energy to calculate:</p>
-<code>no</code> (Deprecated) Don't calculate any energies.
-<code>total</code> Calculate and return total apolar energy for the entire molecule.
+<p>where is a string denoting what type of energy to calculate:<br />
+<code>no</code> (Deprecated) Don't calculate any energies.<br />
+<code>total</code> Calculate and return total apolar energy for the entire molecule.<br />
 <code>comps</code> Calculate and return total apolar energy for the entire molecule as well as the energy components for each atom.
+</p>
 
 <div class="note info">
 
