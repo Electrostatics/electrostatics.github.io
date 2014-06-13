@@ -363,7 +363,7 @@ where <code>flag</code> is a string that specifies the model used for surface an
 <div class="note info">
 
 <h5>Note</h5>
-</p>This keyword is under construction: we're in the process of adding additional surface definitions (e.g., spl2).</p>
+<p>This keyword is under construction: we're in the process of adding additional surface definitions (e.g., spl2).</p>
 
 </div>
 
@@ -470,6 +470,17 @@ ELEC name {id}
 
 where ELEC is the start of the ELEC block and {id} is an alphanumeric string denoting the "name" of the calculation block.
 
+
+
+
+
+
+
+
+
+
+
+
 ###Elec keywords
 
 <a href="javascript:ReverseDisplay('akeypre')">akeypre</a>
@@ -477,7 +488,6 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 <div id="akeypre" style="display:none;">
 
 Specifies how the initial finite element mesh should be constructed (from refinement of a very coarse 8-tetrahedron mesh prior to the solve-estimate-refine iteration in fe-manual finite element calculations.
-
 
 The syntax is:
 {% highlight bash %}
@@ -543,11 +553,65 @@ The syntax is:
 bcfl {flag}
 {% endhighlight %}
 
-<p>where <code>flag</code> is a text string that identifies the type of conditions to be used.
+<p>where <code>flag</code> is a text string that identifies the type of conditions to be used.</p>
 
-<p><code>zero</code> "Zero" boundary condition. Dirichlet conditions where the potential at the boundary is set to zero. This condition is not commonly used and can result in large errors if used inappropriately.
+<p>
+<code>zero</code> "Zero" boundary condition. Dirichlet conditions where the potential at the boundary is set to zero. This condition is not commonly used and can result in large errors if used inappropriately.<br />
+<code>sdh</code> "Single Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a single sphere with a point charge, dipole, and quadrupole. The sphere radius in this model is set to the radius of the biomolecule and the sphere charge, dipole, and quadrupole are set to the total moments of the protein. This condition works best when the boundary is sufficiently far from the biomolecule.<br />
+<code>mdh</code> "Multiple Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.<br />
+<code>focus</code> "Focusing" boundary condition. Dirichlet condition where the potential at the boundary is set to the values computed by the previous (usually lower-resolution) PB calculation. This is used in sequential focusing performed manually in mg-manual calculations. All of the boundary points should lie within the domain of the previous calculation for best accuracy; if any boundary points lie outside, their values are computed using single Debye-Hückel boundary conditions (see above).<br />
+<code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use.  
+</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>This functionality is only available in the current developmental release of APBS.</p>
 
 </div>
+
+<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl -->
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
+
+<div id="calcenergy" style="display:none;">
+
+<p>This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>This option must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <tt><code>print energy 1 - 2 end</code></tt> appears in the input file, then both calculations 1 and 2 must have <code>calcenergy</code> keywords present with the same values for <tt><code>flag</code></tt>.</p>
+
+</div>
+
+The syntax is:
+{% highlight bash %}
+     calcenergy { flag }
+{% endhighlight %}
+
+<p>where <code>flag</code> is a text string that specifies the types of energy values to be returned:
+
+<p>
+<code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
+<code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
+![NPBE Energy](/apbs-pdb2pqr/img/NPBE-energy.png)
+<code>comps</code> "Multiple Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.<br />
+</p>
+
+
+<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl -->
+
+</div>
+
+
 
 
 
@@ -556,8 +620,8 @@ bcfl {flag}
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
-- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)-->
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
+- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)-->
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
 - [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
