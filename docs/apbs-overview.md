@@ -668,6 +668,26 @@ The arguments for this keyword are *either*:<br />
 
 
 
+<a href="javascript:ReverseDisplay('elec-keyword-cglen')">cglen</a>
+
+<div id="elec-keyword-cglen" style="display:none;">
+
+<p>Specify the length of the coarse grid (in a focusing calculation) for an automatic multigrid (mg-auto, mg-para) Poisson-Boltzmann calculation.  This may be different in each direction.</p>
+
+The syntax is:
+{% highlight bash %}
+cglen {xlen ylen zlen}
+{% endhighlight %}
+
+<p>This is the starting mesh, so it should be large enough to complete enclose the biomolecule and ensure that the chosen boundary condition (see bcfl) is appropriate.</p>
+
+<p>
+<code>xlen ylen zlen</code> Grid lengths (floating point numbers) in the x-, y-, and z-directions in Å.
+</p>
+
+</div>
+
+
 
 
 <!---
