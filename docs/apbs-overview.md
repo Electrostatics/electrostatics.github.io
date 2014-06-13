@@ -1007,14 +1007,56 @@ ion charge {charge} conc {conc} radius {radius}
 {% endhighlight %}
 
 <p>where<br />
-<code>charge</code>Mobile ion species charge (floating point number in e<sub>c</sub>)<br />
-<code>conc</code>Mobile ion species concentration (floating point number in M)<br />
-<code>radius</code>Mobile ion species radius (floating point number in Å)
+<code>charge</code> Mobile ion species charge (floating point number in e<sub>c</sub>)<br />
+<code>conc</code> Mobile ion species concentration (floating point number in M)<br />
+<code>radius</code> Mobile ion species radius (floating point number in Å)
 </p>
 
 <hr />
 
 </div>
+
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-lpbe')">lpbe</a>
+
+<div id="elec-keyword-lpbe" style="display:none;">
+
+<p>Specifies that the linearized Poisson-Boltzmann equation should be solved.</p>
+
+The syntax is:
+{% highlight bash %}
+lpbe
+{% endhighlight %}
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-lrpbe')">lrpbe</a>
+
+<div id="elec-keyword-lrpbe" style="display:none;">
+
+<p>Specifies that the linear form of the regularized Poisson-Boltzmann equation (RPBE) should be solved. The regularized PBE equation replaces the point charge distribution with the corresponding Green's function. As a result of this replacement, the solution corresponds to the reaction field instead of the total potential; the total potential can be recovered by adding the appropriate Coulombic terms to the solution. Likewise, this equation immediately yields the solvation energy without the need for reference calculations.</p>
+
+The syntax is:
+{% highlight bash %}
+lrpbe
+{% endhighlight %}
+
+<hr />
+
+</div>
+
 
 
 
@@ -1037,9 +1079,9 @@ ion charge {charge} conc {conc} radius {radius}
 - [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
 - [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
-- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)--->
+- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
 - [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
-- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
+- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)--->
 - [maxsolve](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxsolve)
 - [maxvert](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxvert)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#mol)
