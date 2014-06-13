@@ -843,7 +843,7 @@ ekey { flag }
 
 <div id="elec-keyword-etol" style="display:none;">
 
-<h3>Finite difference multigrid methods</h3>
+<h4>Finite difference multigrid methods</h4>
 
 <p>Current developmental releases of APBS provide support for the optional etol keyword to specify the tolerance for iterations of the PMG partial differential equation solver.</p>
 
@@ -871,6 +871,60 @@ etol { tol }
 </div>
 
 
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-fgcent')">fgcent</a>
+
+<div id="elec-keyword-fgcent" style="display:none;">
+
+<p>Specify the center of the fine grid (in a focusing calculation) based on a molecule's center or absolute coordinates for mg-para and mg-auto multigrid calculations.</p>
+
+The syntax is:
+{% highlight bash %}
+fgcent { mol id | xcent ycent zcent }
+{% endhighlight %}
+
+<p>where a user can specify <strong>either<strong>:<br />
+<code>mol {id}</code> Center the grid on molecule with integer ID id; as assigned in the READ section of the input file. Molecule IDs are assigned in the order they are read, starting at 1.<br />
+<strong>or the user can specify</strong> <br />
+<code>xcent ycent zcent</code> Center the grids on the coordinates (floating point numbers in Å) at which the grid is centered. Based on the input molecule PDB coordinate frame.
+</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-fglen')">fglen</a>
+
+<div id="elec-keyword-fglen" style="display:none;">
+
+<p>Specifies the fine mesh domain lengths in a multigrid focusing calculation (mg-para or mg-auto); this may be different in each direction.</p>
+
+The syntax is:
+{% highlight bash %}
+fgcent { mol id | xcent ycent zcent }
+{% endhighlight %}
+
+<p>This should enclose the region of interest in the molecule. The arguments to this command are:<br />
+<code>xlen ylen zlen</code> Grid lengths (floating point numbers) in the x-, y-, and z-directions in Å.<br />
+</p>
+
+<hr />
+
+</div>
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -881,12 +935,12 @@ etol { tol }
 - [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
 - [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
-- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)--->
+- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
 - [domainLength](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#domainlength)
 - [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
 - [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
 - [fgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fgcent)
-- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
+- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)--->
 - [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
 - [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
