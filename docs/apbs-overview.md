@@ -113,19 +113,18 @@ where id is a unique string which can be assigned to the calculation to facilita
 ###APOLAR Keywords
 
 <a href="javascript:ReverseDisplay('bconc')">bconc</a>
-
-<div id="bconc" style="display:none;">
-This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is:
+<span id="bconc" style="display:none;">
+This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is:!
 
 {% highlight bash %}
 bconc {density}
 {% endhighlight %}
 
 where `density` is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
-</div>
+</span>
 
 
-- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
+<!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)-->
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
 - [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
