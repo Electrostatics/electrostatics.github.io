@@ -122,7 +122,7 @@ This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coeffic
 bconc {density}
 {% endhighlight %}
 
-where `density` is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
+where <code>density'</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 
 </div>
 
@@ -141,9 +141,9 @@ This optional keyword controls energy output from an apolar solvation calculatio
 calcenergy {flag}
 {% endhighlight %}
 
-where  is a string denoting what type of energy to calculate:
-<code>no</code>
-(Deprecated) Don't calculate any energies.
+<p>where is a string denoting what type of energy to calculate:<br />
+<code>no</code><br />
+(Deprecated) Don't calculate any energies.</p>
 
 <code>total</code>
 Calculate and return total apolar energy for the entire molecule.
