@@ -127,9 +127,13 @@ where <code>density</code> is a floating point number giving the bulk solvent de
 </div>
 
 
+
+
+
 <a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
 
-<div id="calcenergy" style=display:none;">
+
+<div id="calcenergy" style="display:none;">
 
 This optional keyword controls energy output from an apolar solvation calculation. The syntax is
 
