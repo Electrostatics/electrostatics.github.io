@@ -223,7 +223,7 @@ where displacement is a floating point number indicating the finite difference d
 
 
 
-<a href="javascript:ReverseDisplay('dpos')">gamma</a>
+<a href="javascript:ReverseDisplay('gamma')">gamma</a>
 
 <div id="gamma" style="display:none;">
 
@@ -242,7 +242,7 @@ where <code>value</code> is a floating point number designating the surface tens
 
 
 
-<a href="javascript:ReverseDisplay('dpos')">grid</a>
+<a href="javascript:ReverseDisplay('grid')">grid</a>
 
 <div id="grid" style="display:none;">
 
