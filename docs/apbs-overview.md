@@ -122,7 +122,7 @@ This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coeffic
 bconc {density}
 {% endhighlight %}
 
-where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
+where `density` is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 
 </div>
 
