@@ -594,7 +594,7 @@ bcfl {flag}
 
 The syntax is:
 {% highlight bash %}
-     calcenergy { flag }
+calcenergy { flag }
 {% endhighlight %}
 
 <p>where <code>flag</code> is a text string that specifies the types of energy values to be returned:</p>
@@ -603,12 +603,67 @@ The syntax is:
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
 <img src="/apbs-pdb2pqr/img/NPBE-energy.png" /><br />
-where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral
+where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
 <img src="/apbs-pdb2pqr/img/LPBE-energy.png" /><br />
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
 </div>
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-calcforce')">calcforce</a>
+
+<div id="elec-keyword-calcforce" style="display:none;">
+
+<p>This optional keyword controls electrostatic force output from a multigrid (mg-manual, mg-auto, or mg-para) Poisson-Boltzmann calculation.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>This option must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <code>print force 1 - 2</code> end appears in the input file, then both calculations 1 and 2 must have <code>calcforce</code> keywords present with the same values for <code>flag</code>.</p>
+
+</div>
+
+The syntax is:
+{% highlight bash %}
+calcforce { flag }
+{% endhighlight %}
+
+<p>where <code>flag</code> is a text string that specifies the types of force values to be returned:
+<code>no</code> (Deprecated) don't calculate any forces.<br />
+<code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
+<code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+</p>
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-cgcent')">cgcent</a>
+
+<div id="elec-keyword-cgcent" style="display:none;">
+
+<p>This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.</p>
+
+The syntax is:
+{% highlight bash %}
+cgcent { mol id | xcent ycent zcent }
+{% endhighlight %}
+
+<p>
+The arguments for this keyword are *either*:<br />
+<code>mol id</code> Center the grid on molecule with integer ID id; as assigned in the READ section with a READ mol command.<br />
+*or*<br />
+<code>xcent ycent zcent</code> Center the grid on the (floating point) coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
+</p>
+
+</div>
+
 
 
 
@@ -620,9 +675,9 @@ where epsilon is the dielectric function, rho is the charge distribution, phi is
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
 - [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)--->
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
-- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
+- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)--->
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
 - [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
 - [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
