@@ -656,9 +656,9 @@ cgcent { mol id | xcent ycent zcent }
 {% endhighlight %}
 
 <p>
-The arguments for this keyword are *either*:<br />
+The arguments for this keyword are <strong>either</strong>:<br />
 <code>mol id</code> Center the grid on molecule with integer ID id; as assigned in the READ section with a READ mol command.<br />
-*or*<br />
+<strong>or</strong><br />
 <code>xcent ycent zcent</code> Center the grid on the (floating point) coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
 </p>
 
@@ -690,6 +690,29 @@ cglen {xlen ylen zlen}
 
 
 
+
+<a href="javascript:ReverseDisplay('elec-keyword-chgm')">chgm</a>
+
+<div id="elec-keyword-chgm" style="display:none;">
+
+<p>Specify the method by which the biomolecular point charges (i.e., Dirac delta functions) by which charges are mapped to the grid for a multigrid (mg-manual, mg-auto, mg-para) Poisson-Boltzmann calculation.  As we are attempting to model delta functions, the support (domain) of these discretized charge distributions is always a function of the grid spacing.</p>
+
+The syntax is:
+{% highlight bash %}
+chgm {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is a text string that specifies the type of discretization:<br />
+<code>spl0</code>Traditional trilinear interpolation (linear splines). The charge is mapped onto the nearest-neighbor grid points. Resulting potentials are very sensitive to grid spacing, length, and position.<br />
+<code>spl2</code>Cubic B-spline discretization. The charge is mapped onto the nearest- and next-nearest-neighbor grid points. Resulting potentials are somewhat less sensitive (than spl0) to grid spacing, length, and position.<br />
+<code>spl4</code>Quintic B-spline discretization. Similar to spl2, except the charge/multipole is additionally mapped to include next-next-nearest neighbors (125 grid points receive charge density)
+</p>
+</div>
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -697,9 +720,9 @@ cglen {xlen ylen zlen}
 - [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
-- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)--->
+- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
-- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
+- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)--->
 - [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
 - [domainLength](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#domainlength)
 - [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
