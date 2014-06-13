@@ -930,7 +930,7 @@ fglen {xlen ylen zlen}
 
 <div id="elec-keyword-gcent" style="display:none;">
 
-<p>SpecSpecify the center of the grid based on a molecule's center or absolute coordinates for a mg-manual multigrid calculation.</p>
+<p>Specify the center of the grid based on a molecule's center or absolute coordinates for a mg-manual multigrid calculation.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -943,6 +943,27 @@ gcent { mol id | xcent ycent zcent }
 <code>xcent ycent zcent</code> The floating point coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
 </p>
 
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-glen')">glen</a>
+
+<div id="elec-keyword-glen" style="display:none;">
+
+<p>Specify the mesh domain lengths for multigrid mg-manual calculations.  These lengths may be different in each direction.</p>
+
+The syntax is:
+{% highlight bash %}
+glen {xlen ylen zlen}
+{% endhighlight %}
+
+<p>where <code>xlen</code> <code>ylen</code> <code>zlen</code> are the (floating point) grid lengths in the x-, y-, and z-directions (respectively) in Å.</p>
 
 <hr />
 
@@ -950,6 +971,24 @@ gcent { mol id | xcent ycent zcent }
 
 
 
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-grid')">grid</a>
+
+<div id="elec-keyword-grid" style="display:none;">
+
+<p>Specify the mesh grid spacings for multigrid mg-manual calculations.  This value may be different in each direction.</p>
+
+The syntax is:
+{% highlight bash %}
+grid {hx hy hz}
+{% endhighlight %}
+
+<p>where <code>hx</code> <code>hy</code> <code>hz</code> are the (floating point) grid spacings in the x-, y-, and z-directions (respectively) in Å.</p>
+
+<hr />
+
+</div>
 
 
 <!---
@@ -968,9 +1007,9 @@ gcent { mol id | xcent ycent zcent }
 - [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
 - [fgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fgcent)
 - [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
-- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)--->
+- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
 - [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)--->
 - [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
 - [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
 - [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
