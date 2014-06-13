@@ -134,7 +134,7 @@ where <code>density'</code> is a floating point number giving the bulk solvent d
 
 <div id="calcenergy" style="display:none;">
 
-<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is
+<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
 
 {% highlight bash %}
 calcenergy {flag}
@@ -147,12 +147,14 @@ where is a string denoting what type of energy to calculate:<br />
 </p>
 
 <div class="note info">
+
 <h5>Note</h5>
 <p>This option must be used consistently for all calculations that will appear in subsequent <code>PRINT</code> statements. For example, if the statement</p>
 {% highlight bash %}
 print energy 1 - 2 end
 {% endhighlight %}
 <p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+
 </div>
 
 </div>
@@ -161,6 +163,7 @@ print energy 1 - 2 end
 
 
 <a href="javascript:ReverseDisplay('calcenergy')">calcforce</a>
+
 <div id="calcforce" style="display:none;">
 
 <p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is
@@ -180,6 +183,7 @@ where <code>flag</code> is a string that specifies the types of force values to 
 print force 1 - 2 end
 {% endhighlight %}
 <p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+
 </div>
 
 
