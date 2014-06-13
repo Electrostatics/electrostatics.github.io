@@ -597,7 +597,7 @@ The syntax is:
      calcenergy { flag }
 {% endhighlight %}
 
-<p>where <code>flag</code> is a text string that specifies the types of energy values to be returned:
+<p>where <code>flag</code> is a text string that specifies the types of energy values to be returned:</p>
 
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
@@ -621,7 +621,7 @@ The syntax is:
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
 - [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)-->
+- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)--->
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
 - [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
 - [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
