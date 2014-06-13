@@ -162,7 +162,7 @@ print energy 1 - 2 end
 
 
 
-<a href="javascript:ReverseDisplay('calcenergy')">calcforce</a>
+<a href="javascript:ReverseDisplay('calcforce')">calcforce</a>
 
 <div id="calcforce" style="display:none;">
 
@@ -177,6 +177,8 @@ where <code>flag</code> is a string that specifies the types of force values to 
 <code>comps</code>     Calculate and return total apolar forces for the entire molecule as well as force components for each atom. 
 </p>
 
+<div class="note info">
+
 <h5>Note</h5>
 <p>This option must be used consistently for all calculations that will appear in subsequent <code>PRINT</code> statements. For example, if the statement</p>
 {% highlight bash %}
@@ -186,8 +188,34 @@ print force 1 - 2 end
 
 </div>
 
+</div>
 
 
+
+
+
+
+<a href="javascript:ReverseDisplay('dpos')">dpos</a>
+
+<div id="dpos" style="display:none;">
+
+<p>This is the displacement used for finite-difference-based calculations of surface area derivatives. I know, this is a terrible way to calculate surface area derivatives -- we're working on replacing it with an analytic version. In the meantime, please use this parameter with caution. If anyone has code for a better method, please share!</p>
+
+The syntax is
+{% highlight bash %}
+dpos {displacement} 
+{% endhighlight %}
+
+where displacement is a floating point number indicating the finite difference displacement for force (surface area derivative) calculations in units of Å.
+
+<div class="note warning">
+
+<h5>Important</h5>
+</p>This parameter is very dependent on sdens; e.g., smaller values of dpos require larger values of sdens.</p>
+
+</div>
+
+</div>
 
 
 
@@ -195,8 +223,8 @@ print force 1 - 2 end
 
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
-- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)-->
-- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
+- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
+- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)-->
 - [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#mol)
