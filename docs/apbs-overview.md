@@ -130,6 +130,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 <a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
 
 <div id="calcenergy" style=display:none;">
+
 	This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
 
 	{% highlight bash %}
@@ -138,7 +139,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 
 	where  is a string denoting what type of energy to calculate:
 	<code>no</code>
-	(Deprecated) don't calculate any energies.
+	(Deprecated) Don't calculate any energies.
 
 	<code>total</code>
 	Calculate and return total apolar energy for the entire molecule.
@@ -153,7 +154,9 @@ where id is a unique string which can be assigned to the calculation to facilita
 			print energy 1 - 2 end
 			{% endhighlight %}
 		<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+
 	</div>
+
 </div>
 
 
