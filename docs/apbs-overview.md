@@ -221,12 +221,51 @@ where displacement is a floating point number indicating the finite difference d
 
 
 
+
+
+<a href="javascript:ReverseDisplay('dpos')">gamma</a>
+
+<div id="gamma" style="display:none;">
+
+<p>This keyword specifies the surface tension coefficient for apolar solvation models.</p>
+
+The syntax is
+{% highlight bash %}
+gamma { value } 
+{% endhighlight %}
+
+where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å-1. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('dpos')">grid</a>
+
+<div id="grid" style="display:none;">
+
+This keyword specifies the quadrature grid spacing for volume integral calculations in apolar models.
+
+The syntax is
+{% highlight bash %}
+grid {hx hy hz} 
+{% endhighlight %}
+
+where <code>hx</code> <code>hy</code> <code>hz</code> are the quadrature spacings in the x-, y-, and z-directions in Å.
+
+</div>
+
+
+
+
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
-- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)-->
+- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
 - [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)-->
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#mol)
 - [press](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#press)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#sdens)
