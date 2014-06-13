@@ -887,7 +887,7 @@ The syntax is:
 fgcent { mol id | xcent ycent zcent }
 {% endhighlight %}
 
-<p>where a user can specify <strong>either<strong>:<br />
+<p>where a user can specify <strong>either</strong>:<br />
 <code>mol {id}</code> Center the grid on molecule with integer ID id; as assigned in the READ section of the input file. Molecule IDs are assigned in the order they are read, starting at 1.<br />
 <strong>or the user can specify</strong> <br />
 <code>xcent ycent zcent</code> Center the grids on the coordinates (floating point numbers in Å) at which the grid is centered. Based on the input molecule PDB coordinate frame.
