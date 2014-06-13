@@ -483,11 +483,11 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 
 ###Elec keywords
 
-<a href="javascript:ReverseDisplay('akeypre')">akeypre</a>
+<a href="javascript:ReverseDisplay('elec-keyword-akeypre')">akeypre</a>
 
-<div id="akeypre" style="display:none;">
+<div id="elec-keyword-akeypre" style="display:none;">
 
-Specifies how the initial finite element mesh should be constructed (from refinement of a very coarse 8-tetrahedron mesh prior to the solve-estimate-refine iteration in fe-manual finite element calculations.
+<p>Specifies how the initial finite element mesh should be constructed (from refinement of a very coarse 8-tetrahedron mesh prior to the solve-estimate-refine iteration in fe-manual finite element calculations.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -503,11 +503,11 @@ akeyPRE {key}
 
 
 
-<a href="javascript:ReverseDisplay('akeySOLVE')">akeySOLVE</a>
+<a href="javascript:ReverseDisplay('elec-keyword-akeySOLVE')">akeySOLVE</a>
 
-<div id="akeySOLVE" style="display:none;">
+<div id="elec-keyword-akeySOLVE" style="display:none;">
 
-Specifies how the the finite element mesh should be adaptively subdivided during the solve-estimate-refine iterations of a fe-manual finite element calculation. This allows for various a posteriori refinement schemes. 
+<p>Specifies how the the finite element mesh should be adaptively subdivided during the solve-estimate-refine iterations of a fe-manual finite element calculation. This allows for various a posteriori refinement schemes.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -523,11 +523,11 @@ akeySOLVE {key}
 
 
 
-<a href="javascript:ReverseDisplay('async')">async</a>
+<a href="javascript:ReverseDisplay('elec-keyword-async')">async</a>
 
-<div id="async" style="display:none;">
+<div id="elec-keyword-async" style="display:none;">
 
-This optional keyword allows users to perform the different tasks in a mg-para parallel run asynchronously. Specifically, a processor masquerades as process rank in a parallel focusing run and provides output (data files and energies/forces) appropriate to that processor's local partition. The user must then assemble the results after all processes complete. First, this option is useful for scheduling on-demand resources: this makes it easy for users to backfill into the available processes in a queue. Second, this option is useful for running on limited resources: this enables users without access to large parallel machines to still perform the same calculations. 
+<p>This optional keyword allows users to perform the different tasks in a mg-para parallel run asynchronously. Specifically, a processor masquerades as process rank in a parallel focusing run and provides output (data files and energies/forces) appropriate to that processor's local partition. The user must then assemble the results after all processes complete. First, this option is useful for scheduling on-demand resources: this makes it easy for users to backfill into the available processes in a queue. Second, this option is useful for running on limited resources: this enables users without access to large parallel machines to still perform the same calculations.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -542,11 +542,11 @@ async { rank }
 
 
 
-<a href="javascript:ReverseDisplay('bcfl')">bcfl</a>
+<a href="javascript:ReverseDisplay('elec-keyword-bcfl')">bcfl</a>
 
-<div id="bcfl" style="display:none;">
+<div id="elec-keyword-bcfl" style="display:none;">
 
-Specifies the type of boundary conditions used to solve the Poisson-Boltzmann equation. 
+<p>Specifies the type of boundary conditions used to solve the Poisson-Boltzmann equation.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -579,11 +579,11 @@ bcfl {flag}
 
 
 
-<a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
+<a href="javascript:ReverseDisplay('elec-keyword-calcenergy')">calcenergy</a>
 
-<div id="calcenergy" style="display:none;">
+<div id="elec-keyword-calcenergy" style="display:none;">
 
-<p>This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.
+<p>This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.</p>
 
 <div class="note info">
 
