@@ -122,7 +122,7 @@ This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coeffic
 bconc {density}
 {% endhighlight %}
 
-where <code>density'</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
+where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
 
 </div>
 
@@ -234,7 +234,7 @@ The syntax is
 gamma { value } 
 {% endhighlight %}
 
-where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å-1. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
+where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å<sup>-1</sup>. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
 
 </div>
 
@@ -260,17 +260,129 @@ where <code>hx</code> <code>hy</code> <code>hz</code> are the quadrature spacing
 
 
 
+<a href="javascript:ReverseDisplay('mol')">mol</a>
+
+<div id="mol" style="display:none;">
+
+This term specifies the molecule for which the apolar calculation is to be performed.
+
+The syntax is
+{% highlight bash %}
+mol {id} 
+{% endhighlight %}
+
+where <code>id</code> is the integer ID of the molecule for which the apolar calculation is to be performed. The molecule IDs are based on the order in which molecules are read by read mol statements, starting from 1.
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('press')">press</a>
+
+<div id="press" style="display:none;">
+
+This term specifies the solvent pressure p in kJ mol-1 Å<sup>-3</sup>. This coefficient multiplies the volume term of the apolar model discussed here and can be set to zero to eliminate volume contributions to the apolar solvation calculation.
+
+The syntax is
+{% highlight bash %}
+press {value} 
+{% endhighlight %}
+
+where <code>value</code> is the floating point value of the pressure coefficient in kJ mol-1 Å<sup>-3</sup>.
+
+</div>
+
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('sdens')">sdens</a>
+
+<div id="sdens" style="display:none;">
+
+This keyword specifies the number of quadrature points per Å<sup>2</sup> to use in surface terms (e.g., molecular surface, solvent accessible surface) for apolar calculations. The keyword is ignored when srad is 0.0 (e.g., for van der Waals surfaces) or when srfm is spl2 (e.g., for spline surfaces). The syntax is
+
+The syntax is
+{% highlight bash %}
+sdens {density} 
+{% endhighlight %}
+
+where <code>density</code> is a floating point number indicating the number of grid points per Å<sup>-2</sup>.
+
+<div class="note warning">
+
+<h5>Important</h5>
+</p>there is a direct correlation between the value used for the sphere density, the accuracy of the results, and the APBS calculation time.</p>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('srad')">srad</a>
+
+<div id="srad" style="display:none;">
+
+This keyword specifies the radius of the solvent molecules; this parameter is used to define various solvent-related surfaces and volumes (see srfm). This value is usually set to 1.4 Å for a water-like molecular surface and set to 0 Å for a van der Waals surface.
+
+The syntax is
+{% highlight bash %}
+srad {radius} 
+{% endhighlight %}
+
+where <code>radius</code> is the floating point value of the solvent radius (in Å). This keyword is ignored for srfm spl2.
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('srfm')">srfm</a>
+
+<div id="srfm" style="display:none;">
+
+This keyword specifies the model used to construct the solvent-related surface and volume.
+
+The syntax is
+{% highlight bash %}
+srfm {flag}
+{% endhighlight %}
+
+where <code>flag</code> is a string that specifies the model used for surface and volume.
+
+<p><code>sacc</code> Solvent-accessible (also called "probe-inflated") surface and volume.</p>
+
+
+<div class="note info">
+
+<h5>Note</h5>
+</p>This keyword is under construction: we're in the process of adding additional surface definitions (e.g., spl2).</p>
+
+</div>
+
+</div>
+
+
+
+
 <!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
 - [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
 - [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)-->
+- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#mol)
 - [press](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#press)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#sdens)
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)-->
 - [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#swin)
 - [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)
 
