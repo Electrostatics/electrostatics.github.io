@@ -422,7 +422,7 @@ where <code>T</code> is the floating point value of the temperature for calculat
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srad)
 - [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)
 - [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#swin)
-- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)-->
+- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)--->
 
 ###Basic APOLAR calculations
 
@@ -607,7 +607,7 @@ The syntax is:
 </p>
 
 
-<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl -->
+<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl --->
 
 </div>
 
