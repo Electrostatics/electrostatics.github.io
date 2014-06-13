@@ -484,8 +484,8 @@ The syntax is:
 akeyPRE {key}
 {% endhighlight %}
 
-<p>where <code>key</code> is a text string that specifies the method used to guide initial refinement and takes one of the values:
-<code>unif</code> Uniform refinement
+<p>where <code>key</code> is a text string that specifies the method used to guide initial refinement and takes one of the values:<br />
+<code>unif</code> Uniform refinement<br />
 <code>geom</code> Geometry-based refinement at molecular surfaces and charges</p>
 
 </div>
@@ -506,17 +506,57 @@ akeySOLVE {key}
 
 <p>where <code>key</code> is a text string that specifies the method used to guide adaptive refinement:</p>
 
-<code>resi</code> Residual-based a *posteriori* refinement
+<p><code>resi</code> Residual-based a *posteriori* refinement.</p>
 
 </div>
 
 
 
+
+<a href="javascript:ReverseDisplay('async')">async</a>
+
+<div id="async" style="display:none;">
+
+This optional keyword allows users to perform the different tasks in a mg-para parallel run asynchronously. Specifically, a processor masquerades as process rank in a parallel focusing run and provides output (data files and energies/forces) appropriate to that processor's local partition. The user must then assemble the results after all processes complete. First, this option is useful for scheduling on-demand resources: this makes it easy for users to backfill into the available processes in a queue. Second, this option is useful for running on limited resources: this enables users without access to large parallel machines to still perform the same calculations. 
+
+The syntax is:
+{% highlight bash %}
+async { rank }
+{% endhighlight %}
+
+<p>where <code>rank</code> is the integer ID of the particular processor to masquerade as. Processor IDs range from 0 to N-1, where N is the total number of processors in the run (see pdime). Processor IDs are related to their position in the overall grid by p = n<sub>x</sub> n<sub>y</sub> k + n<sub>x</sub> j + i &nbsp;where n<sub>x</sub> is the number of processors in the x-direction, n<sub>y</sub> is the number of processors in the y-direction, n<sub>z</sub> is the number of processors in the z-direction, i is the index of the processor in the x-direction, j is the index of the processor in the y-direction, k is the index of the processor in the z-direction, and p is the overall rank of the processor.</p>
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('bcfl')">bcfl</a>
+
+<div id="bcfl" style="display:none;">
+
+Specifies the type of boundary conditions used to solve the Poisson-Boltzmann equation. 
+
+The syntax is:
+{% highlight bash %}
+bcfl {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is a text string that identifies the type of conditions to be used.
+
+<p><code>zero</code> "Zero" boundary condition. Dirichlet conditions where the potential at the boundary is set to zero. This condition is not commonly used and can result in large errors if used inappropriately.
+
+</div>
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
-- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)-->
+- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
 - [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
-- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
+- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)-->
 - [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
 - [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
 - [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
