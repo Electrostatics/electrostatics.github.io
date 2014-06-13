@@ -637,9 +637,6 @@ calcforce { flag }
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
 </p>
 
-- - - - -
-
-
 </div>
 
 
@@ -665,8 +662,7 @@ The arguments for this keyword are <strong>either</strong>:<br />
 <code>xcent ycent zcent</code> Center the grid on the (floating point) coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
 </p>
 
-- - - - -
-
+<hr />
 
 </div>
 
@@ -691,8 +687,7 @@ cglen {xlen ylen zlen}
 <code>xlen ylen zlen</code> Grid lengths (floating point numbers) in the x-, y-, and z-directions in Å.
 </p>
 
-- - - - -
-
+<hr />
 
 </div>
 
@@ -701,8 +696,6 @@ cglen {xlen ylen zlen}
 
 
 <a href="javascript:ReverseDisplay('elec-keyword-chgm')">chgm</a>
-
-- - - - -
 
 <div id="elec-keyword-chgm" style="display:none;">
 
@@ -719,7 +712,7 @@ chgm {flag}
 <code>spl4</code>Quintic B-spline discretization. Similar to spl2, except the charge/multipole is additionally mapped to include next-next-nearest neighbors (125 grid points receive charge density)
 </p>
 
-- - - - -
+<hr />
 
 </div>
 
