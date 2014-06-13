@@ -147,7 +147,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 	<code>comps</code>
 	Calculate and return total apolar energy for the entire molecule as well as the energy components for each atom.
 
-	<div class="note warning">
+<div class="note warning">
 		<h5>Note</h5>
 		<p>This option must be used consistently for all calculations that will appear in subsequent <code>PRINT</code> statements. For example, if the statement</p>
 			{% highlight bash %}
@@ -155,7 +155,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 			{% endhighlight %}
 		<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
 
-	</div>
+</div>
 
 </div>
 
