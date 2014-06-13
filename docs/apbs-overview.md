@@ -115,6 +115,7 @@ where id is a unique string which can be assigned to the calculation to facilita
 <a href="javascript:ReverseDisplay('bconc')">bconc</a>
 
 <div id="bconc" style="display:none;">
+
 	This keyword specifies the bulk solvent density in Å<sup>-3</sup>. This coefficient multiplies the integral term of the apolar model discussed above and can be set to zero to eliminate integral contributions to the apolar solvation calculation. The syntax is:
 
 	{% highlight bash %}
@@ -122,10 +123,12 @@ where id is a unique string which can be assigned to the calculation to facilita
 	{% endhighlight %}
 
 	where <code>density</code> is a floating point number giving the bulk solvent density in Å<sup>-3</sup>
+
 </div>
 
 
 <a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
+
 <div id="calcenergy" style=display:none;">
 	This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
 
