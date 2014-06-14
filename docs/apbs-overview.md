@@ -1592,16 +1592,37 @@ usemap {type} {id}
 <p>where the mandatory keywords are:</p>
 <p><code>type</code></p>
 <p>A string that specifies the type of pre-calculated map to be read in:</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>diel</code>Dielectric function map (as read by read diel); this causes the pdie, sdie, srad, swin, and srfm parameters and the radii of the biomolecular atoms to be ignored when computing dielectric maps for the Poisson-Boltzmann equation. Note that the pdie and sdie values are still used for some boundary condition calculations as specified by bcfl.</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>kappa</code>Mobile ion-accessibility function map (as read by read kappa); this causes the swin and srfm parameters and the radii of the biomolecular atoms to be ignored when computing mobile ion values for the Poisson-Boltzmann equation. The ion parameter is not ignored and will still be used.</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>charge</code>Charge distribution map (as read by read charge); this causes the chgm parameter and the charges of the biomolecular atoms to be ignored when assembling the fixed charge distribution for the Poisson-Boltzmann equation.</p>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>pot</code>Potential map (as read by read pot); this option requires setting bcfl to map.  Note: This functionality is only available in the current developmental release of APBS.</p>
+<p style="margin-left:30px;"><code>diel</code>Dielectric function map (as read by read diel); this causes the pdie, sdie, srad, swin, and srfm parameters and the radii of the biomolecular atoms to be ignored when computing dielectric maps for the Poisson-Boltzmann equation. Note that the pdie and sdie values are still used for some boundary condition calculations as specified by bcfl.</p>
+<p style="margin-left:30px;"><code>kappa</code>Mobile ion-accessibility function map (as read by read kappa); this causes the swin and srfm parameters and the radii of the biomolecular atoms to be ignored when computing mobile ion values for the Poisson-Boltzmann equation. The ion parameter is not ignored and will still be used.</p>
+<p style="margin-left:30px;"><code>charge</code>Charge distribution map (as read by read charge); this causes the chgm parameter and the charges of the biomolecular atoms to be ignored when assembling the fixed charge distribution for the Poisson-Boltzmann equation.</p>
+<p style="margin-left:30px;"><code>pot</code>Potential map (as read by read pot); this option requires setting bcfl to map.  Note: This functionality is only available in the current developmental release of APBS.</p>
 <p><code>id</code>As described in the READ command documentation, this integer ID specifies the particular map read in with READ. These IDs are assigned sequentially, starting from 1, and incremented independently for each map type read by APBS. In other words, a calculation that uses two PQR files, one parameter file, three charge maps, and four dielectric maps would have PQR files with IDs 1-2, a parameter file with ID 1, charge maps with IDs 1-3, and dielectric maps with IDs 1-4.</p>
 
 <hr />
 
 </div>
 
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-usemesh')">usemesh</a>
+
+<div id="elec-keyword-usemesh" style="display:none;">
+
+<p>Specify the external finite element mesh to be used in the finite element Poisson-Boltzmann calculation (fe-manual). These must have been input via an earlier <code>READ</code> mesh statement. </p>
+
+The syntax is:
+{% highlight bash %}
+usemesh {id}
+{% endhighlight %}
+
+<p>where <code>id</code> is an integer ID specifying the particular map read in with <code>READ</code> mesh. These IDs are assigned sequentially, starting from 1, and incremented independently for each mesh read by APBS
+
+<hr />
+
+</div>
 
 
 
