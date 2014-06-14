@@ -1191,6 +1191,126 @@ nrpbe
 
 
 
+
+<a href="javascript:ReverseDisplay('elec-keyword-ofrac')">ofrac</a>
+
+<div id="elec-keyword-ofrac" style="display:none;">
+
+<p>Specify the amount of overlap to include between the individual processors meshes in a parallel focusing calculation (mg-para). This should be a value between 0 and 1.</p>
+
+The syntax is:
+{% highlight bash %}
+ofrac {frac}
+{% endhighlight %}
+
+<p>where <code>frac</code> is a floating point value between 0.0 and 1.0 denoting the amount of overlap between processors.</p>
+<p>Empirical evidence suggests that an <code>ofrac</code> value of 0.1 is sufficient to generate stable energies. However, this value may not be sufficient to generate stable forces and/or good quality isocontours. For example, the following table illustrates the change in energies and visual artifacts in isocontours as a function of ofrac values for a small peptide (2PHK:B).</p>
+
+<p>Sensitivity of 2PHK:B solvation energy calculations to ofrac values.</p>
+
+
+<table border="1" style="text-align:center">
+<caption>Sensitivity of 2PHK:B solvation energy calculations to ofrac values.
+</caption>
+<tbody>
+<tr>
+<th> ofrac value </th>
+<th> Energy (kJ/mol) </th>
+<th> Visual artifact in &amp;pm;
+</th>
+</tr>
+<tr>
+<th> 0.05
+</th>
+<td> 342.79 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.06
+</th>
+<td> 342.00 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.07
+</th>
+<td> 341.12 </td>
+<td> Yes
+</td>
+</tr>
+<tr>
+<th> 0.08
+</th>
+<td> 341.14 </td>
+<td> Yes
+</td>
+</tr>
+<tr>
+<th> 0.09
+</th>
+<td> 342.02 </td>
+<td> Yes
+</td>
+</tr>
+<tr>
+<th> 0.10
+</th>
+<td> 340.84 </td>
+<td> Yes
+</td>
+</tr>
+<tr>
+<th> 0.11
+</th>
+<td> 339.67 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.12
+</th>
+<td> 341.10 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.13
+</th>
+<td> 341.10 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.14
+</th>
+<td> 341.32 </td>
+<td> No
+</td>
+</tr>
+<tr>
+<th> 0.15
+</th>
+<td> 341.54 </td>
+<td> No
+</td>
+</tr>
+</tbody>
+</table>
+
+<p>In general, larger <code>ofrac</code> values will reduce the parallel efficiency but will improve the accuracy.</p>
+
+<p>For broad spatial support of the splines, every charge included in partition needs to be at least 1 grid space (chgm spl0), 2 grid spaces (chgm spl2), or 3 grid spaces (chgm spl4) away from the partition boundary.</p>
+
+
+
+<hr />
+
+</div>
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1218,8 +1338,8 @@ nrpbe
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#mol)
 - [nlev](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nlev)
 - [npbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#npbe)
-- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)--->
-- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)
+- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)
+- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)--->
 - [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
 - [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdens)
