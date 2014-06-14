@@ -1629,6 +1629,51 @@ usemesh {id}
 
 
 
+<a href="javascript:ReverseDisplay('elec-keyword-write')">write</a>
+
+<div id="elec-keyword-write" style="display:none;">
+
+<p>This controls the output of scalar data calculated during the Poisson-Boltzmann run. This keyword can be repeated several times to provide various types of data output from APBS.</p>
+
+The syntax is:
+{% highlight bash %}
+write {type} {format} {stem}
+{% endhighlight %}
+
+<p><code>type</code> A string indicating what type of data to output:</p>
+<p style="margin-left:30px;"><code>charge</code>Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
+<p style="margin-left:30px;"><code>pot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+<p style="margin-left:30px;"><code>atompot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-writemat')">writemat</a>
+
+<div id="elec-keyword-writemat" style="display:none;">
+
+<p>This controls the output of the mathematical operators in the Poisson-Boltzmann equation as matrices in Harwell-Boeing matrix format (multigrid only).</p>
+
+The syntax is:
+{% highlight bash %}
+writemat {type} {stem}
+{% endhighlight %}
+
+<p>where <code>type</code> A string that indicates what type of operator to output.</p>
+<p style="margin-left:30px;"><code>poisson</code> Write out the Poisson operator -\nabla \cdot \epsilon \nabla.</p>
+<p>where <code>stem</code> A string that specifies the path for...</p>
+
+<hr />
+
+</div>
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1669,10 +1714,10 @@ usemesh {id}
 - [targetNum](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetnum)
 - [targetRes](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetres)
 - [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#temp)
-- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)--->
+- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)
 - [usemap](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemap)
 - [usemesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemesh)
-- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
+- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)--->
 - [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)
 
 ###Types of ELEC calculations
