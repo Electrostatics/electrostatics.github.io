@@ -1618,7 +1618,7 @@ The syntax is:
 usemesh {id}
 {% endhighlight %}
 
-<p>where <code>id</code> is an integer ID specifying the particular map read in with <code>READ</code> mesh. These IDs are assigned sequentially, starting from 1, and incremented independently for each mesh read by APBS
+<p>where <code>id</code> is an integer ID specifying the particular map read in with <code>READ</code> mesh. These IDs are assigned sequentially, starting from 1, and incremented independently for each mesh read by APBS.</p>
 
 <hr />
 
