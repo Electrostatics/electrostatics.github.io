@@ -1303,11 +1303,77 @@ ofrac {frac}
 
 <p>For broad spatial support of the splines, every charge included in partition needs to be at least 1 grid space (chgm spl0), 2 grid spaces (chgm spl2), or 3 grid spaces (chgm spl4) away from the partition boundary.</p>
 
+<hr />
 
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-pdie')">pdie</a>
+
+<div id="elec-keyword-pdie" style="display:none;">
+
+<p>Specify the dielectric constant of the biomolecule. This is usually a value between 2 to 20, where lower values consider only electronic polarization and higher values consider additional polarization due to intramolecular motion.</p>
+
+The syntax is:
+{% highlight bash %}
+pdie {diel}
+{% endhighlight %}
+
+where <code>die1</code> is the floating point value of the unitless biomolecular dielectric constant.
 
 <hr />
 
 </div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-pdime')">pdime</a>
+
+<div id="elec-keyword-pdime" style="display:none;">
+
+<p>Specify the processor array to be used in a parallel focusing (mg-para) calculation. The product npx × npy × npz should be less than or equal to the total number of processors with which APBS was invoked (usually via mpirun). If more processors are provided at invocation than actually used during the run, the extra processors are not used in the calculation. The processors are tiled across the domain in a Cartesian fashion with a specified amount of overlap (see ofrac) between each processor to ensure continuity of the solution. Each processor's subdomain will contain the number of grid points specified by the dime keyword.</p>
+
+The syntax is:
+{% highlight bash %}
+pdime {npx npy npz}
+{% endhighlight %}
+
+<p>where <code>npx</code> <code>npy</code> <code>npz</code> are the integer number of processors to be used in the x-, y- and z-directions of the system.</p>
+
+<p>For broad spatial support of the splines, every charge included in partition needs to be at least 1 grid space (chgm spl0), 2 grid spaces (chgm spl2), or 3 grid spaces (chgm spl4) away from the partition boundary.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-sdens')">sdens</a>
+
+<div id="elec-keyword-sdens" style="display:none;">
+
+<p>Specify the number of grid points per square-angstrom to use in discontinuous surface constructions (e.g., molecular surface and solvent-accessible surfaces). Ignored when srad is 0.0 or srfm is spl2. There is a direct correlation between this value used for the surface sphere density, the accuracy of the surface calculations, and the APBS calculation time. The APBS "suggested" value is 10.0.</p>
+
+The syntax is:
+{% highlight bash %}
+sdens {density}
+{% endhighlight %}
+
+<p>where <code>density</code> is the floating point surface sphere density (in grid points/Å<sup>2</sup>).</p>
+
+<hr />
+
+</div>
+
 
 
 
@@ -1339,11 +1405,11 @@ ofrac {frac}
 - [nlev](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nlev)
 - [npbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#npbe)
 - [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)
-- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)--->
+- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)
 - [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
 - [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdens)
-- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)
+- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)--->
 - [smpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#smpbe)
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srad)
 - [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)
