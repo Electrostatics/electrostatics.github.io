@@ -1717,8 +1717,8 @@ writemat {type} {stem}
 - [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)
 - [usemap](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemap)
 - [usemesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemesh)
-- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)--->
-- [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)
+- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
+- [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)--->
 
 ###Types of ELEC calculations
 
