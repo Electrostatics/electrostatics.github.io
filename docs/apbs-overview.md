@@ -1060,6 +1060,137 @@ lrpbe
 
 
 
+
+<a href="javascript:ReverseDisplay('elec-keyword-maxsolve')">maxsolve</a>
+
+<div id="elec-keyword-maxsolve" style="display:none;">
+
+<p>Specify the number of times to perform the solve-estimate-refine iteration of the finite element solver (fe-manual).</p>
+
+The syntax is:
+{% highlight bash %}
+maxsolve { num }
+{% endhighlight %}
+
+<p>where <code>num</code> is an integer indicating the desired maximum number of iterations.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-maxvert')">maxvert</a>
+
+<div id="elec-keyword-maxvert" style="display:none;">
+
+<p>Specify the maximum number of vertices to allow during solve-estimate-refine cycle of finite element solver (fe-manual). This places a limit on the memory that can be used by the solver.</p>
+
+The syntax is:
+{% highlight bash %}
+maxvert { num }
+{% endhighlight %}
+
+<p>where <code>num</code> is an integer indicating the maximum number of vertices.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-mol')">mol</a>
+
+<div id="elec-keyword-mol" style="display:none;">
+
+<p>Specify the molecule for which the PBE is to be solved. IDs are based on the order in which molecules are read by <code>READ mol</code> statements, starting from 1.</p>
+
+The syntax is:
+{% highlight bash %}
+mol {id}
+{% endhighlight %}
+
+<p>where <code>id</code> is the integer ID of the molecule for which the Poisson-Boltzmann equation is to be solved.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-nlev')">nlev</a>
+
+<div id="elec-keyword-nlev" style="display:none;">
+
+<p>Specify the depth of the multilevel hierarchy used in the mg-manual multigrid solver. See dime for a discussion of how nlev relates to grid dimensions.</p>
+
+The syntax is:
+{% highlight bash %}
+nlev {lev}
+{% endhighlight %}
+
+<p>where <code>lev</code> is an integer indicating the desired depth of the multigrid hierarchy.</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-npbe')">npbe</a>
+
+<div id="elec-keyword-npbe" style="display:none;">
+
+<p>Specifies that the nonlinear (full) Poisson-Boltzmann equation should be solved.</p>
+
+The syntax is:
+{% highlight bash %}
+npbe
+{% endhighlight %}
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-nrpbe')">nrpbe</a>
+
+<div id="elec-keyword-nrpbe" style="display:none;">
+
+<p>Specifies that the nonlinear form of the regularized Poisson-Boltzmann equation (RPBE) should be solved. The regularized PBE equation replaces the point charge distribution with the corresponding Green's function. As a result of this replacement, the solution corresponds to the reaction field instead of the total potential; the total potential can be recovered by adding the appropriate Coulombic terms to the solution. Likewise, this equation immediately yields the solvation energy without the need for reference calculations.</p>
+
+The syntax is:
+{% highlight bash %}
+nrpbe
+{% endhighlight %}
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>this functionality is only available with FEM-based solvers.</p>
+
+</div>
+
+<hr />
+
+</div>
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1081,13 +1212,13 @@ lrpbe
 - [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
 - [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
 - [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
-- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)--->
+- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
 - [maxsolve](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxsolve)
 - [maxvert](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxvert)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#mol)
 - [nlev](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nlev)
 - [npbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#npbe)
-- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)
+- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)--->
 - [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)
 - [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
 - [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
