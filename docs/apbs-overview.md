@@ -1377,6 +1377,96 @@ sdens {density}
 
 
 
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-sdie')">sdie</a>
+
+<div id="elec-keyword-sdie" style="display:none;">
+
+<p>Specify the dielectric constant of the solvent. Bulk water at biologically-relevant temperatures is usually modeled with a dielectric constant of 78-80.</p>
+
+The syntax is:
+{% highlight bash %}
+sdie {diel}
+{% endhighlight %}
+
+<p>where <code>die1</code> is a floating point number representing the solvent dielectric constant (unitless).</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-smpbe')">smpbe</a>
+
+<div id="elec-keyword-smpbe" style="display:none;">
+
+<p>Specifies that the size-modified PBE should be solved as described by Chu V, et al Biophys J, <strong>93</strong>(9):3202-9, 2007 (doi:10.1529/biophysj.106.099168).</p>
+
+The syntax is:
+{% highlight bash %}
+smpbe vol { spacing } size { num }
+{% endhighlight %}
+
+<p>The parameter <tt><code>spacing</code></tt> is a floating point number in Ångstroms used specify the lattice spacing such that each lattice site has a volume equal to <tt><code>spacing</code></tt><sup>3</sup>.  The parameter <tt><code>num</code></tt> controls the relative size of the ions (in Ångstroms) such that each lattice site can contain a single ion of volume <tt><code>spacing</code></tt><sup>3</sup> or <tt><code>num</code></tt> ions of volume <tt>spacing</tt><sup>3</sup>/<tt>size</tt>.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-srad')">srad</a>
+
+<div id="elec-keyword-srad" style="display:none;">
+
+<p>Specify the radius of the solvent molecules; this parameter is used to define the dielectric function for probe-based dielectric definitions (see srfm). This value is usually set to 1.4 Å for water. This keyword is ignored when any of the spline-based surfaces are used (e.g., spl2, see srfm), since they are not probe-based.</p>
+
+The syntax for this command is:
+{% highlight bash %}
+srad {radius}
+{% endhighlight %}
+
+<p>where <code>radius</code> is the floating point solvent radius (in Å).</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-srfm')">srfm</a>
+
+<div id="elec-keyword-srfm" style="display:none;">
+
+<p>Specify the model used to construct the dielectric and ion-accessibility coefficients.</p>
+
+The syntax for this command is:
+{% highlight bash %}
+srfm {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is a string describing the coefficient model.</p>
+<p><code>mol</code>The dielectric coefficient is defined based on a molecular surface definition. The problem domain is divided into two spaces. The "free volume" space is defined by the union of solvent-sized spheres (see srad) which do not overlap with biomolecular atoms. This free volume is assigned bulk solvent dielectric values. The complement of this space is assigned biomolecular dielectric values. With a non-zero solvent radius (srad), this choice of coefficient corresponds to the traditional definition used for PB calculations. When the solvent radius is set to zero, this corresponds to a van der Waals surface definition. The ion-accessibility coefficient is defined by an "inflated" van der Waals model. Specifically, the radius of each biomolecular atom is increased by the radius of the ion species (as specified with the ion keyword). The problem domain is then divided into two spaces. The space inside the union of these inflated atomic spheres is assigned an ion-accessibility value of 0; the complement space is assigned bulk ion accessibility values.</p>
+<p><code>smol</code>The dielectric and ion-accessibility coefficients are defined as for mol (see above). However, they are then "smoothed" by a 9-point harmonic averaging to somewhat reduce sensitivity to the grid setup as described by Bruccoleri et al. J Comput Chem 18 268-276, 1997 (journal web site).</p>
+<p><code>spl2</code>The dielectric and ion-accessibility coefficients are defined by a cubic-spline surface as described by Im et al, Comp Phys Commun 111 (1-3) 59-75, 1998 (doi:[10.1016/S0010-4655(98)00016-2). The width of the dielectric interface is controlled by the swin parameter.  These spline-based surface definitions are very stable with respect to grid parameters and therefore ideal for calculating forces. However, they require substantial reparameterization of the force field; interested users should consult Nina et al, Biophys Chem 78 (1-2) 89-96, 1999 (doi:10.1016/S0301-4622(98)00236-1). Additionally, these surfaces can generate unphysical results with non-zero ionic strengths; this is an on-going area of development.</p>
+<p><code>spl4</code>The dielectric and ion-accessibility coefficients are defined by a 7th order polynomial. This surface definition has characteristics similar to spl2, but provides higher order continuity necessary for stable force calculations with atomic multipole force fields (up to quadrupole).</p>
+
+<hr />
+
+</div>
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1409,10 +1499,10 @@ sdens {density}
 - [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
 - [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
 - [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdens)
-- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)--->
+- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)
 - [smpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#smpbe)
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)--->
 - [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#swin)
 - [targetNum](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetnum)
 - [targetRes](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetres)
