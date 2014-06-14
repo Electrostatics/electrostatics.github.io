@@ -1467,6 +1467,147 @@ srfm {flag}
 
 
 
+<a href="javascript:ReverseDisplay('elec-keyword-swin')">swin</a>
+
+<div id="elec-keyword-swin" style="display:none;">
+
+<p>Specify the size of the support (i.e., the rate of change) for spline-based surface definitions (see srfm). Usually 0.3 Å.</p>
+
+The syntax is:
+{% highlight bash %}
+swin {win}
+{% endhighlight %}
+
+<p>where <code>win</code> where win is a floating point number for the spline window width (in Å). Note that, per the analysis of Nina, Im, and Roux (doi:10.1016/S0301-4622(98)00236-1), the force field parameters (radii) generally need to be adjusted if the spline window is changed.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-targetNum')">targetNum</a>
+
+<div id="elec-keyword-targetNum" style="display:none;">
+
+<p>Specify the target number of vertices in the initial finite element mesh for fe-manual calculations.  Initial refinement will continue until this number is reached or the the longest edge of every simplex is below targetNum.</p>
+
+The syntax is:
+{% highlight bash %}
+targetNum { num }
+{% endhighlight %}
+
+<p>where <code>num</code> is an integer denoting the target number of vertices in initial mesh.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-targetRes')">targetRes</a>
+
+<div id="elec-keyword-targetRes" style="display:none;">
+
+<p>Specify the target resolution of the simplices in a finite element mesh (fe-manual); refinement will continue until the longest edge of every simplex is below this value.</p>
+
+The syntax is:
+{% highlight bash %}
+targetRes { res }
+{% endhighlight %}
+
+<p>where <code>res</code> is a floating point number denoting the target resolution for longest edges of simplices in mesh (in Å).</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-temp')">temp</a>
+
+<div id="elec-keyword-temp" style="display:none;">
+
+<p>Specify the temperature for the Poisson-Boltzmann calculation.</p>
+
+The syntax is:
+{% highlight bash %}
+temp { T }
+{% endhighlight %}
+
+<p>where <code>T</code> is a floating point number indicating the temperature in K.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>The temperature term is used for adjusting the ion distribution and scaling electrostatic potentials.  It is not used to model the temperature dependence of any dielectric terms.</p>
+
+</div>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-useaqua')">useaqua</a>
+
+<div id="elec-keyword-useaqua" style="display:none;">
+
+<p>This keyword enables experimental support for Aqua, a verison of the Michael Holst> group FEtk PMG multigrid library optimized by Patrice Koehl for improved memory usage and speed when solving the Poisson-Boltzmann equation. This keyword is temporary and will eventually disappear as Aqua becomes the default multigrid solver (mg-manual, mg-auto, mg-para) for APBS.</p>
+
+The syntax is:
+{% highlight bash %}
+useaqua
+{% endhighlight %}
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-usemap')">usemap</a>
+
+<div id="elec-keyword-usemap" style="display:none;">
+
+<p>Specify pre-calculated coefficient maps to be used in the Poisson-Boltzmann calculation. These must have been input via an earlier READ statement.</p>
+
+The syntax for this command is:
+{% highlight bash %}
+usemap {type} {id}
+{% endhighlight %}
+
+<p>where the mandatory keywords are:</p>
+<p><code>type</code></p>
+<p>A string that specifies the type of pre-calculated map to be read in:</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>diel</code>Dielectric function map (as read by read diel); this causes the pdie, sdie, srad, swin, and srfm parameters and the radii of the biomolecular atoms to be ignored when computing dielectric maps for the Poisson-Boltzmann equation. Note that the pdie and sdie values are still used for some boundary condition calculations as specified by bcfl.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>kappa</code>Mobile ion-accessibility function map (as read by read kappa); this causes the swin and srfm parameters and the radii of the biomolecular atoms to be ignored when computing mobile ion values for the Poisson-Boltzmann equation. The ion parameter is not ignored and will still be used.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>charge</code>Charge distribution map (as read by read charge); this causes the chgm parameter and the charges of the biomolecular atoms to be ignored when assembling the fixed charge distribution for the Poisson-Boltzmann equation.</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<p><code>pot</code>Potential map (as read by read pot); this option requires setting bcfl to map.  Note: This functionality is only available in the current developmental release of APBS.</p>
+<p><code>id</code>As described in the READ command documentation, this integer ID specifies the particular map read in with READ. These IDs are assigned sequentially, starting from 1, and incremented independently for each map type read by APBS. In other words, a calculation that uses two PQR files, one parameter file, three charge maps, and four dielectric maps would have PQR files with IDs 1-2, a parameter file with ID 1, charge maps with IDs 1-3, and dielectric maps with IDs 1-4.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+
 <!---
 - [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
 - [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
@@ -1502,12 +1643,12 @@ srfm {flag}
 - [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)
 - [smpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#smpbe)
 - [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)--->
+- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)
 - [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#swin)
 - [targetNum](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetnum)
 - [targetRes](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetres)
 - [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#temp)
-- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)
+- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)--->
 - [usemap](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemap)
 - [usemesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemesh)
 - [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
