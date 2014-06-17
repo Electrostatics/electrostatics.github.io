@@ -48,17 +48,17 @@ else { document.getElementById(d).style.display = "none"; }
 
 <p><code>dx-math &lt;path&gt;</code></p>
 
-<code>&nbsp;&nbsp; &nbsp; &nbsp;dx-math </code>
+<p><code>&nbsp;&nbsp; &nbsp; &nbsp;dx-math </code></p>
 
 <p>where <code>&lt;path&gt;</code> is the path is the path to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:</p>
 
-<code>grid1<br />
+<p><code>grid1<br />
       grid2 +<br />
       5.3 *<br />
       grid4 +<br />
       99.3 -<br />
       grid5 =<br />
-</code>
+</code></p>
 
 <p>The file names, scalar values, and operations must be separated by tabs, line breaks, or white space.  Comments can be included between the character # and a new line (in the usual shell script fashion).</p>
 
@@ -80,7 +80,7 @@ else { document.getElementById(d).style.display = "none"; }
 <ul>
 <li>Resampling of one or more OpenDX map files (for example to alter the grid spacing of separate OpenDX files for further manipulation),</li>
 <li>Extracting a subregion of an existing OpenDX map file.</li>
-<ul>
+</ul>
 
 <p>Usage and examples of running mergedx2 are given below:</p>
 
@@ -116,12 +116,7 @@ Print bounds of merged input dx files. Doesn't generate a merged map.<br />
 Specifying -s with all of the input files listed will run a calculation that will print the current minimum and maximum bounds for all user supplied input files. No output (merged) OpenDX file is produced. The -s flag will cause all other options to be ignored.<br />
 (-s is exclusive of the other flags)</p>
 
-<p><code>-h</code> Print this message<br /></p>
-
-<hr />
-
-</div>
-
+<p><code>-h</code> Print this message.</p>
 
 ####Examples
 
@@ -131,9 +126,28 @@ Specifying -s with all of the input files listed will run a calculation that wil
  ./mergedx2 -o myfile.dx -r 0.5 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx<br />
  ./mergedx2 -s</code></p>
 
+<hr />
+
+</div>
 
 
 
+
+
+
+<a href="javascript:ReverseDisplay('multivalue')">multivalue</a>
+
+<div id="multivalue" style="display:none;">
+
+<p>This program evaluates OpenDX scalar data at a series of user-specified points and returns the value of the data at each point.  Run the program without any arguments./p>
+
+<p><code>multivalue</code></p>
+
+<p>to see usage information.</p>
+
+<hr />
+
+</div>
 
 
 
