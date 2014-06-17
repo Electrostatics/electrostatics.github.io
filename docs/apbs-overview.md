@@ -1861,6 +1861,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 <div class="note info">
 
 <h5>Note</h5>
+
 <p>If you choose this option, you must also include a read diel statement.</p>
 
 </div>
@@ -1883,21 +1884,122 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a href="javascript:ReverseDisplay('read-keyword-mesh')">mesh</a>
+<a href="javascript:ReverseDisplay('read-keyword-kappa')">kappa</a>
 
-<div id="read-keyword-mesh" style="display:none;">
+<div id="read-keyword-kappa" style="display:none;">
 
-<p><code>mesh {format} {path}</code></p>
+<p><code>kappa {format} {path}</code></p>
 
-<p>This command allows APBS to read a finite element mesh to use as a starting point for finite element calculations. The input is simply the mesh geometry; e.g., as produced by a finite element mesh generation program such as LBIE-Mesher or GAMer.</p>
+<p>This command allows APBS to read the ion-accessibility function mapped to a mesh. The inputs are maps of ion accessibility values which range between 0 and the build Debye-Hückel screening parameter; these values have units of Å-2. In general, this command will read kappa-maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>If you choose this option, you must also include a read diel statement.</p>
+
+</div>
 
 <p>Arguments for this command are:</p>
 
-<p><code>format</code>The format of the input mesh. Acceptable values include:</p>
+<p><code>format</code>The format of the kappa map. Acceptable values include:</p>
 
-<p style="margin-left:30px;"><code>mcsf</code> MCSF format</p>
+<p style="margin-left:30px;"><code>dx</code> OpenDX format</p>
 
-<p><code>path</code>The location of the meshes file.</p>
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the kappa map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-mol')">mol</a>
+
+<div id="read-keyword-mol" style="display:none;">
+
+<p><code>mol {format} {path}</code></p>
+
+<p>This command specifies the molecular data to be read into APBS.</p>
+
+<p>The required arguments are:</p>
+
+<p><code>format</code>The format of the input data. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>pqr</code> Specify that molecular data is in PQR format.</p>
+
+<p style="margin-left:30px;"><code>pdb</code> Specify that molecular data is in pseudo-PDB format.  If this type of structure file is used, then a parameter file must also be specified to provide charge and radius parameters for the biomolecule's atoms.</p>
+
+<p><code>path</code>The location of the molecular data file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-parm')">parm</a>
+
+<div id="read-keyword-parm" style="display:none;">
+
+<p><code>parm {format} {path}</code></p>
+
+<p>This command specifies the charge and radius data to be used with pseudo-PDB-format molecule files.</p>
+
+<p>The arguments are:</p>
+
+<p><code>format</code>The format of the parameter file. Acceptable flags include:</p>
+
+<p style="margin-left:30px;"><code>flat</code> Specify that the parameter file is in APBS Flat-file parameter format.</p>
+
+<p style="margin-left:30px;"><code>xml</code> Specify that the parameter file is in APBS XML parameter format.</p>
+
+<p><code>path</code>The location of the parameter data file.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>APBS provides a few example files as part of the source code distribution.  Currently, example files only contain the polar parameters that can also be assigned more easily through the PDB2PQR software.  Parameter files with apolar values are not currently available for protein and nucleic acid parameters and are actively under development as a research project.  Please contact Nathan Baker for additional information about the state of this research, particularly if you are interested in helping.</p>
+
+</div>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-pot')">pot</a>
+
+<div id="read-keyword-pot" style="display:none;">
+
+<p><code>pot {format} {path}</code></p>
+
+<p>This command allows APBS to read the electrostatic potential mapped to a mesh. The inputs are maps of the electrostatic potential from a previous calculation. In general, this command will read potential-maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>To use this functionality you must set the bcfl keyword to map. See also: usemap.</p>
+
+</div>
+
+<p>Arguments for this command are:</p>
+
+<p><code>format</code>The format of the potential map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format.</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the potential map file.</p>
 
 <hr />
 
@@ -1908,10 +2010,10 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 <!---
 - [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
 - [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
-- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)--->
+- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
 - [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm)
-- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)
+- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)--->
 
 ###READ examples
 
