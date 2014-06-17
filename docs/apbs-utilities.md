@@ -52,7 +52,7 @@ else { document.getElementById(d).style.display = "none"; }
 
 <p>where <code>&lt;path&gt;</code> is the path is the path to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:</p>
 
-{% highlight bash %}
+{% highlight ruby %}
 grid1
 grid2 +
 5.3 *
