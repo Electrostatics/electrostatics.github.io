@@ -52,13 +52,15 @@ else { document.getElementById(d).style.display = "none"; }
 
 <p>where <code>&lt;path&gt;</code> is the path is the path to a file with operations specified in a stack-based (RPN) manner.  For example, a command file which adds grid1 and grid2, multiplies the result by 5.3, adds grid4, subtracts 99.3 from the whole thing, and writes the result on grid5 would have the form:</p>
 
-<p><code>grid1<br />
-      grid2 +<br />
-      5.3 *<br />
-      grid4 +<br />
-      99.3 -<br />
-      grid5 =<br />
-</code></p>
+{% highlight bash %}
+grid1
+grid2 +
+5.3 *
+grid4 +
+99.3 -
+grid5 =
+{% endhighlight %}
+
 
 <p>The file names, scalar values, and operations must be separated by tabs, line breaks, or white space.  Comments can be included between the character # and a new line (in the usual shell script fashion).</p>
 
@@ -124,7 +126,8 @@ Specifying -s with all of the input files listed will run a calculation that wil
 ./mergedx2 -r 0.5 file1.dx file2.dx<br />
 ./mergedx2 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx file3.dx<br />
 ./mergedx2 -o myfile.dx -r 0.5 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx<br />
-./mergedx2 -s{% endhighlight %}
+./mergedx2 -s
+{% endhighlight %}
 
 <hr />
 
