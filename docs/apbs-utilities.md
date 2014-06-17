@@ -61,7 +61,6 @@ grid4 +
 grid5 =
 {% endhighlight %}
 
-
 <p>The file names, scalar values, and operations must be separated by tabs, line breaks, or white space.  Comments can be included between the character # and a new line (in the usual shell script fashion).</p>
 
 <hr />
@@ -142,7 +141,7 @@ Specifying -s with all of the input files listed will run a calculation that wil
 
 <div id="multivalue" style="display:none;">
 
-<p>This program evaluates OpenDX scalar data at a series of user-specified points and returns the value of the data at each point.  Run the program without any arguments./p>
+<p>This program evaluates OpenDX scalar data at a series of user-specified points and returns the value of the data at each point.  Run the program without any arguments.</p>
 
 <p><code>multivalue</code></p>
 
