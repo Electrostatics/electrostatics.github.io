@@ -1787,7 +1787,7 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 ###READ keywords
 
-<a href="javascript:ReverseDisplay('read-keyword-charge')">Charge`</a>
+<a href="javascript:ReverseDisplay('read-keyword-charge')">charge</a>
 
 <div id="read-keyword-charge" style="display:none;">
 
@@ -1797,13 +1797,51 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 <p>The format of the charge map. Acceptable values include:</p>
 
-<p><code>format</code>The format of the charge map. Acceptable values include:
+<p><code>format</code>The format of the charge map. Acceptable values include:</p>
 
 <p style="margin-left:30px;"><code>dx</code>OpenDX format</p>
 
-<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
 
-<p><code>path</code>The location of the charge map file.
+<p><code>path</code>The location of the charge map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-diel')">diel</a>
+
+<div id="read-keyword-diel" style="display:none;">
+
+<p><code>diel {format} {path-x} {path-y} {path-z}</code></p>
+
+<p>This command allows APBS to read the dielectric function mapped to 3 meshes shifted by one-half grid spacing in the x, y, and z directions. The inputs are maps of dielectric variables between the solvent and biomolecular dielectric constants; these values are unitless. In general, this command will read dielectric maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>If you choose this option and have a non-zero ionic strength, you must also include a read kappa statement.</p>
+
+</div>
+
+
+<p>Required arguments for this command are:</p>
+
+<p><code>format</code>The format of the dielectric map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path-x</code>The location of the x-shifted dielectric map file.</p>
+
+<p><code>path-y</code>The location of the y-shifted dielectric map file.</p>
+
+<p><code>path-z</code>The location of the z-shifted dielectric map file.</p>
 
 <hr />
 
@@ -1814,21 +1852,8 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
+<!---
+- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)-->
 - [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
 - [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
