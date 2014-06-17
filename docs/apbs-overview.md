@@ -1673,8 +1673,6 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
-
-
 <p style="margin-left:30px;"><code>dielx</code>Write out the dielectric map shifted by 1/2 grid spacing in the x-direction (see READ diel). The values are unitless. (multigrid only)</p>
 
 <p style="margin-left:30px;"><code>diely</code>Write out the dielectric map shifted by 1/2 grid spacing in the y-direction (see READ diel). The values are unitless. (multigrid only)</p>
@@ -1683,7 +1681,21 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>kappa</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
 
-<p style="margin-left:30px;"><code></code></p>
+
+
+<p><code>format</code> A string that specifies the format for writing out the data.</p>
+
+<p style="margin-left:30px;"><code>dx</code>Write out data in OpenDX format. This is the preferred format for APBS I/O. (multigrid and finite element).</p>
+
+<p style="margin-left:30px;"><code>avs</code>Write out data in AVS UCD format. (finite element only).</p>
+
+<p style="margin-left:30px;"><code>uhbd</code>Write out data in UHBD format. (multigrid only).</p>
+
+<p><code>gz</code>Write out OpenDX data in gzipped (zlib) compatible format. Appends .dx.gz to the filename.</p>
+
+<p style="margin-left:30px;"><code>flat</code>Write out data as a plain text file. (multigrid and finite element).</p>
+
+<p><code>stem</code>A string that specifies the path for the output; files are written to stem.XYZ, where XYZ is determined by the file format (and processor rank for parallel calculations). If the pathname contains spaces, then it must be surrounded by double quotes; e.g., "/path with spaces/foo.in".</p>
 
 <hr />
 
