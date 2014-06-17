@@ -1828,7 +1828,6 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 </div>
 
-
 <p>Required arguments for this command are:</p>
 
 <p><code>format</code>The format of the dielectric map. Acceptable values include:</p>
@@ -1851,11 +1850,65 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
+<a href="javascript:ReverseDisplay('read-keyword-kappa')">kappa</a>
+
+<div id="read-keyword-kappa" style="display:none;">
+
+<p><code>kappa {format} {path}</code></p>
+
+<p>This command allows APBS to read the ion-accessibility function mapped to a mesh. The inputs are maps of ion accessibility values which range between 0 and the build Debye-Hückel screening parameter; these values have units of Å-2. In general, this command will read kappa-maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>If you choose this option, you must also include a read diel statement.</p>
+
+</div>
+
+<p>Arguments for this command are:</p>
+
+<p><code>format</code>The format of the kappa map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the kappa map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-mesh')">mesh</a>
+
+<div id="read-keyword-mesh" style="display:none;">
+
+<p><code>mesh {format} {path}</code></p>
+
+<p>This command allows APBS to read a finite element mesh to use as a starting point for finite element calculations. The input is simply the mesh geometry; e.g., as produced by a finite element mesh generation program such as LBIE-Mesher or GAMer.</p>
+
+<p>Arguments for this command are:</p>
+
+<p><code>format</code>The format of the input mesh. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>mcsf</code> MCSF format</p>
+
+<p><code>path</code>The location of the meshes file.</p>
+
+<hr />
+
+</div>
+
+
 
 <!---
-- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)-->
+- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
 - [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
-- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
+- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)--->
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
 - [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm)
 - [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)
