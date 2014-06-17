@@ -1787,7 +1787,47 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 ###READ keywords
 
-- [charge](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#charge)
+<a href="javascript:ReverseDisplay('read-keyword-charge')">Charge`</a>
+
+<div id="read-keyword-charge" style="display:none;">
+
+<p>This command allows <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a>
+to read the fixed (molecular) charge density function mapped to a mesh.
+The inputs are maps of charge densities; these values have units of e<sub>c</sub> Å<sup>-3</sup>, where e<sub>c</sub> is the electron charge. In general, this command will read charge-maps written by <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write" rel="nofollow" title="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write">write</a> commands in earlier <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a> calculations. Arguments for this command are:</p>
+
+<p>The format of the charge map. Acceptable values include:</p>
+
+<p><code>format</code>The format of the charge map. Acceptable values include:
+
+<p style="margin-left:30px;"><code>dx</code>OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.
+
+<p><code>path</code>The location of the charge map file.
+
+<hr />
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 - [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
 - [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
 - [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
