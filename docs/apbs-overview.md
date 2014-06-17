@@ -1641,9 +1641,49 @@ write {type} {format} {stem}
 {% endhighlight %}
 
 <p><code>type</code> A string indicating what type of data to output:</p>
-<p style="margin-left:30px;"><code>charge</code>Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
-<p style="margin-left:30px;"><code>pot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
-<p style="margin-left:30px;"><code>atompot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>charge</code> Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
+
+<p style="margin-left:30px;"><code>pot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>atompot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>smol</code> Write out the solvent accessibility defined by the molecular surface definition (see srfm smol). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>sspl</code> Write out the spline-based solvent accessibility (see srfm spl2). Values are unitless and range from 0 (inaccessible) to 1 (accessible) (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>vdw</code> Write out the van der Waals-based solvent accessibility (see srfm smol with srad 0.0). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>ivdw</code> Write out the inflated van der Waals-based ion accessibility (see srfm smol). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>lap</code> Write out the Laplacian of the potential in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>edens</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+
+<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+
+<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+
+
+<p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+
+<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+
+<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+
+
+
+<p style="margin-left:30px;"><code>dielx</code>Write out the dielectric map shifted by 1/2 grid spacing in the x-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>diely</code>Write out the dielectric map shifted by 1/2 grid spacing in the y-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>dielz</code>Write out the dielectric map shifted by 1/2 grid spacing in the z-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>kappa</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code></code></p>
 
 <hr />
 
@@ -1665,7 +1705,7 @@ writemat {type} {stem}
 
 <p>where <code>type</code> A string that indicates what type of operator to output.</p>
 <p style="margin-left:30px;"><code>poisson</code> Write out the Poisson operator -\nabla \cdot \epsilon \nabla.</p>
-<p>where <code>stem</code> A string that specifies the path for...</p>
+<p><code>stem</code> A string that specifies the path for...</p>
 
 <hr />
 
