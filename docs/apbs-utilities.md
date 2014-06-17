@@ -120,11 +120,11 @@ Specifying -s with all of the input files listed will run a calculation that wil
 
 ####Examples
 
-<p><code>
+{% highlight bash %}
 ./mergedx2 -r 0.5 file1.dx file2.dx<br />
- ./mergedx2 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx file3.dx<br />
- ./mergedx2 -o myfile.dx -r 0.5 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx<br />
- ./mergedx2 -s</code></p>
+./mergedx2 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx file3.dx<br />
+./mergedx2 -o myfile.dx -r 0.5 -b -3.13 -2.0 -2.14 31.0 25.4 22.1 file1.dx file2.dx<br />
+./mergedx2 -s{% endhighlight %}
 
 <hr />
 
