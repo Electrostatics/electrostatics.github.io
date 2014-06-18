@@ -12,7 +12,7 @@ In addition to using APBS through other programs, there are two ways to invoke A
 
 ##APBS command-line binary
 
-As mentioned in the [installation and availability section]({{site.url}}/apbs-pdb2pqr/docs/installation/), the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
+As mentioned in the [installation and availability section]({{site.baseurl}}/apbs-pdb2pqr/docs/installation/), the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
 
 {% highlight bash %}
 apbs [options] input-file
@@ -32,7 +32,7 @@ Command line options include:
 <li>--version  Displays the current APBS version</li>
 </ul>
 
-input-file is an input file with a specific syntax described in the section [Input files]({{site.url}}/apbs-pdb2pqr/docs/installation/). Besides the output files specified from within input-file and the optional logs as specified by use of the --output-file command line option, APBS writes data to three additional places:
+input-file is an input file with a specific syntax described in the section [Input files]({{site.baseurl}}/apbs-pdb2pqr/docs/installation/). Besides the output files specified from within input-file and the optional logs as specified by use of the --output-file command line option, APBS writes data to three additional places:
 
 <ul>
 <li>Standard output. This will appear on your screen (if you don't redirect it somewhere) and will contain all the basic information about the electrostatics calculation.</li>
@@ -45,7 +45,7 @@ input-file is an input file with a specific syntax described in the section [Inp
 The <a href="http://nbcr.ucsd.edu/data/docs/opal/" target="_blank">Opal Toolkit</a> is a set of software produced by the <a href="http://nbcr.ucsd.edu/" target="_blank">National Biomedical Computational Resource (NBCR)</a>. This toolkit allows for the computing load for processor intensive scientiﬁc applications to be shifted to a 3rd party and/or generic computing grid. This can be tremendously advantageous in situations where a large amount of computing power is not locally available, but is required, for the task at hand. In particular, many users have discovered that their local computational resources are insufficient for certain types of APBS calculations on large systems or at extremely high accuracy. This client removes this resource limitation by allowing users to run on clusters at NBCR.
 Recent developmental versions APBS add optional support for the off-loading of APBS calculations to an Opal service. Currently, the client uses services hosted by the Baker group. Opal support has been integrated into APBS such that the end user will not be able to tell the difference between local and Opal runs of APBS: the APBS Opal client can be invoked in exactly the same way as the main APBS binary with identical output.
 The APBS Opal support is in the form of a Python script ApbsClient.py and is installed by default when following the installation procedure outlined elsewhere. The script has been tested on Python 2.5; newer/older versions of Python may or may be functional.
-As mentioned above, the basic invocation is the same as the main binary. The only difference is the executable, which is called ApbsClient.py, rather than apbs. This client should be [installed]({{site.url}}/installation/) by default when APBS is installed. Users can run:
+As mentioned above, the basic invocation is the same as the main binary. The only difference is the executable, which is called ApbsClient.py, rather than apbs. This client should be [installed]({{site.baseurl}}/installation/) by default when APBS is installed. Users can run:
 
 {% highlight bash %}
 ApbsClient.py [options] {input}

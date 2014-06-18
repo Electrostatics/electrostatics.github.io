@@ -14,7 +14,7 @@ APBS was designed to facilitate use with other programs. This section outlines s
 
 ###PDB2PQR
 
-The [PDB2PQR web server]({{site.url}}/downloads) provides the ability to configure, run, and visualize APBS calculations
+The [PDB2PQR web server]({{site.baseurl}}/downloads) provides the ability to configure, run, and visualize APBS calculations
 
 ###Gemstone
 

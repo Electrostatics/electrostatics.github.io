@@ -62,7 +62,7 @@ body > header h1 span {
 }
 
 div.cover{
-  background-image: url(/apbs-pdb2pqr/img/bg.jpg);
+  background-image: url({{ site.baseurl }}/img/bg.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 30px 0px;
