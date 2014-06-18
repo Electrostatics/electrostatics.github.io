@@ -108,7 +108,7 @@ The first (optional) argument is:
 name {id}
 {% endhighlight %}
 
-where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.url}/apbs-overview/#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.url}/apbs-overview/#apolarkeywords).  Basic APOLAR calculations are described in this section.
+where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.baseurl}/apbs-overview/#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.baseurl}/apbs-overview/#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
 ###APOLAR Keywords
 
@@ -155,7 +155,7 @@ where is a string denoting what type of energy to calculate:<br />
 {% highlight bash %}
 print energy 1 - 2 end
 {% endhighlight %}
-<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>
 
 </div>
 
@@ -178,7 +178,7 @@ calcforce {flag}
 where <code>flag</code> is a string that specifies the types of force values to be returned:
 <code>no</code> (Deprecated) Don't calculate any forces.<br />
 <code>total</code>     Calculate and return total apolar forces for the entire molecule.<br />
-<code>comps</code>     Calculate and return total apolar forces for the entire molecule as well as force components for each atom. 
+<code>comps</code>     Calculate and return total apolar forces for the entire molecule as well as force components for each atom.
 </p>
 
 <div class="note info">
@@ -188,7 +188,7 @@ where <code>flag</code> is a string that specifies the types of force values to 
 {% highlight bash %}
 print force 1 - 2 end
 {% endhighlight %}
-<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>		
+<p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>
 
 </div>
 
@@ -209,7 +209,7 @@ print force 1 - 2 end
 
 The syntax is:
 {% highlight bash %}
-dpos {displacement} 
+dpos {displacement}
 {% endhighlight %}
 
 where displacement is a floating point number indicating the finite difference displacement for force (surface area derivative) calculations in units of Å.
@@ -239,7 +239,7 @@ where displacement is a floating point number indicating the finite difference d
 
 The syntax is:
 {% highlight bash %}
-gamma { value } 
+gamma { value }
 {% endhighlight %}
 
 where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å<sup>-1</sup>. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
@@ -260,7 +260,7 @@ This keyword specifies the quadrature grid spacing for volume integral calculati
 
 The syntax is:
 {% highlight bash %}
-grid {hx hy hz} 
+grid {hx hy hz}
 {% endhighlight %}
 
 where <code>hx</code> <code>hy</code> <code>hz</code> are the quadrature spacings in the x-, y-, and z-directions in Å.
@@ -278,7 +278,7 @@ This term specifies the molecule for which the apolar calculation is to be perfo
 
 The syntax is:
 {% highlight bash %}
-mol {id} 
+mol {id}
 {% endhighlight %}
 
 where <code>id</code> is the integer ID of the molecule for which the apolar calculation is to be performed. The molecule IDs are based on the order in which molecules are read by read mol statements, starting from 1.
@@ -298,7 +298,7 @@ This term specifies the solvent pressure p in kJ mol-1 Å<sup>-3</sup>. This coe
 
 The syntax is:
 {% highlight bash %}
-press {value} 
+press {value}
 {% endhighlight %}
 
 where <code>value</code> is the floating point value of the pressure coefficient in kJ mol-1 Å<sup>-3</sup>.
@@ -321,7 +321,7 @@ This keyword specifies the number of quadrature points per Å<sup>2</sup> to use
 
 The syntax is:
 {% highlight bash %}
-sdens {density} 
+sdens {density}
 {% endhighlight %}
 
 where <code>density</code> is a floating point number indicating the number of grid points per Å<sup>-2</sup>.
@@ -350,7 +350,7 @@ This keyword specifies the radius of the solvent molecules; this parameter is us
 
 The syntax is:
 {% highlight bash %}
-srad {radius} 
+srad {radius}
 {% endhighlight %}
 
 where <code>radius</code> is the floating point value of the solvent radius (in Å). This keyword is ignored for srfm spl2.
@@ -400,7 +400,7 @@ This keyword specifies the size of the support (i.e., the rate of change) for sp
 
 The syntax is:
 {% highlight bash %}
-swin {win} 
+swin {win}
 {% endhighlight %}
 
 where <code>win</code> is the floating point value of the spline window (in Å).
@@ -420,7 +420,7 @@ This keyword specifies the temperature for the calculation.
 
 The syntax is:
 {% highlight bash %}
-temp {T} 
+temp {T}
 {% endhighlight %}
 
 where <code>T</code> is the floating point value of the temperature for calculation.
@@ -454,13 +454,14 @@ APBS apolar calculations follow the very generic framework described in Wagoner 
 
 In particular, nonpolar solvation potentials of mean force (energies) are calculated according to:
 
-<img src="{{site.url}}/img/graphic-18.gif" />
+\\[ \mathbf{W}^{(\mathrm{np})}(x) = \gamma A(x) + pV(x) + \bar \rho \sum^N_{i=1} \int _{\Omega} u_i^{(\mathrm{att})} (x_i, y) \theta (x,y) \, \mathrm{d}y \\]
 
 and mean nonpolar solvation forces are calculated according to:
 
-<img src="{{site.url}}/img/graphic-19.gif" />
+\\[ \mathbf{F}_i^{(\mathrm{np})}(x) = -\gamma \frac{\partial A (x)}{\partial x_i} - p \int _{\Gamma _i (x)} \frac{y-x_i}{\lVert y - x_i \rVert} \, \mathrm{d}y \\]
+\\[ -\, \bar \rho \sum _{i=1}^N \int _{\Omega} \frac{\partial u_i^{(\mathrm{att})}(x_i,y)}{\partial x_i} \theta (x,y) \, \mathrm{d}y \\]
 
-In these equations, gamma is the repulsive (hard sphere) solvent surface tension, A is the conformation-dependent solute surface area (see srad and srfm keywords), p (see press keyword) is the repulsive (hard sphere) solvent pressure, V is the conformation-dependent solute volume (see srad and srfm keywords), rho (see bconc keywords) is the bulk solvent density, and the integral involves the attractive portion (defined in a Weeks-Chandler-Andersen sense) of the Lennard-Jones interactions between the solute and the solvent integrated over the region of the problem domain outside the solute volume V. Lennard-Jones parameters are taken from APBS parameter files as read in through an APBS input file READ statement.
+In these equations, $\gamma$ is the repulsive (hard sphere) solvent surface tension, $A$ is the conformation-dependent solute surface area (see srad and srfm keywords), $p$ (see press keyword) is the repulsive (hard sphere) solvent pressure, $V$ is the conformation-dependent solute volume (see srad and srfm keywords), $\rho$ (see bconc keywords) is the bulk solvent density, and the integral involves the attractive portion (defined in a Weeks-Chandler-Andersen sense) of the Lennard-Jones interactions between the solute and the solvent integrated over the region of the problem domain outside the solute volume $V$. Lennard-Jones parameters are taken from APBS parameter files as read in through an APBS input file READ statement.
 
 Note that the above expressions can easily be reduced to simpler apolar solvation formalisms by setting one or more of the coefficients to zero through the keywords.
 
@@ -480,8 +481,8 @@ The ELEC block of an APBS input file is used for polar solvation (electrostatics
     END
 {% endhighlight %}
 
-where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The {id} tag allows the user to name ELEC blocks, as described in the [ELEC block naming]({site.url}/apbs-overview/#elecblocknaming) section.  The {type} command defines the Types of [ELEC calculation]({site.url}/apbs-overview/#eleccalcs) to be performed.  Finally, the {keywords} are calculation-specific commands that customize the particular type of calculation.
-This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions [(bcfl)]({site.url}/elec-keywords/#bcfl) can require information about previous calculations.
+where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The {id} tag allows the user to name ELEC blocks, as described in the [ELEC block naming]({site.baseurl}/apbs-overview/#elecblocknaming) section.  The {type} command defines the Types of [ELEC calculation]({site.baseurl}/apbs-overview/#eleccalcs) to be performed.  Finally, the {keywords} are calculation-specific commands that customize the particular type of calculation.
+This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions [(bcfl)]({site.baseurl}/elec-keywords/#bcfl) can require information about previous calculations.
 
 ###ELEC block naming
 
@@ -590,7 +591,7 @@ bcfl {flag}
 <code>sdh</code> "Single Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a single sphere with a point charge, dipole, and quadrupole. The sphere radius in this model is set to the radius of the biomolecule and the sphere charge, dipole, and quadrupole are set to the total moments of the protein. This condition works best when the boundary is sufficiently far from the biomolecule.<br />
 <code>mdh</code> "Multiple Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.<br />
 <code>focus</code> "Focusing" boundary condition. Dirichlet condition where the potential at the boundary is set to the values computed by the previous (usually lower-resolution) PB calculation. This is used in sequential focusing performed manually in mg-manual calculations. All of the boundary points should lie within the domain of the previous calculation for best accuracy; if any boundary points lie outside, their values are computed using single Debye-Hückel boundary conditions (see above).<br />
-<code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use.  
+<code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use.
 </p>
 
 <div class="note info">
@@ -1734,7 +1735,7 @@ This is a very simple section that allows linear combinations of calculated prop
 The syntax of this section is:
 
 {% highlight bash %}
-PRINT {what} [id op id op...] END 
+PRINT {what} [id op id op...] END
 {% endhighlight %}
 
 The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
@@ -1764,9 +1765,9 @@ Given these options, a typical PRINT declaration might look like:
 # Energy change due to binding
 print energy complex - ligand - protein end
 # Energy change due to solvation
-print energy solvated - reference end 
+print energy solvated - reference end
 # Solvation energy change due to binding
-print energy complex_solv - complex_ref - ligand_solv + ligand_ref - protein_solv + protein_ref end 
+print energy complex_solv - complex_ref - ligand_solv + ligand_ref - protein_solv + protein_ref end
 {% endhighlight %}
 
 See the examples/ directory provided with the APBS distribution for more examples.
@@ -1824,3 +1825,12 @@ READ
    diel dx dielx.dx diely.dx dielz.dx
 END
 {% endhighlight %}
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
