@@ -1642,9 +1642,61 @@ write {type} {format} {stem}
 {% endhighlight %}
 
 <p><code>type</code> A string indicating what type of data to output:</p>
-<p style="margin-left:30px;"><code>charge</code>Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
-<p style="margin-left:30px;"><code>pot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
-<p style="margin-left:30px;"><code>atompot</code>Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>charge</code> Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
+
+<p style="margin-left:30px;"><code>pot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>atompot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>smol</code> Write out the solvent accessibility defined by the molecular surface definition (see srfm smol). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>sspl</code> Write out the spline-based solvent accessibility (see srfm spl2). Values are unitless and range from 0 (inaccessible) to 1 (accessible) (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>vdw</code> Write out the van der Waals-based solvent accessibility (see srfm smol with srad 0.0). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>ivdw</code> Write out the inflated van der Waals-based ion accessibility (see srfm smol). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
+
+<p style="margin-left:30px;"><code>lap</code> Write out the Laplacian of the potential in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>edens</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+
+<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+
+<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+
+
+<p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+
+<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+
+<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+
+<p style="margin-left:30px;"><code>dielx</code>Write out the dielectric map shifted by 1/2 grid spacing in the x-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>diely</code>Write out the dielectric map shifted by 1/2 grid spacing in the y-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>dielz</code>Write out the dielectric map shifted by 1/2 grid spacing in the z-direction (see READ diel). The values are unitless. (multigrid only)</p>
+
+<p style="margin-left:30px;"><code>kappa</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
+
+
+
+<p><code>format</code> A string that specifies the format for writing out the data.</p>
+
+<p style="margin-left:30px;"><code>dx</code>Write out data in OpenDX format. This is the preferred format for APBS I/O. (multigrid and finite element).</p>
+
+<p style="margin-left:30px;"><code>avs</code>Write out data in AVS UCD format. (finite element only).</p>
+
+<p style="margin-left:30px;"><code>uhbd</code>Write out data in UHBD format. (multigrid only).</p>
+
+<p><code>gz</code>Write out OpenDX data in gzipped (zlib) compatible format. Appends .dx.gz to the filename.</p>
+
+<p style="margin-left:30px;"><code>flat</code>Write out data as a plain text file. (multigrid and finite element).</p>
+
+<p><code>stem</code>A string that specifies the path for the output; files are written to stem.XYZ, where XYZ is determined by the file format (and processor rank for parallel calculations). If the pathname contains spaces, then it must be surrounded by double quotes; e.g., "/path with spaces/foo.in".</p>
 
 <hr />
 
@@ -1666,7 +1718,7 @@ writemat {type} {stem}
 
 <p>where <code>type</code> A string that indicates what type of operator to output.</p>
 <p style="margin-left:30px;"><code>poisson</code> Write out the Poisson operator -\nabla \cdot \epsilon \nabla.</p>
-<p>where <code>stem</code> A string that specifies the path for...</p>
+<p><code>stem</code> A string that specifies the path for...</p>
 
 <hr />
 
@@ -1788,13 +1840,201 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 ###READ keywords
 
-- [charge](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#charge)
+<a href="javascript:ReverseDisplay('read-keyword-charge')">charge</a>
+
+<div id="read-keyword-charge" style="display:none;">
+
+<p>This command allows <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a>
+to read the fixed (molecular) charge density function mapped to a mesh.
+The inputs are maps of charge densities; these values have units of e<sub>c</sub> Å<sup>-3</sup>, where e<sub>c</sub> is the electron charge. In general, this command will read charge-maps written by <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write" rel="nofollow" title="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write">write</a> commands in earlier <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a> calculations. Arguments for this command are:</p>
+
+<p>The format of the charge map. Acceptable values include:</p>
+
+<p><code>format</code>The format of the charge map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code>OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the charge map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-diel')">diel</a>
+
+<div id="read-keyword-diel" style="display:none;">
+
+<p><code>diel {format} {path-x} {path-y} {path-z}</code></p>
+
+<p>This command allows APBS to read the dielectric function mapped to 3 meshes shifted by one-half grid spacing in the x, y, and z directions. The inputs are maps of dielectric variables between the solvent and biomolecular dielectric constants; these values are unitless. In general, this command will read dielectric maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+<p>If you choose this option and have a non-zero ionic strength, you must also include a read kappa statement.</p>
+
+</div>
+
+<p>Required arguments for this command are:</p>
+
+<p><code>format</code>The format of the dielectric map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path-x</code>The location of the x-shifted dielectric map file.</p>
+
+<p><code>path-y</code>The location of the y-shifted dielectric map file.</p>
+
+<p><code>path-z</code>The location of the z-shifted dielectric map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-kappa')">kappa</a>
+
+<div id="read-keyword-kappa" style="display:none;">
+
+<p><code>kappa {format} {path}</code></p>
+
+<p>This command allows APBS to read the ion-accessibility function mapped to a mesh. The inputs are maps of ion accessibility values which range between 0 and the build Debye-Hückel screening parameter; these values have units of Å-2. In general, this command will read kappa-maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>If you choose this option, you must also include a read diel statement.</p>
+
+</div>
+
+<p>Arguments for this command are:</p>
+
+<p><code>format</code>The format of the kappa map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the kappa map file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-mol')">mol</a>
+
+<div id="read-keyword-mol" style="display:none;">
+
+<p><code>mol {format} {path}</code></p>
+
+<p>This command specifies the molecular data to be read into APBS.</p>
+
+<p>The required arguments are:</p>
+
+<p><code>format</code>The format of the input data. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>pqr</code> Specify that molecular data is in PQR format.</p>
+
+<p style="margin-left:30px;"><code>pdb</code> Specify that molecular data is in pseudo-PDB format.  If this type of structure file is used, then a parameter file must also be specified to provide charge and radius parameters for the biomolecule's atoms.</p>
+
+<p><code>path</code>The location of the molecular data file.</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-parm')">parm</a>
+
+<div id="read-keyword-parm" style="display:none;">
+
+<p><code>parm {format} {path}</code></p>
+
+<p>This command specifies the charge and radius data to be used with pseudo-PDB-format molecule files.</p>
+
+<p>The arguments are:</p>
+
+<p><code>format</code>The format of the parameter file. Acceptable flags include:</p>
+
+<p style="margin-left:30px;"><code>flat</code> Specify that the parameter file is in APBS Flat-file parameter format.</p>
+
+<p style="margin-left:30px;"><code>xml</code> Specify that the parameter file is in APBS XML parameter format.</p>
+
+<p><code>path</code>The location of the parameter data file.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>APBS provides a few example files as part of the source code distribution.  Currently, example files only contain the polar parameters that can also be assigned more easily through the PDB2PQR software.  Parameter files with apolar values are not currently available for protein and nucleic acid parameters and are actively under development as a research project.  Please contact Nathan Baker for additional information about the state of this research, particularly if you are interested in helping.</p>
+
+</div>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('read-keyword-pot')">pot</a>
+
+<div id="read-keyword-pot" style="display:none;">
+
+<p><code>pot {format} {path}</code></p>
+
+<p>This command allows APBS to read the electrostatic potential mapped to a mesh. The inputs are maps of the electrostatic potential from a previous calculation. In general, this command will read potential-maps written by write commands in earlier APBS calculations.</p>
+
+<div class="note info">
+
+<h5>Note</h5>
+
+<p>To use this functionality you must set the bcfl keyword to map. See also: usemap.</p>
+
+</div>
+
+<p>Arguments for this command are:</p>
+
+<p><code>format</code>The format of the potential map. Acceptable values include:</p>
+
+<p style="margin-left:30px;"><code>dx</code> OpenDX format.</p>
+
+<p><code>gz</code>gzipped (zlib) compressed OpenDX format. Files can be read directly in compressed form.</p>
+
+<p><code>path</code>The location of the potential map file.</p>
+
+<hr />
+
+</div>
+
+
+
+<!---
 - [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
 - [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
 - [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
 - [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
 - [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm)
-- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)
+- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)--->
 
 ###READ examples
 
