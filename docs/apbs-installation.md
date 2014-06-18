@@ -28,6 +28,8 @@ At this point you are ready to use APBS; either by calling the binary directly o
 
 ### Installation Types
 
+
+<!---
 <div>
 <p>
 There are multiple installation types; however, binary installation is the preferred method.
@@ -37,6 +39,7 @@ There are multiple installation types; however, binary installation is the prefe
 </ul>
 </p>
 </div>
+--->
 
 <h2 id="binary">Binary Installation</h2>
 
@@ -66,6 +69,7 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 - [include] -- header files for building software that calls APBS
 - [lib] -- libraries for building software that calls APBS
 
+<!---
 <h2 id="source">Installation from source</h2>
 
 #### Installation of APBS from source is a two-step process
@@ -80,10 +84,15 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 <h4 id="stable">Stable Version</h4>
 
 <p>We recommend that most users compile APBS from our official releases, which can be downloaded <a href="http://www.poissonboltzmann.org/apbs/downloads" target="_blank">here</a>.</p>
+--->
+
 
 <h4 id="developmental">Developmental Version</h4>
 
 <p>However, particularly adventurous users may want to try the latest developmental versions available from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">Git repository</a>. Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>
+
+
+
 
 <h3 id="installing">Installing with Cmake</h3>
 
@@ -97,7 +106,7 @@ Starting with APBS 1.4, we have migrated to Cmake for cross-platform building fr
 
 If your system supports the "make" command, then installation should be pretty easy.  With this setup, the following steps should build APBS for you on most systems (except for  Windows):
 
-{% highlight bash %}
+{% highlight %}
 cd ${APBS_SOURCE}/build
 cmake ..
 make
@@ -105,7 +114,7 @@ make
 
 The default configuration (for development versions of APBS after 1.4) is for a static library build.  If you prefer a shared library build, please change the cmake variable:
 
-{% highlight bash %}
+{% highlight %}
 BUILD_SHARED_LIBS=YES
 {% endhighlight %}
 
@@ -113,15 +122,16 @@ BUILD_SHARED_LIBS=YES
 
 APBS can be built on Mac OS X following the instructions above (and assuming Xcode command line tools are installed or some other C/C++ compiler).  However, you can also build APBS through the Xcode IDE with Cmake:
 
-{% highlight bash %}
+{% highlight %}
 cd ${APBS_SOURCE}/build
 cmake ..
 cmake -G "Xcode" ..
 open apbs.xcodeproj
 {% endhighlight %}
 
+<!---
 #####Windows System Build
 
 Windows is "special."  The following instructions may work for you:
 
-DOCUMENTATION COMING SOON
+DOCUMENTATION COMING SOON--->
