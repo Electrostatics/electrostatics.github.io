@@ -93,7 +93,7 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 
 
 
-
+<!---
 <h3 id="installing">Installing with Cmake</h3>
 
 <p>Regardless of where the source code is obtained, the next step is to build the software using <a href="http://www.cmake.org/" target="_blank">Cmake</a>.</p>
@@ -129,7 +129,7 @@ cmake -G "Xcode" ..
 open apbs.xcodeproj
 {% endhighlight %}
 
-<!---
+
 #####Windows System Build
 
 Windows is "special."  The following instructions may work for you:
