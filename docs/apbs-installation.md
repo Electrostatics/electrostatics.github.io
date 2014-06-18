@@ -89,7 +89,7 @@ gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
 
 <h4 id="developmental">Developmental Version</h4>
 
-<p>However, particularly adventurous users may want to try the latest developmental versions available from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">Git repository</a>. Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>
+<p>For the adventurous, you can download and build the source from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">github repository</a>. Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>
 
 
 
