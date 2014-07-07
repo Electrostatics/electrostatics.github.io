@@ -35,6 +35,8 @@ Frequently Asked Questions
 
 <h4 id="binding-energy">How do I calculate a binding energy?</h4>
 
+This topic is discussed in detail in the [Binding energies](/examples/binding_energies/) section.
+
 
 <h4 id="calculate-pka">How do I calculate a pka?</h4>
 
