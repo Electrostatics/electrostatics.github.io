@@ -47,4 +47,4 @@ The best way to acquire APBS is to <a href="https://docs.google.com/forms/d/1Csf
 <!-- TODO:  Add link to usage section -->
 If you download the binary version of APBS, you can use it directly as outlined elsewhere in this manual.
 <!-- TODO:  Add link to compilation instructions -->
-If you download the source code version of APBS, please follow the [compilation and installation instructions]({{ site.baseurl/docs/apbs-installation }}) outlined in this manual.</p>
+If you download the source code version of APBS, please follow the [compilation and installation instructions]({{ site.baseurl/docs/apbs-installation/ }}) outlined in this manual.</p>
