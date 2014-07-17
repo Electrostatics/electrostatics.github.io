@@ -31,8 +31,6 @@ If you prefer to downloads the software rather than using the APBS webserver, bo
 <!-- TODO:  Add links to source compilation instructions -->
 Users can either download binaries for their platform or compile the software from source code.
 
-Once your downloads are completed, you must complete the [installation]({{ site.baseurl/docs/installation }}) process, outlined in the next section.
-
 ### PDB2PQR downloads
 
 <p>PDB2PQR is currently available in source code form.
