@@ -45,4 +45,4 @@ There are two mailing lists associated with the PDB2PQR software:
 
 ## Developer Contact
 
-If you have questions you are uncomfortable asking in a public forum, please contact <a href="mailto:nathan.baker@pnl.gov">nathan.baker@pnl.gov</a> or <a href="mailto:nathanandrewbaker@gmail.com">nathanandrewbaker@gmail.com</a>.
+If you have questions you are uncomfortable asking in a public forum, please contact or <a href="mailto:nathanandrewbaker@gmail.com">nathanandrewbaker@gmail.com</a>.
