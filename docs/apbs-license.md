@@ -4,7 +4,7 @@ title: APBS License
 permalink: /docs/apbs-license/
 ---
 
-Nathan A. Baker (nathan.baker@pnl.gov or nathanandrewbaker@gmail.com)
+Nathan A. Baker (nathanandrewbaker@gmail.com)
 Pacific Northwest National Laboratory
 
 Additional contributing authors listed in the code documentation.
