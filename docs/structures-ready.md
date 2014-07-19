@@ -17,7 +17,7 @@ These tasks include:
 
 ## PDB2PQR Basic workflow
 
-The first method demonstrates how to use the pdb2pqr web server and the next method calls pdb2pqr directly from the command line.  For a more detailed explanation of how PDB2PQR runs, see [Basic Usage](pdb2pqr-usage).
+The first method demonstrates how to use the pdb2pqr web server and the next method calls pdb2pqr directly from the command line.  For a more detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl/docs/pdb2pqr-usage/ }}).
 
 ## Web Server:
 
