@@ -9,6 +9,7 @@ permalink: /docs/structures-ready/
 Below, is a quick start guide for getting structures ready for APBS using two implementations for using PDB2PQR.  PDB2PQR is an automated pipeline for the setup, execution, and analysis of Poisson-Boltzmann electrostatics calculations.  This is a Python software package that automates many of the common tasks of preparing structures for continuum electrostatics calculations, providing a platform-independent utility for converting protein files in PDB format to PQR format. 
 
 These tasks include:
+
 - Adding a limited number of missing heavy atoms to biomolecular structures
 - Determining side-chain pKas
 - Placing missing hydrogens
