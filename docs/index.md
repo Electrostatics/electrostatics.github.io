@@ -33,4 +33,4 @@ Throughout this guide there are several pieces of information that can make APBS
 	<p>Be aware of these messages if you wish to have a successful use of the software.</p>
 </div>
 
-If you come across anything along the way that we haven’t covered, is incorrect information, or if you know of a tip you think others would find useful, please [file an issue]({{ site.repository }}/issues/new) and we’ll work on including it in this guide.
+If you come across anything along the way that we haven’t covered, is incorrect information, or if you know of a tip you think others would find useful, please [file an issue]({{ site.repository }}/issues/new) or use our [contact page](../../support/home/) and we’ll work on including it in this guide.
