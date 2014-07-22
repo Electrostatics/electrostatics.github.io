@@ -26,7 +26,7 @@ prev_section: contributing
 - Sort plugins as a way to establish a load order ([#1682]({{ site.repository }}/issues/1682))
 - Update Maruku to 0.7.0 ([#1775]({{ site.repository }}/issues/1775))
 
-### Bug Fixes
+### Bug Fixes!
 - Add a space between two words in a Pagination warning message ([#1769]({{ site.repository }}/issues/1769))
 - Upgrade `toml` gem to `v0.1.0` to maintain compat with Ruby 1.8.7 ([#1778]({{ site.repository }}/issues/1778))
 

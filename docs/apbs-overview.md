@@ -20,13 +20,13 @@ else { document.getElementById(d).style.display = "none"; }
 //--></script>
 
 
-
-
-## Input Files
-
 APBS input files are loosely-formatted files which contain information about the input, parameters, and output for each calculation. These files are whitespace- or linefeed-delimited. Comments can be added to the input files via the # character; all text between the # and the end of the line is not parsed by APBS. Specific examples of APBS input are described in the Examples section.
 
-#####Please note that there are several tools which help prepare APBS input files based on molecular structures, memory constraints, etc. These tools are described in more detail in the Problem setup section.
+<div class="note">
+	<h5>Note</h5>
+	<p>There are several tools which help prepare APBS input files based on molecular structures, memory constraints, etc. These tools are described in more detail in the Problem setup section.</p>
+</div>
+
 
 APBS input files contain three basic sections which can be repeated any number of times:
 
@@ -63,33 +63,20 @@ READ
 
  These sections can occur in any order and can be repeated any number of times. However, the sections are interdependent. For example, PRINT requires ELEC and/or APOLAR while ELEC requires one or more READ sections. Sections can also be repeated; several READ statements may be used to load molecules and multiple ELEC or APOLAR sections would specify various electrostatics calculations on one or more molecules.
 
- <h5>NOTE: There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</h5>
+<div class="note">
+	<h5>Note</h5>
+	<p>There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</p>
+</div>
 
- Each section of the APBS input file has its own syntax, described in more detail in the following sections:
+Each section of the APBS input file has its own syntax, described in more detail in the following sections:
 
 ###Category List
 
 <ul>
-	<li><a href="#apolar">APOLAR input file section</a>
-		<ul>
-			<li><a href="#apolarkeywords">APOLAR keywords</a></li>
-			<li><a href="#apolacalcs">Basic APOLAR calculations</a></li>
-		</ul>
-	</li>
-	<li><a href="#elec">ELEC input file section</a>
-		<ul>
-			<li><a href="#elecblocknaming">ELEC block naming</a></li>
-			<li><a href="#eleckeywords">ELEC keywords</a></li>
-			<li><a href="#eleccalcs">Types of ELEC calculations</a></li>
-		</ul>
-	</li>
+	<li><a href="#apolar">APOLAR input file section</a></li>
+	<li><a href="#elec">ELEC input file section</a></li>
 	<li><a href="#print">PRINT input file section</a></li>
-	<li><a href="#read">READ input file section</a>
-		<ul>
-			<li><a href="#readexamples">READ examples</a></li>
-			<li><a href="#readkeywords">READ keywords</a></li>
-		</ul>
-	</li>
+	<li><a href="#read">READ input file section</a></li>
 </ul>
 
 <h3 id="apolar">APOLAR</h3>
@@ -108,7 +95,7 @@ The first (optional) argument is:
 name {id}
 {% endhighlight %}
 
-where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT]({site.baseurl}/apbs-overview/#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords]({site.baseurl}/apbs-overview/#apolarkeywords).  Basic APOLAR calculations are described in this section.
+where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT](#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords](#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
 ###APOLAR Keywords
 
@@ -434,19 +421,19 @@ where <code>T</code> is the floating point value of the temperature for calculat
 
 
 
-<!---- [bconc](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#bconc)
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcenergy)
-- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#calcforce)
-- [dpos](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#dpos)
-- [gamma](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#gamma)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#grid)
-- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#mol)
-- [press](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#press)
-- [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#sdens)
-- [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#srfm)
-- [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#swin)
-- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/apolar-keywords/#temp)--->
+<!---- [bconc](apolar-keywords/#bconc)
+- [calcenergy](apolar-keywords/#calcenergy)
+- [calcforce](apolar-keywords/#calcforce)
+- [dpos](apolar-keywords/#dpos)
+- [gamma](apolar-keywords/#gamma)
+- [grid](apolar-keywords/#grid)
+- [mol](apolar-keywords/#mol)
+- [press](apolar-keywords/#press)
+- [sdens](apolar-keywords/#sdens)
+- [srad](apolar-keywords/#srad)
+- [srfm](apolar-keywords/#srfm)
+- [swin](apolar-keywords/#swin)
+- [temp](apolar-keywords/#temp)--->
 
 ###Basic APOLAR calculations
 
@@ -463,9 +450,13 @@ and mean nonpolar solvation forces are calculated according to:
 
 In these equations, $\gamma$ is the repulsive (hard sphere) solvent surface tension, $A$ is the conformation-dependent solute surface area (see srad and srfm keywords), $p$ (see press keyword) is the repulsive (hard sphere) solvent pressure, $V$ is the conformation-dependent solute volume (see srad and srfm keywords), $\rho$ (see bconc keywords) is the bulk solvent density, and the integral involves the attractive portion (defined in a Weeks-Chandler-Andersen sense) of the Lennard-Jones interactions between the solute and the solvent integrated over the region of the problem domain outside the solute volume $V$. Lennard-Jones parameters are taken from APBS parameter files as read in through an APBS input file READ statement.
 
-Note that the above expressions can easily be reduced to simpler apolar solvation formalisms by setting one or more of the coefficients to zero through the keywords.
 
-<div class="note info">
+<div class="note">
+	<h5>Note</h5>
+	<p>The above expressions can easily be reduced to simpler apolar solvation formalisms by setting one or more of the coefficients to zero through the keywords.</p>
+</div>
+
+<div class="note warning">
 	<h5>Important</h5>
 	<p>All APOLAR calculations require a parameter file which contains Lennard-Jones radius and well-depth parameters for all the atoms in the solute PDB. This parameter file must also contain radius and well-depth parameters for water (specifically: residue "WAT" and atom "OW").  Complete parameter files for protein and nucleic acid parameters are not currently available and are actively under development as a research project.  Please contact Nathan Baker for additional information about the state of this research, particularly if you are interested in helping.</p>
 </div>
@@ -481,8 +472,8 @@ The ELEC block of an APBS input file is used for polar solvation (electrostatics
     END
 {% endhighlight %}
 
-where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The {id} tag allows the user to name ELEC blocks, as described in the [ELEC block naming]({site.baseurl}/apbs-overview/#elecblocknaming) section.  The {type} command defines the Types of [ELEC calculation]({site.baseurl}/apbs-overview/#eleccalcs) to be performed.  Finally, the {keywords} are calculation-specific commands that customize the particular type of calculation.
-This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions [(bcfl)]({site.baseurl}/elec-keywords/#bcfl) can require information about previous calculations.
+where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The <code>{id}</code> tag allows the user to name ELEC blocks.  The <code>{type}</code> command defines the Types of ELEC calculation to be performed.  Finally, the <code>{keywords}</code> are calculation-specific commands that customize the particular type of calculation.
+This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions (bcfl) can require information about previous calculations.
 
 ###ELEC block naming
 
@@ -1728,58 +1719,58 @@ writemat {type} {stem}
 
 
 <!---
-- [akeyPRE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeypre)
-- [akeySOLVE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#akeysolve)
-- [async](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#async)
-- [bcfl](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#bcfl)
-- [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy)
-- [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce)
-- [cgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cgcent)
-- [cglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#cglen)
-- [chgm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#chgm)
-- [dime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#dime)
-- [domainLength](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#domainlength)
-- [ekey](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ekey)
-- [etol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#etol)
-- [fgcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fgcent)
-- [fglen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#fglen)
-- [gcent](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#gcent)
-- [glen](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#glen)
-- [grid](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#grid)
-- [ion](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ion)
-- [lpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lpbe)
-- [lrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#lrpbe)
-- [maxsolve](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxsolve)
-- [maxvert](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#maxvert)
-- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#mol)
-- [nlev](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nlev)
-- [npbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#npbe)
-- [nrpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#nrpbe)
-- [ofrac](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#ofrac)
-- [pdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdie)
-- [pdime](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#pdime)
-- [sdens](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdens)
-- [sdie](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#sdie)
-- [smpbe](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#smpbe)
-- [srad](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srad)
-- [srfm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#srfm)
-- [swin](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#swin)
-- [targetNum](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetnum)
-- [targetRes](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#targetres)
-- [temp](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#temp)
-- [useaqua](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#useaqua)
-- [usemap](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemap)
-- [usemesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#usemesh)
-- [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
-- [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)--->
+- [akeyPRE](elec-keywords/#akeypre)
+- [akeySOLVE](elec-keywords/#akeysolve)
+- [async](elec-keywords/#async)
+- [bcfl](elec-keywords/#bcfl)
+- [calcenergy](elec-keywords/#calcenergy)
+- [calcforce](elec-keywords/#calcforce)
+- [cgcent](elec-keywords/#cgcent)
+- [cglen](elec-keywords/#cglen)
+- [chgm](elec-keywords/#chgm)
+- [dime](elec-keywords/#dime)
+- [domainLength](elec-keywords/#domainlength)
+- [ekey](elec-keywords/#ekey)
+- [etol](elec-keywords/#etol)
+- [fgcent](elec-keywords/#fgcent)
+- [fglen](elec-keywords/#fglen)
+- [gcent](elec-keywords/#gcent)
+- [glen](elec-keywords/#glen)
+- [grid](elec-keywords/#grid)
+- [ion](elec-keywords/#ion)
+- [lpbe](elec-keywords/#lpbe)
+- [lrpbe](elec-keywords/#lrpbe)
+- [maxsolve](elec-keywords/#maxsolve)
+- [maxvert](elec-keywords/#maxvert)
+- [mol](elec-keywords/#mol)
+- [nlev](elec-keywords/#nlev)
+- [npbe](elec-keywords/#npbe)
+- [nrpbe](elec-keywords/#nrpbe)
+- [ofrac](elec-keywords/#ofrac)
+- [pdie](elec-keywords/#pdie)
+- [pdime](elec-keywords/#pdime)
+- [sdens](elec-keywords/#sdens)
+- [sdie](elec-keywords/#sdie)
+- [smpbe](elec-keywords/#smpbe)
+- [srad](elec-keywords/#srad)
+- [srfm](elec-keywords/#srfm)
+- [swin](elec-keywords/#swin)
+- [targetNum](elec-keywords/#targetnum)
+- [targetRes](elec-keywords/#targetres)
+- [temp](elec-keywords/#temp)
+- [useaqua](elec-keywords/#useaqua)
+- [usemap](elec-keywords/#usemap)
+- [usemesh](elec-keywords/#usemesh)
+- [write](elec-keywords/#write)
+- [writemat](elec-keywords/#writemat)--->
 
 ###Types of ELEC calculations
 
-- [fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#femanual)
-- [mg-auto: automatically-configured sequential focusing multigrid Posson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgauto)
-- [mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calculations/#mgdummy)
-- [mg-manual: manually-configured multigrid Poisson-Boltzmann calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgmanual)
-- [mg-para: automatically-configured paralle focusing multigrid Poisson-Boltzman calculations](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-calcs/#mgpara)
+- [fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations](../elec-calcs/#femanual)
+- [mg-auto: automatically-configured sequential focusing multigrid Posson-Boltzmann calculations](../elec-calcs/#mgauto)
+- [mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE](../elec-calcs/#mgdummy)
+- [mg-manual: manually-configured multigrid Poisson-Boltzmann calculations](../elec-calcs/#mgmanual)
+- [mg-para: automatically-configured paralle focusing multigrid Poisson-Boltzman calculations](../elec-calcs/#mgpara)
 
 <h3 id="print">PRINT</h3>
 This is a very simple section that allows linear combinations of calculated properties to be written to standard output.
@@ -1792,12 +1783,12 @@ PRINT {what} [id op id op...] END
 
 The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
 
-- energy Print energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
-- force Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
-- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) ELEC command.
-- elecForce Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) ELEC command.
-- apolEnergy Print energies as calculated with an earlier [calcenergy](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcenergy) APOLAR command.
-- apolForce Print forces as calculated with an earlier [calcforce](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#calcforce) APOLAR command.
+- energy Print energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
+- force Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
+- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) ELEC command.
+- elecForce Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) ELEC command.
+- apolEnergy Print energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) APOLAR command.
+- apolForce Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) APOLAR command.
 
 The next arguments are a series of id op id op id op ... id commands where every id is immediately followed by an op and another id. These options have the following form:
 
@@ -1836,7 +1827,13 @@ END
 
 where keywords is or more of the keywords described in the Keyword section (the line breaks and indentation are for clarity; only whitespace is necessary).
 
-####Note: One of these sections must be present for every molecule involved in the APBS calculation. Molecule and "map" IDs are assigned implicitly assigned for each molecule/map read, based on order and starting at 1 and incremented independently for each input type. In other words, each input PQR file is assigned an ID 1, 2, 3, ...; each input dielectric map is assigned an independent ID 1, 2, 3, ...; etc.
+<div class="note info">
+
+<h5>Note</h5>
+<p>One of these sections must be present for every molecule involved in the APBS calculation. Molecule and "map" IDs are assigned implicitly assigned for each molecule/map read, based on order and starting at 1 and incremented independently for each input type. In other words, each input PQR file is assigned an ID 1, 2, 3, ...; each input dielectric map is assigned an independent ID 1, 2, 3, ...; etc.</p>
+
+</div>
+
 
 ###READ keywords
 
@@ -2029,12 +2026,12 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 <!---
-- [diel](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#diel)
-- [kappa](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#kappa)
-- [mesh](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mesh)
-- [mol](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#mol)
-- [parm](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#parm)
-- [pot](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/read-keywords/#pot)--->
+- [diel](read-keywords/#diel)
+- [kappa](read-keywords/#kappa)
+- [mesh](read-keywords/#mesh)
+- [mol](read-keywords/#mol)
+- [parm](read-keywords/#parm)
+- [pot](read-keywords/#pot)--->
 
 ###READ examples
 

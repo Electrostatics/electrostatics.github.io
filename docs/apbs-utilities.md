@@ -88,11 +88,12 @@ grid5 =
 <code>mergedx2 [FLAGS] file1.dx [file2.dx ...]</code>
 
 
-####Arguments
+
+<h4>Arguments</h4>
 
 <p><code>file1.dx [file2.dx ...]</code> The OpenDX files to be merged</p>
 
-####Flags
+<h4>Flags</h4>
 
 <p>All flags are optional. Flags must be set prior to listing input files. You must provide at least one OpenDX file. Subsequent files can be listed as a series of names on the command line.</p>
 
@@ -119,7 +120,7 @@ Specifying -s with all of the input files listed will run a calculation that wil
 
 <p><code>-h</code> Print this message.</p>
 
-####Examples
+<h4>Examples</h4>
 
 {% highlight bash %}
 ./mergedx2 -r 0.5 file1.dx file2.dx<br />

@@ -4,7 +4,7 @@ title: Types of ELEC Calculations
 permalink: /docs/elec-calcs/
 ---
 
-###fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations
+<h3 id="fe-maual"></h3>fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations
 
 This is a single-point PBE calculation performed by our adaptive finite element PBE solver. It requires that APBS be linked to the Michael Holst group FEtk finite element library http://www.fetk.org during compilation.
 
@@ -16,9 +16,13 @@ The finite element solver uses a "solve-estimate-refine" cycle. Specifically, st
 	<li>adaptively refine the mesh to reduce the error</li>
 </ol>
 
-until a global error tolerance is reached.
+...until a global error tolerance is reached.
 
-####Note: The finite element methods are currently most useful for a select set of problems which can benefit from adaptive refinement of the solution. Furthermore, this implementation is experimental. In general, the sequential and parallel focusing multigrid methods offer the most efficient solution of the PBE for most systems.
+<div class="note">
+	<h5>Note</h5>
+	<p>The finite element methods are currently most useful for a select set of problems which can benefit from adaptive refinement of the solution. Furthermore, this implementation is experimental. In general, the sequential and parallel focusing multigrid methods offer the most efficient solution of the PBE for most systems.</p>
+</div>
+
 
 All keywords for this type of calculation are required unless otherwise noted:
 

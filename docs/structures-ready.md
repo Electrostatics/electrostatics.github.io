@@ -15,6 +15,7 @@ electrostatics calculations, providing a platform-independent utility for
 converting protein files in PDB format to PQR format. 
 
 These tasks include:
+
 - Adding a limited number of missing heavy atoms to biomolecular structures
 - Determining side-chain pKas
 - Placing missing hydrogens
@@ -25,8 +26,8 @@ These tasks include:
 
 The first method demonstrates how to use the pdb2pqr web server and the
 next method calls pdb2pqr directly from the command line.  For a more
-detailed explanation of how PDB2PQR runs, see [Basic
-Usage](pdb2pqr-usage).
+detailed explanation of how PDB2PQR runs, see [Basic Usage]({{
+site.baseurl/docs/pdb2pqr-usage/ }}).
 
 ## Web Server:
 
