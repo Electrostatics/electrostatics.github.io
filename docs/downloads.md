@@ -38,7 +38,7 @@ The best way to acquire PDB2PQR is to <a href="https://docs.google.com/forms/d/1
 
 After downloading PDB2PQR, please follow the [compilation and installation instructions]({{ site.baseurl/docs/pdb2pqr-installation/ }}) outlined in this manual.
 
-After compilation, you can use it directly as outlined [here]({{ site.baseurl/docs/pdb2pqr-usage/ }}).
+After compilation, you can use it directly as outlined [here]({{ site.baseurl }}docs/pdb2pqr-usage/ ).
 
 ### APBS downloads
 

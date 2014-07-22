@@ -26,8 +26,7 @@ These tasks include:
 
 The first method demonstrates how to use the pdb2pqr web server and the
 next method calls pdb2pqr directly from the command line.  For a more
-detailed explanation of how PDB2PQR runs, see [Basic Usage]({{
-site.baseurl/docs/pdb2pqr-usage/ }}).
+detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}../../docs/pdb2pqr-usage ).
 
 ## Web Server:
 
