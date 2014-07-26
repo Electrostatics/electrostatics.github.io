@@ -1,0 +1,7 @@
+pygments: true
+relative_permalinks: false
+permalink: /news/:year/:month/:day/:title/
+excerpt_separator: noifniof3nioaniof3nioafafinoafnoif
+repository: https://github.com/electrostatics/apbs-pdb2pqr
+baseurl:  http://electrostatics.github.io/apbs-pdb2pqr
+markdown: kramdown

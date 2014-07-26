@@ -1,49 +1,72 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Electrostatics.github.io</title>
+---
+layout: default
+title: APBS &amp; PDB2PQR &bull; Molecular solvation software
+overview: true
+---
+<style>div.cover{text-align: center}</style>
+<section class="intro">
+	<div class="grid">
+		<div class="unit whole center-on-mobiles">
+			<p class="first" style="color: #fff; font-weight: bold; margin-bottom: 50px;">APBS &amp; PDB2PQR: <br/> Electrostatic and solvation properties from complex molecules.</p>
+			<a class="get_started_btn" href="{{ site.baseurl }}/docs/home"><h1>Get Started Now <i style="width: 14px; height: 14px; display: inline-block; background-image: url(img/rightArrow.png); background-repeat: no-repeat; background-size: 9px; margin-top: 5px; float: right"></i></h1></a>
+		</div>
+	</div>
+</section>
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="javascripts/scale.fix.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>Electrostatics.github.io</h1>
-        <p>GitHub homepage</p>
-        <p class="view"><a href="https://github.com/electrostatics">View the Project on GitHub <small>electrostatics</small></a></p>
-        <ul>
-          <li class="single"><a href="https://github.com/electrostatics/electrostatics.github.io">View On <strong>GitHub</strong></a></li>
-        </ul>
-      </header>
-      <section>
-        <h1>
-<a name="electrostatics-github-homepage" class="anchor"><span class="octicon octicon-link"></span></a>APBS & PDB2PQR Homepage</h1>
+<section class="features">
+	<div style="padding-top: 10px;" class="grid">
+		<div class="unit one-third">
+			<h2>Repair and parameterize molecules</h2>
+			<!-- TODO:  add PDB2PQR link -->
+			<p>Use PDB2PQR to add missing atoms as well as assign charge and radius parameters from a variety of force fields.</p>
+			<!-- TODO:  fix following link -->
+			<a href="{{ site.baseurl }}/docs/structures-ready/" class="">Preparing molecules &rarr;</a>
+		</div>
+		<div class="unit one-third">
+			<h2>Assign titration states</h2>
+			<!-- TODO:  add links to PDB2PKA and PROPKA -->
+			<p>Use PDB2PKA or PROPKA to determine the titration state of proteins at specific pH values.</p>
+			<!-- TODO:  fix following link -->
+			<a href="#" class="">Assigning titration states &rarr;</a>
+		</div>
+		<div class="unit one-third">
+			<h2>Calculation solvation properties</h2>
+			<!-- TODO:  add links -->
+			<p>Solve the Poisson-Boltzmann and related equations to calculate solvation energies and electrostatic properties for analysis and visualization.</p>
+			<!-- TODO:  fix links -->
+			<a href="{{ site.baseurl }}/docs/visualizing-results/" class="">Visualizing molecules &rarr;</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
+</div>
+<section class="quickstart">
+	<div class="grid">
+		<div class="unit golden-small center-on-mobiles">
+			<h4>Looking for the old version?</h4>
+		</div>
+		<div class="unit golden-large">
+			<div class="shell">
+				<!-- TODO:  Add links here -->
+				<p class="line"><a style="color: #000; text-decoration: underline" href="http://www.poissonboltzmann.org">Use the older version</a>.</p>
+			</div>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
 
-<p>You are probably looking for one of these sites:</p>
-
-<ul>
-<li>APBS or PDB2PQR <a href="http://electrostatics.github.io/apbs-pdb2pqr/">Documentation</a>, <a href="http://electrostatics.github.io/apbs-pdb2pqr/">GitHub Pages</a>, <a href="http://www.poissonboltzmann.org/">Google Sites</a>, or <a href="https://github.com/electrostatics/apbs-pdb2pqr">GitHub repository</a>
-</li>
-<li>The pKa Cooperative <a href="https://github.com/sobolevnrm/pkacoop">GitHub repository</a>
-</li>
-<li>The Nanoparticle Ontology <a href="https://github.com/sobolevnrm/npo">GitHub repository</a> or <a href="http://nano-ontology.org/">website</a>
-</li> 
-</ul>
-      </section>
-    </div>
-    <footer>
-      <p>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></p>
-    </footer>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
-</html>
+<section class="free-hosting">
+	<div class="grid">
+		<div class="unit one-third">
+			<img src="img/apbs-vmd.jpg" height="100%" alt="Visualizing APBS output with VMD">
+		</div>
+		<div class="unit two-thirds">
+			<h2 class="center-on-mobiles">Easy visualization</h2>
+			<p>APBS and PDB2PQR work with a variety of desktop molecular graphics software packages and offer simple visualization capabilities via the web without the need for any additional software.</p>
+			<!-- TODO: fix following link -->
+			<a href="{{ site.baseurl }}/docs/visualizing-results/" class="">Learn more about molecular visualization &rarr;</a>
+		</div>
+		<div class="clear"></div>
+	</div>
+</section>
