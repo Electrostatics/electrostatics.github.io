@@ -6,6 +6,11 @@ next_section: pdb2pqr-overview
 permalink: /docs/supporting-organizations/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 <h4>A special thanks goes out to to the supporting organizations behind the APBS and PDB2PQR software...</h4>
 
 <p>

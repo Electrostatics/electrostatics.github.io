@@ -28,6 +28,12 @@ The first method demonstrates how to use the pdb2pqr web server and the
 next method calls pdb2pqr directly from the command line.  For a more
 detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}../../docs/pdb2pqr-usage ).
 
+<div class="note warning">
+	<h5>Before you begin!</h5>
+	<p>PDB2PQR funding is dependent on your support for continued development and support. Please <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" >register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
+</div>
+
+
 ## Web Server:
 
 1. Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr_1.8/)

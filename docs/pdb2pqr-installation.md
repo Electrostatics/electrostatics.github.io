@@ -6,6 +6,11 @@ next_section: pdb2pqr-overview
 permalink: /docs/pdb2pqr-installation/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 <h2>Installation and Availability</h2>
 
 ### Overview

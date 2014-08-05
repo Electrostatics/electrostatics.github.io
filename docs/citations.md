@@ -6,6 +6,11 @@ next_section: contributing
 permalink: /docs/citing/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 ##Citing your use of PDB2PQR
 
 Please acknowledge your use of PDB2PQR by citing:

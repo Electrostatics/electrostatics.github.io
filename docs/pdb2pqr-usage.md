@@ -6,6 +6,11 @@ next_section: apbs-overview
 permalink: /docs/pdb2pqr-usage/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 Usage: pdb2pqr.py [options] PDB_PATH PQR_OUTPUT_PATH
 
 This module takes a PDB file as input and performs optimizations before

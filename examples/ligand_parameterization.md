@@ -4,6 +4,11 @@ title: Ligand Parameterization
 permalink: /examples/ligand_parameterization/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 #### Introduction
 
 This section outlines the parameterization of ligands using the PEOE_PB methods (see Czodrowski P, Dramburg I, Sotriffer CA, Klebe G. Development, validation, and application of adapted peoe charges to estimate pka values of functional groups in protein-ligand complexes. Proteins. 65 (2), 424-37, 2006 for more information).

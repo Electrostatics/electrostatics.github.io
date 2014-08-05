@@ -7,6 +7,11 @@ permalink: /docs/apbs-installation/
 ---
 
 
+<style>.section-nav {display:none;}</style>
+
+
+
+
 <!---
 <div class="note info">
   <h5>Installation Options</h5>

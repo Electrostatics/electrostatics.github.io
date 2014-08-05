@@ -6,6 +6,8 @@ next_section: pdb2pqr-overview
 permalink: /docs/pdb2pqr-algorithm-description/
 ---
 
+<style>.section-nav {display:none;}</style>
+
 
 ## Debumping algorithm
 

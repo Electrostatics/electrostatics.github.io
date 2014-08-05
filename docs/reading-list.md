@@ -6,6 +6,11 @@ next_section: calculating
 permalink: /docs/reading-list/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 ## Suggested Reading from the APBS team
 
 ### General solvation reviews 

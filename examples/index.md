@@ -4,6 +4,11 @@ title: Examples
 permalink: /examples/home/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 The following examples will help orient you in APBS/PDB2PQR.
 Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform) for an account.
 

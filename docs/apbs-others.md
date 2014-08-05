@@ -6,19 +6,24 @@ next_section: apbs-programmers
 permalink: /docs/apbs-others/
 ---
 
+
+<style>.section-nav {display:none;}</style>
+
+
+
 ###Overview
 
-APBS was designed to facilitate use with other programs. This section outlines some of the programs with which APBS is known to work. However, it is likely that applications which use APBS have been inadvertently omitted from this list. If you know of software that uses APBS and is not listed here, please contact Nathan Baker.
+APBS was designed to facilitate use with other programs. This section outlines some of the programs with which APBS is known to work. However, it is likely that applications which use APBS have been inadvertently omitted from this list. If you know of software that uses APBS and is not listed here, please <a href="/support/home/">contact us</a>.
 
 ##Web Interfaces
 
 ###PDB2PQR
 
-The [PDB2PQR web server]({{site.baseurl}}/downloads) provides the ability to configure, run, and visualize APBS calculations
+The [PDB2PQR web server](../structures-ready/) provides the ability to configure, run, and visualize APBS calculations
 
 ###Gemstone
 
-The Gemstone extension [http://gemstone.mozdev.org/](http://gemstone.mozdev.org/) for the Firefox web browser used to provide a very easy-to-use interface to older versions of APBS (0.4.0) with all of the functionality of the command-line interface. However, this extension was created by external developers and is no longer actively maintained. Please let Nathan Baker (baker@poissonboltzmann.org) know if this extension was important to your research.
+The Gemstone extension [http://gemstone.mozdev.org/](http://gemstone.mozdev.org/) for the Firefox web browser used to provide a very easy-to-use interface to older versions of APBS (0.4.0) with all of the functionality of the command-line interface. However, this extension was created by external developers and is no longer actively maintained. Please <a href="/support/home/">contact us</a> to let us know if this extension was important to your research.
 
 ##Graphical User Interfaces
 
@@ -38,7 +43,7 @@ PMV [http://www.scripps.edu/~sanner/python](http://www.scripps.edu/~sanner/pytho
 
 Robert Konecny (McCammon Group) has developed iAPBS [http://mccammon.ucsd.edu/iapbs/](http://mccammon.ucsd.edu/iapbs/), an interface between APBS and the simulation packages AMBER, CHARMM, and NAMD. More information is available from the iAPBS homepage: http://mccammon.ucsd.edu/iapbs/ .
 
-APBS is also available with developmental versions of TINKER; please contact Nathan Baker (baker@poissonboltzmann.org) for more information.
+APBS is also available with developmental versions of TINKER; please contact <a href="/support/home/">contact us</a> for more information.
 
 ###Visualization Software
 

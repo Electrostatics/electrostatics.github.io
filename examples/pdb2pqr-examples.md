@@ -1,12 +1,17 @@
 ---
 layout: docs
 title: PDB2PQR Examples
-prev_section: pdb2pqr-faq
-next_section: viz-overview
+prev_section:
+next_section:
 permalink: /docs/pdb2pqr-examples/
 ---
 
-## Assigning titration states with PROPKA
+
+<style>div.section-nav {display:none;}</style>
+
+
+
+## Assigning Titration States With PROPKA
 
 #### Introduction
 

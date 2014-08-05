@@ -20,6 +20,11 @@ else { document.getElementById(d).style.display = "none"; }
 
 
 
+<style>.section-nav {display:none;}</style>
+
+
+
+
 <a href="javascript:ReverseDisplay('user-defined')">Adding user-defined functions to PDB2PQR</a>
 
 <div id="user-defined" style="display:none;">

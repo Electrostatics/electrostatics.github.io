@@ -6,7 +6,6 @@ next_section: apbs-installation
 permalink: /docs/pdb2pqr-faq/
 ---
 
-
 <script type="text/javascript" language="JavaScript"><!--
 function HideContent(d) {
 document.getElementById(d).style.display = "none";
@@ -19,6 +18,11 @@ if(document.getElementById(d).style.display == "none") { document.getElementById
 else { document.getElementById(d).style.display = "none"; }
 }
 //--></script>
+
+
+
+
+<style>.section-nav {display:none;}</style>
 
 
 
