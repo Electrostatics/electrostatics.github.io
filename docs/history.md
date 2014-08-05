@@ -7,6 +7,6 @@ prev_section: contributing
 
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 

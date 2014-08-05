@@ -5,7 +5,7 @@ permalink: /docs/pdb2pqr-license/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

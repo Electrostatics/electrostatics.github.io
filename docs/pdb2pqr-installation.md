@@ -7,7 +7,7 @@ permalink: /docs/pdb2pqr-installation/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

@@ -7,7 +7,7 @@ permalink: /docs/apbs-faq/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

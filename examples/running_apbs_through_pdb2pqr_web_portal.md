@@ -5,7 +5,7 @@ permalink: /examples/running_apbs_through_pdb2pqr_web_portal/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

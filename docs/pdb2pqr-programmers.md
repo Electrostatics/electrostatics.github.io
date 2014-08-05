@@ -20,7 +20,7 @@ else { document.getElementById(d).style.display = "none"; }
 
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

@@ -5,7 +5,7 @@ permalink: /examples/assigning_titration_states_with_propka/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

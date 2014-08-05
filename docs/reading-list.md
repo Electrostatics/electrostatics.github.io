@@ -7,7 +7,7 @@ permalink: /docs/reading-list/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 

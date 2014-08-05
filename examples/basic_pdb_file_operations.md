@@ -5,7 +5,7 @@ permalink: /examples/basic_pdb_file_operations/
 ---
 
 
-<style>.section-nav {display:none;}</style>
+{% include no-prev-next.html %}
 
 
 
