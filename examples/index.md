@@ -17,6 +17,26 @@ Before beginning, please make sure to support the APBS/PDB2PQR team by [register
 	<p>Work through the examples in order, which begin with simple processes and end with advanced instances.</p>
 </div>
 
+<div class="note info">
+
+We are in the process of migrating our examples, tutorials, and workshop content to our new web site.  If we don't have the information you need here, please visit the following links:
+<ul>
+<li>
+   <a href="https://sites.google.com/a/poissonboltzmann.org/software/pdb2pqr/examples">PDB2PQR examples </a>
+</li>
+<li>
+   <a href="https://sites.google.com/a/poissonboltzmann.org/software/apbs/examples">APBS examples</a>
+</li>
+<li>
+   <a href="https://sites.google.com/a/poissonboltzmann.org/software/documentation">Tutorials</a>
+</li>
+<li>
+  <a href="https://sites.google.com/a/poissonboltzmann.org/software/workshops-and-courses">Workshops</a>
+</li>
+</ul>
+
+</div>
+
 ## PDB2PQR EXAMPLES
 - <a href="/examples/assigning_titration_states_with_propka/">Assigning Titration States With Propka</a>
 - <a href="/examples/basic_pdb_file_operations/">Basic PDB File Operations</a>
