@@ -127,7 +127,7 @@ The keywords for this command are all required unless otherwise noted:
 - [write](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#write)
 - [writemat](http://sobolevnrm.github.io/apbs-pdb2pqr/docs/elec-keywords/#writemat)
 
-<h3 id="mgpara">mg-para: automatically-configured paralle focusing multigrid Poisson-Boltzman calculations</h3>
+<h3 id="mgpara">mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzman calculations</h3>
 
 This calculation closely resembles mg-auto in syntax. However, it is designed to perform electrostatics calculations on systems in a parallel focusing fashion. The keywords for this type of calculation are all required unless otherwise noted:
 
