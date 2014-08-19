@@ -1139,3 +1139,20 @@ div.gcsc-branding {
 div.gsc-results {
 	background:#000;
 }
+
+table.gsc-table-result {
+	border:none;
+	text-shadow:none;
+	background:none;
+}
+
+div.gsc-cursor-box,
+div.gs-bidi-start-align {
+	background:#fff;
+	padding:0;
+}
+
+div.gsc-results-wrapper-overlay table {
+	border:none;
+	text-shadow:none;
+}
