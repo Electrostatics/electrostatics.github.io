@@ -18,7 +18,7 @@ yielding a new PQR-style file in PQR_OUTPUT_PATH. If PDB_PATH is an ID it will
 automatically be obtained from the PDB archive.
 
 <table>
-<th>Options</th>
+<th colspan="2">Options</th>
 <tr><td><nobr>--version</td><td>show program's version number and exit</td></tr>
 <tr><td>-h, --help</td><td>show this help message and exit</td></tr>
 </table>
@@ -33,7 +33,7 @@ parse, tyl06, peoepb and swanson are supported.</td></tr>
 </table>
 
 <table>
-<th>General Options</th>
+<th colspan="2">General Options</th>
 <tr><td><nobr>--nodebump</nobr></td><td>Do not perform the debumping operation</td></tr>
 <tr><td><nobr>--noopts</nobr></td><td>Do not perform hydrogen optimization</td></tr>
 <tr><td><nobr>--chain</nobr></td><td>Keep the chain ID in the output PQR file</td></tr>
