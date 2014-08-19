@@ -11,5 +11,6 @@ permalink: /docs/apbs-programmers/
 
 
 
-- [View/Print](../apbs-programmers-guide.pdf).
-- [Download](../apbs-programmers-guide.zip).
+- [View/Print](../apbs-programmers-guide.pdf)
+- [Download](../apbs-programmers-guide.zip)
+- [ABPS Doxygen Programmer's Guide](http://apbs.sourceforge.net/doc/programmer/html/index.html)

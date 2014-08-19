@@ -33,18 +33,45 @@ Users can either download binaries for their platform or compile the software fr
 
 ### PDB2PQR downloads
 
-<p>PDB2PQR is currently available in source code form.
+<<<<<<< HEAD
+<p id="pdb2pqr-downloads">PDB2PQR is currently available in source code form.
 The best way to acquire PDB2PQR is to <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank"><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.</p>
+=======
+<p>PDB2PQR is currently available in source code form.
+The best way to acquire PDB2PQR is to <a
+href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform"
+target="_blank"><b>download it via the registration form</b></a>, which
+helps us track usage of the software for our funding agencies.</p>
+>>>>>>> FETCH_HEAD
 
-After downloading PDB2PQR, please follow the [compilation and installation instructions]({{ site.baseurl/docs/pdb2pqr-installation/ }}) outlined in this manual.
+After downloading PDB2PQR, please follow the [compilation and
+installation instructions]({{ site.baseurl }}/docs/pdb2pqr-installation/ )
+outlined in this manual.
 
-After compilation, you can use it directly as outlined [here]({{ site.baseurl }}docs/pdb2pqr-usage/ ).
+After compilation, you can use it directly as outlined 
+[here]({{ site.baseurl }}/docs/pdb2pqr-usage/ ).
 
 ### APBS downloads
 
-<p>Both binary executables and source code are available for APBS.
+<<<<<<< HEAD
+<p id="apbs-downloads">Both binary executables and source code are available for APBS.
 The best way to acquire APBS is to <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" ><b>download it via the registration form</b></a>, which helps us track usage of the software for our funding agencies.</p>
+=======
+<p>Both binary executables and source code are available for APBS.  The
+best way to acquire APBS is to <a
+href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform"
+target="_blank" ><b>download it via the registration form</b></a>, which
+helps us track usage of the software for our funding agencies.</p>
+>>>>>>> FETCH_HEAD
 
-If you download the source code version of APBS, please follow the [compilation and installation instructions]({{ site.baseurl/docs/apbs-installation/ }}).
+If you download the source code version of APBS from
+[GitHub](https://github.com/Electrostatics/apbs-pdb2pqr/tree/1.4.1-binary-release),
+please follow the [compilation and installation
+instructions](https://github.com/Electrostatics/apbs-pdb2pqr/blob/1.4.1-binary-release/apbs/INSTALL.md)
+available in the code repository.
 
-Usage information for APBS is available [here]({{ site.baseurl/docs/usage/ }})
+<<<<<<< HEAD
+Usage information for APBS is available [here]({{ site.baseurl/docs/usage/ }}).
+=======
+Usage information for APBS is available [here]({{ site.baseurl }}/docs/usage/ )
+>>>>>>> FETCH_HEAD

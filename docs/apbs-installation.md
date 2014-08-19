@@ -45,7 +45,7 @@ There are multiple installation types; however, binary installation is the prefe
 
 <p>The best way to install APBS is via the binary installation, which you can <a href="http://www.poissonboltzmann.org/apbs/downloads">download</a>.</p>
 
-<p>We currently offer binaries for the RedHat Linux platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.</p>
+<p>We currently offer binaries for the Ubuntu platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.</p>
 
 <div class="note warning">
   <h5>Attention Windows Users</h5>
