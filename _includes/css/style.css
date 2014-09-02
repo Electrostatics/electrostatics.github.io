@@ -1137,22 +1137,45 @@ div.gcsc-branding {
 }
 
 div.gsc-results {
-	background:#000;
+	background:#fff !important;
+	border: none;
+	margin: none;
+	padding: none;
 }
 
 table.gsc-table-result {
-	border:none;
-	text-shadow:none;
-	background:none;
+	border:none !important;
+	text-shadow: none !important;
+	background: none !important;
+	box-shadow: none !important;
 }
 
 div.gsc-cursor-box,
-div.gs-bidi-start-align {
-	background:#fff;
-	padding:0;
-}
+div.gs-bidi-start-align, gsc-cursor {
+	background:#fff !important;}
 
+div.cover {
+	text-shadow:none;}
+	
 div.gsc-results-wrapper-overlay table {
 	border:none;
-	text-shadow:none;
-}
+	text-shadow:none;}
+
+
+
+div.gsc-results-wrapper-overlay tbody td {
+	border:none;}
+
+div.gs-title {
+	text-align:left;}
+
+div.gsc-results-wrapper-overlay tbody {
+	background: none;
+	border: none;}
+
+div.gs-snippet {
+	margin: -5px 0 0 8px !important;
+	color: #333 !important;}
+
+div.gsc-results-wrapper-overlay td {
+	padding: 0;}

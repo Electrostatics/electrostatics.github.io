@@ -47,12 +47,25 @@ There are multiple installation types; however, binary installation is the prefe
 
 <p>We currently offer binaries for the Ubuntu platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.</p>
 
+<div class="note info">
+  <h5>Version Notes</h5>
+  <p>This release is 1.4.1 and is only available for download as a binary release. The source for the release is on github in the "1.4.1-binary" branch; there are no plans to merge the branch, and it contains instructions if anyone wants to build the release from source.</p>
+</div>
+
+
+
+
 <div class="note warning">
   <h5>Attention Windows Users</h5>
   <p>If you are using APBS on a Windows system, you may not want to install it in a directory with spaces in the path name (e.g., C:\Program Files\) as this can cause problems with some visualization programs.</p>
+  <p>The windows release is for Windows 7 and is 64-bit only. It installs to C:\APBS by default and provides a batch file that creates a shell with the correct path.</p>
 </div>
 
+
+
 <p>For all platforms besides Windows, APBS binaries are provided in compressed tar format (*.tgz). On most systems, the binaries can be unarchived by simply double-clicking or opening the archive. This can also be accomplished on the command line by:</p>
+
+<p>The OS X build is built for Mavericks, available as a .dmg (disk image) file with an APBS Application Bundle; Just open the .dmg file and drag the app to the "Applications" folder. Running the App Bundle opens a Terminal window with the appropriate path to the APBS binary.</p>
 
 {% highlight bash %}
 gzip -dc apbs-#.#.#-XYZ.tgz | tar xvf -
