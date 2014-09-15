@@ -12,3 +12,26 @@
     </nav>
   </div>
 </header>
+
+
+<!--- include smooth scrolling --->
+
+<!-- HTML5 Shim for IE -->
+<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!-- Javascript -->
+<script src='/js/bind-polyfill.js'></script>
+<script src='/js/smooth-scroll.js'></script>
+<script>
+	smoothScroll.init({
+		speed: 1000,
+		easing: 'easeInOutCubic',
+		offset: 0,
+		updateURL: true,
+		callbackBefore: function ( toggle, anchor ) {},
+		callbackAfter: function ( toggle, anchor ) {}
+	});
+</script>
+

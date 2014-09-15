@@ -11,6 +11,10 @@ permalink: /docs/downloads/
 	<p>Most APBS and PDB2PQR functionality is available through our online web servers. However, if you prefer to download the software, <a href="#downloads"><b>skip to the downloads section</b></a>.</p>
 </div>
 
+<div>
+<a data-scroll data-options='{ "easing": "easeInQuad" }' href="#downloads">Quad</a>
+</div>
+
 ## Web servers
 
 The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR functionality without the need to download and install additional programs.
