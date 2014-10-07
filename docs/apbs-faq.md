@@ -9,6 +9,7 @@ permalink: /docs/apbs-faq/
 
 {% include no-prev-next.html %}
 
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
 This tutorial is designed as a "how to" document to get users acquainted with computational electrostatics calculations using APBS. In order to perform the provided examples, you will need the latest version of APBS. Other requirements are listed in the individual sections.

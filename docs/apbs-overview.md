@@ -24,6 +24,8 @@ else { document.getElementById(d).style.display = "none"; }
 {% include no-prev-next.html %}
 
 
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
+
 
 APBS input files are loosely-formatted files which contain information about the input, parameters, and output for each calculation. These files are whitespace- or linefeed-delimited. Comments can be added to the input files via the # character; all text between the # and the end of the line is not parsed by APBS. Specific examples of APBS input are described in the Examples section.
 

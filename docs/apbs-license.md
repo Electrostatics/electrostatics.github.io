@@ -7,6 +7,7 @@ permalink: /docs/apbs-license/
 
 {% include no-prev-next.html %}
 
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
 Nathan A. Baker (nathanandrewbaker@gmail.com)

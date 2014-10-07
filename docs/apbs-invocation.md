@@ -9,6 +9,7 @@ permalink: /docs/apbs-invocation/
 
 {% include no-prev-next.html %}
 
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
 ##Invocation

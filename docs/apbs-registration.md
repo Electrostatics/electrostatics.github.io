@@ -4,6 +4,8 @@ title: APBS Registration
 permalink: /docs/apbs-registration/
 ---
 
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
+
 
 {% include no-prev-next.html %}
 

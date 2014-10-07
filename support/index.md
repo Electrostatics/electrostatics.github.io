@@ -4,6 +4,7 @@ title: Support
 permalink: /support/home/
 ---
 
+{% include no-prev-next.html %}
 
 <div class="note">
 	<h5>Software Registration</h5>

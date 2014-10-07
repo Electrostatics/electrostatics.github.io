@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Installation
+title: APBS Installation
 prev_section: visualizing-results
 next_section: usage
 permalink: /docs/apbs-installation/
@@ -10,7 +10,7 @@ permalink: /docs/apbs-installation/
 {% include no-prev-next.html %}
 
 
-
+<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 <!---
 <div class="note info">
