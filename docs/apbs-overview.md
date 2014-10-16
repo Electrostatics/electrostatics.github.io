@@ -236,7 +236,7 @@ The syntax is:
 gamma { value }
 {% endhighlight %}
 
-where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å<sup>-1</sup>. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
+where <code>value</code> is a floating point number designating the surface tension in units of kJ mol-1 Å<sup>-2</sup>. This term can be set to zero to eliminate SASA contributions to the apolar solvation calculations
 
 <hr />
 
