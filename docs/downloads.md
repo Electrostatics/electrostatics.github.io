@@ -60,5 +60,3 @@ instructions](https://github.com/Electrostatics/apbs-pdb2pqr/blob/1.4.1-binary-r
 available in the code repository.
 
 Usage information for APBS is available [here]({{ site.baseurl/docs/usage/ }}).
-=======
-Usage information for APBS is available [here]({{ site.baseurl }}/docs/usage/ )

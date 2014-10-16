@@ -25,6 +25,9 @@ In addition to using APBS through other programs, there are two ways to invoke A
 
 ###APBS command-line binary
 
+See how to invoke APBS with the command line in the [Invocation Section]({{site.baseurl}}/docs/apbs-invocation).
+
+<!---
 As mentioned in the installation and availability section, the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
 
 {% highlight bash %}
@@ -45,6 +48,7 @@ input-file is an input file with a specific syntax described in the section Inpu
 - Standard output. This will appear on your screen (if you don't redirect it somewhere) and will contain all the basic information about the electrostatics calculation.
 - Standard error. This will also appear on your screen (if you don't redirect it somewhere) and will contain warnings and error messages.
 - The file io.mc (or io.mc_N for parallel runs, where N is the processor ID. This gives you detailed information about the progress of the run with a particular focus on the numerical solver.
+--->
 
 ###APBS Opal client
 
