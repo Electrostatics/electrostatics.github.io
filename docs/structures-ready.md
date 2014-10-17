@@ -48,7 +48,7 @@ detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}..
 
 Running PDB2PQR with the same options shown above can be performed with the following command:
 
-`% pdb2pqr.py --ff=parse --apbs-input --nodebump 1FAS.pdb 1FAS.pqr`
+`% pdb2pqr.py --ff=parse --apbs-input 1FAS.pdb 1FAS.pqr`
 
 ### Notes on PDB2PQR
 - PDB2PQR was ported to Python by Todd Dolinsky while working with Nathan Baker at Washington University in St. Louis. The PDB2PQR code is based on C++ design and algorithms by Jens Erik Nielsen. PDB2PQR was originally designed to facilitate structure preparation for APBS.
