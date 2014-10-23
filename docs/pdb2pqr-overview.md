@@ -21,7 +21,12 @@ permalink: /docs/pdb2pqr-overview/
 
 ### Command line usage
 
-<p>The command line version of PDB2PQR must be installed from source using the instructions in the&nbsp;<a href="http://www.poissonboltzmann.org/pdb2pqr/documentation/user-guide/installation-and-availability" rel="nofollow" title="http://www.poissonboltzmann.org/pdb2pqr/documentation/user-guide/installation-and-availability">PDB2PQR installation and availability</a> section. This version of the software offers an expanded range of options and can also be customized with user extensions.</p>
+<p>The command line version of PDB2PQR must be installed from source
+using the instructions in the PDB2PQR download section of the
+<a href="/docs/downloads/">Accessing the Software </a> 
+section. This version of the software
+offers an expanded range of options and can also be customized with user
+extensions.</p>
 <p>The command line PDB2PQR is invoked as</p>
 
 `% $ python pdb2pqr.py [options] --ff={forcefield} {path} {output-path}`
