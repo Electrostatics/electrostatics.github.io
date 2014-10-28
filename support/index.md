@@ -10,7 +10,7 @@ permalink: /support/home/
 	<h5>Software Registration</h5>
 	<p>This site aims to be a comprehensive guide to APBS and PDB2PQR. Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform">registering for an account</a>.</p>
 	<p>Creating an account will also allow you to create posts and comment in <a href="https://groups.google.com/forum/#!forum/apbs-users">our forum</a>.</p>
-	For users without Google access please use <a href="http://sourceforge.net/p/apbs/mailman/apbs-users/">this link</a> to access the forum.</p> 
+
 </div>
 
 
@@ -20,17 +20,10 @@ permalink: /support/home/
 
 There are two mailing lists associated with the APBS software:
 
-- [apbs-announcements](https://groups.google.com/forum/#%21forum/apbs-announcements): A low-traffic list for announcements regarding bugs and new versions of the software
-- [apbs-users](https://groups.google.com/forum/#!forum/apbs-users): A moderate-traffic list for discussion of APBS, troubleshooting, and reporting potential bugs  
+- [apbs-announcements](https://lists.sourceforge.net/lists/listinfo/apbs-users): A low-traffic list for announcements regarding bugs and new versions of the software
+- [apbs-users](https://lists.sourceforge.net/lists/listinfo/apbs-announce): A moderate-traffic list for discussion of APBS, troubleshooting, and reporting potential bugs  
 
 The apbs-users mailing list is an excellent place to ask questions about APBS; however, we encourage you to check the [users archives](https://groups.google.com/forum/#%21forum/apbs-users) for answers to your questions prior to posting. You can check the [announcements archives](https://groups.google.com/forum/#!forum/apbs-announcements) for more information on releases of APBS software.
-
-- For users with restricted Google Groups access:
-	- [APBS Users Mailing List](https://lists.sourceforge.net/lists/listinfo/apbs-users)
-	- [APBS Announcements](https://lists.sourceforge.net/lists/listinfo/apbs-announce)
-	- [Users Archives](http://sourceforge.net/p/apbs/mailman/apbs-users/)
-	- [Announcements Archives](http://sourceforge.net/p/apbs/mailman/apbs-announce/)
-
 
 ### PDB2PQR
 
