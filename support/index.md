@@ -20,8 +20,8 @@ permalink: /support/home/
 
 There are two mailing lists associated with the APBS software:
 
-- [apbs-announcements](https://lists.sourceforge.net/lists/listinfo/apbs-users): A low-traffic list for announcements regarding bugs and new versions of the software
-- [apbs-users](https://lists.sourceforge.net/lists/listinfo/apbs-announce): A moderate-traffic list for discussion of APBS, troubleshooting, and reporting potential bugs  
+- [apbs-announcements](https://lists.sourceforge.net/lists/listinfo/apbs-announce): A low-traffic list for announcements regarding bugs and new versions of the software
+- [apbs-users](https://lists.sourceforge.net/lists/listinfo/apbs-users): A moderate-traffic list for discussion of APBS, troubleshooting, and reporting potential bugs  
 
 The apbs-users mailing list is an excellent place to ask questions about APBS; however, we encourage you to check the [users archives](https://groups.google.com/forum/#%21forum/apbs-users) for answers to your questions prior to posting. You can check the [announcements archives](https://groups.google.com/forum/#!forum/apbs-announcements) for more information on releases of APBS software.
 
