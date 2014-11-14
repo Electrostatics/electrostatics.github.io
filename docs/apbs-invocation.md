@@ -18,7 +18,8 @@ In addition to using APBS through other programs, there are two ways to invoke A
 
 ##APBS command-line binary
 
-As mentioned in the [installation and availability section]({{site.baseurl}}/apbs-pdb2pqr/docs/installation/), the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
+As mentioned in the [installation 
+section]({{site.baseurl}}/docs/apbs-installation/), the main APBS binary is installed in ${APBS_PREFIX}/bin where ${APBS_PREFIX} is the top-level directory you chose for the installation. Of course, you can move the binary to any directory you choose. APBS is invoked with a very simple syntax:
 
 {% highlight bash %}
 apbs [options] input-file
@@ -38,7 +39,8 @@ Command line options include:
 <li>--version  Displays the current APBS version</li>
 </ul>
 
-input-file is an input file with a specific syntax described in the section [Input files]({{site.baseurl}}/apbs-pdb2pqr/docs/installation/). Besides the output files specified from within input-file and the optional logs as specified by use of the --output-file command line option, APBS writes data to three additional places:
+input-file is an input file with a specific syntax described in the
+[Input Files]({{site.baseurl}}/docs/apbs-overview/) section. Besides the output files specified from within input-file and the optional logs as specified by use of the --output-file command line option, APBS writes data to three additional places:
 
 <ul>
 <li>Standard output. This will appear on your screen (if you don't redirect it somewhere) and will contain all the basic information about the electrostatics calculation.</li>

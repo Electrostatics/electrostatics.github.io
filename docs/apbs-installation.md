@@ -12,38 +12,6 @@ permalink: /docs/apbs-installation/
 
 <img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
-<!---
-<div class="note info">
-  <h5>Installation Options</h5>
-  <p>
-    Several installation options are available for APBS; however, our
-[APBS binary]({{ site.baseurl }}/docs/downloads/#downloads )
- <a href="">binary</a> installation is the preferred mechanism.
-View the sections below to learn more about each installation type.
-  </p>
-</div>
---->
-
-
-
-
-<!---
-### Installation Types
-
-<div>
-<p>
-There are multiple installation types; however, binary installation is the preferred method.
-<ul>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
-</ul>
-</p>
-</div>
-
-<h2 id="binary">Installation</h2>
---->
-
-
 
 The best way to install APBS is via the binary installation, which you
 can download [here]({{ site.baseurl }}/docs/downloads/#downloads ), under
