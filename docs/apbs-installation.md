@@ -16,7 +16,9 @@ permalink: /docs/apbs-installation/
 <div class="note info">
   <h5>Installation Options</h5>
   <p>
-    Several installation options are available for APBS; however, <a href="#binary">binary</a> installation is the preferred mechanism.
+    Several installation options are available for APBS; however, our
+[APBS binary]({{ site.baseurl }}/docs/downloads/#downloads )
+ <a href="">binary</a> installation is the preferred mechanism.
 View the sections below to learn more about each installation type.
   </p>
 </div>
@@ -43,7 +45,9 @@ There are multiple installation types; however, binary installation is the prefe
 
 
 
-<p>The best way to install APBS is via the binary installation, which you can <a href="#developmental">download</a>.</p>
+The best way to install APBS is via the binary installation, which you
+can download [here]({{ site.baseurl }}/docs/downloads/#downloads ), under
+"APBS Downloads".
 
 <p>We currently offer binaries for the Ubuntu platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.</p>
 
