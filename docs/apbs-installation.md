@@ -12,38 +12,10 @@ permalink: /docs/apbs-installation/
 
 <img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
-<!---
-<div class="note info">
-  <h5>Installation Options</h5>
-  <p>
-    Several installation options are available for APBS; however, <a href="#binary">binary</a> installation is the preferred mechanism.
-View the sections below to learn more about each installation type.
-  </p>
-</div>
---->
 
-
-
-
-<!---
-### Installation Types
-
-<div>
-<p>
-There are multiple installation types; however, binary installation is the preferred method.
-<ul>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#binary">Binary installation</a></li>
-<li><a href="http://sobolevnrm.github.io/apbs-pdb2pqr/docs/installation/#source">Installation from source</a></li>
-</ul>
-</p>
-</div>
-
-<h2 id="binary">Installation</h2>
---->
-
-
-
-<p>The best way to install APBS is via the binary installation, which you can <a href="#developmental">download</a>.</p>
+The best way to install APBS is via the binary installation, which you
+can download [here]({{ site.baseurl }}/docs/downloads/#downloads ), under
+"APBS Downloads".
 
 <p>We currently offer binaries for the Ubuntu platform on a variety of architectures as well as command-line binaries for WinXP and Mac OS X. Binaries can be downloaded from the APBS download page. For all other systems, please install from source on your particular platform and feel free to contact the APBS users mailing list for more help and/or to request a binary for that system.</p>
 
@@ -115,7 +87,7 @@ At this point you are ready to use APBS; either by calling the binary directly o
 
 <h4 id="developmental">Developmental Version</h4>
 
-<p>For the adventurous, you can download and build the source from our <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">github repository</a>. 
+<p>For the adventurous, you can download and build the source from our <a href="https://github.com/Electrostatics/apbs-pdb2pqr" target="_blank">github repository</a>. 
 
 <!---Starting with APBS 1.4, we have migrated away from Subversion for APBS source control and have adopted Git. All users are welcome to read access of the APBS Git repository following the instructions <a href="http://sourceforge.net/projects/apbs/" target="_blank">here</a>. Additionally, you can browse the APBS Git repository <a href="http://sourceforge.net/p/apbs/_list/git" target="_blank">online</a>.</p>--->
 

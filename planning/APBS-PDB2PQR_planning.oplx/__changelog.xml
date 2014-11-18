@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<changelog xmlns="http://www.omnigroup.com/namespace/OmniPlan/v2">
+  <version>2.1</version>
+  <task-change-set user="Baker, Nathan" date="2014-11-12T20:54:10.168Z" timestamp="2014-11-12T20:54:10.168Z">
+    <change idref="t35" attribute="internalPrerequisitesString" type="string" to="26FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T15:37:35.022Z" timestamp="2014-11-13T15:37:35.022Z">
+    <change idref="t94" to="t38" to-position="1" resolved="yes">
+      <change idref="t94" attribute="internalPrerequisitesString" type="string" to="39FS"/>
+      <change idref="t94" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t94" attribute="title" type="string" to="Add small molecule sets to APBS test cases"/>
+    </change>
+    <change idref="t93" to="t38" to-position="2" resolved="yes">
+      <change idref="t93" attribute="internalPrerequisitesString" type="string" to="39FS, 94FS"/>
+      <change idref="t93" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t93" attribute="title" type="string" to="See if it runs on 1a1p"/>
+    </change>
+    <change idref="t49" attribute="internalPrerequisitesString" type="string" from="39FS" to="93FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T15:39:37.210Z" timestamp="2014-11-13T15:39:37.210Z">
+    <change idref="t95" to="t38" to-position="4" resolved="yes">
+      <change idref="t95" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t95" attribute="title" type="string" to="Replace GF Poisson solver"/>
+    </change>
+    <change idref="t40" attribute="internalPrerequisitesString" type="string" to="95FS" resolved="yes"/>
+    <change idref="t41" attribute="internalPrerequisitesString" type="string" to="95FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T15:55:10.432Z" timestamp="2014-11-13T15:55:10.432Z">
+    <change idref="t96" to="t45" to-position="1" resolved="yes">
+      <change idref="t96" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t96" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t96" attribute="title" type="string" to="PDB2PQR"/>
+    </change>
+    <change idref="t84" attribute="internalPrerequisitesString" type="string" from="2FS, 3FS" to="2FS, 3FS, 100FS" resolved="yes"/>
+    <change idref="t97" to="t96" to-position="0" resolved="yes">
+      <change idref="t97" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t97" attribute="title" type="string" to="Slow PDB2PKA integration"/>
+    </change>
+    <change idref="t98" to="t96" to-position="1" resolved="yes">
+      <change idref="t98" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t98" attribute="title" type="string" to="Beautified web interface"/>
+    </change>
+    <change idref="t99" to="t96" to-position="2" resolved="yes">
+      <change idref="t99" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t99" attribute="title" type="string" to="Dropped water"/>
+    </change>
+    <change idref="t102" to="t96" to-position="3" resolved="yes">
+      <change idref="t102" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t102" attribute="title" type="string" to="Binary support (different platforms)"/>
+    </change>
+    <change idref="t100" to="t96" to-position="4" resolved="yes">
+      <change idref="t100" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t100" attribute="internalPrerequisitesString" type="string" to="97FS, 98FS, 99FS, 102FS"/>
+      <change idref="t100" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t100" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t100" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t100" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t100" attribute="title" type="string" to="PDB2PQR 2.0"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T15:58:52.249Z" timestamp="2014-11-13T15:58:52.249Z">
+    <change idref="t100" attribute="internalPrerequisitesString" type="string" from="97FS, 98FS, 99FS, 102FS" to="97FS, 98FS, 99FS, 102FS+144000" resolved="yes"/>
+    <change idref="t100" attribute="priority" type="real" from="0" to="100" resolved="yes"/>
+    <change idref="t100" attribute="noLaterThanConstraintDate" type="date" to="2014-12-01T08:00:00.000Z" resolved="yes"/>
+    <change idref="t102" attribute="internalPrerequisitesString" type="string" to="97FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:12:53.172Z" timestamp="2014-11-13T16:12:53.172Z">
+    <change idref="t2" attribute="internalPrerequisitesString" type="string" from="5FS, 35FS" to="5FS, 35FS, 100FS" resolved="yes"/>
+    <change idref="t107" to="t6" to-position="2" resolved="yes">
+      <change idref="t107" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t107" attribute="title" type="string" to="APBS 2.0 paper written"/>
+    </change>
+    <change idref="t10" attribute="priority" type="real" from="0" to="40" resolved="yes"/>
+    <change idref="t11" attribute="priority" type="real" from="0" to="80" resolved="yes"/>
+    <change idref="t12" attribute="priority" type="real" from="0" to="25" resolved="yes"/>
+    <change idref="t43" attribute="priority" type="real" from="0" to="55" resolved="yes"/>
+    <change idref="t68" attribute="priority" type="real" from="0" to="80" resolved="yes"/>
+    <change idref="t106" to="t68" to-position="3" resolved="yes">
+      <change idref="t106" attribute="priority" type="real" from="0" to="100"/>
+      <change idref="t106" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t106" attribute="title" type="string" to="Graph cut paper finished"/>
+    </change>
+    <change idref="t69" attribute="internalPrerequisitesString" type="string" to="100FS" resolved="yes"/>
+    <change idref="t71" attribute="internalPrerequisitesString" type="string" from="70FS" to="70FS, 72FS" resolved="yes"/>
+    <change idref="t71" attribute="priority" type="real" from="0" to="50" resolved="yes"/>
+    <change idref="t71" attribute="noLaterThanConstraintDate" type="date" to="2015-02-28T08:00:00.000Z" resolved="yes"/>
+    <change idref="t72" attribute="internalPrerequisitesString" type="string" from="71FS" to="106FS" resolved="yes"/>
+    <change idref="t72" attribute="title" type="string" from="Graph cut paper" to="Graph cut paper submitted" resolved="yes"/>
+    <change idref="t72" attribute="noLaterThanConstraintDate" type="date" to="2015-01-01T08:00:00.000Z" resolved="yes"/>
+    <change idref="t84" attribute="internalPrerequisitesString" type="string" from="2FS, 3FS, 100FS" to="2FS, 3FS, 100FS, 107FS" resolved="yes"/>
+    <change idref="t84" attribute="priority" type="real" from="0" to="100" resolved="yes"/>
+    <change idref="t85" attribute="title" type="string" from="APBS 2.0. paper" to="APBS 2.0. paper submitted" resolved="yes"/>
+    <change idref="t96" attribute="priority" type="real" from="0" to="100" resolved="yes"/>
+    <change idref="t96" attribute="title" type="string" from="PDB2PQR" to="PDB2PQR 2.0" resolved="yes"/>
+    <change idref="t97" attribute="internalEffortDone" type="real" from="0" to="28800" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:14:48.303Z" timestamp="2014-11-13T16:14:48.303Z">
+    <change idref="t108" to="t24" to-position="0" resolved="yes">
+      <change idref="t108" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t108" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t108" attribute="title" type="string" to="FEM implementation"/>
+    </change>
+    <change idref="t109" to="t24" to-position="1" resolved="yes">
+      <change idref="t109" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t109" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t109" attribute="title" type="string" to="MG implementation"/>
+    </change>
+    <change idref="t73" from="t24" from-position="0" to="t108" to-position="0" resolved="yes"/>
+    <change idref="t77" from="t24" from-position="1" to="t108" to-position="1" resolved="yes"/>
+    <change idref="t78" from="t24" from-position="2" to="t108" to-position="2" resolved="yes"/>
+    <change idref="t110" to="t109" to-position="0" resolved="yes">
+      <change idref="t110" attribute="internalPrerequisitesString" type="string" to="80FS"/>
+      <change idref="t110" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t110" attribute="title" type="string" to="Surface energy evaluation for RPBE?"/>
+    </change>
+    <change idref="t111" to="t109" to-position="1" resolved="yes">
+      <change idref="t111" attribute="internalPrerequisitesString" type="string" to="110FS"/>
+      <change idref="t111" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t111" attribute="title" type="string" to="MG RPBE release"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:18:35.124Z" timestamp="2014-11-13T16:18:35.124Z">
+    <change idref="t15" attribute="priority" type="real" from="0" to="55" resolved="yes"/>
+    <change idref="t15" attribute="internalPrerequisitesString" type="string" to="84FS" resolved="yes"/>
+    <change idref="t16" attribute="isGroup" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t16" attribute="isSplittableTask" type="real" from="1" resolved="yes"/>
+    <change idref="t16" attribute="taskType" type="real" from="0" to="2" resolved="yes"/>
+    <change idref="t16" attribute="resourceAssignmentType" type="real" from="0" resolved="yes"/>
+    <change idref="t16" attribute="staticCost" type="real" from="0" resolved="yes"/>
+    <change idref="t16" attribute="effort" type="real" from="28800" resolved="yes"/>
+    <change idref="t16" attribute="isSplitChunk" type="real" from="0" resolved="yes"/>
+    <change idref="t16" attribute="scheduleType" type="real" from="0" resolved="yes"/>
+    <change idref="t16" attribute="internalAssignments" type="string" from="" resolved="yes"/>
+    <change idref="t16" attribute="isSplitTask" type="real" from="0" resolved="yes"/>
+    <change idref="t16" attribute="internalEffortDone" type="real" from="0" resolved="yes"/>
+    <change idref="t113" to="t16" to-position="0" resolved="yes">
+      <change idref="t113" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t113" attribute="title" type="string" to="Making the code robust enough to release"/>
+    </change>
+    <change idref="t114" to="t16" to-position="1" resolved="yes">
+      <change idref="t114" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t114" attribute="internalPrerequisitesString" type="string" to="113FS"/>
+      <change idref="t114" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t114" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t114" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t114" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t114" attribute="title" type="string" to="APBS BEM code release"/>
+    </change>
+    <change idref="t108" attribute="priority" type="real" from="0" to="40" resolved="yes"/>
+    <change idref="t109" attribute="priority" type="real" from="0" to="50" resolved="yes"/>
+    <change idref="t112" to="t109" to-position="2" resolved="yes">
+      <change idref="t112" attribute="internalPrerequisitesString" type="string" to="110FS"/>
+      <change idref="t112" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t112" attribute="title" type="string" to="MG RPBE paper"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:20:01.628Z" timestamp="2014-11-13T16:20:01.628Z">
+    <change idref="t16" attribute="internalPrerequisitesString" type="string" to="84FS" resolved="yes"/>
+    <change idref="t116" to="t16" to-position="1" resolved="yes">
+      <change idref="t116" attribute="internalPrerequisitesString" type="string" to="113FS"/>
+      <change idref="t116" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t116" attribute="title" type="string" to="Fortran translation to C?"/>
+    </change>
+    <change idref="t115" to="t16" to-position="3" resolved="yes">
+      <change idref="t115" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t115" attribute="title" type="string" to="Better mesh support"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:22:17.817Z" timestamp="2014-11-13T16:22:17.817Z">
+    <change idref="t117" to="t17" to-position="2" resolved="yes">
+      <change idref="t117" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t117" attribute="internalPrerequisitesString" type="string" to="118FS"/>
+      <change idref="t117" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t117" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t117" attribute="priority" type="real" from="0" to="65"/>
+      <change idref="t117" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t117" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t117" attribute="title" type="string" to="Release THG PB SAM code in contrib"/>
+    </change>
+    <change idref="t118" to="t17" to-position="3" resolved="yes">
+      <change idref="t118" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t118" attribute="title" type="string" to="Build standalone modules"/>
+    </change>
+    <change idref="t79" attribute="priority" type="real" from="0" to="65" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:33:27.110Z" timestamp="2014-11-13T16:33:27.110Z">
+    <change idref="t2" attribute="priority" type="real" from="0" to="100" resolved="yes"/>
+    <change idref="t5" attribute="internalPrerequisitesString" type="string" to="122FS" resolved="yes"/>
+    <change idref="t119" to="t17" to-position="4" resolved="yes">
+      <change idref="t119" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t119" attribute="title" type="string" to="Triage problematic parts of code"/>
+    </change>
+    <change idref="t120" to="t17" to-position="5" resolved="yes">
+      <change idref="t120" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t120" attribute="title" type="string" to="Windows compatibility"/>
+    </change>
+    <change idref="t35" attribute="priority" type="real" from="0" to="100" resolved="yes"/>
+    <change idref="t121" to="t45" to-position="2" resolved="yes">
+      <change idref="t121" attribute="internalPrerequisitesString" type="string" to="96FS"/>
+      <change idref="t121" attribute="isGroup" type="real" from="0" to="1"/>
+      <change idref="t121" attribute="priority" type="real" from="0" to="100"/>
+      <change idref="t121" attribute="taskType" type="real" from="0" to="2"/>
+      <change idref="t121" attribute="title" type="string" to="PDB2PQR 2.1"/>
+    </change>
+    <change idref="t117" attribute="internalPrerequisitesString" type="string" from="118FS" to="118FS, 119FS, 120FS" resolved="yes"/>
+    <change idref="t118" attribute="title" type="string" from="Build standalone modules" to="Build framework for standalone modules" resolved="yes"/>
+    <change idref="t122" to="t121" to-position="0" resolved="yes">
+      <change idref="t122" attribute="priority" type="real" from="0" to="100"/>
+      <change idref="t122" attribute="title" type="string" to="Better web visualization integration with 3Dmol"/>
+    </change>
+    <change idref="t71" from="t68" from-position="2" to="t121" to-position="1" resolved="yes"/>
+    <change idref="t123" to="t121" to-position="2" resolved="yes">
+      <change idref="t123" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t123" attribute="internalPrerequisitesString" type="string" to="122FS"/>
+      <change idref="t123" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t123" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t123" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t123" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t123" attribute="title" type="string" to="PDB2PQR 2.1 release"/>
+    </change>
+    <change idref="t124" to="t121" to-position="3" resolved="yes">
+      <change idref="t124" attribute="internalPrerequisitesString" type="string" to="123FS"/>
+      <change idref="t124" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t124" attribute="title" type="string" to="PDB2PQR 2.1 paper written"/>
+    </change>
+    <change idref="t125" to="t121" to-position="4" resolved="yes">
+      <change idref="t125" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t125" attribute="internalPrerequisitesString" type="string" to="124FS"/>
+      <change idref="t125" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t125" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t125" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t125" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t125" attribute="title" type="string" to="PDB2PQR 2.1 paper release"/>
+    </change>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:35:57.910Z" timestamp="2014-11-13T16:35:57.910Z">
+    <change idref="t3" attribute="isSplittableTask" type="real" from="1" to="0" resolved="yes"/>
+    <change idref="t3" attribute="priority" type="real" from="0" to="85" resolved="yes"/>
+    <change idref="t3" attribute="taskType" type="real" from="0" to="1" resolved="yes"/>
+    <change idref="t3" attribute="title" type="string" from="APBS web interface" to="APBS web interface release" resolved="yes"/>
+    <change idref="t3" attribute="effort" type="real" from="28800" to="0" resolved="yes"/>
+    <change idref="t3" attribute="percentCompleteForMilestone" type="real" to="0" resolved="yes"/>
+    <change idref="t4" attribute="priority" type="real" from="0" to="80" resolved="yes"/>
+    <change idref="t86" from="t6" from-position="7" resolved="yes">
+      <change idref="t86" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t86" attribute="internalPrerequisitesString" type="string" to="18FS"/>
+      <change idref="t86" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t86" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t86" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t86" attribute="title" type="string" to="Novel visualization methods APBS/PDB2PQR release"/>
+    </change>
+    <change idref="t18" attribute="priority" type="real" from="0" to="45" resolved="yes"/>
+    <change idref="t87" attribute="internalPrerequisitesString" type="string" from="86FS" to="18FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:36:13.633Z" timestamp="2014-11-13T16:36:13.633Z">
+    <change idref="t7" attribute="internalPrerequisitesString" type="string" to="84FS" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:38:27.025Z" timestamp="2014-11-13T16:38:27.025Z">
+    <change idref="t35" attribute="internalPrerequisitesString" type="string" from="26FS" resolved="yes"/>
+    <change idref="t35" attribute="title" type="string" from="Replacement of APBS front end with Python for flexibility" to="Replacement of APBS front end with Python for flexibility (MALOC-free)" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:41:05.216Z" timestamp="2014-11-13T16:41:05.216Z">
+    <change idref="t7" attribute="priority" type="real" from="0" to="80" resolved="yes"/>
+    <change idref="t26" attribute="title" type="string" from="Remove MALOC" to="Localize MALOC dependencies" resolved="yes"/>
+  </task-change-set>
+  <task-change-set user="Baker, Nathan" date="2014-11-13T16:48:10.202Z" timestamp="2014-11-13T16:48:10.202Z">
+    <change idref="t22" attribute="internalPrerequisitesString" type="string" to="28FS" resolved="yes"/>
+    <change idref="t23" attribute="priority" type="real" from="0" to="90" resolved="yes"/>
+    <change idref="t28" attribute="priority" type="real" from="0" to="80" resolved="yes"/>
+    <change idref="t28" attribute="noLaterThanConstraintDate" type="date" to="2015-01-04T08:00:00.000Z" resolved="yes"/>
+    <change idref="t29" attribute="internalPrerequisitesString" type="string" to="28FS" resolved="yes"/>
+    <change idref="t32" attribute="internalPrerequisitesString" type="string" from="21FS" to="3FS, 28FS" resolved="yes"/>
+    <change idref="t32" attribute="priority" type="real" from="0" to="70" resolved="yes"/>
+    <change idref="t33" attribute="internalPrerequisitesString" type="string" from="21FS" to="28FS, 32FS" resolved="yes"/>
+    <change idref="t33" attribute="priority" type="real" from="0" to="60" resolved="yes"/>
+    <change idref="t126" to="t90" to-position="1" resolved="yes">
+      <change idref="t126" attribute="effort" type="real" from="28800" to="0"/>
+      <change idref="t126" attribute="internalPrerequisitesString" type="string" to="91FS"/>
+      <change idref="t126" attribute="isSplittableTask" type="real" from="1" to="0"/>
+      <change idref="t126" attribute="noLaterThanConstraintDate" type="date" to="2015-02-01T08:00:00.000Z"/>
+      <change idref="t126" attribute="percentCompleteForMilestone" type="real" to="0"/>
+      <change idref="t126" attribute="scheduleType" type="real" from="0" to="1"/>
+      <change idref="t126" attribute="taskType" type="real" from="0" to="1"/>
+      <change idref="t126" attribute="title" type="string" to="Biophysical J review submitted"/>
+    </change>
+    <change idref="t91" attribute="title" type="string" from="Biophysical J review" to="Biophysical J review written" resolved="yes"/>
+  </task-change-set>
+</changelog>

@@ -33,7 +33,9 @@ The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucs
 
 If you prefer to downloads the software rather than using the APBS webserver, both APBS and PDB2PQR are also available for download to use in standalone mode.
 <!-- TODO:  Add links to source compilation instructions -->
-Users can either download binaries for their platform or compile the software from source code.
+Users can either download binaries for their platform or compile the
+software from <A
+href="https://github.com/Electrostatics/apbs-pdb2pqr">source code</a>.
 
 ### PDB2PQR downloads
 
@@ -56,7 +58,8 @@ The best way to acquire APBS is to <a href="https://docs.google.com/forms/d/1Csf
 If you download the source code version of APBS from
 [GitHub](https://github.com/Electrostatics/apbs-pdb2pqr/tree/1.4.1-binary-release),
 please follow the [compilation and installation
-instructions](https://github.com/Electrostatics/apbs-pdb2pqr/blob/1.4.1-binary-release/apbs/INSTALL.md)
+instructions](https://github.com/Electrostatics/apbs-pdb2pqr/blob/1.4.1-binary-release/apbs/BUILD.md)
 available in the code repository.
 
-Usage information for APBS is available [here]({{ site.baseurl/docs/usage/ }}).
+Usage information for APBS is available
+[here]({{ site.baseurl }}/docs/usage/ ).
