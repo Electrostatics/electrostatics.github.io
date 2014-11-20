@@ -52,9 +52,6 @@ We are in the process of migrating our examples, tutorials, and workshop content
 
 ## COMPREHENSIVE EXAMPLES
 - <a href="{{site.baseurl}}/examples/comp_tut/">APBS, PDB2PQR, PyMol, & VMD</a>
-<!---
-- <a href="{{site.baseurl}}/examples/Protein-Rna_Tutorial/">Ionic strength dependence of Peptide-RNA interactions</a>
--->
 
 <!---
 ## Tips, Notes, and Warnings
