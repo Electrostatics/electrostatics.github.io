@@ -633,9 +633,15 @@ calcenergy { flag }
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
+<!--
 <img src="img/NPBE-energy.png" /><br />
+-->
+\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
 where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
+<!--
 <img src="/img/LPBE-energy.png" /><br />
+-->
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
@@ -1643,9 +1649,9 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>charge</code> Write out the biomolecular charge distribution in units of e<sub>c</sub> (electron charge) per Å<sup>3</sup>. (multigrid only).</p>
 
-<p style="margin-left:30px;"><code>pot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+<p style="margin-left:30px;"><code>pot</code> Write out the electrostatic potential in units of k<sub>b</sub> T e<sub>c</sub><sup>-1</sup>. (multigrid and finite element)</p>
 
-<p style="margin-left:30px;"><code>atompot</code> Write out the electrostatic potential in units of <a href="goog_1268499712685">k</a><sub><a href="goog_1268499712685">b</a></sub><a href="goog_1268499712685"> T e</a><sub><a href="goog_1268499712685">c</a></sub><sup><a href="http://www.poissonboltzmann.org/apbs/frequently-asked-questions/what-are-the-units-of-electrostatic-potential">-1</a></sup>. (multigrid and finite element)</p>
+<p style="margin-left:30px;"><code>atompot</code> Write out the electrostatic potential in units of k<sub>b</sub> T e<sub>c</sub><sup>-1</sup>. (multigrid and finite element)</p>
 
 <p style="margin-left:30px;"><code>smol</code> Write out the solvent accessibility defined by the molecular surface definition (see srfm smol). Values are unitless and range from 0 (inaccessible) to 1 (accessible). (multigrid and finite element)</p>
 
@@ -1659,16 +1665,22 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>edens</code> Write out the "energy density" in units of k<sub>B</sub> T e<sub>c</sub><sup>-1</sup> Å<sup>-2</sup>. (multigrid only)</p>
 
-<p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+<p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)</p>
 
+\[ n(x) = \sum_{i}^{M} c_i e^{-q_i \phi(x)/k_B T} \]  
+<!--
 <img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+-->
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
-<p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
+<p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)</p>
 
+\[ \rho_m(x) = \sum_i^M {q_i c_i e^{-q_i\phi(x)/k_BT}} \] 
+<!--
 <img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+-->
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -1690,13 +1702,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>uhbd</code>Write out data in UHBD format. (multigrid only).</p>
 
-<p><code>gz</code>Write out OpenDX data in gzipped (zlib) compatible format. Appends .dx.gz to the filename.</p>
+<p style="margin-left:30px;"><code>gz</code>Write out OpenDX data in gzipped (zlib) compatible format. Appends .dx.gz to the filename.</p>
 
 <p style="margin-left:30px;"><code>flat</code>Write out data as a plain text file. (multigrid and finite element).</p>
 
 <p><code>stem</code>A string that specifies the path for the output; files are written to stem.XYZ, where XYZ is determined by the file format (and processor rank for parallel calculations). If the pathname contains spaces, then it must be surrounded by double quotes; e.g., "/path with spaces/foo.in".</p>
 
 <hr />
+
 
 </div>
 
@@ -1790,13 +1803,12 @@ PRINT {what} [id op id op...] END
 
 The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
 
-- energy Print energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
-- force Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
-- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) ELEC command.
-- elecForce Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) ELEC command.
-- apolEnergy Print energies as calculated with an earlier [calcenergy](elec-keywords/#calcenergy) APOLAR command.
-- apolForce Print forces as calculated with an earlier [calcforce](elec-keywords/#calcforce) APOLAR command.
-
+- energy Print energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
+- force Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
+- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command.
+- elecForce Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command.
+- apolEnergy Print energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#apolar) APOLAR command.
+- apolForce Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#apolar) APOLAR command.
 The next arguments are a series of id op id op id op ... id commands where every id is immediately followed by an op and another id. These options have the following form:
 
 <ul>
@@ -2072,6 +2084,7 @@ END
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
+    "HTML-CSS": { scale: 95, linebreaks: { automatic: true } }, 
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
   });
 </script>
