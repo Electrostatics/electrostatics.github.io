@@ -31,7 +31,7 @@ using the viewer on OSX, make sure to check your java security settings.
 
 ## PyMOL
 
-The [PyMOL](www.pymol.org) molecular graphics software package
+The <a href="http://www.pymol.org" target="BLANK">PyMol</a> molecular graphics software package
 provides support for both the execution of APBS and the visualization of
 the resulting electrostatic potentials. We will provide a basic
 demonstration of how to visualize a potential in PyMOL from APBS.  To
