@@ -44,7 +44,7 @@ permalink: /examples/comp_tut/
 <h2> VMD </h2>
 
 <a id="prot3d"></a>
-<h3> How to get a 3-D protein structure </h3>
+<h6> How to get a 3-D protein structure </h6>
 
 
 1. Go to desired Protein Page
@@ -68,7 +68,7 @@ Go below to "Determine File Type", and click file type, which in this case, is P
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_6.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_6_big.png" class="dg-picture-zoom" id="picture6">  
 Click the "Load" button, and your saved protein will load in the VMD window as a 3-D protein structure
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <hr/>
 
 <a id="ligand"></a>
@@ -90,7 +90,7 @@ on the VMD Main window, click
 ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_11.png)
 and the chosen ligand will appear
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <hr/>
 <a id="residue"></a>
 <h6>How to find a residue</h6>
@@ -108,7 +108,7 @@ on the VMD Main window, click
 
 4. Hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_16.png) and the chosen residue will appear
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <hr/>
 <a id="mutate"></a>
 <h6>How to mutate a protein</h6>
@@ -145,7 +145,7 @@ You do not have to check the ![](https://raw.githubusercontent.com/PEMIfolder/gi
 10. Finally, click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_40.png)
 The mutated protein will now appear in your VMD window
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 
 <a id="PDB2PQR"></a>
 <h2>PDB2PQR</h2>
@@ -167,7 +167,7 @@ Since I want my file to be compatible with VMD, for the both settings named "Pic
 
 <a href="http://www.poissonboltzmann.org/docs/pdb2pqr-faq/" target="BLANK">Click here for more PDB2PQR info</a>
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="Download"></a>
 <h6>Downloading a PDB or PQR file for offline APBS </h6>
 
@@ -182,7 +182,7 @@ Since I want my file to be compatible with VMD, for the both settings named "Pic
 3. Now you should download the same numbered file under "Output files" (mine is called 1408469302.pqr). This time you cannot click on it (as it will just bring up the a webpage with all the information in the file. You must right click and "Save link as..." this time. Also make sure the downloaded file ends in a .pqr but once again the number will not be the same as the one in this picture.  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_44.jpg?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_44_big.jpg" class="dg-picture-zoom" id="picture44">
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="APBS"></a>
 <h2>APBS</h2>
 
@@ -205,7 +205,7 @@ The steps follow the same steps in making a PDB2PQR protein model structure, exc
 
 \* Note: Unzipping the .dx.gz file can be done using any unzipping program
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="SetupAPBS"></a>
 <h6>Setting up your computer for APBS</h6>
 
@@ -238,7 +238,7 @@ and click ok.
 
 You can now run APBS!
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="CMDAPBS"></a>
 <h6>How to run APBS from the command line</h6>
 
@@ -272,7 +272,7 @@ Once you find your IN file, hit enter and APBS will run its calculations and sav
 
 You are done running APBS!
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 
 <a id="Dimes"></a>
 <h2>Potential memory size and dime value problems</h2>
@@ -289,7 +289,7 @@ To expand on DIME values, since a computer only knows about 1s and 0s convention
 
 The problem is that APBS used a signed integer in the 1.4 release to store the total number of elements.  If the total got bigger than 2^(n-1) - 1, where n is the width of the integer (in our case a 32 bit wide int so 2^(n-1) = 2,147,483,648) then the number "overflowed" and looked like a negative number.
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="APBSvis"></a>
 <h2>APBS and visualization</h2>
 
@@ -364,7 +364,7 @@ It should look something like this:
 The picture should look somewhat similar to this:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_80.jpg?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_80_big.jpg" class="dg-picture-zoom" id="picture80">
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 <a id="VMD"></a>
 <h6>VMD</h6>
 
@@ -458,7 +458,7 @@ Change the "Color Scale Data Range:" values to -10 and 10 and hit set (do this f
 25. The final representation should now look like the following:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_112.jpg?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_112_big.jpg" class="dg-picture-zoom" id="picture112">
 
-<a data-scroll href="#topcall">Click here to return to the top of the page</a>
+<a data-scroll href="#topcall">top</a>
 
 <script>
 smoothScroll.init({

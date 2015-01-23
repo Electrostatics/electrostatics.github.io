@@ -17,25 +17,7 @@ Before beginning, please make sure to support the APBS/PDB2PQR team by [register
 	<p>Work through the examples in order, which begin with simple processes and end with advanced instances.</p>
 </div>
 
-<div class="note info">
 
-We are in the process of migrating our examples, tutorials, and workshop content to our new web site.  If we don't have the information you need here, please visit the following links:
-<ul>
-<li>
-   <a href="https://sites.google.com/a/poissonboltzmann.org/software/pdb2pqr/examples">PDB2PQR examples </a>
-</li>
-<li>
-   <a href="https://sites.google.com/a/poissonboltzmann.org/software/apbs/examples">APBS examples</a>
-</li>
-<li>
-   <a href="https://sites.google.com/a/poissonboltzmann.org/software/documentation">Tutorials</a>
-</li>
-<li>
-  <a href="https://sites.google.com/a/poissonboltzmann.org/software/workshops-and-courses">Workshops</a>
-</li>
-</ul>
-
-</div>
 
 ## PDB2PQR EXAMPLES
 - <a href="{{site.baseurl}}/examples/assigning_titration_states_with_propka/">Assigning Titration States With Propka</a>
@@ -47,11 +29,24 @@ We are in the process of migrating our examples, tutorials, and workshop content
 
 ## APBS EXAMPLES
 - <a href="{{site.baseurl}}/examples/binding_energies/">Binding Energies</a>
+- <a href="{{site.baseurl}}/examples/Parallel_execution_for_large_problems/">Parallel execution for large problems</a>
+- <a href="{{site.baseurl}}/examples/pKa_Calculations/">pKa Calculations</a>
+- <a href="{{site.baseurl}}/examples/Lysozyme_pKa_example/">Lysozyme pKa example for PDB2PQR 1.9</a>
+- <a href="{{site.baseurl}}/examples/Potentials_of_mean_force/">Potentials of mean force</a>
+- <a href="{{site.baseurl}}/examples/Solvation_energies/">Solvation energies</a>
+- <a href="{{site.baseurl}}/examples/The_Born_ion/">The Born ion</a>
+
 
 
 
 ## COMPREHENSIVE EXAMPLES
 - <a href="{{site.baseurl}}/examples/comp_tut/">APBS, PDB2PQR, PyMol, & VMD</a>
+- <a href="{{site.baseurl}}/examples/Protein-Rna_Tutorial/">Ionic Strength Dependence of Peptide-RNA Interactions</a>
+
+## WORKSHOPS AND COURSES
+- <a href="{{site.baseurl}}/examples/BII_workshop_tutorials/">BII workshop tutorials</a>
+- <a href="{{site.baseurl}}/examples/CCPBworkshop/">CCPB Workshop Tutorials</a>
+- <a href="{{site.baseurl}}/examples/NBCR_workshop_tutorials/">NBCR workshop tutorials</a>
 
 <!---
 ## Tips, Notes, and Warnings

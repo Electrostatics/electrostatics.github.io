@@ -44,6 +44,8 @@ detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}..
 <p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/pdb2pqr_web_server_screenshot.png" /></p>
 * Press submit!
 
+<i>For more information on how to prepare files, <a href="{{site.baseurl}}/examples/running_apbs_through_pdb2pqr_web_portal/">click here</a></i>
+
 ## Command Line:
 
 Running PDB2PQR with the same options shown above can be performed with the following command:
