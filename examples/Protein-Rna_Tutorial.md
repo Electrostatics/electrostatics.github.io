@@ -39,16 +39,16 @@ García-García and Draper isolated the contribution of KCl concentration to the
 This slope can be used to determine the number  of KCl ions linked to the binding equilibrium through the expression:  
 \\[ n=-\frac{\partial\Delta\_{bind}G}{\{RT}\partial\log_{10}{\rm KCl}} = {-4.52 \pm 0.08~ } {\rm kcal/mol}  \\]  
 
-where $RT$ is the thermal energy, to determine $n = -4.4 \\pm 0.2$ for the RNA-peptide binding equilibrium. $RT$ is equal to $KT * N_a$ where $KT$ is the product of the Boltzmann constant k (k is equal to the gas constant $R/N_a$), and the temperature $T$ (at STP in kelvin it is 298.15) and $N_a$ is Avogadro's constant. Thus $RT$  is equal to \$R\frac{\mathrm{Joule}}{\mathrm{Kelvin}} * T_{\mathrm {Kelvin}} * N_a{\mathrm {mols}} * \frac{1\,\mathrm {kJ}}{1000 \mathrm J}\$ which roughly equals $(1.38\*10^{23})\*(6.022\*10^{23})\*(298.15)/(1000)$ which is approximately $ 2.479 \mathrm{(kJ/mol)} $.
+where $RT$ is the thermal energy, to determine $n = -4.4 \\pm 0.2$ for the RNA-peptide binding equilibrium. $RT$ is equal to $KT * N_a$ where $KT$ is the product of the Boltzmann constant k (k is equal to the gas constant $R/N_a$), and the temperature $T$ (at STP in kelvin it is 298.15) and $N_a$ is Avogadro's constant. Thus $RT$  is equal to \$R~({\mathrm{Joules}}/{\mathrm{Kelvin}}) * T~({\mathrm {Kelvin}}) * N_a~({\mathrm {mols}}) * {1~\mathrm{kJ}}/{1000~\mathrm J}\$ which roughly equals $(1.38\*10^{-23})\*(6.022\*10^{23})\*(298.15)/(1000)$ which is approximately $ 2.479 \mathrm{(kJ/mol)} $ or $0.593 \mathrm{(kcal/mol)}$.
 
-García-García and Draper also used nonlinear Poisson-Boltzmann equation calculations to estimate the electrostatic contributions to the binding free energy as a function of the monovalent salt concentration. As discussed elsewhere, the Poisson-Boltzmann equation is only able to describe non-specific interactions of ions with solutes, including the effects of ion size and charge but otherwise ignoring the important differences between ionic species. Interestingly (and perhaps surprisingly), they find excellent agreement between the experimental binding energy dependence on [KCl] and their Poisson-Boltzmann calculations with equivalent concentrations of monovalent ions. This agreement strongly suggests that the binding of RNA and the peptide is primarily determined by electrostatic interactions. It also suggests that the primary interaction of the KCl with this system is through non-specific screening interactions. The García-García and Draper nonlinear Poisson-Boltzmann equation 
+García-García and Draper also used nonlinear Poisson-Boltzmann equation calculations to estimate the electrostatic contributions to the binding free energy as a function of the monovalent salt concentration. As discussed elsewhere, the Poisson-Boltzmann equation is only able to describe non-specific interactions of ions with solutes, including the effects of ion size and charge but otherwise ignoring the important differences between ionic species. Interestingly (and perhaps surprisingly), they find excellent agreement between the experimental binding energy dependence on KCl and their Poisson-Boltzmann calculations with equivalent concentrations of monovalent ions. This agreement strongly suggests that the binding of RNA and the peptide is primarily determined by electrostatic interactions. It also suggests that the primary interaction of the KCl with this system is through non-specific screening interactions. The García-García and Draper nonlinear Poisson-Boltzmann equation 
 calculations gave:  
 
 \\[ \frac{\partial\Delta\_{bind}G}{\partial\log\_{10}{\rm KCl}} = {5.9 \pm 0.2 ~ } {\rm kcal/mol} \\]  
  
-and $n = -4.3 \pm 0.2$ for KCl linkage to the RNA-peptide binding equilibrium.
+and $n = -4.3 \pm 0.2$ for KCl linkage to the RNA-peptide binding equilibrium. This equation states that 
 
-The PQR files are included in the APBS-PDB2PQR repository. (apbs-pdb2pqr\apbs\examples\protein-rna)
+The PQR files are included in the [protein-rna](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/) directory of the apbs-pdb2pqr repository.
 
 <a id="setup"></a>
 
@@ -85,16 +85,13 @@ After downloading Python, it is useful to set it to your path so you don't have 
 
 ###### Find your copy of the APBS distribution
 
-1. Now, find the "template.in" file in the "apbs-pdb2pqr/apbs/examples/protein-rna" folder, if you don't know where it is you can search your computer again for the "apbs-pdb2pqr" folder (use the "dir" command in order to see what files are in the current "directory" (folder)).  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_14.jpg">  
-(use "__cd directoryname__" to change to the wanted directory, you can repeat using dir and cd in order to get to the place you are looking for)
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_15.jpg">
+1. Now, find the [template.in](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/template.in) file in the "apbs-pdb2pqr/apbs/examples/protein-rna" directory.
 
-2. Find this same folder in "My Computer"
+2. Find this same folder and file in "My Computer"
 
 3. Rename the "template.in" as "template.txt"
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_12.jpg">  
-The template file looks something like the following:  
+This example template file (shown again below) feeds into APBS and specifies which calculations will take place.
 
 {% highlight bash %}
 read  
@@ -193,6 +190,7 @@ As used in the template file, the READ command, our calculation will have three 
 3. Calculation of the total electrostatic energy (including self-interaction energies) of the RNA. This calculation is named rna in the input file.  
 
 Each part of the input file will be contained in a separate [elec keyword](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) section of the input file which specifies the settings for our nonlinear Poisson-Boltzmann equation calculation. The calculations themselves will not be overly demanding, since we will use relatively coarse grids. This grid coarseness has a significant impact on the absolute electrostatic binding energy we obtain from this particular calculation: the calculated energy isn't converged with respect to grid spacing. However, the overall slope of binding energy with respect to monovalent ion concentration is rather insensitive with respect to the grid spacing, allowing us to save computational time and effort during the calculations. Finally, the calculation will conclude with a PRINT command which will combine the total energies from the three parts to obtain our approximate absolute electrostatic binding energy for the complex at 0.225 M monovalent salt concentration. It is very important to note that this absolute energy no meaning in isolation for several reasons:  
+  
 * It is not converged with respect to grid spacing  
 * It does not contain other very important non-electrostatic aspects of the binding energy which are important for the measured affinity  
 
@@ -211,11 +209,13 @@ dxmath uses Reverse Polish Notation, and subtracts the dx maps of the individual
 
 ####Running the software
 
+\*When you run these programs, you need to be in the same repository as template.txt and dxmath.txt.
+
 <a id="windows"></a>
 
 #####Python script (windows)
 
-<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_scripts_PR/apbs_win_dx.py" download="apbs_win_dx.py">Download the Windows Python Script (shown below)</a>
+<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/apbs_win_dx.py" download="apbs_win_dx.py">Download the Windows Python Script (shown below)</a>
 {% highlight bash %}
 from subprocess import call
 
@@ -245,19 +245,23 @@ for item in my_list:
 
 This script will create all the input files for the tests, and run apbs and dxmath on your template.txt and dxmath.txt files. Most of the syntax fills in the ion concentrations in the template file, and the call commands actually run the calculations on each input.
 
-1. Run this script from your command prompt by typing "python apbs\_win\_dx.py >> output.txt". When it is running nothing will show up, but when it is done, there will be a new line. Make sure you run it from the apbs-pdb2pqr/apbs/examples/protein-rna directory.
+Run this script from your command prompt by typing  
+{% highlight bash %}
+python apbs_win_dx.py >> output.txt. 
+{% endhighlight %}  
+When it is running nothing will show up, but when it is done, there will be a new line. Make sure you run it from the apbs-pdb2pqr/apbs/examples/protein-rna directory.
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_16.jpg">  
 The "python" tells the computer to use python.exe to run the input. It takes "apbs\_win\_dx.py" as your input.  
 Furthermore the double greater than symbol ">>" tells your cmd to take the things that would normally be printed into the command prompt into a file called "output.txt".  
 
-2. Open the output.txt file with your favorite text editor (This tutorial is using notepad ++), hit "ctrl f" and search for "Global net ELEC energy", copy the numbers and paste them into another file.
+Open the output.txt file with your favorite text editor (This tutorial is using notepad ++), hit "ctrl f" and search for "Global net ELEC energy", copy the numbers and paste them into another file.
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_17.jpg">
 
 <a id="unixpy"></a>
 
 #####Python script (unix)
 
-<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_scripts_PR/apbs_unix_dx.py" download="apbs_unix_dx.py">Download the Unix Python Script (shown below)</a>
+<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/apbs_unix_dx.py" download="apbs_unix_dx.py">Download the Unix Python Script (shown below)</a>
 {% highlight bash %}
 my_list = (0.025, 0.05, 0.075, 0.1, 0.125, 0.15, 0.175, 0.225, 0.275, 0.325, 0.4, 0.5, 0.6, 0.7, 0.8)
 with open("template.txt", "r") as temp:  
@@ -281,7 +285,13 @@ for item in my_list:
 		temp.write(input_2_txt)
 {% endhighlight %}
 
-Run this script by typing "python apbs\_unix\_dx.py". It will poop out all the apbs-ionconcentration.in files and dxmath-ionconcentration.in files that you need.
+Run this script by typing 
+
+{% highlight bash %}
+python apbs_unix_dx.py
+{% endhighlight %}
+
+It will create all the apbs-ionconcentration.in files and dxmath-ionconcentration.in files that you need.
 
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_18.jpg">  
 
@@ -289,7 +299,7 @@ Run this script by typing "python apbs\_unix\_dx.py". It will poop out all the a
 
 #####Bash script (unix)
 
-<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_scripts_PR/run_apdx_files.sh" download="run_apdx_files.sh">Download the Unix bash script (shown below)</a>
+<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/run_apdx_files.sh" download="run_apdx_files.sh">Download the Unix bash script (shown below)</a>
 {% highlight bash %}
 #!/bin/bash
 # Usage: remove all utility bills pdf file password 
@@ -309,10 +319,18 @@ done
 {% endhighlight %}
 This script will take all the files in your current directory and find files that start with apbs- and end with .in (it does the same thing for dxmath- and .in).  It will then run apbs and dxmath on these input files on your command line.
 
-1. Save the bash scipt. Run it by typing "./run\_apdx\_files.sh | tee  output.txt". This will feed all the input files from the python (unix) script through apbs and dxmath. It will make a "tee pipe" by both printing the results to both the command line and the output.txt file.
+Save the bash scipt. Run it by typing  
+{% highlight bash %}
+./run_apdx_files.sh | tee  output.txt
+{% endhighlight %}
+This will feed all the input files from the python (unix) script through apbs and dxmath. It will make a "tee pipe" by both printing the results to both the command line and the output.txt file.
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_19.jpg">
 
-2. After this command, run "grep "Global net ELEC energy" output.txt | tee output_2.txt". This will search output.txt for the string "Global net ELEC energy" and output the lines which contain the phrase to a file called output\_2.txt.
+After this command, run  
+{% highlight bash %}
+grep "Global net ELEC energy" output.txt | tee output_2.txt"
+{% endhighlight %}
+. This will search output.txt for the string "Global net ELEC energy" and output the lines which contain the phrase to a file called output\_2.txt.
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_20.jpg">  
 
 
@@ -336,7 +354,7 @@ This properly fit data looks like this:
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/graph_4.png">   
 The data is approximated by the equation $ y = 130 + 11.28*ln(x) $
 
-Further analysis requires the ability to perform linear regression. There are many programs that do this; a simple Python script named [fit.py](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/fit.py) is provided for this purpose in the protein-rna example directory. This script can be called with:
+Further analysis requires the ability to perform linear regression. There are many programs that do this; a simple Python script is provided for this purpose in the protein-rna example directory (named fit.py). This script can be called with:
 {% highlight bash %}
 cat file.dat | python fit.py
 {% endhighlight %}
@@ -356,45 +374,59 @@ from  the graph of x = ln(ion concentration) and y = RT (the electrostatic bindi
 
 ######PyMol: 
   
-1. Open "PyMOL + Tcl-Tk GUI". Using the window at the top, find the directory containing the files that were just pooped out by the python/bash scripts. Once you find the file type "load qdens-diff-0.225.dx".  
+Open "PyMOL + Tcl-Tk GUI". Using the window at the top, find the directory containing the files that were just pooped out by the python/bash scripts. Once you find the file type  
+{% highlight bash %}
+load qdens-diff-0.225.dx
+{% endhighlight %}  
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_21.jpg">
 
-2. Your "PyMol Viewer" should now show this: 
+Your "PyMol Viewer" should now show this: 
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_22.jpg">
 
-3. Click the "qdens-diff-0.225" tab on the right so that it turns the same color as the all button (this means it's on). This should show the outline of a rectangular prism (these correspond to dime values which are used to run apbs). Click the "S (show)" next to qdens and click show everything.
+
+Click the "qdens-diff-0.225" tab on the right so that it turns the same color as the all button (this means it's on). This should show the outline of a rectangular prism (these correspond to dime values which are used to run apbs). Click the "S (show)" next to qdens and click show everything.
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_23.jpg">
 
-4. Now load the pqr file into the PyMol Viewer from the Pymol prompt again. "load  model_outNB.pqr"
 
-5. Under the "S" for the new model you just loaded hit show cartoon and ribbon. Hit "H(hide)" lines and now you should have a picture like this:
+Now load the pqr file into the PyMol Viewer from the Pymol prompt again.  
+{% highlight bash %}
+load  model_outNB.pqr
+{% endhighlight %}
+
+
+Under the "S" for the new model you just loaded hit show cartoon and ribbon. Hit "H(hide)" lines and now you should have a picture like this:
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_24.jpg">  
 
 <a id="vmd"></a>
 
 ######VMD:
 
-1. Open VMD 1.9.1 (or what ever version you have). From the VMD Main window hit "File -> New Molecule". A "Molecule File Browser" window should come up.  
+Open VMD 1.9.1 (or what ever version you have). From the VMD Main window hit "File -> New Molecule". A "Molecule File Browser" window should come up.  
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_29.jpg">  
 
-2. Hit 'Browse...'    
+
+Hit 'Browse...'    
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_34.jpg">  
 
-3. Open the "qdens-diff-0.225.dx" file and hit 'Load'   
+
+Open the "qdens-diff-0.225.dx" file and hit 'Load'   
 Your display window should look somemthing like this:
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_33.jpg">  
 (If "Load" doesn't work, make sure the file type is correct under "Determine file type")
 
-3. Now load another new molecule (model_outNB.pqr) and you should have something like this (zoomed in a little with the scroll on a 3 button mouse):  
+Now load another new molecule (model_outNB.pqr) and you should have something like this (zoomed in a little with the scroll on a 3 button mouse):  
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_30.jpg">
 
-4. Under the "Graphics" tab hit "Representations". A "Graphical Representations"  tab should come up.  
+
+Under the "Graphics" tab hit "Representations". A "Graphical Representations"  tab should come up.  
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_31.jpg">  
 Click the "Rep" that has "Style" "Lines" and change the "Drawing Method" from "Lines" to "New Cartoon". Click "Coloring Method" and change to "ResType". This will color the protein alpha helix such that each amino acid will be a different color based on whether it is non-polar, basic, acidic, or polar (white, blue, red, and green respectively).
 
-5. Now change the Isosurface representation. Draw (bottom right) should be "Solid Surface" instead of "Points". The "Material should also be changed from "Opaque" to "Transparent".
 
-6. Now the representation should look like this:  
+Now change the Isosurface representation. Draw (bottom right) should be "Solid Surface" instead of "Points". The "Material should also be changed from "Opaque" to "Transparent".
+
+
+Now the representation should look like this:  
 <img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_32.jpg">
 
 <script type="text/x-mathjax-config">
