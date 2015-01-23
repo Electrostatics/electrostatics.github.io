@@ -69,7 +69,7 @@ parse, tyl06, peoepb and swanson are supported.</td></tr>
 
 <table>
 <th colspan="2">Hbond extension options</th>
-<tr><td><nobr>--hbond</nobr></td><td><nobr>--hbond</td></tr>
+<tr><td><nobr>--hbond</nobr></td><td>Print a list of hydrogen bonds to {output-path}.hbond</td></tr>
 <tr><td><nobr>--whatif</nobr></td><td>Change hbond output to WHAT-IF format.</td></tr>
 <tr><td><nobr>--angle_cutoff=ANGLE_CUTOFF</nobr></td><td>Angle cutoff to use when creating hbond data (default 30.0)</td>
 </tr>

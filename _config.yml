@@ -5,3 +5,4 @@ excerpt_separator: noifniof3nioaniof3nioafafinoafnoif
 repository: https://github.com/electrostatics/apbs-pdb2pqr
 baseurl:  http://www.poissonboltzmann.org
 markdown: kramdown
+encoding: utf-8
