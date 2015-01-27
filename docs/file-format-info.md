@@ -225,8 +225,7 @@ where the whitespaces are important and denote separation between the fields. Th
 
 `Epsilon` A float giving the Lennard-Jones well depth \epsilon (in kJ/mol). This is used for the calculation of WCA energies in apolar solvation energies and forces. We assume that the Lennard-Jones potential is defined in the "AMBER style": 
 
-<!---ADD MATH EQUATION HERE FROM THIS PAGE: 
-https://sites.google.com/a/poissonboltzmann.org/software/file-formats/parameter-files/apbs-flat-file-format --->
+\\[ U_{\mathrm{LJ}}(r) = \epsilon \left(\Bigl(\frac{\sigma}{r}\Bigr)^{12} - \Bigr(\frac{\sigma}{r}\Bigr)^6\right) \\]
 
 
 ##APBS XML format
@@ -262,11 +261,21 @@ The variables in this example are:
 `atomepsilon` A float giving the Lennard-Jones well depth \epsilon (in kJ/mol). This is used for the calculation of WCA energies in apolar solvation energies and forces. We assume that the Lennard-Jones potential is defined in the "AMBER style": 
 
 
-<!---ADD MATH EQUATION HERE FROM THIS PAGE: 
-https://sites.google.com/a/poissonboltzmann.org/software/file-formats/parameter-files/apbs-xml-format --->
+\\[ U_{\mathrm{LJ}}(r) = \epsilon \left(\Bigl(\frac{\sigma}{r}\Bigr)^{12} - \Bigr(\frac{\sigma}{r}\Bigr)^6\right) \\]
+
 
 
 
 ###PDB2PQR XML format
 
 This file format is described in the [PDB2PQR Programmer Guide](/docs/pdb2pqr-programmers/) Using XML Files and Regular Expressions section.
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
