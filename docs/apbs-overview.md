@@ -1667,22 +1667,22 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)</p>
 
-\[ n(x) = \sum_{i}^{M} c_i e^{-q_i \phi(x)/k_B T} \]  
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
 <!--
 <img src="/apbs-pdb2pqr/img/ndens.png" /></p>
 -->
 
-<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+<p style="margin-left:30px;">where N is the number of ion species, $\overline{\rho}_i$ is the bulk density of ion species i, $q_i$ is the charge of ion species i, $\phi(x)$ is the electrostatic potential, and $V_i$ is the solute-ion interaction potential for species i.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)</p>
 
-\[ \rho_m(x) = \sum_i^M {q_i c_i e^{-q_i\phi(x)/k_BT}} \] 
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \] 
 <!--
 <img src="/apbs-pdb2pqr/img/qdens.png" /></p>
 -->
 
-<p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
+<p style="margin-left:30px;">where N is the number of ion species, $\overline{\rho}_i$ is the bulk density of ion species i, $q_i$ is the charge of ion species i, $\phi(x)$ is the electrostatic potential, and $V_i$ is the solute-ion interaction potential for species i.</p>
 
 <p style="margin-left:30px;"><code>dielx</code>Write out the dielectric map shifted by 1/2 grid spacing in the x-direction (see READ diel). The values are unitless. (multigrid only)</p>
 
