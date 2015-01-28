@@ -13,11 +13,11 @@ permalink: /docs/pdb2pqr-algorithm-description/
 
 <a href="../../img/pdb2pqr-workflow.png" target="_blank"><img src="../../img/pdb2pqr-workflow.png" style="float:right;border:10px solid white;margin:10px;" width="300" heigh="534" /></a>
 
-To determine if a residue needs to be debumped PDB2PQR compares its atoms to all nearby atoms. With the exception of donor/acceptor pairs and CYS residue SS bonded pairs, a residue needs to be debumped if any of its atoms are within a cutoff distance of any other atoms. The cut off is 1.0 angstrom for hydrogen/hydrogen collisions, 1.5 angstrom for hydrogen/heavy collisions, and 2.0 angstrom otherwise. 
+To determine if a residue needs to be debumped, PDB2PQR compares its atoms to all nearby atoms. With the exception of donor/acceptor pairs and CYS residue SS bonded pairs, a residue needs to be debumped if any of its atoms are within cutoff distance of any other atoms. The cutoff is 1.0 angstrom for hydrogen/hydrogen collisions, 1.5 angstrom for hydrogen/heavy collisions, and 2.0 angstrom otherwise. 
 
-Considering the atoms that are conflicted PDB2PQR changes selected dihedral angle’s configurations in increments of 5.0 degrees looking for positions where the residue does not conflict with other atoms. If modifying a dihedral angle does not result in a debumped configuration then the dihedral angle is reset to its original setup and the next one is tried. If 10 angles are tried without success the algorithm reports failure. 
+Considering the atoms that are conflicted, PDB2PQR changes selected dihedral angle’s configurations in increments of 5.0 degrees, looking for positions where the residue does not conflict with other atoms. If modifying a dihedral angle does not result in a debumped configuration then the dihedral angle is reset and the next one is tried. If 10 angles are tried without success the algorithm reports failure. 
 
-It should be noted that this is not an optimal solution. This method is not guaranteed to find a solution if it exists and will accept the first completely debumped state found and not the optimal state. 
+It should be noted that this is not an optimal solution. This method is not guaranteed to find a solution if it exists and will accept the first completely debumped state found, not the optimal state. 
 
 This implementation also has the following known bug: 
 

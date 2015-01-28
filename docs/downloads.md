@@ -17,7 +17,7 @@ permalink: /docs/downloads/
 
 ## Web servers
 
-The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR functionality without the need to download and install additional programs.
+The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR without the need to download and install additional programs.
 
 <div class="note warning">
 	<h5>Before you begin!</h5>
@@ -31,7 +31,7 @@ The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucs
 
 <h2 id="downloads">Downloads</h2>
 
-If you prefer to downloads the software rather than using the APBS webserver, both APBS and PDB2PQR are also available for download to use in standalone mode.
+If you prefer to download the software rather than use the APBS webserver, both APBS and PDB2PQR are also available for download to use in standalone mode.
 <!-- TODO:  Add links to source compilation instructions -->
 Users can either download binaries for their platform or compile the
 software from <A

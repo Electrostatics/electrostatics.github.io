@@ -9,13 +9,13 @@ permalink: /docs/visualizing-results/
 There are several programs available for visualizing your results.  If
 you have used the web server for your calculations, the java jmol plugin may
 be the easiest method, described directly below.  However, if you need more options, there are
-several external programs, such as [pymol](.#pymol), for your to use.
+several external programs, such as [pymol](.#pymol), for you to use.
 
 
 <!-- VMD -->
 
 
-# The web server:
+## The web server:
 
 The most straightforward way to visualize results is through the web server.  If 
 you've used the web server to [get your structures ready]( {{ site.baseurl }}../../docs/structures-ready )
@@ -27,24 +27,23 @@ see a link to "click here to visualize your results."
 The web site uses a java plugin to run jmol in the web browser.  If you have trouble 
 using the viewer on OSX, make sure to check your java security settings.
 
-# Standalone applications:
+## Standalone applications:
 
-## PyMOL
+### PyMOL
 
 The <a href="http://www.pymol.org" target="BLANK">PyMol</a> molecular graphics software package
-provides support for both the execution of APBS and the visualization of
-the resulting electrostatic potentials. We will provide a basic
+can both run APBS and visualize resulting electrostatic potentials. We will provide a basic
 demonstration of how to visualize a potential in PyMOL from APBS.  To
 calculate electrostatics in PyMol see the [calculate
-electrostatics]( {{site.baseurl}}../../docs/calculating) page
+electrostatics]( {{site.baseurl}}../../docs/calculating) page.
 
-### Visualize the electrostatic potential
+#### Visualize the electrostatic potential
 
-Before proceeding with the remaining steps, you must load the
+Before proceeding, you must load the
 electrostatic potential data into PyMOL. Under the "Visualization" tab of
 the PyMOL APBS Tools window, hit the Update button.
 
-#### Electrostatic isocontours
+##### Electrostatic isocontours
 
 PyMOL makes this step very easy: adjust the positive and negative
 "Contour" fields to the desired values (usually ±1, ±5, or ±10 kT/e)
@@ -63,7 +62,7 @@ objects iso_neg and iso_pos in the main menu. By convention (for
 electrostatics in chemistry), red is negative (think oxygen atoms in
 carboxyl groups) and blue positive (think nitrogen atoms in amines).
 
-#### Surface potentials
+##### Surface potentials
 
 If you haven't already, hide the isocontours by hitting Positive
 Isosurface and Negative Isosurface and Hide buttons.  The surface
@@ -85,13 +84,11 @@ The solvent-accessible surface tends to reveal more global
 features of the surface potential. Tighter surfaces (e.g., van der Waals
 and molecular or Connolly surfaces) provides more information about the
 shape of the biomolecule but otherwise tend to simply map atomic surface
-charges onto the biomolecular surface. Thankfully, PyMOL provides an
-excellent solution to the conflicting need to obtain geometric
-information from the molecular surface together with useful electrostatic
-potential information from the solvent-accessible surface. To visualize
+charges onto the biomolecular surface. Thankfully, PyMOL can simultaneously provide geometric information (from the molecular surface) and useful electrostatic potential information (from the solvent-accessible surface).
+ To visualize
 the molecule in this way, simply uncheck the "Solvent accessible surface"
 box and check the "Color by potential on sol. acc. surf." box on the
-"Visualization tab".
+"Visualization" tab.
 
 
 <!--

@@ -72,7 +72,7 @@ Use the PDB2PKA package to generate parameters for the specific ligand in MOL2 f
 Create a template APBS input file based on the generated PQR file.
 
 `--whitespace`
-Put an extra whitespace between atom name and residue name to <output-path>-whitespace.pqr, this may (or may not) break strict PDB formatting and cause problems for some visualization programs.
+Put an extra whitespace between atom name and residue name to <output-path>-whitespace.pqr; this may (or may not) break strict PDB formatting and cause problems for some visualization programs.
 
 `--verbose (-v)`
 Print information to stdout.

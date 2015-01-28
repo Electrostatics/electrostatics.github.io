@@ -40,7 +40,7 @@ parse, tyl06, peoepb and swanson are supported.</td></tr>
 <tr><td><nobr>--assign-only</nobr></td><td>Only assign charges and radii - do not add atoms, debump, or optimize.</td></tr>
 <tr><td><nobr>--ffout=FIELD_NAME</nobr></td><td>Instead of using the standard canonical naming scheme for residue and atom names, use the names from the given forcefield - currently amber, charmm, parse, tyl06, peoepb and swanson are supported.</td></tr>
 <tr><td><nobr>--usernames=USER_NAME_FILE</nobr></td><td>The user created names file to use. Required if using --userff</td></tr>
-<tr><td><nobr>--apbs-input</nobr></td><td>Create a template APBS input file based on the generated PQR file.  Also creates a Python pickle for using these parameters in other programs.</td></tr>
+<tr><td><nobr>--apbs-input</nobr></td><td>Create a template APBS input file based on the generated PQR file.  Also create a Python pickle for using these parameters in other programs.</td></tr>
 <tr><td><nobr>--ligand=PATH</nobr></td><td>Calculate the parameters for the ligand in mol2 format at the given path. Pdb2pka must be compiled.</td></tr>
 <tr><td><nobr>--whitespace</nobr></td><td>Insert whitespaces between atom name and residue name, between x and y, and between y and z.</td></tr>
 <tr><td><nobr>--typemap</td><td>Create Typemap output.</td></tr>
@@ -53,7 +53,7 @@ parse, tyl06, peoepb and swanson are supported.</td></tr>
 <table>
 <th colspan="2">proPKA options</th>
 <tr><td><nobr>--with-ph=PH</nobr></td><td>Use propka to calculate pKas and apply them to the molecule given the pH value. Actual PropKa results will be output to output-path. propka.</td></tr>
-<tr><td><nobr>--reference=REFERENCE</nobr></td><td>Setting which reference to use for stability calculations. See PROPKA 3.0 documentation.</td></tr>
+<tr><td><nobr>--reference=REFERENCE</nobr></td><td>Set which reference to use for stability calculations. See PROPKA 3.0 documentation.</td></tr>
 <tr><td><nobr>--propka-verbose</nobr></td><td>Print extra proPKA information to stdout. WARNING: This produces an incredible level of output.</td></tr>
 </table>
 

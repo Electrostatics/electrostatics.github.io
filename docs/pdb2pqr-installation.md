@@ -15,11 +15,11 @@ permalink: /docs/pdb2pqr-installation/
 
 ### Overview
 
-Most users will likely interact with PDB2PQR through the servers listed at Web servers.  However, it is also possible to install local versions of PDB2PQR. These local installations give a command line version of the PDB2PQR software that can be customized through a variety of extensions. Compiled from source a local version can provide a web server.
+Most users will likely interact with PDB2PQR through the interact with PDB2PQR through web servers.  However, it is also possible to install local versions of PDB2PQR. These local installations give a command line version of the PDB2PQR software that can be customized through a variety of extensions. Compiled from source, a local version can provide a web server.
 
 ### Using a Binary Build
 
-Binary builds do not require python or NumPy be installed to use. Everything needed to run PDB2PQR is included. Just unpack and use. PDB2PQR can be run with the “pdb2pqr” executable found in the base folder of the uncompressed archive.
+Binary builds do not require python or NumPy to use. Everything needed to run PDB2PQR is included. Just unpack and use. PDB2PQR can be run with the “pdb2pqr” executable found in the base folder of the uncompressed archive.
 
 Binary tarballs have “bin” in the file name and are named by target platform.
 
