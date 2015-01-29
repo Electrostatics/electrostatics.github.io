@@ -34,7 +34,7 @@ permalink: /examples/comp_tut/
 * Precursor requirements:
 	* <a href="http://www.ks.uiuc.edu/Research/vmd/" target="BLANK">Download VMD</a>
 	*  <a href="http://www.pymol.org/" target="BLANK">Download Pymol</a>
-	* <a href="http://www.poissonboltzmann.org/docs/downloads/" target="BLANK">Download APBS and PDB2PQR</a>
+	* <a href="{{site.baseurl}}/docs/downloads/" target="BLANK">Download APBS and PDB2PQR</a>
 	* <a href="https://www.python.org/" target="BLANK">Download Python</a>  (*This is written using Python 2.7 )
 	* <a href="http://matplotlib.org/" target="BLANK">Download Matplotlib</a>
 
@@ -165,7 +165,7 @@ Since I want my file to be compatible with VMD, for the both settings named "Pic
 
 * With PDB2PQR, unfortunately the program deletes any stray ligands that are in the molecule, which means to mutate accordingly a MOL2 file must be taken (which most are available at the ZINC database website).
 
-<a href="http://www.poissonboltzmann.org/docs/pdb2pqr-faq/" target="BLANK">Click here for more PDB2PQR info</a>
+<a href="{{site.baseurl}}/docs/pdb2pqr-faq/" target="BLANK">Click here for more PDB2PQR info</a>
 
 <a data-scroll href="#topcall">top</a>
 <a id="Download"></a>

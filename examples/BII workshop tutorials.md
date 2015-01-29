@@ -48,7 +48,7 @@ The first session of these practicals are designed to introduce the basic concep
 * Other APBS tools should be tools/ subdirectory of the APBS distribution (/usr/local/share/tools/).
 
 #####PDB2PQR
-* The full PDB2PQR distribution (version 2.0) should be available from  http://www.poissonboltzmann.org/docs/downloads/
+* The full PDB2PQR distribution (version 2.0) should be available from  <a href= "{{site.baseurl}}/docs/downloads/">here</a>
 
 #####VMD
 * VMD (vmd) should be in your path.

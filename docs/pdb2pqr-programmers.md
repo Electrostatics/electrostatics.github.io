@@ -150,7 +150,7 @@ in one of the PDB2PQR source code directories, where 9876 is an arbitrary port n
 
 
 
-	<p>This section of code will ensure that the H atom of all canonical residue names that match the [NC]?...$ regular expression point to HN instead. This regular expression matches all three-letter residue names, residue names with an 'N' prepended (N-Termini), and residue names with a 'C' prepended (C-Termini). For twenty amino acids that is sixty residue name changes, all done by a single section. The use of regular expressions is therefore a much more powerful method of handling naming scheme differences than working on a one to one basis. For those unfamiliar with using regular expressions, check out the <a href="https://docs.python.org/2/howto/regex.html">Python-specific guide</a>.</p>
+	<p>This section of code will ensure that the H atom of all canonical residue names that match the [NC]?...$ regular expression point to HN instead. This regular expression matches all three-letter residue names, residue names with an 'N' prepended (N-Termini), and residue names with a 'C' prepended (C-Termini). For twenty amino acids, sixty residue name changes can all be done by a single section. The use of regular expressions is therefore a much more powerful method of handling naming scheme differences than working on a one to one basis. For those unfamiliar with using regular expressions, check out the <a href="https://docs.python.org/2/howto/regex.html">Python-specific guide</a>.</p>
 	<p>There are a few other additional notes when using the *.names file. First, the $group variable is used to denote the matching group of a regular expression, for instance:</p>
 
 	{% highlight text %}

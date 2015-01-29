@@ -1803,12 +1803,12 @@ PRINT {what} [id op id op...] END
 
 The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
 
-- energy Print energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
-- force Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
-- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command.
-- elecForce Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) ELEC command.
-- apolEnergy Print energies as calculated with an earlier [calcenergy](http://www.poissonboltzmann.org/docs/apbs-overview/#apolar) APOLAR command.
-- apolForce Print forces as calculated with an earlier [calcforce](http://www.poissonboltzmann.org/docs/apbs-overview/#apolar) APOLAR command.
+- energy Print energies as calculated with an earlier [calcenergy]({{site.baseurl}}/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
+- force Print forces as calculated with an earlier [calcforce]({{site.baseurl}}/docs/apbs-overview/#elec) ELEC command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
+- elecEnergy Print electrostatic energies as calculated with an earlier [calcenergy]({{site.baseurl}}/docs/apbs-overview/#elec) ELEC command.
+- elecForce Print forces as calculated with an earlier [calcforce]({{site.baseurl}}/docs/apbs-overview/#elec) ELEC command.
+- apolEnergy Print energies as calculated with an earlier [calcenergy]({{site.baseurl}}/docs/apbs-overview/#apolar) APOLAR command.
+- apolForce Print forces as calculated with an earlier [calcforce]({{site.baseurl}}/docs/apbs-overview/#apolar) APOLAR command.
 The next arguments are a series of id op id op id op ... id commands where every id is immediately followed by an op and another id. These options have the following form:
 
 <ul>
@@ -1860,7 +1860,7 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 <div id="read-keyword-charge" style="display:none;">
 
-<p>This command allows <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a>
+<p>This command allows <a href="{{site.baseurl}}/apbs" rel="nofollow" title="{{site.baseurl}}/apbs">APBS</a>
 to read the fixed (molecular) charge density function mapped to a mesh.
 The inputs are maps of charge densities; these values have units of e<sub>c</sub> Å<sup>-3</sup>, where e<sub>c</sub> is the electron charge. In general, this command will read charge-maps written by <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write" rel="nofollow" title="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write">write</a> commands in earlier <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a> calculations. Arguments for this command are:</p>
 
