@@ -1860,9 +1860,9 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 <div id="read-keyword-charge" style="display:none;">
 
-<p>This command allows <a href="{{site.baseurl}}/apbs" rel="nofollow" title="{{site.baseurl}}/apbs">APBS</a>
+<p>This command allows <a href="https://github.com/Electrostatics/apbs-pdb2pqr/tree/master/apbs">APBS</a>
 to read the fixed (molecular) charge density function mapped to a mesh.
-The inputs are maps of charge densities; these values have units of e<sub>c</sub> Å<sup>-3</sup>, where e<sub>c</sub> is the electron charge. In general, this command will read charge-maps written by <a href="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write" rel="nofollow" title="http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/write">write</a> commands in earlier <a href="http://www.poissonboltzmann.org/apbs" rel="nofollow" title="http://www.poissonboltzmann.org/apbs">APBS</a> calculations. Arguments for this command are:</p>
+The inputs are maps of charge densities; these values have units of e<sub>c</sub> Å<sup>-3</sup>, where e<sub>c</sub> is the electron charge. In general, this command will read charge-maps written by <a href="{{site.baseurl}}/docs/apbs-overview/#elec" rel="nofollow" title="{{site.baseurl}}/docs/apbs-overview/#elec">write</a> commands in earlier <a href="https://github.com/Electrostatics/apbs-pdb2pqr/tree/master/apbs">APBS</a> calculations. Arguments for this command are:</p>
 
 <p>The format of the charge map. Acceptable values include:</p>
 

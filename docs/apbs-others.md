@@ -38,7 +38,7 @@ VMD [http://www.ks.uiuc.edu/Research/vmd/](http://www.ks.uiuc.edu/Research/vmd/)
 
 ###PMV
 
-PMV [http://www.scripps.edu/~sanner/python](http://www.scripps.edu/~sanner/python) is a Python-based molecular visualization package which provides an interface to APBS. It not only permits visualization of APBS results but it also integrates setup and executation of APBS calculations. The PMV/APBS interface (http://mccammon.ucsd.edu/pmv_apbs/) is under active development and future versions will offer even more setup, visualization, and analysis functionality.  The APBS interface is distributed with recent beta versions of PMV, avalaible from [http://www.scripps.edu/~sanner/python](http://www.scripps.edu/~sanner/python). Additional documention for using APBS with PMV is provided at [http://mccammon.ucsd.edu/~jswanson/apbsDoc/command_doc2.html](http://mccammon.ucsd.edu/~jswanson/apbsDoc/command_doc2.html).
+PMV [http://www.scripps.edu/~sanner/python](http://www.scripps.edu/~sanner/python) is a Python-based molecular visualization package which provides an interface to APBS. It not only permits visualization of APBS results but it also integrates setup and executation of APBS calculations. The PMV/APBS interface (http://mccammon.ucsd.edu/pmv_apbs/) is under active development and future versions will offer even more setup, visualization, and analysis functionality.  The APBS interface is distributed with recent beta versions of PMV, avalaible from [http://www.scripps.edu/~sanner/python](http://www.scripps.edu/~sanner/python). Additional documention for using APBS with PMV is provided at [http://mgltools.scripps.edu/api/Pmv/Pmv.APBSCommands-module.html](http://mgltools.scripps.edu/api/Pmv/Pmv.APBSCommands-module.html).
 
 ###Simulation Software
 
@@ -52,7 +52,7 @@ Electrostatic potentials are commonly visualized in the context of biomolecular 
 
 ###Off-Target Pipeline
 
-The Off-Target Pipeline [http://personalpages.manchester.ac.uk/postgrad/Thomas.Evangelidis/ug/Contents.html](http://personalpages.manchester.ac.uk/postgrad/Thomas.Evangelidis/ug/Contents.html) implements APBS to estimate ligand binding energies and compare electrostatic potential distributions within binding cavities.
+The Off-Target Pipeline [https://sites.google.com/site/offtargetpipeline/](https://sites.google.com/site/offtargetpipeline/) implements APBS to estimate ligand binding energies and compare electrostatic potential distributions within binding cavities.
 
 ###Dino3D
 

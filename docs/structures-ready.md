@@ -25,7 +25,7 @@ These tasks include:
 
 The first method demonstrates how to use the PDB2PQR web server and the
 next method calls PDB2PQR directly from the command line.  For a more
-detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}../../docs/pdb2pqr-usage ).
+detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}/docs/pdb2pqr-usage ).
 
 <div class="note warning">
 	<h5>Before you begin!</h5>
@@ -53,5 +53,5 @@ Running PDB2PQR with the same options shown above can be performed with the foll
 
 ### Notes on PDB2PQR
 - PDB2PQR was ported to Python by Todd Dolinsky while working with Nathan Baker at Washington University in St. Louis. The PDB2PQR code is based on C++ design and algorithms by Jens Erik Nielsen. PDB2PQR was originally designed to facilitate structure preparation for APBS.
-- PDB2PQR uses PROPKA to determine protein pKa values. PROPKA is developed by the Jensen Research Group at the University of Copenhagen. More information about PROPKA can be found at [https://github.com/jensengroup/propka-3.0](https://github.com/jensengroup/propka-3.0).
+- PDB2PQR uses PROPKA to determine protein pKa values. PROPKA is developed by the Jensen Research Group at the University of Copenhagen. More information about PROPKA can be found at [https://github.com/jensengroup/propka-3.1](https://github.com/jensengroup/propka-3.1).
 - PEOE_PB charges for ligand parameterization were developed by Paul Czodrowski in the Klebe Group at the Philipps University Marburg.

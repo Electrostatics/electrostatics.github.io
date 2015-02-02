@@ -211,7 +211,7 @@ else { document.getElementById(d).style.display = "none"; }
 <a href="javascript:ReverseDisplay('what-is-propka')">What is PROPKA?</a>
 
 <div id="what-is-propka" style="display:none;">
-	<p>PROPKA is a heuristic pKa calculation software package developed by Jan Jensen at University of Copenhagen. <a href="http://propka.ki.ku.dk/">More information</a>.</p>
+	<p>PROPKA is a heuristic pKa calculation software package developed by Jan Jensen at University of Copenhagen. <a href="https://github.com/jensengroup/propka-3.1/">More information</a>.</p>
 </div>
 
 

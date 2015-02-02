@@ -17,7 +17,7 @@ permalink: /docs/reading-list/
 
 * Baker NA. Poisson-Boltzmann methods for biomolecular electrostatics. Methods in Enzymology, 383, 94-118, 2004. [http://dx.doi.org/10.1016/S0076-6879(04)83005-2](http://www.sciencedirect.com/science/article/pii/S0076687904830052)
 * Baker NA, McCammon JA. Electrostatic interactions. Structural Bioinformatics. Weissig H, Bourne PE, eds., 2005. [http://dx.doi.org/10.1002/0471721204.ch21](http://dx.doi.org/10.1002/0471721204.ch21)
-* Baker NA. Biomolecular applications of Poisson-Boltzmann methods. Reviews in Computational Chemistry. Lipkowitz KB, Larter R, Cundari TR., 21, 2005. [http://dx.doi.org/10.1002/0471720895.ch5](http://dx.doi.org/10.1002/0471720895.ch5])
+* Baker NA. Biomolecular applications of Poisson-Boltzmann methods. Reviews in Computational Chemistry. Lipkowitz KB, Larter R, Cundari TR., 21, 2005. [http://dx.doi.org/10.1002/0471720895.ch5](http://dx.doi.org/10.1002/0471720895.ch5)
 * Baker NA. Improving implicit solvent simulations: a Poisson-centric view. Curr Opin Struct Biol, 15, 137-43, 2005. [http://dx.doi.org/10.1016/j.sbi.2005.02.001](http://dx.doi.org/10.1016/j.sbi.2005.02.001)
 * Baker NA, Bashford D, Case DA. Implicit solvent electrostatics in biomolecular simulation. New Algorithms for Macromolecular Simulation. Leimkuhler B, Chipot C, Elber R, Laaksonen A, Mark A, Schlick T, Schutte C, Skeel R, eds., 2006. [http://dx.doi.org/10.1007/3-540-31618-3_15](http://dx.doi.org/10.1007/3-540-31618-3_15)
 * Dong F, Olsen B, Baker NA. Computational Methods for Biomolecular Electrostatics. Methods in Cell Biology: Biophysical Tools for Biologists, 84, 843-870, 2008. [http://dx.doi.org/10.1016/S0091-679X(07)84026-X](http://www.sciencedirect.com/science/article/pii/S0091679X0784026X)
@@ -43,7 +43,7 @@ permalink: /docs/reading-list/
 
 ### Preparing protein structures and calculating pKa values
 
-* Dolinsky TJ, Nielsen JE, McCammon JA, Baker NA. PDB2PQR: an automated pipeline for the setup, execution, and analysis of Poisson-Boltzmann electrostatics calculations. Nucleic Acids Res, 32, W665-7, 2004. [http://dx.doi.org/10.1093/nar/gkh381](http://dx.doi.org/10.1093/nar/gkh381])
+* Dolinsky TJ, Nielsen JE, McCammon JA, Baker NA. PDB2PQR: an automated pipeline for the setup, execution, and analysis of Poisson-Boltzmann electrostatics calculations. Nucleic Acids Res, 32, W665-7, 2004. [http://dx.doi.org/10.1093/nar/gkh381](http://dx.doi.org/10.1093/nar/gkh381)
 * Dolinsky TJ, Czodrowski P, Li H, Nielsen JE, Jensen JH, Klebe G, Baker NA. PDB2PQR: Expanding and upgrading automated preparation of biomolecular structures for molecular simulations. Nucleic Acids Res, 35, W522-5, 2007. [http://dx.doi.org/10.1093/nar/gkm276](http://dx.doi.org/10.1093/nar/gkm276)
 * Carstensen T, Farrell D, Huang Y, Baker NA, Nielsen JE. On the development of protein pKa calculation algorithms. Proteins, 79, 3287-3298, 2011. [http://dx.doi.org/10.1002/prot.23091](http://dx.doi.org/10.1002/prot.23091)
 * Alexov E, Mehler EL, Baker N, Baptista A, Huang Y, Milletti F, Nielsen JE, Farrell D, Carstensen T, Olsson MHM, Shen JK, Warwicker J, Williams, Word MJ. Progress in the prediction of pKa values in proteins. Proteins, 79, 3260-3275, 2011. [http://dx.doi.org/10.1002/prot.23189](http://dx.doi.org/10.1002/prot.23189)

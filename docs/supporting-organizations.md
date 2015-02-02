@@ -16,8 +16,8 @@ permalink: /docs/supporting-organizations/
 <p>
 <a href="http://nbcr.ucsd.edu/wordpress2/" target="_blank">National Biomedical Computation Resource</a> - Deployment and computational resources support<br>
 <a href="http://www.nih.gov/" target="_blank">National Institutes of Health</a> - Funding via grant GM069702 <br>
-<a href="http://www.npaci.edu/" target="_blank">National Partnership for Advanced Computational Infrastructure</a> - Funding and computational resources<br>
-<a href="hhttp://www.npaci.edu/" target="_blank">Washington University in St. Louis</a> - Startup funding
+<a href="http://www.hipersoft.rice.edu/npaci/" target="_blank">National Partnership for Advanced Computational Infrastructure</a> - Funding and computational resources<br>
+<a href="http://wustl.edu/" target="_blank">Washington University in St. Louis</a> - Startup funding
 </p>
 
 
