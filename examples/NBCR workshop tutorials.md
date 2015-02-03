@@ -71,13 +71,13 @@ The first session of these practicals are designed to introduce the basic concep
 
 #### The basics
 
-<a id="basicPDB"></a>
+<a id="basicpdb"></a>
 
 ##### PDB2PQR
 
 PDB2PQR was designed to facilitate Poisson-Boltzmann calculations, so we will start by working through the features and capabilities of this software in the context of biomolecular solvation and electrostatics. This material is covered in the <a href="{{site.baseurl}}/examples/home/">PDB2PQR tutorial</a> which we will cover in the first part of this practical.
 
-<a id="basicAPBS"></a>
+<a id="basicapbs"></a>
 
 ##### APBS
 
@@ -98,9 +98,9 @@ Additional APBS examples can be found in the APBS distribution and elsewhere on 
 Each of these topics will be briefly introduced in the workshop. However, due to time limitations, you will need to choose one specific lab to work on during the practical sessions:
 
 * <a href="http://en.wikiversity.org/wiki/Poisson%E2%80%93Boltzmann_profile_for_an_ion_channel" >Ion channel solvation and electrostatics</a>
-* <a href="{{site.baseurl}}/examples/Potentials_of_mean_force/" >The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
+* <a href="{{site.baseurl}}/examples/potentials_of_mean_force/" >The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
 * <a href="{{site.baseurl}}/examples/pKa_Calculations/" >pKa calculations</a>
-* Ionic strength dependence of peptide-RNA interactions
+* <a href="{{site.baseurl}}/examples/Protein-Rna_Tutorial/">Ionic Strength Dependence of Peptide-RNA Interactions</a>
 
 
-You may also be interested in more information on <a href="{{site.baseurl}}/examples/Parallel_execution_for_large_problems/" >parallel electrostatics calculations</a> as well as web services-based electrostatics calculations for systems which are too large for some computers.
+You may also be interested in more information on <a href="{{site.baseurl}}/examples/parallel_execution_for_large_problems/" >parallel electrostatics calculations</a> as well as web services-based electrostatics calculations for systems which are too large for some computers.

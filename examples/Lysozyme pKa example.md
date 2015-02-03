@@ -156,7 +156,7 @@ Based on this brief introduction, you should be in a good position to go back an
 
 So far, we've only examined intrinsic pKas in this example and have ignored coupling between titratable groups. Jens Nielsen has developed a very nice software package called pKaTool which allows you to explore coupling between titratable sites and its impact on titration events in a protein system. He has provided a tutorial (PDF) which you can use to explore coupled titration states and use to familiarize yourself with pKaTool.
 
-<a href="{{site.baseurl}}/docs/Run-apbs.zip/">2LZT Examples (Download)</a>
+<a href="https://github.com/Electrostatics/electrostatics.github.io/blob/master/docs/Run-apbs.zip?raw=true" download="apbs_win_dx.py">2LZT Examples (Download)</a>
 
 <a data-scroll href="#topcall">top</a>
 

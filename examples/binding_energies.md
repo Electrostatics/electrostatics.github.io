@@ -88,7 +88,7 @@ There are several binding energy examples provided with the APBS distribution in
 
 * <a href="{{site.baseurl}}/examples/Protein-Rna_Tutorial/" target="BLANK">Ionic strength dependence of peptide-RNA interactions</a>
 
-* <a href="{{site.baseurl}}/examples/Potentials_of_mean_force/" target="BLANK">The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
+* <a href="{{site.baseurl}}/examples/potentials_of_mean_force/" target="BLANK">The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
 
 <a data-scroll href="#topcall">top</a>
 <hr/>

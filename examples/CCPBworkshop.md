@@ -11,18 +11,17 @@ This documentation was prepared for a workshop sponsored by the Collaborative Co
 	* <a data-scroll href="#CCPBover">Overview</a>
 	* <a data-scroll href="#CCPBLectures">Lectures</a>
 	* <a data-scroll href="#CCPBPracticals">Practicals</a>
-		* <a data-scroll href="#CCPBTech"> Technical details</a>
+		* <a href="#details">Technical details</a>
 			* <a data-scroll href="#CCPBAPBS">APBS</a>
 			* <a data-scroll href="#CCPBPDB2PQR">PDB2PQR</a>
 			* <a data-scroll href="#CCPBVMD">VMD</a>
-			* <a data-scroll href="#CCPBLinux">Linux miscellany</a>
+			* <a data-scroll href="#CCPBLinux">Linux miscellany</a>			
+	* <a data-scroll href="#BTIBasics">The Basics</a>	
+        * <a data-scroll href="#CCPBPBaseDB2PQR">PDB2PQR</a>
+        * <a data-scroll href="#CCPBBaseAPBS">APBS</a>
+        * <a data-scroll href="#CCPBadvance">Advanced Topics</a>
 			
-	* <a data-scroll href="#BTIBasics">The Basics</a>
-			<ul>
-			<li><a data-scroll href="#CCPBPBaseDB2PQR">PDB2PQR</a></li>
-			<li><a data-scroll href="#CCPBBaseAPBS">APBS</a></li>
-			<li><a data-scroll href="#CCPBadvance">Advanced Topics</a></li>
-			</ul>
+            
 <a id="CCPBover"></a>
 <h3>Overview</h3>
 
@@ -53,6 +52,11 @@ The schedule for this workshop is:
 <a id="CCPBPracticals"></a>
 <h3>Practicals</h3>
 <a id="topcall"></a>
+
+<a id="details"></a> 
+
+#### Technical details
+
 <a id="CCPBAPBS"></a>
 <h5>APBS</h5>
 * The full APBS distribution should be available from /biol/programs/apbs
@@ -104,17 +108,17 @@ Additional APBS examples can be found in the APBS distribution and elsewhere on 
 <a data-scroll href="#topcall">Click here to return to the top of the page</a>
 <hr/>
 
-<a id="CCPBBaseAPBS"></a>
+<a id="CCPBadvance"></a>
 <h3>Advanced topics</h3>
 
 Each of these topics will be briefly introduced in the workshop. However, due to time limitations, you will need to choose one specific lab to work on during the practical sessions:
 
 * <a href="http://en.wikiversity.org/wiki/Poisson%E2%80%93Boltzmann_profile_for_an_ion_channel" >Ion channel solvation and electrostatics</a>
-* <a href="{{site.baseurl}}/examples/Potentials_of_mean_force/" >The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
+* <a href="{{site.baseurl}}/examples/potentials_of_mean_force/" >The polar solvation potential of mean force for a helix in a dielectric slab membrane</a>
 * <a href="{{site.baseurl}}/examples/pKa_Calculations/" >pKa calculations</a>
-* Ionic strength dependence of peptide-RNA interactions
+* <a href="{{site.baseurl}}/examples/Protein-Rna_Tutorial/">Ionic Strength Dependence of Peptide-RNA Interactions</a>
 
-You may also be interested in more information on <a href="{{site.baseurl}}/examples/Parallel_execution_for_large_problems/">parallel electrostatics calculations</a> as well as web services-based electrostatics calculations for systems which are too large for some computers.
+You may also be interested in more information on <a href="{{site.baseurl}}/examples/parallel_execution_for_large_problems/">parallel electrostatics calculations</a> as well as web services-based electrostatics calculations for systems which are too large for some computers.
 
 <a data-scroll href="#topcall">Click here to return to the top of the page</a>
 <hr/>

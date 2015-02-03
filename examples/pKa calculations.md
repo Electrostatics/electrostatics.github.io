@@ -23,7 +23,7 @@ This tutorial covers Poisson-Boltzmann methods for determining biomolecule pKa v
 This is a very brief introduction to the concepts behind biomolecular pKas and titration states. More information can be obtained from most biochemistry or biophysics textbooks as well as some of the original articles on pKa evaluation:
 
 * <a href="http://www.ncbi.nlm.nih.gov/pubmed/2271649?dopt=Citation">Bashford D, Karplus M. pKa's of ionizable groups in proteins: Atomic detail from a continuum electrostatic model. Biochemistry. 29 (44), 10219-25, 1990.</a>
-* Antosiewicz J, McCammon JA, Gilson MK. The determinants of pKas in proteins. Biochemistry. 35 (24), 7819-33, 1996.
+* <a href="http://www.ncbi.nlm.nih.gov/pubmed/8672483">Antosiewicz J, McCammon JA, Gilson MK. The determinants of pKas in proteins. Biochemistry. 35 (24), 7819-33, 1996.</a>
 * <a href="http://onlinelibrary.wiley.com/doi/10.1002/prot.1053/abstract">Nielsen JE, Vriend G. Optimizing the hydrogen-bond network in Poisson-Boltzmann equation-based pKa calculations. Proteins 43 (4), 403-12, 2001.</a>
 
 Recall that the acid dissociation constant Ka describes the dissocation of an acid into its components
