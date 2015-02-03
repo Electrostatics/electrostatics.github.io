@@ -23,21 +23,21 @@ Windows binaries are 32 bit and were built and tested on Windows 7 64-bit but sh
 </p>
 <h5>Windows Support</h5>
 
-PDB2PQR can now be compiled and run on Windows using MinGW32. See http://mingw.org/ for details.
+PDB2PQR can now be compiled and run on Windows using MinGW32. See [http://mingw.org/](http://mingw.org/) for details.
 
 <h5>Compilation with Scons</h5>
 <p>
 PDB2PQR now uses Scons for compilations. With this comes improved automated testing.
 </p>
 <p>
-Please see http://www.poissonboltzmann.org/pdb2pqr/release-history for the complete release history
+Please see [{{site.baseurl}}/news/comp_pdb2pqr_release_history/]({{site.baseurl}}/news/comp_pdb2pqr_release_history/) for the complete release history
 </p>
 <h5>Compilation with Scons</h5>
 <p>
 PDB2PQR now uses Scons for compilations. With this comes improved automated testing.
 </p>
 <p>
-Please see http://www.poissonboltzmann.org/pdb2pqr/release-history for the complete release history
+Please see [{{site.baseurl}}/news/comp_pdb2pqr_release_history/]({{site.baseurl}}/news/comp_pdb2pqr_release_history/) for the complete release history
 </p>
 <h5>NEW FEATURES</h5>
 <ul>
@@ -66,7 +66,7 @@ Please see http://www.poissonboltzmann.org/pdb2pqr/release-history for the compl
 <li>Fixed user specified mobile ion species not being passed to apbs input file.</li>
 <li>Removed ambiguous A, ADE, C, CYT, G, GUA, T, THY, U, URA as possible residue names.</li>
 <li>Removed eval from pdb parsing routines.</li>
-<li>Updated web links to refer to http://www.poissonboltzmann.org where appropriate.</li>
+<li>Updated web links to refer to [{{site.baseurl}}]({{site.baseurl}}) where appropriate.</li>
 <li>Fixed hbond extension output to include insertion code in residue name.</li>
 <li>Fixed debumping routines not including water in their checks. Fixes bad debump of ASN B 20 in 1gm9 when run with pH 7.0.</li>
 <li>Fixed debumping failing to use best angle for a specific dihedral angle when no tested angles are without conflict.</li>

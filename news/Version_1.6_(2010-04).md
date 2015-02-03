@@ -13,7 +13,7 @@ permalink: /news/Version_1.6_(2010-04)/
 Dear PDB2PQR users --
 </p>
 <p>
-We are pleased to announce the release of PDB2PQR 1.6.  This version has several new features as well minor fixes to reported bugs.  A complete list of changes is provided below.  For more information about the new release, to download binaries, or access the PDB2PQR web servers, please visit http://www.poissonboltzmann.org/pdb2pqr
+We are pleased to announce the release of PDB2PQR 1.6.  This version has several new features as well minor fixes to reported bugs.  A complete list of changes is provided below.  For more information about the new release, to download binaries, or access the PDB2PQR web servers, please visit {{site.baseurl}}/docs/downloads/
 </p>
 <p>
 Thank you for your continuing support of the PDB2PQR software.

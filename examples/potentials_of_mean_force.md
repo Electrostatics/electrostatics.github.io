@@ -81,9 +81,9 @@ and two regions of ion-accessibility:
 * The ion-accessible solvent exterior
 * The ion-inaccessible interior of the protein and the membrane
 
-We will model these regions in APBS using OpenDX-format coefficient maps read into APBS through a <a href="http://www.poissonboltzmann.org/docs/apbs-overview/#read" target="BLANK">READ statement</a>.
+We will model these regions in APBS using OpenDX-format coefficient maps read into APBS through a <a href="{{site.baseurl}}/docs/apbs-overview/#read" target="BLANK">READ statement</a>.
 
-The first step in such modeling is to construct the ion-accessibility and dielectric maps for the isolated peptide in the absence of the membrane environment. This can be accomplished through APBS <a href="http://www.poissonboltzmann.org/docs/elec-calcs/">mg-dummy</a> calculations. These calculations simply construct the coefficient input maps and write them out in the desired format without performing any numerical solutions of the Poisson-Boltzmann equation.
+The first step in such modeling is to construct the ion-accessibility and dielectric maps for the isolated peptide in the absence of the membrane environment. This can be accomplished through APBS <a href="{{site.baseurl}}/docs/elec-calcs/">mg-dummy</a> calculations. These calculations simply construct the coefficient input maps and write them out in the desired format without performing any numerical solutions of the Poisson-Boltzmann equation.
 
 In the latter steps of this example, we'll be calculating solvation energies using sequential focusing to solve the Poisson-Boltzmann equation. We'll need three sets of maps for the focusing procedure:
 

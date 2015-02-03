@@ -32,7 +32,7 @@ Before beginning, please make sure to support the APBS/PDB2PQR team by [register
 - <a href="{{site.baseurl}}/examples/Parallel_execution_for_large_problems/">Parallel execution for large problems</a>
 - <a href="{{site.baseurl}}/examples/pKa_Calculations/">pKa Calculations</a>
 - <a href="{{site.baseurl}}/examples/Lysozyme_pKa_example/">Lysozyme pKa example for PDB2PQR 1.9</a>
-- <a href="{{site.baseurl}}/examples/Potentials_of_mean_force/">Potentials of mean force</a>
+- <a href="{{site.baseurl}}/examples/potentials_of_mean_force/">Potentials of mean force</a>
 - <a href="{{site.baseurl}}/examples/Solvation_energies/">Solvation energies</a>
 - <a href="{{site.baseurl}}/examples/The_Born_ion/">The Born ion</a>
 

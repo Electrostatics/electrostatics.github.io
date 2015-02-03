@@ -20,7 +20,7 @@ permalink: /examples/Protein-Rna_Tutorial/
 
 
 ####Prerequisite Requirements: 
-<a href="http://www.poissonboltzmann.org/docs/downloads/" target="BLANK">Download APBS and PDB2PQR</a>   
+<a href="{{site.baseurl}}/docs/downloads/" target="BLANK">Download APBS and PDB2PQR</a>   
 <a href="https://www.python.org/" target="BLANK">Click here for Python</a> **Note that this is written using Python 2.7  
 
 
@@ -189,7 +189,7 @@ As used in the template file, the READ command, our calculation will have three 
 2. Calculation of the total electrostatic energy (including self-interaction energies) of the peptide. This calculation is named peptide in the input file.  
 3. Calculation of the total electrostatic energy (including self-interaction energies) of the RNA. This calculation is named rna in the input file.  
 
-Each part of the input file will be contained in a separate [elec keyword](http://www.poissonboltzmann.org/docs/apbs-overview/#elec) section of the input file which specifies the settings for our nonlinear Poisson-Boltzmann equation calculation. The calculations themselves will not be overly demanding, since we will use relatively coarse grids. This grid coarseness has a significant impact on the absolute electrostatic binding energy we obtain from this particular calculation: the calculated energy isn't converged with respect to grid spacing. However, the overall slope of binding energy with respect to monovalent ion concentration is rather insensitive with respect to the grid spacing, allowing us to save computational time and effort during the calculations. Finally, the calculation will conclude with a PRINT command which will combine the total energies from the three parts to obtain our approximate absolute electrostatic binding energy for the complex at 0.225 M monovalent salt concentration. It is very important to note that this absolute energy no meaning in isolation for several reasons:  
+Each part of the input file will be contained in a separate [elec keyword]({{site.baseurl}}/docs/apbs-overview/#elec) section of the input file which specifies the settings for our nonlinear Poisson-Boltzmann equation calculation. The calculations themselves will not be overly demanding, since we will use relatively coarse grids. This grid coarseness has a significant impact on the absolute electrostatic binding energy we obtain from this particular calculation: the calculated energy isn't converged with respect to grid spacing. However, the overall slope of binding energy with respect to monovalent ion concentration is rather insensitive with respect to the grid spacing, allowing us to save computational time and effort during the calculations. Finally, the calculation will conclude with a PRINT command which will combine the total energies from the three parts to obtain our approximate absolute electrostatic binding energy for the complex at 0.225 M monovalent salt concentration. It is very important to note that this absolute energy no meaning in isolation for several reasons:  
   
 * It is not converged with respect to grid spacing  
 * It does not contain other very important non-electrostatic aspects of the binding energy which are important for the measured affinity  
