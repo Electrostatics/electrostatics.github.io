@@ -306,7 +306,7 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 
 <div id="What is Opal?" style="display:none;">
 
-<p>Opal is a web services toolkit developed by the NBCR and researchers at the San Diego Supercomputer Center. This software enables remote execution of APBS or PDB2PQR to reduce local system loads or run calculations that are too large for local resources. More information can be found <a href="http://www.nbcr.net/software/opal/">here</a></p>
+<p>Opal is a web services toolkit developed by the NBCR and researchers at the San Diego Supercomputer Center. This software enables remote execution of APBS or PDB2PQR to reduce local system loads or run calculations that are too large for local resources. More information can be found <a href="http://nbcr-222.ucsd.edu/opal2/dashboard">here</a></p>
 
 <hr />
 
