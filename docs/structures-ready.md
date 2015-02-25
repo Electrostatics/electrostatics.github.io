@@ -35,7 +35,7 @@ detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}/d
 
 ## Web Server:
 
-1. Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr_1.8/)
+1. Go to [web server](http://nbcr-222.ucsd.edu/pdb2pqr/)
 
 2. Identify your molecule:
   * Enter the protein data bank ID or...
