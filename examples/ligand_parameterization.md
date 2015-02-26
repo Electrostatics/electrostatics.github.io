@@ -13,11 +13,11 @@ permalink: /examples/ligand_parameterization/
 
 This section outlines the parameterization of ligands using the PEOE_PB methods (see Czodrowski P, Dramburg I, Sotriffer CA, Klebe G. Development, validation, and application of adapted peoe charges to estimate pka values of functional groups in protein-ligand complexes. Proteins. 65 (2), 424-37, 2006 for more information).
 
-As described in the PDB2PQR user guide and on the PDB2PQR server page, ligand parameterization currently requires a MOL2-format representation of the ligand to provide the necessary bonding information. MOL2-format files can be obtained through the freePRODRG web server or some molecular modeling software packages. Please note that PRODRG provides documentation as well as several examples on ligand preparation on its web page; please refer to the PRODRG documentation for questions about ligand MOL2 file preparation.
+As described in the PDB2PQR user guide and on the PDB2PQR server page, ligand parameterization currently requires a MOL2-format representation of the ligand to provide the necessary bonding information. MOL2-format files can be obtained through the free PRODRG web server or some molecular modeling software packages. Please note that PRODRG provides documentation as well as several examples on ligand preparation on its web page; please refer to the PRODRG documentation for questions about ligand MOL2 file preparation.
 
 #### HIV-1 protease (1HPX)
 
-Mixing things up a little bit from above, we're now ready to look at the 1HPV crystal structure (HIV-1 protease) and parameterize its ligand, KNI-272. We're going to
+Mixing things up a little bit from above, we're now ready to look at the 1HPV crystal structure (HIV-1 protease) and parameterize its ligand, KNI-272. 
 <dl>
 <dd>1.) From the PDB2PQR server web page, enter `1HPX` into the PDB ID field.</dd>
 <dd>2.) Choose whichever forcefield and naming schemes you prefer.</dd>

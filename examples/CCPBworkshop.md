@@ -45,9 +45,9 @@ The schedule for this workshop is:
 <a id="CCPBLectures"></a>
 <h3> Lectures </h3>
 
-* <a href="{{site.baseurl}}/docs/2008-12_workshop_handouts.pdf/">Workshop handouts</a>
-* <a href="{{site.baseurl}}/docs/2008-12_workshop_lecture.pdf/">Workshop full lecture</a>
-* <a href="{{site.baseurl}}/docs/2008-12_workshop_lecture.mov/">Workshop lecture Quicktime movie</a>
+* <a href="{{site.baseurl}}/docs/2008-12_workshop_handouts.pdf">Workshop handouts</a>
+* <a href="{{site.baseurl}}/docs/2008-12_workshop_lecture.pdf">Workshop full lecture</a>
+* <a href="{{site.baseurl}}/docs/2008-12_workshop_lecture.mov">Workshop lecture Quicktime movie</a>
 
 <a id="CCPBPracticals"></a>
 <h3>Practicals</h3>

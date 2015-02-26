@@ -14,13 +14,13 @@ permalink: /docs/apbs-others/
 
 ###Overview
 
-APBS was designed to facilitate use with other programs. This section outlines some of the programs with which APBS is known to work. However, it is likely that applications which use APBS have been inadvertently omitted from this list. If you know of software that uses APBS and is not listed here, please <a href="/support/home/">contact us</a>.
+APBS was designed to facilitate use with other programs. This section outlines some of the programs with which APBS is known to work. However, it is likely that applications which use APBS have been inadvertently omitted from this list. If you know of a software that uses APBS and is not listed here, please <a href="/support/home/">contact us</a>.
 
 ##Web Interfaces
 
 ###PDB2PQR
 
-The [PDB2PQR web server](../structures-ready/) provides the ability to configure, run, and visualize APBS calculations
+The [PDB2PQR web server](../structures-ready/) provides the ability to configure, run, and visualize APBS calculations.
 
 ###Gemstone
 
@@ -34,7 +34,7 @@ PyMOL [http://pymol.sourceforge.net/](http://pymol.sourceforge.net/) is a molecu
 
 ###VMD
 
-VMD [http://www.ks.uiuc.edu/Research/vmd/](http://www.ks.uiuc.edu/Research/vmd/) is a molecular visualization and animation package which provides an interface to APBS. It permits visualization of APBS results as isocontours, electric field lines, or on biomolecular surfaces. VMD also a graphical plugin to setup APBS calculations and execute them either locally or remotely via BioCoRE. More information is available at http://www.ks.uiuc.edu/Research/vmd/plugins/apbsrun/ and in the FAQs.
+VMD [http://www.ks.uiuc.edu/Research/vmd/](http://www.ks.uiuc.edu/Research/vmd/) is a molecular visualization and animation package which provides an interface to APBS. It permits visualization of APBS results as isocontours, electric field lines, or on biomolecular surfaces. VMD also has graphical plugin to setup APBS calculations and execute them either locally or remotely via BioCoRE. More information is available at http://www.ks.uiuc.edu/Research/vmd/plugins/apbsrun/ and in the FAQs.
 
 ###PMV
 

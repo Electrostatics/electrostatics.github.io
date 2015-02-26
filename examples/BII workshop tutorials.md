@@ -28,8 +28,8 @@ This workshop is designed to introduce the basic concepts and tools associated w
 <a id="lectures"></a>
 <h3>Lectures</h3>
 
-* Basic continuum electrostatics and solvation:  <a href="{{site.baseurl}}/docs/2009-03_BII_basic.pdf/">PDF</a>, 
-<a href="{{site.baseurl}}/docs/2009-03_BII_basic.mov/">Quicktime</a>
+* Basic continuum electrostatics and solvation:  <a href="{{site.baseurl}}/docs/2009-03_BII_basic.pdf">PDF</a>, 
+<a href="{{site.baseurl}}/docs/2009-03_BII_basic.mov">Quicktime</a>
 * Current research questions in continuum electrostatics and solvation
 
 <a id="practicals"></a>
