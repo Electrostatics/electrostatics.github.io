@@ -26,7 +26,7 @@ The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR without 
 
 After you have <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" >registered</a> and reviewed the terms of the [PDB2PQR license]({{site.baseurl}}/docs/pdb2pqr-license/), you are ready to **[skip to the Run PDB2PQR]({{ site.baseurl }}/docs/structures-ready)** section.
 
-The PDB2PQR web server is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 1.8.
+The <a href="http://nbcr-222.ucsd.edu/pdb2pqr">PDB2PQR web server</a> is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 2.0.
 <!-- TODO: Add link to Version 1.8 release notes -->
 
 <h2 id="downloads">Downloads</h2>

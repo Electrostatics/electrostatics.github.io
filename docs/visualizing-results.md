@@ -22,7 +22,7 @@ you've used the web server to [get your structures ready]( {{ site.baseurl }}../
 and [calculate the electrostatics]({{ site.baseurl }}../../docs/calculating), you will 
 see a link to "click here to visualize your results."
 
-<p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/web_jmol_screenshot.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Electrostatics/electrostatics.github.io/master/img/web_jmol_screenshot.png" /></p>
 
 The web site uses a java plugin to run jmol in the web browser.  If you have trouble 
 using the viewer on OSX, make sure to check your java security settings.

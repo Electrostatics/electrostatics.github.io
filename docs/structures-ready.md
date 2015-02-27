@@ -40,7 +40,7 @@ detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}/d
 2. Identify your molecule:
   * Enter the protein data bank ID or...
   * Load the protein data bank file (examples [here](http://www.rcsb.org/pdb/home/home.do))
-<p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/pdb2pqr_web_server_screenshot.png" /></p>
+<p><img src="https://raw.githubusercontent.com/Electrostatics/electrostatics.github.io/master/img/pdb2pqr_web_server_screenshot.png" /></p>
 * Press submit!
 
 <i>For more information on how to prepare files, <a href="{{site.baseurl}}/examples/running_apbs_through_pdb2pqr_web_portal/">click here</a></i>
