@@ -81,7 +81,7 @@ The APBS installation process (whether compiled from source or installed as pre-
 - [lib] -- contains library files for using APBS libraries with other applications
 - [tools] -- which contains a number of "helper" applications for use with APBS
 
-At this point you are ready to use APBS; either by calling the binary directly or adding the above directory to your path. As mentioned above, there are also several tools provided with APBS that remain in the APBS directory; these are described in later portions of this manual. You may wish to copy these to a global location (or the same place as your APBS binary) at this time.
+At this point you are ready to use APBS, either by calling the binary directly or adding the above directory to your path. As mentioned above, there are also several tools provided with APBS that remain in the APBS directory; these are described in later portions of this manual. You may wish to copy these to a global location (or the same place as your APBS binary) at this time.
 
 
 

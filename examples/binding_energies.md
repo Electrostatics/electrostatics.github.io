@@ -23,7 +23,7 @@ In general, implicit solvent models are used to calculation the contribution of 
 
 Our framework for calculating solvation contributions to binding free energies is shown in the figure below.
 
-<img src="http://i60.tinypic.com/vy02a1.png" alt="Free Energy Cycle">
+<img src="{{site.baseurl}}/img/apbs_bind_eng.png">
 
 This binding free energy cycle illustrates binding in terms of transfer free energies from a homogeneous dielectric environment (where interactions are described by Coulomb's law) to an inhomogeneous dielectric environment with differing internal (green) and external (cyan) dielectric constants. The binding (dissociation) free energy is depicted in Step 3.
 The binding free energy is given by

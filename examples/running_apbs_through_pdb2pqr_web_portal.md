@@ -17,8 +17,8 @@ The PDB2PQR web portal provides support for the execution of PDB2PQR and APBS as
 
 #### Generating the PQR
 
-We'll perform this example with Fusarium solani cutinase (PDB ID 1CUS) a lipolytic enzyme with a catalytic serine accessible to solvent.
-First go to the PDB2PQR web portal, enter a PDB ID or upload a PDB file, choose your options for PDB2PQR, then click "Submit"
+We'll perform this example with Fusarium solani cutinase (PDB ID 1CUS), a lipolytic enzyme with a catalytic serine accessible to solvent.
+Go to the PDB2PQR web portal and enter a PDB ID or upload a PDB file. Choose your options for PDB2PQR and click "Submit".
 
 <p>
 	<a href="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/9eef3d85f154ec1434fc5a9e66d908c789c8735b/img/Picture1.png">
@@ -35,14 +35,14 @@ On the PDB2PQR result page, click bottom link to run APBS with your results.
 
 #### Performing the electrostatics calculation
 
-On the APBS web solver page, click "Launch" to use default parameters for APBS calculation; or, if you prefer to run APBS with custom parameters, check the check box and make your own selections.
+On the APBS web solver page, click "Launch" to use default parameters for the APBS calculation. If you prefer to run APBS with custom parameters, check the check box and make your own selections.
 
 <p>
 <a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/APBS_options.png?raw=true">
 <img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/APBS_options.png?raw=true" />
 </a></p>
 
-Wait until the calculation is complete, click the bottom link to visualize your results.
+Wait until the calculation is complete. Click the bottom link to visualize your results.
 
 <p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture5.png?raw=true">
 	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Picture5.png?raw=true" />
@@ -50,7 +50,7 @@ Wait until the calculation is complete, click the bottom link to visualize your 
 
 #### Visualizing the electrostatic potential
 
-Configure your visualization, then click "Submit"
+Configure your visualization, then click "Submit".
 
 <p><a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Visualization_configuration.png?raw=true">
 	<img src="https://github.com/Electrostatics/apbs-pdb2pqr/blob/gh-pages/img/Visualization_configuration.png?raw=true" />
