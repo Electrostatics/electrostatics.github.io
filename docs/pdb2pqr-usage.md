@@ -47,14 +47,31 @@ parse, tyl06, peoepb and swanson are supported.</td></tr>
 <tr><td><nobr>--neutraln</nobr></td><td>Make the N-terminus of this protein neutral (default is charged). Requires PARSE force field.</td></tr>
 <tr><td><nobr>--neutralc</nobr></td><td>Make the C-terminus of this protein neutral (default is charged). Requires PARSE force field.</td></tr>
 <tr><td>-v, --verbose</nobr></td><td>Print information to stdout.</td></tr>
+<tr><td>--drop-water</nobr></td><td>Drop waters before processing protein. Currently recognized and deleted are the following water types:HOH, WAT</td></tr>
 <tr><td><nobr>--include_header</nobr></td><td>Include pdb header in pqr file. WARNING: The resulting PQR file will not with APBS versions prior to 1.5</td></tr>
 </table>
 
 <table>
+<th colspan="2">pH options</th>
+<tr><td><nobr>--ph-calc-method=PH_METHOD</td><td>Method used to calculate ph values. If a pH calculation method is selected, for each titratable residue pH values will be calculated and the residue potentially modified after comparison with the pH value supplied by --with_ph <br>
+PROPKA - Use PROPKA to calculate pH values. Actual PROPKA results will be output to <output-path>.propka. <br>
+PDB2PKA - Use PDB2PKA to calculate pH values. Requires the use of the PARSE force field. Warning: Larger residues can take a very long time to run using this method. EXPERIMENTAL!</td></tr>
+<tr><td>--with-ph=PH</td><td>pH values to use when applying the results of the selected pH calculation method. Defaults to 7.0</td></tr>
+</table>
+
+<table>
+<th colspan="2">PDB2PKA options</th>
+<tr><td><nobr>--pdb2pka-out=PDB2PKA_OUT</nobr></td><td>Output directory for PDB2PKA results. Defaults to pdb2pka_output.</td></tr>
+<tr><td><nobr>--pdb2pka-resume</nobr></td><td>Resume run from state saved in output directory.</td></tr>
+<tr><td><nobr>--pdie=PDB2PKA_PDIE</nobr></td><td>Protein dielectric constant. Defaults to 8</td></tr>
+<tr><td><nobr>--sdie=PDB2PKA_SDIE</nobr></td><td>Solvent dielectric constant. Defaults to 80</td></tr>
+<tr><td><nobr>--sdie=--pairene=PDB2PKA_PAIRENE</nobr></td><td>Cutoff energy in kT for calculating non charged-charged interaction energies. Default: 1.0</td></tr>
+</table>
+
+<table>
 <th colspan="2">proPKA options</th>
-<tr><td><nobr>--with-ph=PH</nobr></td><td>Use propka to calculate pKas and apply them to the molecule given the pH value. Actual PropKa results will be output to output-path. propka.</td></tr>
-<tr><td><nobr>--reference=REFERENCE</nobr></td><td>Set which reference to use for stability calculations. See PROPKA 3.0 documentation.</td></tr>
-<tr><td><nobr>--propka-verbose</nobr></td><td>Print extra proPKA information to stdout. WARNING: This produces an incredible level of output.</td></tr>
+<tr><td><nobr>--propka-reference=PROPKA_REFERENCE</nobr></td><td>Setting which reference to use for stability calculations. See PROPKA 3.0 documentation.</td></tr>
+<tr><td><nobr>--propka-verbose</nobr></td><td>Print extra proPKA information to stdout. WARNING: This produces an incredible amount of output.</td></tr>
 </table>
 
 <table>
