@@ -1,20 +1,26 @@
 ---
 layout: docs
-title: Basic Usage
+title: Command Line Usage
 prev_section: installation
 next_section: apbs-overview
 permalink: /docs/pdb2pqr-usage/
 ---
 
-
 {% include no-prev-next.html %}
 
 
+<p>The command line version of PDB2PQR must be installed from source
+using the instructions in the PDB2PQR download section of the
+<a href="/docs/downloads/">Accessing the Software </a> 
+section. This version of the software
+offers an expanded range of options and can also be customized with user
+extensions.</p>
+<p>The command line PDB2PQR is invoked as</p>
 
-Usage: pdb2pqr.py [options] PDB_PATH PQR_OUTPUT_PATH
+`% $ python pdb2pqr.py [options] --ff={forcefield} {path} {output-path}`
 
 This module takes a PDB file as input and performs optimizations before
-yielding a new PQR-style file in PQR_OUTPUT_PATH. If PDB_PATH is an ID it will
+yielding a new PQR-style file in {output-path}. If {path} is an ID it will
 automatically be obtained from the PDB archive.
 
 <table>
@@ -65,7 +71,7 @@ PDB2PKA - Use PDB2PKA to calculate pH values. Requires the use of the PARSE forc
 <tr><td><nobr>--pdb2pka-resume</nobr></td><td>Resume run from state saved in output directory.</td></tr>
 <tr><td><nobr>--pdie=PDB2PKA_PDIE</nobr></td><td>Protein dielectric constant. Defaults to 8</td></tr>
 <tr><td><nobr>--sdie=PDB2PKA_SDIE</nobr></td><td>Solvent dielectric constant. Defaults to 80</td></tr>
-<tr><td><nobr>--sdie=--pairene=PDB2PKA_PAIRENE</nobr></td><td>Cutoff energy in kT for calculating non charged-charged interaction energies. Default: 1.0</td></tr>
+<tr><td><nobr>--pairene=PDB2PKA_PAIRENE</nobr></td><td>Cutoff energy in kT for calculating non charged-charged interaction energies. Default: 1.0</td></tr>
 </table>
 
 <table>
