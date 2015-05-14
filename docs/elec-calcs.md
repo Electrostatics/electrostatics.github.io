@@ -98,9 +98,9 @@ calcenergy { flag }
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
-<img src="img/NPBE-energy.png" /><br />
+\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
 where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
-<img src="/img/LPBE-energy.png" /><br />
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
@@ -660,14 +660,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -768,9 +768,9 @@ calcenergy { flag }
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
-<img src="img/NPBE-energy.png" /><br />
+\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
 where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
-<img src="/img/LPBE-energy.png" /><br />
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
@@ -1248,14 +1248,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -1373,9 +1373,9 @@ calcenergy { flag }
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
-<img src="img/NPBE-energy.png" /><br />
+\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
 where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
-<img src="/img/LPBE-energy.png" /><br />
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
@@ -1849,14 +1849,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -1976,9 +1976,9 @@ calcenergy { flag }
 <p>
 <code>no</code> (Deprecated) don't calculate any energies.  This is the same as not including the calcenergy command in the input file.<br />
 <code>total</code> Calculate and return total electrostatic energy for the entire molecule.  For the nonlinear PB equation, this energy is:<br />
-<img src="img/NPBE-energy.png" /><br />
+\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
 where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
-<img src="/img/LPBE-energy.png" /><br />
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
 <code>comps</code> Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
 </p>
 
@@ -2497,14 +2497,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/ndens.png" /></p>
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-<img src="/apbs-pdb2pqr/img/qdens.png" /></p>
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -2557,5 +2557,16 @@ writemat {type} {stem}
 <hr />
 
 </div>
+
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({
+    "HTML-CSS": { scale: 95, linebreaks: { automatic: true } }, 
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script>
+<script type="text/javascript"
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
 
 
