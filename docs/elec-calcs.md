@@ -660,14 +660,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]    </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -1248,14 +1248,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -1849,14 +1849,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]   </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -2497,14 +2497,14 @@ write {type} {format} {stem}
 
 <p style="margin-left:30px;"><code>ndens</code>Write out the total mobile ion number density for all ion species in units of M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  
+\[ \rho(x) = \sum_i^N {\bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]  </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
 
 <p style="margin-left:30px;"><code>qdens</code>Write out the total mobile charge density for all ion species in units of ec M. (multigrid only)  The output is calculated according to the formula (for nonlinear PB calculations)<br />
 
-\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]
+\[ \varrho(x) = \sum_i^N {q_i \bar{\rho}_i e^{-q_i\phi(x) - V_i (x)}}  \]   </p>
 
 <p style="margin-left:30px;">where M is the number of ionic species, c_i is the bulk concentration of each species, q_i is the charge of each species, \phi is the electrostatic potential, k_B is Boltzmann's constant, and T is the temperature.</p>
 
@@ -2570,3 +2570,5 @@ writemat {type} {stem}
 </script>
 
 
+
+		
