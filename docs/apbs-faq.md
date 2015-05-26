@@ -167,6 +167,16 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 
 </div>
 
+<a href="javascript:ReverseDisplay('What values should I use for my grid spacing?')">What values should I use for my grid spacing?</a>
+
+<div id="What values should I use for my grid spacing?" style="display:none;">
+
+<p>It is recommended to use the same grid for all three calculations: ligand, protein, and ligand-protein complex, and to use the grid settings for the ligand-protein complex for all calculations.</p>
+<p>Energies are often very sensitive to grid parameters, thus it is best to use the largest possible grid lengths with the smallest possible grid spacing for your calculations. We usually recommend grid spacings of 0.5 Angstroms or smaller.</p>
+
+<hr />
+
+</div>
 
 
 <a href="javascript:ReverseDisplay('What are the sources of error in my calculation?')">What are the sources of error in my calculation?</a>
@@ -321,6 +331,8 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 <hr />
 
 </div>
+
+
 
 
 
