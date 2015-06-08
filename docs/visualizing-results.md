@@ -19,7 +19,7 @@ several external programs, such as [pymol](.#pymol), for you to use.
 
 The most straightforward way to visualize results is through the web server.  If 
 you've used the web server to [get your structures ready]( {{ site.baseurl }}../../docs/structures-ready )
-and [calculate the electrostatics]({{ site.baseurl }}../../docs/calculating), you will 
+and <a href="{{site.baseurl}}/docs/calculating/" >calculate the electrostatics</a>, you will 
 see a link to "click here to visualize your results."
 
 <p><img src="https://raw.githubusercontent.com/Electrostatics/electrostatics.github.io/master/img/web_jmol_screenshot.png" /></p>
@@ -34,8 +34,7 @@ using the viewer on OSX, make sure to check your java security settings.
 The <a href="http://www.pymol.org" target="BLANK">PyMol</a> molecular graphics software package
 can both run APBS and visualize resulting electrostatic potentials. We will provide a basic
 demonstration of how to visualize a potential in PyMOL from APBS.  To
-calculate electrostatics in PyMol see the [calculate
-electrostatics]( {{site.baseurl}}../../docs/calculating) page.
+calculate electrostatics in PyMol see the <a href="{{site.baseurl}}/docs/calculating/" >calculate electrostatics</a> page.
 
 #### Visualize the electrostatic potential
 
