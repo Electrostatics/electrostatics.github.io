@@ -8,7 +8,7 @@ permalink: /examples/apbs_binding_energies/
 
 <h1>Binding Energies</h1>
 
-In general, implicit solvent models are used to calculation the contribution of solvation to binding free energies. Additional binding free energy contributions (molecular mechanics energies, entropic changes, etc.) must be calculated separately and are not discussed in this tutorial. One exception is the inclusion of intermolecular Coulombic interactions; we'll discuss how these can be calculated in APBS below.
+In general, implicit solvent models are used to calculate the contribution of solvation to binding free energies. Additional binding free energy contributions (molecular mechanics energies, entropic changes, etc.) must be calculated separately and are not discussed in this tutorial. One exception is the inclusion of intermolecular Coulombic interactions; we'll discuss how these can be calculated in APBS below.
 
 \\[ \Delta_3 G - \Delta_5 G = \overset{-} \rho \int_\omega u^{(att)}(y)\theta(y)dy \\]
 
