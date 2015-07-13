@@ -131,6 +131,14 @@ calcforce { flag }
 <code>no</code> (Deprecated) don't calculate any forces.<br />
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
 
 <hr />
@@ -801,6 +809,14 @@ calcforce { flag }
 <code>no</code> (Deprecated) don't calculate any forces.<br />
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
 
 <hr />
@@ -1406,6 +1422,14 @@ calcforce { flag }
 <code>no</code> (Deprecated) don't calculate any forces.<br />
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
 
 <hr />
@@ -2009,6 +2033,14 @@ calcforce { flag }
 <code>no</code> (Deprecated) don't calculate any forces.<br />
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
 
 <hr />

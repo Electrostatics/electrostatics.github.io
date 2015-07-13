@@ -164,16 +164,25 @@ print energy 1 - 2 end
 
 <div id="calcforce" style="display:none;">
 
-<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is:
+<p>This optional keyword controls energy output from an apolar solvation calculation. The syntax is:</p>
 {% highlight bash %}
 calcforce {flag}
 {% endhighlight %}
 
-where <code>flag</code> is a string that specifies the types of force values to be returned:
-<code>no</code> (Deprecated) Don't calculate any forces.<br />
-<code>total</code>     Calculate and return total apolar forces for the entire molecule.<br />
-<code>comps</code>     Calculate and return total apolar forces for the entire molecule as well as force components for each atom.
+<p>where <code>flag</code> is a text string that specifies the types of force values to be returned:
+<code>no</code> (Deprecated) don't calculate any forces.<br />
+<code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
+<code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
+
 
 <div class="note info">
 
@@ -183,7 +192,6 @@ where <code>flag</code> is a string that specifies the types of force values to 
 print force 1 - 2 end
 {% endhighlight %}
 <p>appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.</p>
-
 </div>
 
 <hr />
@@ -674,6 +682,14 @@ calcforce { flag }
 <code>no</code> (Deprecated) don't calculate any forces.<br />
 <code>total</code> Calculate and return total electrostatic and apolar forces for the entire molecule.<br />
 <code>comps</code> Calculate and return total electrostatic and apolar forces for the entire molecule as well as force components for each atom.<br />
+The possible outputs from calcforce are:
+{% highlight bash %}
+tot n -- total force for atom n
+qf  n -- fixed charge force for atom n
+db  n -- dielectric boundary force for atom n
+ib  n -- ionic boundary force for atom n
+{% endhighlight %}
+The values will be printed in three columns which correspond to the x, y, and z component of the force vector.
 </p>
 
 <hr />
