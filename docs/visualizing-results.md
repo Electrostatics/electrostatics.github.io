@@ -22,7 +22,7 @@ you've used the web server to [get your structures ready]( {{ site.baseurl }}../
 and <a href="{{site.baseurl}}/docs/calculating/" >calculate the electrostatics</a>, you will 
 see a link to "click here to visualize your results."
 
-<p><img src="https://raw.githubusercontent.com/Electrostatics/electrostatics.github.io/master/img/web_jmol_screenshot.png" /></p>
+<p><img src="{{site.baseurl}}/img/web_jmol_screenshot.png" /></p>
 
 The web site uses a java plugin to run jmol in the web browser.  If you have trouble 
 using the viewer on OSX, make sure to check your java security settings.
@@ -52,7 +52,7 @@ Negative Isosurface and Show buttons.
 
 At this point, you probably have a figure that looks something like:
 
-<p><img src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/fas2-iso-pymol.png" /></p>
+<p><img src="{{site.baseurl}}/img/fas2-iso-pymol.png" /></p>
 
 ±1 kT/e electrostatic potential isocontours of FAS2 in PyMOL
 
@@ -75,7 +75,7 @@ the surface potential.
 
 
 <p><img
-src="https://raw.githubusercontent.com/Electrostatics/apbs-pdb2pqr/gh-pages/img/fas2-surf-pymol.png" /></p>
+src="{{site.baseurl}}/img/fas2-surf-pymol.png" /></p>
 
 ±5 kT/e electrostatic potential of FAS2 in PyMOL plotted on the solvent-accessible surface.
 
