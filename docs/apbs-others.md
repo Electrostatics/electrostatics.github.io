@@ -34,6 +34,8 @@ electric field lines, or on biomolecular surfaces. VMD also has graphical
 plugin to setup APBS calculations and execute them either locally or
 remotely via BioCoRE. More information is available
 [here](http://www.ks.uiuc.edu/Research/vmd/plugins/apbsrun/) and in the FAQs.
+<p><img src="{{site.baseurl}}/img/left_dialog_boxes_horizontal.png" /><sub><sub>PDB ID 1FAS with VMD</sub></sub></p>
+
 
 * [__PMV__](http://www.scripps.edu/~sanner/python) -
 Python-based molecular visualization package which provides an interface
@@ -69,5 +71,4 @@ molecular graphics program which can read UHBD-format electrostatic data. APBS c
 * [__OpenDX__](http://www.opendx.org) - 
  general data visualization package which can read APBS output using the scripts provided in tools/visualization/opendx (see the discussion of Data visualization tools in this manual). However, as there is no straightforward way to visualizate the potential in the context of the atomic structure, OpenDX should not a first choice for APBS visualization.
 
-<p><img src="{{site.baseurl}}/img/left_dialog_boxes_horizontal.png" /><sub><sub>PDB ID 1FAS with VMD</sub></sub></p>
 
