@@ -68,3 +68,6 @@ molecular graphics program which can read UHBD-format electrostatic data. APBS c
 
 * [__OpenDX__](http://www.opendx.org) - 
  general data visualization package which can read APBS output using the scripts provided in tools/visualization/opendx (see the discussion of Data visualization tools in this manual). However, as there is no straightforward way to visualizate the potential in the context of the atomic structure, OpenDX should not a first choice for APBS visualization.
+
+<p><img src="{{site.baseurl}}/img/left_dialog_boxes_horizontal.png" /><sub><sub>PDB ID 1FAS with VMD</sub></sub></p>
+
