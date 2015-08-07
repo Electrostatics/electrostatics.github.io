@@ -20,7 +20,7 @@ APBS was designed to facilitate use with other programs. This section outlines s
 
 * __PDB2PQR__ - The [PDB2PQR web server](../structures-ready/) provides the ability to configure, run, and visualize APBS calculations.
 
-* __Gemstone__ - [The Gemstone extension](http://gemstone.mozdev.org/) for the Firefox web browser used to provide a very easy-to-use interface to older versions of APBS (0.4.0) with all of the functionality of the command-line interface. However, this extension was created by external developers and is no longer actively maintained. Please <a href="/support/home/">contact us</a> to let us know if this extension was important to your research.
+<!--* __Gemstone__ - [The Gemstone extension](http://gemstone.mozdev.org/) for the Firefox web browser used to provide a very easy-to-use interface to older versions of APBS (0.4.0) with all of the functionality of the command-line interface. However, this extension was created by external developers and is no longer actively maintained. Please <a href="/support/home/">contact us</a> to let us know if this extension was important to your research.-->
 
 ##Graphical User Interfaces
 
