@@ -57,27 +57,27 @@ The PQR files are included in the [protein-rna](https://github.com/Electrostatic
 After downloading Python, it is useful to set it to your path so you don't have to change your command prompt to the directory containing python.exe
 
 1. Go into "My Computer" and in the upper right corner and search for python.exe: 
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_1.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_1.jpg" />
 
 2. Right click the file that comes up and select "Open file location" (should be near the bottom of the tab that comes up)  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_4.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_4.jpg" /> 
 
 3. Copy the path which should look something like this:
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_6.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_6.jpg" />
 
 4. Open the start menu and right click "Computer" and left click properties.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_7.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_7.jpg" />
 
 5. Click on "Advanced system settings" which should be in the top left corner.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_8.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_8.jpg" />
 
 6. Under the "Advanced" tab, click "Environment Variables". (Should be in the bottom right)  
 
 7. Make sure "PATH" is selected and click "Edit..."  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_10.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_10.jpg" />
 
 8. Go to the far right, add a semi-colon (if one does not already exist), paste the path you copied (step 2) and click ok.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_11.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_11.jpg" />
 
 9. Now you will need to add the path of your apbs executable (apbs.exe) to your path (you need dxmath.exe too).
 
@@ -90,7 +90,7 @@ After downloading Python, it is useful to set it to your path so you don't have 
 2. Find this same folder and file in "My Computer"
 
 3. Rename the "template.in" as "template.txt"
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_12.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_12.jpg" />  
 This example template file (shown again below) feeds into APBS and specifies which calculations will take place.
 
 {% highlight bash %}
@@ -250,12 +250,12 @@ Run this script from your command prompt by typing
 python apbs_win_dx.py >> output.txt. 
 {% endhighlight %}  
 When it is running nothing will show up, but when it is done, there will be a new line. Make sure you run it from the apbs-pdb2pqr/apbs/examples/protein-rna directory.
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_16.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_16.jpg" /> 
 The "python" tells the computer to use python.exe to run the input. It takes "apbs\_win\_dx.py" as your input.  
 Furthermore the double greater than symbol ">>" tells your cmd to take the things that would normally be printed into the command prompt into a file called "output.txt".  
 
 Open the output.txt file with your favorite text editor (This tutorial is using notepad ++), hit "ctrl f" and search for "Global net ELEC energy", copy the numbers and paste them into another file.
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_17.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_17.jpg" />
 
 <a id="unixpy"></a>
 
@@ -293,13 +293,13 @@ python apbs_unix_dx.py
 
 It will create all the apbs-ionconcentration.in files and dxmath-ionconcentration.in files that you need.
 
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_18.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_18.jpg" />  
 
 <a id="bash"></a>
 
 #####Bash script (unix)
 
-<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/run_apdx_files.sh" download="run_apdx_files.sh">Download the Unix bash script (shown below)</a>
+<a href="{{site.baseurl}}/Tut_scripts_PR/run_apdx_files.sh" download="run_apdx_files.sh">Download the Unix bash script (shown below)</a>
 {% highlight bash %}
 #!/bin/bash
 # Usage: remove all utility bills pdf file password 
@@ -324,14 +324,14 @@ Save the bash scipt. Run it by typing
 ./run_apdx_files.sh | tee  output.txt
 {% endhighlight %}
 This will feed all the input files from the python (unix) script through apbs and dxmath. It will make a "tee pipe" by both printing the results to both the command line and the output.txt file.
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_19.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_19.jpg" />
 
 After this command, run  
 {% highlight bash %}
 grep "Global net ELEC energy" output.txt | tee output_2.txt"
 {% endhighlight %}
 . This will search output.txt for the string "Global net ELEC energy" and output the lines which contain the phrase to a file called output\_2.txt.
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_20.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_20.jpg" />
 
 
 
@@ -344,14 +344,14 @@ grep "Global net ELEC energy" output.txt | tee output_2.txt"
 ######Graph generation
 
 Take the data you found/calculated and reformat it into two columns. The data should be seperated by white space or a column. Note that these energies are in kJ/mol and converted to kcal/mol for comparison with the data from García-García and Draper. The data in this example is from APBS 1.4.0.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/data_1.png">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/data_1.png"> 
 
 Remove the headers from the data so that only two columns of values exists now.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/data_2.png">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/data_2.png">  
 As seen here, the data points are obviously curved and cannot be fit with a line.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/graph_1.png">   
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/graph_1.png">   
 This properly fit data looks like this:  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/graph_4.png">   
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/graph_4.png">   
 The data is approximated by the equation $ y = 130 + 11.28*ln(x) $
 
 Further analysis requires the ability to perform linear regression. There are many programs that do this; a simple Python script is provided for this purpose in the protein-rna example directory (named fit.py). This script can be called with:
@@ -363,11 +363,11 @@ where file.dat is the file we created with whitespace-separated data in two colu
 \\[ \frac{\partial\Delta\_{bind}G}{\partial\log_{10}\mathrm{KCl}} = {6.2 \pm 0.1 ~ } {\rm kcal/mol} \\]  
 
 from the graph of x = log<sub>10</sub>[ion concentration] and y = electrostatic binding energy (kcal/mol).  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/graph_2.png">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/graph_2.png">  
 Likewise, we can also obtain
 \\[ n=-\frac{\partial\Delta\_{bind}G}{\{RT}\partial\log_{10}{\rm KCl}} = {-4.52 \pm 0.08~ } {\rm kcal/mol} \\]
 from  the graph of x = ln(ion concentration) and y = RT (the electrostatic binding energy).  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/graph_3.png">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/graph_3.png">
 
 
 <a id="pymol"></a>
@@ -378,14 +378,14 @@ Open "PyMOL + Tcl-Tk GUI". Using the window at the top, find the directory conta
 {% highlight bash %}
 load qdens-diff-0.225.dx
 {% endhighlight %}  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_21.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_21.jpg" />
 
 Your "PyMol Viewer" should now show this: 
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_22.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_22.jpg" />
 
 
 Click the "qdens-diff-0.225" tab on the right so that it turns the same color as the all button (this means it's on). This should show the outline of a rectangular prism (these correspond to dime values which are used to run apbs). Click the "S (show)" next to qdens and click show everything.
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_23.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_23.jpg" />
 
 
 Now load the pqr file into the PyMol Viewer from the Pymol prompt again.  
@@ -395,31 +395,31 @@ load  model_outNB.pqr
 
 
 Under the "S" for the new model you just loaded hit show cartoon and ribbon. Hit "H(hide)" lines and now you should have a picture like this:
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_24.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_24.jpg" />  
 
 <a id="vmd"></a>
 
 ######VMD:
 
 Open VMD 1.9.1 (or what ever version you have). From the VMD Main window hit "File -> New Molecule". A "Molecule File Browser" window should come up.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_29.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_29.jpg" />
 
 
 Hit 'Browse...'    
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_34.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_34.jpg" />  
 
 
 Open the "qdens-diff-0.225.dx" file and hit 'Load'   
 Your display window should look somemthing like this:
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_33.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_33.jpg" /> 
 (If "Load" doesn't work, make sure the file type is correct under "Determine file type")
 
 Now load another new molecule (model_outNB.pqr) and you should have something like this (zoomed in a little with the scroll on a 3 button mouse):  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_30.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_30.jpg" />
 
 
 Under the "Graphics" tab hit "Representations". A "Graphical Representations"  tab should come up.  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_31.jpg">  
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_31.jpg" />
 Click the "Rep" that has "Style" "Lines" and change the "Drawing Method" from "Lines" to "New Cartoon". Click "Coloring Method" and change to "ResType". This will color the protein alpha helix such that each amino acid will be a different color based on whether it is non-polar, basic, acidic, or polar (white, blue, red, and green respectively).
 
 
@@ -427,7 +427,7 @@ Now change the Isosurface representation. Draw (bottom right) should be "Solid S
 
 
 Now the representation should look like this:  
-<img src="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tut_Pics_PR/Screenshot_32.jpg">
+<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_32.jpg" />
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
