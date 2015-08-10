@@ -60,7 +60,7 @@ Once you click the file, download should start immediately. Save the file in des
 4. Next, open up VMD  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_3.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_3_big.png" class="dg-picture-zoom" id="picture3">
 
-5. Click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_4.png), then click "new molecule" A Molecule File Browser will pop up as such  
+5. Click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_4.png" />, then click "new molecule" A Molecule File Browser will pop up as such  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_5.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_5_big.png" class="dg-picture-zoom" id="picture5">
 
 6. Click "Browse...", and then click and open saved Protein file.
@@ -76,18 +76,18 @@ Click the "Load" button, and your saved protein will load in the VMD window as a
 
 1. First, your 3-D protein structure should be loaded
 on the VMD Main window, click
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_7.png), and then click
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_8.png)
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_7.png" />, and then click
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_8.png" />
 
 
 2. Next, the Graphical Representations Window will open  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_9.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_9_big.png" class="dg-picture-zoom" id="picture9">
 
 3. Under
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_10.png), delete the text "all" and enter "resname (insert name of desired compound here)"
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_10.png" />, delete the text "all" and enter "resname (insert name of desired compound here)"
 
 4. Hit
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_11.png)
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_11.png" />
 and the chosen ligand will appear
 
 <a data-scroll href="#topcall">top</a>
@@ -97,52 +97,52 @@ and the chosen ligand will appear
 
 1. First, your 3-D protein structure should be loaded
 on the VMD Main window, click
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_12.png), and then click
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_13.png)
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_12.png" />, and then click
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_13.png" />
 
 
 2. Next, the Graphical Representations Window will open  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_14.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_14_big.png" class="dg-picture-zoom" id="picture14">
 
-3. Under ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_15.png), delete the text "all" and enter "resid (insert residue number)" to find the desired residue number
+3. Under <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_15.png" />, delete the text "all" and enter "resid (insert residue number)" to find the desired residue number
 
-4. Hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_16.png) and the chosen residue will appear
+4. Hit <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_16.png" /> and the chosen residue will appear
 
 <a data-scroll href="#topcall">top</a>
 <hr/>
 <a id="mutate"></a>
 <h6>How to mutate a protein</h6>
 
-1.  First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_17.png) in the VMD main window, then ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_18.png), and finally ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_19.png). You will see this on your screen:  
+1.  First, one must take their pdb file (taken from pdb.org) and convert it into a psf file. This is done by hitting <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_17.png" /> in the VMD main window, then <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_18.png" />, and finally <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_19.png" />. You will see this on your screen:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_20.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_20_big.png" class="dg-picture-zoom" id="picture20">  
 \*For this example, we'll use the pdb protein 1JLB.
 
-2. Molecule simply names the molecule you want to make into a psf file. ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_21.png) is the name of your soon-to-be psf file; change it if you wish. Then hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_22.png)
+2. Molecule simply names the molecule you want to make into a psf file. <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_21.png" /> is the name of your soon-to-be psf file; change it if you wish. Then hit <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_22.png" />
 
-3. For the next section, keep automatic settings and hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_23.png)
+3. For the next section, keep automatic settings and hit <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_23.png" />
 
-4. For the next section as well, keep automatic settings and hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_24.png)
+4. For the next section as well, keep automatic settings and hit <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_24.png" />
 
 5. When the following window pops up, click "ok"  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_25.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_25_big.png" class="dg-picture-zoom" id="picture25">
 
 6. If, perhaps an error window pops up:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_26.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_26_big.png" class="dg-picture-zoom" id="picture26">  
-simply click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_27.png) and the error messages will clear. However this may jeopardize the quality of the mutated protein.
+simply click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_27.png" /> and the error messages will clear. However this may jeopardize the quality of the mutated protein.
 
-7. Click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_28.png), and then you will have the psf file saved in your files.
+7. Click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_28.png" />, and then you will have the psf file saved in your files.
 
-8. Now we can go on to really mutating our residue. Hit ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_29.png) in the VMD main window, then ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_30.png), and finally![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_31.png). Then, the following window will open:  
+8. Now we can go on to really mutating our residue. Hit <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_29.png" /> in the VMD main window, then <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_30.png" />, and finally <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_31.png" />. Then, the following window will open:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_32.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_32_big.png" class="dg-picture-zoom" id="picture32">
 
 9. Upload the psf and pdb files of your protein. For the field marked MUTATED, retype the name you wish your mutated file to be called.
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_33.png) refers to the original residue your target residue was
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_34.png) is the residue number
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_35.png) is the amino acid of your desired mutation.
-An example of the procedure, is if you wanted to change a wild type HIV-1 Reverse Transcriptase Tyrosin to Cysteine, then ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_36.png) would be TYR, ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_37.png) would be 181, and ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_38.png) would be CYS
-You do not have to check the ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_39.png)  in order to mutate your residue.
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_33.png" /> refers to the original residue your target residue was
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_34.png" /> is the residue number
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_35.png" /> is the amino acid of your desired mutation.
+An example of the procedure, is if you wanted to change a wild type HIV-1 Reverse Transcriptase Tyrosin to Cysteine, then <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_36.png" /> would be TYR, <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_37.png" /> would be 181, and <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_38.png" /> would be CYS
+You do not have to check the <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_39.png" />  in order to mutate your residue.
 
-10. Finally, click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_40.png)
+10. Finally, click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_40.png" />
 The mutated protein will now appear in your VMD window
 
 <a data-scroll href="#topcall">top</a>
@@ -199,7 +199,7 @@ The steps follow the same steps in making a PDB2PQR protein model structure, exc
 1. When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_45.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_45_big.png" class="dg-picture-zoom" id="picture45">
 
-2. Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click ![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_46.jpg)  and wait until APBS is done running.
+2. Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_46.png" />  and wait until APBS is done running.
 
 3. Then download the .dx.gz file, and that is the end of your APBS session.
 
@@ -226,11 +226,11 @@ To do so, go to the start menu, and right click on 'computer' The following shou
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_49.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_49_big.png" class="dg-picture-zoom" id="picture49">
 
 4. Click
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_50.png), and another window will pop up.  
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_50.png" />, and another window will pop up.  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_51.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_51_big.png" class="dg-picture-zoom" id="picture51">
 
 5. This is where you'll write your path. Click on the
-![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_52.png) to create a new path.
+<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_52.png" /> to create a new path.
 
 6. To make the directory, simply copy and paste
 **C:\Python27\;C:\Python27\Scripts;C:\Util\pdb2pqr-windows-bin-1.9.0;C:\apbs\bin**
@@ -244,7 +244,7 @@ You can now run APBS!
 
 <h6>DISCALIMER: THIS TUTORIAL IS USING A WINDOWS COMPUTER AND WINDOWS COMMAND PROMPT</h6>
 
-1. First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (![](https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/img/Tutorial_pics_in_order/Tutorial_pic_53.png)) when you open "computer" from your start menu.
+1. First, before running APBS through the command line, you must make sure your desired protein files are in the same folder as the apbs command prompt. If APBS downloaded correctly, it should be in your C drive (<img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_53.png" />) when you open "computer" from your start menu.
 
 2. Click on the APBS folder, and in the APBS folder make a new folder for all your proteins; please label the folder accordingly, and remember the name of the folder.
 
