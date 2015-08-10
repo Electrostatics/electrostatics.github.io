@@ -26,6 +26,8 @@ APBS was designed to facilitate use with other programs. This section outlines s
 
 * [__PyMOL__](http://pymol.sourceforge.net/) -
 molecular visualization and animation package which provides an interface to APBS. The APBS plugin to PyMOL (developed by Michael George Lerner) permits isocontour and surface map visualization of APBS results. More information about using PyMOL with APBS is provided in the FAQs.
+<p><img src="{{site.baseurl}}/img/1fas_with_pymol.png" /><sub><sub>PDB ID 1FAS with PyMOL</sub></sub></p>
+
 
 * [__VMD__](http://www.ks.uiuc.edu/Research/vmd/) -
 molecular visualization and animation package which provides an interface
@@ -46,6 +48,8 @@ development and future versions will offer even more setup,
 visualization, and analysis functionality.  The APBS interface is
 distributed with recent [beta versions of PMV](http://www.scripps.edu/~sanner/python).
 Additional documention for using APBS with PMV is provided [here](http://mgltools.scripps.edu/api/Pmv/Pmv.APBSCommands-module.html).
+<p><img src="{{site.baseurl}}/img/1fas_PMV_potential.png" /><sub><sub>PDB ID 1FAS with PMV</sub></sub></p>
+
 
 ##Simulation Software
 
