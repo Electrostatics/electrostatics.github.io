@@ -2,7 +2,7 @@
 layout: docs
 title: Using with other programs
 prev_section: apbs-invocation
-next_section: apbs-programmers
+next_section: APBS_package_overview
 permalink: /docs/apbs-others/
 ---
 

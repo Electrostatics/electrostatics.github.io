@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Programmer's Guide
-prev_section: apbs-others
+prev_section: APBS_package_overview
 next_section: apbs-faq
 permalink: /docs/apbs-programmers/
 ---
