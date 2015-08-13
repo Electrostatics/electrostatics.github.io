@@ -199,7 +199,7 @@ The steps follow the same steps in making a PDB2PQR protein model structure, exc
 1. When making the PDB2PQR, check the option for allowing the program to have an APBS option, and in addition adding the insert white space link in the options, like so:  
 <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_45.png?url={{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_45_big.png" class="dg-picture-zoom" id="picture45">
 
-2. Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_46.png" />  and wait until APBS is done running.
+2. Then, click submit, and it will take you to the page for the PDB2PQR runned protein. On the bottom of the page, click <img src="{{site.baseurl}}/img/Tutorial_pics_in_order/Tutorial_pic_46.jpg" />  and wait until APBS is done running.
 
 3. Then download the .dx.gz file, and that is the end of your APBS session.
 
