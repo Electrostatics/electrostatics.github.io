@@ -58,7 +58,7 @@ Additional documention for using APBS with PMV is provided [here](http://mgltool
 the simulation packages AMBER, CHARMM, and NAMD. More information is
 available from the [iAPBS homepage](http://mccammon.ucsd.edu/iapbs/).
 
-* __TINKER__ - APBS is also available with developmental versions of TINKER; please contact <a href="/support/home/">contact us</a> for more information.
+* __TINKER__ - APBS is also available with TINKER; please visit the <a href="http://dasher.wustl.edu/tinker/" >TINKER homepage</a> for more information.
 
 ##Visualization Software
 
@@ -69,8 +69,8 @@ Electrostatic potentials are commonly visualized in the context of biomolecular 
 * [__Dino3D__](http://www.dino3d.org/) -
 molecular graphics program which can read UHBD-format electrostatic data. APBS can write multigrid results in UHBD format (see the write ELEC command) and therefore can be used with Dino3D.
 
-* [__MOLMOL__](http://www.mol.biol.ethz.ch/wuthrich/software/molmol/) -
- molecular graphics package with an emphasis on NMR-generated structural data. A program is provided with APBS (see tools/mesh directory in the APBS distribution and the Data conversion tools in this manual) which converts OpenDX format data to MOLMOL format.
+<!--* [__MOLMOL__](http://www.mol.biol.ethz.ch/wuthrich/software/molmol/) -
+ molecular graphics package with an emphasis on NMR-generated structural data. A program is provided with APBS (see tools/mesh directory in the APBS distribution and the Data conversion tools in this manual) which converts OpenDX format data to MOLMOL format.-->
 
 * [__OpenDX__](http://www.opendx.org) - 
  general data visualization package which can read APBS output using the scripts provided in tools/visualization/opendx (see the discussion of Data visualization tools in this manual). However, as there is no straightforward way to visualizate the potential in the context of the atomic structure, OpenDX should not a first choice for APBS visualization.
