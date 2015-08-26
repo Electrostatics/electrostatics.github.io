@@ -51,6 +51,13 @@ Additional documention for using APBS with PMV is provided [here](http://mgltool
 <p><img src="{{site.baseurl}}/img/1fas_PMV_potential.png" /><sub><sub>PDB ID 1FAS with PMV</sub></sub></p>
 
 
+* [__Chimera__](http://www.cgl.ucsf.edu/chimera/) -
+molecular visualization package which provides an interface
+to APBS.The APBS plugin integrated in Chimera allows the user to run a protein through both PDB2PQR and APBS to optimize the protein and view the electrostatic potential.  
+Additional documention for using APBS with PMV is provided [here](http://www.cgl.ucsf.edu/chimera/docs/ContributedSoftware/apbs/apbs.html).
+<p><img src="{{site.baseurl}}/img/1fas_chimera_apbs.png" /><sub><sub>PDB ID 1FAS with Chimera</sub></sub></p>
+
+
 ##Simulation Software
 
 * __iAPBS__ - Robert Konecny (McCammon Group) has developed
