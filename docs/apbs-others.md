@@ -65,7 +65,7 @@ Additional documention for using APBS with PMV is provided [here](http://www.cgl
 the simulation packages AMBER, CHARMM, and NAMD. More information is
 available from the [iAPBS homepage](http://mccammon.ucsd.edu/iapbs/).
 
-* __TINKER__ - APBS is also available with TINKER; please visit the <a href="http://dasher.wustl.edu/tinker/" >TINKER homepage</a> for more information.
+* __TINKER__ - APBS 1.3 is available with TINKER; please visit the <a href="http://dasher.wustl.edu/tinker/" >TINKER homepage</a> for more information.
 
 ##Visualization Software
 
