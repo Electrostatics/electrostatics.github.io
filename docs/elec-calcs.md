@@ -21,9 +21,9 @@ else { document.getElementById(d).style.display = "none"; }
 //--></script>
 
 
-<h3 id="fe-maual"></h3>fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations
+<h3 id="fe-manual"></h3>fe-manual: manually-configured adaptive finite element Poisson-Boltzmann calculations
 
-This is a single-point PBE calculation performed by our adaptive finite element PBE solver. It requires that APBS be linked to the Michael Holst group FEtk finite element library http://www.fetk.org during compilation.
+This is a single-point PBE calculation performed by our adaptive finite element PBE solver. It requires that APBS be linked to the Michael Holst group [FEtk finite element library](http://www.fetk.org during compilation).
 
 The finite element solver uses a "solve-estimate-refine" cycle. Specifically, starting from an initial mesh, it performs the following iteration:
 
