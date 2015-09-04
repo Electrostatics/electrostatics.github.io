@@ -8,7 +8,7 @@ permalink: /docs/calculating/
 
 <!-- ##Basic types of calculations -->
 
-: Adaptive Poisson-Boltzmann Solver (APBS) is a software package for modeling biomolecular solvation by solving the Poisson-Boltzmann equation (PBE). The PBE is a popular continuum model used to describe electrostatic interactions between solutes in salty, aqueous media.  Continuum electrostatics plays an important role in several areas of biomolecular simulation, including:
+Adaptive Poisson-Boltzmann Solver (APBS) is a software package for modeling biomolecular solvation by solving the Poisson-Boltzmann equation (PBE). The PBE is a popular continuum model used to describe electrostatic interactions between solutes in salty, aqueous media.  Continuum electrostatics plays an important role in several areas of biomolecular simulation, including:
 
 * Simulation of diffusional processes to determine ligand-protein and protein-protein binding kinetics,
 * Implicit solvent molecular dynamics of biomolecules,
