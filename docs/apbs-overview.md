@@ -1802,7 +1802,7 @@ writemat {type} {stem}
 
 ###Types of ELEC calculations
 
-- [fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations](../elec-calcs/#femanual)
+- [fe-manual: manually-configured adaptive finite element Poisson-Boltzmann calculations](../elec-calcs/#femanual)
 - [mg-auto: automatically-configured sequential focusing multigrid Posson-Boltzmann calculations](../elec-calcs/#mgauto)
 - [mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE](../elec-calcs/#mgdummy)
 - [mg-manual: manually-configured multigrid Poisson-Boltzmann calculations](../elec-calcs/#mgmanual)
