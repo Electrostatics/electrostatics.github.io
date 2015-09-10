@@ -1805,11 +1805,99 @@ writemat {type} {stem}
 
 ###Types of ELEC calculations
 
-- [fe-maual: manually-configured adaptive finite element Poisson-Boltzmann calculations](../elec-calcs/#femanual)
-- [mg-auto: automatically-configured sequential focusing multigrid Posson-Boltzmann calculations](../elec-calcs/#mgauto)
-- [mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE](../elec-calcs/#mgdummy)
-- [mg-manual: manually-configured multigrid Poisson-Boltzmann calculations](../elec-calcs/#mgmanual)
-- [mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzman calculations](../elec-calcs/#mgpara)
+<a name="#fe-manual"></a>
+<a href="javascript:ReverseDisplay('fe-manual')">fe-manual: manually-configured adaptive finite element Poisson-Boltzmann calculations</a>
+
+<div id="fe-manual" style="display:none;">
+
+<p>This is a single-point PBE calculation performed by our adaptive finite element PBE solver. It requires that APBS be linked to the Michael Holst group <a href="http://www.fetk.org">FEtk finite element library</a> during compilation. The finite element solver uses a "solve-estimate-refine" cycle. Specifically, starting from an initial mesh, it performs the following iteration:</p>
+<p>- solve the problem with the current mesh</p>
+<p>- estimate the error in the solution</p>
+<p>- adaptively refine the mesh to reduce the error</p>
+
+<p>...until a global error tolerance is reached.</p>
+<h5>Note</h5>
+
+<p>The finite element methods are currently most useful for a select set of problems which can benefit from adaptive refinement of the solution. Furthermore, this implementation is experimental. In general, the sequential and parallel focusing multigrid methods offer the most efficient solution of the PBE for most systems.
+</p>
+<hr />
+
+</div>
+
+<a name="#mg-auto"></a>
+<a href="javascript:ReverseDisplay('mg-auto')">mg-auto: manually-configured adaptive finite element Poisson-Boltzmann calculations</a>
+
+<div id="mg-auto" style="display:none;">
+
+<p>This multigrid calculation automatically sets up and performs a string of single-point PBE calculations to "focus" on a region of interest (binding site, etc.) in a system. It is basically an automated version of mg-manual designed for easier use. Most users should probably use this version of ELEC. </p>
+<p>The following keywords are present in mg-auto ELEC blocks; all keywords are required unless otherwise noted: 
+bcfl {flag} where flag is a text string that identifies the type of conditions to be used:</p>
+
+<p><code>zero</code>"Zero" boundary condition. Dirichlet conditions where the potential at the boundary is set to zero. This condition is not commonly used and can result in large errors if used inappropriately.</p>
+<p><code>sdh </code>"Single Debye-Huckel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Huckel model for a single sphere with a point charge, dipole, and quadrupole. The sphere radius in this model is set to the radius of the biomolecule and the sphere charge, dipole, and quadrupole are set to the total moments of the protein. This condition works best when the boundary is sufficiently far from the biomolecule.</p>
+<p><code>mdh</code> "Multiple Debye-Huckel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Huckel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.</p>
+<p><code>focus</code> "Focusing" boundary condition. Dirichlet condition where the potential at the boundary is set to the values computed by the previous (usually lower-resolution) PB calculation. This is used in sequential focusing performed manually in mg-manual calculations. All of the boundary points should lie within the domain of the previous calculation for best accuracy; if any boundary points lie outside, their values are computed using single Debye-Huckel boundary conditions (see above).</p>
+<p><code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use. NOTE: this functionality is only available in the current developmental release of APBS.</p>
+<p><code>calcenergy</code>
+This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.</p>
+
+<h5>Note</h5>
+
+<p>This option must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <code>print energy 1 - 2 end</code> appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.
+</p>
+<p>The syntax is: {% highlight bash %} calcenergy { flag } {% endhighlight %}
+where flag is a text string that specifies the types of energy values to be returned:
+</p>
+<p><code>no</code> (Deprecated) don't calculate any energies. This is the same as not including the calcenergy command in the input file.</p>
+<p><code>total</code> Calculate and return total electrostatic energy for the entire molecule. For the nonlinear PB equation, this energy is:</p>
+<p>\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \] where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential. For the linearized PB equation, this energy is calculated by the integral
+\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \] comps Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
+</p>
+<hr />
+
+</div>
+
+<a name="#mg-dummy"></a>
+<a href="javascript:ReverseDisplay('mg-dummy')">mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE</a>
+
+<div id="mg-dummy" style="display:none;">
+
+This type of calculation allows users to write out dielectric, ion-accessibility, and charge distribution, and other types of maps that depend solely on biomolecular geometry. Since these maps depend only on geometry, they can be written out without actually solving the PB equation. 
+<p>The syntax for this command is identical to mg-auto.</p>
+
+<hr />
+
+</div>
+
+<a name="#mg-manual"></a>
+<a href="javascript:ReverseDisplay('mg-manual')">mg-manual: manually-configured multigrid Poisson-Boltzmann calculations</a>
+
+<div id="mg-manual" style="display:none;">
+
+<p>This is a standard single-point multigrid PBE calculation without focusing or additional refinement. The mg-manual calculation offers the most control of parameters to the user. Several of these calculations can be strung together to perform focusing calculations by judicious choice of the bcfl flag; however, the setup of the focusing is not automated as it is in mg-auto and mg-para calculations and therefore this command should primarily be used by more experienced users.
+</p>
+<p>The syntax for this command is identical to mg-auto.</p>
+<hr />
+
+</div>
+
+
+<a name="#mg-para"></a>
+<a href="javascript:ReverseDisplay('mg-para')">mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzman calculations</a>
+
+<div id="mg-para" style="display:none;">
+
+<p>This calculation closely resembles mg-auto in syntax. However, it is designed to perform electrostatics calculations on systems in a parallel focusing fashion. The keywords for this type of calculation are all required unless otherwise noted:
+</p> async
+<p>This optional keyword allows users to perform the different tasks in a mg-para parallel run asynchronously. Specifically, a processor masquerades as process rank in a parallel focusing run and provides output (data files and energies/forces) appropriate to that processor's local partition. The user must then assemble the results after all processes complete. First, this option is useful for scheduling on-demand resources: this makes it easy for users to backfill into the available processes in a queue. Second, this option is useful for running on limited resources: this enables users without access to large parallel machines to still perform the same calculations. The syntax is:
+</p>
+{% highlight bash %}async { rank }{% endhighlight %}
+<p>
+where <code>rank</code> is the integer ID of the particular processor to masquerade as. Processor IDs range from 0 to N-1, where N is the total number of processors in the run (see pdime). Processor IDs are related to their position in the overall grid by p = nx ny k + nx j + i  where nx is the number of processors in the x-direction, ny is the number of processors in the y-direction, nz is the number of processors in the z-direction, i is the index of the processor in the x-direction, j is the index of the processor in the y-direction, k is the index of the processor in the z-direction, and p is the overall rank of the processor.
+</p>
+<hr />
+</div>
+
 
 <h3 id="print">PRINT</h3>
 This is a very simple section that allows linear combinations of calculated properties to be written to standard output.
