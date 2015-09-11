@@ -17,10 +17,19 @@ function ReverseDisplay(d) {
 if(document.getElementById(d).style.display == "none") { document.getElementById(d).style.display = "block"; }
 else { document.getElementById(d).style.display = "none"; }
 }
-//-->
 function Open(d) {
 document.getElementById(d).style.display = "block";
 } 
+//-->
+window.onload = function() {
+  // Check if hash exists
+  if(window.location.hash) {
+    // Remove the "#" from the hash
+    hash = window.location.hash.substr(1);
+    // Display element with id == hash
+    document.getElementById(hash).style.display = "block";
+  }
+}
 </script>
 
 
@@ -81,6 +90,7 @@ READ
 	<p>There are a number of places in the APBS input files where pathnames can be specified. If the pathname contains spaces, then the entire pathname must be enclosed in quotes. For example, if you wanted to refer to the file "foo" which resides in a directory with spaces in its name, then you should refer to foo as "/path with spaces/foo".</p>
 </div>
 
+
 Each section of the APBS input file has its own syntax, described in more detail in the following sections:
 
 ###Category List
@@ -111,7 +121,7 @@ name {id}
 where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT](#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords](#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
 ###APOLAR Keywords
-<a name="#bconc"></a>
+
 <a href="javascript:ReverseDisplay('bconc')">bconc</a>
 
 <div id="bconc" style="display:none;">
@@ -128,7 +138,7 @@ where <code>density</code> is a floating point number giving the bulk solvent de
 
 </div>
 
-<a name="#calcenergy"></a>
+
 <a href="javascript:ReverseDisplay('calcenergy')">calcenergy</a>
 
 <div id="calcenergy" style="display:none;">
@@ -162,7 +172,7 @@ print energy 1 - 2 end
 
 
 
-<a name="#calcforce"></a>
+
 <a href="javascript:ReverseDisplay('calcforce')">calcforce</a>
 
 <div id="calcforce" style="display:none;">
@@ -205,7 +215,7 @@ print force 1 - 2 end
 
 
 
-<a name="#dpos"></a>
+
 <a href="javascript:ReverseDisplay('dpos')">dpos</a>
 
 <div id="dpos" style="display:none;">
@@ -235,7 +245,7 @@ where displacement is a floating point number indicating the finite difference d
 
 
 
-<a name="#gamma"></a>
+
 <a href="javascript:ReverseDisplay('gamma')">gamma</a>
 
 <div id="gamma" style="display:none;">
@@ -256,7 +266,7 @@ where <code>value</code> is a floating point number designating the surface tens
 
 
 
-<a name="#grid"></a>
+
 <a href="javascript:ReverseDisplay('grid')">grid</a>
 
 <div id="grid" style="display:none;">
@@ -274,7 +284,7 @@ where <code>hx</code> <code>hy</code> <code>hz</code> are the quadrature spacing
 
 
 
-<a name="#mol"></a>
+
 <a href="javascript:ReverseDisplay('mol')">mol</a>
 
 <div id="mol" style="display:none;">
@@ -294,7 +304,7 @@ where <code>id</code> is the integer ID of the molecule for which the apolar cal
 
 
 
-<a name="#press"></a>
+
 <a href="javascript:ReverseDisplay('press')">press</a>
 
 <div id="press" style="display:none;">
@@ -317,7 +327,7 @@ where <code>value</code> is the floating point value of the pressure coefficient
 
 
 
-<a name="#sdens"></a>
+
 <a href="javascript:ReverseDisplay('sdens')">sdens</a>
 
 <div id="sdens" style="display:none;">
@@ -346,7 +356,7 @@ where <code>density</code> is a floating point number indicating the number of g
 
 
 
-<a name="#srad"></a>
+
 <a href="javascript:ReverseDisplay('srad')">srad</a>
 
 <div id="srad" style="display:none;">
@@ -366,7 +376,7 @@ where <code>radius</code> is the floating point value of the solvent radius (in 
 
 
 
-<a name="#srfm"></a>
+
 <a href="javascript:ReverseDisplay('srfm')">srfm</a>
 
 <div id="srfm" style="display:none;">
@@ -396,7 +406,7 @@ where <code>flag</code> is a string that specifies the model used for surface an
 
 
 
-<a name="#swin"></a>
+
 <a href="javascript:ReverseDisplay('swin')">swin</a>
 
 <div id="swin" style="display:none;">
@@ -416,7 +426,7 @@ where <code>win</code> is the floating point value of the spline window (in Å).
 
 
 
-<a name="#temp"></a>
+
 <a href="javascript:ReverseDisplay('temp')">temp</a>
 
 <div id="temp" style="display:none;">
@@ -516,7 +526,7 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 
 
 ###Elec keywords
-<a name="#elec-keyword-akeypre"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-akeypre')">akeypre</a>
 
 <div id="elec-keyword-akeypre" style="display:none;">
@@ -538,7 +548,7 @@ akeyPRE {key}
 
 
 
-<a name="#elec-keyword-akeySOLVE"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-akeySOLVE')">akeySOLVE</a>
 
 <div id="elec-keyword-akeySOLVE" style="display:none;">
@@ -560,7 +570,7 @@ akeySOLVE {key}
 
 
 
-<a name="#elec-keyword-async"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-async')">async</a>
 
 <div id="elec-keyword-async" style="display:none;">
@@ -581,7 +591,7 @@ async { rank }
 
 
 
-<a name="#elec-keyword-bcfl"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-bcfl')">bcfl</a>
 
 <div id="elec-keyword-bcfl" style="display:none;">
@@ -620,7 +630,7 @@ bcfl {flag}
 
 
 
-<a name="#elec-keyword-calcenergy"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-calcenergy')">calcenergy</a>
 
 <div id="elec-keyword-calcenergy" style="display:none;">
@@ -662,7 +672,7 @@ where epsilon is the dielectric function, rho is the charge distribution, phi is
 
 
 
-<a name="#elec-keyword-calcforce"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-calcforce')">calcforce</a>
 
 <div id="elec-keyword-calcforce" style="display:none;">
@@ -703,7 +713,7 @@ The values will be printed in three columns which correspond to the x, y, and z 
 
 
 
-<a name="#elec-keyword-cgcent"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-cgcent')">cgcent</a>
 
 <div id="elec-keyword-cgcent" style="display:none;">
@@ -729,7 +739,7 @@ The arguments for this keyword are <strong>either</strong>:<br />
 
 
 
-<a name="#elec-keyword-cglen"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-cglen')">cglen</a>
 
 <div id="elec-keyword-cglen" style="display:none;">
@@ -754,7 +764,7 @@ cglen {xlen ylen zlen}
 
 
 
-<a name="#elec-keyword-chgm"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-chgm')">chgm</a>
 
 <div id="elec-keyword-chgm" style="display:none;">
@@ -779,7 +789,7 @@ chgm {flag}
 
 
 
-<a name="#elec-keyword-dime"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-dime')">dime</a>
 
 <div id="elec-keyword-dime" style="display:none;">
@@ -813,7 +823,7 @@ The (integer) number of grid points in the x-, y-, and z-directions, respectivel
 
 
 
-<a name="#elec-keyword-domainLength"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-domainLength')">domainLength</a>
 
 <div id="elec-keyword-domainLength" style="display:none;">
@@ -836,7 +846,7 @@ domainLength {xlen ylen zlen}
 
 
 
-<a name="#elec-keyword-ekey"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-ekey')">ekey</a>
 
 <div id="elec-keyword-ekey" style="display:none;">
@@ -862,7 +872,7 @@ ekey { flag }
 
 
 
-<a name="#elec-keyword-etol"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-etol')">etol</a>
 
 <div id="elec-keyword-etol" style="display:none;">
@@ -899,7 +909,7 @@ etol { tol }
 
 
 
-<a name="#elec-keyword-fgcent"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-fgcent')">fgcent</a>
 
 <div id="elec-keyword-fgcent" style="display:none;">
@@ -925,7 +935,7 @@ fgcent { mol id | xcent ycent zcent }
 
 
 
-<a name="#elec-keyword-fglen"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-fglen')">fglen</a>
 
 <div id="elec-keyword-fglen" style="display:none;">
@@ -949,7 +959,7 @@ fglen {xlen ylen zlen}
 
 
 
-<a name="#elec-keyword-gcent"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-gcent')">gcent</a>
 
 <div id="elec-keyword-gcent" style="display:none;">
@@ -975,7 +985,7 @@ gcent { mol id | xcent ycent zcent }
 
 
 
-<a name="#elec-keyword-glen"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-glen')">glen</a>
 
 <div id="elec-keyword-glen" style="display:none;">
@@ -996,7 +1006,7 @@ glen {xlen ylen zlen}
 
 
 
-<a name="#elec-keyword-grid"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-grid')">grid</a>
 
 <div id="elec-keyword-grid" style="display:none;">
@@ -1018,7 +1028,7 @@ grid {hx hy hz}
 
 
 
-<a name="#elec-keyword-ion"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-ion')">ion</a>
 
 <div id="elec-keyword-ion" style="display:none;">
@@ -1045,7 +1055,7 @@ ion charge {charge} conc {conc} radius {radius}
 
 
 
-<a name="#elec-keyword-lpbe"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-lpbe')">lpbe</a>
 
 <div id="elec-keyword-lpbe" style="display:none;">
@@ -1065,7 +1075,7 @@ lpbe
 
 
 
-<a name="#elec-keyword-lrpbe"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-lrpbe')">lrpbe</a>
 
 <div id="elec-keyword-lrpbe" style="display:none;">
@@ -1084,7 +1094,7 @@ lrpbe
 
 
 
-<a name="#elec-keyword-maxsolve"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-maxsolve')">maxsolve</a>
 
 <div id="elec-keyword-maxsolve" style="display:none;">
@@ -1106,7 +1116,7 @@ maxsolve { num }
 
 
 
-<a name="#elec-keyword-maxvert"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-maxvert')">maxvert</a>
 
 <div id="elec-keyword-maxvert" style="display:none;">
@@ -1127,7 +1137,7 @@ maxvert { num }
 
 
 
-<a name="#elec-keyword-mol"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-mol')">mol</a>
 
 <div id="elec-keyword-mol" style="display:none;">
@@ -1149,7 +1159,7 @@ mol {id}
 
 
 
-<a name="#elec-keyword-nlev"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-nlev')">nlev</a>
 
 <div id="elec-keyword-nlev" style="display:none;">
@@ -1169,7 +1179,7 @@ nlev {lev}
 
 
 
-<a name="#elec-keyword-npbe"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-npbe')">npbe</a>
 
 <div id="elec-keyword-npbe" style="display:none;">
@@ -1188,7 +1198,7 @@ npbe
 
 
 
-<a name="#elec-keyword-nrpbe"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-nrpbe')">nrpbe</a>
 
 <div id="elec-keyword-nrpbe" style="display:none;">
@@ -1215,7 +1225,7 @@ nrpbe
 
 
 
-<a name="#elec-keyword-ofrac"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-ofrac')">ofrac</a>
 
 <div id="elec-keyword-ofrac" style="display:none;">
@@ -1335,7 +1345,7 @@ ofrac {frac}
 
 
 
-<a name="#elec-keyword-pdie"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-pdie')">pdie</a>
 
 <div id="elec-keyword-pdie" style="display:none;">
@@ -1356,7 +1366,7 @@ where <code>die1</code> is the floating point value of the unitless biomolecular
 
 
 
-<a name="#elec-keyword-pdime"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-pdime')">pdime</a>
 
 <div id="elec-keyword-pdime" style="display:none;">
@@ -1380,7 +1390,7 @@ pdime {npx npy npz}
 
 
 
-<a name="#elec-keyword-sdens"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-sdens')">sdens</a>
 
 <div id="elec-keyword-sdens" style="display:none;">
@@ -1402,7 +1412,7 @@ sdens {density}
 
 
 
-<a name="#elec-keyword-sdie"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-sdie')">sdie</a>
 
 <div id="elec-keyword-sdie" style="display:none;">
@@ -1423,7 +1433,7 @@ sdie {diel}
 
 
 
-<a name="#elec-keyword-smpbe"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-smpbe')">smpbe</a>
 
 <div id="elec-keyword-smpbe" style="display:none;">
@@ -1444,7 +1454,7 @@ smpbe vol { spacing } size { num }
 
 
 
-<a name="#elec-keyword-srad"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-srad')">srad</a>
 
 <div id="elec-keyword-srad" style="display:none;">
@@ -1465,7 +1475,7 @@ srad {radius}
 
 
 
-<a name="#elec-keyword-srfm"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-srfm')">srfm</a>
 
 <div id="elec-keyword-srfm" style="display:none;">
@@ -1490,7 +1500,7 @@ srfm {flag}
 
 
 
-<a name="#elec-keyword-swin"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-swin')">swin</a>
 
 <div id="elec-keyword-swin" style="display:none;">
@@ -1511,7 +1521,7 @@ swin {win}
 
 
 
-<a name="#elec-keyword-targetNum"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-targetNum')">targetNum</a>
 
 <div id="elec-keyword-targetNum" style="display:none;">
@@ -1532,7 +1542,7 @@ targetNum { num }
 
 
 
-<a name="#elec-keyword-targetRes"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-targetRes')">targetRes</a>
 
 <div id="elec-keyword-targetRes" style="display:none;">
@@ -1553,7 +1563,7 @@ targetRes { res }
 
 
 
-<a name="#elec-keyword-temp"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-temp')">temp</a>
 
 <div id="elec-keyword-temp" style="display:none;">
@@ -1582,7 +1592,7 @@ temp { T }
 
 
 
-<a name="#elec-keyword-useaqua"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-useaqua')">useaqua</a>
 
 <div id="elec-keyword-useaqua" style="display:none;">
@@ -1601,7 +1611,7 @@ useaqua
 
 
 
-<a name="#elec-keyword-usemap"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-usemap')">usemap</a>
 
 <div id="elec-keyword-usemap" style="display:none;">
@@ -1630,7 +1640,7 @@ usemap {type} {id}
 
 
 
-<a name="#elec-keyword-usemesh"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-usemesh')">usemesh</a>
 
 <div id="elec-keyword-usemesh" style="display:none;">
@@ -1652,7 +1662,7 @@ usemesh {id}
 
 
 
-<a name="#elec-keyword-write"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-write')">write</a>
 
 <div id="elec-keyword-write" style="display:none;">
@@ -1734,7 +1744,7 @@ write {type} {format} {stem}
 
 
 
-<a name="#elec-keyword-writemat"></a>
+
 <a href="javascript:ReverseDisplay('elec-keyword-writemat')">writemat</a>
 
 <div id="elec-keyword-writemat" style="display:none;">
@@ -1805,7 +1815,7 @@ writemat {type} {stem}
 
 ###Types of ELEC calculations
 
-<a name="#fe-manual"></a>
+
 <a href="javascript:ReverseDisplay('fe-manual')">fe-manual: manually-configured adaptive finite element Poisson-Boltzmann calculations</a>
 
 <div id="fe-manual" style="display:none;">
@@ -1824,7 +1834,7 @@ writemat {type} {stem}
 
 </div>
 
-<a name="#mg-auto"></a>
+
 <a href="javascript:ReverseDisplay('mg-auto')">mg-auto: manually-configured adaptive finite element Poisson-Boltzmann calculations</a>
 
 <div id="mg-auto" style="display:none;">
@@ -1841,7 +1851,7 @@ bcfl {flag} where flag is a text string that identifies the type of conditions t
 <p><code>calcenergy</code>
 This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.</p>
 
-<h5>Note</h5>
+Note
 
 <p>This option must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <code>print energy 1 - 2 end</code> appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.
 </p>
@@ -1857,7 +1867,7 @@ where flag is a text string that specifies the types of energy values to be retu
 
 </div>
 
-<a name="#mg-dummy"></a>
+
 <a href="javascript:ReverseDisplay('mg-dummy')">mg-dummy: calculations of surface and charge distribution properties which do not require solution of the PBE</a>
 
 <div id="mg-dummy" style="display:none;">
@@ -1869,7 +1879,7 @@ This type of calculation allows users to write out dielectric, ion-accessibility
 
 </div>
 
-<a name="#mg-manual"></a>
+
 <a href="javascript:ReverseDisplay('mg-manual')">mg-manual: manually-configured multigrid Poisson-Boltzmann calculations</a>
 
 <div id="mg-manual" style="display:none;">
@@ -1882,7 +1892,7 @@ This type of calculation allows users to write out dielectric, ion-accessibility
 </div>
 
 
-<a name="#mg-para"></a>
+
 <a href="javascript:ReverseDisplay('mg-para')">mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzman calculations</a>
 
 <div id="mg-para" style="display:none;">
@@ -1962,7 +1972,7 @@ where keywords is or more of the keywords described in the Keyword section (the 
 
 
 ###READ keywords
-<a name="#read-keyword-charge"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-charge')">charge</a>
 
 <div id="read-keyword-charge" style="display:none;">
@@ -1988,7 +1998,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a name="#read-keyword-diel"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-diel')">diel</a>
 
 <div id="read-keyword-diel" style="display:none;">
@@ -2025,7 +2035,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a name="#read-keyword-kappa"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-kappa')">kappa</a>
 
 <div id="read-keyword-kappa" style="display:none;">
@@ -2060,7 +2070,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a name="#read-keyword-mol"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-mol')">mol</a>
 
 <div id="read-keyword-mol" style="display:none;">
@@ -2085,7 +2095,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a name="#read-keyword-parm"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-parm')">parm</a>
 
 <div id="read-keyword-parm" style="display:none;">
@@ -2118,7 +2128,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 
 
 
-<a name="#read-keyword-pot"></a>
+
 <a href="javascript:ReverseDisplay('read-keyword-pot')">pot</a>
 
 <div id="read-keyword-pot" style="display:none;">
