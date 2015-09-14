@@ -153,9 +153,14 @@ The mutated protein will now appear in your VMD window
 <a id="IntroPDB"></a>
 <h6>Introduction to PDB2PQR</h6>
 
-<a href="http://nbcr-222.ucsd.edu/pdb2pqr_1.9.0/" target="BLANK">Use the online PDB2PQR webserver to run pdb2pqr</a>  (changes file from pdb to the pqr format, this adds missing hydrogens, adds some missing heavy atoms, and optimizes the protein structure among other things)
+Follow the instructions on our <a
+href="{{site.baseurl}}/docs/structures-ready/" target="BLANK">Getting
+Structures Ready</a> page to access the online PDB2PQR webserver.
+This program changes the pdb file to
+the pqr format, adding missing hydrogens, some missing heavy
+atoms, and optimizing the protein structure.
 
-First, go to the PDB2PQR website above. You should already have a selected protein form pdb.org in mind.
+First, follow the instructions on the above link to go to the PDB2PQR website. You should already have a selected protein form pdb.org in mind.
 _(My example will be using the protein 2HNY)_
 
 Since I want my file to be compatible with VMD, for the both settings named "Pick a forcefield to use:" and "Pick an output naming scheme to use", choose the option CHARMM (PARSE works as well).
