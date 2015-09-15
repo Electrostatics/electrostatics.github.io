@@ -217,19 +217,6 @@ in one of the PDB2PQR source code directories, where 9876 is an arbitrary port n
 		<li><code>TYM</code> Negative TYR</li>
 	</ul>
 
-	<h3>Amino Acid Residue Additions (see dat/PATCHES.xml)</h3>
-	
-	<ul>
-		<li><code>ASH</code> Neutral ASP</li>
-		<li><code>CYX</code> SS-bonded CYS</li>
-		<li><code>CYM</code> Negative CYS</li>
-		<li><code>GLH</code> Neutral GLU</li>
-		<li><code>HIP</code> Positive HIS</li>
-		<li><code>HID</code> Neutral HIS, proton HD1 present</li>
-		<li><code>HIE</code> Neutral HIS, proton HE2 present</li>
-		<li><code>LYN</code> Neutral LYS</li>
-		<li><code>TYM</code>Negative TYR</li>
-	</ul>
 
 	<hr />
 
