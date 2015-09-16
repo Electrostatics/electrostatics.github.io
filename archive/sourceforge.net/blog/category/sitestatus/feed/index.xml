@@ -1,0 +1,436 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+	xmlns:media="http://search.yahoo.com/mrss/"
+>
+
+<channel>
+	<title>SourceForge Community Blog &#187; Site Status</title>
+	<atom:link href="http://sourceforge.net/blog/category/sitestatus/feed/" rel="self" type="application/rss+xml" />
+	<link>http://sourceforge.net/blog</link>
+	<description>What&#039;s new on SourceForge.net</description>
+	<lastBuildDate>Wed, 16 Sep 2015 05:08:53 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=4.2.1</generator>
+	<copyright>Copyright &#xA9; SourceForge Community Blog 2012 </copyright>
+	<managingEditor>communityteam@sourceforge.net (SourceForge Community Blog)</managingEditor>
+	<webMaster>communityteam@sourceforge.net (SourceForge Community Blog)</webMaster>
+	<image>
+		<url>http://plenz-9050.sb.sf.net/wp-content/plugins/podpress/images/powered_by_podpress.jpg</url>
+		<title>SourceForge Community Blog</title>
+		<link>http://sourceforge.net/blog</link>
+		<width>144</width>
+		<height>144</height>
+	</image>
+	<itunes:subtitle></itunes:subtitle>
+	<itunes:summary>What&#039;s new on SourceForge.net</itunes:summary>
+	<itunes:keywords></itunes:keywords>
+	<itunes:category text="Society &#38; Culture" />
+	<itunes:author>SourceForge Community Blog</itunes:author>
+	<itunes:owner>
+		<itunes:name>SourceForge Community Blog</itunes:name>
+		<itunes:email>communityteam@sourceforge.net</itunes:email>
+	</itunes:owner>
+	<itunes:block>no</itunes:block>
+	<itunes:explicit>no</itunes:explicit>
+	<itunes:image href="http://plenz-9050.sb.sf.net/wp-content/plugins/podpress/images/powered_by_podpress_large.jpg" />
+	<item>
+		<title>SourceForge Strengthens Anti-Spam Controls</title>
+		<link>http://sourceforge.net/blog/sourceforge-strengthens-anti-spam-controls/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-strengthens-anti-spam-controls</link>
+		<comments>http://sourceforge.net/blog/sourceforge-strengthens-anti-spam-controls/#comments</comments>
+		<pubDate>Tue, 11 Aug 2015 16:32:46 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12249</guid>
+		<description><![CDATA[We care about content quality and have recently stepped-up our efforts to analyze Terms of Use agreement abuse patterns.  One problem area we&#8217;re focused on is pure spam projects registered and then reused to sell shoes, herbal products, and home goods; or left empty for future reuse.  Automated controls are key at our scale.  As most [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>We care about content quality and have recently stepped-up our efforts to analyze Terms of Use agreement abuse patterns.  One problem area we&#8217;re focused on is pure spam projects registered and then reused to sell shoes, herbal products, and home goods; or left empty for future reuse.  Automated controls are key at our scale.  As most of this abuse occurs for newly-registered users, but we do not want to impede legitimate project registration or established devs, starting today we will perform phone-based verification the first time a user account is used to register a project for hosting at SourceForge.</p>
+<p>Some of the finer points of our implementation, focused on achieving results while keeping the smallest possible data footprint:</p>
+<ul>
+<li>Phone-based verification is performed using a reputable third-party provider (Nexmo).</li>
+<li>We store a one-way hashed (SHA1) copy of phone numbers in our database, allowing us to identify repeat offenders using multiple accounts.</li>
+<li>We do not store clear phone numbers in our database &#8212; numbers are used for verification only at time of first project registration.</li>
+<li>Nexmo maintains transaction logs containing phone numbers, available to us for diagnosis of PIN code delivery problems.</li>
+<li>Verification PIN codes are transmitted by SMS or voice and are good for five minutes.</li>
+</ul>
+<p>We have baseline registration metrics and will evaluate the effectiveness of this control over the next few days.  We&#8217;ll keep an eye out for issues during this rollout &#8212; feel free to contact us via Twitter <a href="twitter.com/sfnet_ops">@sfnet_ops</a> or via ticket at <a href="https://sourceforge.net/p/forge/site-support/new/" target="_blank">https://sourceforge.net/p/<wbr />forge/site-support/new/</a></p>
+<p>Thanks for your continued support!</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-strengthens-anti-spam-controls/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Infrastructure and Service Restoration update for 7/31</title>
+		<link>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-731/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-infrastructure-and-service-restoration-update-for-731</link>
+		<comments>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-731/#comments</comments>
+		<pubDate>Fri, 31 Jul 2015 23:39:38 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12219</guid>
+		<description><![CDATA[On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault. Work has continued 24×7 on service restoration. Updates have been provided as each key service component was restored. We’ve provided four prior updates (7/18, 7/22, 7/24, 7/28) summarizing our infrastructure and service restoration status. This is our fifth and final large update for this [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault. Work has continued 24×7 on service restoration. Updates have been provided as each key service component was restored. We’ve provided four prior updates (<a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration/">7/18</a>, <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/">7/22</a>, <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/">7/24</a>, <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-728/" target="_blank">7/28</a>) summarizing our infrastructure and service restoration status. This is our fifth and final large update for this incident.</p>
+<p><strong>As of 7/31, all Slashdot Media sites and services have been restored.</strong></p>
+<p>Activity since our 7/28 full update:</p>
+<ul>
+<li>SourceForge file upload capability was restored to service on 7/31, matching our announced ETA.</li>
+<li>SourceForge CVS service, non-Allura-backed Bazaar (bzr) SCM service, and interactive shell service were restored on 7/31, ahead of our announced ETA.</li>
+</ul>
+<p>SourceForge staff will continue to monitor and respond to the support ticket queue.  If you are in need of support, please submit a ticket at: <a href="https://sourceforge.net/p/forge/site-support/new/" target="_blank">https://sourceforge.net/p/forge/site-support/new/</a></p>
+<p>Root cause analysis (RCA) for this incident has been formed.  Slashdot Media teams will continue to meet next week to complete preparation of recommendations and post-mortem documentation.  Additional information to be provided to the community via this blog.</p>
+<p>Thank you for your continued support and patience.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-731/feed/</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Infrastructure and Service Restoration update for 7/28</title>
+		<link>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-728/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-infrastructure-and-service-restoration-update-for-728</link>
+		<comments>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-728/#comments</comments>
+		<pubDate>Wed, 29 Jul 2015 19:01:21 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12191</guid>
+		<description><![CDATA[On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault. Work has continued 24×7 on service restoration. Updates have been provided as each key service component was restored. We’ve provided two prior updates (7/18, 7/22, 7/24) summarizing our infrastructure and service restoration status. This is our fourth large update. The format for [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault. Work has continued 24×7 on service restoration. Updates have been provided as each key service component was restored. We’ve provided two prior updates (<a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration/">7/18</a>, <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/">7/22</a>, <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/">7/24</a>) summarizing our infrastructure and service restoration status. This is our fourth large update.</p>
+<p><em>The format for this update has changed.</em> Since we are well-past the 50% mark on service restoration, we will be providing updates only on service outages mitigated since 7/24 and ETA detail on outstanding service outages.</p>
+<p>All services except SourceForge Developer Services were fully restored on or before 7/24. Services are online except those listed here as outstanding. For full service listing, see our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/">7/24 update</a>.</p>
+<p><strong>Recently restored</strong></p>
+<ul>
+<li>Project Web service for k* projects is back online.</li>
+<li>Allura-backed Subversion service is online</li>
+<li>Classic (non-Allura) Git service is online.</li>
+<li>Classic (non-Allura) Subversion (SVN) service is online.</li>
+<li>Classic (non-Allura) Mercurial (Hg) service is online.</li>
+</ul>
+<p><strong>Outstanding</strong></p>
+<ul>
+<li>File upload service data has been reconstructed and is pending final copying, ETA for service restoration is end of day 7/31.</li>
+<li>Classic (non-Allura) Bzr service is pending data validation. ETA for service restoration is end of day 8/3. Dataset is undergoing analysis, particularly to identify previously-migrated repositories.</li>
+<li>CVS service data is pending validation, and infrastructure is being brought back online. ETA for service restoration is end of day 8/3. Data analysis is in-progress, to be followed by restore.  Validation of CVS data requires a greater degree of manual validation than other SCMs.</li>
+<li>Interactive shell service is offline pending availability of all other service data. This service will be the last to come online. ETA for service restoration is end of day 8/3.</li>
+</ul>
+<p><strong>Additional notes</strong></p>
+<ul>
+<li>Targeted communications were sent to projects using Allura-backed Subversion service where we were able to identify commits occurred between time of backup and time of incident.  These projects were supplied commit metadata (committer, date, commit message) to aid in re-capture of these changes.</li>
+<li>Post-mortem activity is anticipated after data restoration is completed.</li>
+<li>Scheduled (and pre-announced) downtime of Developer Services occurred on 7/28 to support maintenance on our NFS servers. This downtime was completed successfully and ahead of schedule.</li>
+<li>One additional Ceph-backed database is being migrated to the recently-provisioned SSD-backed database cluster.</li>
+<li>Additional storage has been onboarded to support service restoration activities. In some cases we currently have three copies of production data to maintain during restoration.</li>
+<li>Users on “Classic” non-Allura-backed SCM services should anticipate an upcoming pre-announced migration to Allura-backed service (which was restored first).</li>
+</ul>
+<p>Work continues 24×7. Thank you for your continued support and patience.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-728/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Classic Hg and Git service online</title>
+		<link>http://sourceforge.net/blog/sourceforge-classic-hg-and-git-service-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-classic-hg-and-git-service-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-classic-hg-and-git-service-online/#comments</comments>
+		<pubDate>Tue, 28 Jul 2015 22:30:25 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12185</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge-hosted non-Allura-backed Hg and Git repositories have been restored to service as of 7/28. In addition to other checks, a representative sample of data has been tested and a functional test performed. Please contact the SourceForge Support team (https://sourceforge.net/support/) if you have any questions [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge-hosted non-Allura-backed Hg and Git repositories have been restored to service as of 7/28. In addition to other checks, a representative sample of data has been tested and a functional test performed. Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your Hg repository.</p>
+<p>Please note that all Hg and Git repositories (both Allura-backed and non-Allura-backed) are now online.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-classic-hg-and-git-service-online/feed/</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Subversion repository gap notifications by email</title>
+		<link>http://sourceforge.net/blog/subversion-repository-gap-notifications-by-email/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=subversion-repository-gap-notifications-by-email</link>
+		<comments>http://sourceforge.net/blog/subversion-repository-gap-notifications-by-email/#comments</comments>
+		<pubDate>Sun, 26 Jul 2015 22:48:26 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12162</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge Subversion service restoration was completed yesterday (7/25).  Additional repository analysis was completed today (7/26) to identify projects whose latest commits occurred between the backup restore point and the storage incident.  To identify these repositories, we compared the number of the highest revision on disk [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge Subversion service restoration was completed yesterday (7/25).  Additional repository analysis was completed today (7/26) to identify projects whose latest commits occurred between the backup restore point and the storage incident.  To identify these repositories, we compared the number of the highest revision on disk to the highest revision seen by our repository tracking code (which stores metadata to a database).</p>
+<p>Through this process we identified 497 Subversion repositories which require project action to capture previously-committed data which was not included in the latest backup.  Emails are currently being sent to the developers and administrators for these projects (delivery in the next ~hour), including a recent committer, timestamp and commit message log to aid in remediating repository gaps.</p>
+<p>If you have any follow-up questions or concerns, please contact the SourceForge Support team by submitting a ticket at: <a href="https://sourceforge.net/p/forge/site-support/new/" target="_blank">https://sourceforge.net/p/<wbr />forge/site-support/new/</a></p>
+<p>Work continues 24×7 on restoration of file upload service, CVS, and non-Allura SCM repositories.  Restore of CVS and non-Allura SCM repository data is in-progress.  File upload service data has completed summing and mount reconstruction is pending; 6 TB of data has been reconstructed in the past 8 hours.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/subversion-repository-gap-notifications-by-email/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Subversion (SVN) service online</title>
+		<link>http://sourceforge.net/blog/sourceforge-subversion-svn-service-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-subversion-svn-service-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-subversion-svn-service-online/#comments</comments>
+		<pubDate>Sat, 25 Jul 2015 23:36:53 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12158</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge-hosted Allura-backed Subversion (SVN) repositories have been restored to service as of 7/25. In addition to other checks, a representative sample of data has been tested using &#8216;svnadmin verify&#8217; and a functional test performed (commit and/or checkout via http, ro svn, rw svn+ssh, etc.). Please contact the [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge-hosted Allura-backed Subversion (SVN) repositories have been restored to service as of 7/25. In addition to other checks, a representative sample of data has been tested using &#8216;svnadmin verify&#8217; and a functional test performed (commit and/or checkout via http, ro svn, rw svn+ssh, etc.). Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/" target="_blank">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your SVN repository.</p>
+<p>Please note that SVN repositories not previously migrated to the Allura platform remain offline at this time and will be restored separately. See the above full update for information on restoration of other SCM platforms.</p>
+<p>Work continues 24&#215;7 on restoration of file upload service, CVS, and non-Allura SCM repositories.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-subversion-svn-service-online/feed/</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Infrastructure and Service Restoration update for 7/24</title>
+		<link>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-infrastructure-and-service-restoration-update-for-724</link>
+		<comments>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/#comments</comments>
+		<pubDate>Fri, 24 Jul 2015 17:38:07 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12155</guid>
+		<description><![CDATA[On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault.  Work has continued 24×7 on service restoration.  Updates have been provided as each key service component was restored. We&#8217;ve provided two prior updates (7/18 and 7/22) summarizing our infrastructure and service restoration status.  This is our third large update. High-level status of [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault.  Work has continued 24×7 on service restoration.  Updates have been provided as each key service component was restored. We&#8217;ve provided two prior updates (7/18 and 7/22) summarizing our infrastructure and service restoration status.  This is our third large update.</p>
+<div>High-level status of all Slashdot Media sites and services as of 7/24:</div>
+<div>
+<ul>
+<li>Slashdotmedia.com – <b>online</b></li>
+<li>Slashdot.org – <b>online</b></li>
+<li>Slashdot Engineering infrastructure – <b>online</b></li>
+<li>Slashdot Media’s WordPress sites – <b>online</b></li>
+<li>SourceForge Engineering infrastructure – <b>online</b></li>
+<li>Slashdot Media operations infrastructure – <b>online</b></li>
+<li>SourceForge databases – <b>online</b></li>
+<li>SourceForge download service – <b>online</b></li>
+<li>SourceForge Directory services (project summary page, download pages, search, front page, directory) – <b>online</b></li>
+<li>SourceForge Developer Services – <b>partially restored (see detailed status below)</b></li>
+</ul>
+<div>In-depth status of SourceForge Developer Services as of 7/24:</div>
+<ul>
+<li>SourceForge site’s Developer pages backed by Apache Allura (tickets, wikis, forums) – <b>online</b></li>
+<li>SourceForge Mailing List services (email, web archives, archiving) – <b>online </b>as of 7/22, archiving restored 7/23</li>
+<li>SourceForge Project Database (MySQL) service &#8212; <b>online</b></li>
+<li>SourceForge Project Web service – <b>online </b>as of 7/22, except k* projects (restore in-progress); session store corrected 7/23</li>
+<li>SourceForge User Web service – <b>online</b> as of 7/22</li>
+<li>SourceForge Project Web file management &#8212; <b>online</b> as of 7/23</li>
+<li>SourceForge Allura Git service – <b>online</b> as of 7/22.</li>
+<li>SourceForge Allura Mercurial (Hg) service – <b>online</b> as of 7/23</li>
+<li>SourceForge File Upload service – <b>offline</b>, filesystem checks complete, cryptographic summing projected to complete 7/24. Prep of data for service resumption in-progress.  <u>ETA to follow</u> once I/O performance calculated during mount reconstruction.</li>
+<li>SourceForge Allura Subversion (SVN) service – <b>offline,</b> filesystem checks complete, data restoration has completed 22 letters (4 remain). This is our current restore priority. We project restore of data to complete by 7/25, to be followed by data validation and restore of service.  <u>ETA to follow</u> once I/O performance calculated during data validation.</li>
+<li>SourceForge CVS service &#8212; <b>offline</b>, filesystem checks and data restoration to commence after Allura-backed SVN service is restored.  <u>ETA to follow</u> once SVN restore completed.  CVS is 20% of the size of SVN data, but requires a higher degree of manual validation; this data point will be used to estimate restoration timetable.</li>
+<li>SourceForge non-Allura SCM platforms &#8212; <b>offline</b>, filesystem checks and data restoration to occur once CVS restoration is under way.  <u>ETA to follow</u> once SVN restore completed.  This service will be restored last.  Non-Allura SCM data set is substantially smaller than the size of SVN data; this data point will be used to estimate restoration timetable.</li>
+</ul>
+<p>Engagement with our storage platform vendor will continue, including review of captured data. Post-mortem activity is anticipated after data restoration is completed. The team continues split operation between data restoration and service restoration as to expedite return to full service.</p>
+<p>Knowledge capture has been continuous throughout this outage and will drive continuous improvement.  A few key points resulting from this process to date:</p>
+<ul>
+<li>Transition of two SourceForge databases from centralized storage platform SSD to local storage SSD (Intel P3600&#8217;s) was completed 7/24.  Function and performance validated.</li>
+<li>Review of I/O workloads is ongoing to further expedite service restoration.</li>
+<li>Users on &#8220;Classic&#8221; non-Allura-backed SCM services should anticipate an upcoming pre-announced migration to Allura-backed service (which was restored first).</li>
+<li>Additional storage is being onboarded at this time. In some cases we currently have three copies of production data to maintain during restoration.</li>
+</ul>
+</div>
+<div>
+<p>We intend to continue our existing communications approach — incremental updates will be provided on individual service restoration, and large updates (like this one) will be provided with additional metrics and technical details as work progresses.</p>
+</div>
+<p>Work continues 24×7 on restoration of SourceForge file upload and yet-unrestored SCM services (per above list).</p>
+<p>Thank you for your continued support and patience.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-724/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		</item>
+		<item>
+		<title>Incremental update on project and developer web</title>
+		<link>http://sourceforge.net/blog/incremental-update-on-project-and-developer-web/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=incremental-update-on-project-and-developer-web</link>
+		<comments>http://sourceforge.net/blog/incremental-update-on-project-and-developer-web/#comments</comments>
+		<pubDate>Thu, 23 Jul 2015 21:24:51 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12152</guid>
+		<description><![CDATA[This is an update on our prior relaunch of project and developer web service. SourceForge project web and DB management via the SourceForge site are live as of 7/23. SourceForge developer web service was restored on 7/22 except for b* users.  b* user developer web is live as of 7/23.]]></description>
+				<content:encoded><![CDATA[<p>This is an update on our <a href="http://sourceforge.net/blog/sourceforge-project-web-service-online/" target="_blank">prior relaunch of project and developer web service</a>.</p>
+<p>SourceForge project web and DB management via the SourceForge site are live as of 7/23.</p>
+<p>SourceForge developer web service was restored on 7/22 except for b* users.  b* user developer web is live as of 7/23.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/incremental-update-on-project-and-developer-web/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Mercurial (Hg) service online</title>
+		<link>http://sourceforge.net/blog/sourceforge-mercurial-hg-service-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-mercurial-hg-service-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-mercurial-hg-service-online/#comments</comments>
+		<pubDate>Thu, 23 Jul 2015 20:52:56 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12148</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge-hosted Allura-backed Hg repositories have been restored to service as of 7/23. In addition to other checks, a representative sample of data has been tested using &#8216;hg verify&#8217; and a functional test performed (&#8216;hg clone&#8217;, forking, history, snapshot generation, etc.). Please contact the SourceForge Support [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge-hosted Allura-backed Hg repositories have been restored to service as of 7/23. In addition to other checks, a representative sample of data has been tested using &#8216;hg verify&#8217; and a functional test performed (&#8216;hg clone&#8217;, forking, history, snapshot generation, etc.). Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/" target="_blank">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your Hg repository.</p>
+<p>Please note that Hg repositories not previously migrated to the Allura platform remain offline at this time and will be restored separately. See the above full update for information on restoration of other SCM platforms.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-mercurial-hg-service-online/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge project web file management online</title>
+		<link>http://sourceforge.net/blog/sourceforge-project-web-file-management-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-project-web-file-management-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-project-web-file-management-online/#comments</comments>
+		<pubDate>Thu, 23 Jul 2015 17:49:08 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12143</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge project web content may now be managed via web.sourceforge.net (or frs.sourceforge.net) via scp, sftp, and rsync over ssh.  Interactive shell service (ssh) remains offline.  Access to file release data via this interface remains offline (until we restore file upload service). All SourceForge project [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge project web content may now be managed via web.sourceforge.net (or frs.sourceforge.net) via scp, sftp, and rsync over ssh.  Interactive shell service (ssh) remains offline.  Access to file release data via this interface remains offline (until we restore file upload service).</p>
+<p>All SourceForge project web sites except k* projects, and developer web sites except b* users, including custom VHOSTs, were restored to service on 7/22.</p>
+<p>On 7/23, a repair was also made to the session store for project web; sessions are now working correctly.</p>
+<p>Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/" target="_blank">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your project web or database content.</p>
+<p>Work continues 24&#215;7 on file upload and SCM service restoration.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-project-web-file-management-online/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge project web service online</title>
+		<link>http://sourceforge.net/blog/sourceforge-project-web-service-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-project-web-service-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-project-web-service-online/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 23:23:28 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12139</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge project web service (except k* projects), custom VHOST service, MySQL database service, and user web service (except b* users) have been restored as of 7/22.  SourceForge project shell service remains offline at this time. Please contact the SourceForge Support team (https://sourceforge.net/support/) if you have [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge project web service (except k* projects), custom VHOST service, MySQL database service, and user web service (except b* users) have been restored as of 7/22.  SourceForge project shell service remains offline at this time. Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/" target="_blank">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your project web or database content.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-project-web-service-online/feed/</wfw:commentRss>
+		<slash:comments>3</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Git service online</title>
+		<link>http://sourceforge.net/blog/sourceforge-git-service-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-git-service-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-git-service-online/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 21:40:25 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12135</guid>
+		<description><![CDATA[This is a service-specific update to our most recent full update. SourceForge-hosted Allura-backed Git repositories have been restored to service as of 7/22. In addition to other checks, a representative sample of data has been tested using &#8216;git fsck&#8217;, and functional testing has been performed to confirm proper service operation (push/pull on ssh, git, and [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>This is a service-specific update to our <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/" target="_blank">most recent full update</a>.</p>
+<p>SourceForge-hosted Allura-backed Git repositories have been restored to service as of 7/22. In addition to other checks, a representative sample of data has been tested using &#8216;git fsck&#8217;, and functional testing has been performed to confirm proper service operation (push/pull on ssh, git, and https). Please contact the SourceForge Support team (<a href="https://sourceforge.net/support/" target="_blank">https://sourceforge.net/support/</a>) if you have any questions or concerns regarding your Git repository.</p>
+<p>Please note that Git repositories not previously migrated to the Allura platform remain offline at this time and will be restored separately. See the above full update for information on restoration of other SCM platforms.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-git-service-online/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge Infrastructure and Service Restoration update for 7/22</title>
+		<link>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-infrastructure-and-service-restoration-update-for-722</link>
+		<comments>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 18:27:11 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12128</guid>
+		<description><![CDATA[On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault.  Work has continued 24&#215;7 on service restoration.  Updates have been provided as each key service component was restored.  We&#8217;ve provided one large update summarizing our infrastructure and service restoration status, and are providing a second large update with this post. High-level status [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p>On 7/16, Slashdot Media sites (including Slashdot and SourceForge) experienced a storage fault.  Work has continued 24&#215;7 on service restoration.  Updates have been provided as each key service component was restored.  We&#8217;ve provided <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration/" target="_blank">one large update</a> summarizing our infrastructure and service restoration status, and are providing a second large update with this post.</p>
+<div>High-level status of all Slashdot Media sites and services as of 7/22:</div>
+<div>
+<ul>
+<li>Slashdotmedia.com &#8211; <b>online</b></li>
+<li>Slashdot.org &#8211; <b>online</b></li>
+<li>Slashdot Engineering infrastructure &#8211; <b>online</b></li>
+<li>Slashdot Media&#8217;s WordPress sites &#8211; <b>online</b></li>
+<li>SourceForge Engineering infrastructure &#8211; <b>online</b></li>
+<li>Slashdot Media operations infrastructure &#8211; <b>online</b></li>
+<li>SourceForge databases &#8211; <b>online</b></li>
+<li>SourceForge download service &#8211; <b>online</b></li>
+<li>SourceForge Directory services (project summary page, download pages, search, front page, directory) &#8211; <b>online</b></li>
+<li>SourceForge Developer Services &#8211; <b>partially restored (see detailed status below)</b></li>
+</ul>
+<div>In-depth status of SourceForge Developer Services as of 7/22:</div>
+<ul>
+<li>SourceForge site&#8217;s Developer pages backed by Apache Allura (tickets, wikis, forums) &#8211; <b>online</b></li>
+<li>SourceForge Mailing List services (email, web archives, archiving) &#8211; <b>online</b></li>
+<li>SourceForge Project Web service &#8211; <b>offline</b>, filesystem checks complete, 22 project letters restored to date (all except<i> jkms</i>), data validation and per-letter service resumption pending, <u>ETA 7/22</u> for restored letters, remaining four to follow pending restore.</li>
+<li>SourceForge User Web service &#8211; <b>offline</b>, filesystem checks complete, 23 user letters restored to date (all except <i>bhl</i>), data validation pending, <u>ETA 7/23</u>, service resumption planned when all letters ready</li>
+<li>SourceForge File Upload service &#8211; <b>offline</b>, filesystem checks complete, cryptographic summing in-progress, data preparation in-progress. Filesystem checks complete.  Cryptographic sums of files on disk at 75% completion with expected summing completion on 7/23. Data preparation in-progress and at 10% completion, ETA to follow (to be re-estimated when we allocate increased I/O to the data prep tasks on 7/23).</li>
+<li>SourceForge Allura Git service &#8211; <b>offline</b>, filesystem checks complete, all project data restored, data validation (repository presence check 100%, repository data presence check 100%, &#8216;git fsck&#8217; of 10% representative from non-empty repositories 100%).  Git validation was aided by its feature set.  Final data validation pending and <u>ETA 7/22</u> for resumption of service.</li>
+<li>SourceForge Allura Mercurial (Hg) service &#8211; <b>offline</b>, filesystem checks complete, all project data restored.  Data validation (repository presence check, repository data presence check, and repository validation to occur and <u>ETA 7/23</u> for service resumption.</li>
+<li>SourceForge Allura Subversion (SVN) service &#8211; <b>offline,</b> filesystem checks complete, data restoration at 50%.  Restoration priority after Git and Hg services.  <u>ETA TBD</u>, Future update will provide ETA.</li>
+<li>SourceForge non-Allura SCM platforms and CVS service &#8211; <b>offline, </b>filesystems checks and data restoration have not commenced. Priority given to modern SCMs which include internal data validation mechanisms; and those repositories fully backed by Apache Allura. Service restoration <u>ETA TBD</u>.</li>
+</ul>
+<p>Engagement with our storage platform vendor will continue and post-mortem activity is anticipated after data restoration is completed. The team continues split operation between data restoration and service restoration as to expedite return to full service.  Knowledge capture has been continuous throughout this outage and will drive continuous improvement.</p>
+</div>
+<div>
+<div></div>
+<p>We intend to continue our existing communications approach &#8212; incremental updates will be provided on individual service restoration, and large updates (like this one) will be provided with additional metrics and technical details as work progresses.</p></div>
+</p>
+<div></div>
+<p>Work continues 24&#215;7 on restoration of SourceForge file upload, SCM, and project web services.</p>
+<div></div>
+<p>Thank you for your continued support and patience.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration-update-for-722/feed/</wfw:commentRss>
+		<slash:comments>29</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge mailing lists online</title>
+		<link>http://sourceforge.net/blog/sourceforge-mailing-lists-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-mailing-lists-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-mailing-lists-online/#comments</comments>
+		<pubDate>Wed, 22 Jul 2015 15:49:15 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12120</guid>
+		<description><![CDATA[This is an update in our ongoing restoration of SourceForge developer services.  For our prior in-depth update, see the SourceForge blog. SourceForge mailing lists (@lists.sourceforge.net) were restored to service Tuesday evening. It will be necessary to resend any mails that may have bounced while mailing list service was offline. Some messages from 2015-07-16 may be delivered [&#8230;]]]></description>
+				<content:encoded><![CDATA[<p><em>This is an update in our ongoing restoration of SourceForge developer services.  For our prior in-depth update, see the <a href="http://sourceforge.net/blog/sourceforge-infrastructure-and-service-restoration/" target="_blank">SourceForge blog</a>.</em></p>
+<p><strong>SourceForge mailing lists</strong> (@lists.sourceforge.net) were restored to service Tuesday evening. It will be necessary to resend any mails that may have bounced while mailing list service was offline. Some messages from 2015-07-16 may be delivered twice (once on the 16th and once today).</p>
+<p><strong>SourceForge mailing list archive web access</strong> (via web interface on the SourceForge site) was restored to service previously.</p>
+<p><strong>SourceForge mailing list archiving</strong> (placing new messages in the archive database) was restored to service Wednesday morning. The list archiver is currently processing messages; anticipate some delay in archive.</p>
+<p><strong>SourceForge mailing list management</strong> functions via the SourceForge site are back online as of Wednesday morning.</p>
+<p>Work continues 24×7 on restoration of SCM (git, hg, bzr, svn, cvs) services, Project Web/DB/Shell services, and file upload service. Further in-depth update to occur today (Wednesday).</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-mailing-lists-online/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		</item>
+		<item>
+		<title>SourceForge developer pages online</title>
+		<link>http://sourceforge.net/blog/sourceforge-developer-pages-back-online/?utm_source=rss&#038;utm_medium=rss&#038;utm_campaign=sourceforge-developer-pages-back-online</link>
+		<comments>http://sourceforge.net/blog/sourceforge-developer-pages-back-online/#comments</comments>
+		<pubDate>Mon, 20 Jul 2015 23:41:37 +0000</pubDate>
+		<dc:creator><![CDATA[Community Team]]></dc:creator>
+				<category><![CDATA[Site Status]]></category>
+		<category><![CDATA[Status Updates]]></category>
+
+		<guid isPermaLink="false">http://sourceforge.net/blog/?p=12107</guid>
+		<description><![CDATA[SourceForge developer pages backed by Apache Allura (tickets, wiki, forums, mailing list archives) are back online, along with SourceForge directory pages and downloads restored to service previously. Work continues 24&#215;7 on restoration of SCM (git, hg, bzr, svn, cvs) services, Project Web/DB/Shell services, file upload service, and Mailing List services.]]></description>
+				<content:encoded><![CDATA[<p>SourceForge developer pages backed by Apache Allura (tickets, wiki, forums, mailing list archives) are back online, along with SourceForge directory pages and downloads restored to service previously. Work continues 24&#215;7 on restoration of SCM (git, hg, bzr, svn, cvs) services, Project Web/DB/Shell services, file upload service, and Mailing List services.</p>
+]]></content:encoded>
+			<wfw:commentRss>http://sourceforge.net/blog/sourceforge-developer-pages-back-online/feed/</wfw:commentRss>
+		<slash:comments>40</slash:comments>
+		</item>
+	</channel>
+</rss>

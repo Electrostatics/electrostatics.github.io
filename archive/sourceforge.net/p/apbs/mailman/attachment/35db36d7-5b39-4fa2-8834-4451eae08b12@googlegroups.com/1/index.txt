@@ -1,0 +1,21 @@
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_2013_622872330.1431831726065"
+
+------=_Part_2013_622872330.1431831726065
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi everyone, 
+
+I want to create a potential energy profile along the z axis in an info 
+channel. I already run APBS with the pymol plugin and I have the 
+output-file.dx but I don't know how can I create the profile.
+
+Thanks for the help
+
+------=_Part_2013_622872330.1431831726065
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi everyone,&nbsp;<div><br></div><div>I want to create a potential energy profile along the z axis in an info channel. I already run APBS with the pymol plugin and I have the output-file.dx but I don't know how can I create the profile.</div><div><br></div><div>Thanks for the help</div></div>
+------=_Part_2013_622872330.1431831726065--

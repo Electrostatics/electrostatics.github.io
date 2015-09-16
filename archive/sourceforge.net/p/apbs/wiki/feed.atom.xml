@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>Recent changes to wiki</title><link href="http://sourceforge.net/p/apbs/wiki/" rel="alternate"></link><link href="http://sourceforge.net/p/apbs/wiki/feed.atom" rel="self"></link><id>http://sourceforge.net/p/apbs/wiki/</id><updated>2012-12-06T17:40:24Z</updated><entry><title>WikiPage Home modified by Nathan Baker</title><link href="http://sourceforge.net/p/apbs/wiki/Home/" rel="alternate"></link><updated>2012-12-06T17:40:24Z</updated><published>2012-12-06T17:40:24Z</published><author><name>Nathan Baker</name><uri>http://sourceforge.net/u/sobolevnrm/</uri></author><id>http://sourceforge.net7c548b18b1b509c6cbc3a6ebf02446136ec408d8</id><summary type="html">Welcome to your wiki!
+
+This is the default page, edit it as you see fit. To add a new page simply reference it within brackets, e.g.: [SamplePage].
+
+The wiki uses [Markdown](/p/apbs/wiki/markdown_syntax/) syntax.
+
+[[project_admins]]
+[[download_button]]
+</summary></entry></feed>

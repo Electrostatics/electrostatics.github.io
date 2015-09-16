@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>Recent posts by Kyle Monson</title><link href="http://sourceforge.net/u/kmonson/" rel="alternate"></link><link href="http://sourceforge.net/u/kmonson/profile/feed.atom" rel="self"></link><id>http://sourceforge.net/u/kmonson/</id><updated>2014-11-24T17:02:50Z</updated><entry><title>Discussion for Home page</title><link href="http://sourceforge.net/p/pdb2pqr/wiki/Home/" rel="alternate"></link><updated>2014-11-24T17:02:50Z</updated><published>2014-11-24T17:02:50Z</published><author><name>Kyle Monson</name><uri>http://sourceforge.net/u/kmonson/</uri></author><id>http://sourceforge.neta5341efe3baec38d81592647fe19a6869704670d</id><summary type="html">&lt;div class="markdown_content"&gt;&lt;p&gt;Bin Tu,&lt;/p&gt;
+&lt;p&gt;The appropriate place to ask for help is on the mailing list at &lt;/p&gt;
+&lt;p&gt;pdb2pqr-users@lists.sourceforge.net&lt;/p&gt;
+&lt;p&gt;Post your question there and I'll reply to it on that forum. After you have sent your message I will delete these comments.&lt;/p&gt;
+&lt;p&gt;-Kyle&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>XRC generation uses class "unknown" for search control.</title><link href="http://sourceforge.net/p/wxformbuilder/bugs/137/" rel="alternate"></link><updated>2014-04-06T16:44:26Z</updated><published>2014-04-06T16:44:26Z</published><author><name>Kyle Monson</name><uri>http://sourceforge.net/u/kmonson/</uri></author><id>http://sourceforge.net9db232bcbe9018479607ec334dd099c429b14423</id><summary type="html">&lt;div class="markdown_content"&gt;&lt;p&gt;When a wxSearchCtrl is added to a project the associated XRC code for the control is not correct. &lt;/p&gt;
+&lt;p&gt;Actual:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="o"&gt;&amp;lt;&lt;/span&gt;&lt;span class="n"&gt;object&lt;/span&gt; &lt;span class="n"&gt;class&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;unknown&amp;quot;&lt;/span&gt; &lt;span class="n"&gt;name&lt;/span&gt;&lt;span class="o"&gt;=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;m_searchCtrl_word_list&amp;quot;&lt;/span&gt; &lt;span class="o"&gt;/&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Expected:&lt;/p&gt;
+&lt;div class="codehilite"&gt;&lt;pre&gt;&lt;span class="nt"&gt;&amp;lt;object&lt;/span&gt; &lt;span class="na"&gt;class=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;wxSearchCtrl&amp;quot;&lt;/span&gt; &lt;span class="na"&gt;name=&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;m_searchCtrl_word_list&amp;quot;&lt;/span&gt;&lt;span class="nt"&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class="nt"&gt;&amp;lt;style&amp;gt;&lt;/span&gt;wxTE_NOHIDESEL|wxTE_PROCESS_ENTER&lt;span class="nt"&gt;&amp;lt;/style&amp;gt;&lt;/span&gt;
+&lt;span class="nt"&gt;&amp;lt;/object&amp;gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The Python code created appears correct.&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>XRC generation uses class "unknown" for search control.</title><link href="http://sourceforge.net/p/wxformbuilder/bugs/137/" rel="alternate"></link><updated>2014-04-06T16:44:26Z</updated><published>2014-04-06T16:44:26Z</published><author><name>Kyle Monson</name><uri>http://sourceforge.net/u/kmonson/</uri></author><id>http://sourceforge.net870effbb04dd78238cae6fc38937cc61eced31cf</id><summary type="html">&lt;div class="markdown_content"&gt;&lt;p&gt;Ticket 137 has been modified: XRC generation uses class "unknown" for search control.&lt;br /&gt;
+Edited By: Michal Bližňák (michalbliznak)&lt;br /&gt;
+Status updated: u'open' =&amp;gt; u'closed-fixed'&lt;/p&gt;&lt;/div&gt;</summary></entry><entry><title>WikiPage Home modified by Kyle Monson</title><link href="http://sourceforge.net/u/kmonson/home/Home/" rel="alternate"></link><updated>2011-11-23T17:48:01Z</updated><published>2011-11-23T17:48:01Z</published><author><name>Kyle Monson</name><uri>http://sourceforge.net/u/kmonson/</uri></author><id>http://sourceforge.netda92d150848aa223df50776ea5d725c8b9235f9c</id><summary type="html">Welcome to your wiki!
+
+This is the default page, edit it as you see fit. To add a page simply reference it within brackets, e.g.: [SamplePage].
+
+The wiki uses [Markdown](/u/kmonson/home/markdown_syntax/) syntax.
+</summary></entry></feed>

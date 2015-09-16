@@ -1,0 +1,1013 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:files="https://sourceforge.net/api/files.rdf#" xmlns:media="http://video.search.yahoo.com/mrss/" xmlns:doap="http://usefulinc.com/ns/doap#" xmlns:sf="https://sourceforge.net/api/sfelements.rdf#" version="2.0">
+  <channel xmlns:files="https://sourceforge.net/api/files.rdf#" xmlns:media="http://video.search.yahoo.com/mrss/" xmlns:doap="http://usefulinc.com/ns/doap#" xmlns:sf="https://sourceforge.net/api/sfelements.rdf#">
+    <title>APBS</title>
+    <link>https://sourceforge.net</link>
+    <description><![CDATA[Files from APBS APBS is a software package for the numerical solution of the Poisson-Boltzmann equation, a popular continuum model for describing electrostatic interactions between molecular solutes over a wide range of length scales. &lt;http://www.poissonboltzmann.org/&gt;.
+
+Please register at http://goo.gl/LGVU5j before downloading!]]></description>
+    <pubDate>Wed, 16 Sep 2015 12:59:36 UT</pubDate>
+    <managingEditor>noreply@sourceforge.net (SourceForge.net)</managingEditor>
+    <docs>http://blogs.law.harvard.edu/tech/rss</docs>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.1/README.md]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/README.md/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/README.md/download</guid>
+      <pubDate>Fri, 15 Aug 2014 03:00:02 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.1/README.md]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">15629807</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/README.md/download" filesize="1197"><media:hash algo="md5">12be239f7d7836174c5d2be15b97c71a</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-linux64.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-linux64.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-linux64.tgz/download</guid>
+      <pubDate>Wed, 13 Aug 2014 22:50:25 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-linux64.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">15585667</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-linux64.tgz/download" filesize="63364635"><media:hash algo="md5">6e0fb76dce78dc0443f25de69d15de1f</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-win64.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-win64.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-win64.zip/download</guid>
+      <pubDate>Wed, 13 Aug 2014 22:46:59 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-win64.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">15585641</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">empty (Zip archive data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-win64.zip/download" filesize="9550676"><media:hash algo="md5">078a46548bbeeed4fb72ba84aa50268d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary.dmg]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary.dmg/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary.dmg/download</guid>
+      <pubDate>Wed, 13 Aug 2014 22:46:39 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary.dmg]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">15585639</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary.dmg/download" filesize="37316332"><media:hash algo="md5">fe4cf13d2c5418919d8dbac143ff307c</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-osx.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-osx.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-osx.tgz/download</guid>
+      <pubDate>Wed, 13 Aug 2014 22:45:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.1/APBS-1.4.1-binary-osx.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">15585637</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.1/APBS-1.4.1-binary-osx.tgz/download" filesize="85781428"><media:hash algo="md5">4bac85a97939ab7b50a6b82a10d37228</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/apbs_x64_setup.exe]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_x64_setup.exe/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_x64_setup.exe/download</guid>
+      <pubDate>Sat, 12 Jan 2013 16:30:26 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/apbs_x64_setup.exe]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">7192571</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">PE32 executable for MS Windows (GUI) Intel 80386 32-bit</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_x64_setup.exe/download" filesize="16516212"><media:hash algo="md5">5ff54d5c894574df40e8aff3e01b0d10</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/apbs_i386_setup.exe]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_i386_setup.exe/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_i386_setup.exe/download</guid>
+      <pubDate>Sat, 12 Jan 2013 16:29:17 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/apbs_i386_setup.exe]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">7192568</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">PE32 executable for MS Windows (GUI) Intel 80386 32-bit</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/apbs_i386_setup.exe/download" filesize="16516160"><media:hash algo="md5">cde5831072b6fcd4b60cf7b488952b93</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-static-x86_64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-static-x86_64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-static-x86_64.tar.gz/download</guid>
+      <pubDate>Tue, 08 Jan 2013 23:58:32 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-static-x86_64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">7180452</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-static-x86_64.tar.gz/download" filesize="25524419"><media:hash algo="md5">b5b1cf0238d5958dbd5f65a3971b39a7</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-dynamic-x86_64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-dynamic-x86_64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-dynamic-x86_64.tar.gz/download</guid>
+      <pubDate>Tue, 08 Jan 2013 23:57:42 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-dynamic-x86_64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">7180451</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-dynamic-x86_64.tar.gz/download" filesize="24383574"><media:hash algo="md5">c4835d90771420f0ee55dcbbc699a94f</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-README.txt]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-README.txt/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-README.txt/download</guid>
+      <pubDate>Thu, 08 Nov 2012 23:30:50 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-README.txt]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">6945340</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-README.txt/download" filesize="7392"><media:hash algo="md5">6326a04aaa3300a7827098b7f6328180</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-programmer_guide.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-programmer_guide.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-programmer_guide.tar.gz/download</guid>
+      <pubDate>Thu, 08 Nov 2012 21:00:00 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-programmer_guide.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">6945126</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-programmer_guide.tar.gz/download" filesize="24656040"><media:hash algo="md5">7fc404c4c0064a77418ed370e491fcba</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-source.tar.gz/download</guid>
+      <pubDate>Fri, 02 Nov 2012 16:36:58 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">6885254</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-source.tar.gz/download" filesize="29711532"><media:hash algo="md5">e0281bd44ffecb651e40687cdaa26361</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-osx.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-osx.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-osx.tar.gz/download</guid>
+      <pubDate>Fri, 02 Nov 2012 16:31:34 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-osx.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">6885250</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-osx.tar.gz/download" filesize="25733508"><media:hash algo="md5">940beff060ccdf25ae50e6fcd58bdd61</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-i386.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-i386.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-i386.tar.gz/download</guid>
+      <pubDate>Thu, 25 Oct 2012 17:19:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.4.0/APBS-1.4-linux-i386.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">6862885</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.4.0/APBS-1.4-linux-i386.tar.gz/download" filesize="25544643"><media:hash algo="md5">071e26610c04924b48f2f9caee2d9575</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/APBS-1.3.0.exe]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/APBS-1.3.0.exe/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/APBS-1.3.0.exe/download</guid>
+      <pubDate>Wed, 04 Jan 2012 16:19:06 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/APBS-1.3.0.exe]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">5548349</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">PE32 executable for MS Windows (GUI) Intel 80386 32-bit</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/APBS-1.3.0.exe/download" filesize="1510749"><media:hash algo="md5">2c297d5a3a0edf31092b9f75a6ceb5d1</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Mon, 31 Jan 2011 22:23:08 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3630517</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso/download" filesize="56098816"><media:hash algo="md5">2dc470b5018eee2f0364c4ea7b6e7ed2</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.4/README]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/README/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/README/download</guid>
+      <pubDate>Mon, 31 Jan 2011 22:08:58 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.4/README]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3630504</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.4/README/download" filesize="420"><media:hash algo="md5">61e4da7614862ac4da8caebffe961961</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-mac-univ.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-mac-univ.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-mac-univ.tar.gz/download</guid>
+      <pubDate>Thu, 11 Nov 2010 20:36:59 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-mac-univ.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3405168</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-mac-univ.tar.gz/download" filesize="53415809"><media:hash algo="md5">8d696402586be76d82c8254e4d62a915</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-pwr4.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-pwr4.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-pwr4.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:31:33 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-pwr4.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360140</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-pwr4.tar.gz/download" filesize="48279845"><media:hash algo="md5">54c83c41099c356690abd2db6b0bedb0</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-altix.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-altix.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-altix.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:30:57 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-altix.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360139</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-altix.tar.gz/download" filesize="48834953"><media:hash algo="md5">f1917c61eb690d8f2ae23448beb6a45c</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-ia64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia64.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:30:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-ia64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360137</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia64.tar.gz/download" filesize="48841993"><media:hash algo="md5">5f5dd1d97030628c43dafa22457d6d66</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-ia32.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia32.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia32.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:29:54 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-ia32.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360135</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-ia32.tar.gz/download" filesize="47814839"><media:hash algo="md5">dff1e67bed74447d59b88dc1b2daad51</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-amd64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-amd64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-amd64.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:29:24 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-amd64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360134</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-amd64.tar.gz/download" filesize="49684568"><media:hash algo="md5">7782f980f9b2b82d2a267887de6c5b84</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-source.tar.gz/download</guid>
+      <pubDate>Fri, 22 Oct 2010 14:27:58 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/apbs-1.3-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3360129</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/apbs-1.3-source.tar.gz/download" filesize="48625351"><media:hash algo="md5">f99a505365f07f6853979cfe2ef23365</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.3.0/ChangeLog]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/ChangeLog/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/ChangeLog/download</guid>
+      <pubDate>Wed, 20 Oct 2010 20:33:10 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.3.0/ChangeLog]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">3357136</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.3.0/ChangeLog/download" filesize="2547"><media:hash algo="md5">c616b104ef1d8c2672f511a2f5733cf8</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.3/release-notes.txt]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/release-notes.txt/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/release-notes.txt/download</guid>
+      <pubDate>Thu, 04 Feb 2010 17:55:28 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.3/release-notes.txt]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2842401</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/release-notes.txt/download" filesize="415"><media:hash algo="md5">5296ca9b5e24edb16255d9176be66577</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Thu, 04 Feb 2010 17:53:46 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2842400</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.x86_64.disk1.iso/download" filesize="47155200"><media:hash algo="md5">81cc27ff8a70c34f1eb47ac8ad03fc6c</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.i386.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.i386.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.i386.disk1.iso/download</guid>
+      <pubDate>Thu, 04 Feb 2010 17:53:05 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.i386.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2842399</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.3/apbs-5.3-1.i386.disk1.iso/download" filesize="45678592"><media:hash algo="md5">c6319879baf380269781702c80d60b0e</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/ChangeLog]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/ChangeLog/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/ChangeLog/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:21:39 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/ChangeLog]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702044</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=us-ascii" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/ChangeLog/download" filesize="625"><media:hash algo="md5">847b4483996fbd4f2a614c6b78e644d0</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-win.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-win.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-win.zip/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:18:20 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-win.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702032</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">Zip archive data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-zip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-win.zip/download" filesize="10560663"><media:hash algo="md5">a412e8140a9aadbc3c41ce8b3ea34ec9</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-source.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:18:03 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702031</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-source.tar.gz/download" filesize="40647966"><media:hash algo="md5">6aec65859a8bab6df93f0e3b7f97fe49</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-pwr4.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-pwr4.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-pwr4.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:17:35 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-pwr4.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702029</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-pwr4.tar.gz/download" filesize="39764515"><media:hash algo="md5">1e92b0ad2982e96904d742e742d38b6f</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-ia64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia64.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:17:09 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-ia64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702028</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia64.tar.gz/download" filesize="42610271"><media:hash algo="md5">fadcb9ae167d2d51f719bb6a154fba04</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-ia32.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia32.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia32.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:16:45 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-ia32.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702026</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-ia32.tar.gz/download" filesize="39448392"><media:hash algo="md5">3cf355d00a8243d7e41e613610d0bfb1</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-amd64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-amd64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-amd64.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:15:05 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-amd64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702020</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-amd64.tar.gz/download" filesize="44888487"><media:hash algo="md5">4e8e6c0fc9b60212cef0d2a442d58b61</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-altix.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-altix.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-altix.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:14:37 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-altix.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702019</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-altix.tar.gz/download" filesize="42589521"><media:hash algo="md5">c1f166a3cc3aae8c5b15d41b5514fd08</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-mac-univ.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-mac-univ.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-mac-univ.tar.gz/download</guid>
+      <pubDate>Tue, 01 Dec 2009 15:13:50 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.1b/apbs-1.2.1b-mac-univ.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2702016</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.1b/apbs-1.2.1b-mac-univ.tar.gz/download" filesize="45165632"><media:hash algo="md5">25565413b74195e084d12bc618ed259d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/APBS 1-2-0 release notes.txt]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/APBS%201-2-0%20release%20notes.txt/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/APBS%201-2-0%20release%20notes.txt/download</guid>
+      <pubDate>Thu, 22 Oct 2009 12:54:48 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/APBS 1-2-0 release notes.txt]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2601839</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">English text</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="text/plain; charset=utf-8" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/APBS%201-2-0%20release%20notes.txt/download" filesize="1485"><media:hash algo="md5">6e65f2ed7fc39a3b9054f603a8a6ab53</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-mac-univ.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-mac-univ.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-mac-univ.tar.gz/download</guid>
+      <pubDate>Thu, 22 Oct 2009 12:12:01 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-mac-univ.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2601790</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-mac-univ.tar.gz/download" filesize="15515351"><media:hash algo="md5">0341f6d8ca3d17464e95f3175097ab3d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-win.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-win.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-win.zip/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:10:48 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-win.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595116</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">Zip archive data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-zip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-win.zip/download" filesize="10851229"><media:hash algo="md5">bc14b6337bdc1fba5d03eb7a71b8dde1</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-source.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:10:30 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595115</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-source.tar.gz/download" filesize="10593537"><media:hash algo="md5">ba32bb323b25307204436eaac1ff877b</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-pwr4.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-pwr4.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-pwr4.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:10:13 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-pwr4.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595113</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-pwr4.tar.gz/download" filesize="9860715"><media:hash algo="md5">d74b6f4091d82d565233e77781be7ef7</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-ia64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia64.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:09:20 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-ia64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595111</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia64.tar.gz/download" filesize="12707146"><media:hash algo="md5">f4556404bc685e3d74b404954356cfaf</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-ia32.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia32.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia32.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:09:01 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-ia32.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595110</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-ia32.tar.gz/download" filesize="9539923"><media:hash algo="md5">4b507aa8a7431b6298a059e89560563b</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-amd64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-amd64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-amd64.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:08:27 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-amd64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595109</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-amd64.tar.gz/download" filesize="14962375"><media:hash algo="md5">2eec790eb53003a3ce5beefc8d834518</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-altix.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-altix.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-altix.tar.gz/download</guid>
+      <pubDate>Mon, 19 Oct 2009 12:08:07 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.2.0/apbs-1.2-altix.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">2595108</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.2.0/apbs-1.2-altix.tar.gz/download" filesize="12682591"><media:hash algo="md5">ec5851992b52c2099325ce3f99d0b822</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-source.tar.gz/download</guid>
+      <pubDate>Mon, 13 Apr 2009 19:28:50 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1615006</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-source.tar.gz/download" filesize="10582742"><media:hash algo="md5">ca31ba09714e4fc9acce91e7961569cd</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/APBS-1.1.0-Mac-PPC.dmg]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-PPC.dmg/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-PPC.dmg/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:58:19 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/APBS-1.1.0-Mac-PPC.dmg]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591694</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">VAX COFF executable not stripped</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-PPC.dmg/download" filesize="11011680"><media:hash algo="md5">ce8837408c18ceffab7fd92db87b2b91</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/APBS-1.1.0-Mac-Intel.dmg]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-Intel.dmg/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-Intel.dmg/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:58:17 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/APBS-1.1.0-Mac-Intel.dmg]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591693</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">VAX COFF executable not stripped</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/APBS-1.1.0-Mac-Intel.dmg/download" filesize="13948142"><media:hash algo="md5">83ca6774702664cffa087cf2fe3ed479</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-Windows.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-Windows.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-Windows.zip/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:54:53 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-Windows.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591692</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">Zip archive data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-zip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-Windows.zip/download" filesize="22335012"><media:hash algo="md5">cef13639acddaa619b694e3812d1abc6</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-altix.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-altix.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-altix.tar.gz/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:29 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-altix.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591684</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-altix.tar.gz/download" filesize="12520379"><media:hash algo="md5">73ad34a419331696a2c9688e58b6bfd9</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-amd64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-amd64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-amd64.tar.gz/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:31 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-amd64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591685</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-amd64.tar.gz/download" filesize="10329251"><media:hash algo="md5">aeb07f73648d7072399310c3543544c6</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-ia32.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia32.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia32.tar.gz/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:32 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-ia32.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591686</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia32.tar.gz/download" filesize="9523024"><media:hash algo="md5">21f7d290eb947b7cda3e9f4ed66c499e</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-ia64.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia64.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia64.tar.gz/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:35 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-ia64.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591687</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-ia64.tar.gz/download" filesize="12549576"><media:hash algo="md5">e5b6c01cd7dd3350e8f52a2543578bbb</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-pwr4.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-pwr4.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-pwr4.tar.gz/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:38 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.1.0/apbs-1.1.0-pwr4.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591688</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.1.0/apbs-1.1.0-pwr4.tar.gz/download" filesize="9844626"><media:hash algo="md5">1519c56c5d6d6e94bd6e405ee04e4f70</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/APBS-1.1.0-PPC.dmg]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-PPC.dmg/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-PPC.dmg/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:24 UT</pubDate>
+      <description><![CDATA[/OldFiles/APBS-1.1.0-PPC.dmg]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591682</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">VAX COFF executable not stripped</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream" url="http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-PPC.dmg/download" filesize="11011680"><media:hash algo="md5">ce8837408c18ceffab7fd92db87b2b91</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/Windows.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/Windows.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/Windows.zip/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:28 UT</pubDate>
+      <description><![CDATA[/OldFiles/Windows.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591683</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">Zip archive data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-zip" url="http://sourceforge.net/projects/apbs/files/OldFiles/Windows.zip/download" filesize="22335012"><media:hash algo="md5">cef13639acddaa619b694e3812d1abc6</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/APBS-1.1.0-Intel.dmg]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-Intel.dmg/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-Intel.dmg/download</guid>
+      <pubDate>Mon, 09 Mar 2009 13:50:23 UT</pubDate>
+      <description><![CDATA[/OldFiles/APBS-1.1.0-Intel.dmg]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1591681</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">VAX COFF executable not stripped</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream" url="http://sourceforge.net/projects/apbs/files/OldFiles/APBS-1.1.0-Intel.dmg/download" filesize="13948142"><media:hash algo="md5">83ca6774702664cffa087cf2fe3ed479</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0.mpkg.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0.mpkg.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0.mpkg.tgz/download</guid>
+      <pubDate>Thu, 04 Dec 2008 13:41:15 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0.mpkg.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1532365</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0.mpkg.tgz/download" filesize="15877538"><media:hash algo="md5">da17aba786b5812d06bcfae8c898129e</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Mon, 09 Jun 2008 19:39:35 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1428807</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-iso9660" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.x86_64.disk1.iso/download" filesize="15538176"><media:hash algo="md5">18e02d08198efae4c4d33e9595d85243</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.i386.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.i386.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.i386.disk1.iso/download</guid>
+      <pubDate>Mon, 09 Jun 2008 19:29:33 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.i386.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1428806</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-iso9660" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-5.0/apbs-5.0-1.i386.disk1.iso/download" filesize="14352384"><media:hash algo="md5">9b4db71edae1e0376d8e143de11e0f2c</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-source.tar.gz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:41:08 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398846</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-source.tar.gz/download" filesize="11541303"><media:hash algo="md5">dc9c383ddaf3cd022f4a09f2cb9f1795</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-pwr4.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-pwr4.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-pwr4.tgz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:40:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-pwr4.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398845</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-pwr4.tgz/download" filesize="12420503"><media:hash algo="md5">308cfeeeca63e1823d5de16186a4442b</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-ia64.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia64.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia64.tgz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:40:04 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-ia64.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398843</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia64.tgz/download" filesize="17539255"><media:hash algo="md5">91e21233f1f1cd80ec14d758c1cfd237</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-ia32.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia32.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia32.tgz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:39:50 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-ia32.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398842</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-ia32.tgz/download" filesize="11948041"><media:hash algo="md5">c51511f9fc897f1d73ab739420e913a4</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-amd64.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-amd64.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-amd64.tgz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:39:40 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-amd64.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398841</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-amd64.tgz/download" filesize="12757537"><media:hash algo="md5">be79f5e5bfda6c8ddda2a97cb57048cb</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-altix.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-altix.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-altix.tgz/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:39:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/apbs-1.0.0-altix.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398840</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/apbs-1.0.0-altix.tgz/download" filesize="17541504"><media:hash algo="md5">0757ef96d462c13a5f102d99fdcb36ed</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-1.0.0/APBS-1.0.0.msi]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/APBS-1.0.0.msi/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/APBS-1.0.0.msi/download</guid>
+      <pubDate>Mon, 21 Apr 2008 16:41:23 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-1.0.0/APBS-1.0.0.msi]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1398839</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">Microsoft Office Document</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/msword" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-1.0.0/APBS-1.0.0.msi/download" filesize="14187008"><media:hash algo="md5">b221c64cf9e6cd15a7307a1d1967c476</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Mon, 12 Nov 2007 12:18:00 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1293189</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.x86_64.disk1.iso/download" filesize="16553984"><media:hash algo="md5">8133e93b29b3dcd570e6922f4c76511d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.i386.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.i386.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.i386.disk1.iso/download</guid>
+      <pubDate>Mon, 12 Nov 2007 12:18:00 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.i386.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1293188</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.3/apbs-4.3-1.i386.disk1.iso/download" filesize="18020352"><media:hash algo="md5">ee9aeacbfd30ee19061d14c97d67e38b</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tar.gz/download</guid>
+      <pubDate>Wed, 18 Jul 2007 11:36:25 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219819</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tar.gz/download" filesize="10952600"><media:hash algo="md5">e0619222398c499de8f4457c455bdaf4</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1.msi]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1.msi/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1.msi/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:52:37 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1.msi]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219410</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">CDF V2 Document</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="CDF V2 Document, corrupt: Can&#39;t expand summary_info; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1.msi/download" filesize="12741120"><media:hash algo="md5">36a9401720c1e3181edbe3a5235fafd0</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-source.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:52:19 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-source.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219409</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-source.tgz/download" filesize="10952600"><media:hash algo="md5">e0619222398c499de8f4457c455bdaf4</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-pwr4.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-pwr4.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-pwr4.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:51:47 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-pwr4.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219408</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-pwr4.tgz/download" filesize="11501537"><media:hash algo="md5">b2195bc4bb4c0cabd9d82d75e6edd0ad</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-mac.mpkg.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-mac.mpkg.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-mac.mpkg.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:51:34 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-mac.mpkg.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219407</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-mac.mpkg.tgz/download" filesize="26130975"><media:hash algo="md5">ee4ea4c3769a0752011ce2627024bc7d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-ia64.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia64.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia64.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:51:03 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-ia64.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219406</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia64.tgz/download" filesize="15856519"><media:hash algo="md5">ff7c04c19d659ed4c2faeba87913b80a</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-ia32.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia32.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia32.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:50:44 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-ia32.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219405</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-ia32.tgz/download" filesize="11113475"><media:hash algo="md5">1acb0d74327f4b4f0b1ccf053789d340</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-amd64.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-amd64.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-amd64.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:50:30 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-amd64.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219404</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-amd64.tgz/download" filesize="11933721"><media:hash algo="md5">46c3255a270815b79a0332c0e0477c78</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-altix.tgz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-altix.tgz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-altix.tgz/download</guid>
+      <pubDate>Tue, 17 Jul 2007 17:50:15 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.1/apbs-0.5.1-altix.tgz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1219403</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.1/apbs-0.5.1-altix.tgz/download" filesize="15854470"><media:hash algo="md5">dc6b4b7783b37ab3822e9604d05a431c</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Sat, 07 Apr 2007 18:17:04 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1157855</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.x86_64.disk1.iso/download" filesize="15374336"><media:hash algo="md5">7f80b878e8fcf1842ee49f6a0725ff4d</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.i386.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.i386.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.i386.disk1.iso/download</guid>
+      <pubDate>Sat, 07 Apr 2007 18:16:38 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.i386.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1157854</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-4.2.1/apbs-4.2.1-1.i386.disk1.iso/download" filesize="16971776"><media:hash algo="md5">58c4eb9f02ddfcfc46f8a972c9d10dad</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-Win-1.msi]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-Win-1.msi/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-Win-1.msi/download</guid>
+      <pubDate>Tue, 13 Feb 2007 13:15:54 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-Win-1.msi]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1124433</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">CDF V2 Document</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="CDF V2 Document, corrupt: Can&#39;t expand summary_info; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-Win-1.msi/download" filesize="11302912"><media:hash algo="md5">dc0e238ab763044613d6b6fd7194950b</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-source-2.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-source-2.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-source-2.tar.gz/download</guid>
+      <pubDate>Tue, 30 Jan 2007 14:04:43 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-source-2.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1114836</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-source-2.tar.gz/download" filesize="10171621"><media:hash algo="md5">80b201d182536cb5f914a23fca4a4732</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/apbs-0.5.0-source-1.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-0.5.0-source-1.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-0.5.0-source-1.tar.gz/download</guid>
+      <pubDate>Mon, 22 Jan 2007 13:06:12 UT</pubDate>
+      <description><![CDATA[/OldFiles/apbs-0.5.0-source-1.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1109607</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/OldFiles/apbs-0.5.0-source-1.tar.gz/download" filesize="10168513"><media:hash algo="md5">9a1640b80b646059cd3fdedb6ff84032</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/apbs-source.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-source.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-source.tar.gz/download</guid>
+      <pubDate>Wed, 17 Jan 2007 14:06:38 UT</pubDate>
+      <description><![CDATA[/OldFiles/apbs-source.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1106444</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/OldFiles/apbs-source.tar.gz/download" filesize="10322022"><media:hash algo="md5">ac49b0406b00e79e2690e2887118e750</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-amd64-linux.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-amd64-linux.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-amd64-linux.tar.gz/download</guid>
+      <pubDate>Wed, 17 Jan 2007 14:06:25 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-amd64-linux.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1106443</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-amd64-linux.tar.gz/download" filesize="11264374"><media:hash algo="md5">3b1bd40923e954f30a6bd11754b52474</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-ia64-linux.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia64-linux.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia64-linux.tar.gz/download</guid>
+      <pubDate>Mon, 15 Jan 2007 16:05:53 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-ia64-linux.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105018</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia64-linux.tar.gz/download" filesize="10791704"><media:hash algo="md5">37801d81c9d197511642f79344500bb8</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/OldFiles/apbs-Win.msi]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-Win.msi/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/OldFiles/apbs-Win.msi/download</guid>
+      <pubDate>Mon, 15 Jan 2007 16:06:15 UT</pubDate>
+      <description><![CDATA[/OldFiles/apbs-Win.msi]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105019</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">CDF V2 Document</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="CDF V2 Document, corrupt: Can&#39;t expand summary_info; charset=binary" url="http://sourceforge.net/projects/apbs/files/OldFiles/apbs-Win.msi/download" filesize="1063424"><media:hash algo="md5">93168cb11fe8a3835f6501d31448fdd5</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-ia32-linux.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia32-linux.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia32-linux.tar.gz/download</guid>
+      <pubDate>Mon, 15 Jan 2007 16:04:02 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-ia32-linux.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105017</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-ia32-linux.tar.gz/download" filesize="8277676"><media:hash algo="md5">cf146a162bf9feab9ec685cc15ae67e0</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-altix-linux.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-altix-linux.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-altix-linux.tar.gz/download</guid>
+      <pubDate>Mon, 15 Jan 2007 16:00:03 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-altix-linux.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105015</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-altix-linux.tar.gz/download" filesize="10740065"><media:hash algo="md5">e23428d48829c3ebf66a8ae3fa0eb1cb</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-PWR4.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-PWR4.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-PWR4.tar.gz/download</guid>
+      <pubDate>Mon, 15 Jan 2007 15:58:11 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/apbs-0.5.0-PWR4.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105014</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/apbs-0.5.0-PWR4.tar.gz/download" filesize="8209415"><media:hash algo="md5">a22300a0ed5b2816128304675d0a2ac4</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.5.0/APBS-0.5.0-Mac.mpkg.zip]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/APBS-0.5.0-Mac.mpkg.zip/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/APBS-0.5.0-Mac.mpkg.zip/download</guid>
+      <pubDate>Mon, 15 Jan 2007 15:55:09 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.5.0/APBS-0.5.0-Mac.mpkg.zip]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">1105013</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">empty (Zip archive data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/zip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.5.0/APBS-0.5.0-Mac.mpkg.zip/download" filesize="23189972"><media:hash algo="md5">f6f322827d561132e38f276317cd1fc2</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.x86_64.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.x86_64.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.x86_64.disk1.iso/download</guid>
+      <pubDate>Tue, 31 Jan 2006 19:02:46 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.x86_64.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">883219</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.x86_64.disk1.iso/download" filesize="12077056"><media:hash algo="md5">785f73aeee5c6fed3ca175fe62a91301</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.i386.disk1.iso]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.i386.disk1.iso/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.i386.disk1.iso/download</guid>
+      <pubDate>Tue, 31 Jan 2006 18:59:59 UT</pubDate>
+      <description><![CDATA[/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.i386.disk1.iso]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">883218</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">ISO 9660 CD-ROM filesystem data</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/octet-stream; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs-rocks/apbs-rocks-0.4.0/apbs-4.1-1.i386.disk1.iso/download" filesize="13174784"><media:hash algo="md5">10af0362ea2f468c7e15f08031508227</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-0.4.0.tar.gz]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-0.4.0.tar.gz/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-0.4.0.tar.gz/download</guid>
+      <pubDate>Wed, 14 Dec 2005 22:00:22 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-0.4.0.tar.gz]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854532</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">POSIX tar archive (GNU) (gzip compressed data)</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-gzip; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-0.4.0.tar.gz/download" filesize="6490858"><media:hash algo="md5">a9d5f8b24a40087998267c9df3eecceb</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.x86_64.rpm]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.x86_64.rpm/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.x86_64.rpm/download</guid>
+      <pubDate>Wed, 14 Dec 2005 21:58:22 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.x86_64.rpm]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854531</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">unknown</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-rpm; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.x86_64.rpm/download" filesize="3819973"><media:hash algo="md5">6a3d95500f9869653778f528dd16db6f</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ppc64pseries.rpm]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ppc64pseries.rpm/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ppc64pseries.rpm/download</guid>
+      <pubDate>Wed, 14 Dec 2005 21:58:17 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ppc64pseries.rpm]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854530</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">unknown</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-rpm; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ppc64pseries.rpm/download" filesize="1314223"><media:hash algo="md5">6597ee6a42100d0f08fcabfb93d57f5a</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ia64.rpm]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ia64.rpm/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ia64.rpm/download</guid>
+      <pubDate>Wed, 14 Dec 2005 21:58:10 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ia64.rpm]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854529</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">unknown</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-rpm; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.ia64.rpm/download" filesize="4920416"><media:hash algo="md5">5749f13f8bd5dfe6fb9c58de6ca99822</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i686.rpm]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i686.rpm/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i686.rpm/download</guid>
+      <pubDate>Wed, 14 Dec 2005 21:58:01 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i686.rpm]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854528</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">unknown</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-rpm; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i686.rpm/download" filesize="2712343"><media:hash algo="md5">ef02f62101c5b52f64ba53a1720944b6</media:hash></media:content>
+    </item>
+    <item>
+      <title><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i386.rpm]]></title>
+      <link>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i386.rpm/download</link>
+      <guid>http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i386.rpm/download</guid>
+      <pubDate>Wed, 14 Dec 2005 21:57:47 UT</pubDate>
+      <description><![CDATA[/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i386.rpm]]></description>
+      <files:sf-file-id xmlns:files="https://sourceforge.net/api/files.rdf#">854527</files:sf-file-id>
+      <files:extra-info xmlns:files="https://sourceforge.net/api/files.rdf#">unknown</files:extra-info>
+      <media:content xmlns:media="http://video.search.yahoo.com/mrss/" type="application/x-rpm; charset=binary" url="http://sourceforge.net/projects/apbs/files/apbs/apbs-0.4.0/apbs-tools-0.4.0-1.i386.rpm/download" filesize="2723681"><media:hash algo="md5">60f99b01fc85d458605f71ad79f3f599</media:hash></media:content>
+    </item>
+  </channel>
+</rss>
