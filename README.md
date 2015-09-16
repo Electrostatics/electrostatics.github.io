@@ -1,7 +1,6 @@
 #APBS and PDB2PQR - Molecular Solvation Software
 
-Robust link at: http://electrostatics.github.io/
-We eventually want to have the official link at: http://www.poissonboltzmann.org/
+Content for http://electrostatics.github.io/ and http://www.poissonboltzmann.org/
 
 NOTE: Correct CSS directory is in the _includes directory, use other css directories as backups
 Docs directory is in root, and uses Markdown
