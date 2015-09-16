@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en"><title>Recent posts by Peter</title><link href="http://sourceforge.net/u/phui01/" rel="alternate"></link><link href="http://sourceforge.net/u/phui01/profile/feed.atom" rel="self"></link><id>http://sourceforge.net/u/phui01/</id><updated>2013-12-18T14:53:32Z</updated><entry><title>Home modified by Peter</title><link href="http://sourceforge.net/u/phui01/wiki/Home/" rel="alternate"></link><updated>2013-12-18T14:53:32Z</updated><published>2013-12-18T14:53:32Z</published><author><name>Peter</name><uri>http://sourceforge.net/u/phui01/</uri></author><id>http://sourceforge.net997b1e589ecf9c31155c9a865657620cdb2e88c0</id><summary type="html">&lt;div class="markdown_content"&gt;&lt;p&gt;Welcome to your wiki!&lt;/p&gt;
+&lt;p&gt;This is the default page, edit it as you see fit. To add a new page simply reference it within brackets, e.g.: &lt;span&gt;[SamplePage]&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;The wiki uses &lt;a class="" href="/u/phui01/wiki/markdown_syntax/"&gt;Markdown&lt;/a&gt; syntax.&lt;/p&gt;
+&lt;p&gt;&lt;h6&gt;Project Members:&lt;/h6&gt;
+&lt;ul class="md-users-list"&gt;
+&lt;/ul&gt;&lt;br /&gt;
+&lt;/p&gt;&lt;p&gt;&lt;span class="download-button-52b1b6ecc4314370c1dffa34" style="margin-bottom: 1em; display: block;"&gt;&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;</summary></entry></feed>

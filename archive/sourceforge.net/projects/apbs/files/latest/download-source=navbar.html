@@ -1,0 +1,1092 @@
+<!doctype html>
+<!-- Server: sfs-consume-17 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta id="project_name" name="project_name" content="apbs">
+
+        
+        <meta name="description" content="APBS is a software package for the numerical solution of the Poisson-Boltzmann equation, a popular continuum model for describing electrostatic …">
+        <meta name="keywords" content="Molecular Science, Simulations, Chemistry, Bio-Informatics, Mathematics, Physics,  Open Source, Open Source Software, Development, Community, Source Code, Secure,  Downloads, Free Software">
+<noscript><meta http-equiv="refresh" content="5; url='http://downloads.sourceforge.net/project/apbs/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fapbs%2F%3Fsource%3Dnavbar&ts=1442412992&use_mirror=iweb'">
+eb">
+</noscript>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Download APBS from SourceForge.net</title>
+        <link rel="shortcut icon" href="http://a.fsdn.com/con/img/sftheme/favicon.ico">
+        
+
+<!-- CCM Tag -->
+<script type="text/javascript">
+  //ccm informer
+/*jshint ignore:start*/
+    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+/*jshint ignore:end*/
+
+  //ccm tag
+  (function () {
+    /*global _ml:true, window */
+    _ml = window._ml || {};
+    _ml.eid = '771';
+    _ml.ht = 'shex';
+    _ml.informer = {
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+    s.parentNode.insertBefore(mltag, s);
+  })();
+</script>
+<!-- End CCM Tag -->
+
+    <link rel="canonical" href="../../index.html">
+        
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG, ga */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1441983328';
+        </script>
+        <script src="http://a.fsdn.com/con/js/min/sf.head.js?1441983328" type="text/javascript"></script>
+        
+<!--[if lt IE 7 ]>
+  <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+ 
+<link rel="stylesheet" href="http://a.fsdn.com/con/css/download.css?1441983328" type="text/css">
+<style type="text/css">.V1d3168222918bb585d6b952071d734da513d9754 { display: none !important; }
+</style>
+
+  
+
+    <style type="text/css" >.sfdl { width:150px;height:28px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 0px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl-lite { background:0 center no-repeat #337733 none;color:white !important;height:auto;padding:0.5em 1em;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #339933), color-stop(100%, #337733));background-image:-moz-linear-gradient(top, #339933 0%, #337733 100%);background-image:linear-gradient(top, #339933 0%, #337733 100%);}.sfdl-lite:hover { background:0 center no-repeat #339933;}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:14px;}.sfdl b { display:block;line-height:7.0px;}.sfdl small { display:block;line-height:7.0px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}.info-circle{ right:10px;bottom:16px;}.direct-dl{ font-size:10px;text-align:right;display:inline-block;width:100%;}</style>
+
+
+        
+<script type="text/javascript">
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+  <script type='text/javascript'>
+
+   (function() {
+         var useSSL = 'https:' === document.location.protocol;
+         var src = (useSSL ? 'https:' : 'http:') +
+               '//www.googletagservices.com/tag/js/gpt.js';
+         document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+   })();
+   </script>
+
+   <!-- GPT Slot Definitions -->
+   <script type='text/javascript'>
+       /*global googletag */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_A', [728, 90], 'div-gpt-ad-1392148432530-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Dwnld_immersion_700x500', [700, 500], 'div-gpt-ad-1392148432589-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('db_zip', '99354')
+                                                        .setTargeting('db_csize', '4312000')
+                                                        .setTargeting('db_ip', '130.20.173.55')
+                                                        .setTargeting('db_cname', 'Pacific Northwest National Laboratory')
+                                                        .setTargeting('db_industry', 'Healthcare_Medical_Pharmaceutical_BioTech')
+                                                        .setTargeting('db_city', 'Richland')
+                                                        .setTargeting('db_state', 'WA')
+                                                        .setTargeting('db_psic', '8731')
+                                                        .setTargeting('db_country', 'US')
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '700x500')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_300x250_A', [300, 250], 'div-gpt-ad-1392148432580-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp1_728x90_B', [728, 90], 'div-gpt-ad-1392148432597-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_Multi', [[300, 250], [336, 280], [580, 400], [600, 300], [650, 500], [728, 90]], 'div-gpt-ad-1392148432584-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250,336x280,580x400,600x300,650x500,728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_728x90', [728, 90], 'div-gpt-ad-1392148432581-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp3_300x250', [300, 250], 'div-gpt-ad-1392148432582-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Temp3_300x250'] =  'logNoRenderInGA';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_728x90_A', [728, 90], 'div-gpt-ad-1392148432591-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_728x90_B', [728, 90], 'div-gpt-ad-1392148432592-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_300x250_A', [300, 250], 'div-gpt-ad-1392148432593-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_300x250_B', [300, 250], 'div-gpt-ad-1392148432594-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_multi_A', [[728, 90], [300, 250], [336, 280]], 'div-gpt-ad-1392148432595-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90,300x250,336x280')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp4_300x450_A', [300, 450], 'div-gpt-ad-1431036742251-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x450')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp5_622x297_A', [622, 297], 'div-gpt-ad-1431036742250-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '622x297')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_728x90_A', [728, 90], 'div-gpt-ad-1431036742252-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_728x90_B', [728, 90], 'div-gpt-ad-1431036742253-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_970x250_A', [970, 250], 'div-gpt-ad-1431036742254-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '970x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_300x250_A', [300, 250], 'div-gpt-ad-1431036742255-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_300x250_B', [300, 250], 'div-gpt-ad-1431036742256-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_300x250_C', [300, 250], 'div-gpt-ad-1431036742257-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_300x250_D', [300, 250], 'div-gpt-ad-1431036742259-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Temp6_622x74_A', [622, 74], 'div-gpt-ad-1431036742258-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '622x74')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_download'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['apbs', 'c', 'scientific', 'python', 'physics', 'simulations', 'fortran', 'bioinformatics', 'mathematics', 'chemistry', 'molecular_science'])
+                                                        .setTargeting('shortname', 'apbs')
+                                                        .setTargeting('aud', ['scienceresearch', 'education'])
+                                                        .setTargeting('mirror', 'False')
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/projects/apbs/files/latest/download')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_download'));
+            
+            googletag.pubads().enableSyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.getName();
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+        });
+   </script>
+
+        
+        <script type="text/javascript" src="http://a.fsdn.com/con/js/adframe.js?1441983328"></script>
+        <script type="text/javascript">
+
+            /*jshint ignore:start*/
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            /*jshint ignore:end*/
+
+            //var $ = jQuery.noConflict(); // jshint ignore:line
+        </script>
+        <script type="text/javascript">
+                ga('create', 'UA-36130941-1', {'name': '1'});
+                ga('create', 'UA-36130941-1', 'auto');
+            if (typeof _ml !== 'undefined' && _ml.us) {
+                if (_ml.us.tp && _ml.us.tp.length > 0) {
+                    ga('set', 'dimension2', _ml.us.tp[0]);
+                }
+                if (_ml.us.pc && _ml.us.pc.length > 0) {
+                    ga('set', 'dimension7', _ml.us.pc[0]);
+                }
+                ga('set', 'dimension3', _ml.us.ind);
+                ga('set', 'dimension4', _ml.us.cr);
+                ga('set', 'dimension5', _ml.us.cs);
+                ga('set', 'dimension6', _ml.us.dm);
+                ga('set', 'dimension8', _ml.us.sn);
+            }
+            
+                ga('set', 'dimension9', 'apbs');
+                ga('set', 'dimension10', 'pg_dwnld');
+                ga('set', 'dimension11', '/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso');
+                    
+                ga('set', 'dimension13', 'Logged Out');
+                ga('set', 'dimension14', 'No');  
+                ga('send', 'pageview');
+
+            
+        </script>
+<script type="text/javascript" src="http://a.fsdn.com/con/js/madmen.js?1441983328"></script>
+<script type="text/javascript">
+    
+    SF.Ads.AdtemplateImpression = false;
+    
+
+    SF.Ads.wireWindowOnError();
+    SF.geoCountryCode = 'US';
+
+    
+    SF.Ads.ironsource = true;
+    SF.Ads.ironsourceType = 'multisize';
+    
+</script>
+
+    </head>
+    <body id="pg_dwnld" class="bluesteel">
+        
+
+
+
+
+
+    
+
+<div id="SF_Dwnld_immersion_700x500_wrapped" class="ad immersion ad_wrapped " data-unit="SF_Dwnld_immersion_700x500">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432589-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432589-0');
+        });
+    }
+})();
+</script>
+</div>
+<script type="text/javascript">
+SF.Ads.recordImmersionCall('#p77_immersion script[src*="ad.doubleclick.net"]', immersion_adcode, true);
+</script>
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="../../../../index.html" class="logo">
+            <span>SourceForge</span>
+        </a>
+        <form method="get" action="/directory/">
+            <input type="text" id="words" name="q" placeholder="Search">
+        </form>
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="../../../../directory/index.html" title="Browse our software.">Browse</a>
+            <a href="../../../../directory/enterprise.html" title="Browse our Enterprise software.">Enterprise</a>
+            <a href="../../../../blog/index.html" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="../../../../jobs-source=header.html" title="Search 80k+ tech jobs.">Jobs</a>
+            <a href="http://deals.sourceforge.net/?utm_source=sourceforge&utm_medium=navbar&utm_campaign=homepage" title="Discover and Save on the Best Gear, Gadgets, and Software" class="featured-link" target="_blank">Deals</a>
+            <a href="../../../../support.html" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                  <a href="../../../../auth/index.html">Log In</a>
+                <span>or</span>
+                <a href="../../../../user/registration.html">Join</a>
+              </div>
+            
+        </nav>
+    </div>
+</header>
+<header id="site-sec-header">
+    <div class="wrapper">
+         
+    </div>
+</header>
+
+
+        
+<div id="banner-ads" class="ads">
+    
+    
+
+
+
+    
+
+<div id="SF_Temp4_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Temp4_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432591-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432591-0');
+        });
+    }
+})();
+</script>
+</div>
+    
+</div>
+<header id="page-header">
+
+    <div class="wrapper">
+        
+        
+
+
+<div id="downloading">
+    <div id="starting">
+        <h1>
+                <a href="../../index.html">APBS</a>
+        </h1>
+
+        <p id="downloader">
+            Your download will start shortly...
+        </p>
+        <script id="redirect-template" type="text/x-handlebars-template">
+            Learn more: check out <a href="/projects/apbs/postdownload">screenshots, reviews, and more</a>. We'll take you there in a few moments.
+        </script>
+        <p id="problems">
+        
+        
+            Problems with the download?  Please use this 
+            <a href="http://downloads.sourceforge.net/project/apbs/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fapbs%2F%3Fsource%3Dnavbar&ts=1442412992&use_mirror=iweb" class="direct-download">
+        direct link</a>, or try another 
+            <a href="../../../../settings/mirror_choices-projectname=apbs&filename=apbs-rocks%7Capbs-rocks-5.4%7Capbs-5.4-1.x86_64.disk1.iso.html"
+               title="A mirror is an exact copy of a download available in multiple locations around the world.  Select the one closest to your location."
+               class="mirror" data-release-url="http://downloads.sourceforge.net/project/apbs/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso?r=http%3A%2F%2Fsourceforge.net%2Fprojects%2Fapbs%2F%3Fsource%3Dnavbar&amp;ts=1442412992&amp;use_mirror=iweb" rel="nofollow">
+        mirror</a>.
+        </p>
+    </div>
+    <div id="mirror">
+        Mirror provided by: 
+    
+      
+      
+      <a id="provider_top" href="http://iweb.com/" title="iWeb Technologies"><img class="mirror-logo" src="http://a.fsdn.com/mirrorimages/iweb-small.jpg" alt="iWeb Technologies" width="100" height="41"/></a>
+    
+
+    </div>
+</div>
+<div id="mirror-drawer"></div>
+
+        
+    </div>
+        
+
+</header>
+        <div id="messages">
+        </div>
+
+        <div id="page-body">
+            <div id="bookends_container">
+                
+
+
+
+    
+
+<div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343511-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343511-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343512-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343512-0');
+        });
+    }
+})();
+</script>
+</div>
+            </div>
+
+
+<div id="content-immersion" class="content">
+    <div class="ads">
+        <div id="immersion-container" class="ad immersion">
+            <script type="text/javascript">
+                document.write(immersion_adcode);
+                SF.Ads.wireWrapperResize('.ad.wrapper', '#content-immersion');
+            </script>
+        </div>
+    </div>
+    
+    
+<div class="sidebar template1">
+    
+    
+
+        
+        <div class="recommended-widget">
+            <aside class="sidebar-widget">
+	<header>
+        <h3>Recommended Projects</h3>
+	</header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a href="../../../apbsmem/index-source=recommended.html" title="APBSmem"><img alt="Icon" src="http://a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="../../../apbsmem/index-source=recommended.html"
+			title="Learn more about APBSmem ">APBSmem</a>
+                        <div class="summary">
+                        
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item even">
+                <a href="../../../pdb2pqr/index-source=recommended.html" title="PDB2PQR"><img alt="Icon" src="http://a.fsdn.com/con/img/project_default.png" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="../../../pdb2pqr/index-source=recommended.html"
+			title="Learn more about PDB2PQR ">PDB2PQR</a>
+                        <div class="summary">
+                        
+                        </div>
+                    </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a href="../../../pymol/index-source=recommended.html" title="PyMOL Molecular Graphics System"><img alt="Icon" src="http://a.fsdn.com/allura/p/pymol/icon" /></a>
+                <div class="pinfo-content recommended">
+                <a class="project-name" href="../../../pymol/index-source=recommended.html"
+			title="Learn more about PyMOL Molecular Graphics System ">PyMOL Molecular Graphics System</a>
+                        <div class="summary">
+                        PyMOL is an OpenGL based molecular visualization system
+                        </div>
+                    </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+        </div>
+        
+        <div class="unit ">
+            
+
+
+
+    
+
+<div id="SF_Temp1_300x250_A_wrapped" class="ad medrec  " data-unit="SF_Temp1_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432580-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432580-0');
+        });
+    }
+})();
+</script>
+</div>
+        </div> 
+
+
+
+</div>
+
+    
+</div>
+<div id="content-ironsource" class="content with-sidebar fallback-templates">
+    
+
+    
+    <div id="template5-container">
+        <div class="ads template5 altered">
+            
+
+
+
+    
+    
+
+<div id="SF_Temp4_multi_A_wrapped" class="ad multisize  " data-unit="SF_Temp4_multi_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432595-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432595-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Temp5_622x297_A_wrapped" class="ad   " data-unit="SF_Temp5_622x297_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1431036742250-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1431036742250-0');
+        });
+    }
+})();
+</script>
+</div>
+                <div class="top3-widget">
+                    <aside class="sidebar-widget">
+	<header>
+        <h3>Top 3 Projects in Molecular Science</h3>
+	</header>
+    <ul class="vertical">
+        
+
+        
+
+            
+                <li class="item odd">
+                <a class="horiz-proj-icon" href="../../../avogadro/index-source=top3_dlp_t5.html"
+			title="Avogadro"><img alt="Icon" src="http://a.fsdn.com/allura/p/avogadro/icon" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="../../../avogadro/index-source=top3_dlp_t5.html"
+			title="Learn more about Avogadro ">Avogadro</a>
+                        <div class="top3-project-summary">
+                        An intuitive molecular editor and visualization tool
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="../../../avogadro/files/latest/download-source=top3_dlp_t5.html" title="Avogadro" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+                <li class="item even">
+                <a class="horiz-proj-icon" href="../../../bowtie-bio/index-source=top3_dlp_t5.html"
+			title="Bowtie"><img alt="Icon" src="http://a.fsdn.com/con/icons/bo/bowtie-bio%40sf.net/bowtie-bio_default.png" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="../../../bowtie-bio/index-source=top3_dlp_t5.html"
+			title="Learn more about Bowtie ">Bowtie</a>
+                        <div class="top3-project-summary">
+                        
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="../../../bowtie-bio/files/latest/download-source=top3_dlp_t5.html" title="Bowtie" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+                <li class="item odd last">
+                <a class="horiz-proj-icon" href="http://sourceforge.net/projects/picard/?source=top3_dlp_t5"
+			title="picard"><img alt="Icon" src="http://a.fsdn.com/con/icons/pi/picard%40sf.net/picard_default.png" /></a>
+                <div class="pinfo-content top3_dlp_t5">
+                <a class="project-name" href="http://sourceforge.net/projects/picard/?source=top3_dlp_t5"
+			title="Learn more about picard ">picard</a>
+                        <div class="top3-project-summary">
+                        
+                        </div>
+                    </div>
+                    <div class="dl-content top3_dlp_t5">
+                        <a href="http://sourceforge.net/projects/picard/files/latest/download?source=top3_dlp_t5" title="picard" class="sfdl sfdl-lite">Download</a>
+                    </div>
+
+            </li>
+            
+        
+    </ul>
+</aside>
+
+                </div>
+            <div class="dlp_newsletter_subscribe">
+                <h3>Keep Me Updated</h3>
+                <span class="subscribe-tagline">Get project updates, sponsored content from our
+                    <br/>select partners and more.</span>
+                
+
+<form action="https://sourceforge.net/user/newsletters/subscribe?source=DLP_T5" method="post" class="newsletter-subscribe-form ">
+    <input type="hidden" name="Xm8WZgGIlRP64jX9NNoCwPxiFNug" value="/user/newsletters/thankyou">
+    <input type="hidden" name="Xn9STkWUjU:ST5lSoj4tEwsm6TVo" value="US">
+    <input type="hidden" name="XgNSTkWUjU:ST5lSoj9xzLGDLnkM" value="ip_address">
+    <input type="hidden" name="XlcSTkXk0RJWIBOfPWv8Nf953AdE" value="DLP_T5">
+    <input type="hidden" name="XnMGdiGIzQOmp2kmpmfZsNx39fPo" id="email_validate_result">
+    <input type="hidden" value="https://sourceforge.net/user/newsletters/validate_email" id="email_validate_endpoint">
+
+    <div class="subtext">
+        By clicking on "Follow" below, you are agreeing to the <a href="http://slashdotmedia.com/terms-of-use/">Terms of Use</a> and the <a href="http://slashdotmedia.com/privacy-statement/">Privacy Policy</a>.
+    </div>
+        <input type="hidden" name="XmNmZk3g7ROm44Em_4seBnxYJgSs" value="sitewide">
+        <input type="hidden" name="XmNmZk3g7ROm44Em_4seBnxYJgSs" value="research">
+        <input type="hidden" name="XmNmZk3g7ROm44Em_4seBnxYJgSs" value="events">
+        <input type="hidden" name="XmNmZk3g7ROm44Em_4seBnxYJgSs" value="thirdparty">
+        <input type="hidden" name="XmNmZk3g7ROm44Em_4seBnxYJgSs" value="all">
+        <input type="hidden" name="XkNyRkQMToEHPNUfB1kjOv:LsB1s" value="apbs">
+    
+
+
+    
+        <div id="nsw-error-container" class="input-set">
+            <div class="error-message"><i>Invalid email address. Please try again.</i></div>
+            <input type="email" id='text-subscriber-email' class="subscriber-email" name="XltKRhWI7KdlNWTh8lo48iNtFCnM" placeholder="Enter your email address" value="" required>
+        </div>
+        
+    
+
+    <p class="subscriber-existing-email" style="display: none"> Sent to None.
+        
+    </p>
+
+    <button type="submit" class="subscriber-submit">
+        <span>
+            Follow
+        </span>
+    </button>
+
+    <input type="hidden" name="_visit_cookie" value="55f96cf6cc0a4579fe7e8569"/>
+    <input type='hidden' name='timestamp' value='1442412992'/>
+    <input type='hidden' name='spinner' value='Xk7f85AtXIZ3MhTvM6oMAQxW5_SY'/>
+    <p class='V1d3168222918bb585d6b952071d734da513d9754'><label for='XlN:Tim4uEa3EwboQ6TN8TilyM9o'>You seem to have CSS turned off. Please don't fill out this field.</label><input id='XlN:Tim4uEa3EwboQ6TN8TilyM9o' name='Xld:Tim4uEZWIBOfPWv8Nf953AdE' type='text'/></p>
+    <p class='V1d3168222918bb585d6b952071d734da513d9754'><label for='XlN:Tim4uEazEwboQ6TN8TilyM9o'>You seem to have CSS turned off. Please don't fill out this field.</label><input id='XlN:Tim4uEazEwboQ6TN8TilyM9o' name='Xld:Tim4uEJWIBOfPWv8Nf953AdE' type='text'/></p>
+</form>
+
+
+            </div>
+        </div>
+        
+        
+<div class="sidebar template5">
+    
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_300x250_A_wrapped" class="ad medrec  " data-unit="SF_Temp4_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432593-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432593-0');
+        });
+    }
+})();
+</script>
+</div>
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_300x250_B_wrapped" class="ad medrec  " data-unit="SF_Temp4_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432594-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432594-0');
+        });
+    }
+})();
+</script>
+</div>
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_300x450_A_wrapped" class="ad   " data-unit="SF_Temp4_300x450_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1431036742251-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1431036742251-0');
+        });
+    }
+})();
+</script>
+</div> 
+
+
+
+</div>
+
+        
+
+        
+
+
+
+    
+
+<div id="SF_Temp4_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp4_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432592-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432592-0');
+        });
+    }
+})();
+</script>
+</div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    SF.Ads.postImmersionAd(immersion_adcode, '#content-immersion', '#content-template2');
+</script>
+
+<div id="wrapper-bottom-banner">
+    
+
+
+
+    
+
+<div id="SF_Temp1_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Temp1_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    immersionCompliment = true;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148432597-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148432597-0');
+        });
+    }
+})();
+</script>
+</div>
+</div>
+
+
+
+        </div>
+        
+
+          
+<footer id="site-footer">
+    <div class="wrapper">
+        <nav>
+            <h5>SourceForge</h5>
+            <a href="../../../../about.html">About</a>
+            <a href="../../../../blog/category/sitestatus/index.html">Site Status</a>
+            <a href="http://twitter.com/sfnet_ops">@sfnet_ops</a>
+
+
+        </nav>
+        <nav>
+            <h5>Find and Develop Software</h5>
+            <a href="../../../../create/index.html">Create a Project</a>
+            <a href="../../../../directory/index.html">Software Directory</a>
+            <a href="../../../../top.html">Top Downloaded Projects</a>
+        </nav>
+        <nav>
+            <h5>Community</h5>
+            <a href="../../../../blog/index.html">Blog</a>
+            <a href="http://twitter.com/sourceforge">@sourceforge</a>
+            <a href="../../../../jobs-source=footer.html">Job Board</a>
+            <a href="http://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+        </nav>
+        <nav>
+            <h5>Help</h5>
+            <a href="http://p.sf.net/sourceforge/docs">Site Documentation</a>
+            <a href="../../../../support.html">Support Request</a>
+            <a href="http://p.sf.net/sourceforge/irc">Real-Time Support</a>
+        </nav>
+    </div>
+</footer>
+<footer id="site-copyright-footer">
+    <div class="wrapper">
+        <div id="copyright">
+            &copy; 2015 Slashdot Media. All Rights Reserved.<br />
+            <div id="dhi-icon"><span class="logo-DHI-alt"></span></div>
+            <div id="service-text"><div class="smalltext"> SourceForge is a <a href="http://www.dhigroupinc.com" target="_blank">DHI service</a></div></div>
+
+            <!--<div id="dhi-service">SourceForge is a <a href="http://www.dhigroupinc.com">DHI</a> service.</div>-->
+        </div>
+        <nav>
+            <a href="http://slashdotmedia.com/terms-of-use/">Terms</a>
+            <a href="http://slashdotmedia.com/privacy-statement/">Privacy</a>
+            <span id='teconsent'></span>
+            <a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
+
+
+            <a href="http://slashdotmedia.com">Advertise</a>
+            <a href="http://apmsolutions.sourceforge.net/">Performance</a>
+        </nav>
+    </div>
+</footer>
+    <script type="text/javascript">
+        if (SF.Ads.isEnterpriseVisitor()) {
+          SF.pspRedirect = false;
+        } else {
+          SF.pspRedirect = true;
+            SF.pdlpRedirect = true; //pdlp trafficking %us is active, and its US only
+        }
+
+        if (immersion_adcode) {
+            SF.downloadRedirectDelay = 60000;
+        } else {
+            SF.downloadRedirectDelay = 60000;
+        }
+        SF.ios = false;
+
+        $.extend(SF, {"noCountDown": false, "downloadDelay": 5000, "isIronsourceInstaller": false, "filename": "/apbs-rocks/apbs-rocks-5.4/apbs-5.4-1.x86_64.disk1.iso", "isWrappedInstall": false, "isPreWrapped": null, "installer": false, "shortname": "apbs", "nowrap": false});
+
+        if (SF.isIronsourceInstaller) {
+          SF.IronsourceSettings.downloadLink = '';
+        }
+        SF.enableEmailVerify = true;
+    </script>
+    <script src="http://a.fsdn.com/con/js/min/sf.dwnld.js?1441983328" type="text/javascript"></script>
+
+
+
+        
+        <!-- Begin comScore Tag -->
+        <script src="http://b.scorecardresearch.com/beacon.js"></script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=6035546&c3=&c4=&c5=&c6=&c15=&cj=1" alt="comScore2" />
+        " />
+        </noscript>
+        <!-- End comScore Tag -->
+            <script type="text/javascript" src="http://consent-st.truste.com/get?name=notice.js&domain=slashdot.org&c=teconsent&text=true"></script>
+            
+    
+
+      </body>
+</html>

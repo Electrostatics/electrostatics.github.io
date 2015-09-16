@@ -1,0 +1,2823 @@
+<!doctype html>
+<!-- Server: sfs-consume-3 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta id="project_name" name="project_name" content="">
+
+
+
+
+
+<link rel="next" href="http://sourceforge.net/directory/science-engineering/eda/?page=2"/>
+
+
+<link rel="canonical" href="index.html" />
+
+    
+    <meta name="description" content="Electronic Design Automation (EDA) Software Software. Free, secure and fast downloads from the largest Open Source applications and software directory - SourceForge.net">
+    
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+
+ Electronic Design Automation (EDA) Software - SourceForge.net
+
+</title>
+        <link rel="shortcut icon" href="http://a.fsdn.com/con/img/sftheme/favicon.ico">
+        
+
+<!-- CCM Tag -->
+<script type="text/javascript">
+  //ccm informer
+/*jshint ignore:start*/
+    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+/*jshint ignore:end*/
+
+  //ccm tag
+  (function () {
+    /*global _ml:true, window */
+    _ml = window._ml || {};
+    _ml.eid = '771';
+    _ml.ht = 'shex';
+    _ml.informer = {
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+    s.parentNode.insertBefore(mltag, s);
+  })();
+</script>
+<!-- End CCM Tag -->
+
+        
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG, ga */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1441983328';
+        </script>
+        <script src="http://a.fsdn.com/con/js/min/sf.head.js?1441983328" type="text/javascript"></script>
+        
+<!--[if lt IE 7 ]>
+  <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css'>
+<style type="text/css">@font-face {
+        font-family: "Pictos";
+        src: url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.eot');
+        src: local("☺"), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff') format('woff'), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf') format('truetype'), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg') format('svg');
+    }
+</style>
+ <link rel="stylesheet" href="http://a.fsdn.com/con/css/sf.css?1441983328" type="text/css">
+
+
+    <style type="text/css" >.sfdl { width:100px;height:48px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 0px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl-lite { background:0 center no-repeat #337733 none;color:white !important;height:auto;padding:0.5em 1em;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #339933), color-stop(100%, #337733));background-image:-moz-linear-gradient(top, #339933 0%, #337733 100%);background-image:linear-gradient(top, #339933 0%, #337733 100%);}.sfdl-lite:hover { background:0 center no-repeat #339933;}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:34px;}.sfdl b { display:block;line-height:17.0px;}.sfdl small { display:block;line-height:17.0px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}.info-circle{ right:10px;bottom:16px;}.direct-dl{ font-size:10px;text-align:right;display:inline-block;width:100%;}</style>
+
+
+        
+<script type="text/javascript">
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+  <script type='text/javascript'>
+
+   (function() {
+         var useSSL = 'https:' === document.location.protocol;
+         var src = (useSSL ? 'https:' : 'http:') +
+               '//www.googletagservices.com/tag/js/gpt.js';
+         document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+   })();
+   </script>
+
+   <!-- GPT Slot Definitions -->
+   <script type='text/javascript'>
+       /*global googletag */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_728x90_A', [728, 90], 'div-gpt-ad-1393435113148-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1393435113149-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250,300x600,300x1050')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_B', [300, 250], 'div-gpt-ad-1393435113140-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_C', [300, 250], 'div-gpt-ad-1393435113141-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_D', [300, 250], 'div-gpt-ad-1393435113150-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_E', [300, 250], 'div-gpt-ad-1393435113151-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_F', [300, 250], 'div-gpt-ad-1393435113152-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_300x250_G', [300, 250], 'div-gpt-ad-1393435113153-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_A', [459, 69], 'div-gpt-ad-1393435113142-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_B', [459, 69], 'div-gpt-ad-1393435113143-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_D', [459, 69], 'div-gpt-ad-1393435113145-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Browse_459x69_D'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_E', [459, 69], 'div-gpt-ad-1393435113146-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Browse_459x69_E'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_F', [459, 69], 'div-gpt-ad-1393435113147-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Browse_459x69_F'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Browse_459x69_G', [459, 69], 'div-gpt-ad-1393435113154-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '459x69')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Browse_459x69_G'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Directory_728x90_B', [728, 90], 'div-gpt-ad-1392148208790-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/7346874/SF-300x250', [300, 250], 'div-gpt-ad-1392148208795-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['science-engineering', 'eda'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory/science-engineering/eda/')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_directory'));
+            
+            googletag.pubads().enableSyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.getName();
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+        });
+   </script>
+
+        
+        <script type="text/javascript" src="http://a.fsdn.com/con/js/adframe.js?1441983328"></script>
+        <script type="text/javascript">
+
+            /*jshint ignore:start*/
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            /*jshint ignore:end*/
+
+            //var $ = jQuery.noConflict(); // jshint ignore:line
+        </script>
+        <script type="text/javascript">
+                ga('create', 'UA-36130941-1', {'name': '1'});
+                ga('create', 'UA-36130941-1', 'auto');
+            if (typeof _ml !== 'undefined' && _ml.us) {
+                if (_ml.us.tp && _ml.us.tp.length > 0) {
+                    ga('set', 'dimension2', _ml.us.tp[0]);
+                }
+                if (_ml.us.pc && _ml.us.pc.length > 0) {
+                    ga('set', 'dimension7', _ml.us.pc[0]);
+                }
+                ga('set', 'dimension3', _ml.us.ind);
+                ga('set', 'dimension4', _ml.us.cr);
+                ga('set', 'dimension5', _ml.us.cs);
+                ga('set', 'dimension6', _ml.us.dm);
+                ga('set', 'dimension8', _ml.us.sn);
+            }
+            
+                ga('set', 'dimension10', 'pg_directory');
+                    
+                ga('set', 'dimension13', 'Logged Out');
+                ga('set', 'dimension14', 'No');  
+                ga('send', 'pageview');
+
+            
+        </script>
+<script type="text/javascript">
+/* jshint ignore:start */
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+  arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(
+  O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js';
+  e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+/* jshint ignore:end */
+</script>
+
+    </head>
+    <body id="pg_directory" class="bluesteel directory">
+        
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="../../../index.html" class="logo">
+            <span>SourceForge</span>
+        </a>
+        <form method="get" action="/directory/">
+            <input type="text" id="words" name="q" placeholder="Search">
+        </form>
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="../../index.html" title="Browse our software.">Browse</a>
+            <a href="../../enterprise.html" title="Browse our Enterprise software.">Enterprise</a>
+            <a href="../../../blog/index.html" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="../../../jobs-source=header.html" title="Search 80k+ tech jobs.">Jobs</a>
+            <a href="http://deals.sourceforge.net/?utm_source=sourceforge&utm_medium=navbar&utm_campaign=homepage" title="Discover and Save on the Best Gear, Gadgets, and Software" class="featured-link" target="_blank">Deals</a>
+            <a href="../../../support.html" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                  <a href="../../../auth/index.html">Log In</a>
+                <span>or</span>
+                <a href="../../../user/registration.html">Join</a>
+              </div>
+            
+        </nav>
+    </div>
+</header>
+<header id="site-sec-header">
+    <div class="wrapper">
+        <nav id="nav-hubs">
+            <h4>Solution Centers</h4>
+            <a href="http://goparallel.sourceforge.net/">Go Parallel</a>
+            <a href="http://apmsolutions.sourceforge.net/">Performance Central</a>
+        </nav>
+        <nav id="nav-collateral">
+
+            <a href="http://library.slashdotmedia.com/?source=sfnet_header">Resources</a>
+
+            
+            <a href="../../../user/registration.html">Newsletters</a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        
+        <div id="messages">
+        </div>
+
+        <div id="page-body">
+            <div id="bookends_container">
+                
+
+
+
+    
+
+<div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343511-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343511-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343512-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343512-0');
+        });
+    }
+})();
+</script>
+</div>
+            </div>
+<div id="banner-ads" class="ads">
+    
+    
+
+
+
+    
+
+<div id="SF_Directory_728x90_A_wrapped" class="ad leaderboard  " data-unit="SF_Directory_728x90_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113148-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113148-0');
+        });
+    }
+})();
+</script>
+</div>
+    
+</div>
+
+<nav id="breadcrumbs">
+    <ul>
+        
+        <li><a href="../../../index.html">Home</a></li>
+        
+        <li><a href="../../index.html">Browse</a></li>
+        
+        <li><a href="../index.html">Science &amp; Engineering</a></li>
+        
+        <li><a href="index.html">Electronic Design Automation (EDA) Software</a></li>
+        
+    </ul>
+</nav>
+<article id="directory" class="content-wrapper">
+    <section id="main-content">
+    <section id="search">
+
+       <form method="GET" action="." id="search_form">
+    <input name="q" placeholder="Search">
+    <b class="search ico ico-search" title="Search" data-icon="s"></b>
+</form>
+      
+       
+
+       
+    <div id="advanced_options">
+        
+        <section id="search_facets">
+          <header>Refine your search</header>
+          
+          
+          
+          
+          
+          <div class="facet">
+            <header>Translations <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=English"
+   title="English (332) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    English (332) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=German"
+   title="German (32) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    German (32) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Spanish"
+   title="Spanish (30) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Spanish (30) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=French"
+   title="French (28) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    French (28) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Russian"
+   title="Russian (19) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Russian (19) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Brazilian+Portuguese"
+   title="Brazilian Portuguese (7) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Brazilian Portuguese (7) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Chinese+%28Simplified%29"
+   title="Chinese (7) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Chinese (7) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Dutch"
+   title="Dutch (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Dutch (6) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Italian"
+   title="Italian (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Italian (6) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Japanese"
+   title="Japanese (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Japanese (6) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Portuguese"
+   title="Portuguese (5) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Portuguese (5) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Czech"
+   title="Czech (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Czech (4) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Hungarian"
+   title="Hungarian (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Hungarian (4) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Polish"
+   title="Polish (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Polish (4) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;constraint=Catalan"
+   title="Catalan (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Catalan (3) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>License <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source"
+   title="OSI-Approved Open Source (689) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OSI-Approved Open Source (689) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+General+Public+License+version+2.0+%28GPLv2%29"
+   title="GNU General Public License version 2.0 (446) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU General Public License version 2.0 (446) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+Library+or+Lesser+General+Public+License+version+2.0+%28LGPLv2%29"
+   title="GNU Library or Lesser General Public License version 2.0 (77) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU Library or Lesser General Public License version 2.0 (77) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+BSD+License"
+   title="BSD License (57) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    BSD License (57) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+General+Public+License+version+3.0+%28GPLv3%29"
+   title="GNU General Public License version 3.0 (55) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU General Public License version 3.0 (55) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Academic+Free+License+%28AFL%29"
+   title="Academic Free License (20) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Academic Free License (20) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+MIT+License"
+   title="MIT License (19) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    MIT License (19) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Apache+License+V2.0"
+   title="Apache License V2.0 (13) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Apache License V2.0 (13) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+Library+or+Lesser+General+Public+License+version+3.0+%28LGPLv3%29"
+   title="GNU Library or Lesser General Public License version 3.0 (11) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU Library or Lesser General Public License version 3.0 (11) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Eclipse+Public+License"
+   title="Eclipse Public License (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Eclipse Public License (9) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Artistic+License"
+   title="Artistic License (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Artistic License (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Open+Software+License+3.0+%28OSL3.0%29"
+   title="Open Software License 3.0 (5) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Open Software License 3.0 (5) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Apache+Software+License"
+   title="Apache Software License (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Apache Software License (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Common+Public+License+1.0"
+   title="Common Public License 1.0 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Common Public License 1.0 (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Mozilla+Public+License+1.0+%28MPL%29"
+   title="Mozilla Public License 1.0 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mozilla Public License 1.0 (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Mozilla+Public+License+1.1+%28MPL+1.1%29"
+   title="Mozilla Public License 1.1 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mozilla Public License 1.1 (3) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=Public+Domain"
+   title="Public Domain (29) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Public Domain (29) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=license&amp;constraint=Other+License"
+   title="Other License (10) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Other License (10) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Programming Language <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=C%2B%2B"
+   title="C++ (296) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    C++ (296) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=C"
+   title="C (204) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    C (204) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Java"
+   title="Java (125) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Java (125) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Python"
+   title="Python (59) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Python (59) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=VHDL%2FVerilog"
+   title="VHDL/Verilog (44) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    VHDL/Verilog (44) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Perl"
+   title="Perl (41) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Perl (41) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Tcl"
+   title="Tcl (27) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Tcl (27) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Assembly"
+   title="Assembly (26) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Assembly (26) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=C%23"
+   title="C# (22) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    C# (22) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Delphi%2FKylix"
+   title="Delphi/Kylix (14) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Delphi/Kylix (14) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=PHP"
+   title="PHP (13) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    PHP (13) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=MATLAB"
+   title="MATLAB (10) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    MATLAB (10) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=JavaScript"
+   title="JavaScript (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    JavaScript (9) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Ruby"
+   title="Ruby (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Ruby (9) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=language&amp;constraint=Pascal"
+   title="Pascal (8) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Pascal (8) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Status <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=4+-+Beta"
+   title="4 - Beta (179) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    4 - Beta (179) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=5+-+Production%2FStable"
+   title="5 - Production/Stable (154) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    5 - Production/Stable (154) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=1+-+Planning"
+   title="1 - Planning (141) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    1 - Planning (141) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=3+-+Alpha"
+   title="3 - Alpha (139) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    3 - Alpha (139) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=2+-+Pre-Alpha"
+   title="2 - Pre-Alpha (88) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    2 - Pre-Alpha (88) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=6+-+Mature"
+   title="6 - Mature (22) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    6 - Mature (22) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;constraint=7+-+Inactive"
+   title="7 - Inactive (12) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    7 - Inactive (12) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>OS <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Linux"
+   title="Linux (656) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Linux (656) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Windows"
+   title="Windows (572) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Windows (572) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories"
+   title="Grouping and Descriptive Categories (493) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Grouping and Descriptive Categories (493) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+POSIX+%28Linux%2FBSD%2FUNIX-like+OSes%29"
+   title="All POSIX (233) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All POSIX (233) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+32-bit+MS+Windows+%2895%2F98%2FNT%2F2000%2FXP%29"
+   title="All 32-bit MS Windows (137) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All 32-bit MS Windows (137) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+OS+Independent+%28Written+in+an+interpreted+language%29"
+   title="OS Independent (118) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS Independent (118) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+32-bit+MS+Windows+%28NT%2F2000%2FXP%29"
+   title="32-bit MS Windows (83) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    32-bit MS Windows (83) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+OS+Portable+%28Source+code+to+work+with+many+OS+platforms%29"
+   title="OS Portable (80) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS Portable (80) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+64-bit+MS+Windows"
+   title="64-bit MS Windows (26) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    64-bit MS Windows (26) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+BSD+Platforms+%28FreeBSD%2FNetBSD%2FOpenBSD%2FApple+Mac+OS+X%29"
+   title="All BSD Platforms (26) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All BSD Platforms (26) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+32-bit+MS+Windows+%2895%2F98%29"
+   title="32-bit MS Windows (21) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    32-bit MS Windows (21) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+Project+is+an+Operating+System+Distribution"
+   title="Project is an Operating System Distribution (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Project is an Operating System Distribution (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Mac"
+   title="Mac (362) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mac (362) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems"
+   title="Modern (290) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Modern (290) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Linux"
+   title="Linux (242) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Linux (242) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+WinXP"
+   title="WinXP (69) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    WinXP (69) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+OS+X"
+   title="OS X (36) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS X (36) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Solaris"
+   title="Solaris (34) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Solaris (34) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Windows+7"
+   title="Windows 7 (27) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Windows 7 (27) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Win2K"
+   title="Win2K (25) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Win2K (25) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Vista"
+   title="Vista (16) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Vista (16) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+FreeBSD"
+   title="FreeBSD (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    FreeBSD (9) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+NetBSD"
+   title="NetBSD (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    NetBSD (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Windows+8"
+   title="Windows 8 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Windows 8 (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+OpenBSD"
+   title="OpenBSD (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OpenBSD (2) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=os&amp;constraint=BSD"
+   title="BSD (229) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    BSD (229) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Freshness <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="index.html#"
+   data-action="add_facet_filter?facet=freshness&amp;constraint=Recently+updated"
+   title="Recently updated (119) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Recently updated (119) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          
+          
+          
+        </section>
+        
+      </div>
+
+      <section id="search_results">
+        <header>
+          
+            <h3>Electronic Design Automation (EDA) Software</h3>
+          
+          <div class="drop-down-menu">
+              <div class="sort-options">
+                  <span>Sort By</span>
+                  <div class="sort-drop-down">
+                      <a href="index.html#">Most Popular</a>
+                  </div>
+                  <ul>
+                      
+                      <li><a href="index.html#"
+   data-action="/directory/science-engineering/eda/?sort=popular"
+   title="Most Popular"
+   rel="nofollow"
+   class="active link-obfuscated">
+    Most Popular
+</a></li>
+                      <li><a href="index.html#"
+   data-action="/directory/science-engineering/eda/?sort=update"
+   title="Last Updated"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Last Updated
+</a></li>
+                      <li><a href="index.html#"
+   data-action="/directory/science-engineering/eda/?sort=name"
+   title="Name"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Name
+</a></li>
+                      <li><a href="index.html#"
+   data-action="/directory/science-engineering/eda/?sort=rating"
+   title="Rating"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Rating
+</a></li>
+                  </ul>
+              </div>
+          </div>
+        </header>
+        
+
+        
+        <div class="browse">
+        <ul class="facets">
+          <!-- <li class="special"><a href="">Most Popular</a></li>
+          <li class="special"><a href="">New and Noteworthy</a></li>
+          <li class="special"><a href="">Staff Picks</a></li>
+          <hr> -->
+	  
+	  
+	      
+	  
+      
+          
+            <li>
+                <div id="hot_topics">
+                    <div id="in_category">Hot topics in Electronic Design Automation (EDA) Software</div>
+                    
+                        <a href="http://sourceforge.net/directory/?q=circuit+simulator">circuit simulator</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=circuit">circuit</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=ghdl">ghdl</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=kicad">kicad</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=gpsim">gpsim</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=freecad">freecad</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=schematic">schematic</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=electrical">electrical</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=sveditor">sveditor</a>
+                    
+                        <a href="http://sourceforge.net/directory/?q=pcb">pcb</a>
+                    
+                </div>
+            </li>
+          
+      
+        </ul><section id="result_data">
+
+
+
+       
+        
+<p id="result_count">
+    Showing page 1 of 31.
+</p>
+
+
+       
+
+
+	    
+            <ul class="projects">
+    
+
+
+
+    
+
+<div id="SF_Browse_459x69_A_wrapped" class="ad  ads_native " data-unit="SF_Browse_459x69_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113142-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113142-0');
+        });
+    }
+})();
+</script>
+</div>
+    
+
+
+
+    
+
+<div id="SF_Browse_459x69_B_wrapped" class="ad  ads_native " data-unit="SF_Browse_459x69_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113143-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113143-0');
+        });
+    }
+})();
+</script>
+</div>
+
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/qucs/?source=directory" title="Find out more about Quite Universal Circuit Simulator">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/qucs/icon" alt="Quite Universal Circuit Simulator Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/qucs/?source=directory" itemprop="url" title="Find out more about Quite Universal Circuit Simulator"><span itemprop="name">Quite Universal Circuit Simulator</span></a></header>
+      <p itemprop="description">A circuit simulator with graphical user interface (GUI)</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:2642">2,642</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/tinycad/?source=directory" title="Find out more about TinyCAD">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/tinycad/icon" alt="TinyCAD Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/tinycad/?source=directory" itemprop="url" title="Find out more about TinyCAD"><span itemprop="name">TinyCAD</span></a></header>
+      <p itemprop="description">TinyCAD is a program for drawing electrical circuit diagrams commonly known as schematic drawings. It supports standard and custom symbol libraries. It supports PCB layout programs with several netlist formats and can also produce SPICE simulation netlists.  It is also often used to draw one-line diagrams, block diagrams, and presentation drawings.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1623">1,623</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/gerbv/?source=directory" title="Find out more about gerbv -- a Gerber (RS-274X) viewer">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/gerbv/icon" alt="gerbv -- a Gerber (RS-274X) viewer Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/gerbv/?source=directory" itemprop="url" title="Find out more about gerbv -- a Gerber (RS-274X) viewer"><span itemprop="name">gerbv -- a Gerber (RS-274X) viewer</span></a></header>
+      <p itemprop="description">Gerbv is an open source Gerber file (RS-274X only) viewer. Gerbv lets you load several files on top of each other, do measurements on the displayed image, etc. Besides viewing Gerbers, you may also view Excellon drill files as well as pick-place file</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1214">1,214</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/sveditor/?source=directory" title="Find out more about SVEditor">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/sveditor/icon" alt="SVEditor Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/sveditor/?source=directory" itemprop="url" title="Find out more about SVEditor"><span itemprop="name">SVEditor</span></a></header>
+      <p itemprop="description">SVEditor is an Eclipse-based IDE (Integrated Development Environment) for SystemVerilog and Verilog files. It features syntax coloring, content assist, source indent and auto-indent, and structure display.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:628">628</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/ngspice/?source=directory" title="Find out more about ngspice">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/ngspice/icon" alt="ngspice Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/ngspice/?source=directory" itemprop="url" title="Find out more about ngspice"><span itemprop="name">ngspice</span></a></header>
+      <p itemprop="description">Ngspice project aims to improve the spice3f5 circuit simulator.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:647">647</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="../../../projects/picsim/index-source=directory.html" title="Find out more about PICsim - PIC microcontroller simulator">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/picsim/icon" alt="PICsim - PIC microcontroller simulator Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="../../../projects/picsim/index-source=directory.html" itemprop="url" title="Find out more about PICsim - PIC microcontroller simulator"><span itemprop="name">PICsim - PIC microcontroller simulator</span></a></header>
+      <p itemprop="description">PICsim emulates a microcontroller PIC16F628/16F877A/18F452 and periferics such as USART and timers, the simulator architecture permit easy implementation of external elements in c language. PicsimLab is a realtime emulator of development boards.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:312">312</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/ktechlab/?source=directory" title="Find out more about KTechlab">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/ktechlab/icon" alt="KTechlab Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/ktechlab/?source=directory" itemprop="url" title="Find out more about KTechlab"><span itemprop="name">KTechlab</span></a></header>
+      <p itemprop="description">KTechlab is an IDE for microcontrollers and electronics.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:309">309</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/fidocadj/?source=directory" title="Find out more about FidoCadJ">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/fidocadj/icon" alt="FidoCadJ Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/fidocadj/?source=directory" itemprop="url" title="Find out more about FidoCadJ"><span itemprop="name">FidoCadJ</span></a></header>
+      <p itemprop="description">Simple and intuitive 2D vector drawing for electronics and not only.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:263">263</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/veditor/?source=directory" title="Find out more about Eclipse Verilog editor">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ve/veditor%40sf.net/veditor_default.png" alt="Eclipse Verilog editor Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/veditor/?source=directory" itemprop="url" title="Find out more about Eclipse Verilog editor"><span itemprop="name">Eclipse Verilog editor</span></a></header>
+      <p itemprop="description">Eclipse Verilog editor is a plugin for the Eclipse IDE. It provides Verilog(IEEE-1364) and VHDL language specific code viewer, contents outline, code assist etc. It helps coding and debugging in hardware development based on Verilog or VHDL.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:172">172</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pcb/?source=directory" title="Find out more about Printed Circuit Board Layout Tool">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/pc/pcb%40sf.net/pcb_default.png" alt="Printed Circuit Board Layout Tool Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pcb/?source=directory" itemprop="url" title="Find out more about Printed Circuit Board Layout Tool"><span itemprop="name">Printed Circuit Board Layout Tool</span></a></header>
+      <p itemprop="description">PCB is a tool for the layout of printed circuit boards. PCB can produce industry standard RS-274X and Excellon NC-Drill format output for submission to board manufacturers.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:187">187</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/urjtag/?source=directory" title="Find out more about Universal JTAG library, server and tools">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ur/urjtag%40sf.net/urjtag_default.png" alt="Universal JTAG library, server and tools Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/urjtag/?source=directory" itemprop="url" title="Find out more about Universal JTAG library, server and tools"><span itemprop="name">Universal JTAG library, server and tools</span></a></header>
+      <p itemprop="description">UrJTAG aims to create an enhanced, modern tool for communicating over JTAG with flash chips, CPUs, and many more. It is a descendant of the popular openwince JTAG tools with a lot of additional features and enhancements.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:138">138</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/simulide/?source=directory" title="Find out more about simulide">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/si/simulide%40sf.net/simulide_default.png" alt="simulide Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/simulide/?source=directory" itemprop="url" title="Find out more about simulide"><span itemprop="name">simulide</span></a></header>
+      <p itemprop="description">Circuit Simulator</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:165">165</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/jmcad/?source=directory" title="Find out more about JMCAD - modeling of dynamic systems">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/jmcad/icon" alt="JMCAD - modeling of dynamic systems Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/jmcad/?source=directory" itemprop="url" title="Find out more about JMCAD - modeling of dynamic systems"><span itemprop="name">JMCAD - modeling of dynamic systems</span></a></header>
+      <p itemprop="description">JMCAD is an program for the modeling and simulation of complex dynamic systems. This includes the ability to construct and simulate block diagrams. The visual block diagram interface offers a simple method for constructing, modifying and maintaining complex system models. The simulation engine provides fast and accurate solutions for linear, nonlinear, continuous time, discrete time, time varying and hybrid system designs. With JMCAD, users can quickly develop software or &#34;virtual&#34; prototypes of systems or processes to demonstrate their behavior prior to building physical prototypes.
+
+The user builds his system model by selecting predefined blocks from a block library and simply wiring the blocks together. Each block of the diagram performs a function. Users can also create custom blocks in Java and add them to the JMCAD block library.
+
+JMCAD is a block diagram language for creating complex nonlinear dynamic systems.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:95">95</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/eaglepcb2freecad/?source=directory" title="Find out more about FreeCAD-PCB">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/eaglepcb2freecad/icon" alt="FreeCAD-PCB Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/eaglepcb2freecad/?source=directory" itemprop="url" title="Find out more about FreeCAD-PCB"><span itemprop="name">FreeCAD-PCB</span></a></header>
+      <p itemprop="description">Import your PCB boards to FreeCAD</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:125">125</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/qfsm/?source=directory" title="Find out more about Qfsm">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/qfsm/icon" alt="Qfsm Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/qfsm/?source=directory" itemprop="url" title="Find out more about Qfsm"><span itemprop="name">Qfsm</span></a></header>
+      <p itemprop="description">A graphical Finite State Machine (FSM) designer.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:112">112</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/iverilog/?source=directory" title="Find out more about Icarus Verilog">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/iv/iverilog%40sf.net/iverilog_default.png" alt="Icarus Verilog Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/iverilog/?source=directory" itemprop="url" title="Find out more about Icarus Verilog"><span itemprop="name">Icarus Verilog</span></a></header>
+      <p itemprop="description">Icarus Verilog is an open source Verilog compiler that supports the IEEE-1364 Verilog HDL including IEEE1364-2005 plus extensions.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:87">87</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/timingeditor/?source=directory" title="Find out more about TimingEditor">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/timingeditor/icon" alt="TimingEditor Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/timingeditor/?source=directory" itemprop="url" title="Find out more about TimingEditor"><span itemprop="name">TimingEditor</span></a></header>
+      <p itemprop="description">TimingEditor is a tool to graphically draw and edit timing diagrams.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:112">112</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/gpsim/?source=directory" title="Find out more about gpsim - The gnupic Simulator">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/gpsim/icon" alt="gpsim - The gnupic Simulator Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/gpsim/?source=directory" itemprop="url" title="Find out more about gpsim - The gnupic Simulator"><span itemprop="name">gpsim - The gnupic Simulator</span></a></header>
+      <p itemprop="description">gpsim is an open sourced simulator for Microchip&#39;s PIC microcontrollers. It supports all three families of PICs: 12-bit, 14-bit, and 16-bit cores. See also gputils  http://gputils.sourceforge.net/</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:105">105</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="../../../projects/gputils/index-source=directory.html" title="Find out more about gputils">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/gp/gputils%40sf.net/gputils_default.png" alt="gputils Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="../../../projects/gputils/index-source=directory.html" itemprop="url" title="Find out more about gputils"><span itemprop="name">gputils</span></a></header>
+      <p itemprop="description">gputils is a collection of tools for Microchip PIC microcontrollers.  Its goal is to be fully compatible with Microchip&#39;s tools, MPASM, MPLINK, and MPLIB.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:112">112</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/ghdl-updates/?source=directory" title="Find out more about ghdl-updates">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/gh/ghdl-updates%40sf.net/ghdl-updates_default.png" alt="ghdl-updates Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/ghdl-updates/?source=directory" itemprop="url" title="Find out more about ghdl-updates"><span itemprop="name">ghdl-updates</span></a></header>
+      <p itemprop="description">GHDL - a VHDL simulator</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:97">97</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="../../../projects/digisimulator/index-source=directory.html" title="Find out more about DigitalSimulator">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/di/digisimulator%40sf.net/digisimulator_default.png" alt="DigitalSimulator Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="../../../projects/digisimulator/index-source=directory.html" itemprop="url" title="Find out more about DigitalSimulator"><span itemprop="name">DigitalSimulator</span></a></header>
+      <p itemprop="description">The DigitalSimulator is your Virtual Electronics Lab, allowing you to design, simulate and output your digital circuit board designs.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:81">81</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pcb2gcode/?source=directory" title="Find out more about PCB to Gcode">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/pc/pcb2gcode%40sf.net/pcb2gcode_default.png" alt="PCB to Gcode Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pcb2gcode/?source=directory" itemprop="url" title="Find out more about PCB to Gcode"><span itemprop="name">PCB to Gcode</span></a></header>
+      <p itemprop="description">The project development has been moved on GitHub https://github.com/pcb2gcode/pcb2gcode
+An experimental cross-platform GUI is available here https://github.com/pcb2gcode/pcb2gcodeGUI
+
+pcb2gcode is a command-line tool for isolation routing and drilling of PCBs that provides full support for both single- and double-sided boards. For more information, see http://sourceforge.net/apps/mediawiki/pcb2gcode/</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:79">79</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/bexpred/?source=directory" title="Find out more about The Boolean Expression Reducer (BExpred)">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/be/bexpred%40sf.net/bexpred_default.png" alt="The Boolean Expression Reducer (BExpred) Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/bexpred/?source=directory" itemprop="url" title="Find out more about The Boolean Expression Reducer (BExpred)"><span itemprop="name">The Boolean Expression Reducer (BExpred)</span></a></header>
+      <p itemprop="description">The Boolean Expression Reducer provides the user with various tools to visualize and analyze boolean expressions. Given an expression, it also reduces it to its Sum of Products and Product of Sums form.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:151">151</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/kontrollerlab/?source=directory" title="Find out more about KontrollerLab">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ko/kontrollerlab%40sf.net/kontrollerlab_default.png" alt="KontrollerLab Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/kontrollerlab/?source=directory" itemprop="url" title="Find out more about KontrollerLab"><span itemprop="name">KontrollerLab</span></a></header>
+      <p itemprop="description">The KontrollerLab is an IDE for developing software for Atmel(r) AVR(c) microcontrollers using the avr-gcc compiler, the uisp and the avrdude upload software.</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:80">80</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/matrix14freeamp/?source=directory" title="Find out more about MATRIX 1.4 Free Audio Power Amplifier">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/matrix14freeamp/icon" alt="MATRIX 1.4 Free Audio Power Amplifier Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/matrix14freeamp/?source=directory" itemprop="url" title="Find out more about MATRIX 1.4 Free Audio Power Amplifier"><span itemprop="name">MATRIX 1.4 Free Audio Power Amplifier</span></a></header>
+      <p itemprop="description">MATRIX 1.4 Free &amp; Open Audio Power Amplifier Technology Platform</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:200">200</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+</ul>
+            
+
+
+
+
+    
+    
+
+<ul class="paging">
+  
+    <li>
+      
+        Back
+      
+    </li>
+    
+    
+    <li>
+      
+        1
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=2">2</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=3">3</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=4">4</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=5">5</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=6">6</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=7">7</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=8">8</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=9">9</a>
+      
+    </li>
+    
+    
+    <li>
+        &hellip;
+    </li>
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory/science-engineering/eda/?page=2">Next</a>
+      
+    </li>
+  
+</ul>
+        </section>
+        </div>
+      </section>
+      </section><!-- #search -->
+      
+        <section id="related_searches">
+            
+        </section>
+      
+    </section><!-- #main-content -->
+    <section id="sidebar">
+        <section class="ads">
+                
+
+
+
+    
+    
+
+<div id="SF_Directory_300x250_A_wrapped" class="ad multisize  " data-unit="SF_Directory_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113149-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113149-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Directory_300x250_B_wrapped" class="ad medrec  " data-unit="SF_Directory_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113140-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113140-0');
+        });
+    }
+})();
+</script>
+</div>
+        </section>
+        
+        <aside class="sidebar-widget" id="top-downloaded-widget">
+            <header>
+            <h3>Top Downloaded</h3>
+            </header>
+            <ul>
+            </ul>
+        </aside>
+
+        
+            
+    <aside class="sidebar-widget stackcommerce-widget">
+            <header id="stackcommerce-header">
+                <img src="http://a.fsdn.com/con/img/sf_logo250x32.png" width="125" height="16" />
+                <h3>Deals</h3>
+            </header>
+            
+
+
+
+    
+
+<div id="SF-300x250_wrapped" class="ad medrec  " data-unit="SF-300x250">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148208795-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148208795-0');
+        });
+    }
+})();
+</script>
+</div>
+    </aside>
+    
+
+        
+
+        
+<script type="text/javascript" src="http://gdc.indeed.com/ads/apiresults.js"></script>
+<aside class="sidebar-widget jobs-widget">
+  <header>
+    <h3>
+      <span id="itjb_at"><a href="http://us.dice.com">jobs</a> by <a id='itjb-logo-container' href="http:us.dice.com">
+      <img src= "http://a.fsdn.com/con/img/jobs/Dice_FormerlyITJB_LogoStack_V5_US_d.png"
+   alt="ITJB" class="itjb-provider-logo">
+      </a></span>
+      <span id="indeed_at"><a href="http://www.indeed.com/">jobs</a> by <a href="http://www.indeed.com/" title="Job Search"><img src="http://a.fsdn.com/con/img/jobs/indeed_logo.gif" class="provider-logo" alt="Indeed job search"></a></span>
+            <span id="dice_at">
+                Powered by
+                <a href="http://www.dice.com/?CMPID=AF_SF_UP_JS_AV_OG_BN_&utm_source=SourceForge&utm_medium=Affiliate&utm_content=&utm_campaign=Advocacy_Ongoing"> <img src="http://a.fsdn.com/con/img/jobs/dice_logo.png" alt="Dice Logo" class="dice-logo"> </a>
+            </span>
+            Latest Tech Jobs
+        </h3>
+    </header>
+    <section>
+        <form action="/jobs/" method="get" id="job-search">
+            <input type="hidden" name="source" value="widget">
+            <input type="text" name="text" placeholder="Senior Java Developer (Job Title)" id="job-title" value="">
+            <input type="submit" name="submit" value="Find" id="job-search-button">
+        </form>
+    </section>
+    <ul id="job-listing">
+        <li class="item odd">
+            <span class="job-link"><a href="../../../jobs-source=widget.html">Loading...</a></span>
+            <span class="job-details">The latest tech jobs.</span>
+        </li>
+   </ul>
+   <section class="all-jobs" style="border: none;">
+        <a href="../../../jobs-source=widget.html">See All Jobs &rsaquo;&rsaquo;</a>
+    </section>
+</aside>
+
+<script type="text/javascript">
+    /*global Handlebars*/
+    $(function($) {
+        var source = $('#jobwidget-template').html();
+        var template = Handlebars.compile(source);
+
+
+        function load_jobBoard() {
+            $.ajax({
+                url:'/jobs/json',
+                success: function(data) {
+                    $('#job-listing').html(template(data));
+                    var provider_name = data.provider_name, attrib_id;
+                    switch (provider_name) {
+                        case 'itjb':
+                            var itjb_link = 'http://www.' + data.itjb_links["US"] + '?' + data.itjb_tracker.logo;
+                            $('#itjb_at a').prop('href', itjb_link);
+                            attrib_id = '#itjb_at';
+                            $('#job-listing li a').each(function (index, element) {
+                                var href = $(element).prop('href');
+                                href += '&' + data.itjb_tracker.link;
+                                $(element).prop('href', href);
+                            });$('#itjb-logo-container').html('<img src="//a.fsdn.com/con/img/jobs/Dice_FormerlyITJB_LogoStack_V5_US_d.png" class="itjb-provider-logo" alt="ITJB job search" />');break;
+                        case 'indeed':
+                            attrib_id = '#indeed_at';
+                        break;
+                        default:
+                            attrib_id = '#dice_at';
+                        break;
+                    }
+                    $(attrib_id).show().siblings().hide();
+                },
+                dataType: 'json'
+            });
+        }
+        load_jobBoard();
+    });
+</script>
+
+<script type="text/x-handlebars-template" id="jobwidget-template">
+    
+    {{#stripe data.jobs 5 true}}
+    <li class="item {{css_class}}">
+    <span class="job-link"><a href="{{ this.url }}" onmousedown="{{ this.onmousedown }}">{{ this.title }}</a></span>
+        <span class="job-details">{{ this.company}} - {{ this.location}}</span>
+    </li>
+    {{/stripe}}
+    
+</script>
+
+        <section class="ads">
+                
+
+
+
+    
+
+<div id="SF_Directory_300x250_C_wrapped" class="ad medrec  " data-unit="SF_Directory_300x250_C">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113141-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113141-0');
+        });
+    }
+})();
+</script>
+</div>
+        </section>
+    </section>
+</article>
+        </div>
+  
+    <div class="dir-footer-adcontainer">
+        
+        
+
+
+
+    
+
+<div id="SF_Directory_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Directory_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148208790-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148208790-0');
+        });
+    }
+})();
+</script>
+</div>
+        
+    </div>
+  
+
+        
+
+          
+<footer id="site-footer">
+    <div class="wrapper">
+        <nav>
+            <h5>SourceForge</h5>
+            <a href="../../../about.html">About</a>
+            <a href="../../../blog/category/sitestatus/index.html">Site Status</a>
+            <a href="http://twitter.com/sfnet_ops">@sfnet_ops</a>
+
+
+        </nav>
+        <nav>
+            <h5>Find and Develop Software</h5>
+            <a href="../../../create/index.html">Create a Project</a>
+            <a href="../../index.html">Software Directory</a>
+            <a href="../../../top.html">Top Downloaded Projects</a>
+        </nav>
+        <nav>
+            <h5>Community</h5>
+            <a href="../../../blog/index.html">Blog</a>
+            <a href="http://twitter.com/sourceforge">@sourceforge</a>
+            <a href="../../../jobs-source=footer.html">Job Board</a>
+            <a href="http://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+        </nav>
+        <nav>
+            <h5>Help</h5>
+            <a href="http://p.sf.net/sourceforge/docs">Site Documentation</a>
+            <a href="../../../support.html">Support Request</a>
+            <a href="http://p.sf.net/sourceforge/irc">Real-Time Support</a>
+        </nav>
+    </div>
+</footer>
+<footer id="site-copyright-footer">
+    <div class="wrapper">
+        <div id="copyright">
+            &copy; 2015 Slashdot Media. All Rights Reserved.<br />
+            <div id="dhi-icon"><span class="logo-DHI-alt"></span></div>
+            <div id="service-text"><div class="smalltext"> SourceForge is a <a href="http://www.dhigroupinc.com" target="_blank">DHI service</a></div></div>
+
+            <!--<div id="dhi-service">SourceForge is a <a href="http://www.dhigroupinc.com">DHI</a> service.</div>-->
+        </div>
+        <nav>
+            <a href="http://slashdotmedia.com/terms-of-use/">Terms</a>
+            <a href="http://slashdotmedia.com/privacy-statement/">Privacy</a>
+            <span id='teconsent'></span>
+            <a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
+
+
+            <a href="http://slashdotmedia.com">Advertise</a>
+            <a href="http://ibmsoftwaredelivery.sourceforge.net/">Software Delivery</a>
+        </nav>
+    </div>
+</footer>
+            <script src="http://a.fsdn.com/con/js/min/sf.js?1441983328" type="text/javascript"></script>
+        
+
+        
+        <!-- Begin comScore Tag -->
+        <script src="http://b.scorecardresearch.com/beacon.js"></script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=6035546&c3=&c4=&c5=&c6=&c15=&cj=1" alt="comScore2" />
+        " />
+        </noscript>
+        <!-- End comScore Tag -->
+            <script type="text/javascript" src="http://consent-st.truste.com/get?name=notice.js&domain=slashdot.org&c=teconsent&text=true"></script>
+            
+<script type="text/javascript">
+    $(function() {
+        /*global addCommas */
+        var $top_widget = $('#top-downloaded-widget');
+	$.ajax('/top/top_data?os=Other', {
+            global: false,
+            success: function(data) {
+                if(data.download_week.length) {
+                    $.each(data.download_week, function(index, p) {
+                        $top_widget.find('ul').
+                        append('<li><span>{downloads}</span><a href="/projects/{shortname}">{name}</a></li>'.format({
+                            shortname: p.shortname,
+                            name: p.name,
+                            downloads: SF.Humanize.intWord(p.downloads)
+                        }));
+                    });
+                    $top_widget.show();
+                }
+            }
+        });
+
+        
+    });
+</script>
+      </body>
+</html>

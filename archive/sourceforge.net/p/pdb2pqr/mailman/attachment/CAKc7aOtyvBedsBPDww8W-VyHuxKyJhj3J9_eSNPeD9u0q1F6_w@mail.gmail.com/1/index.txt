@@ -1,0 +1,30 @@
+Content-Type: multipart/alternative; boundary=001a113fd5e0720650051aebf99a
+
+--001a113fd5e0720650051aebf99a
+Content-Type: text/plain; charset=UTF-8
+
+Dear Sir/Ma'am
+
+Thanks for your great pdb2pqr server. It's very helpful for me in study.
+But I had meet a problem when I used it. For example, I uploaded the
+1QD3.pdb file (attached in the enclosure), but the server cannot convert
+this file to pqr file. So, I'm wondering if the pdb file needs to meet some
+specific requirements.
+
+Looking forward to hearing from you. Thanks
+
+Lizhen
+
+--001a113fd5e0720650051aebf99a
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr"><div><div><div>Dear Sir/Ma&#39;am<br><br></div>Thanks for =
+your great pdb2pqr server. It&#39;s very helpful for me in study. But I had=
+ meet a problem when I used it. For example, I uploaded the 1QD3.pdb file (=
+attached in the enclosure), but the server cannot convert this file to pqr =
+file. So, I&#39;m wondering if the pdb file needs to meet some specific req=
+uirements. <br><br></div>Looking forward to hearing from you. Thanks<br><br=
+></div>Lizhen <br></div>
+
+--001a113fd5e0720650051aebf99a--

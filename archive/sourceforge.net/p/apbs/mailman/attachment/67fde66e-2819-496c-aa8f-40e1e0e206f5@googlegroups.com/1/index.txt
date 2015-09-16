@@ -1,0 +1,51 @@
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_131_153356095.1437011351320"
+
+------=_Part_131_153356095.1437011351320
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi APBS developers,
+
+I want to input customized dielectric constant map to define the molecular 
+surface myself. I know that one should use the "read diel" keyword, but I 
+don't understand the following description associated with the keyword:
+
+"This command allows APBS to read the dielectric function mapped to 3 
+meshes shifted by one-half grid spacing in the x, y, and z directions. The 
+inputs are maps of dielectric variables between the solvent and 
+biomolecular dielectric constants; these values are unitless. In general, 
+this command will read dielectric maps written by write commands in earlier 
+APBS calculations."
+
+
+As I understand it, the dielectric constant is a scalar not a vector, so:
+
+1. What is the meaning of the x, y, z-directional dielectric constants?
+2. What the purpose of the one-half grid spacing shifting?
+
+
+Thanks!
+Nuo
+
+------=_Part_131_153356095.1437011351320
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: quoted-printable
+
+<div dir=3D"ltr">Hi APBS developers,<div><br></div><div>I want to input cus=
+tomized dielectric constant map to define the molecular surface myself. I k=
+now that one should use the &quot;read diel&quot; keyword, but I don&#39;t =
+understand the following description associated with the keyword:</div><blo=
+ckquote style=3D"margin: 0 0 0 40px; border: none; padding: 0px;"><div>&quo=
+t;This command allows APBS to read the dielectric function mapped to 3 mesh=
+es shifted by one-half grid spacing in the x, y, and z directions. The inpu=
+ts are maps of dielectric variables between the solvent and biomolecular di=
+electric constants; these values are unitless. In general, this command wil=
+l read dielectric maps written by write commands in earlier APBS calculatio=
+ns.&quot;</div></blockquote><div><br></div><div>As I understand it, the die=
+lectric constant is a scalar not a vector, so:</div><blockquote style=3D"ma=
+rgin: 0 0 0 40px; border: none; padding: 0px;"><div>1. What is the meaning =
+of the x, y, z-directional dielectric constants?</div><div>2. What the purp=
+ose of the one-half grid spacing shifting?</div></blockquote><div><br></div=
+><div>Thanks!</div><div>Nuo</div></div>
+------=_Part_131_153356095.1437011351320--

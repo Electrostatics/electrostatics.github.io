@@ -1,0 +1,58 @@
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_4999_48379993.1435966623423"
+
+------=_Part_4999_48379993.1435966623423
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Greetings,
+
+I have been using APBS (v1.3) from PMV to make some electrostatic 
+calculations for the well-known chemokine, Interleukin-8.  In the output 
+PMV kicks out (attached), there are three columns for the force 
+calculations, such as:
+
+**************************
+
+  Printing net forces for molecule 1 (kJ/mol/A)
+
+  Legend:
+
+    qf  -- fixed charge force
+
+    db  -- dielectric boundary force
+
+    ib  -- ionic boundary force
+
+  qf  5.731e+01  -6.741e+01  -1.673e+03
+
+  ib  3.478e-01  -1.625e-01  -3.757e-01
+
+  db  -2.081e+02  -1.610e+02  1.059e+02
+
+  Writing potential to 1IL8.potential.dx
+**************************
+
+I understand what the rows are given by the legend, I am just curious what 
+the three different columns mean?  I have been looking through the User 
+Guide and Tutorial without any luck yet, unfortunately.
+
+Any help would be more than appreciated.
+
+Thank you,
+Trevor Tanner
+
+------=_Part_4999_48379993.1435966623423
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Greetings,<br><br>I have been using APBS (v1.3) from PMV to make some electrostatic calculations for the well-known chemokine, Interleukin-8. &nbsp;In the output PMV kicks out (attached), there are three columns for the force calculations, such as:<br><br>**************************<p class="p1">&nbsp; Printing net forces for molecule 1 (kJ/mol/A)</p>
+<p class="p1">&nbsp; Legend:</p>
+<p class="p1">&nbsp; &nbsp; qf&nbsp; -- fixed charge force</p>
+<p class="p1">&nbsp; &nbsp; db&nbsp; -- dielectric boundary force</p>
+<p class="p1">&nbsp; &nbsp; ib&nbsp; -- ionic boundary force</p>
+<p class="p1">&nbsp; qf&nbsp; 5.731e+01&nbsp; -6.741e+01&nbsp; -1.673e+03</p>
+<p class="p1">&nbsp; ib&nbsp; 3.478e-01&nbsp; -1.625e-01&nbsp; -3.757e-01</p>
+<p class="p1">&nbsp; db&nbsp; -2.081e+02&nbsp; -1.610e+02&nbsp; 1.059e+02</p>
+<p class="p1">&nbsp; Writing potential to 1IL8.potential.dx<br>**************************<br><br>I understand what the rows are given by the legend, I am just curious what the three different columns mean? &nbsp;I have been looking through the User Guide and Tutorial without any luck yet, unfortunately.<br><br>Any help would be more than appreciated.<br><br>Thank you,<br>Trevor Tanner</p></div>
+------=_Part_4999_48379993.1435966623423--

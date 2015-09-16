@@ -1,0 +1,2906 @@
+<!doctype html>
+<!-- Server: sfs-consume-8 -->
+
+<!--[if lt IE 7 ]> <html lang="en" class="no-js ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="no-js ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="no-js ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="no-js ie9"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]>--> <html lang="en" class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        
+        <meta id="project_name" name="project_name" content="">
+
+
+
+<link rel="prev" href="directory-q=numpy&page=2.html"/>
+
+
+
+<link rel="next" href="directory-q=numpy&page=4.html"/>
+
+
+<link rel="canonical" href="directory-q=numpy.html" />
+
+    <meta name="description" content="numpy free download. pyL1min  pyL1min is a general purpose norm-1 (l1) minimization solver written in Python. It is based on  ...">
+
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+
+numpy free download - SourceForge
+
+</title>
+        <link rel="shortcut icon" href="http://a.fsdn.com/con/img/sftheme/favicon.ico">
+        
+
+<!-- CCM Tag -->
+<script type="text/javascript">
+  //ccm informer
+/*jshint ignore:start*/
+    (function(f,i,c){var a=decodeURIComponent,e="",l="",o="||",g=";;",h="split",b="length",j="indexOf",k=0,n="localStorage",m="_ccmdt";f[c]=f[c]||{};function d(q){var p;if(f[n]){return f[n][q]||""}else{p=i.cookie.match(q+"=([^;]*)");return(p&&p[1])||""}}f[c].us={};e=a(d(m))[h](o);k=e[b];if(k>0){while(k--){l=e[k][h]("=");if(l[b]>1){if(l[1][j](g)>-1){f[c].us[l[0]]=l[1][h](g);f[c].us[l[0]].pop()}else{f[c].us[l[0]]=l[1]}}}}})(window,document,"_ml");
+/*jshint ignore:end*/
+
+  //ccm tag
+  (function () {
+    /*global _ml:true, window */
+    _ml = window._ml || {};
+    _ml.eid = '771';
+    _ml.ht = 'shex';
+    _ml.informer = {
+      enable: true
+    };
+    var s = document.getElementsByTagName('script')[0], cd = new Date(), mltag = document.createElement('script');
+    mltag.type = 'text/javascript'; mltag.async = true;
+    mltag.src = '//ml314.com/tag.aspx?' + cd.getDate() + cd.getMonth() + cd.getFullYear();
+    s.parentNode.insertBefore(mltag, s);
+  })();
+</script>
+<!-- End CCM Tag -->
+
+        
+        <script type="text/javascript">
+            /*global unescape, window, console, jQuery, $, net, SF, COMSCORE, DD_belatedPNG, ga */
+            // Setup our namespace
+            if (!window.SF) { window.SF = {}; }
+            if (!window.net) { window.net = {}; }
+            if (!window.net.sf) { window.net.sf = {}; }
+            SF.Ads = {};
+            SF.cdn = '//a.fsdn.com/con';
+            SF.deploy_time = '1441983328';
+        </script>
+        <script src="http://a.fsdn.com/con/js/min/sf.head.js?1441983328" type="text/javascript"></script>
+        
+<!--[if lt IE 7 ]>
+  <script src="//a.fsdn.com/con/js/sftheme/dd_belatedpng.js"></script>
+  <script> DD_belatedPNG.fix('img, .png_bg'); //fix any <img> or .png_bg background-images </script>
+<![endif]-->
+
+<link href='http://fonts.googleapis.com/css?family=Ubuntu:regular' rel='stylesheet' type='text/css'>
+<style type="text/css">@font-face {
+        font-family: "Pictos";
+        src: url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.eot');
+        src: local("☺"), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.woff') format('woff'), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.ttf') format('truetype'), url('http://a.fsdn.com/con/css/fonts/sftheme/pictos-web.svg') format('svg');
+    }
+</style>
+ <link rel="stylesheet" href="http://a.fsdn.com/con/css/sf.css?1441983328" type="text/css">
+
+
+    <style type="text/css" >.sfdl { width:100px;height:48px;padding:0;position:relative;font:bold 12px/1.17 sans-serif !important; border:1px solid #aaa;display:inline;float:left;text-decoration:none;-moz-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-webkit-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-o-box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;box-shadow:rgba(255, 255, 255, 0.6) 0 1px 0 0;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background:no-repeat #e5e5e5 8px center url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #fff), color-stop(100%, #ccc));background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), -moz-linear-gradient(top, #fff 0%, #ccc 100%);background-image:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC), linear-gradient(top, #fff 0%, #ccc 100%);background-position:8px center, 0 0;margin:0 10px 0px 0;overflow:hidden;color:#555 !important;}.sfdl:hover { cursor:pointer;text-decoration:none;background:8px center no-repeat #eee url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAANCAYAAABPeYUaAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAANFJREFUeNqcUosNgjAUbE0HcARGwAnqZxBxBCbQDXQE2UOkTIAj4AZsgPfMa1JeGqhecimU63HvvepxHFUq6mebY2nAdbi/Ur/hKg0IRv2H3WFvnX/Rj9qRcxH7A+BIjDK2eCYewQy8g2/WDJSk4w8xWDICz2ziUchyvMGLXIVJK9acE0+0VM53PIitE6bTcKJJT0wg6ESSHiwhHpbMDYszjhrDKcVkE5mO5dhZyrwNx72J2i9iGvMmODB372U/aCpV2NSlG0sGVbiBw2VM+BFgALYfPdL6UCEWAAAAAElFTkSuQmCC);}.sfdl-lite { background:0 center no-repeat #337733 none;color:white !important;height:auto;padding:0.5em 1em;text-align:center;-moz-border-radius:4px;-webkit-border-radius:4px;-o-border-radius:4px;-ms-border-radius:4px;-khtml-border-radius:4px;border-radius:4px;background-image:-webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #339933), color-stop(100%, #337733));background-image:-moz-linear-gradient(top, #339933 0%, #337733 100%);background-image:linear-gradient(top, #339933 0%, #337733 100%);}.sfdl-lite:hover { background:0 center no-repeat #339933;}.sfdl span { border-radius:3px;-moz-border-radius:3px;-webkit-border-radius:3px;display:block;margin:3px;margin-left:35px;padding:4px;text-align:left;color:#FFF;background:#363;background-image:-moz-linear-gradient(center top, #393 0%, #373 100%);background-image:-webkit-gradient(linear, left top, left bottom, color-stop(0, #393),color-stop(1, #373));background-image:linear-gradient(top, #393 0%, #373 100%);overflow:hidden;height:34px;}.sfdl b { display:block;line-height:17.0px;}.sfdl small { display:block;line-height:17.0px;color:#ADC2AD; font-weight:normal;white-space:nowrap;overflow:hidden;font-size:77%;}.info-circle{ right:10px;bottom:16px;}.direct-dl{ font-size:10px;text-align:right;display:inline-block;width:100%;}</style>
+
+
+        
+<script type="text/javascript">
+    SF.adblock = true;
+    var immersion_adcode = "";
+</script>
+  <script type='text/javascript'>
+
+   (function() {
+         var useSSL = 'https:' === document.location.protocol;
+         var src = (useSSL ? 'https:' : 'http:') +
+               '//www.googletagservices.com/tag/js/gpt.js';
+         document.write('<scr' + 'ipt src="' + src + '"></scr' + 'ipt>');
+   })();
+   </script>
+
+   <!-- GPT Slot Definitions -->
+   <script type='text/javascript'>
+       /*global googletag */
+       var gptadslots=[];
+       var gptadHandlers={};
+       googletag.cmd.push(function() {
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_A', [[300, 250], [300, 600], [300, 1050]], 'div-gpt-ad-1393435113156-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250,300x600,300x1050')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_B', [300, 250], 'div-gpt-ad-1393435113157-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_C', [300, 250], 'div-gpt-ad-1393435113158-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_D', [300, 250], 'div-gpt-ad-1393435113159-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_E', [300, 250], 'div-gpt-ad-1393435113160-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_F', [300, 250], 'div-gpt-ad-1393435113161-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_300x250_G', [300, 250], 'div-gpt-ad-1393435113162-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_A', [611, 69], 'div-gpt-ad-1393435113142-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_B', [611, 69], 'div-gpt-ad-1393435113143-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_D', [611, 69], 'div-gpt-ad-1393435113144-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Search_611x69_D'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_E', [611, 69], 'div-gpt-ad-1393435113145-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Search_611x69_E'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_F', [611, 69], 'div-gpt-ad-1393435113146-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Search_611x69_F'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_611x69_G', [611, 69], 'div-gpt-ad-1393435113147-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '611x69')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadHandlers['/4140/ostg.sourceforge/SF_Search_611x69_G'] =  'revealIfDelivers';
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Search_728x90_B', [728, 90], 'div-gpt-ad-1392148208790-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '728x90')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/7346874/SF-300x250', [300, 250], 'div-gpt-ad-1392148208795-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '300x250')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Left_150x1060', [150, 1060], 'div-gpt-ad-139343511-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_search'));
+            gptadslots.push(googletag.defineSlot('/4140/ostg.sourceforge/SF_Bookend_Right_150x1060', [150, 1060], 'div-gpt-ad-139343512-0')
+                                                    .addService(googletag.pubads())
+                                                        .setTargeting('tpc', ['numpy'])
+                                                        .setTargeting('dc_ref', 'http://sourceforge.net/directory')
+                                                        .setTargeting('sz', '150x1060')
+                                                        .setTargeting('page_type', 'pg_search'));
+            
+            googletag.pubads().enableSyncRendering();
+            googletag.pubads().collapseEmptyDivs();
+            googletag.enableServices();
+            googletag.pubads().addEventListener('slotRenderEnded', function(event) {
+                var unitName = event.slot.getName();
+                if ( unitName in gptadHandlers ) {
+                   try {
+                       SF.Ads.RenderHandlers[gptadHandlers[unitName]].call(this, event);
+                   } catch (e) {
+                   }
+                }
+            });
+        });
+   </script>
+
+        
+        <script type="text/javascript" src="http://a.fsdn.com/con/js/adframe.js?1441983328"></script>
+        <script type="text/javascript">
+
+            /*jshint ignore:start*/
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+            (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+            /*jshint ignore:end*/
+
+            //var $ = jQuery.noConflict(); // jshint ignore:line
+        </script>
+        <script type="text/javascript">
+                ga('create', 'UA-36130941-1', {'name': '1'});
+                ga('create', 'UA-36130941-1', 'auto');
+            if (typeof _ml !== 'undefined' && _ml.us) {
+                if (_ml.us.tp && _ml.us.tp.length > 0) {
+                    ga('set', 'dimension2', _ml.us.tp[0]);
+                }
+                if (_ml.us.pc && _ml.us.pc.length > 0) {
+                    ga('set', 'dimension7', _ml.us.pc[0]);
+                }
+                ga('set', 'dimension3', _ml.us.ind);
+                ga('set', 'dimension4', _ml.us.cr);
+                ga('set', 'dimension5', _ml.us.cs);
+                ga('set', 'dimension6', _ml.us.dm);
+                ga('set', 'dimension8', _ml.us.sn);
+            }
+            
+                ga('set', 'dimension10', 'pg_search');
+                    
+                ga('set', 'dimension13', 'Logged Out');
+                ga('set', 'dimension14', 'No');  
+                ga('send', 'pageview');
+
+            
+        </script>
+<script type="text/javascript">
+/* jshint ignore:start */
+(function(G,o,O,g,L,e){G[g]=G[g]||function(){(G[g]['q']=G[g]['q']||[]).push(
+  arguments)},G[g]['t']=1*new Date;L=o.createElement(O),e=o.getElementsByTagName(
+  O)[0];L.async=1;L.src='//www.google.com/adsense/search/async-ads.js';
+  e.parentNode.insertBefore(L,e)})(window,document,'script','_googCsa');
+/* jshint ignore:end */
+</script>
+
+    </head>
+    <body id="pg_search" class="bluesteel search">
+        
+        <div id="busy-spinner"></div>
+        
+<header id="site-header">
+    <div class="wrapper">
+        <a href="index.html" class="logo">
+            <span>SourceForge</span>
+        </a>
+        <form method="get" action="/directory/">
+            <input type="text" id="words" name="q" placeholder="Search">
+        </form>
+        <!--Switch to {language}-->
+        <nav id="nav-site">
+            <a href="directory/index.html" title="Browse our software.">Browse</a>
+            <a href="directory/enterprise.html" title="Browse our Enterprise software.">Enterprise</a>
+            <a href="blog/index.html" title="Read the latest news from the SF HQ.">Blog</a>
+            <a href="jobs-source=header.html" title="Search 80k+ tech jobs.">Jobs</a>
+            <a href="http://deals.sourceforge.net/?utm_source=sourceforge&utm_medium=navbar&utm_campaign=homepage" title="Discover and Save on the Best Gear, Gadgets, and Software" class="featured-link" target="_blank">Deals</a>
+            <a href="support.html" title="Contact us for help and feedback.">Help</a>
+        </nav>
+        <nav id="nav-account">
+            
+              <div class="logged_out">
+                  <a href="auth/index.html">Log In</a>
+                <span>or</span>
+                <a href="user/registration.html">Join</a>
+              </div>
+            
+        </nav>
+    </div>
+</header>
+<header id="site-sec-header">
+    <div class="wrapper">
+        <nav id="nav-hubs">
+            <h4>Solution Centers</h4>
+            <a href="http://goparallel.sourceforge.net/">Go Parallel</a>
+            <a href="http://apmsolutions.sourceforge.net/">Performance Central</a>
+        </nav>
+        <nav id="nav-collateral">
+
+            <a href="http://library.slashdotmedia.com/?source=sfnet_header">Resources</a>
+
+            
+            <a href="user/registration.html">Newsletters</a>
+            
+        </nav>
+    </div>
+</header>
+
+
+        
+        <div id="messages">
+        </div>
+
+        <div id="page-body">
+            <div id="bookends_container">
+                
+
+
+
+    
+
+<div id="SF_Bookend_Left_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Left_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343511-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343511-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Bookend_Right_150x1060_wrapped" class="ad   " data-unit="SF_Bookend_Right_150x1060">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-139343512-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-139343512-0');
+        });
+    }
+})();
+</script>
+</div>
+            </div>
+<div id="banner-ads" class="ads">
+    
+</div>
+
+<nav id="breadcrumbs">
+    <ul>
+        
+        <li><a href="index.html">Home</a></li>
+        
+        <li><a href="directory/index.html">Browse</a></li>
+        
+        <li>Search Results</li>
+        
+    </ul>
+</nav>
+<article id="directory" class="content-wrapper">
+    <section id="main-content">
+    <section id="search">
+        <div class="ads">
+
+         <div id="adcontainer1"></div>
+          <script type="text/javascript">
+              /* jshint ignore:start */
+              var pageOptions = {
+                'pubId': 'pub-6471043051383295',
+                'query': 'numpy',
+                'hl': 'en'
+              };
+
+              var adblock1 = {
+                'container': 'adcontainer1',
+                'width': '613px'
+              };
+
+              _googCsa('ads', pageOptions, adblock1);
+              /* jshint ignore:end */
+          </script>
+       </div>
+
+       <form method="GET" action="." id="search_form">
+    <input name="q" placeholder="Search" value="numpy">
+    <b class="search ico ico-search" title="Search" data-icon="s"></b>
+</form>
+      
+       
+
+       
+    <div id="advanced_options">
+        
+        <section id="search_facets">
+          <header>Refine your search</header>
+          
+          
+          
+          <div class="facet">
+            <header>Category <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering"
+   title="Scientific/Engineering (48) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Scientific/Engineering (48) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Mathematics"
+   title="Mathematics (15) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mathematics (15) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Physics"
+   title="Physics (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Physics (9) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Visualization"
+   title="Visualization (8) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Visualization (8) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Earth+Sciences"
+   title="Earth Sciences (5) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Earth Sciences (5) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Simulations"
+   title="Simulations (5) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Simulations (5) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Artificial+Intelligence"
+   title="Artificial Intelligence (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Artificial Intelligence (4) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Chemistry"
+   title="Chemistry (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Chemistry (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Information+Analysis"
+   title="Information Analysis (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Information Analysis (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Mapping"
+   title="Mapping (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mapping (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Medical+Science+Apps."
+   title="Medical Science Apps. (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Medical Science Apps. (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Ecosystem+Sciences"
+   title="Ecosystem Sciences (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Ecosystem Sciences (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Molecular+Science"
+   title="Molecular Science (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Molecular Science (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Scientific%2FEngineering+%3A%3A+Robotics"
+   title="Robotics (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Robotics (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development"
+   title="Software Development (13) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Software Development (13) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+Libraries"
+   title="Libraries (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Libraries (4) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+User+Interfaces"
+   title="User Interfaces (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    User Interfaces (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+Algorithms"
+   title="Algorithms (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Algorithms (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+Compilers"
+   title="Compilers (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Compilers (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+Documentation"
+   title="Documentation (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Documentation (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Software+Development+%3A%3A+Modeling"
+   title="Modeling (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Modeling (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Games%2FEntertainment"
+   title="Games/Entertainment (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Games/Entertainment (4) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Games%2FEntertainment+%3A%3A+Board+Games"
+   title="Board Games (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Board Games (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Games%2FEntertainment+%3A%3A+Puzzle+Games"
+   title="Puzzle Games (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Puzzle Games (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=topic&amp;q=numpy&amp;constraint=Games%2FEntertainment+%3A%3A+Side-Scrolling%2FArcade+Games"
+   title="Side-Scrolling/Arcade Games (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Side-Scrolling/Arcade Games (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Translations <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=English"
+   title="English (13) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    English (13) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=French"
+   title="French (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    French (3) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Ukrainian"
+   title="Ukrainian (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Ukrainian (2) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Brazilian+Portuguese"
+   title="Brazilian Portuguese (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Brazilian Portuguese (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Danish"
+   title="Danish (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Danish (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Dutch"
+   title="Dutch (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Dutch (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=German"
+   title="German (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    German (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Italian"
+   title="Italian (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Italian (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Norwegian"
+   title="Norwegian (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Norwegian (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Russian"
+   title="Russian (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Russian (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=natlanguage&amp;q=numpy&amp;constraint=Spanish"
+   title="Spanish (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Spanish (1) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>License <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source"
+   title="OSI-Approved Open Source (53) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OSI-Approved Open Source (53) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+BSD+License"
+   title="BSD License (15) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    BSD License (15) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+General+Public+License+version+3.0+%28GPLv3%29"
+   title="GNU General Public License version 3.0 (12) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU General Public License version 3.0 (12) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+General+Public+License+version+2.0+%28GPLv2%29"
+   title="GNU General Public License version 2.0 (11) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU General Public License version 2.0 (11) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+MIT+License"
+   title="MIT License (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    MIT License (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+Library+or+Lesser+General+Public+License+version+2.0+%28LGPLv2%29"
+   title="GNU Library or Lesser General Public License version 2.0 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU Library or Lesser General Public License version 2.0 (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+GNU+Library+or+Lesser+General+Public+License+version+3.0+%28LGPLv3%29"
+   title="GNU Library or Lesser General Public License version 3.0 (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    GNU Library or Lesser General Public License version 3.0 (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Apache+License+V2.0"
+   title="Apache License V2.0 (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Apache License V2.0 (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Common+Development+and+Distribution+License"
+   title="Common Development and Distribution License (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Common Development and Distribution License (1) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=OSI-Approved+Open+Source+%3A%3A+Python+Software+Foundation+License"
+   title="Python Software Foundation License (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Python Software Foundation License (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=Creative+Commons+Attribution+License"
+   title="Creative Commons Attribution License (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Creative Commons Attribution License (2) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=Creative+Commons+Attribution+License+%3A%3A+Creative+Commons+Attribution+ShareAlike+License+V3.0"
+   title="Creative Commons Attribution ShareAlike License V3.0 (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Creative Commons Attribution ShareAlike License V3.0 (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=Creative+Commons+Attribution+License+%3A%3A+Creative+Commons+Attribution+Non-Commercial+License+V2.0"
+   title="Creative Commons Attribution Non-Commercial License V2.0 (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Creative Commons Attribution Non-Commercial License V2.0 (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=license&amp;q=numpy&amp;constraint=Other+License"
+   title="Other License (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Other License (1) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Programming Language <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=Python"
+   title="Python (56) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Python (56) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=C%2B%2B"
+   title="C++ (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    C++ (4) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=C"
+   title="C (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    C (3) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=Fortran"
+   title="Fortran (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Fortran (2) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=IDL"
+   title="IDL (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    IDL (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=Java"
+   title="Java (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Java (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=MATLAB"
+   title="MATLAB (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    MATLAB (1) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=language&amp;q=numpy&amp;constraint=S%2FR"
+   title="S/R (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    S/R (1) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Status <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=4+-+Beta"
+   title="4 - Beta (25) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    4 - Beta (25) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=3+-+Alpha"
+   title="3 - Alpha (15) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    3 - Alpha (15) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=5+-+Production%2FStable"
+   title="5 - Production/Stable (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    5 - Production/Stable (9) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=1+-+Planning"
+   title="1 - Planning (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    1 - Planning (4) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=2+-+Pre-Alpha"
+   title="2 - Pre-Alpha (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    2 - Pre-Alpha (3) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=developmentstatus&amp;q=numpy&amp;constraint=7+-+Inactive"
+   title="7 - Inactive (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    7 - Inactive (1) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>OS <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Windows"
+   title="Windows (90) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Windows (90) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Linux"
+   title="Linux (87) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Linux (87) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Mac"
+   title="Mac (83) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Mac (83) 
+</a>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories"
+   title="Grouping and Descriptive Categories (31) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Grouping and Descriptive Categories (31) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+OS+Independent+%28Written+in+an+interpreted+language%29"
+   title="OS Independent (18) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS Independent (18) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+POSIX+%28Linux%2FBSD%2FUNIX-like+OSes%29"
+   title="All POSIX (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All POSIX (9) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+64-bit+MS+Windows"
+   title="64-bit MS Windows (7) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    64-bit MS Windows (7) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+32-bit+MS+Windows+%2895%2F98%2FNT%2F2000%2FXP%29"
+   title="All 32-bit MS Windows (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All 32-bit MS Windows (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+32-bit+MS+Windows+%28NT%2F2000%2FXP%29"
+   title="32-bit MS Windows (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    32-bit MS Windows (4) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+OS+Portable+%28Source+code+to+work+with+many+OS+platforms%29"
+   title="OS Portable (3) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS Portable (3) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Grouping+and+Descriptive+Categories+%3A%3A+All+BSD+Platforms+%28FreeBSD%2FNetBSD%2FOpenBSD%2FApple+Mac+OS+X%29"
+   title="All BSD Platforms (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    All BSD Platforms (2) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems"
+   title="Modern (12) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Modern (12) 
+</a>
+                
+                <span class="ui-icon ui-icon-triangle-1-e"></span>
+                <ul>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Linux"
+   title="Linux (9) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Linux (9) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+OS+X"
+   title="OS X (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    OS X (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+WinXP"
+   title="WinXP (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    WinXP (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Windows+7"
+   title="Windows 7 (6) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Windows 7 (6) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Vista"
+   title="Vista (4) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Vista (4) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+FreeBSD"
+   title="FreeBSD (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    FreeBSD (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Solaris"
+   title="Solaris (2) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Solaris (2) 
+</a>
+                    </li>
+                    
+                    <li>
+                        <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=Modern+%28Vendor-Supported%29+Desktop+Operating+Systems+%3A%3A+Win2K"
+   title="Win2K (1) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Win2K (1) 
+</a>
+                    </li>
+                    
+                </ul>
+                
+              </li>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=os&amp;q=numpy&amp;constraint=BSD"
+   title="BSD (10) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    BSD (10) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          <div class="facet">
+            <header>Freshness <span class="ui-icon ui-icon-triangle-1-s"></span></header>
+            <ul>
+              
+              <li>
+                  <a href="directory-q=numpy&page=3.html#"
+   data-action="add_facet_filter?facet=freshness&amp;q=numpy&amp;constraint=Recently+updated"
+   title="Recently updated (35) "
+   rel="nofollow"
+   class=" link-obfuscated">
+    Recently updated (35) 
+</a>
+                
+              </li>
+              
+            </ul>
+          </div>
+          
+          
+          
+          
+          
+          
+        </section>
+        
+      </div>
+
+      <section id="search_results">
+        <header>
+          
+            <h3> 93 programs for "numpy"</h3>
+          
+          <div class="drop-down-menu">
+              <div class="sort-options">
+                  <span>Sort By</span>
+                  <div class="sort-drop-down">
+                      <a href="directory-q=numpy&page=3.html#">Relevance</a>
+                  </div>
+                  <ul>
+                      
+                          <li><a href="directory-q=numpy&page=3.html#"
+   data-action="/directory?q=numpy&amp;sort=score&amp;page=3"
+   title="Relevance"
+   rel="nofollow"
+   class="active link-obfuscated">
+    Relevance
+</a></li>
+                      
+                      <li><a href="directory-q=numpy&page=3.html#"
+   data-action="/directory?q=numpy&amp;sort=popular&amp;page=3"
+   title="Most Popular"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Most Popular
+</a></li>
+                      <li><a href="directory-q=numpy&page=3.html#"
+   data-action="/directory?q=numpy&amp;sort=update&amp;page=3"
+   title="Last Updated"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Last Updated
+</a></li>
+                      <li><a href="directory-q=numpy&page=3.html#"
+   data-action="/directory?q=numpy&amp;sort=name&amp;page=3"
+   title="Name"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Name
+</a></li>
+                      <li><a href="directory-q=numpy&page=3.html#"
+   data-action="/directory?q=numpy&amp;sort=rating&amp;page=3"
+   title="Rating"
+   rel="nofollow"
+   class=" link-obfuscated">
+    Rating
+</a></li>
+                  </ul>
+              </div>
+          </div>
+        </header>
+        
+
+        <section id="result_data">
+
+
+
+       
+        
+<p id="result_count">
+    Showing page 3 of 4.
+</p>
+
+
+       
+
+
+	    
+            <ul class="projects">
+    
+
+
+
+    
+
+<div id="SF_Search_611x69_A_wrapped" class="ad  ads_native " data-unit="SF_Search_611x69_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113142-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113142-0');
+        });
+    }
+})();
+</script>
+</div>
+    
+
+
+
+    
+
+<div id="SF_Search_611x69_B_wrapped" class="ad  ads_native " data-unit="SF_Search_611x69_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113143-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113143-0');
+        });
+    }
+})();
+</script>
+</div>
+
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pyl1min/?source=directory" title="Find out more about pyL1min">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pyl1min%40sf.net/pyl1min_default.png" alt="pyL1min Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pyl1min/?source=directory" itemprop="url" title="Find out more about pyL1min"><span itemprop="name">pyL1min</span></a></header>
+      <p>General purpose norm-1 minimization solver in Python</p>
+      <p itemprop="description">...pyL1min is a general purpose norm-1 (l1) minimization solver written in Python. It is based on  <em>NumPy</em>/SciPy, CVXOPT ( FFTW enabled) to solve l1...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pyfftw.berlios/?source=directory" title="Find out more about Python FFTW">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pyfftw.berlios%40sf.net/pyfftw.berlios_default.png" alt="Python FFTW Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pyfftw.berlios/?source=directory" itemprop="url" title="Find out more about Python FFTW"><span itemprop="name">Python FFTW</span></a></header>
+      <p></p>
+      <p itemprop="description">...Python FFTW as the name suggests are Python bindings to the FFTW3 C-library from http://www.fftw.org. They use <em>numpy</em> and python ctypes, and often...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/covama/?source=directory" title="Find out more about CoVaMa">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/co/covama%40sf.net/covama_default.png" alt="CoVaMa Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/covama/?source=directory" itemprop="url" title="Find out more about CoVaMa"><span itemprop="name">CoVaMa</span></a></header>
+      <p>Co-Variation Mapper</p>
+      <p itemprop="description">... tables are then analysed for evidence linkage disequilibrium. CoVaMa requires python version 2.7 and <em>Numpy</em>....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/upfirdn.motorola/?source=directory" title="Find out more about upfirdn - Polyphase FIR Resampler">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/motorola/upfirdn/icon" alt="upfirdn - Polyphase FIR Resampler Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/upfirdn.motorola/?source=directory" itemprop="url" title="Find out more about upfirdn - Polyphase FIR Resampler"><span itemprop="name">upfirdn - Polyphase FIR Resampler</span></a></header>
+      <p></p>
+      <p itemprop="description">...upfirdn ("Up-sampling, FIR filtering, Down-sampling") is an Efficient Polyphase FIR Resampler for <em>Numpy</em>. The purpose of this project is to support...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:4">4</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/abw/?source=directory" title="Find out more about A Block&#39;s Will">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ab/abw%40sf.net/abw_default.png" alt="A Block&#39;s Will Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/abw/?source=directory" itemprop="url" title="Find out more about A Block&#39;s Will"><span itemprop="name">A Block&#39;s Will</span></a></header>
+      <p></p>
+      <p itemprop="description">...2D arcade game in Python, using pygame and <em>numpy</em> libraries, made for CS 321 Game Programing at Western Washington University, Spring 2009....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/zelda2-remake/?source=directory" title="Find out more about Zelda2 - Remake">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/zelda2-remake/icon" alt="Zelda2 - Remake Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/zelda2-remake/?source=directory" itemprop="url" title="Find out more about Zelda2 - Remake"><span itemprop="name">Zelda2 - Remake</span></a></header>
+      <p></p>
+      <p itemprop="description">... programmed in Python and also requires Pygame, and may require <em>NumPy</em> as well in the future...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:4">4</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/lr3d/?source=directory" title="Find out more about  ">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/lr/lr3d%40sf.net/lr3d_default.png" alt="  Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/lr3d/?source=directory" itemprop="url" title="Find out more about  "><span itemprop="name"> </span></a></header>
+      <p>Local Resolution 3D (LR3D)</p>
+      <p itemprop="description">...Local Resolution 3D (LR3D) is a Python (<em>NumPy</em>/SciPy) application with a Tkinter GUI. It is a software package for computing the location resolution...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pylwt/?source=directory" title="Find out more about pyLwt">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pylwt%40sf.net/pylwt_default.png" alt="pyLwt Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pylwt/?source=directory" itemprop="url" title="Find out more about pyLwt"><span itemprop="name">pyLwt</span></a></header>
+      <p>Liftng wavelet program built using python and g++</p>
+      <p itemprop="description">... installed in your computer: ctypes, wxPython, PIL, and <em>NumPy</em>?
+
+2. I test this program using python2.7.3 in Windows7 and python2.6.5 in Ubuntu 10.04.4
+
+3. You...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:5">5</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pynpvm/?source=directory" title="Find out more about pynpvm">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pynpvm%40sf.net/pynpvm_default.png" alt="pynpvm Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pynpvm/?source=directory" itemprop="url" title="Find out more about pynpvm"><span itemprop="name">pynpvm</span></a></header>
+      <p></p>
+      <p itemprop="description">...pynpvm is a Python interface to Parallel Virtual Machine (PVM), a portable heterogeneous message-passing system. It requires <em>NumPy</em> as a pre-requisite...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pyplotsuite/?source=directory" title="Find out more about PyPlotSuite">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pyplotsuite%40sf.net/pyplotsuite_default.png" alt="PyPlotSuite Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pyplotsuite/?source=directory" itemprop="url" title="Find out more about PyPlotSuite"><span itemprop="name">PyPlotSuite</span></a></header>
+      <p></p>
+      <p itemprop="description">..., 2D arrays. This project is based on (and would not exist without) pygtk, matplotlib and <em>numpy</em>....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pytseries/?source=directory" title="Find out more about scikits.timeseries">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pytseries%40sf.net/pytseries_default.png" alt="scikits.timeseries Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pytseries/?source=directory" itemprop="url" title="Find out more about scikits.timeseries"><span itemprop="name">scikits.timeseries</span></a></header>
+      <p></p>
+      <p itemprop="description">... focus is on convenient data access while leveraging the existing functionality in <em>numpy</em>....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:7">7</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/apythongraphlib/?source=directory" title="Find out more about Another Python Graph Library">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ap/apythongraphlib%40sf.net/apythongraphlib_default.png" alt="Another Python Graph Library Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/apythongraphlib/?source=directory" itemprop="url" title="Find out more about Another Python Graph Library"><span itemprop="name">Another Python Graph Library</span></a></header>
+      <p></p>
+      <p itemprop="description">...This project develops a simple, fast and easy to use Python graph library using <em>NumPy</em>, Scipy and PySparse....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:3">3</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/isotopy/?source=directory" title="Find out more about IsotoPy">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/is/isotopy%40sf.net/isotopy_default.png" alt="IsotoPy Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/isotopy/?source=directory" itemprop="url" title="Find out more about IsotoPy"><span itemprop="name">IsotoPy</span></a></header>
+      <p></p>
+      <p itemprop="description">... theory. python scripts use Scipy/<em>Numpy</em>/Matplotlib/WxPython for calculations, plotting and the GUI...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:3">3</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/runandsurvive/?source=directory" title="Find out more about run and survive">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ru/runandsurvive%40sf.net/runandsurvive_default.png" alt="run and survive Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/runandsurvive/?source=directory" itemprop="url" title="Find out more about run and survive"><span itemprop="name">run and survive</span></a></header>
+      <p></p>
+      <p itemprop="description">... and <em>numpy</em> are needed for running this game! ...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/piquant/?source=directory" title="Find out more about Piquant">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/pi/piquant%40sf.net/piquant_default.png" alt="Piquant Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/piquant/?source=directory" itemprop="url" title="Find out more about Piquant"><span itemprop="name">Piquant</span></a></header>
+      <p></p>
+      <p itemprop="description">...A Python package extending <em>NumPy</em> and SciPy to allow specification of numbers and arrays with physical units....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/trebuchetphysix/?source=directory" title="Find out more about Trebuchet Physics">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/tr/trebuchetphysix%40sf.net/trebuchetphysix_default.png" alt="Trebuchet Physics Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/trebuchetphysix/?source=directory" itemprop="url" title="Find out more about Trebuchet Physics"><span itemprop="name">Trebuchet Physics</span></a></header>
+      <p></p>
+      <p itemprop="description">..., gtk, pygame, random, and <em>numpy</em>. Please note: this is an early version and is in alpha....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/dptoolkit/?source=directory" title="Find out more about Data Productivity Toolkit">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/dp/dptoolkit%40sf.net/dptoolkit_default.png" alt="Data Productivity Toolkit Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/dptoolkit/?source=directory" itemprop="url" title="Find out more about Data Productivity Toolkit"><span itemprop="name">Data Productivity Toolkit</span></a></header>
+      <p>The Data Productivity Toolkit is a collection of linux command-line to</p>
+      <p itemprop="description">... visualizing results. The tools are all written in python and in many instances provide a command-line API to basic python and <em>numpy</em>/scipy/matplotlib routines....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/im2ascii/?source=directory" title="Find out more about im2ascii">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/im/im2ascii%40sf.net/im2ascii_default.png" alt="im2ascii Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/im2ascii/?source=directory" itemprop="url" title="Find out more about im2ascii"><span itemprop="name">im2ascii</span></a></header>
+      <p>Image to ASCII converter that takes character shape into account</p>
+      <p itemprop="description">...
+
+Dependencies: Python 2.7, PIL, <em>numpy</em>, scipy...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pynacadxf/?source=directory" title="Find out more about pyNACADXF">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pynacadxf%40sf.net/pynacadxf_default.png" alt="pyNACADXF Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pynacadxf/?source=directory" itemprop="url" title="Find out more about pyNACADXF"><span itemprop="name">pyNACADXF</span></a></header>
+      <p>Generates DXF files of NACA airfoils</p>
+      <p itemprop="description">...A simple GUI to generate NACA airfoils DXF files for CAD.  Released under the GNU GPL V3.0.
+
+This software depends on dxfwrite, <em>NumPy</em>, and pyQtgraph...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pytellurium/?source=directory" title="Find out more about Tellurium">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pytellurium%40sf.net/pytellurium_default.png" alt="Tellurium Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pytellurium/?source=directory" itemprop="url" title="Find out more about Tellurium"><span itemprop="name">Tellurium</span></a></header>
+      <p>Model, simulate, and analyze biochemical systems using one tool.</p>
+      <p itemprop="description">... (including libStruct), libAntimony, and is extensible via telPlugins. In addition other tools kits such as matplotlib and <em>numpy</em> are used to provide additional...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:3">3</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/statsmodels/?source=directory" title="Find out more about statsmodels">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/st/statsmodels%40sf.net/statsmodels_default.png" alt="statsmodels Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/statsmodels/?source=directory" itemprop="url" title="Find out more about statsmodels"><span itemprop="name">statsmodels</span></a></header>
+      <p></p>
+      <p itemprop="description">...Statistical models with python using <em>numpy</em> and scipy. Currently covers linear regression (with ordinary, generalized and weighted least squares...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:2">2</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/kastframework/?source=directory" title="Find out more about Kast Framework">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/ka/kastframework%40sf.net/kastframework_default.png" alt="Kast Framework Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/kastframework/?source=directory" itemprop="url" title="Find out more about Kast Framework"><span itemprop="name">Kast Framework</span></a></header>
+      <p>Python framework for kinematic analysis based on screw theory</p>
+      <p itemprop="description">..., using <em>numpy</em>, networkx and elementtree, among other packages.
+The framework was designed to support my research thesis in underwater robotics.
+The project...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/wavepy/?source=directory" title="Find out more about wavepy">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/wa/wavepy%40sf.net/wavepy_default.png" alt="wavepy Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/wavepy/?source=directory" itemprop="url" title="Find out more about wavepy"><span itemprop="name">wavepy</span></a></header>
+      <p></p>
+      <p itemprop="description">...1D/2D Discrete Wavelet Transform fully programmed in Python+<em>Numpy</em>.
+Homepage : http://wavepy.sourceforge.net...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pyisocalc/?source=directory" title="Find out more about pyisocalc">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/allura/p/pyisocalc/icon" alt="pyisocalc Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pyisocalc/?source=directory" itemprop="url" title="Find out more about pyisocalc"><span itemprop="name">pyisocalc</span></a></header>
+      <p>Isotopic pattern calculator in python 2.x</p>
+      <p itemprop="description">...This is an isotopic pattern calculator written in python. It depends on re, sys, <em>numpy</em>, operator, itertools, and matplotlib....</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:1">1</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+  <li itemscope  itemtype="http://schema.org/MobileSoftwareApplication">
+    <a class="project-icon" href="http://sourceforge.net/projects/pywt/?source=directory" title="Find out more about pywt">
+      
+      <img itemprop="image" width="48" height="48" src="http://a.fsdn.com/con/icons/py/pywt%40sf.net/pywt_default.png" alt="pywt Icon">
+      
+    </a>
+
+  
+  
+  
+  
+  
+
+  
+
+  
+    
+  
+
+    
+    
+
+    <div class="project_info">
+      <header><a href="http://sourceforge.net/projects/pywt/?source=directory" itemprop="url" title="Find out more about pywt"><span itemprop="name">pywt</span></a></header>
+      <p>wavelet program built using python and g++</p>
+      <p itemprop="description">... installed in your computer: ctypes, wxPython, PIL, and <em>NumPy</em>?
+
+2. I test this program using python2.7.3 in Windows7 and python2.6.5 in Ubuntu 10.04.4
+
+3. You...</p>
+
+      <strong itemprop="interactionCount" content="UserDownloads:6">6</strong> weekly downloads
+    </div>
+    <span class="ui-icon ui-icon-circle-triangle-s"></span>
+    <div class="more-info" >
+      <div class="busy"></div>
+    </div>
+  </li>
+  
+</ul>
+            
+
+
+
+    
+    
+
+
+    
+    
+
+<ul class="paging">
+  
+    <li>
+      
+        <a href="directory-q=numpy&page=2.html">Back</a>
+      
+    </li>
+    
+    
+    <li>
+      
+        <a href="http://sourceforge.net/directory?q=numpy&page=1">1</a>
+      
+    </li>
+    
+    <li>
+      
+        <a href="directory-q=numpy&page=2.html">2</a>
+      
+    </li>
+    
+    <li>
+      
+        3
+      
+    </li>
+    
+    <li>
+      
+        <a href="directory-q=numpy&page=4.html">4</a>
+      
+    </li>
+    
+    
+    <li>
+      
+        <a href="directory-q=numpy&page=4.html">Next</a>
+      
+    </li>
+  
+</ul>
+        </section>
+        
+      </section>
+      <div class="ads">
+        <div class="ad" id="afs2"></div>
+      </div>
+      </section><!-- #search -->
+      
+        <section id="related_searches">
+            
+                <div id="related_searches_title">Related Searches</div>
+                <div id="related_searches_keywords">
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=statsmodels">statsmodels</a>
+                        </div>
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=tellurium">tellurium</a>
+                        </div>
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=scikit+learn">scikit learn</a>
+                        </div>
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=statsmodel">statsmodel</a>
+                        </div>
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=mathplot">mathplot</a>
+                        </div>
+                    
+                        <div class="keyword-link">
+                            <a href="http://sourceforge.net/directory/?q=regression">regression</a>
+                        </div>
+                    
+                </div>
+            
+        </section>
+      
+    </section><!-- #main-content -->
+    <section id="sidebar">
+        <section class="ads">
+                
+
+
+
+    
+    
+
+<div id="SF_Search_300x250_A_wrapped" class="ad multisize  " data-unit="SF_Search_300x250_A">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113156-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113156-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Search_300x250_B_wrapped" class="ad medrec  " data-unit="SF_Search_300x250_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113157-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113157-0');
+        });
+    }
+})();
+</script>
+</div>
+                
+
+
+
+    
+
+<div id="SF_Search_300x250_C_wrapped" class="ad medrec  " data-unit="SF_Search_300x250_C">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113158-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113158-0');
+        });
+    }
+})();
+</script>
+</div>
+        </section>
+        
+        <aside class="sidebar-widget" id="top-downloaded-widget">
+            <header>
+            <h3>Top Downloaded</h3>
+            </header>
+            <ul>
+            </ul>
+        </aside>
+
+        
+            
+    <aside class="sidebar-widget stackcommerce-widget">
+            <header id="stackcommerce-header">
+                <img src="http://a.fsdn.com/con/img/sf_logo250x32.png" width="125" height="16" />
+                <h3>Deals</h3>
+            </header>
+            
+
+
+
+    
+
+<div id="SF-300x250_wrapped" class="ad medrec  " data-unit="SF-300x250">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148208795-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148208795-0');
+        });
+    }
+})();
+</script>
+</div>
+    </aside>
+    
+
+        
+
+        
+<script type="text/javascript" src="http://gdc.indeed.com/ads/apiresults.js"></script>
+<aside class="sidebar-widget jobs-widget">
+  <header>
+    <h3>
+      <span id="itjb_at"><a href="http://us.dice.com">jobs</a> by <a id='itjb-logo-container' href="http:us.dice.com">
+      <img src= "http://a.fsdn.com/con/img/jobs/Dice_FormerlyITJB_LogoStack_V5_US_d.png"
+   alt="ITJB" class="itjb-provider-logo">
+      </a></span>
+      <span id="indeed_at"><a href="http://www.indeed.com/">jobs</a> by <a href="http://www.indeed.com/" title="Job Search"><img src="http://a.fsdn.com/con/img/jobs/indeed_logo.gif" class="provider-logo" alt="Indeed job search"></a></span>
+            <span id="dice_at">
+                Powered by
+                <a href="http://www.dice.com/?CMPID=AF_SF_UP_JS_AV_OG_BN_&utm_source=SourceForge&utm_medium=Affiliate&utm_content=&utm_campaign=Advocacy_Ongoing"> <img src="http://a.fsdn.com/con/img/jobs/dice_logo.png" alt="Dice Logo" class="dice-logo"> </a>
+            </span>
+            Latest Tech Jobs
+        </h3>
+    </header>
+    <section>
+        <form action="/jobs/" method="get" id="job-search">
+            <input type="hidden" name="source" value="widget">
+            <input type="text" name="text" placeholder="Senior Java Developer (Job Title)" id="job-title" value="">
+            <input type="submit" name="submit" value="Find" id="job-search-button">
+        </form>
+    </section>
+    <ul id="job-listing">
+        <li class="item odd">
+            <span class="job-link"><a href="jobs-source=widget.html">Loading...</a></span>
+            <span class="job-details">The latest tech jobs.</span>
+        </li>
+   </ul>
+   <section class="all-jobs" style="border: none;">
+        <a href="jobs-source=widget.html">See All Jobs &rsaquo;&rsaquo;</a>
+    </section>
+</aside>
+
+<script type="text/javascript">
+    /*global Handlebars*/
+    $(function($) {
+        var source = $('#jobwidget-template').html();
+        var template = Handlebars.compile(source);
+
+
+        function load_jobBoard() {
+            $.ajax({
+                url:'/jobs/json',
+                success: function(data) {
+                    $('#job-listing').html(template(data));
+                    var provider_name = data.provider_name, attrib_id;
+                    switch (provider_name) {
+                        case 'itjb':
+                            var itjb_link = 'http://www.' + data.itjb_links["US"] + '?' + data.itjb_tracker.logo;
+                            $('#itjb_at a').prop('href', itjb_link);
+                            attrib_id = '#itjb_at';
+                            $('#job-listing li a').each(function (index, element) {
+                                var href = $(element).prop('href');
+                                href += '&' + data.itjb_tracker.link;
+                                $(element).prop('href', href);
+                            });$('#itjb-logo-container').html('<img src="//a.fsdn.com/con/img/jobs/Dice_FormerlyITJB_LogoStack_V5_US_d.png" class="itjb-provider-logo" alt="ITJB job search" />');break;
+                        case 'indeed':
+                            attrib_id = '#indeed_at';
+                        break;
+                        default:
+                            attrib_id = '#dice_at';
+                        break;
+                    }
+                    $(attrib_id).show().siblings().hide();
+                },
+                dataType: 'json'
+            });
+        }
+        load_jobBoard();
+    });
+</script>
+
+<script type="text/x-handlebars-template" id="jobwidget-template">
+    
+    {{#stripe data.jobs 5 true}}
+    <li class="item {{css_class}}">
+    <span class="job-link"><a href="{{ this.url }}" onmousedown="{{ this.onmousedown }}">{{ this.title }}</a></span>
+        <span class="job-details">{{ this.company}} - {{ this.location}}</span>
+    </li>
+    {{/stripe}}
+    
+</script>
+
+        <section class="ads">
+                
+
+
+
+    
+
+<div id="SF_Search_300x250_D_wrapped" class="ad medrec  " data-unit="SF_Search_300x250_D">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1393435113159-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1393435113159-0');
+        });
+    }
+})();
+</script>
+</div>
+        </section>
+    </section>
+</article>
+        </div>
+  
+    <div class="dir-footer-adcontainer">
+        
+        
+
+
+
+    
+
+<div id="SF_Search_728x90_B_wrapped" class="ad leaderboard  " data-unit="SF_Search_728x90_B">
+<script type="text/javascript">
+/*global googletag */
+(function(){
+    var immersionCompliment = false;
+    
+    if ((!immersion_adcode && !immersionCompliment)  || (immersion_adcode && immersionCompliment)) {
+        document.write('<div id="div-gpt-ad-1392148208790-0" ></div>');
+        googletag.cmd.push(function() {
+            googletag.display('div-gpt-ad-1392148208790-0');
+        });
+    }
+})();
+</script>
+</div>
+        
+    </div>
+  
+
+        
+
+          
+<footer id="site-footer">
+    <div class="wrapper">
+        <nav>
+            <h5>SourceForge</h5>
+            <a href="about.html">About</a>
+            <a href="blog/category/sitestatus/index.html">Site Status</a>
+            <a href="http://twitter.com/sfnet_ops">@sfnet_ops</a>
+
+
+        </nav>
+        <nav>
+            <h5>Find and Develop Software</h5>
+            <a href="create/index.html">Create a Project</a>
+            <a href="directory/index.html">Software Directory</a>
+            <a href="top.html">Top Downloaded Projects</a>
+        </nav>
+        <nav>
+            <h5>Community</h5>
+            <a href="blog/index.html">Blog</a>
+            <a href="http://twitter.com/sourceforge">@sourceforge</a>
+            <a href="jobs-source=footer.html">Job Board</a>
+            <a href="http://library.slashdotmedia.com/?source=sfnet_footer">Resources</a>
+        </nav>
+        <nav>
+            <h5>Help</h5>
+            <a href="http://p.sf.net/sourceforge/docs">Site Documentation</a>
+            <a href="support.html">Support Request</a>
+            <a href="http://p.sf.net/sourceforge/irc">Real-Time Support</a>
+        </nav>
+    </div>
+</footer>
+<footer id="site-copyright-footer">
+    <div class="wrapper">
+        <div id="copyright">
+            &copy; 2015 Slashdot Media. All Rights Reserved.<br />
+            <div id="dhi-icon"><span class="logo-DHI-alt"></span></div>
+            <div id="service-text"><div class="smalltext"> SourceForge is a <a href="http://www.dhigroupinc.com" target="_blank">DHI service</a></div></div>
+
+            <!--<div id="dhi-service">SourceForge is a <a href="http://www.dhigroupinc.com">DHI</a> service.</div>-->
+        </div>
+        <nav>
+            <a href="http://slashdotmedia.com/terms-of-use/">Terms</a>
+            <a href="http://slashdotmedia.com/privacy-statement/">Privacy</a>
+            <span id='teconsent'></span>
+            <a href="http://slashdotmedia.com/opt-out-choices/">Opt Out Choices</a>
+
+
+            <a href="http://slashdotmedia.com">Advertise</a>
+            <a href="http://apmsolutions.sourceforge.net/">Performance</a>
+        </nav>
+    </div>
+</footer>
+            <script src="http://a.fsdn.com/con/js/min/sf.js?1441983328" type="text/javascript"></script>
+        
+
+        
+        <!-- Begin comScore Tag -->
+        <script src="http://b.scorecardresearch.com/beacon.js"></script>
+        <script type="text/javascript">
+            if (window.COMSCORE) {
+                COMSCORE.beacon({
+                    c1: 2,
+                    c2: 6035546,
+                    c3: "",
+                    c4: "",
+                    c5: "",
+                    c6: "",
+                    c15: ""
+                });
+            }
+        </script>
+        <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=6035546&c3=&c4=&c5=&c6=&c15=&cj=1" alt="comScore2" />
+        " />
+        </noscript>
+        <!-- End comScore Tag -->
+            <script type="text/javascript" src="http://consent-st.truste.com/get?name=notice.js&domain=slashdot.org&c=teconsent&text=true"></script>
+            
+<script type="text/javascript">
+    $(function() {
+        /*global addCommas */
+        var $top_widget = $('#top-downloaded-widget');
+	$.ajax('/top/top_data?os=Other', {
+            global: false,
+            success: function(data) {
+                if(data.download_week.length) {
+                    $.each(data.download_week, function(index, p) {
+                        $top_widget.find('ul').
+                        append('<li><span>{downloads}</span><a href="/projects/{shortname}">{name}</a></li>'.format({
+                            shortname: p.shortname,
+                            name: p.name,
+                            downloads: SF.Humanize.intWord(p.downloads)
+                        }));
+                    });
+                    $top_widget.show();
+                }
+            }
+        });
+
+        
+            /* apply css-class to a keyword from hyperlinks contained in a container */
+            var word_highlighter = function (container, keyword, className) {
+                var regex = new RegExp(keyword, "gi");
+
+                return container.find('a').each(function () {
+                    var anchor = this;
+                    anchor.innerHTML = anchor.innerHTML;
+                    anchor.innerHTML = anchor.innerHTML.replace(regex, function(matched) {return "<span class=\"" + className + "\">" + matched + "</span>";});
+                });
+            };
+            /* 'Related Searches' keyword Highlighting */
+            word_highlighter($('#related_searches_keywords'), "numpy", "unbold_keyword");
+        
+    });
+</script>
+      </body>
+</html>

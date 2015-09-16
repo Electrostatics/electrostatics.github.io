@@ -1,0 +1,26 @@
+Content-Type: multipart/alternative; 
+	boundary="----=_Part_393_930338974.1435854124977"
+
+------=_Part_393_930338974.1435854124977
+Content-Type: text/plain; charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Hi 
+
+I would like to calculate the contribution of a specific negatively charged 
+residue of a protein in changing the electrostatic potential. 
+For this, I was thinking of using APBS to do calculate the electrostatics 
+of the WT protein as well as of a mutant protein in which the residue is 
+changed to an uncharged aminoacid and take the difference. 
+I was able to get dx files for both, but I am not sure how to take the 
+difference as it is not clear to me how I can manipulate the "dx" files, 
+other than visualizing it in Pymol. Any suggestion? 
+
+Nurunisa
+
+------=_Part_393_930338974.1435854124977
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 7bit
+
+<div dir="ltr">Hi&nbsp;<div><br></div><div>I would like to calculate the contribution of a specific negatively charged residue of a protein in changing the electrostatic potential.&nbsp;</div><div>For this, I was thinking of using APBS to do calculate the electrostatics of the WT protein as well as of a mutant protein in which the residue is changed to an uncharged aminoacid and take the difference.&nbsp;</div><div>I was able to get dx files for both, but I am not sure how to take the difference as it is not clear to me how I can manipulate the "dx" files, other than visualizing it in Pymol. Any suggestion?&nbsp;</div><div><br></div><div>Nurunisa</div></div>
+------=_Part_393_930338974.1435854124977--
