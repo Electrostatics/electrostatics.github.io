@@ -24,6 +24,7 @@ This implementation also has the following known bug:
 <!---- The best configuration for a dihedral angle should be tracked and used. Resetting the configuration was not the intended behavior. 
 - Only the first two possible dihedral angles are explored. Other possible angles are ignored. 
 - In some cases if a more than one atom is conflicted in a residue PDB2PQR could declare a residue debumped after fixing only one bump. --->
+
 - Currently PDB2PQR does not consider water atoms when looking for conflicts.
 
 The flowchart has the following problems:

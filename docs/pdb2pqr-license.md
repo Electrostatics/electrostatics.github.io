@@ -8,6 +8,7 @@ permalink: /docs/pdb2pqr-license/
 {% include no-prev-next.html %}
 
 
+Copyright (c) 2011-2015; Nathan A. Baker, Battelle Memorial Institute, Developed at the Pacific Northwest National Laboratory, operated by Battelle Memorial Institute, Pacific Northwest Division for the U.S. Department Energy.
 
 Copyright (c) 2002-2011, Jens Erik Nielsen, University College Dublin; Nathan A. Baker, Battelle Memorial Institute, Developed at the Pacific Northwest National Laboratory, operated by Battelle Memorial Institute, Pacific Northwest Division for the U.S. Department Energy.; Paul Czodrowski & Gerhard Klebe, University of Marburg.
 
