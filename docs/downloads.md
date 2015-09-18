@@ -63,20 +63,17 @@ href="https://github.com/Electrostatics/apbs-pdb2pqr">source code</a>.
 ### PDB2PQR downloads
 
 <p id="pdb2pqr-downloads">PDB2PQR is currently available in source code form.
-The best way to acquire PDB2PQR is to <a href="http://eepurl.com/by4eQr">register</a>, which helps us track usage of the software for our funding agencies, and then download the software from
+The best way to acquire PDB2PQR is to [register](http://eepurl.com/by4eQr), which helps us track usage of the software for our funding agencies, and then download the software from
 [SourceForge](http://sourceforge.net/projects/pdb2pqr/).
 
-If you are installing from source, please follow the [compilation and
-installation instructions]({{ site.baseurl }}/docs/pdb2pqr-installation/ )
-outlined in this manual.
+If you are installing from source, please follow the [compilation and installation instructions]({{ site.baseurl }}/docs/pdb2pqr-installation/ ) outlined in this manual.
 
-After compilation, you can use it directly as outlined 
-[here]({{ site.baseurl }}/docs/pdb2pqr-usage/ ).
+After compilation, you can use it directly as outlined [here]({{ site.baseurl }}/docs/pdb2pqr-usage/ ).
 
 ### APBS downloads
 
 <p id="apbs-downloads">Both binary executables and source code are available for APBS.
-The best way to acquire APBS is to <a href="http://eepurl.com/by4eQr">register</a>, which helps us track usage of the software for our funding agencies, and then download the software from [SourceForge](http://sourceforge.net/projects/apbs/).
+The best way to acquire APBS is to [register](http://eepurl.com/by4eQr), which helps us track usage of the software for our funding agencies, and then download the software from [SourceForge](http://sourceforge.net/projects/apbs/).</p>
 
 If you download the source code version of APBS from
 [GitHub](https://github.com/Electrostatics/apbs-pdb2pqr/tree/1.4.1-binary-release),
