@@ -12,6 +12,7 @@ permalink: /docs/apbs-installation/
 
 <img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
+<p>Please <a href="http://eepurl.com/by4eQr">register</a> before installing APBS.</p>
 
 The best way to install APBS is via the binary installation, which you
 can download [here]({{ site.baseurl }}/docs/downloads/#downloads ), under
