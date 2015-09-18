@@ -61,7 +61,7 @@ Usage information for APBS is available
 
 ### Don't forget to register!
 
-<div>
+<div style="color:#696969">
 <!-- Begin MailChimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-081711.css" rel="stylesheet" type="text/css">
 <style type="text/css">
