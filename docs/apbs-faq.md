@@ -33,7 +33,7 @@ This document is under continual construction and revision to provide up-to-date
 
 <a href="javascript:ReverseDisplay('How do I support APBS and PDB2PQR?')">How do I support APBS and PDB2PQR?</a>
 <div id="How do I support APBS and PDB2PQR?" style="display:none;">
-You can support APBS and PDB2PQR by <a href="http://eepurl.com/by4eQr">registering your use of the software</a>!<hr />
+You can support APBS and PDB2PQR by <a target="_blank" href="http://eepurl.com/by4eQr">registering your use of the software</a>!<hr />
 </div>
 
 

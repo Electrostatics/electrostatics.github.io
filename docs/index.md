@@ -6,7 +6,7 @@ permalink: /docs/home/
 ---
 
 This site aims to be a comprehensive guide to APBS and PDB2PQR.
-Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](http://eepurl.com/by4eQr) your use of the software.
+Before beginning, please make sure to support the APBS/PDB2PQR team by <a target="_blank" href="http://eepurl.com/by4eQr">registering</a> your use of the software.
 
 ## What are APBS and PDB2PQR?
 
