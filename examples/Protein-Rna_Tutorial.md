@@ -85,13 +85,9 @@ After downloading Python, it is useful to set it to your path so you don't have 
 
 ###### Find your copy of the APBS distribution
 
-1. Now, find the [template.in](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/template.in) file in the "apbs-pdb2pqr/apbs/examples/protein-rna" directory.
+Now, find the [template.txt](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/template.txt) file in the "apbs-pdb2pqr/apbs/examples/protein-rna" directory.
 
-2. Find this same folder and file in "My Computer"
-
-3. Rename the "template.in" as "template.txt"
-<img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_12.jpg" />  
-This example template file (shown again below) feeds into APBS and specifies which calculations will take place.
+This example template file (template.txt, shown again below) feeds into APBS and specifies which calculations will take place.
 
 {% highlight bash %}
 read  
@@ -214,8 +210,8 @@ dxmath uses Reverse Polish Notation, and subtracts the dx maps of the individual
 <a id="windows"></a>
 
 #####Python script (windows)
-
-<a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/apbs_win_dx.py" download="apbs_win_dx.py">Download the Windows Python Script (shown below)</a>
+<a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/apbs_win_dx.py"
+download="apbs_win_dx.py">Download the Windows Python Script (shown below)</a>
 {% highlight bash %}
 from subprocess import call
 
@@ -299,7 +295,10 @@ It will create all the apbs-ionconcentration.in files and dxmath-ionconcentratio
 
 #####Bash script (unix)
 
-<a href="{{site.baseurl}}/Tut_scripts_PR/run_apdx_files.sh" download="run_apdx_files.sh">Download the Unix bash script (shown below)</a>
+<a
+href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/run_apdx_files.sh">Download
+the Unix bash script (shown below)</a>  (check that this file is
+executable)
 {% highlight bash %}
 #!/bin/bash
 # Usage: remove all utility bills pdf file password 
