@@ -31,17 +31,17 @@ This document is under continual construction and revision to provide up-to-date
 
 <h3>Frequently Asked Questions</h3>
 
-
-<a href="javascript:ReverseDisplay('How do I calculate a binding energy?')">How do I calculate a binding energy?</a>
-
-<div id="How do I calculate a binding energy?" style="display:none;">
-
-This topic is discussed in detail in the <a href="{{site.baseurl}}/examples/binding_energies/">Binding energies</a> section.
-
-<hr />
-
+<a href="javascript:ReverseDisplay('How do I support APBS and PDB2PQR?')">How do I support APBS and PDB2PQR?</a>
+<div id="How do I support APBS and PDB2PQR?" style="display:none;">
+You can support APBS and PDB2PQR by <a target="_blank" href="http://eepurl.com/by4eQr">registering your use of the software</a>!<hr />
 </div>
 
+
+<a href="javascript:ReverseDisplay('How do I calculate a binding energy?')">How do I calculate a binding energy?</a>
+<div id="How do I calculate a binding energy?" style="display:none;">
+This topic is discussed in detail in the <a href="{{site.baseurl}}/examples/binding_energies/">Binding energies</a> section.
+<hr />
+</div>
 
 <a href="javascript:ReverseDisplay('How do I calculate a pKa?')">How do I calculate a pKa?</a>
 
@@ -86,7 +86,7 @@ Please see the <a href="{{site.baseurl}}/examples/pKa_Calculations/">pKa calcula
 <p>The PDB2PQR web service and software will convert most PDB files into PQR format with some caveats.  Although PDB2PQR can fix some missing heavy atoms in sidechains, it does not currently have the (nontrivial) capability to model in large regions of missing backbone and sidechain coordinates. Be patient and make certain that the job you submitted to the PDB2PQR website has finished and you have downloaded the resulting PQR file correctly. It usually takes less than 10 minutes for the job to finish.</p>
 
 <p>PDB2PQR will also perform hydrogen bond optimization, sidechain rotamer search, limited titration state assignment, ligand parameterization, and APBS input file preparation. Please see the PDB2PQR website for more details.
-As mentioned above, PDB2PQR is discussed in more detailed on the PDB2PQR homepage. Therefore, we will review the minimal steps required to produce a PQR file from a PDB file here. To begin, choose a server from <a href="{{site.baseurl}}/docs/downloads/'>Downloads and web servers</a></p>
+As mentioned above, PDB2PQR is discussed in more detailed on the PDB2PQR homepage. Therefore, we will review the minimal steps required to produce a PQR file from a PDB file here. To begin, choose a server from <a href="{{site.baseurl}}/docs/downloads/">Downloads and web servers</a></p>
 
 <h5>Choose the PDB file to convert</h5>
 
