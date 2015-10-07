@@ -8,38 +8,22 @@ permalink: /support/home/
 
 <div class="note">
 	<h5>Software Registration</h5>
-	<p>This site aims to be a comprehensive guide to APBS and PDB2PQR. Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform">registering for an account</a>.</p>
-	<p>Creating an account will also allow you to create posts and comment in <a href="https://groups.google.com/forum/#!forum/apbs-users">our forum</a>.</p>
-
+	<p>This site aims to be a comprehensive guide to APBS and PDB2PQR. Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="http://eepurl.com/by4eQr">registering for an account</a>.</p>
 </div>
 
 
 ## Mailing Lists
 
-### APBS
+We have a new combined announcements mailing list for APBS and PDB2PQR.
+You can [view the list archives](http://us11.campaign-archive1.com/home/?u=a5808042b2b3ea90ee3603cd8&id=28701e36f0) and [sign up to receive future emails](http://eepurl.com/by4eQr).
+Archives for our older mailing lists are available at SourceForge ([apbs-announcements](http://sourceforge.net/p/apbs/mailman/apbs-announce/) and [pdb2pqr-announce](http://sourceforge.net/p/pdb2pqr/mailman/pdb2pqr-announce)]).
 
-There are two mailing lists associated with the APBS software:
+We also maintain support mailing lists for questions and interactive discussion of our software:
 
-- [apbs-announcements](https://lists.sourceforge.net/lists/listinfo/apbs-announce): A low-traffic list for announcements regarding bugs and new versions of the software
-- [apbs-users](https://lists.sourceforge.net/lists/listinfo/apbs-users): A moderate-traffic list for discussion of APBS, troubleshooting, and reporting potential bugs  
+* APBS-users [list page](https://lists.sourceforge.net/lists/listinfo/apbs-users) and [archive](http://sourceforge.net/p/apbs/mailman/apbs-users/).
+* PDB2PQR-users [list page](https://lists.sourceforge.net/lists/listinfo/pdb2pqr-users) and [archive](http://sourceforge.net/p/pdb2pqr/mailman/pdb2pqr-users).
 
-The apbs-users mailing list is an excellent place to ask questions about APBS; however, we encourage you to check the [users archives](https://groups.google.com/forum/#%21forum/apbs-users) for answers to your questions prior to posting. You can check the [announcements archives](https://groups.google.com/forum/#!forum/apbs-announcements) for more information on releases of APBS software.
-
-### PDB2PQR
-
-There are two mailing lists associated with the PDB2PQR software:
-
-- pdb2pqr-announce, a low-traffic list for announcements regarding bugs and new versions of the software:
-	- [List web page](https://lists.sourceforge.net/lists/listinfo/pdb2pqr-announce)
-	- [List archives](http://sourceforge.net/p/pdb2pqr/mailman/pdb2pqr-announce)
-- pdb2pqr-users, a list for discussion of PDB2PQR, troubleshooting, and reporting potential bugs:
-	- [List web page](https://lists.sourceforge.net/lists/listinfo/pdb2pqr-users)
-	- [List archives](http://sourceforge.net/p/pdb2pqr/mailman/pdb2pqr-users)
-
-<!---
-- Users with restricted access to Google Groups:
-	- [APBS Users](https://lists.sourceforge.net/lists/listinfo/apbs-users)
-	- [APBS Announcements](https://lists.sourceforge.net/lists/listinfo/apbs-announce)--->
+We encourage you to check the archives for these lists before posting.
 
 ## Developer Contact
 
