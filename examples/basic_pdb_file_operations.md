@@ -12,24 +12,24 @@ permalink: /examples/basic_pdb_file_operations/
 #### Fasciculin-1 (1FAS)
 
 This 3-finger toxin structure is available at high resolution (1.9 Å) and has all its heavy atoms present in the PDB file. We'll use one of the PDB2PQR servers to add hydrogens to this protein and optimize their positions.
-<dl>
-<dd>1. From the PDB2PQR server web page, enter `1FAS` into the PDB ID field.</dd>
-<dd>2. Choose whichever forcefield and naming schemes you prefer.</dd>
-<dd>3. Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms" and "Optimize the hydrogen bonding network" options are selected. You can select other options as well, if interested.</dd>
-<dd>4. Hit the "Submit" button.</dd>
-</dl>
+<ol>
+<li>From the PDB2PQR server web page, enter `1FAS` into the PDB ID field.</li>
+<li>Choose whichever forcefield and naming schemes you prefer.</li>
+<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms" and "Optimize the hydrogen bonding network" options are selected. You can select other options as well, if interested.</li>
+<li>Hit the "Submit" button.</li>
+</ol>
 
 
 #### Calmodulin-dependent protein kinase (1A06)
 
 This kinase structure is <a href="http://www.pdb.org/pdb/explore.do?structureId=1A06" target="_blank">available</a> at somewhat lower (2.5 Å) resolution and is missing several sidechain atoms as well as portions of its sequence. We'll use this example to demonstrate how PDB2PQR can add missing sidechain atoms to an imcomplete structure but cannot fill in missing regions of the backbone. In particular, we'll use PDB2PQR to add/optimize hydrogens, reconstruct sidechains K53, N65, R140, E154, Q192, Y195, E221, N222, K225, E228, K232, and Q272 from model geometries, and assign parameters.
 
-<dl>
-<dd>1. From the PDB2PQR server web page, enter `1A06` into the PDB ID field.</dd>
-<dd>2. Choose whichever forcefield and naming schemes you prefer.</dd>
-<dd>3. Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms" and "Optimize the hydrogen bonding network" options are selected. You can select other options as well, if interested.</dd>
-<dd>4. Hit the "Submit" button.</dd>
-</dl>
+<ol>
+<li>From the PDB2PQR server web page, enter `1A06` into the PDB ID field.</li>
+<li>Choose whichever forcefield and naming schemes you prefer.</li>
+<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms" and "Optimize the hydrogen bonding network" options are selected. You can select other options as well, if interested.</li>
+<li>Hit the "Submit" button.</li>
+</ol>
 
 
 #### Visualization
