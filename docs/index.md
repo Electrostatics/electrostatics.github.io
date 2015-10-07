@@ -18,7 +18,7 @@ APBS (Adaptive Poisson-Boltzmann Solver) and PDB2PQR are software packages desig
 
 <div class="note">
 	<h5>Use the software!</h5>
-	<p>Please make sure to support the APBS/PDB2PQR team by <a target="_blank" href="http://eepurl.com/by4eQr">registering</a> before <a href="{{ site.baseurl }}/docs/downloads/">downloading<a>.</p>
+	<p>Please make sure to support the APBS/PDB2PQR team by <a target="_blank" href="http://eepurl.com/by4eQr">registering</a> before <a href="{{ site.baseurl }}/docs/downloads/">downloading</a>.</p>
 </div>
 
 If you come across anything along the way that we haven’t covered, is incorrect information, or if you know of a tip you think others would find useful, please [file an issue]({{ site.repository }}/issues/new) or use our [contact page](../../support/home/) and we’ll work on including it in this guide.
