@@ -1,6 +1,6 @@
 ---
 layout: examples
-title: Lysozyme pKa example for PDB2PQR 1.9
+title: Lysozyme pKa example for PDB2PQR
 permalink: /examples/Lysozyme_pKa_example/
 ---
 
