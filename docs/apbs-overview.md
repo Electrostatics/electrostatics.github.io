@@ -1879,8 +1879,8 @@ bcfl {flag} where flag is a text string that identifies the type of conditions t
 This optional flag enables the program to use choose between multigrid calculations
 or successive over-relaxation (SOR) in a single grid. How the program determines
 which one to use is mainly dependent in grid size and the linearity of
-the PBE. If SOR is choosen, the stopping criteria is set to a maximum
-number of iterarions or a predetermined residue less than 1.0e-9,
+the PBE. If SOR is chosen, the stopping criteria is set to a maximum
+number of iterations or an error tolerance of 1.0e-9,
 whichever is achieved first.  This option is only available in APBS,
 version 1.4.2 and later.
 </p>
