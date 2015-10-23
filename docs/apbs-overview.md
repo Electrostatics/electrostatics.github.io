@@ -64,7 +64,7 @@ APBS input files contain three basic sections which can be repeated any number o
 The APBS input file is constructed from these sections in the following format:
 
 {% highlight bash %}
-READ
+ READ
  ...
  END
 
@@ -109,7 +109,7 @@ This section is the main component for apolar solvation calculations in APBS run
 {% highlight bash %}
 APOLAR [name id]
         {keywords...}
-    END
+END
 {% endhighlight %}
 
 The first (optional) argument is:
@@ -150,9 +150,9 @@ calcenergy {flag}
 {% endhighlight %}
 
 where is a string denoting what type of energy to calculate:<br />
-<code>no</code> (Deprecated) Don't calculate any energies.<br />
-<code>total</code> Calculate and return total apolar energy for the entire molecule.<br />
-<code>comps</code> Calculate and return total apolar energy for the entire molecule as well as the energy components for each atom.
+<code>no</code>: (Deprecated) Don't calculate any energies.<br />
+<code>total</code>: Calculate and return total apolar energy for the entire molecule.<br />
+<code>comps</code>: Calculate and return total apolar energy for the entire molecule as well as the energy components for each atom.
 </p>
 
 <div class="note info">
@@ -465,7 +465,11 @@ where <code>T</code> is the floating point value of the temperature for calculat
 
 ###Basic APOLAR calculations
 
-APBS apolar calculations follow the very generic framework described in Wagoner JA, Baker NA. Assessing implicit models for nonpolar mean solvation forces: the importance of dispersion and volume terms. Proc Natl Acad Sci USA, 103, 8331-8336, 2006.(doi:10.1073/pnas.0600118103).
+APBS apolar calculations follow the very generic framework described in
+<a href="http://www.pnas.org/content/103/22/8331.short">Wagoner JA, Baker
+NA. Assessing implicit models for nonpolar mean solvation forces: the
+importance of dispersion and volume terms. Proc Natl Acad Sci USA, 103,
+8331-8336, 2006.(doi:10.1073/pnas.0600118103).</a>
 
 In particular, nonpolar solvation potentials of mean force (energies) are calculated according to:
 
@@ -494,10 +498,10 @@ In these equations, $\gamma$ is the repulsive (hard sphere) solvent surface tens
 The ELEC block of an APBS input file is used for polar solvation (electrostatics) calculations and has the following syntax:
 
 {% highlight bash %}
-  ELEC [ name {id} ]
+ELEC [ name {id} ]
         {type}
         {keywords...}
-    END
+END
 {% endhighlight %}
 
 where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The <code>{id}</code> tag allows the user to name ELEC blocks.  The <code>{type}</code> command defines the Types of ELEC calculation to be performed.  Finally, the <code>{keywords}</code> are calculation-specific commands that customize the particular type of calculation.
@@ -658,7 +662,11 @@ calcenergy { flag }
 <img src="img/NPBE-energy.png" /><br />
 -->
 \[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \]
-where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential.  For the linearized PB equation, this energy is calculated by the integral<br />
+where epsilon is the dielectric function, rho is the charge distribution,
+phi is the electrostatic potential, $c_i$ is the concentration of each
+mobile ionic species i, $q_i$ is the charge of each species, V is the
+steric solute-ion exclusion potential.  For the linearized PB equation,
+this energy is calculated by the integral<br />
 \[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \]  
 <!--
 <img src="/img/LPBE-energy.png" /><br />
@@ -727,9 +735,12 @@ cgcent { mol id | xcent ycent zcent }
 
 <p>
 The arguments for this keyword are <strong>either</strong>:<br />
-<code>mol id</code> Center the grid on molecule with integer ID id; as assigned in the READ section with a READ mol command.<br />
+<code>mol id</code> Center the grid on molecule with integer ID id; as
+assigned in the READ section with a READ mol command.<br />
 <strong>or</strong><br />
-<code>xcent ycent zcent</code> Center the grid on the (floating point) coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
+<code>xcent ycent zcent</code> Center the grid on the (floating point)
+coordinates (in Å) at which the grid is centered. Based on the PDB
+coordinate frame.
 </p>
 
 <hr />
@@ -801,9 +812,9 @@ The syntax is:
 dime {nx ny nz}
 {% endhighlight %}
 
-<p>For mg-manual calculations, the arguments are dependent on the choice of nlev by the formula:<br />
-n = c 2<sup>l + 1</sup> + 1<br />
-where n is the dime argument, c is a non-zero integer, l is the nlev value. The most common values for grid dimensions are 65, 97, 129, and 161 (they can be different in each direction); these are all compatible with a nlev value of 4. If you happen to pick a "bad" value for the dimensions (i.e., mismatch with nlev), the APBS code will adjust the specified dime downwards to more appropriate values. This means that "bad" values will typically result in lower resolution/accuracy calculations! The arguments for this keyword are:
+<p>For mg-manual calculations, the arguments are dependent on the choice
+of nlev by the formula: $n = c 2^{l + 1} + 1$
+where $n$ is the dime argument, $c$ is a non-zero integer, $l$ is the nlev value. The most common values for grid dimensions are 65, 97, 129, and 161 (they can be different in each direction); these are all compatible with a nlev value of 4. If you happen to pick a "bad" value for the dimensions (i.e., mismatch with nlev), the APBS code will adjust the specified dime downwards to more appropriate values. This means that "bad" values will typically result in lower resolution/accuracy calculations! The arguments for this keyword are:
 <code> nx ny nz</code><br />
 The (integer) number of grid points in the x-, y-, and z-directions, respectively.
 </p>
@@ -922,9 +933,13 @@ fgcent { mol id | xcent ycent zcent }
 {% endhighlight %}
 
 <p>where a user can specify <strong>either</strong>:<br />
-<code>mol {id}</code> Center the grid on molecule with integer ID id; as assigned in the READ section of the input file. Molecule IDs are assigned in the order they are read, starting at 1.<br />
+<code>mol {id}</code> Center the grid on molecule with integer ID id; as
+assigned in the READ section of the input file. Molecule IDs are assigned
+in the order they are read, starting at 1.<br />
 <strong>or the user can specify</strong> <br />
-<code>xcent ycent zcent</code> Center the grids on the coordinates (floating point numbers in Å) at which the grid is centered. Based on the input molecule PDB coordinate frame.
+<code>xcent ycent zcent</code> Center the grids on the coordinates
+(floating point numbers in Å) at which the grid is centered. Based on the
+input molecule PDB coordinate frame.
 </p>
 
 <hr />
@@ -972,9 +987,12 @@ gcent { mol id | xcent ycent zcent }
 {% endhighlight %}
 
 <p>where the user can specify <strong>either</strong>:<br />
-<code>mol {id}</code> Center the grid on molecule with integer ID id; as assigned in the READ section. Molecule IDs are assigned in the order they are read, starting at 1.<br />
+<code>mol {id}</code> Center the grid on molecule with integer ID id; as
+assigned in the READ section. Molecule IDs are assigned in the order they
+are read, starting at 1.<br />
 <strong>or the user can specify</strong><br />
-<code>xcent ycent zcent</code> The floating point coordinates (in Å) at which the grid is centered. Based on the PDB coordinate frame.
+<code>xcent ycent zcent</code> The floating point coordinates (in Å) at
+which the grid is centered. Based on the PDB coordinate frame.
 </p>
 
 <hr />
@@ -1438,7 +1456,9 @@ sdie {diel}
 
 <div id="elec-keyword-smpbe" style="display:none;">
 
-<p>Specifies that the size-modified PBE should be solved as described by Chu V, et al Biophys J, <strong>93</strong>(9):3202-9, 2007 (doi:10.1529/biophysj.106.099168).</p>
+<p>Specifies that the size-modified PBE should be solved as described by
+<A href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2025650/">Chu V, et
+al Biophys J, 93(9):3202-9, 2007(doi:10.1529/biophysj.106.099168).</a></p>
 
 The syntax is:
 {% highlight bash %}
@@ -1490,7 +1510,9 @@ srfm {flag}
 <p>where <code>flag</code> is a string describing the coefficient model.</p>
 <p><code>mol</code>The dielectric coefficient is defined based on a molecular surface definition. The problem domain is divided into two spaces. The "free volume" space is defined by the union of solvent-sized spheres (see srad) which do not overlap with biomolecular atoms. This free volume is assigned bulk solvent dielectric values. The complement of this space is assigned biomolecular dielectric values. With a non-zero solvent radius (srad), this choice of coefficient corresponds to the traditional definition used for PB calculations. When the solvent radius is set to zero, this corresponds to a van der Waals surface definition. The ion-accessibility coefficient is defined by an "inflated" van der Waals model. Specifically, the radius of each biomolecular atom is increased by the radius of the ion species (as specified with the ion keyword). The problem domain is then divided into two spaces. The space inside the union of these inflated atomic spheres is assigned an ion-accessibility value of 0; the complement space is assigned bulk ion accessibility values.</p>
 <p><code>smol</code>The dielectric and ion-accessibility coefficients are defined as for mol (see above). However, they are then "smoothed" by a 9-point harmonic averaging to somewhat reduce sensitivity to the grid setup as described by Bruccoleri et al. J Comput Chem 18 268-276, 1997 (journal web site).</p>
-<p><code>spl2</code>The dielectric and ion-accessibility coefficients are defined by a cubic-spline surface as described by Im et al, Comp Phys Commun 111 (1-3) 59-75, 1998 (doi:[10.1016/S0010-4655(98)00016-2). The width of the dielectric interface is controlled by the swin parameter.  These spline-based surface definitions are very stable with respect to grid parameters and therefore ideal for calculating forces. However, they require substantial reparameterization of the force field; interested users should consult Nina et al, Biophys Chem 78 (1-2) 89-96, 1999 (doi:10.1016/S0301-4622(98)00236-1). Additionally, these surfaces can generate unphysical results with non-zero ionic strengths; this is an on-going area of development.</p>
+<p><code>spl2</code>The dielectric and ion-accessibility coefficients are defined by a cubic-spline surface as described by Im et al, Comp Phys Commun 111 (1-3) 59-75, 1998 (doi:[10.1016/S0010-4655(98)00016-2). The width of the dielectric interface is controlled by the swin parameter.  These spline-based surface definitions are very stable with respect to grid parameters and therefore ideal for calculating forces. However, they require substantial reparameterization of the force field; interested users should consult 
+<A href="doi:10.1016/S0301-4622(98)00236-1">Nina et al, Biophys Chem 78
+(1-2) 89-96, 1999 (doi:10.1016/S0301-4622(98)00236-1).</a> Additionally, these surfaces can generate unphysical results with non-zero ionic strengths; this is an on-going area of development.</p>
 <p><code>spl4</code>The dielectric and ion-accessibility coefficients are defined by a 7th order polynomial. This surface definition has characteristics similar to spl2, but provides higher order continuity necessary for stable force calculations with atomic multipole force fields (up to quadrupole).</p>
 
 <hr />
@@ -1512,7 +1534,12 @@ The syntax is:
 swin {win}
 {% endhighlight %}
 
-<p>where <code>win</code> where win is a floating point number for the spline window width (in Å). Note that, per the analysis of Nina, Im, and Roux (doi:10.1016/S0301-4622(98)00236-1), the force field parameters (radii) generally need to be adjusted if the spline window is changed.</p>
+<p>where <code>win</code> where win is a floating point number for the
+spline window width (in Å). Note that, per the analysis of <A
+href="http://europepmc.org/abstract/MED/17030305">Nina, Im, and
+Roux (doi:10.1016/S0301-4622(98)00236-1)</a>, the force field parameters
+(radii) generally need to be adjusted if the spline window is
+changed.</p>
 
 <hr />
 
@@ -1848,23 +1875,38 @@ bcfl {flag} where flag is a text string that identifies the type of conditions t
 <p><code>mdh</code> "Multiple Debye-Huckel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Huckel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.</p>
 <p><code>focus</code> "Focusing" boundary condition. Dirichlet condition where the potential at the boundary is set to the values computed by the previous (usually lower-resolution) PB calculation. This is used in sequential focusing performed manually in mg-manual calculations. All of the boundary points should lie within the domain of the previous calculation for best accuracy; if any boundary points lie outside, their values are computed using single Debye-Huckel boundary conditions (see above).</p>
 <p><code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use. NOTE: this functionality is only available in the current developmental release of APBS.</p>
-<p><code>calcenergy</code>
-This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.</p>
-
-Note
-
-<p>This option must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <code>print energy 1 - 2 end</code> appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.
+<p><code>sor</code>
+This optional flag enables the program to use choose between multigrid calculations
+or successive over-relaxation (SOR) in a single grid. How the program determines
+which one to use is mainly dependent in grid size and the linearity of
+the PBE. If SOR is choosen, the stopping criteria is set to a maximum
+number of iterarions or a predetermined residue less than 1.0e-9,
+whichever is achieved first.  This option is only available in APBS,
+version 1.4.2 and later.
 </p>
-<p>The syntax is: {% highlight bash %} calcenergy { flag } {% endhighlight %}
+<p><code>calcenergy</code>
+This optional keyword controls electrostatic energy output from a Poisson-Boltzmann calculation.
+It must be used consistently for all calculations that will appear in subsequent PRINT statements. For example, if the statement <code>print energy 1 - 2 end</code> appears in the input file, then both calculations 1 and 2 must have calcenergy keywords present with the same values for <code>flag</code>.
+The syntax is: {% highlight bash %} calcenergy { flag } {% endhighlight %}
 where flag is a text string that specifies the types of energy values to be returned:
 </p>
 <p><code>no</code> (Deprecated) don't calculate any energies. This is the same as not including the calcenergy command in the input file.</p>
 <p><code>total</code> Calculate and return total electrostatic energy for the entire molecule. For the nonlinear PB equation, this energy is:</p>
-<p>\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla \phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i \phi(x)-V(x)}-1} \bigr ) \biggr )}dx \] where epsilon is the dielectric function, rho is the charge distribution, phi is the electrostatic potential, c_i is the concentration of each mobile ionic species i, q_i is the charge of each species, V is the steric solute-ion exclusion potential. For the linearized PB equation, this energy is calculated by the integral
-\[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx} \] comps Calculate and return total electrostatic energy for the entire molecule as well as electrostatic energy components for each atom.
+<p>\[ G[\phi] = \int_\Omega {\biggl ({\frac{\epsilon(x)}{2}}(\nabla
+\phi(x))^2 + \rho(x) \phi(x) + \sum_i{c _i \bigl ( e^{-q _i
+\phi(x)-V(x)}-1} \bigr ) \biggr )}dx \] where epsilon is the dielectric
+function, rho is the charge distribution, phi is the electrostatic
+potential, $c_i$ is the concentration of each mobile ionic species $i$,
+$q_i$
+is the charge of each species, $V$ is the steric solute-ion exclusion
+potential. For the linearized PB equation, this energy is calculated by
+the integral \[ G[\phi] = \frac{1}{2} \int _\Omega \rho (x) \phi(x) {dx}
+\] comps Calculate and return total electrostatic energy for the entire
+molecule as well as electrostatic energy components for each atom.
 </p>
-<hr />
 
+
+<hr />
 </div>
 
 
@@ -1903,7 +1945,16 @@ This type of calculation allows users to write out dielectric, ion-accessibility
 </p>
 {% highlight bash %}async { rank }{% endhighlight %}
 <p>
-where <code>rank</code> is the integer ID of the particular processor to masquerade as. Processor IDs range from 0 to N-1, where N is the total number of processors in the run (see pdime). Processor IDs are related to their position in the overall grid by p = nx ny k + nx j + i  where nx is the number of processors in the x-direction, ny is the number of processors in the y-direction, nz is the number of processors in the z-direction, i is the index of the processor in the x-direction, j is the index of the processor in the y-direction, k is the index of the processor in the z-direction, and p is the overall rank of the processor.
+where <code>rank</code> is the integer ID of the particular processor to
+masquerade as. Processor IDs range from $0$ to $N-1$, where $N$ is the total
+number of processors in the run (see pdime). Processor IDs are related to
+their position in the overall grid by $p = nx ny k + nx j + i$  where
+$nx$ is
+the number of processors in the x-direction, ny is the number of
+processors in the y-direction, $nz$ is the number of processors in the
+z-direction, $i$ is the index of the processor in the x-direction, $j$ is the
+index of the processor in the y-direction, $k$ is the index of the
+processor in the z-direction, and $p$ is the overall rank of the processor.
 </p>
 <hr />
 </div>
@@ -1920,20 +1971,27 @@ PRINT {what} [id op id op...] END
 
 The first mandatory argument is what, the quantity to manipulate or print. This variable is a string that can assume the following values:
 
-- energy Print energies as calculated with an earlier <a value="elec-keyword-calcenergy" onClick="Open('elec-keyword-calcenergy')" href="#elec-keyword-calcenergy" >calcenergy ELEC</a> command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
-- force Print forces as calculated with an earlier <a value="elec-keyword-calcforce" onClick="Open('elec-keyword-calcforce')" href="#elec-keyword-calcforce" >calcforce ELEC </a>  command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
-- elecEnergy Print electrostatic energies as calculated with an earlier <a value="elec-keyword-calcenergy" onClick="Open('elec-keyword-calcenergy')" href="#elec-keyword-calcenergy" >calcenergy ELEC</a>  command.
-- elecForce Print forces as calculated with an earlier <a value="elec-keyword-calcforce" onClick="Open('elec-keyword-calcforce')" href="#elec-keyword-calcforce" >calcforce ELEC </a>  command.
-- apolEnergy Print energies as calculated with an earlier <a value="calcenergy" onClick="Open('calcenergy')" href="#calcenergy" >calcenergy APOLAR</a>  command.
-- apolForce Print forces as calculated with an earlier <a value="calcforce" onClick="Open('calcforce')" href="#calcforce" >calcforce APOLAR</a>  command.
+- energy: Print energies as calculated with an earlier <a value="elec-keyword-calcenergy" onClick="Open('elec-keyword-calcenergy')" href="#elec-keyword-calcenergy" >calcenergy ELEC</a> command. Warning: this keyword is deprecated and will be removed soon. Please use elecEnergy or apolEnergy as appropriate to obtain the desired energy output. For now, use of this keyword will return the old results of elecEnergy.
+- force: Print forces as calculated with an earlier <a value="elec-keyword-calcforce" onClick="Open('elec-keyword-calcforce')" href="#elec-keyword-calcforce" >calcforce ELEC </a>  command. Warning: this keyword is deprecated and will be removed soon. Please use elecForce or apolForce as appropriate to obtain the desired energy output.
+- elecEnergy: Print electrostatic energies as calculated with an earlier <a value="elec-keyword-calcenergy" onClick="Open('elec-keyword-calcenergy')" href="#elec-keyword-calcenergy" >calcenergy ELEC</a>  command.
+- elecForce: Print forces as calculated with an earlier <a value="elec-keyword-calcforce" onClick="Open('elec-keyword-calcforce')" href="#elec-keyword-calcforce" >calcforce ELEC </a>  command.
+- apolEnergy: Print energies as calculated with an earlier <a value="calcenergy" onClick="Open('calcenergy')" href="#calcenergy" >calcenergy APOLAR</a>  command.
+- apolForce: Print forces as calculated with an earlier <a value="calcforce" onClick="Open('calcforce')" href="#calcforce" >calcforce APOLAR</a>  command.
+<p>
 The next arguments are a series of id op id op id op ... id commands where every id is immediately followed by an op and another id. These options have the following form:
-
+</p>
 <ul>
-<li>id  This is a variable string or integer denoting the ID of a particular ELEC or APOLAR calculation. String values of id are assume to correspond to the optional "names" that can be assigned to ELEC or APOLAR calculations. Integer values of id are assumed to corresponding to the sequentially-assigned integer IDs for ELEC or APOLAR calculations. These IDs start at 1 and are incremented independently for each new ELEC or AOPLAR calculation.</li>
-<li>op  Specify the arithmetic operation to be performed on the calculated quantities:
+<li>id: This is a variable string or integer denoting the ID of a
+particular ELEC or APOLAR calculation. String values of id are assume to
+correspond to the optional "names" that can be assigned to ELEC or APOLAR
+calculations. Integer values of id are assumed to corresponding to the
+sequentially-assigned integer IDs for ELEC or APOLAR calculations. These
+IDs start at 1 and are incremented independently for each new ELEC or
+AOPLAR calculation.</li>
+<li>op: Specify the arithmetic operation to be performed on the calculated quantities:
 <ul>
-	<li>+ Addition</li>
-	<li>- Subtraction</li>
+	<li>+: Addition</li>
+	<li>-: Subtraction</li>
 </ul>
 </li>
 </ul>
@@ -1949,7 +2007,7 @@ print energy solvated - reference end
 print energy complex_solv - complex_ref - ligand_solv + ligand_ref - protein_solv + protein_ref end
 {% endhighlight %}
 
-See the examples/ directory provided with the APBS distribution for more examples.
+See the examples directory provided with the APBS distribution for more examples.
 
 <h3 id="read">READ</h3>
 
@@ -1966,7 +2024,12 @@ where keywords is or more of the keywords described in the Keyword section (the 
 <div class="note info">
 
 <h5>Note</h5>
-<p>One of these sections must be present for every molecule involved in the APBS calculation. Molecule and "map" IDs are assigned implicitly assigned for each molecule/map read, based on order and starting at 1 and incremented independently for each input type. In other words, each input PQR file is assigned an ID 1, 2, 3, ...; each input dielectric map is assigned an independent ID 1, 2, 3, ...; etc.</p>
+<p>One of these sections must be present for every molecule involved in
+the APBS calculation. Molecule and "map" IDs are assigned implicitly
+assigned for each molecule/map read, based on order and starting at 1 and
+incremented independently for each input type. In other words, each input
+PQR file is assigned an ID 1, 2, 3, ...; each input dielectric map is
+assigned an independent ID 1, 2, 3, ...; etc.</p>
 
 </div>
 
@@ -2158,7 +2221,6 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 <hr />
 
 </div>
-
 
 
 <!---

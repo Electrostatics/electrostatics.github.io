@@ -18,7 +18,8 @@ The PDB2PQR web portal provides support for the execution of PDB2PQR and APBS as
 #### Generating the PQR
 
 We'll perform this example with Fusarium solani cutinase (PDB ID 1CUS), a lipolytic enzyme with a catalytic serine accessible to solvent.
-Go to the PDB2PQR web portal and enter a PDB ID or upload a PDB file. Choose your options for PDB2PQR and click "Submit".
+Go to the <A href="http://nbcr-222.ucsd.edu/pdb2pqr">PDB2PQR web
+portal</A> and enter a PDB ID or upload a PDB file. Choose your options for PDB2PQR and click "Submit".
 
 <img src="{{site.baseurl}}/img/pdb2pqr_webserver.png"/>
 
