@@ -11,6 +11,14 @@ permalink: /support/home/
 	<p>This site aims to be a comprehensive guide to APBS and PDB2PQR. Before beginning, please make sure to support the APBS/PDB2PQR team by <a href="http://eepurl.com/by4eQr">registering for an account</a>.</p>
 </div>
 
+<!--- add in a gitter chat window -->
+<script>
+  ((window.gitter = {}).chat = {}).options = {
+    room: 'https://gitter.im/Electrostatics'
+  };
+</script>
+<script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
+
 
 ## Mailing Lists
 
