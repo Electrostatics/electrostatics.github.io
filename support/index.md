@@ -14,7 +14,7 @@ permalink: /support/home/
 <!--- add in a gitter chat window -->
 <script>
   ((window.gitter = {}).chat = {}).options = {
-    room: 'https://gitter.im/Electrostatics'
+    room: 'https://gitter.im/Electrostatics/help'
   };
 </script>
 <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
