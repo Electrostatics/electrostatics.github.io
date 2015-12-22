@@ -31,8 +31,7 @@ This document is under continual construction and revision to provide up-to-date
 
 <h3>Frequently Asked Questions</h3>
 
-<a href="javascript:ReverseDisplay('How do I support APBS and PDB2PQR?')">How do I support APBS and PDB2PQR?</a>
-
+<a id="support APBS and PDB2PQR" href="javascript:ReverseDisplay('How do I support APBS and PDB2PQR?')">How do I support APBS and PDB2PQR?</a>
 <div id="How do I support APBS and PDB2PQR?" style="display:none;">
 
 You can support APBS and PDB2PQR by <a target="_blank" href="http://eepurl.com/by4eQr">registering your use of the software</a>!
@@ -42,13 +41,13 @@ You can support APBS and PDB2PQR by <a target="_blank" href="http://eepurl.com/b
 </div>
 
 
-<a href="javascript:ReverseDisplay('How do I calculate a binding energy?')">How do I calculate a binding energy?</a>
+<a id="calculate a binding energy" href="javascript:ReverseDisplay('How do I calculate a binding energy?')">How do I calculate a binding energy?</a>
 <div id="How do I calculate a binding energy?" style="display:none;">
 This topic is discussed in detail in the <a href="{{site.baseurl}}/examples/binding_energies/">Binding energies</a> section.
 <hr />
 </div>
 
-<a href="javascript:ReverseDisplay('How do I calculate a pKa?')">How do I calculate a pKa?</a>
+<a id="calculate a pKa" href="javascript:ReverseDisplay('How do I calculate a pKa?')">How do I calculate a pKa?</a>
 
 <div id="How do I calculate a pKa?" style="display:none;">
 
@@ -59,7 +58,7 @@ Please see the <a href="{{site.baseurl}}/examples/pKa_Calculations/">pKa calcula
 </div>
 
 
-<a href="javascript:ReverseDisplay('How do I calculate a solvation energy?')">How do I calculate a solvation energy?</a>
+<a id="calculate solvation energy" href="javascript:ReverseDisplay('How do I calculate a solvation energy?')">How do I calculate a solvation energy?</a>
 
 <div id="How do I calculate a solvation energy?" style="display:none;">
 
@@ -71,7 +70,7 @@ Please see the <a href="{{site.baseurl}}/examples/pKa_Calculations/">pKa calcula
 </div>
 
 
-<a href="javascript:ReverseDisplay('How do I get my structures ready for electrostatics calculations?')">How do I get my structures ready for electrostatics calculations?</a>
+<a id ="structures ready electrostatics calculations?" href="javascript:ReverseDisplay('How do I get my structures ready for electrostatics calculations?')">How do I get my structures ready for electrostatics calculations?</a>
 
 <div id="How do I get my structures ready for electrostatics calculations?" style="display:none;">
 
@@ -116,7 +115,7 @@ As mentioned above, PDB2PQR is discussed in more detailed on the PDB2PQR homepag
 
 </div>
 
-<a href="javascript:ReverseDisplay('How do I model the inhomogeneous environment of a membrane?')">How do I model the inhomogeneous environment of a membrane?</a>
+<a id="model inhomogeneous membrane"href="javascript:ReverseDisplay('How do I model the inhomogeneous environment of a membrane?')">How do I model the inhomogeneous environment of a membrane?</a>
 
 <div id="How do I model the inhomogeneous environment of a membrane?" style="display:none;">
 
@@ -126,7 +125,7 @@ Please see <a href="{{site.baseurl}}/examples/potentials_of_mean_force/">The pol
 
 </div>
 
-<a href="javascript:ReverseDisplay('How do I run a calculation that’s too big for my computer?')">How do I run a calculation that’s too big for my computer?</a>
+<a id="calculation too big" href="javascript:ReverseDisplay('How do I run a calculation that’s too big for my computer?')">How do I run a calculation that’s too big for my computer?</a>
 
 <div id="How do I run a calculation that’s too big for my computer?" style="display:none;">
 
@@ -138,7 +137,7 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 
 
 
-<a href="javascript:ReverseDisplay('How do I run my calculations on someone else’s computer?')">How do I run my calculations on someone else’s computer?</a>
+<a id="calculation someone computer" href="javascript:ReverseDisplay('How do I run my calculations on someone else’s computer?')">How do I run my calculations on someone else’s computer?</a>
 
 <div id="How do I run my calculations on someone else’s computer?" style="display:none;">
 
@@ -148,7 +147,7 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 
 </div>
 
-<a href="javascript:ReverseDisplay('How do I use APBS with my external simulation software?')">How do I use APBS with my external simulation software?</a>
+<a id="APBS external simulation" href="javascript:ReverseDisplay('How do I use APBS with my external simulation software?')">How do I use APBS with my external simulation software?</a>
 
 <div id="How do I use APBS with my external simulation software?" style="display:none;">
 
@@ -162,7 +161,7 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 </div>
 
 
-<a href="javascript:ReverseDisplay('How do I visualize the electrostatic potential?')">How do I visualize the electrostatic potential?</a>
+<a id="visualize potential" href="javascript:ReverseDisplay('How do I visualize the electrostatic potential?')">How do I visualize the electrostatic potential?</a>
 
 <div id="How do I visualize the electrostatic potential?" style="display:none;">
 
@@ -172,7 +171,7 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 
 </div>
 
-<a href="javascript:ReverseDisplay('What values should I use for my grid spacing?')">What values should I use for my grid spacing?</a>
+<a id="grid spacing" href="javascript:ReverseDisplay('What values should I use for my grid spacing?')">What values should I use for my grid spacing?</a>
 
 <div id="What values should I use for my grid spacing?" style="display:none;">
 
@@ -184,7 +183,7 @@ Please see the discussion in the <a href="{{site.baseurl}}/examples/parallel_exe
 </div>
 
 
-<a href="javascript:ReverseDisplay('What are the sources of error in my calculation?')">What are the sources of error in my calculation?</a>
+<a id="sources error calculation" href="javascript:ReverseDisplay('What are the sources of error in my calculation?')">What are the sources of error in my calculation?</a>
 
 <div id="What are the sources of error in my calculation?" style="display:none;">
 
@@ -249,7 +248,7 @@ Under construction
 </div>
 
 
-<a href="javascript:ReverseDisplay('What are the units of electrostatic potential?')">What are the units of electrostatic potential?</a>
+<a id="units electrostatic" href="javascript:ReverseDisplay('What are the units of electrostatic potential?')">What are the units of electrostatic potential?</a>
 
 <div id="What are the units of electrostatic potential?" style="display:none;">
 
@@ -270,7 +269,7 @@ As an example, if you ran your calculation at 300 K, then the potential would be
 
 </div>
 
-<a href="javascript:ReverseDisplay('What does the message WARNING! Unusually large potential values detected on the focusing boundary! mean?')">What does the message "WARNING! Unusually large potential values detected on the focusing boundary!" mean?</a>
+<a id="message WARNING" href="javascript:ReverseDisplay('What does the message WARNING! Unusually large potential values detected on the focusing boundary! mean?')">What does the message "WARNING! Unusually large potential values detected on the focusing boundary!" mean?</a>
 
 <div id="What does the message WARNING! Unusually large potential values detected on the focusing boundary! mean?" style="display:none;">
 
@@ -284,8 +283,7 @@ As an example, if you ran your calculation at 300 K, then the potential would be
 
 </div>
 
-<a href="javascript:ReverseDisplay('What is FEtk?')">What is FEtk?</a>
-
+<a id="fetk" href="javascript:ReverseDisplay('What is FEtk?')">What is FEtk?</a>
 <div id="What is FEtk?" style="display:none;">
 
 FEtk is an adaptive multilevel finite element library developed by Michael Holst and used for the finite element features in APBS.  More information, as well as downloadable files, can be found <a href = "http://www.fetk.org">here</a>.
@@ -295,7 +293,7 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 
 </div>
 
-<a href="javascript:ReverseDisplay('What is focusing?')">What is focusing?</a>
+<a id="focusing" href="javascript:ReverseDisplay('What is focusing?')">What is focusing?</a>
 
 <div id="What is focusing?" style="display:none;">
 
@@ -307,7 +305,7 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 
 </div>
 
-<a href="javascript:ReverseDisplay('What is MALOC?')">What is MALOC?</a>
+<a id="maloc" href="javascript:ReverseDisplay('What is MALOC?')">What is MALOC?</a>
 
 <div id="What is MALOC?" style="display:none;">
 
@@ -317,7 +315,7 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 
 </div>
 
-<a href="javascript:ReverseDisplay('What is Opal?')">What is Opal?</a>
+<a id="opal" href="javascript:ReverseDisplay('What is Opal?')">What is Opal?</a>
 
 <div id="What is Opal?" style="display:none;">
 
@@ -327,7 +325,7 @@ FEtk is an adaptive multilevel finite element library developed by Michael Holst
 
 </div>
 
-<a href="javascript:ReverseDisplay('What is PMG?')">What is PMG?</a>
+<a id="pgm" href="javascript:ReverseDisplay('What is PMG?')">What is PMG?</a>
 
 <div id="What is PMG?" style="display:none;">
 
