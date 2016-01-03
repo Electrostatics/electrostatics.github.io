@@ -27,11 +27,9 @@ This example is hosted off-site <a href="http://en.wikiversity.org/wiki/Poisson%
 <a id="Amino"></a>
 <h3>The polar solvation potential of mean force for a helix in a dielectric slab membrane</h3>
 
-<a data-scroll href="#topcall">top</a>
-
 
 <a id="Overview"></a>
-<h3>Overview</h3>
+<h4>Overview</h4>
 
 This example will examine the differing polar solvation free energies of an alpha helix as it translates through a low-dielectric slab, a model membrane-like environment. The low dielectric slab is intended to crudely represent the nonpolar membrane environment. Note that the peptide used in this example is largely nonpolar (glycine, alanine, and leucine) with a centrally-located arginine.
 The starting configuration of this example has the peptide nearly completely buried in the membrane environment:
@@ -48,12 +46,18 @@ The final configuration of this example has the peptide significantly exposed to
 
 This example will use APBS to solve the Poisson equation for these different configurations to determine the polar solvation energy. The resulting polar solvation energy profile (as a function of helix position) is called a "potential of mean force" for the solvation of this helix through this low dielectric slab membrane mimic.
 
+*All of the software and input files needed for this example are available
+[here](https://github.com/Electrostatics/apbs-pdb2pqr/tree/master/apbs/examples/helix).*
+
 <a data-scroll href="#topcall">top</a>
 
 
 <a id="Software"></a>
-<h3>Software requirements</h3>
-In addition to APBS, you will also need the draw_membrane2 program written by Michael Grabe. The source code for this program is attached below and can be compiled very easily by
+<h4>Software requirements</h4>
+In addition to APBS, you will use the
+[draw_membrane2](https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/helix/draw_membrane2.c) program written by
+Michael Grabe. The source code for this program can be compiled very
+easily with the following command:
 	
 	gcc draw_membrane2.c -lm -o draw_membrane2
 
@@ -61,17 +65,20 @@ In addition to APBS, you will also need the draw_membrane2 program written by Mi
 
 
 <a id="Basic"></a>
-<h3>The basic steps</h3>
+<h4>The basic steps</h4>
 
-We will illustrate the basic steps of the polar solvation calculation with the peptide in its membrane-immersed started configuration. The PQR file for this starting configuration is attached below as Membrane-helix-0.pqr.
+We will illustrate the basic steps of the polar solvation calculation
+with the peptide in its membrane-immersed started configuration. The PQR
+file for this starting configuration is called Membrane-helix-0.pqr.
 
 <a data-scroll href="#topcall">top</a>
 
 
 <a id="Gen"></a>
-<h3>Generating the peptide dielectric map</h3>
+<h4>Generating the peptide dielectric map</h4>
 
 The system will have three dielectric regions:
+
 * The high dielectric solvent exterior (usually 80 for water)
 * The low dielectric interior of the protein (10 for this example)
 * The low dielectric interior of the membrane (2 for this example)
@@ -91,7 +98,10 @@ In the latter steps of this example, we'll be calculating solvation energies usi
 * A medium map of lengths 200 × 200 × 200 Å3.
 * A small map of lengths 100 × 100 × 100 Å3.
 
-All of these maps will have 97 × 97 × 97 grid points. This coarse grid resolution is necessary for a relatively quick example; however, it is not recommended for calculations where quantitative accuracy is desired. The APBS mg-dummy input file for these calculations is available for download below (Apbs_dummy.in). Run APBS with this input file to generate the following dielectric maps:
+All of these maps will have 97 × 97 × 97 grid points. This coarse grid
+resolution is necessary for a relatively quick example; however, it is
+not recommended for calculations where quantitative accuracy is desired.
+The APBS mg-dummy input file for these calculations is called Apbs_dummy.in. Run APBS with this input file to generate the following dielectric maps:
 
 * diel{x,y,z}_{S,M,L}.dx
 The nine dielectric maps for the x-, y-, and z- components of the Poisson operator for the small (S), medium (M), and large (L) problem domains
@@ -105,9 +115,10 @@ The three peptide charge distribution maps for the small (S), medium (M), and la
 
 
 <a id="Adding"></a>
-<h3>Adding the membrane environment</h3>
+<h4>Adding the membrane environment</h4>
 
-The next step is to incorporate the membrane environment through the draw_membrane2 program described above. This program is invoked separately for the small, medium and large systems as follows:
+The next step is to incorporate the membrane environment through the
+draw_membrane2 program, described above. This program is invoked separately for the small, medium and large systems as follows:
 
 	./draw_membrane2 dielx_S.dx zmem Lmem pdie 0.0 I R_top R_bottom
     ./draw_membrane2 dielx_M.dx zmem Lmem pdie 0.0 I R_top R_bottom
@@ -141,9 +152,11 @@ This will produce a number of *m.dx files (e.g., dielx_Lm.dx) that are the modif
 
 
 <a id="Perform"></a>
-<h3>Performing the electrostatic calculation</h3>
+<h4>Performing the electrostatic calculation</h4>
 
-Finally, we will use these input coefficient maps in an APBS calculation to solve the linearized Poisson-Boltzmann equation using sequential focusing. The APBS input file available for download below (Apbs-solv.in) performs six calculations:
+Finally, we will use these input coefficient maps in an APBS calculation
+to solve the linearized Poisson-Boltzmann equation using sequential
+focusing. The APBS input file, Apbs-solv.in, performs six calculations:
 
 * Three sequential focusing calculations for the problem with the peptide in solution ("solvated")
 * Three sequential focusing calculations for the problem with the peptide in the membrane dielectric ("reference")
@@ -154,7 +167,7 @@ The difference between the finest "solvated" calculation and the finest "referen
 
 
 <a id="Visual"></a>
-<h3>Visualizing the result</h3>
+<h4>Visualizing the result</h4>
 
 The result of these electrostatic potential calculations can be visualized with VMD as described elsewhere in this documentation. Perhaps one of the most interesting VMD features to use with this example is the FieldLines representation of the electrostatic potential which demonstrates how the dielectric interface between the membrane and bulk solution significantly perturbs the electrostatic field:
 
@@ -168,9 +181,9 @@ This image was generated using VMD 1.8.6. The membrane was represented as an iso
 
 
 <a id="Putting"></a>
-<h3>Putting it all together into a PMF</h3>
+<h4>Putting it all together into a PMF</h4>
 
-The steps above should be repeated for every structure in the potential of mean force (attached below):
+The steps above should be repeated for every structure in the potential of mean force:
 
 * membrane-helix-0.pqr
 * membrane-helix-4.pqr
@@ -223,12 +236,13 @@ What causes the shape of this curve?
 
 
 <a id="Auto"></a>
-<h3>Automating the PMF calculation</h3>
+<h4>Automating the PMF calculation</h4>
 
-Repeating the above calculations by hand can be very tedious; the bash script available below (Run_membrane-helix.sh) was designed to simplify the process. Note that, in addition to the software described above, this script requires:
+Repeating the above calculations by hand can be very tedious; the bash
+script, Run_membrane-helix.sh, was designed to simplify the process. Note that, in addition to the software described above, this script requires:
 
-* A template for the APBS coefficient map construction named apbs_dummy-TEMPLATE.in and available below.
-* A template for the APBS coefficient map construction named apbs_solv-TEMPLATE.in and available below.
+* A template for the APBS coefficient map construction named apbs_dummy-TEMPLATE.in.
+* A template for the APBS coefficient map construction named apbs_solv-TEMPLATE.in.
 * All of the PQR files from above named as membrane-helix-0.pqr, membrane-helix-4.pqr, ...
 
 You will also need to modify the bash script to specify the correct locations of your APBS and draw_membrane2 executables.
@@ -237,7 +251,7 @@ You will also need to modify the bash script to specify the correct locations of
 
 
 <a id="Caveats"></a>
-<h3>Caveats and comments</h3>
+<h4>Caveats and comments</h4>
 
 As mentioned above, this calculation was performed using a grid with 97 × 97 × 97 points for the sake of efficiency. However, this is almost certainly too coarse for quantitative work. For real applications, one should increase the number of grid points until the desired observable (e.g., solvation energy) stops changing with increasing grid points.
 
