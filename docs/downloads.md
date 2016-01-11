@@ -20,10 +20,14 @@ The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR without 
 
 <div class="note warning">
 	<h5>Before you begin!</h5>
-	<p>PDB2PQR funding is dependent on your support for continued development and support. Please <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" >register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
+	<p>PDB2PQR funding is dependent on your support for continued
+	development and support. Please <a
+	href="http://eepurl.com/by4eQr" target="_blank" >register</a>
+	before using the PDB2PQR web server so we can accurately report
+	the number of users to our funding agencies.</p>
 </div>
 
-After you have <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" >registered</a> and reviewed the terms of the [PDB2PQR license]({{site.baseurl}}/docs/pdb2pqr-license/), you are ready to **[skip to the Run PDB2PQR section]({{ site.baseurl }}/docs/structures-ready)**.
+After you have <a href="http://eepurl.com/by4eQr" target="_blank" >registered</a> and reviewed the terms of the [PDB2PQR license]({{site.baseurl}}/docs/pdb2pqr-license/), you are ready to **[skip to the Run PDB2PQR section]({{ site.baseurl }}/docs/structures-ready)**.
 
 The <a href="http://nbcr-222.ucsd.edu/pdb2pqr">PDB2PQR web server</a> is hosted by the <a target="_blank" href="http://nbcr.ucsd.edu">National Biomedical Computation Resource</a> and is currently running version 2.0.
 <!-- TODO: Add link to Version 1.8 release notes -->

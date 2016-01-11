@@ -10,7 +10,7 @@ permalink: /examples/home/
 
 
 The following examples will help orient you in APBS/PDB2PQR.
-Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform) for an account.
+Before beginning, please make sure to support the APBS/PDB2PQR team by [registering](http://eepurl.com/by4eQr) for an account.
 
 <div class="note">
 	<h5>Best use of examples</h5>

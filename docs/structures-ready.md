@@ -29,7 +29,8 @@ detailed explanation of how PDB2PQR runs, see [Basic Usage]({{ site.baseurl }}/d
 
 <div class="note warning">
 	<h5>Before you begin!</h5>
-	<p>PDB2PQR funding is dependent on your support for continued development and support. Please <a href="https://docs.google.com/forms/d/1CsftV09vLGIxeMHwevGy8SDVYKoihs8EWLNjsbjxIRw/viewform" target="_blank" >register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
+	<p>PDB2PQR funding is dependent on your support for continued
+	development and support. Please <a href="http://eepurl.com/by4eQr" target="_blank" >register</a> before using the PDB2PQR web server so we can accurately report the number of users to our funding agencies.</p>
 </div>
 
 
