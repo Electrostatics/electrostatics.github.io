@@ -4,7 +4,7 @@ title: Ionic Strength Dependence of Peptide-RNA Interactions
 permalink: /examples/Protein-Rna_Tutorial/
 ---
 
-#Table of Contents
+# Table of Contents
 * <a href="#intro">Introduction</a>
 * <a href="#setup">Software and file setup</a>
 	* <a href="#apbs">Find your copy of the APBS distribution</a>
@@ -19,7 +19,7 @@ permalink: /examples/Protein-Rna_Tutorial/
 	* <a href="#vmd">VMD</a>
 
 
-####Prerequisite Requirements: 
+#### Prerequisite Requirements: 
 <a href="{{site.baseurl}}/docs/downloads/" target="BLANK">Download APBS and PDB2PQR</a>   
 <a href="https://www.python.org/" target="BLANK">Click here for Python</a> **Note that this is written using Python 2.7  
 
@@ -27,7 +27,7 @@ permalink: /examples/Protein-Rna_Tutorial/
 
 <a id="intro"></a>
 
-####Introduction:
+#### Introduction:
 
 This is the [García-García and Draper paper](http://dx.doi.org/10.1016/S0022-2836\(03\)00615-6) that this example is taken from. Special thanks to [David Draper](http://pmcb.jhu.edu/inactive%20pages/draper-profile.html) who provided the PDB files. This example explores the electrostatic contributions to the binding interaction between a 22-residue α-helical peptide of protein λ with the "box B" RNA hairpin structure. In particular, this example uses nonlinear Poisson-Boltzmann equation calculations to look at the non-specific screening effects of monovalent salt on the peptide-RNA complex.
 García-García and Draper isolated the contribution of KCl concentration to the binding of the folded peptide with the folded RNA hairpin and determined a fairly linear relationship between the binding free energy $\\Delta_{\rm bind} G$ and the logarithm of the KCl concentration which yields:  
@@ -52,7 +52,7 @@ The PQR files are included in the [protein-rna](https://github.com/Electrostatic
 
 <a id="setup"></a>
 
-####Software and file setup
+#### Software and file setup
 
 After downloading Python, it is useful to set it to your path so you don't have to change your command prompt to the directory containing python.exe
 
@@ -178,7 +178,7 @@ quit
 
 <a id="elec"></a>
 
-######Elec keywords
+###### Elec keywords
 
 As used in the template file, the READ command, our calculation will have three parts:  
 1. Calculation of the total electrostatic energy (including self-interaction energies) of the peptide-RNA complex. This calculation is named complex in the input file.  
@@ -203,13 +203,13 @@ dxmath uses Reverse Polish Notation, and subtracts the dx maps of the individual
 
 <a id="software"></a>
 
-####Running the software
+#### Running the software
 
 \*When you run these programs, you need to be in the same repository as template.txt and dxmath.txt.
 
 <a id="windows"></a>
 
-#####Python script (windows)
+##### Python script (windows)
 <a href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/apbs_win_dx.py"
 download="apbs_win_dx.py">Download the Windows Python Script (shown below)</a>
 {% highlight bash %}
@@ -255,7 +255,7 @@ Open the output.txt file with your favorite text editor (This tutorial is using 
 
 <a id="unixpy"></a>
 
-#####Python script (unix)
+##### Python script (unix)
 
 <a href="https://raw.githubusercontent.com/PEMIfolder/github.io-PEMIfolder/gh-pages/Tut_scripts_PR/apbs_unix_dx.py" download="apbs_unix_dx.py">Download the Unix Python Script (shown below)</a>
 {% highlight bash %}
@@ -293,7 +293,7 @@ It will create all the apbs-ionconcentration.in files and dxmath-ionconcentratio
 
 <a id="bash"></a>
 
-#####Bash script (unix)
+##### Bash script (unix)
 
 <a
 href="https://github.com/Electrostatics/apbs-pdb2pqr/blob/master/apbs/examples/protein-rna/run_apdx_files.sh">Download
@@ -336,11 +336,11 @@ grep "Global net ELEC energy" output.txt | tee output_2.txt"
 
 <a id="results"></a>
 
-#####Formatting and visualizing results
+##### Formatting and visualizing results
 
 <a id="graph"></a>
 
-######Graph generation
+###### Graph generation
 
 Take the data you found/calculated and reformat it into two columns. The data should be seperated by white space or a column. Note that these energies are in kJ/mol and converted to kcal/mol for comparison with the data from García-García and Draper. The data in this example is from APBS 1.4.0.  
 <img src="{{site.baseurl}}/img/Tut_Pics_PR/data_1.png"> 
@@ -371,7 +371,7 @@ from  the graph of x = ln(ion concentration) and y = RT (the electrostatic bindi
 
 <a id="pymol"></a>
 
-######PyMol: 
+###### PyMol: 
   
 Open "PyMOL + Tcl-Tk GUI". Using the window at the top, find the directory containing the files that were just pooped out by the python/bash scripts. Once you find the file type  
 {% highlight bash %}
@@ -398,7 +398,7 @@ Under the "S" for the new model you just loaded hit show cartoon and ribbon. Hit
 
 <a id="vmd"></a>
 
-######VMD:
+###### VMD:
 
 Open VMD 1.9.1 (or what ever version you have). From the VMD Main window hit "File -> New Molecule". A "Molecule File Browser" window should come up.  
 <img src="{{site.baseurl}}/img/Tut_Pics_PR/Screenshot_29.jpg" />

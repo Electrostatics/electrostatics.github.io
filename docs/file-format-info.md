@@ -25,23 +25,23 @@ else { document.getElementById(d).style.display = "none"; }
 
 
 
-##Matrices
+## Matrices
 
-###Harwell-Boeing
+### Harwell-Boeing
 
 This is the sparse matrix output format used by APBS for analyses of the matrix operators which are constructed during PB solution. This format was implemented so matrix operators could by decomposed with SuperLU and ARPACK but this also serves as a useful general mechanism for sparse matrix input and output. The complete Harwell-Boeing matrix format description is under construction.
 
 
 
 
-##Mesh and data
+## Mesh and data
 
-###MCSF finite element
+### MCSF finite element
 
 APBS reads and writes meshes in the FEtk MCSF format
 
 
-##OpenDX scalar data
+## OpenDX scalar data
 
 We output most discretized scalar data (e.g., potential, accessibility, etc.) from APBS in the data format used by the OpenDX software package. The OpenDX data format is very flexible; the following sections describe the application of this format for APBS multigrid and finite element datasets.
 
@@ -121,23 +121,23 @@ where the variables in this format are shown in bold and defined as:
 `ui` Data value associated with vertex i
 
 
-###UHBD
+### UHBD
 
 We also support scalar data output in the legacy "UHBD format" for use with programs such as UHBD and SDA. The complete UHBD data format description is under construction.
 
 
 
-##Molecular Structure
+## Molecular Structure
 
-###MOL2
+### MOL2
 
 The MOL2 file format is a popular method for specifying chemical structure, including atom types, positions, and bonding. It is described in detail in the Tripos documentation (PDF).
 
-###PDB
+### PDB
 
 The PDB file format is described in detail in the [Protein Data Bank documentation](http://www.rcsb.org/pdb/static.do?p=file_formats/pdb/index.html).
 
-###PQR
+### PQR
 
 This format is a modification of the PDB format which allows users to add charge and radius parameters to existing PDB data while keeping it in a format amenable to visualization with standard molecular graphics programs. The origins of the PQR format are somewhat uncertain, but has been used by several computational biology software programs, including MEAD and AutoDock. UHBD uses a very similar format called QCD.
 
@@ -170,7 +170,7 @@ where the whitespace is the most important feature of this format. The fields ar
 Clearly, this format can deviate wildly from PDB due to the use of whitespaces rather than specific column widths and alignments. This deviation can be particularly significant when large coordinate values are used. However, in order to maintain compatibility with most molecular graphics programs, the PDB2PQR program and the utilities provided with APBS (see the Parameterization section) attempt to preserve the PDB format as much as possible.
 
 
-###XML
+### XML
 The XML structure format was designed to remediate some of the shortcomings of the flat-file format. By use of XML, issues related to extra fields in the file or columns merging together can easily be remedied. Additionally, APBS will only parse the necessary information from the XML file and will ignore all other information, so users wishing to store extra data related to a residue or atom can do so inline without affecting APBS.
 
 This data format has the following form:
@@ -207,7 +207,7 @@ The variables in this example are:
 
 
 
-##APBS flat-file format
+## APBS flat-file format
 
 This parameter file format is a series of lines of the form:
 
@@ -228,7 +228,7 @@ where the whitespaces are important and denote separation between the fields. Th
 \\[ U_{\mathrm{LJ}}(r) = \epsilon \left(\Bigl(\frac{\sigma}{r}\Bigr)^{12} - \Bigr(\frac{\sigma}{r}\Bigr)^6\right) \\]
 
 
-##APBS XML format
+## APBS XML format
 
 This parameter file format has the following form:
 
@@ -266,7 +266,7 @@ The variables in this example are:
 
 
 
-###PDB2PQR XML format
+### PDB2PQR XML format
 
 This file format is described in the [PDB2PQR Programmer Guide](/docs/pdb2pqr-programmers/) Using XML Files and Regular Expressions section.
 

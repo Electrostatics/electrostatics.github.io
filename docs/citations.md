@@ -11,7 +11,7 @@ permalink: /docs/citing/
 
 
 
-##Citing your use of PDB2PQR
+## Citing your use of PDB2PQR
 
 Please acknowledge your use of PDB2PQR by citing:
 
@@ -22,7 +22,7 @@ Please acknowledge your use of PEOE_PB protein/ligand parameterization software 
 
 - Czodrowski P, Dramburg I, Sotriffer CA, Klebe G. Development, validation, and application of adapted PEOE charges to estimate pKa values of functional groups in protein-ligand complexes. Proteins, 65, 424-437, 2006.  [(Link)](http://onlinelibrary.wiley.com/doi/10.1002/prot.21110/abstract;jsessionid=90CBD709146173D81A0F7554C256C01A.f01t02)
 
-##Citing your use of APBS
+## Citing your use of APBS
 
 Please acknowledge your use of APBS by citing:
 

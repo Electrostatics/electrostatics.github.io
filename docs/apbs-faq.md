@@ -115,7 +115,7 @@ As mentioned above, PDB2PQR is discussed in more detailed on the PDB2PQR homepag
 
 </div>
 
-<a id="model inhomogeneous membrane"href="javascript:ReverseDisplay('How do I model the inhomogeneous environment of a membrane?')">How do I model the inhomogeneous environment of a membrane?</a>
+<a id="model inhomogeneous membrane" href="javascript:ReverseDisplay('How do I model the inhomogeneous environment of a membrane?')">How do I model the inhomogeneous environment of a membrane?</a>
 
 <div id="How do I model the inhomogeneous environment of a membrane?" style="display:none;">
 

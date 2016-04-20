@@ -12,17 +12,17 @@ permalink: /docs/apbs-others/
 <img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
-###Overview
+### Overview
 
 APBS was designed to facilitate use with other programs. This section outlines some of the programs with which APBS is known to work. However, it is likely that applications which use APBS have been inadvertently omitted from this list. If you know of a software that uses APBS and is not listed here, please <a href="/support/home/">contact us</a>.
 
-##Web Interfaces
+## Web Interfaces
 
 * __PDB2PQR__ - The [PDB2PQR web server](../structures-ready/) provides the ability to configure, run, and visualize APBS calculations.
 
 <!--* __Gemstone__ - [The Gemstone extension](http://gemstone.mozdev.org/) for the Firefox web browser used to provide a very easy-to-use interface to older versions of APBS (0.4.0) with all of the functionality of the command-line interface. However, this extension was created by external developers and is no longer actively maintained. Please <a href="/support/home/">contact us</a> to let us know if this extension was important to your research.-->
 
-##Graphical User Interfaces
+## Graphical User Interfaces
 
 * [__PyMOL__](http://pymol.sourceforge.net/) -
 molecular visualization and animation package which provides an interface to APBS. The APBS plugin to PyMOL (developed by Michael George Lerner) permits isocontour and surface map visualization of APBS results. More information about using PyMOL with APBS is provided in the FAQs.
@@ -58,7 +58,7 @@ Additional documention for using APBS with PMV is provided [here](http://www.cgl
 <p><img src="{{site.baseurl}}/img/1fas_chimera_apbs.png" /><sub><sub>PDB ID 1FAS with Chimera</sub></sub></p>
 
 
-##Simulation Software
+## Simulation Software
 
 * __iAPBS__ - Robert Konecny (McCammon Group) has developed
 [iAPBS](http://mccammon.ucsd.edu/iapbs/), an interface between APBS and
@@ -67,7 +67,7 @@ available from the [iAPBS homepage](http://mccammon.ucsd.edu/iapbs/).
 
 * __TINKER__ - APBS 1.3 is available with TINKER; please visit the <a href="http://dasher.wustl.edu/tinker/" >TINKER homepage</a> for more information.
 
-##Visualization Software
+## Visualization Software
 
 Electrostatic potentials are commonly visualized in the context of biomolecular structure to better understand functional aspects of biological systems. This section describes molecular graphics software which can display potentials and other data output from APBS. Note that the graphical user interfaces discussed above can also be used to visualize APBS output.
 

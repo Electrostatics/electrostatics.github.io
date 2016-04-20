@@ -51,7 +51,7 @@ The first session of these practicals are designed to introduce the basic concep
 
 <a id="pdb2pqr"></a>
 
-#####PDB2PQR
+##### PDB2PQR
 
 * The full PDB2PQR distribution (pre-release version 2.0.0) should be available from /usr/local/src/pdb2pqr-2.0.0
 

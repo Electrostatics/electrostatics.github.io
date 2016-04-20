@@ -47,13 +47,13 @@ The first session of these practicals are designed to introduce the basic concep
 * The main APBS executable (/usr/local/bin/apbs) should be in your path.
 * Other APBS tools should be tools/ subdirectory of the APBS distribution (/usr/local/share/tools/).
 
-#####PDB2PQR
+##### PDB2PQR
 * The full PDB2PQR distribution (version 2.0) should be available from  <a href= "{{site.baseurl}}/docs/downloads/">here</a>
 
-#####VMD
+##### VMD
 * VMD (vmd) should be in your path.
 
-#####PyMOL
+##### PyMOL
 * PyMOL (pymol) should be in your path.
 
 <a id="basics"></a>

@@ -12,7 +12,7 @@ permalink: /docs/usage/
 <img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
-##Invocation
+## Invocation
 
 In addition to using APBS through other programs, there are two ways to invoke APBS from the command line. The traditional approach uses the primary APBS binary to run APBS on local resources. However, in recent versions of APBS, we have added the ability to run APBS through a secondary Python-based program which can be invoked locally but uses Opal web services to run APBS on remote resources (with no expense to the user).
 
@@ -23,7 +23,7 @@ In addition to using APBS through other programs, there are two ways to invoke A
 	</ul>
 </div>
 
-###APBS command-line binary
+### APBS command-line binary
 
 See how to invoke APBS with the command line in the [Invocation Section]({{site.baseurl}}/docs/apbs-invocation).
 
@@ -50,7 +50,7 @@ input-file is an input file with a specific syntax described in the section Inpu
 - The file io.mc (or io.mc_N for parallel runs, where N is the processor ID. This gives you detailed information about the progress of the run with a particular focus on the numerical solver.
 --->
 
-###APBS Opal client
+### APBS Opal client
 
 <p>The <a href="http://nbcr.ucsd.edu/data/docs/opal/" target="_blank">Opal Toolkit</a> is a set of software produced by the <a href="http://nbcr.ucsd.edu/wordpress2/" target="_blank">National Biomedical Computational Resource (NBCR)</a>. This toolkit allows for the computing load for processor intensive scientiﬁc applications to be shifted to a 3rd party and/or generic computing grid. This can be tremendously advantageous in situations where a large amount of computing power is not locally available, but is required, for the task at hand. In particular, many users have discovered that their local computational resources are insufficient for certain types of APBS calculations on large systems or at extremely high accuracy. This client removes this resource limitation by allowing users to run on clusters at NBCR.
 Recent developmental versions APBS add optional support for the off-loading of APBS calculations to an Opal service. Currently, the client uses services hosted by the <a href="https://www.linkedin.com/in/nathanandrewbaker" target="_blank">Baker group</a>. Opal support has been integrated into APBS such that the end user will not be able to tell the difference between local and Opal runs of APBS: the APBS Opal client can be invoked in exactly the same way as the main APBS binary with identical output.
