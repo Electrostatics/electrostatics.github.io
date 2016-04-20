@@ -93,7 +93,7 @@ The APBS input file is constructed from these sections in the following format:
 
 Each section of the APBS input file has its own syntax, described in more detail in the following sections:
 
-###Category List
+### Category List
 
 <ul>
 	<li><a href="#apolar">APOLAR input file section</a></li>
@@ -120,7 +120,7 @@ name {id}
 
 where id is a unique string which can be assigned to the calculation to facilitate later operations (particularly in the [PRINT](#print) statements). The keywords... describing the parameters of the apolar calculation are discussed in more detail in the section [APOLAR keywords](#apolarkeywords).  Basic APOLAR calculations are described in this section.
 
-###APOLAR Keywords
+### APOLAR Keywords
 
 <a href="javascript:ReverseDisplay('bconc')">bconc</a>
 
@@ -463,7 +463,7 @@ where <code>T</code> is the floating point value of the temperature for calculat
 - [swin](apolar-keywords/#swin)
 - [temp](apolar-keywords/#temp)--->
 
-###Basic APOLAR calculations
+### Basic APOLAR calculations
 
 APBS apolar calculations follow the very generic framework described in
 <a href="http://www.pnas.org/content/103/22/8331.short">Wagoner JA, Baker
@@ -507,7 +507,7 @@ END
 where the indentation and linefeeds are included for clarity; only whitespace is needed in the input file.  The <code>{id}</code> tag allows the user to name ELEC blocks.  The <code>{type}</code> command defines the Types of ELEC calculation to be performed.  Finally, the <code>{keywords}</code> are calculation-specific commands that customize the particular type of calculation.
 This section is the main component for polar solvation calculations in APBS runs. There may be several ELEC sections, operating on different molecules or using different parameters for multiple runs on the same molecule. The order of the ELEC statement can matter since certain types of boundary conditions (bcfl) can require information about previous calculations.
 
-###ELEC block naming
+### ELEC block naming
 
 Since numerous ELEC blocks may appear in an APBS input file, it can be difficult to keep track of them all. It is possible to assign an optional name to each ELEC block to simplify the organizational process. This syntax has the form
 
@@ -529,7 +529,7 @@ where ELEC is the start of the ELEC block and {id} is an alphanumeric string den
 
 
 
-###Elec keywords
+### Elec keywords
 
 <a href="javascript:ReverseDisplay('elec-keyword-akeypre')">akeypre</a>
 
@@ -1840,7 +1840,7 @@ writemat {type} {stem}
 - [write](elec-keywords/#write)
 - [writemat](elec-keywords/#writemat)--->
 
-###Types of ELEC calculations
+### Types of ELEC calculations
 
 
 <a href="javascript:ReverseDisplay('fe-manual')">fe-manual: manually-configured adaptive finite element Poisson-Boltzmann calculations</a>
@@ -2034,7 +2034,7 @@ assigned an independent ID 1, 2, 3, ...; etc.</p>
 </div>
 
 
-###READ keywords
+### READ keywords
 
 <a href="javascript:ReverseDisplay('read-keyword-charge')">charge</a>
 
@@ -2231,7 +2231,7 @@ The inputs are maps of charge densities; these values have units of e<sub>c</sub
 - [parm](read-keywords/#parm)
 - [pot](read-keywords/#pot)--->
 
-###READ examples
+### READ examples
 
 The following is an example of a minimal READ section that only imports PQR format molecular structure files.
 
@@ -2243,7 +2243,7 @@ READ
 END
 {% endhighlight %}
 
-####Reading a PDB file with parameters
+#### Reading a PDB file with parameters
 
 {% highlight bash %}
 READ
@@ -2252,7 +2252,7 @@ READ
 END
 {% endhighlight %}
 
-####Reading external dielectric maps
+#### Reading external dielectric maps
 
 {% highlight bash %}
 READ
