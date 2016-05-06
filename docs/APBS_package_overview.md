@@ -6,6 +6,8 @@ next_section: apbs-programmers
 permalink: /docs/APBS_package_overview/
 ---
 
+<img src="{{site.baseurl}}/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
+
 This page gives an overview of the binaries, tools, etc. distributed as part of the APBS software package. It is organized by directory; later chapters provide a more in-depth description on tools specific to particular applications.
 
 <a id="topcall"></a>

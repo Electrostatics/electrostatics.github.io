@@ -9,7 +9,7 @@ permalink: /docs/apbs-others/
 
 {% include no-prev-next.html %}
 
-<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
+<img src="{{site.baseurl}}/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
 ### Overview

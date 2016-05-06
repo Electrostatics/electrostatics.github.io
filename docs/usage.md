@@ -1,7 +1,7 @@
 ---
 layout: docs
 title: Basic Usage
-prev_section: installation
+prev_section: solvation-model
 next_section: apbs-overview
 permalink: /docs/usage/
 ---
@@ -9,7 +9,7 @@ permalink: /docs/usage/
 
 {% include no-prev-next.html %}
 
-<img src="/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
+<img src="{{site.baseurl}}/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
 ## Invocation
