@@ -6,9 +6,9 @@ next_section: APBS_package_overview
 permalink: /docs/apbs-others/
 ---
 
-
+<!---
 {% include no-prev-next.html %}
-
+--->
 <img src="{{site.baseurl}}/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 

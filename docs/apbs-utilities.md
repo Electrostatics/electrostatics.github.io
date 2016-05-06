@@ -2,14 +2,12 @@
 layout: docs
 title: Utilities
 prev_section: apbs-faq
-next_section: viz-overview
+next_section: apbs-license
 permalink: /docs/apbs-utilities/
 ---
-
-
-
+<!---
 {% include no-prev-next.html %}
-
+--->
 <img src="{{site.baseurl}}/images/apbs-icons/APBS_128_v2.png" class="apbs-icon" />
 
 
