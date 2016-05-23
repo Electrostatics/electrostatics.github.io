@@ -23,7 +23,7 @@ Mixing things up a little bit from above, we're now ready to look at the 1HPV cr
 <ol>
 <li>From the PDB2PQR server web page, enter `1HPX` into the PDB ID field.</li>
 <li>Choose whichever forcefield and naming schemes you prefer.</li>
-<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded here. You can select other options as well, if interested.</li>
+<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded <a href="{{site.baseurl}}/examples/LIG_1HPX.mol2">here</a>. You can select other options as well, if interested.</li>
 <li>Hit the "Submit" button.</li>
 </ol>
 Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P81 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB file and compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.
@@ -34,7 +34,7 @@ Our next example uses PDB structure 1ABF of L-arabinose binding protein in compl
 <ol>
 <li>From the PDB2PQR server web page, enter `1ABF` into the PDB ID field.</li>
 <li>Choose whichever forcefield and naming schemes you prefer.</li>
-<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded here. You can select other options as well, if interested.</li>
+<li>Under options, be sure the "Ensure that new atoms are not rebuilt too close to existing atoms", "Optimize the hydrogen bonding network", and "Assign charges to the ligand specified in a MOL2 file" options are selected. The necessary MOL2 file can be downloaded <a href="{{site.baseurl}}/examples/LIG_1ABF.mol2">here</a>. You can select other options as well, if interested.</li>
 <li>Hit the "Submit" button.</li>
 </ol>
 Once the calculations are complete, you should see a web page with a link to the new PQR file with a warning about debumping P66, K295, and K306 (but no warnings about ligand parameterization!). You can download the resulting PQR file and view it in your favorite molecular visualization package (e.g., VMD, PyMOL, or PMV). For comparison, you might download the the original PDB fileand compare the PDB2PQR-generated structure with the original to see where hydrogens were placed and how the ligand is bound to the active site.
