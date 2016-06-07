@@ -314,6 +314,8 @@ The energyforce example has no additional keywords from the previous section. An
 <p>The energies and forces computed by this method are for inter-molecule interactions. Without multiple molecules in the system, the energies and forces will be zero.</p>
 </div>
 
+### Energyforce example
+
 {% highlight bash %}
 READ
    mol pqr pos_charge.pqr
@@ -335,6 +337,8 @@ END
 
 QUIT
 {% endhighlight %}
+
+### Energyforce output
 
 The output, for the test files in the examples/pbam directory, filename <code>toy_energyforce.inp</code> is <code>test</code> and <code>test.pqr</code>. <code>test</code> reads as follows:
 
@@ -359,6 +363,8 @@ For each molecule in the system, the coarse-grain radius, center of geometry car
 
 
 <h3 id="electrostatics">Electrostatics keywords and examples</h3>
+
+### Electrostatics keywords
 
 Additional inputs for an electrostatic run specify the desired output format. The current options are:
 
@@ -436,10 +442,15 @@ gridpts {pts}
 <p>Examples of how these outputs may be visualized are detailed in the PB-AM manual. The source is also accompanied by a directory of <code>python_scripts</code>.</p>
 </div>
 
+### Electrostatics example
 
 <h3 id="dynamics">Dynamics keywords and examples</h3>
 
-The final option for PB-AM is to run dynamics. The calculation of force and torque has been integrated into a Brownian dynamics scheme that is detailed in <a href="http://pubs.acs.org/doi/abs/10.1021/ct400048q">Yap EH, Head-Gordon TL (2013)</a>. This is the most involved type of simulation and may require some adjustments that are very system specific. The available options are as follows:
+The final option for PB-AM is to run dynamics. The calculation of force and torque has been integrated into a Brownian dynamics scheme that is detailed in <a href="http://pubs.acs.org/doi/abs/10.1021/ct400048q">Yap EH, Head-Gordon TL (2013)</a>. This is the most involved type of simulation and may require some adjustments that are very system specific.
+
+
+### Dynamics keywords
+The available options are as follows:
 
 <a href="javascript:ReverseDisplay('dyn-keyword-diff')">diff</a>
 <div id="dyn-keyword-diff" style="display:none;">
@@ -597,7 +608,15 @@ END
 QUIT
 {% endhighlight %}
 
-The output, for the test files in the <code>examples/pbam</code> directory, filename <code>toy_dynamics.inp</code> is <code>dyn_toy.pqr</code>, <code>dyn_toy.stat</code>, <code>dyn_toy_traj.xyz</code>, and <code>dyn_toy_traj.dat</code>. <code>dyn_toy.pqr</code> is the starting configuration of the system for the first trajectory, <code>dyn_toy.stat</code> is a file that prints how each trajectory was terminated and the time that this <code>dyn_toy_traj.xyz</code> is a VMD readable xyz file for the trajectory of <code>traj</code> that has positions written out every 5000 steps (~10,000 picoseconds). <code>dyn_toy_traj.dat</code> is a file that prints out positions, forces and torques  for the system every 5000 steps (~10,000 picoseconds).
+
+### Dynamics output
+
+The output, for the test files in the <code>examples/pbam</code> directory, filename <code>toy_dynamics.inp</code> are as follows:
+
+<p><code>dyn_toy.pqr</code> is the starting configuration of the system for the first trajectory</p>
+<p><code>dyn_toy.stat</code> is a file that prints how each trajectory was terminated and the time that this occurred at.</p>
+<p><code>dyn_toy_traj.xyz</code> is a VMD readable xyz file for the trajectory of <code>traj</code> that has positions written out every 5000 steps (~10,000 picoseconds).</p>
+<p><code>dyn_toy_traj.dat</code> is a file that prints out positions, forces and torques  for the system every 5000 steps (~10,000 picoseconds).</p>
 
 
 <script type="text/x-mathjax-config">
