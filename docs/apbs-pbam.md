@@ -19,7 +19,7 @@ else {document.getElementById(d).style.display = "none";}
 }
 function Open(d) {
 document.getElementById(d).style.display = "block";
-} 
+}
 //-->
 window.onload = function() {
   // Check if hash exists
@@ -51,7 +51,7 @@ From the above formulation, computation of the interaction energy ($\Omega^{(i)}
 
 \\[\Omega^{(i)}=\frac{1}{\epsilon_s} \left \langle \sum_{j \ne i}^N  T \cdot A^{(j)} ,  A^{(i)} \right \rangle \\]
 
-Where $\langle  M, N \rangle$ denotes the inner product. 
+Where $\langle  M, N \rangle$ denotes the inner product.
 
 #### Forces and Torques
 
@@ -118,9 +118,9 @@ Within the read section, the user must list all molecules in the system with the
 <hr />
 
 <!---
-- [mol](read-keywords/#mol)---> 
+- [mol](read-keywords/#mol)--->
 
-### READ examples
+#### READ examples
 
 The following is an example of a minimal READ section.
 
@@ -199,10 +199,10 @@ pbc {boxlength}
 <p>where <code>boxlength</code> is the floating point value of the box length in Ångstroms.</p>
 <div class="note info">
 <h5>Note</h5>
-<p>The box is centered at the origin (0, 0, 0). The code assumes a minimum image 
+<p>The box is centered at the origin (0, 0, 0). The code assumes a minimum image
 convention, so it only includes the closest image of
- the neighboring molecules. For this convention to always be preserved, 
- the periodic box is assumed to be large enough such that the electrostatic forces 
+ the neighboring molecules. For this convention to always be preserved,
+ the periodic box is assumed to be large enough such that the electrostatic forces
  are sufficiently attenuated beyond one boxlength. Generally, the program assumes a mutual polarization cutoff of 100 Å for the mutual polarization, so if the boxlength is shorter, the cutoff will be reduced to boxlength/2.</p>
 </div>
 <hr />
@@ -314,7 +314,7 @@ The energyforce example has no additional keywords from the previous section. An
 <p>The energies and forces computed by this method are for inter-molecule interactions. Without multiple molecules in the system, the energies and forces will be zero.</p>
 </div>
 
-### Energyforce example
+#### Energyforce example
 
 {% highlight bash %}
 READ
@@ -322,25 +322,27 @@ READ
    mol pqr neg_charge.pqr
 END
 
-ELEC name comp_solv        # Toy charges
+ELEC name comp_solv    # Toy charges
     pbam-auto
-    
+
     runtype energyforce
-    temp 250.0              # System temperature (K)
-    pdie 4.0                # Solute dielectric
-    sdie 78.00              # Solvent dielectric
-    salt 0.01               # Monovalent salt conc in M
+    temp 250.0         # System temperature (K)
+    pdie 4.0           # Solute dielectric
+    sdie 78.00         # Solvent dielectric
+    salt 0.01          # Monovalent salt conc in M
 
     randorient
-  
+
 END
 
 QUIT
 {% endhighlight %}
 
-### Energyforce output
+#### Energyforce output
 
-The output, for the test files in the examples/pbam directory, filename <code>toy_energyforce.inp</code> is <code>test</code> and <code>test.pqr</code>. <code>test</code> reads as follows:
+The output, for the test files in the examples/pbam directory, filename <code>toy_energyforce.inp</code> is <code>test</code> and <code>test.pqr</code>.
+
+<p><code>test</code> reads as follows:
 
 {% highlight bash %}
 My units are kT. Time: 0
@@ -356,15 +358,15 @@ MOLECULE #2 radius: 1.37409
         TORQUE: 2.17631, [0.30195 -0.0762617 2.15391]
 {% endhighlight %}
 
-For each molecule in the system, the coarse-grain radius, center of geometry cartesian coordinates, the interaction energy, forces and torques are printed. 
+For each molecule in the system, the coarse-grain radius, center of geometry cartesian coordinates, the interaction energy, forces and torques are printed. </p>
 
-<code>test.pqr</code> is a PQR file of the entire system, with input atoms only identified by their charge and radii, the coarse-grained spheres identified by the CEN keyword in the fourth column.
+<p><code>test.pqr</code> is a PQR file of the entire system, with input atoms only identified by their charge and radii, the coarse-grained spheres identified by the CEN keyword in the fourth column.</p>
 
 
 
 <h3 id="electrostatics">Electrostatics keywords and examples</h3>
 
-### Electrostatics keywords
+#### Electrostatics keywords
 
 Additional inputs for an electrostatic run specify the desired output format. The current options are:
 
@@ -442,14 +444,51 @@ gridpts {pts}
 <p>Examples of how these outputs may be visualized are detailed in the PB-AM manual. The source is also accompanied by a directory of <code>python_scripts</code>.</p>
 </div>
 
-### Electrostatics example
+#### Electrostatics example
+
+{% highlight bash %}
+READ
+   mol pqr pos_charge.pqr
+   mol pqr neg_charge.pqr
+END
+
+ELEC name comp_solv    # Toy charges
+    pbam-auto
+
+    runtype electrostatics
+    runname elec_toy   # Output name for files
+    temp 298.15        # System temperature (K)
+    pdie 4.0           # Solute dielectric
+    sdie 78.0          # Solvent dielectric
+    salt 0.05          # Monovalent salt conc in M
+
+    dx toy.dx
+    3dmap  toy.map
+    grid2d toy.x0.dat x 0.0
+    grid2d toy.z1.dat z 1.0
+
+END
+
+QUIT
+{% endhighlight %}
+
+
+#### Electrostatics output
+
+The outputs of an electrostatics run will vary depending on the types of electrostatic keywords used in the infile, they are generally as follows:
+
+<p><code>[runname].pqr</code> is the configuration of the system, including CG spheres.</p>
+<p><code>[dxname].dx</code> is a dx formatted file that will be printed if the dx keyword is used. It is analagous to the APBS dx output. </p>
+<p><code>[3dmapname]</code> is a file that prints out a list potential value for points on each of the molecules surfaces. The general format of the lines are <p><code>xcord ycord zcord potential</code>. Included in the <p><code>python_scripts</code> directory is a python script used for plotting a 3D heatmap of this file.</p>
+<p><code[grid2dfilename]</code> For each specified 2D grid keyword, a file is printed that contains a matrix of potential values for points in the system space at a given x/y/z location. Included in the <p><code>python_scripts</code> directory is a python script used for plotting a 2D heatmap of this file. </p>
+
 
 <h3 id="dynamics">Dynamics keywords and examples</h3>
 
 The final option for PB-AM is to run dynamics. The calculation of force and torque has been integrated into a Brownian dynamics scheme that is detailed in <a href="http://pubs.acs.org/doi/abs/10.1021/ct400048q">Yap EH, Head-Gordon TL (2013)</a>. This is the most involved type of simulation and may require some adjustments that are very system specific.
 
 
-### Dynamics keywords
+#### Dynamics keywords
 The available options are as follows:
 
 <a href="javascript:ReverseDisplay('dyn-keyword-diff')">diff</a>
@@ -522,14 +561,14 @@ The syntax is:
 term time {val}
 {% endhighlight %}
 
-<p>where <code>val</code> is a floating point number for the time in picoseconds that the 
+<p>where <code>val</code> is a floating point number for the time in picoseconds that the
 simulation is to be terminated at. </p>
 <hr />
 </div>
 
 <a href="javascript:ReverseDisplay('dyn-keyword-termcombine')">termcombine</a>
 <div id="dyn-keyword-termcombine" style="display:none;">
-<p>Given multiple termination conditions, specify the logic operator for combining 
+<p>Given multiple termination conditions, specify the logic operator for combining
 them.</p>
 
 The syntax is:
@@ -565,7 +604,7 @@ xyz {molecule_id} {filename}
 - [xyz](dyn-keywords/#xyz)
 --->
 
-### Dynamics example infile
+#### Dynamics example infile
 
  An example input file is given below:
 
@@ -578,11 +617,11 @@ END
 ELEC name comp_solv  # Toy charges
     pbam-auto
 
-    runtype dynamics   
+    runtype dynamics
     runname dyn_toy  # Output name for files
     temp 298.15      # System temperature (K)
-    pdie 4.0         # Solute dielectric                 
-    sdie 78.0        # Solvent dielectric                
+    pdie 4.0         # Solute dielectric
+    sdie 78.0        # Solvent dielectric
     salt 0.05        # Monovalent salt conc in M
 
     pbc 100.0
@@ -598,18 +637,18 @@ ELEC name comp_solv  # Toy charges
     xyz 1 pos_1.xyz   # Pos for mol 1 at traj = 1
     xyz 1 pos_2.xyz   # Pos for mol 1 at traj = 2
     xyz 1 pos_3.xyz   # Pos for mol 1 at traj = 3
-    
+
     xyz 2 neg_1.xyz   # Pos for mol 2 at traj = 1
     xyz 2 neg_2.xyz   # Pos for mol 2 at traj = 2
     xyz 2 neg_3.xyz   # Pos for mol 2 at traj = 3
-  
+
 END
 
 QUIT
 {% endhighlight %}
 
 
-### Dynamics output
+#### Dynamics output
 
 The output, for the test files in the <code>examples/pbam</code> directory, filename <code>toy_dynamics.inp</code> are as follows:
 
@@ -621,7 +660,7 @@ The output, for the test files in the <code>examples/pbam</code> directory, file
 
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    "HTML-CSS": {scale: 95, linebreaks: {automatic: true}}, 
+    "HTML-CSS": {scale: 95, linebreaks: {automatic: true}},
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
  });
 </script>
