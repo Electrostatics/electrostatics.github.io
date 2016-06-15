@@ -48,7 +48,7 @@ The equations derived from the linear Poisson-Boltzmann equation are
 
 for the surface potential $\phi$, and its normal derivative $\frac{\partial\phi}{\partial v}$ on the surface $\Gamma$. The kernels $K_{1,2,3,4}$ are combinations of the Coulomb and screened Coulomb potentials:
 \\[G_0(\textbf{x},\textbf{y})=\frac{1}{4\pi |\textbf{x}-\textbf{y}|},
-G_K(\textbf{x},\textbf{y})=\frac{e^{-K|\textbf{x}-\textbf{y}|}}{4\pi |\textbf{x}-\textbf{y}|}\\]
+G_{\kappa}(\textbf{x},\textbf{y})=\frac{e^{-\kappa|\textbf{x}-\textbf{y}|}}{4\pi |\textbf{x}-\textbf{y}|}\\]
   and their first and second derivative.
 
 The required sums in above integral equations have the form of N-body potentials,
