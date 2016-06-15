@@ -130,7 +130,7 @@ The keywords of current implementation are:
 
 <a href="javascript:ReverseDisplay('elec-keyword-bem-manual')">bem-manual</a>
 
-<div id="elec-keyword-bem" style="display:none;">
+<div id="elec-keyword-bem-manual" style="display:none;">
 
 <p>Specifies that the TABI solver should be used.</p>
 
@@ -403,7 +403,7 @@ The syntax is:
 tree_order {order}
 {% endhighlight %}
 
-<p>where <code>order<code> a integer that indicates Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
+<p>where <code>order</code> a integer that indicates Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
 
 <hr />
 
@@ -440,7 +440,7 @@ The syntax is:
 mac {theta}
 {% endhighlight %}
 
-<p>where <code>theta<code> a double from 0 to 1 is a user-specified parameter for controlling the error.</p>
+<p>where <code>theta</code> a double from 0 to 1 is a user-specified parameter for controlling the error.</p>
 <p>Multipole acceptance criterion (MAC): $\frac{r_c}{R}\leqslant \theta$</p>
 <p>where $r_c$ is cluster radius, and $R$ is distance of particle to cluster center.</p>
 
