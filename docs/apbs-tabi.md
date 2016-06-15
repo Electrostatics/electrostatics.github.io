@@ -391,7 +391,7 @@ temp { T }
 
 <a href="javascript:ReverseDisplay('treecode-keywords-tree_order')">tree_order</a>
 
-<div id="treecode-tree_order" style="display:none;">
+<div id="treecode-keywords-tree_order" style="display:none;">
 
 <p>Specify the order of treecode multipole expansion.</p>
 
@@ -411,7 +411,7 @@ tree_order {order}
 
 <a href="javascript:ReverseDisplay('treecode-keywords-tree_n0')">tree_n0</a>
 
-<div id="treecode-tree_n0" style="display:none;">
+<div id="treecode-keywords-tree_n0" style="display:none;">
 
 <p>Specify the maximum number of particles in a leaf. This controls leaf size in the processing of building tree structure. </p>
 
@@ -428,7 +428,7 @@ tree_n0 {max_number}
 
 <a href="javascript:ReverseDisplay('treecode-keywords-mac')">mac</a>
 
-<div id="treecode-mac" style="display:noon;">
+<div id="treecode-keywords-mac" style="display:noon;">
 
 <p>Multipole acceptance criterion (MAC) controls the method to use direct summation or Taylor approximation (a particle-cluster interaction).</p>
 
@@ -512,9 +512,9 @@ node_index1 node_index2 node_index3
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
     "HTML-CSS": {scale: 95, linebreaks: {automatic: true}},
-    tex2jax: {inlineMath:[['$','$'],['\\(','\\)']]}
-  });
+    tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+ });
 </script>
 <script type="text/javascript"
-  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?Config=TeX-AMS-MML_HTMLorMML">
+  src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 </script>
