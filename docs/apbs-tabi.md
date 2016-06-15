@@ -40,13 +40,13 @@ TABI-PB (Geng, 2013) solves electrostatics of solvated biomolecules described by
 
 #### TABI algorithm
 
-The equations derived from the linear Poisson-Boltzmann equation are
+The equations derived from the linear Poisson-Boltzmann equation are, for $\textbf{x}\in \Gamma$
 
-\\[\frac{1}{2}(1+\epsilon)\phi(\textbf{x})-\int_\Gamma(K_1(\textbf{x},\textbf{y})\frac{\partial{\phi(\textbf{y})}}{\partial{v}}+K_2(\textbf{x},\textbf{y})\phi(\textbf{y}))dS_\textbf{y}=S_1(\textbf{x}), \textbf{x}\in\Gamma\\]
+\\[\frac{1}{2}(1+\epsilon)\phi(\textbf{x})-\int_\Gamma(K_1(\textbf{x},\textbf{y})\frac{\partial{\phi(\textbf{y})}}{\partial{v}}+K_2(\textbf{x},\textbf{y})\phi(\textbf{y}))dS_\textbf{y}=S_1(\textbf{x})\\]
 
-\\[\frac{1}{2}(1+\frac{1}{\epsilon})\frac{\partial{\phi(\textbf{x})}}{\partial{v}}-\int_\Gamma(K_3(\textbf{x},\textbf{y})\frac{\partial{\phi(\textbf{y})}}{\partial{v}}+K_4(\textbf{x},\textbf{y})\phi(\textbf{y}))dS_\textbf{y}=S_2(\textbf{x}), \textbf{x}\in\Gamma\\]
+\\[\frac{1}{2}(1+\frac{1}{\epsilon})\frac{\partial{\phi(\textbf{x})}}{\partial{v}}-\int_\Gamma(K_3(\textbf{x},\textbf{y})\frac{\partial{\phi(\textbf{y})}}{\partial{v}}+K_4(\textbf{x},\textbf{y})\phi(\textbf{y}))dS_\textbf{y}=S_2(\textbf{x})\\]
 
-for the surface potential $\phi$, and its normal derivative $\frac{\partial\phi}{\partial v}$ on the surface $\Gamma$. The kernels $K_{1,2,3,4}$ are combinations of the Coulomb $G_0(\textbf{x},\textbf{y})=\frac{1}{4\pi |\textbf{x}-\textbf{y}|}$ and screened Coulomb potentials $G_{\Kappa}(\textbf{x},\textbf{y})=\frac{e^{-\Kappa|\textbf{x}-\textbf{y}|}}{4\pi |\textbf{x}-\textbf{y}|}$ and their first and second derivative.
+for the surface potential $\phi$, and its normal derivative $\frac{\partial\phi}{\partial v}$ on the surface $\Gamma$. The kernels $K_{1,2,3,4}$ are combinations of the Coulomb $G_0(\textbf{x},\textbf{y})=\frac{1}{4\pi |\textbf{x}-\textbf{y}|}$ and screened Coulomb potentials  and their first and second derivative.
 
 The required sums in above integral equations have the form of N-body potentials,
 
