@@ -390,7 +390,7 @@ temp { T }
 --->
 
 
-### Treecode coefficients setting
+### Treecode parameter settings
 
 <a href="javascript:ReverseDisplay('treecode-keywords-tree_order')">tree_order</a>
 
@@ -403,7 +403,7 @@ The syntax is:
 tree_order {order}
 {% endhighlight %}
 
-<p>where <code>order</code> a integer that indicates Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
+<p>where <code>order</code> is an integer that indicates Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
 
 <hr />
 
@@ -436,13 +436,34 @@ tree_n0 {max_number}
 <p>Multipole acceptance criterion (MAC) controls the method to use direct summation or Taylor approximation (a particle-cluster interaction).</p>
 
 The syntax is:
+
 {% highlight bash %}
 mac {theta}
 {% endhighlight %}
 
-<p>where <code>theta</code> a double from 0 to 1 is a user-specified parameter for controlling the error.</p>
+<p>where <code>theta</code> is a double from 0 to 1 is a user-specified parameter for controlling the error.</p>
 <p>Multipole acceptance criterion (MAC): $\frac{r_c}{R}\leqslant \theta$</p>
 <p>where $r_c$ is cluster radius, and $R$ is distance of particle to cluster center.</p>
+
+<hr />
+
+</div>
+
+
+### Other TABI specific settings
+
+<a href="javascript:ReverseDisplay('treecode-keywords-mesh')">mesh</a>
+
+<div id="treecode-keywords-mesh" style="display:none;">
+
+<p>Specify the meshing software used to generate surface mesh</p>
+
+The syntax is:
+{% highlight bash %}
+mesh {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is an integer indicating the meshing software to be used. 0 specifies MSMS, and 1 specifies NanoShaper. Not specifying the parameter will default the meshing software to MSMS. Note that the executables for MSMS and NanoShaper must be included in your path to use them.</p>
 
 <hr />
 
