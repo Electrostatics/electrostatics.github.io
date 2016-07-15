@@ -396,14 +396,14 @@ temp { T }
 
 <div id="treecode-keywords-tree_order" style="display:none;">
 
-<p>Specify the order of treecode multipole expansion.</p>
+<p>Specify the order of the treecode multipole expansion.</p>
 
 The syntax is:
 {% highlight bash %}
 tree_order {order}
 {% endhighlight %}
 
-<p>where <code>order</code> is an integer that indicates Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
+<p>where <code>order</code> is an integer that indicates the Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
 
 <hr />
 
@@ -416,7 +416,7 @@ tree_order {order}
 
 <div id="treecode-keywords-tree_n0" style="display:none;">
 
-<p>Specify the maximum number of particles in a leaf. This controls leaf size in the processing of building tree structure. </p>
+<p>Specify the maximum number of particles in a treecode leaf. This controls leaf size in the process of building the tree structure. </p>
 
 The syntax is:
 {% highlight bash %}
@@ -431,9 +431,9 @@ tree_n0 {max_number}
 
 <a href="javascript:ReverseDisplay('treecode-keywords-mac')">mac</a>
 
-<div id="treecode-keywords-mac" style="display:noon;">
+<div id="treecode-keywords-mac" style="display:none;">
 
-<p>Multipole acceptance criterion (MAC) controls the method to use direct summation or Taylor approximation (a particle-cluster interaction).</p>
+<p>Multipole acceptance criterion (MAC) controls distance ratio at which the method uses direct summation or Taylor approximation (a particle-cluster interaction) to calculate the integral kernels.</p>
 
 The syntax is:
 
@@ -441,9 +441,9 @@ The syntax is:
 mac {theta}
 {% endhighlight %}
 
-<p>where <code>theta</code> is a double from 0 to 1 is a user-specified parameter for controlling the error.</p>
-<p>Multipole acceptance criterion (MAC): $\frac{r_c}{R}\leqslant \theta$</p>
-<p>where $r_c$ is cluster radius, and $R$ is distance of particle to cluster center.</p>
+<p>where <code>theta</code> is a double from 0 to 1 controlling the distance ratio.</p>
+<p>This multipole acceptance criterion (MAC) is: $\frac{r_c}{R}\leqslant \theta$</p>
+<p>where $r_c$ is the cluster radius, and $R$ is the distance of the particle to the cluster center. If the above relationship is satisfied, the Taylor approximation will be used instead of direct summation.</p>
 
 <hr />
 
@@ -456,14 +456,14 @@ mac {theta}
 
 <div id="treecode-keywords-mesh" style="display:none;">
 
-<p>Specify the meshing software used to generate surface mesh</p>
+<p>Specify the meshing software used to generate surface mesh.</p>
 
 The syntax is:
 {% highlight bash %}
 mesh {flag}
 {% endhighlight %}
 
-<p>where <code>flag</code> is an integer indicating the meshing software to be used. 0 specifies MSMS, and 1 specifies NanoShaper. Not specifying the parameter will default the meshing software to MSMS. Note that the executables for MSMS and NanoShaper must be included in your path to use them.</p>
+<p>where <code>flag</code> is an integer indicating the meshing software to be used. 0 specifies MSMS, 1 specifies the SES implementation in NanoShaper, and 2 specifies the Skin surface implementation in NanoShaper. Not specifying the parameter will default the meshing software to MSMS. Note that the executables for MSMS and NanoShaper must be included in your path to use them.</p>
 
 <hr />
 
@@ -502,6 +502,7 @@ elec name comp_solv        # Solvated complex
     tree_order 1           # taylor expansion order
     tree_n0 500            # maxium particle per leaf
     mac 0.8                # multipole acceptance criterion
+    mesh 0                 # meshing software flag
 end
 
 quit
