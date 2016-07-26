@@ -4,6 +4,8 @@ title: PB-AM, the Poisson-Boltzmann Analytical Method
 permalink: /external_contributions/extern-pbam/
 ---
 
+{% include no-prev-next.html %}
+
 <script type="text/javascript" language="JavaScript"><!--
 function HideContent(d) {
 document.getElementById(d).style.display = "none";
@@ -31,15 +33,14 @@ window.onload = function() {
 </script>
 
 <!---
-{% include no-prev-next.html %}
 --->
 
 
-PB-AM is an analytical solution to the linearized Poisson-Boltzmann equations for multiple spherical objects of arbitrary charge distribution in an ionic solution. The solution can be reduced to a simple system of equations as follows:
+PB-AM is an analytical solution to the linearized Poisson-Boltzmann equation for multiple spherical objects of arbitrary charge distribution in an ionic solution. The solution can be reduced to a simple system of equations as follows:
 
 \\[ A = \Gamma \cdot (\Delta \cdot T \cdot A + E) \\]
 
-Where A(i) represents the effective multipole expansion of the charge distributions of molecule (i). E(i) is the free charge distribution of molecule (i). $\Gamma$ is a dielectric boundary-crossing operator, $\Delta$ is a cavity polarization operator, T an operator that transforms the multipole expansion to a local coordinate frame.  More details on the method are available in <a href="http://pubs.acs.org/doi/full/10.1021/ct050263p">Lotan, Head-Gordon (2006)</a>. Once A(i) has been solved, through an iterative SCF method, physical properties of the system can be computed, as detailed in the next section.
+Where $A^{(i)}$ represents the effective multipole expansion of the charge distributions of molecule $i$. $E^{(i)}$ is the free charge distribution of molecule $i$. $\Gamma$ is a dielectric boundary-crossing operator, $\Delta$ is a cavity polarization operator, $T$ an operator that transforms the multipole expansion to a local coordinate frame.  More details on the method are available in <a href="http://pubs.acs.org/doi/full/10.1021/ct050263p">Lotan, Head-Gordon (2006)</a>. Once $A^{(i)}$ has been solved, through an iterative SCF method, physical properties of the system can be computed, as detailed in the next section.
 
 ### Physical calculations
 
@@ -57,7 +58,7 @@ When energy is computed, forces follow as:
 
 \\[ \textbf{F}^{(i)} = \nabla_i \Omega^{(i)}=\frac{1}{\epsilon_s} [ \langle \nabla_i \,T \cdot A^{(i)} ,  A^{(i)} \rangle +  \langle T \cdot A^{(i)} ,   \nabla_i \, A^{(i)} \rangle ]\\]
 
-The method to calculate the torque $\boldsymbol{\tau}^{(i)}$ on molecule is outside the scope of this manual, but is discussed extensively in <a href="http://pubs.acs.org/doi/abs/10.1021/ct100145f">Lotan, Head-Gordon (2006) </a>.
+The method to calculate the torque $\boldsymbol{\tau}^{(i)}$ on molecule is outside the scope of this manual, but is discussed extensively in <a href="http://pubs.acs.org/doi/abs/10.1021/ct100145f">Lotan, Head-Gordon (2006).</a>
 
 
 ### APBS Implementation

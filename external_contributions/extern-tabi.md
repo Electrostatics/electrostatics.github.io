@@ -6,6 +6,7 @@ next_section:
 permalink:
 ---
 
+{% include no-prev-next.html %}
 <script type="text/javascript" language="JavaScript"><!--
 function HideContent(d) {
 document.getElementById(d).style.display = "none";
