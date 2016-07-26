@@ -1,9 +1,7 @@
 ---
-layout: docs
+layout: external_contributions
 title: PB-AM, the Poisson-Boltzmann Analytical Method
-prev_section: #usage
-next_section: #apbs-invocation
-permalink: /docs/apbs-pbam/
+permalink: /external_contributions/extern-pbam/
 ---
 
 <script type="text/javascript" language="JavaScript"><!--

@@ -1,5 +1,5 @@
 ---
-layout: docs
+layout: external_contributions
 title: Treecode-Acelerated Boundary Integral (TABI) Poisson-Boltzmann Solver
 prev_section:
 next_section:

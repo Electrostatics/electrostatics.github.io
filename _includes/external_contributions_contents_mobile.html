@@ -1,0 +1,9 @@
+<div class="external_contributions-nav-mobile unit whole show-on-mobiles">
+  <select onchange="if (this.value) window.location.href=this.value">
+    <option value="">Navigate the External Contributions…</option>
+    <optgroup label="Current Contributions">
+      {% include external_contributions_option.html items='extern-pbam' %}
+      {% include external_contributions_option.html items='extern-tabi' %}
+    </optgroup>
+  </select>
+</div>
