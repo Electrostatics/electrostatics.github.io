@@ -478,16 +478,17 @@ The outputs of an electrostatics run will vary depending on the types of electro
 
 <p><code>[runname].pqr</code> is the configuration of the system, including CG spheres.</p>
 <p><code>[dxname].dx</code> is a dx formatted file that will be printed if the dx keyword is used. It is analagous to the APBS dx output. </p>
-<p><code>[3dmapname]</code> is a file that prints out a list potential value for points on each of the molecules surfaces. The general format of the lines are <p><code>xcord ycord zcord potential</code>. Included in the <p><code>python_scripts</code> directory is a python script used for plotting a 3D heatmap of this file.</p>
-<p><code[grid2dfilename]</code> For each specified 2D grid keyword, a file is printed that contains a matrix of potential values for points in the system space at a given x/y/z location. Included in the <p><code>python_scripts</code> directory is a python script used for plotting a 2D heatmap of this file. </p>
+<p><code>[3dmapname]</code> is a file that prints out a list potential value for points on each of the molecules surfaces. The general format of the lines are <code>xcord ycord zcord potential</code>. Included in the <code>python_scripts</code> directory is a python script used for plotting a 3D heatmap of this file.</p>
+<p><code>[grid2dfilename]</code> For each specified 2D grid keyword, a file is printed that contains a matrix of potential values for points in the system space at a given x/y/z location. Included in the <code>python_scripts</code> directory is a python script used for plotting a 2D heatmap of this file. </p>
 
 
-<h3 id="dynamics">Dynamics keywords and examples</h3>
+<h3 id="dynamics">Dynamics keywords and examples</h3> 
 
 The final option for PB-AM is to run dynamics. The calculation of force and torque has been integrated into a Brownian dynamics scheme that is detailed in <a href="http://pubs.acs.org/doi/abs/10.1021/ct400048q">Yap EH, Head-Gordon TL (2013)</a>. This is the most involved type of simulation and may require some adjustments that are very system specific.
-
+The outputs of an electrostatics run will vary depending on the types of electrostatic keywords used in the infile, they are generally as follows:
 
 #### Dynamics keywords
+
 The available options are as follows:
 
 <a href="javascript:ReverseDisplay('dyn-keyword-diff')">diff</a>
