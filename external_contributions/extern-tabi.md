@@ -470,6 +470,24 @@ mesh {flag}
 
 </div>
 
+
+<a href="javascript:ReverseDisplay('treecode-keywords-outdata')">mesh</a>
+
+<div id="treecode-keywords-outdata" style="display:none;">
+
+<p>Specify the file type for printing the output data.</p>
+
+The syntax is:
+{% highlight bash %}
+outdata {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is an integer indicating the output file types. 0 specifies the .dat format described below, and 1 specifies both the .dat format and a VTK polygonal data file that can be visualized in the ParaView software. The VTK file contains color mappable potentials and normal derivatives of potentials on the faces and vertices of the mesh.</p>
+
+<hr />
+
+</div>
+
 <!---
 - [tree_order](treecode-keywords/#tree_order)
 - [tree_n0](treecode-keywords/#tree_n0)
@@ -504,6 +522,7 @@ elec name comp_solv        # Solvated complex
     tree_n0 500            # maxium particle per leaf
     mac 0.8                # multipole acceptance criterion
     mesh 0                 # meshing software flag
+    outdata 1              # type of data file output flag
 end
 
 quit
