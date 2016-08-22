@@ -496,7 +496,7 @@ outdata {flag}
 
 <h3 id="electrostatics">Electrostatics examples and output</h3>
 
-We provided several different types of examples for users' purposes at <code>apbs/examples/bem/</code>. <code>1a63_msms.in</code> is using MSMS to generate surface triangles. <code>1a63_NanoShaper_SES.in</code> and <code>1a63_NanoShaper_Skin.in</code> are using NanoShaper to generate surface triangles with SES and Skin scheme respectively. In additional, <code>451c_order1.in</code> and <code>451c_order5.in</code> are calculating solvation energy with different order of accuracy by adjusting the orders of Taylor expansion. We also provide examples <code>binding_energy</code> and <code>pKa</code> to <a href = "#binding_energy">compute binding energy on protein 1d30</a> and <a href = "#pKa">lysozyme pKa</a>.
+We provided several different types of examples for users' purposes at <code>apbs/examples/bem/</code>. <code>1a63_msms.in</code> is using MSMS to generate surface triangles. <code>1a63_NanoShaper_SES.in</code> and <code>1a63_NanoShaper_Skin.in</code> are using NanoShaper to generate surface triangles with SES and Skin schemes respectively. In additional, <code>451c_order1.in</code> and <code>451c_order5.in</code> are calculating solvation energy with different order of accuracy by adjusting the orders of Taylor expansion. We also provide examples <code>binding_energy</code> and <code>pKa</code> to <a href = "#binding_energy">compute binding energy on protein 1d30</a> and <a href = "#pKa">lysozyme pKa</a>.
 
 #### Calculating solvation and free energy
 
@@ -552,7 +552,7 @@ input files for the protein with an uncharged ASH 66.
 
 <div class="note info">
 <h5>Note</h5>
-<p>The <b>PQR</b> files are in <code>../test_proteins/</code>. To generate these <b>PQR</b> files, please fellow <a href="http://www.poissonboltzmann.org/examples/Lysozyme_pKa_example/">lysozyme pKa example for PDB2PQR</a>.</p>
+<p>The <b>PQR</b> files are in <code>../test_proteins/</code>. To generate these <b>PQR</b> files, please follow <a href="http://www.poissonboltzmann.org/examples/Lysozyme_pKa_example/">lysozyme pKa example for PDB2PQR</a>.</p>
 </div>
 
 After calculating these free energies by <code>$ apbs foo.in</code>,
