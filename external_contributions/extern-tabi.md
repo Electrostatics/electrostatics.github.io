@@ -60,7 +60,7 @@ where $G$ is a kernel, $\textbf{x}_i, \textbf{x}_j$ are the centroids, and $q_j$
 
 ### APBS Implementation
 
-The current implementation of TABI on APBS is <a href="#electrostatics">computing solvation energy and generating surface potential</a>. New applications of TABI will be release soon. The target implementation for TABI are computing volumetric potential, calculating pKa and binding energy, eventually, for molecular dynamics.
+The current implementation of TABI on APBS is <a href="#electrostatics">computing solvation and free energy and generating surface potential</a>. New applications of TABI will be release soon. The target implementation for TABI are computing volumetric potential, calculating pKa and binding energy, eventually, for molecular dynamics.
 
 To run TABI on APBS, the input file requires section READ and ELEC as the following format:
 
@@ -391,7 +391,7 @@ temp { T }
 --->
 
 
-### Treecode parameter settings
+#### Treecode parameter settings
 
 <a href="javascript:ReverseDisplay('treecode-keywords-tree_order')">tree_order</a>
 
@@ -451,7 +451,7 @@ mac {theta}
 </div>
 
 
-### Other TABI specific settings
+#### Other TABI specific settings
 
 <a href="javascript:ReverseDisplay('treecode-keywords-mesh')">mesh</a>
 
@@ -471,7 +471,7 @@ mesh {flag}
 </div>
 
 
-<a href="javascript:ReverseDisplay('treecode-keywords-outdata')">mesh</a>
+<a href="javascript:ReverseDisplay('treecode-keywords-outdata')">outdata</a>
 
 <div id="treecode-keywords-outdata" style="display:none;">
 
@@ -494,9 +494,11 @@ outdata {flag}
 - [mac](treecode-keywords/#mac)
 --->
 
-<h3 id="electrostatics">Electrostatics keywords and examples</h3>
+<h3 id="electrostatics">Electrostatics examples and output</h3>
 
-#### Electrostatics Example
+We provided several different types of examples for users' purposes at <code>apbs/examples/bem/</code>. <code>1a63_msms.in</code> is using MSMS to generate surface triangles. <code>1a63_NanoShaper_SES.in</code> and <code>1a63_NanoShaper_Skin.in</code> are using NanoShaper to generate surface triangles with SES and Skin scheme respectively. In additional, <code>451c_order1.in</code> and <code>451c_order5.in</code> are calculating solvation energy with different order of accuracy by adjusting the orders of Taylor expansion. We also provide examples <code>binding_energy</code> and <code>pKa</code> to <a href = "#binding_energy">compute binding energy on protein 1d30</a> and <a href = "#pKa">lysozyme pKa</a>.
+
+#### Calculating solvation and free energy
 
 {% highlight bash %}
 read
@@ -528,10 +530,40 @@ end
 quit
 {% endhighlight %}
 
+<h4 id="binding_energy">Calculating Binding energy</h4>
+Users can follow <a href="http://www.poissonboltzmann.org/examples/binding_energies/">binding energy section</a> to use TABI-PB method to calculate free energy on <code>../test_proteins/1d30.pqr</code>, <code>../test_proteins/1d30_monomer1.pqr</code> and <code>../test_proteins/1d30_monomer2.pqr</code>.
+\\[ E\_{\textrm{binding energy}} = E\_{\textrm{free energy of 1d30}} - E\_{\textrm{free energy of 1d30_monomer1}} - E\_{\textrm{free energy of 1d30_monomer2}} \\]
+
+<h4 id="pKa">Calculating pKa</h4>
+Users calculate pKa use <a href="http://www.poissonboltzmann.org/examples/Lysozyme_pKa_example/">lysozyme pKa example for PDB2PQR</a> to show the performance of TABI-PB. In the <code>pKa</code> folder, we provide:
+
+* <b>2LZT-ASP66.in</b>
+input files for ASP 66 in the protein,
+* <b>ASP66.in</b>
+input files for isolated ASP 66 in solution,
+* <b>2LZT-noASP66.in</b>
+input files for the protein with an uncharged ASP 66,
+* <b>2LZT-ASH66.in</b>
+input files for ASH 66 in the protein,
+* <b>ASH66.in</b>
+input files for isolated ASH 66 in solution,
+* <b>2LZT-noASH66.in</b>
+input files for the protein with an uncharged ASH 66.
+
 <div class="note info">
 <h5>Note</h5>
-<p>More examples are provided in apbs-pdb2pqr/apbs/examples/bem, which include different treecode parameters and different proteins.</p>
+<p>The <b>PQR</b> files are in <code>../test_proteins/</code>. To generate these <b>PQR</b> files, please fellow <a href="http://www.poissonboltzmann.org/examples/Lysozyme_pKa_example/">lysozyme pKa example for PDB2PQR</a>.</p>
 </div>
+
+After calculating these free energies by <code>$ apbs foo.in</code>,
+\\[ \Delta\_{\textrm{xfer}}G\_{\textrm{ASP66}} = (G\_{\textrm{2L2T-ASP66}} - G\_{\textrm{2L2T-noASP66}} - G\_{\textrm{ASP66}}) * 4.184,\\]
+
+\\[ \Delta\_{\textrm{xfer}}G\_{\textrm{ASH66}} = (G\_{\textrm{2L2T-ASH66}} - G\_{\textrm{2L2T-noASH66}} - G\_{\textrm{ASH66}}) * 4.184,\\]
+
+\\[ \Delta\Delta\_{\textrm{xfer}}G = \Delta\_{\textrm{xfer}}G\_{\textrm{ASP66}} - \Delta\_{\textrm{xfer}}G\_{\textrm{ASH66}},\\]
+
+\\[ \mathrm p K_a = \frac{\Delta\Delta\_{\textrm{xfer}}G}{2.5*2.303}. \\]
+
 
 #### Electrostatics output
 1) The TABI code produces an output file called surface_potential.dat containing:
