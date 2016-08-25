@@ -1,6 +1,6 @@
 ---
 layout: external_contributions
-title: Treecode-Accelerated Boundary Integral Poisson-Boltzmann Solver (TABI-PB)
+title: Treecode-Accelerated Boundary Integral PB Solver (TABI-PB)
 prev_section:
 next_section:
 permalink:
