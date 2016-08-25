@@ -532,13 +532,13 @@ quit
 {% endhighlight %}
 
 <h4 id="binding_energy">Calculating Binding energy</h4>
-Users can follow the <a href="http://www.poissonboltzmann.org/examples/binding_energies/">binding energy section</a> to use the TABI-PB method to calculate free energy on <code>bem-binding-energy/test_proteins/1d30.pqr</code>, <code>bem-binding-energy/test_proteins/1d30_monomer1.pqr</code> and <code>bem-binding-energy/test_proteins/test_proteins/1d30_monomer2.pqr</code>. In the <code>bem-binding-energy</code> directory, we provide:
+Users can follow the <a href="http://www.poissonboltzmann.org/examples/binding_energies/">binding energy section</a> to use TABI-PB to calculate free energy on <code>bem-binding-energy/test_proteins/1d30.pqr</code>, <code>bem-binding-energy/test_proteins/1d30_monomer1.pqr</code> and <code>bem-binding-energy/test_proteins/1d30_monomer2.pqr</code>. In the <code>bem-binding-energy</code> directory, we provide:
 
-* <b>1d30.in</b>
+* <b>1d30.in</b>: 
 input file of complex molecule,
-* <b>1d30_monomer1.in</b>
+* <b>1d30_monomer1.in</b>: 
 input file of monomer 1,
-* <b>1d30_monomer2.in</b>
+* <b>1d30_monomer2.in</b>: 
 input file of monomer 2.
 
 After calculating and collecting these free energies by calling apbs with the respective input files <code>$ apbs foo.in</code>:
@@ -547,17 +547,17 @@ After calculating and collecting these free energies by calling apbs with the re
 <h4 id="pKa">Calculating pKa</h4>
 Users can follow the <a href="http://www.poissonboltzmann.org/examples/Lysozyme_pKa_example/">lysozyme pKa example for PDB2PQR</a> to demonstrate the performance of TABI-PB for pKa calculation. In the <code>bem-pKa</code> directory, we provide:
 
-* <b>2LZT-ASP66.in</b>
+* <b>2LZT-ASP66.in</b>: 
 input file for ASP 66 in the protein,
-* <b>ASP66.in</b>
+* <b>ASP66.in</b>: 
 input file for isolated ASP 66 in solution,
-* <b>2LZT-noASP66.in</b>
+* <b>2LZT-noASP66.in</b>: 
 input file for the protein with an uncharged ASP 66,
-* <b>2LZT-ASH66.in</b>
+* <b>2LZT-ASH66.in</b>: 
 input file for ASH 66 in the protein,
-* <b>ASH66.in</b>
+* <b>ASH66.in</b>: 
 input file for isolated ASH 66 in solution,
-* <b>2LZT-noASH66.in</b>
+* <b>2LZT-noASH66.in</b>: 
 input file for the protein with an uncharged ASH 66.
 
 <div class="note info">
