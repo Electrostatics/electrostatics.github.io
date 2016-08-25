@@ -127,7 +127,7 @@ ELEC [ name {id} ]
 END
 {% endhighlight %}
 
-The keywords of current implementation are:
+The currently implemented keywords are:
 
 <a href="javascript:ReverseDisplay('elec-keyword-bem-manual')">bem-manual</a>
 
@@ -139,43 +139,6 @@ The syntax is:
 {% highlight bash %}
 lpbe
 {% endhighlight %}
-
-<hr />
-
-</div>
-
-
-
-
-<a href="javascript:ReverseDisplay('elec-keyword-bcfl')">bcfl</a>
-
-<div id="elec-keyword-bcfl" style="display:none;">
-
-<p>Specifies the type of boundary conditions used to solve the Poisson-Boltzmann equation.</p>
-
-The syntax is:
-{% highlight bash %}
-bcfl {flag}
-{% endhighlight %}
-
-<p>where <code>flag</code> is a text string that identifies the type of conditions to be used.</p>
-
-<p>
-<code>zero</code> "Zero" boundary condition. Dirichlet conditions where the potential at the boundary is set to zero. This condition is not commonly used and can result in large errors if used inappropriately.<br />
-<code>sdh</code> "Single Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a single sphere with a point charge, dipole, and quadrupole. The sphere radius in this model is set to the radius of the biomolecule and the sphere charge, dipole, and quadrupole are set to the total moments of the protein. This condition works best when the boundary is sufficiently far from the biomolecule.<br />
-<code>mdh</code> "Multiple Debye-Hückel" boundary condition. Dirichlet condition where the potential at the boundary is set to the values prescribed by a Debye-Hückel model for a multiple, non-interacting spheres with a point charges. The radii of the non-interacting spheres are set to the atomic radii of and the sphere charges are set to the atomic charges. This condition works better than sdh for closer boundaries but can be very slow for large biomolecules.<br />
-<code>focus</code> "Focusing" boundary condition. Dirichlet condition where the potential at the boundary is set to the values computed by the previous (usually lower-resolution) PB calculation. This is used in sequential focusing performed manually in mg-manual calculations. All of the boundary points should lie within the domain of the previous calculation for best accuracy; if any boundary points lie outside, their values are computed using single Debye-Hückel boundary conditions (see above).<br />
-<code>map</code> Specifying map allows a previously calculated potential map to be used in a new focusing calculation. A typical scenario is using the same coarse grid for multiple focusing calculations. A potential map can be written once from a coarse grid calculation, then used in subsequent runs to bypass the need to recalculate the coarse grid. See the READ keyword pot and the attached example files for its use.
-</p>
-
-<div class="note info">
-
-<h5>Note</h5>
-<p>This functionality is only available in the current developmental release of APBS.</p>
-
-</div>
-
-<!--- TO DO: ADD DOWNLOAD OPTIONS FROM http://www.poissonboltzmann.org/apbs/user-guide/running-apbs/input-files/elec-input-file-section/elec-keywords/bcfl -->
 
 <hr />
 
@@ -271,7 +234,8 @@ where <code>die1</code> is the floating point value of the unitless biomolecular
 
 <div id="elec-keyword-sdens" style="display:none;">
 
-<p>Specify the number of grid points per square-angstrom to use in discontinuous surface constructions (e.g., molecular surface and solvent-accessible surfaces). Ignored when srad is 0.0 or srfm is spl2. There is a direct correlation between this value used for the surface sphere density, the accuracy of the surface calculations, and the APBS calculation time. The APBS "suggested" value is 10.0.</p>
+<p>Specify the number of grid points per square-angstrom to use in discontinuous surface constructions (e.g., molecular surface and solvent-accessible surfaces). There is a direct correlation between this value used for the surface sphere density, the accuracy of the surface calculations, and the APBS calculation time.</p>
+<p>For TABI-PB, this parameter specifies the density parameter value that is passed to the surface meshing software, either MSMS for generating a solvent-excluded surface (SES) triangulation or NanoShaper for generation an SES or Skin surface triangulation</p>
 
 The syntax is:
 {% highlight bash %}
@@ -311,7 +275,7 @@ sdie {diel}
 
 <div id="elec-keyword-srad" style="display:none;">
 
-<p>Specify the radius of the solvent molecules; this parameter is used to define the dielectric function for probe-based dielectric definitions (see srfm). This value is usually set to 1.4 Å for water. This keyword is ignored when any of the spline-based surfaces are used (e.g., spl2, see srfm), since they are not probe-based.</p>
+<p>Specify the radius of the solvent molecules; this parameter is used to define the dielectric function for probe-based dielectric definitions (see srfm). This value is usually set to 1.4 Å for water. For TABI-PB, this parameter is passed to the surface meshing software, either MSMS or NanoShaper.</p>
 
 The syntax for this command is:
 {% highlight bash %}
@@ -319,32 +283,6 @@ srad {radius}
 {% endhighlight %}
 
 <p>where <code>radius</code> is the floating point solvent radius (in Å).</p>
-
-<hr />
-
-</div>
-
-
-
-
-<a href="javascript:ReverseDisplay('elec-keyword-srfm')">srfm</a>
-
-<div id="elec-keyword-srfm" style="display:none;">
-
-<p>Specify the model used to construct the dielectric and ion-accessibility coefficients.</p>
-
-The syntax for this command is:
-{% highlight bash %}
-srfm {flag}
-{% endhighlight %}
-
-<p>where <code>flag</code> is a string describing the coefficient model.</p>
-<p><code>mol</code>The dielectric coefficient is defined based on a molecular surface definition. The problem domain is divided into two spaces. The "free volume" space is defined by the union of solvent-sized spheres (see srad) which do not overlap with biomolecular atoms. This free volume is assigned bulk solvent dielectric values. The complement of this space is assigned biomolecular dielectric values. With a non-zero solvent radius (srad), this choice of coefficient corresponds to the traditional definition used for PB calculations. When the solvent radius is set to zero, this corresponds to a van der Waals surface definition. The ion-accessibility coefficient is defined by an "inflated" van der Waals model. Specifically, the radius of each biomolecular atom is increased by the radius of the ion species (as specified with the ion keyword). The problem domain is then divided into two spaces. The space inside the union of these inflated atomic spheres is assigned an ion-accessibility value of 0; the complement space is assigned bulk ion accessibility values.</p>
-<p><code>smol</code>The dielectric and ion-accessibility coefficients are defined as for mol (see above). However, they are then "smoothed" by a 9-point harmonic averaging to somewhat reduce sensitivity to the grid setup as described by Bruccoleri et al. J Comput Chem 18 268-276, 1997 (journal web site).</p>
-<p><code>spl2</code>The dielectric and ion-accessibility coefficients are defined by a cubic-spline surface as described by Im et al, Comp Phys Commun 111 (1-3) 59-75, 1998 (doi:[10.1016/S0010-4655(98)00016-2). The width of the dielectric interface is controlled by the swin parameter.  These spline-based surface definitions are very stable with respect to grid parameters and therefore ideal for calculating forces. However, they require substantial reparameterization of the force field; interested users should consult
-<A href="doi:10.1016/S0301-4622(98)00236-1">Nina et al, Biophys Chem 78
-(1-2) 89-96, 1999 (doi:10.1016/S0301-4622(98)00236-1).</a> Additionally, these surfaces can generate unphysical results with non-zero ionic strengths; this is an on-going area of development.</p>
-<p><code>spl4</code>The dielectric and ion-accessibility coefficients are defined by a 7th order polynomial. This surface definition has characteristics similar to spl2, but provides higher order continuity necessary for stable force calculations with atomic multipole force fields (up to quadrupole).</p>
 
 <hr />
 
