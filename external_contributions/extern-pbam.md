@@ -292,6 +292,19 @@ temp {T}
 <hr />
 </div>
 
+<a href="javascript:ReverseDisplay('pbam-keyword-units')">units</a>
+<div id="pbam-keyword-units" style="display:none;">
+<p>Specify the units for information (energyforce or electrostatics) to be printed in.</p>
+
+The syntax is:
+{% highlight bash %}
+units {unit flag}
+{% endhighlight %}
+
+<p>where <code>unit flag</code> is the value for the given units. For units of kCal/mole, use the value <code>kcalmol</code>. For units of Joules/mole, use the value <code>jmol</code>. For units of kT/e, use the value <code>kT</code>.</p>
+<hr />
+</div>
+
 <!---
 - [pbam-auto](pbam-keywords/#pbam-auto)
 - [runtype](pbam-keywords/#runtype)
@@ -301,7 +314,8 @@ temp {T}
 - [runname](pbam-keywords/#runname)
 - [salt](pbam-keywords/#salt)
 - [sdie](pbam-keywords/#sdie)
-- [temp](pbam-keywords/#temp)--->
+- [temp](pbam-keywords/#temp)
+- [units](pbam-keywords/#units)--->
 
 
 <h3 id="energyforce">Energyforce keywords and examples</h3>
