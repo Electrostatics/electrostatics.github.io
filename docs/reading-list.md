@@ -49,7 +49,7 @@ permalink: /docs/reading-list/
 * Alexov E, Mehler EL, Baker N, Baptista A, Huang Y, Milletti F, Nielsen JE, Farrell D, Carstensen T, Olsson MHM, Shen JK, Warwicker J, Williams, Word MJ. Progress in the prediction of pKa values in proteins. Proteins, 79, 3260-3275, 2011. [http://dx.doi.org/10.1002/prot.23189](http://dx.doi.org/10.1002/prot.23189)
 * Gosink LJ, Hogan EA, Pulsipher TC, Baker NA. Bayesian model aggregation for ensemble-based estimates of protein pKa values. Proteins, 82 (3), 354-363, 2014. [http://dx.doi.org/10.1002/prot.24390](http://dx.doi.org/10.1002/prot.24390)
 
-### Structural bioinformatics based on elecctrostatic properties
+### Structural bioinformatics based on electrostatic properties
 
 * Zhang X, Bajaj CL, Kwon B, Dolinsky TJ, Nielsen JE, Baker NA. Application of new multi-resolution methods for the comparison of biomolecular electrostatic properties in the absence of global structural similarity. Multiscale Model Simul, 5, 1196-213, 2006. [http://dx.doi.org/10.1137/050647670](http://dx.doi.org/10.1137/050647670)
 * Chakraborty S, Rao BJ, Baker N, Ásgeirsson B. Structural phylogeny by profile extraction and multiple superimposition using electrostatic congruence as a discriminator. Intrinsically Disordered Proteins, 1 (1), e25463, 2013. [https://www.landesbioscience.com/journals/idp/article/25463/](https://www.landesbioscience.com/journals/idp/article/25463/)
