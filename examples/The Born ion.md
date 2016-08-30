@@ -14,10 +14,10 @@ Note that, in the case of transferring an ion from vacuum, or where $\epsilon\_{
 
 \\[ \Delta\_p G\_{\mathrm{Born}}= \frac{q^2}{8\pi\epsilon\_0 a}\left (\frac{1}{\epsilon\_{\mathrm {out}}}-1\right) \\]
 
-For more information on the Born ion, see slides 24 and 25 of <a href="http://www.poissonboltzmann.org/docs/2008-12_workshop_lecture.pdf"> this presentation </a>.
+For more information on the Born ion, see slides 24 and 25 of <a href="http://www.poissonboltzmann.org/docs/2008-12_workshop_lecture.pdf">this presentation</a>.
 
 
-###Setting up and running the calculation
+### Setting up and running the calculation
 
 We can setup a PQR file for the Born ion for use with APBS with the contents:
 {% highlight bash %}
