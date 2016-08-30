@@ -4,11 +4,15 @@ title: The Born Ion
 permalink: /examples/The_Born_ion/
 ---
 <a id="topcall"></a>
-One of the canonical examples for polar solvation is the Born ion: a nonpolarizable sphere with a single charge at its center surrounded by an aqueous medium. In the absence of external ions, the polar solvation energy for this system is given by
+One of the canonical examples for polar solvation is the Born ion: a nonpolarizable sphere with a single charge at its center surrounded by an aqueous medium. Consider the transfer of a non-polarizable ion between two dielectrics. In the initial state, the dielectric constant inside and outside the ion is \\[ \epsilon\_{\mathrm {in}} \\], and in the final state, the dielectric constant inside the ion is \\[ \epsilon\_{\mathrm {in}} \\] and the dielectric constant outside the ion is \\[ \epsilon\_{\mathrm {in}} \\] In the absence of external ions, the polar solvation energy of this transfer for this system is given by
 
 \\[ \Delta\_p G\_{\mathrm{Born}}= \frac{q^2}{8\pi\epsilon\_0 a}\left (\frac{1}{\epsilon\_{\mathrm {out}}}-\frac{1}{\epsilon\_{\mathrm {in}}}\right) \\]
 
-where q is the ion charge, a is the ion radius, and the two ε variables denote the internal and external (solution) dielectric constants. This model assumes zero ionic strength.
+where q is the ion charge, a is the ion radius, and the two ε variables denote the two dielectric constants. This model assumes zero ionic strength.
+
+Note that, in the case of transferring an ion from vacuum, or where \\[ \epsilon\_{\mathrm {in}} = 1 \\], the expression becomes
+
+\\[ \Delta\_p G\_{\mathrm{Born}}= \frac{q^2}{8\pi\epsilon\_0 a}\left (\frac{1}{\epsilon\_{\mathrm {out}}}-1\right) \\]
 
 We can setup a PQR file for the Born ion for use with APBS with the contents:
 {% highlight bash %}
