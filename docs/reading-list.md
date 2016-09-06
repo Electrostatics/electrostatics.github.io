@@ -62,3 +62,6 @@ permalink: /docs/reading-list/
 * Callenberg KM, Choudhary OP, de Forest GL, Gohara DW, Baker NA, Grabe M. APBSmem: A graphical interface for electrostatic calculations at the membrane. PLoS ONE, 5, e12722, 2010. [http://dx.doi.org/10.1371/journal.pone.0012722](http://dx.doi.org/10.1371/journal.pone.0012722)
 * Unni S, Huang Y, Hanson RM, Tobias M, Krishnan S, Li WW, Nielsen JE, Baker NA. Web servers and services for electrostatics calculations with APBS and PDB2PQR. J Comput Chem, 32 (7), 1488-1491, 2011. [http://dx.doi.org/10.1002/jcc.21720](http://dx.doi.org/10.1002/jcc.21720)
 * Konecny R, Baker NA, McCammon JA. iAPBS: a programming interface to the adaptive Poisson–Boltzmann solver. Computational Science & Discovery, 5, 015005, 2012. [http://dx.doi.org/10.1088/1749-4699/5/1/015005](http://dx.doi.org/10.1088/1749-4699/5/1/015005)
+
+### More papers in electrostatics
+* The APBS team updates this [Mendeley page](https://www.mendeley.com/groups/7477211/electrostatics/papers/) with papers in electrostatics.
