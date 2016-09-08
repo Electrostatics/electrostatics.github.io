@@ -427,6 +427,80 @@ the number being the order that the file is listed in the READ section.
 <h4 id="imat"> IMAT: Surface Integral File</h4>
 
 
+The surface integrals are computed for the boundary element part of
+PB-SAM. They can be quite time consuming, so the first time they 
+are computed for a system, they are printed to the working directory,
+with the name <code><pqr_prefix>_sph[#].bin</code>. Where 
+<code><pqr_prefix></code> is the name of the pqr input file, with the 
+last four characters removed (presumed
+".pqr". For future computations, the <code>imat</code> keyword can be used, followed
+by the <code><pqr_prefix></code> and the program will read in the IMAT files instead of
+re-computing them.
+
+See <a href="intermed-use">Intermediate keywords</a> for more details.
+
+<h4 id="exp"> Expansion files</h4>
+
+Much like the IMAT files, the expansion files are files generated from
+self-polarization that are useful and time-saving methods for running 
+a system of full-mutual polarziation on many molecules. If no expansion
+path is provided, the program will perform self polarization for each
+type of molecule in the system and print out files prepended with the 
+<code><pqr_prefix></code> read in with the PQR flag, followed by <code>.[sph #].H.exp</code>
+or <code>.[sph #].F.exp</code>. Where <code>H</code> and <code>F</code> are the two key expansions
+that the PB-SAM code computes during run time. In future program runs, the
+<code>exp</code> flag can be used, and the <code>H</code> and <code>F</code> files will be read in.
+
+See <a href="intermed-use">Intermediate keywords</a> for more details.
+
+<h4 id="intermed-use">Intermediate usage</h4>
+
+<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">imat</a>
+<div id="pbsam-interim-imat" style="display:none;">
+<p>This keyword can be used to load in the surface integral matrices previously
+generated, which will be named <code>mol[#]sph[sph#].bin.</p>
+
+The syntax is:
+{% highlight bash %}
+imat {imat prefix}
+{% endhighlight %}
+
+<p>where <code>imat prefix</code> is the filename prefix <code>mol[#]sph</code>. 
+The <code>[sph#].bin</code> will be appended within the program run.</p>
+</div>
+
+<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">exp</a>
+<div id="pbsam-interim-exp" style="display:none;">
+<p>This keyword can be used to load in the expansion matrices from files. They will have been previously
+generated, and will be named <code>mol[#].[H or F].[sph#].exp.</p>
+
+The syntax is:
+{% highlight bash %}
+exp {exp prefix}
+{% endhighlight %}
+
+<p>where <code>exp prefix</code> is the filename prefix <code>mol[#]</code>. The <code>[H/F]</code> and 
+the <code>[sph#].exp</code> will be appended within the program run.</p>
+</div>
+
+<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">surf</a>
+<div id="pbsam-interim-surf" style="display:none;">
+<p>This keyword can be used to load in the MSMS vertex file for coarse-graining.</p>
+
+The syntax is:
+{% highlight bash %}
+surf {surf prefix}
+{% endhighlight %}
+
+<p>where <code>surf prefix</code> is the filename <code>[file].vert</code>.</p>
+</div>
+
+<!---
+- [exp](pbsam-interm-keywords/#exp)
+- [imat](pbsam-interm-keywords/#imat)
+- [surf](pbsam-interm-keywords/#surf)--->
+
+
 <h3 id="energyforce">Energyforce keywords and examples</h3>
 
 The energyforce example has no additional keywords from the previous section. An example input file is given below:
