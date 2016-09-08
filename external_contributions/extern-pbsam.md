@@ -386,10 +386,12 @@ As part of the coarse-graining process a definition of the molecular
 surface is necessary. For this we have historically used the program
 <a href="http://mgltools.scripps.edu/packages/MSMS">MSMS</a> by M. Sanner,
 or on the <a href="http://mgl.scripps.edu/people/sanner/html/msms_server.html">online web server</a>.
+Within APBS, the user can implement the <code>msms</code> flag and the program 
+will be run through APBS, but the executable must be included in your path.
 
 If using the command line tool, after downloading it for the correct platform,
 it can be run as follows on the command line. It requires an xyzr file as input, which
-is the xyz coordinates of each atom of the system followed by the vDW radius. This
+is the xyz coordinates of each atom of the system followed by the VdW radius. This
 information can all be found in the PQR file.
 
 {% highlight bash %}
@@ -400,15 +402,15 @@ This will produce a *.face file and a *.vert file, of which the *.vert is needed
 The vertex file is given as follows:
 
 {% highlight bash %}
-    1669      95  3.00  1.50
-   2.965    12.871    -1.084    -0.751    -0.636    -0.175       0      81  2
-   3.241    11.952    -0.817    -0.936    -0.024    -0.353       0      69  2
-   3.026    11.791    -0.439    -0.792     0.084    -0.604       0      79  2
-   4.481    14.391    -3.026    -0.879    -0.246    -0.409       0      73  2
-   5.413    15.674    -0.948    -0.337     0.499     0.798       0      73  2
-   4.478    15.093    -0.297     0.286     0.886     0.365       0      81  2
-   4.930    15.004    -0.240    -0.015     0.945     0.326       0      71  2
-   4.072    13.663     0.763    -0.465     0.242     0.852       0      71  2
+  1669      95  3.00  1.50
+ 2.965    12.871    -1.084    -0.751    -0.636    -0.175       0      81  2
+ 3.241    11.952    -0.817    -0.936    -0.024    -0.353       0      69  2
+ 3.026    11.791    -0.439    -0.792     0.084    -0.604       0      79  2
+ 4.481    14.391    -3.026    -0.879    -0.246    -0.409       0      73  2
+ 5.413    15.674    -0.948    -0.337     0.499     0.798       0      73  2
+ 4.478    15.093    -0.297     0.286     0.886     0.365       0      81  2
+ 4.930    15.004    -0.240    -0.015     0.945     0.326       0      71  2
+ 4.072    13.663     0.763    -0.465     0.242     0.852       0      71  2
 {% endhighlight %}
 
 Where the first line is the number of vertex points, followed by information
@@ -427,16 +429,16 @@ the number being the order that the file is listed in the READ section.
 
 <h4 id="imat"> IMAT: Surface Integral File</h4>
 
-
 The surface integrals are computed for the boundary element part of
 PB-SAM. They can be quite time consuming, so the first time they 
 are computed for a system, they are printed to the working directory,
-with the name <code>[pqr_prefix]_sph[#].bin</code>. Where 
-<code>[pqr_prefix]</code> is the name of the pqr input file, with the 
-last four characters removed (presumed
-".pqr". For future computations, the <code>imat</code> keyword can be used, followed
-by the <code>[pqr_prefix]</code> and the program will read in the IMAT files instead of
-re-computing them.
+with the name <code>mol[#]sph[#].bin</code>. Where <code>mol[#]</code>
+is the ordered number of the molecule from the PQR section. There will be 
+one IMAT file generated for each coarse-grain sphere of each molecule.
+ For future computations, the <code>imat</code> keyword can be used, followed
+by the <code>mol[#]sph</code> and the program will read in the IMAT files instead of
+re-computing them. The program will assume that there is one file for each sphere
+and append the number at runtime. 
 
 See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
@@ -447,14 +449,15 @@ self-polarization that are useful and time-saving methods for running
 a system of full-mutual polarziation on many molecules. If no expansion
 path is provided, the program will perform self polarization for each
 type of molecule in the system and print out files prepended with the 
-<code>[pqr_prefix]</code> read in with the PQR flag, followed by <code>.[sph #].H.exp</code>
-or <code>.[sph #].F.exp</code>. Where <code>H</code> and <code>F</code> are the two key expansions
+<code>mol[#]</code> the number determined by the order read in in the 
+READ section. It will append to this <code>[H/F].[sph #].exp</code>. 
+Where <code>H</code> and <code>F</code> are the two key expansions
 that the PB-SAM code computes during run time. In future program runs, the
 <code>exp</code> flag can be used, and the <code>H</code> and <code>F</code> files will be read in.
 
 See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
-<h4 id="intermed-use">Intermediate usage</h4>
+<h4 id="intermed-use">Intermediate keywords</h4>
 
 <a href="javascript:ReverseDisplay('pbsaminterm-keyword-imat')">imat</a>
 <div id="pbsaminterm-keyword-imat" style="display:none;">
