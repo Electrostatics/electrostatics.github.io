@@ -456,8 +456,8 @@ See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
 <h4 id="intermed-use">Intermediate usage</h4>
 
-<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">imat</a>
-<div id="pbsam-interim-imat" style="display:none;">
+<a href="javascript:ReverseDisplay('pbsam-interm-imat')">imat</a>
+<div id="pbsam-interm-imat" style="display:none;">
 <p>This keyword can be used to load in the surface integral matrices previously
 generated, which will be named <code>mol[#]sph[sph#].bin.</p>
 
@@ -471,8 +471,8 @@ The <code>[sph#].bin</code> will be appended within the program run.</p>
 <hr />
 </div>
 
-<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">exp</a>
-<div id="pbsam-interim-exp" style="display:none;">
+<a href="javascript:ReverseDisplay('pbsam-interm-exp')">exp</a>
+<div id="pbsam-interm-exp" style="display:none;">
 <p>This keyword can be used to load in the expansion matrices from files. They will have been previously
 generated, and will be named <code>mol[#].[H or F].[sph#].exp.</p>
 
@@ -486,8 +486,8 @@ the <code>[sph#].exp</code> will be appended within the program run.</p>
 <hr />
 </div>
 
-<a href="javascript:ReverseDisplay('pbsam-interm-keywords')">surf</a>
-<div id="pbsam-interim-surf" style="display:none;">
+<a href="javascript:ReverseDisplay('pbsam-interm-surf')">surf</a>
+<div id="pbsam-interm-surf" style="display:none;">
 <p>This keyword can be used to load in the MSMS vertex file for coarse-graining.</p>
 
 The syntax is:
