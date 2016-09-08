@@ -416,6 +416,7 @@ on the density of the surface, and the lines that follow indicate the cartesian
 locations of each vertex point, followed by the unit norm of the surface.
 This vertex file is used to coarse-grain the molecule. Once this has been
 generated, it can be used again as input using the <code>surf</code> command.
+See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
 <h4 id="cg_pqr">Coarse-Grained PQR file </h4>
 
@@ -437,7 +438,7 @@ last four characters removed (presumed
 by the <code>[pqr_prefix]</code> and the program will read in the IMAT files instead of
 re-computing them.
 
-See <a href="intermed-use">Intermediate keywords</a> for more details.
+See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
 <h4 id="exp"> Expansion files</h4>
 
@@ -451,7 +452,7 @@ or <code>.[sph #].F.exp</code>. Where <code>H</code> and <code>F</code> are the 
 that the PB-SAM code computes during run time. In future program runs, the
 <code>exp</code> flag can be used, and the <code>H</code> and <code>F</code> files will be read in.
 
-See <a href="intermed-use">Intermediate keywords</a> for more details.
+See <a href="#intermed-use">Intermediate keywords</a> for more details.
 
 <h4 id="intermed-use">Intermediate usage</h4>
 
@@ -467,6 +468,7 @@ imat {imat prefix}
 
 <p>where <code>imat prefix</code> is the filename prefix <code>mol[#]sph</code>. 
 The <code>[sph#].bin</code> will be appended within the program run.</p>
+<hr />
 </div>
 
 <a href="javascript:ReverseDisplay('pbsam-interm-keywords')">exp</a>
@@ -481,6 +483,7 @@ exp {exp prefix}
 
 <p>where <code>exp prefix</code> is the filename prefix <code>mol[#]</code>. The <code>[H/F]</code> and 
 the <code>[sph#].exp</code> will be appended within the program run.</p>
+<hr />
 </div>
 
 <a href="javascript:ReverseDisplay('pbsam-interm-keywords')">surf</a>
@@ -493,6 +496,7 @@ surf {surf prefix}
 {% endhighlight %}
 
 <p>where <code>surf prefix</code> is the filename <code>[file].vert</code>.</p>
+<hr />
 </div>
 
 <!---
