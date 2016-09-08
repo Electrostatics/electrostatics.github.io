@@ -430,11 +430,11 @@ the number being the order that the file is listed in the READ section.
 The surface integrals are computed for the boundary element part of
 PB-SAM. They can be quite time consuming, so the first time they 
 are computed for a system, they are printed to the working directory,
-with the name <code><pqr_prefix>_sph[#].bin</code>. Where 
-<code><pqr_prefix></code> is the name of the pqr input file, with the 
+with the name <code>[pqr_prefix]_sph[#].bin</code>. Where 
+<code>[pqr_prefix]</code> is the name of the pqr input file, with the 
 last four characters removed (presumed
 ".pqr". For future computations, the <code>imat</code> keyword can be used, followed
-by the <code><pqr_prefix></code> and the program will read in the IMAT files instead of
+by the <code>[pqr_prefix]</code> and the program will read in the IMAT files instead of
 re-computing them.
 
 See <a href="intermed-use">Intermediate keywords</a> for more details.
@@ -446,7 +446,7 @@ self-polarization that are useful and time-saving methods for running
 a system of full-mutual polarziation on many molecules. If no expansion
 path is provided, the program will perform self polarization for each
 type of molecule in the system and print out files prepended with the 
-<code><pqr_prefix></code> read in with the PQR flag, followed by <code>.[sph #].H.exp</code>
+<code>[pqr_prefix]</code> read in with the PQR flag, followed by <code>.[sph #].H.exp</code>
 or <code>.[sph #].F.exp</code>. Where <code>H</code> and <code>F</code> are the two key expansions
 that the PB-SAM code computes during run time. In future program runs, the
 <code>exp</code> flag can be used, and the <code>H</code> and <code>F</code> files will be read in.
