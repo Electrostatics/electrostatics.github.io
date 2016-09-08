@@ -665,6 +665,12 @@ xyz {molecule_id} {filename}
 - [xyz](dyn-keywords/#xyz)
 --->
 
+#### Dynamics example infile
+
+An example input file is given below:
+
+
+{% highlight bash %}
 read
     mol pqr gly.pqr
     mol pqr gly2.pqr
