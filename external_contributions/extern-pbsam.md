@@ -459,7 +459,7 @@ See <a href="#intermed-use">Intermediate keywords</a> for more details.
 <a href="javascript:ReverseDisplay('pbsaminterm-keyword-imat')">imat</a>
 <div id="pbsaminterm-keyword-imat" style="display:none;">
 <p>This keyword can be used to load in the surface integral matrices previously
-generated, which will be named <code>mol[#]sph[sph#].bin.</p>
+generated, which will be named <code>mol[#]sph[sph#].bin</code>.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -474,7 +474,7 @@ The <code>[sph#].bin</code> will be appended within the program run.</p>
 <a href="javascript:ReverseDisplay('pbsaminterm-keyword-exp')">exp</a>
 <div id="pbsaminterm-keyword-exp" style="display:none;">
 <p>This keyword can be used to load in the expansion matrices from files. They will have been previously
-generated, and will be named <code>mol[#].[H or F].[sph#].exp.</p>
+generated, and will be named <code>mol[#].[H or F].[sph#].exp</code>.</p>
 
 The syntax is:
 {% highlight bash %}
