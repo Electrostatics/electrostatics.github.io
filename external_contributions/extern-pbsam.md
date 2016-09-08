@@ -365,89 +365,6 @@ units {unit flag}
 - [units](pbsam-keywords/#units)--->
 
 
-
-<h3 id="intermediates">PB-SAM intermediates and keywords</h3>
-
-The intermediates generated during a PB-SAM run are as follows:
-
- <ul>
-    <li><a href="#msms_surf"></a>Vertex files</li>
-    <li><a href="#cg_pqr"></a>Coarse-grained PQR file</li>
-    <li><a href="#imat"></a>Integral matrix file</li>
-    <li><a href="#exp"></a>Expansion files</li>
-</ul>
-
-
-<h4 id="msms_surf"> Vertex/Surface File</h4>
-
-As part of the coarse-graining process a definition of the molecular
-surface is necessary. For this we have historically used the program
-<a href="http://mgltools.scripps.edu/packages/MSMS">MSMS</a> by M. Sanner, 
-or on the <a href="http://mgl.scripps.edu/people/sanner/html/msms_server.html">online web server</a>.
-
-If using the command line tool, after downloading it for the correct platform, 
-it can be run as follows on the command line. It requires an xyzr file as input, which
-is the xyz coordinates of each atom of the system followed by the vDW radius. This
-information can all be found in the PQR file.
-
-{% highlight bash %}
-./msms.system -if [filename].xyzr -of [outfile]
-{% end highlight %}
-
-This will produce a \*.face file and a \*.vert file, of which the \*.vert is needed. 
-The vertex file is given as follows: 
-
-{% highlight bash %}
-    1669      95  3.00  1.50
-   2.965    12.871    -1.084    -0.751    -0.636    -0.175       0      81  2
-   3.241    11.952    -0.817    -0.936    -0.024    -0.353       0      69  2
-   3.026    11.791    -0.439    -0.792     0.084    -0.604       0      79  2
-   4.481    14.391    -3.026    -0.879    -0.246    -0.409       0      73  2
-   5.413    15.674    -0.948    -0.337     0.499     0.798       0      73  2
-   4.478    15.093    -0.297     0.286     0.886     0.365       0      81  2
-   4.930    15.004    -0.240    -0.015     0.945     0.326       0      71  2
-   4.072    13.663     0.763    -0.465     0.242     0.852       0      71  2
-{% endhighlight %}
-
-Where the first line is the number of vertex points, followed by information 
-on the density of the surface, and the lines that follow indicate the cartesian 
-locations of each vertex point, followed by the unit norm of the surface. 
-This vertex file is used to coarse-grain the molecule.
-
-<h4 id="cg_pqr">Coarse-Grained PQR file </h4>
-
-<h4 id="imat"> IMAT: Surface Integral File</h4>
-
-
-The surface integrals are computed for the boundary element part of
-PB-SAM. They can be quite time consuming, so the first time they 
-are computed for a system, they are printed to the working directory,
-with the name <code><pqr_prefix>_sph[#].bin</code>. Where 
-<code><pqr_prefix></code> is the name of the pqr input file, with the 
-last four characters removed (presumed
-".pqr". For future computations, the <code>imat</code> keyword can be used, followed
-by the <code><pqr_prefix></code> and the program will read in the IMAT files instead of
-re-computing them.
-
-
-<h4 id="exp"> Expansion files</h4>
-
-Much like the IMAT files, the expansion files are files generated from
-self-polarization that are useful and time-saving methods for running 
-a system of full-mutual polarziation on many molecules. If no expansion
-path is provided, the program will perform self polarization for each
-type of molecule in the system and print out files prepended with the 
-<code><pqr_prefix></code> read in with the PQR flag, followed by <code>.[sph #].H.exp</code>
-or <code>.[sph #].F.exp</code>. Where <code>H</code> and <code>F</code> are the two key expansions
-that the PB-SAM code computes during run time. In future program runs, the
-<code>exp</code> flag can be used, and the <code>H</code> and <code>F</code> files will be read in.
-
-
-<!---
-- [exp](pbsam-interm-keywords/#exp)
-- [imat](pbsam-interm-keywords/#imat)
-- [surf](pbsam-interm-keywords/#surf)--->
-
 <h3 id="energyforce">Energyforce keywords and examples</h3>
 
 The energyforce example has no additional keywords from the previous section. An example input file is given below:
@@ -460,35 +377,25 @@ The energyforce example has no additional keywords from the previous section. An
 #### Energyforce example
 
 {% highlight bash %}
-read
-    mol pqr gly.pqr
-    mol pqr gly2.pqr
-end
-elec name comp_solv        # Gly
+READ
+   mol pqr pos_charge.pqr
+   mol pqr neg_charge.pqr
+END
+
+ELEC name comp_solv    # Toy charges
     pbsam-auto
 
-    runtype energyforce     # Can be energyforce, electrostatics etc
-    runname enfo_gly        # Output name for files created by program
+    runtype energyforce
+    temp 250.0         # System temperature (K)
+    pdie 4.0           # Solute dielectric
+    sdie 78.00         # Solvent dielectric
+    salt 0.01          # Monovalent salt conc in M
 
-    units kT
-    ## info for molecule
-    msms
-    tolsp 2.5
+    randorient
 
-   #imat imat/mol0sph # add in if program has already run
-   #imat imat/mol1sph # add in if program has already run
+END
 
-   #exp exp/mol0 # add in if program has already run
-   #exp exp/mol1 # add in if program has already run
-
-    temp 298.15             # System temperature (K)
-    pdie 4.0                # Solute dielectric                 
-    sdie 80.0               # Solvent dielectric                
-    salt 0.05               # Monovalent salt conc in M
-
-end
-
-quit
+QUIT
 {% endhighlight %}
 
 #### Energyforce output
@@ -499,16 +406,16 @@ The output, for the test files in the examples/pbsam directory, filename <code>t
 
 {% highlight bash %}
 My units are kT. Time: 0
-Molecule #1
-        POSITION: [0.000206897, -0.000413793, -0.000482759]
-        ENERGY: 6.17661e-05
-        FORCE: 0.00072349, [-0.000537635 -0.000423847 -0.000233967]
-        TORQUE: 2.03503e-06, [-4.31343e-05 -0.000822915 0.00078854]
-Molecule #2
-        POSITION: [12.0002, 11.9996, 11.9995]
-        ENERGY: 6.21059e-05
-        FORCE: 0.000737173, [0.000535151 0.000445966 0.000241146]
-        TORQUE: 8.2822e-06, [0.00196746 0.00132961 -0.00398844]
+MOLECULE #1 radius: 1.37409
+        POSITION: [0, 2.83333, 0]
+        ENERGY: -48.2247
+        FORCE: 10.0168, [0.512215 -10.0011 -0.226193]
+        TORQUE: 0.780913, [0.744875 0.0765654 0.22164]
+MOLECULE #2 radius: 1.37409
+        POSITION: [0, -2.16667, 0]
+        ENERGY: -48.2247
+        FORCE: 10.0167, [-0.511726 10.001 0.226326]
+        TORQUE: 2.17631, [0.30195 -0.0762617 2.15391]
 {% endhighlight %}
 
 For each molecule in the system, the coarse-grain radius, center of geometry cartesian coordinates, the interaction energy, forces and torques are printed. </p>
@@ -600,33 +507,29 @@ gridpts {pts}
 #### Electrostatics example
 
 {% highlight bash %}
-read
-    mol pqr gly.pqr
-end
-elec name comp_solv        # Gly
+READ
+   mol pqr pos_charge.pqr
+   mol pqr neg_charge.pqr
+END
+
+ELEC name comp_solv    # Toy charges
     pbsam-auto
 
-    runtype electrostatics  # Can be energyforce, electrostatics etc
-    runname elec_gly        # Output name for files created by program
+    runtype electrostatics
+    runname elec_toy   # Output name for files
+    temp 298.15        # System temperature (K)
+    pdie 4.0           # Solute dielectric
+    sdie 78.0          # Solvent dielectric
+    salt 0.05          # Monovalent salt conc in M
 
-    units jmol
-    ## info for molecule
-    msms
-    tolsp 2.5
+    dx toy.dx
+    3dmap  toy.map
+    grid2d toy.x0.dat x 0.0
+    grid2d toy.z1.dat z 1.0
 
-    temp 298.15             # System temperature (K)
-    pdie 4.0                # Solute dielectric                 
-    sdie 78.0               # Solvent dielectric                
-    salt 0.10               # Monovalent salt conc in M
+END
 
-    gridpts 20
-    dx gly_0.1M.dx
-    3dmap  gly_0.1M.map
-    grid2d gly_0.1M.x0.dat x 0.0
-
-end
-
-quit
+QUIT
 {% endhighlight %}
 
 
@@ -689,7 +592,11 @@ The syntax is:
 term contact {filename} {pad}
 {% endhighlight %}
 
-<p>where <code>filename</code> is a string for the contact file filename. The contact file has a list formatted as follows: <code>moltype1 at1 moltype2 at2 dist</code> where <code>moltype1</code>  and <code>moltype2</code>  are indices of the molecular types, <code>at1</code> is the index of an atom from the first molecular type, <code>at2</code> is the index of an atom from the second molecular type and <code>dist</code> is the maximum distance between the two atoms that defines the contact. <code>pad</code> is padding added distance criterion that will be checked in the case that the contact distance may not be fulfilled. When reading in contacts, the atom numbers are mapped to their CG spheres, and the proximity of these spheres are compared against <code>dist</code>.</p>
+<p>where <code>filename</code> is a string for the contact file filename. The contact file has a list formatted as follows: <code>moltype1 at1 moltype2 at2 dist</code> where <code>moltype1</code>  and <code>moltype2</code>  are indices of the molecular types, <code>at1</code> is the index of an atom from the first molecular type, <code>at2</code> is the index of an atom from the second molecular type and <code>dist</code> is the maximum distance between the two atoms that defines the contact. <code>pad</code> is distance criterion that will be checked in the case that the true atom contact distance may not be fulfilled.</p>
+<div class="note info">
+<h5>Note</h5>
+<p>Sometimes these distances cannot be reached due to the assumption in this model that the molecule is spherical. If this is the case, the atom positions are transformed to the molecule surface and surface points are compared to the pad distance.</p>
+</div>
 <hr />
 </div>
 
@@ -763,49 +670,42 @@ xyz {molecule_id} {filename}
  An example input file is given below:
 
 {% highlight bash %}
-read
-    mol pqr gly.pqr
-    mol pqr gly2.pqr
-end
-elec name comp_solv        # Gly
+READ
+   mol pqr pos_charge.pqr  # This is molecule 1
+   mol pqr neg_charge.pqr  # This is molecule 2
+END
+
+ELEC name comp_solv  # Toy charges
     pbsam-auto
 
-    runtype dynamics        # Can be energyforce, electrostatics etc
-    runname dyn_gly         # Output name for files created by program
+    runtype dynamics
+    runname dyn_toy  # Output name for files
+    temp 298.15      # System temperature (K)
+    pdie 4.0         # Solute dielectric
+    sdie 78.0        # Solvent dielectric
+    salt 0.05        # Monovalent salt conc in M
 
-    units kT
-    ## info for molecule
-    msms
-    tolsp 2.5
-
-   #imat imat/mol0sph # add in if program has already run
-   #imat imat/mol1sph # add in if program has already run
-
-   #exp exp/mol0 # add in if program has already run
-   #exp exp/mol1 # add in if program has already run
+    pbc 100.0
 
     termcombine or
-    term time 560.0
-    ntraj 2
+    term time 550.0
+    term r>= 81.8 1
+    ntraj 3
 
-    diff 1 move 0.45 0.001
+    diff 1 move 0.01 0.001
     diff 2 stat
 
-    xyz 1 traj_1_1.xyz
-    xyz 1 traj_1_2.xyz
+    xyz 1 pos_1.xyz   # Pos for mol 1 at traj = 1
+    xyz 1 pos_2.xyz   # Pos for mol 1 at traj = 2
+    xyz 1 pos_3.xyz   # Pos for mol 1 at traj = 3
 
-    xyz 2 traj_2_1.xyz
-    xyz 2 traj_2_2.xyz
+    xyz 2 neg_1.xyz   # Pos for mol 2 at traj = 1
+    xyz 2 neg_2.xyz   # Pos for mol 2 at traj = 2
+    xyz 2 neg_3.xyz   # Pos for mol 2 at traj = 3
 
-    temp 298.15             # System temperature (K)
-    pdie 4.0                # Solute dielectric                 
-    sdie 80.0               # Solvent dielectric                
-    salt 0.05               # Monovalent salt conc in M
+END
 
-end
-
-quit
-
+QUIT
 {% endhighlight %}
 
 
