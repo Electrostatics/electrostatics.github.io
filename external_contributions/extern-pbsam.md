@@ -99,9 +99,13 @@ This method coarse-grains all molecules of the system using the definition of
 a solvent-excluded molecular surface. The basic information needed for running PB-SAM 
 is the type of run desired and the molecules of interest. 
 
-It should be noted that some program intermediates are computationally expensive to compute
+
+<div class="note info">
+<h5>Note</h5>
+<p>It should be noted that some program intermediates are computationally expensive to compute
 and are therefore printed out if they are not specified by keyword in the input file.
-A description of each of these files is in the <a href="#intermediates">Intermediates section</a>
+A description of each of these files is in the <a href="#intermediates">Intermediates section</a>.</p>
+</div>
 
 The APBS sections required for a PB-SAM run are ELEC and READ, as follows:
 
@@ -220,7 +224,7 @@ runtype {type}
 <hr />
 </div>
 
-<a href="javascript:ReverseDisplay('pbsam-keyword-sdie')">msms</a>
+<a href="javascript:ReverseDisplay('pbsam-keyword-msms')">msms</a>
 <div id="pbsam-keyword-msms" style="display:none;">
 <p>Use this flag to invoke the call of the MSMS program within APBS. Its output, a .vert file is necessary for the coarse-graining process.</p>
 
@@ -592,11 +596,7 @@ The syntax is:
 term contact {filename} {pad}
 {% endhighlight %}
 
-<p>where <code>filename</code> is a string for the contact file filename. The contact file has a list formatted as follows: <code>moltype1 at1 moltype2 at2 dist</code> where <code>moltype1</code>  and <code>moltype2</code>  are indices of the molecular types, <code>at1</code> is the index of an atom from the first molecular type, <code>at2</code> is the index of an atom from the second molecular type and <code>dist</code> is the maximum distance between the two atoms that defines the contact. <code>pad</code> is distance criterion that will be checked in the case that the true atom contact distance may not be fulfilled.</p>
-<div class="note info">
-<h5>Note</h5>
-<p>Sometimes these distances cannot be reached due to the assumption in this model that the molecule is spherical. If this is the case, the atom positions are transformed to the molecule surface and surface points are compared to the pad distance.</p>
-</div>
+<p>where <code>filename</code> is a string for the contact file filename. The contact file has a list formatted as follows: <code>moltype1 at1 moltype2 at2 dist</code> where <code>moltype1</code>  and <code>moltype2</code>  are indices of the molecular types, <code>at1</code> is the index of an atom from the first molecular type, <code>at2</code> is the index of an atom from the second molecular type and <code>dist</code> is the maximum distance between the two atoms that defines the contact. <code>pad</code> is padding added distance criterion that will be checked in the case that the contact distance may not be fulfilled. When reading in contacts, the atom numbers are mapped to their CG spheres, and the proximity of these spheres are compared against <code>dist</code>.</p>
 <hr />
 </div>
 
@@ -665,47 +665,49 @@ xyz {molecule_id} {filename}
 - [xyz](dyn-keywords/#xyz)
 --->
 
-#### Dynamics example infile
-
- An example input file is given below:
-
-{% highlight bash %}
-READ
-   mol pqr pos_charge.pqr  # This is molecule 1
-   mol pqr neg_charge.pqr  # This is molecule 2
-END
-
-ELEC name comp_solv  # Toy charges
+read
+    mol pqr gly.pqr
+    mol pqr gly2.pqr
+end
+elec name comp_solv        # Gly 
     pbsam-auto
 
-    runtype dynamics
-    runname dyn_toy  # Output name for files
-    temp 298.15      # System temperature (K)
-    pdie 4.0         # Solute dielectric
-    sdie 78.0        # Solvent dielectric
-    salt 0.05        # Monovalent salt conc in M
+    runtype dynamics        # Can be energyforce, electrostatics etc 
+    runname dyn_gly         # Output name for files created by program
 
-    pbc 100.0
+    units kT
+    ## info for molecule
+    msms
+    tolsp 2.5 
+
+   #imat imat/mol0sph # add in if program has already run 
+   #imat imat/mol1sph # add in if program has already run 
+
+   #exp exp/mol0 # add in if program has already run 
+   #exp exp/mol1 # add in if program has already run 
 
     termcombine or
-    term time 550.0
-    term r>= 81.8 1
-    ntraj 3
+    term time 560.0
+    ntraj 2
 
-    diff 1 move 0.01 0.001
+    diff 1 move 0.45 0.001
     diff 2 stat
 
-    xyz 1 pos_1.xyz   # Pos for mol 1 at traj = 1
-    xyz 1 pos_2.xyz   # Pos for mol 1 at traj = 2
-    xyz 1 pos_3.xyz   # Pos for mol 1 at traj = 3
+    xyz 1 traj_1_1.xyz
+    xyz 1 traj_1_2.xyz
 
-    xyz 2 neg_1.xyz   # Pos for mol 2 at traj = 1
-    xyz 2 neg_2.xyz   # Pos for mol 2 at traj = 2
-    xyz 2 neg_3.xyz   # Pos for mol 2 at traj = 3
+    xyz 2 traj_2_1.xyz
+    xyz 2 traj_2_2.xyz
 
-END
+    temp 298.15             # System temperature (K) 
+    pdie 4.0                # Solute dielectric    
+    sdie 80.0               # Solvent dielectric    
+    salt 0.05               # Monovalent salt conc in M
 
-QUIT
+end
+
+quit
+
 {% endhighlight %}
 
 
@@ -714,7 +716,7 @@ QUIT
 The output, for the test files in the <code>examples/pbsam</code> directory, filename <code>toy_dynamics.inp</code> are as follows:
 
 <p><code>dyn_toy.pqr</code> is the starting configuration of the system for the first trajectory</p>
-<p><code>dyn_toy.stat</code> is a file that prints how each trajectory was terminated and the time that this occurred at.</p>
+<p><code>dyn_toy.stat</code> is a file that prints how each trajectory was terminated and the time that this occurred at.</p> 
 <p><code>dyn_toy_traj.xyz</code> is a VMD readable xyz file for the trajectory of <code>traj</code> that has positions written out every 5000 steps (~10,000 picoseconds).</p>
 <p><code>dyn_toy_traj.dat</code> is a file that prints out positions, forces and torques  for the system every 5000 steps (~10,000 picoseconds).</p>
 
@@ -723,7 +725,7 @@ The output, for the test files in the <code>examples/pbsam</code> directory, fil
   MathJax.Hub.Config({
     "HTML-CSS": {scale: 95, linebreaks: {automatic: true}},
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
- });
+ }); 
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
