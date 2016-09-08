@@ -301,7 +301,7 @@ The syntax is:
 units {unit flag}
 {% endhighlight %}
 
-<p>where <code>unit flag</code> is the value for the given units. For units of kCal/mole, use the value <code>kcalmol</code>. For units of Joules/mole, use the value <code>jmol</code>. For units of kT/e, use the value <code>kT</code>.</p>
+<p>where <code>unit flag</code> is the value for the given units. For energy units of kCal/mole, use the value <code>kcalmol</code>. For energy units of Joules/mole, use the value <code>jmol</code>. For energy units of kT/e, use the value <code>kT</code>. Force units will be energy units/$\AA$.</p>
 <hr />
 </div>
 
