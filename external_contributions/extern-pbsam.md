@@ -553,9 +553,9 @@ quit
 
 #### Energyforce output
 
-The output, for the test files in the examples/pbsam directory, filename <code>toy_energyforce.inp</code> is <code>test</code> and <code>test.pqr</code>.
+The output, for the test files in the examples/pbsam directory, filename <code>gly_energyforce.in</code> is <code>enfo_gly</code> and <code>enfo_gly.pqr</code>.
 
-<p><code>test</code> reads as follows:
+<p><code>enfo_gly</code> reads as follows:
 
 {% highlight bash %}
 My units are kT. Time: 0
@@ -876,8 +876,8 @@ The output, for the test files in the <code>examples/pbsam/gly</code> directory,
 
 <p><code>dyn_gly.pqr</code> is the starting configuration of the system for the first trajectory</p>
 <p><code>dyn_gly.stat</code> is a file that prints how each trajectory was terminated and the time that this occurred at.</p> 
-<p><code>dyn_gly_traj.xyz</code> is a VMD readable xyz file for the trajectory of <code>traj</code> that has positions written out every 200 steps (~400 picoseconds).</p>
-<p><code>dyn_gly_traj.dat</code> is a file that prints out positions, forces and torques  for the system every 200 steps (~400 picoseconds).</p>
+<p><code>dyn_gly_[traj #].xyz</code> is a VMD readable xyz file for the trajectory of <code>[traj #]</code> that has positions written out every 200 steps (~400 picoseconds).</p>
+<p><code>dyn_gly_[traj #].dat</code> is a file that prints out positions, forces and torques for the system every 200 steps (~400 picoseconds).</p>
 
 
 <script type="text/x-mathjax-config">
