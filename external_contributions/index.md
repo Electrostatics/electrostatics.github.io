@@ -11,18 +11,30 @@ Click on the links to learn more about each contribution and its usage in APBS.
 
  <ul>
   <li><a href="#pbam">PB-AM Method</a></li>
+  <li><a href="#pbsam">PB-SAM Method</a></li>
   <li><a href="#tabi">TABI-PB Method</a></li>
 </ul>
 
 <h3 id="pbam">PB-AM: Poisson-Boltzmann Analytical method</h3>
 
-The Poisson-Boltzmann Analytical method was developed in 2006 by <a href="http://pubs.acs.org/doi/full/10.1021/ct050263p">Lotan, Head-Gordon (2006)</a>. It has been implemented into APBS by Felberg and Head-Gordon.
+The Poisson-Boltzmann Analytical method was developed in 2006 by <a href="http://pubs.acs.org/doi/full/10.1021/ct050263p">Lotan, Head-Gordon (2006)</a>. It has been implemented into APBS by Felberg, Brookes and Head-Gordon.
 
 <p><img src="{{site.baseurl}}/img/pbam-brs.png" align="middle"/></p><p><sub>Barnase/Barstar system isosurfaces created in PB-AM.</sub></p>
 
 By coarse-graining each molecule in the system into a sphere, the analytical model is able to solve the linearized Poisson-Boltzmann efficiently and accurately.
 
 For more details, please visit the <a href="{{site.baseurl}}/external_contributions/extern-pbam/">APBS PB-AM documentation</a>.
+
+<h3 id="pbsam">PB-SAM: Poisson-Boltzmann Semi-Analytical method</h3>
+
+The Poisson-Boltzmann Semi-Analytical method was developed in 2010 by <a href="http://pubs.acs.org/doi/abs/10.1021/ct100145f">Yap, Head-Gordon (2010)</a>. It has been implemented into APBS by Felberg, Brookes and Head-Gordon.
+
+<p><img src="{{site.baseurl}}/img/pbam-brs.png" align="middle"/></p><p><sub>Barnase/Barstar system isosurfaces created in PB-SAM.</sub></p>
+
+By coarse-graining each molecule in the system into many overlapping spheres, the semi-analytical model expands on the formalism of the analytical method and is able to solve the linearized Poisson-Boltzmann efficiently and accurately.
+
+For more details, please visit the <a href="{{site.baseurl}}/external_contributions/extern-pbsam/">APBS PB-SAM documentation</a>.
+
 
 <h3 id="tabi">TABI-PB: Treecode-Accelerated Boundary Integral Poisson-Boltzmann method</h3>
 
