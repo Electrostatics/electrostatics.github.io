@@ -16,6 +16,12 @@ permalink: /docs/downloads/
 
 ## Web servers
 
+<div class="note warning">
+	<h5>Web Servers Down For Maintenance</h5>
+	<p>Our PDB2PQR server is currently down for maintenance. We apologize for any inconvenience. We will send an email to our 
+	registered users as soon as maintenance is done. If you haven't registered yet please use this opportunity to do so.</p>
+</div>
+
 The PDB2PQR web server offers a simple way to use both APBS and PDB2PQR without the need to download and install additional programs.
 
 <div class="note warning">
