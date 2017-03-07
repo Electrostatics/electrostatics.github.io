@@ -1458,6 +1458,11 @@ sdie {diel}
 <A href="http://www.ncbi.nlm.nih.gov/pmc/articles/PMC2025650/">Chu V, et
 al Biophys J, 93(9):3202-9, 2007(doi:10.1529/biophysj.106.099168).</a></p>
 
+<div class="note">
+<p>Unfortunately due to numerical stability issues SMPBE is currently disabled.
+We apologize for the inconvenience.</p>
+</div>
+
 The syntax is:
 {% highlight bash %}
 smpbe vol { spacing } size { num }
