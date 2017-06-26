@@ -1979,7 +1979,7 @@ processor in the z-direction, and $p$ is the overall rank of the processor.
 <p>PB-SAM is a semi-analytical solution to the linearized Poisson-Boltzmann 
 equation for multiple molecules of arbitrary charge distribution 
 in an ionic solution. The solution is an extension of the analytical method,
-leveraging Fast-Multipole methods as well as boundary elements. Each molecule is coarse-grained as a system of overlapping spheres, whose surface charges are represented by the multipole expansions \\(H^{(i)}\\) and \\(F^{(i)}\\).
+leveraging Fast-Multipole methods as well as boundary elements. Each molecule is coarse-grained as a system of overlapping spheres, whose surface charges are represented by the multipole expansions $H^{(i)}$ and $F^{(i)}$.
 </p>
 <p>For a detailed explanation of the method as well as a full description of how to utilize the pbsam-auto method please refer to <a href="{{ site.baseurl }}/external_contributions/extern-pbsam">PB-SAM contributions page</a>.
 </p>
