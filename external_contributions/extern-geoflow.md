@@ -3,7 +3,7 @@ layout: external_contributions
 title: Geometric Flow Model
 prev_section:
 next_section:
-permalink:
+permalink: /external_contributions/extern-geoflow/
 ---
 
 {% include no-prev-next.html %}
@@ -48,15 +48,15 @@ For our modeling, a generalized form of the Poisson equation for computing the e
 
 For this model, we have utilized an Eulerian formulation of the geometric flow problem. This means that $S$ varies smoothly across the solute-solvent interfaces and leads to a non-linear partial differential equation for the characteristic function, $S$:
 
-\\[-\nabla\cdot\left(\gamma\frac{\nabla S}{\parallel\nabla S\parallel}\right)+p-\rho_0U^{att}+\rho_m\phi - \frac{1}{2}\epsilon_m\mid\nabla\phi\mid^2+\frac{1}{2}\epsilon_s\mid\nabla\phi\mid^2=0\\]
+\\[ -\nabla\cdot\left(\gamma\frac{\nabla S}{\parallel\nabla S\parallel}\right)+p-\rho_0U^{att}+\rho_m\phi - \frac{1}{2}\epsilon_m\mid\nabla\phi\mid^2+\frac{1}{2}\epsilon_s\mid\nabla\phi\mid^2=0 \\]
 
 where $\gamma$ is the microscopic surface tension, $p$ is the hydrodynamic pressure, and $U^{att}$ is the attractive potential of the van der Waals dispersion interaction between the solute and the solvent. The solution to this non-linear PDE can be solved by utilizing the following parabolic PDE, which is known as the generalized geometric flow equation and is coupled with the Poisson equation through the characteristic function $S$:
 
-\\[\frac{\partial S}{\partial t}=\gamma\parallel\nabla S\parallel\left[\nabla\cdot\left(\frac{\nabla S}{\parallel\nabla S\parallel}\right)+\frac{V}{\gamma}\right]\\]
+\\[ \frac{\partial S}{\partial t}=\gamma\parallel\nabla S\parallel\left[\nabla\cdot\left(\frac{\nabla S}{\parallel\nabla S\parallel}\right)+\frac{V}{\gamma}\right] \\]
 
 where $V$ is known as the generalized flow potential as described in the following equation:
 
-\\[V=-p+\rho_0U^{att}-\rho_m\phi+\frac{\epsilon_m}{2}\mid\nabla\phi\mid^2-\frac{\epsilon_s}{2}\mid\nabla\phi\mid^2\\]
+\\[ V=-p+\rho_0U^{att}-\rho_m\phi+\frac{\epsilon_m}{2}\mid\nabla\phi\mid^2-\frac{\epsilon_s}{2}\mid\nabla\phi\mid^2 \\]
 
 These equations were solved using a second-order central finite difference scheme, which utilizes a bi-conjugate gradient stabilized solver.
 
@@ -144,7 +144,6 @@ lpbe
 
 </div>
 
-
 <a href="javascript:ReverseDisplay('elec-keyword-ion')">ion</a>
 
 <div id="elec-keyword-ion" style="display:none;">
@@ -159,29 +158,12 @@ ion charge {charge} conc {conc} radius {radius}
 <p>where<br />
 <code>charge</code> Mobile ion species charge (floating point number in e<sub>c</sub>)<br />
 <code>conc</code> Mobile ion species concentration (floating point number in M)<br />
-<code>radius</code> Mobile ion species radius (floating point number in Å)
+<code>radius</code> Mobile ion species radius (floating point number in $\mathring{A}$)
 </p>
 
 <hr />
 
 </div>
-
-
-<a href="javascript:ReverseDisplay('elec-keyword-lpbe')">lpbe</a>
-
-<div id="elec-keyword-lpbe" style="display:none;">
-
-<p>Specifies that the linearized Poisson-Boltzmann equation should be solved.</p>
-
-The syntax is:
-{% highlight bash %}
-lpbe
-{% endhighlight %}
-
-<hr />
-
-</div>
-
 
 <a href="javascript:ReverseDisplay('elec-keyword-mol')">mol</a>
 
@@ -371,11 +353,12 @@ quit
 {% endhighlight %}
 
 
+
 <script type="text/x-mathjax-config">
   MathJax.Hub.Config({
-    "HTML-CSS": {scale: 95, linebreaks: {automatic: true}},
+    "HTML-CSS": { scale: 95, linebreaks: { automatic: true } },
     tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
- });
+  });
 </script>
 <script type="text/javascript"
   src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
