@@ -137,7 +137,7 @@ The currently implemented keywords are:
 
 The syntax is:
 {% highlight bash %}
-lpbe
+bem-manual
 {% endhighlight %}
 
 <hr />
