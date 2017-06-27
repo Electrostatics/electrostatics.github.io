@@ -1627,7 +1627,7 @@ temp { T }
 
 <div id="elec-keyword-useaqua" style="display:none;">
 
-<p>This keyword enables experimental support for Aqua, a verison of the Michael Holst> group FEtk PMG multigrid library optimized by Patrice Koehl for improved memory usage and speed when solving the Poisson-Boltzmann equation. This keyword is temporary and will eventually disappear as Aqua becomes the default multigrid solver (mg-manual, mg-auto, mg-para) for APBS.</p>
+<p>This keyword enables experimental support for Aqua, a version of the Michael Holst> group FEtk PMG multigrid library optimized by Patrice Koehl for improved memory usage and speed when solving the Poisson-Boltzmann equation. This keyword is temporary and will eventually disappear as Aqua becomes the default multigrid solver (mg-manual, mg-auto, mg-para) for APBS.</p>
 
 The syntax is:
 {% highlight bash %}
@@ -1936,7 +1936,7 @@ This type of calculation allows users to write out dielectric, ion-accessibility
 
 </div>
 
-<a href="javascript:ReverseDisplay('mg-para')">mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzman calculations</a>
+<a href="javascript:ReverseDisplay('mg-para')">mg-para: automatically-configured parallel focusing multigrid Poisson-Boltzmann calculations</a>
 
 <div id="mg-para" style="display:none;">
 
@@ -1960,19 +1960,19 @@ processor in the z-direction, and $p$ is the overall rank of the processor.
 <hr />
 </div>
 
-<a href="javascript:ReverseDisplay('pbam-auto')">pbam-auto: Poisson-Boltzmann Analitical Method solver</a>
+<a href="javascript:ReverseDisplay('pbam-auto')">pbam-auto: Poisson-Boltzmann Analytical Method Solver</a>
 
 <div id="pbam-auto" style="display:none;">
 
-<p>This indicates the program to use the Poisson-Boltzmann Analytical Method for solving the system. The PB-AM solve for multiple spherical objects of arbitrary charge distribution in an ionic solution. 
+<p>PB-AM is an analytical solution to the linearized Poisson-Boltzmann equation for multiple spherical objects of arbitrary charge distribution in an ionic solution. The physical calculations are uses to perform various actions on a system of molecules such as calculation of energies, forces, torques, electrostatic potentials, and Brownian dynamics schemes. This fast method coarse-grains all molecules of the system into single spheres large enough to contain all molecule atoms.
 </p>
-<p>For a detailed explanation of the method as well as a full description of how to utilize the pbam-auto method plase refer to <a href="{{ site.baseurl }}/external_contributions/extern-pbam">PB-AM contributions page</a>.
+<p>For a detailed explanation of the method as well as a full description of how to utilize the pbam-auto method please refer to <a href="{{ site.baseurl }}/external_contributions/extern-pbam">PB-AM contributions page</a>.
 </p>
 <hr />
 
 </div>
 
-<a href="javascript:ReverseDisplay('pbsam-auto')">pbam-auto: Poisson-Boltzmann Analitical Method solver</a>
+<a href="javascript:ReverseDisplay('pbsam-auto')">pbsam-auto: Poisson-Boltzmann Semi-Analytical Method Solver</a>
 
 <div id="pbsam-auto" style="display:none;">
 
@@ -1981,7 +1981,7 @@ equation for multiple molecules of arbitrary charge distribution
 in an ionic solution. The solution is an extension of the analytical method,
 leveraging Fast-Multipole methods as well as boundary elements. Each molecule is coarse-grained as a system of overlapping spheres, whose surface charges are represented by the multipole expansions $H^{(i)}$ and $F^{(i)}$.
 </p>
-<p>For a detailed explanation of the method as well as a full description of how to utilize the pbsam-auto method please refer to <a href="{{ site.baseurl }}/external_contributions/extern-pbsam">PB-SAM contributions page</a>.
+<p>PB-SAM requires a number of its own inputs. For a detailed explanation of the method as well as a full description of how to utilize the pbsam-auto method please refer to <a href="{{ site.baseurl }}/external_contributions/extern-pbsam">PB-SAM contributions page</a>.
 </p>
 <hr />
 
@@ -2026,7 +2026,7 @@ correspond to the optional "names" that can be assigned to ELEC or APOLAR
 calculations. Integer values of id are assumed to corresponding to the
 sequentially-assigned integer IDs for ELEC or APOLAR calculations. These
 IDs start at 1 and are incremented independently for each new ELEC or
-AOPLAR calculation.</li>
+APOLAR calculation.</li>
 <li>op: Specify the arithmetic operation to be performed on the calculated quantities:
 <ul>
 	<li>+: Addition</li>
