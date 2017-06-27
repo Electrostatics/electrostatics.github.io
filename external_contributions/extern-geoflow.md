@@ -40,9 +40,7 @@ window.onload = function() {
 To increase the accuracy of our implicit solvent modeling, we have recently implemented a differential geometry based geometric flow
 solvation model <a href="https://www.ncbi.nlm.nih.gov/pubmed/23212974">(Thomas, 2013)</a>. In this model, polar and nonpolar free energies are coupled through a characteristic function. This function describes a smooth dielectric interface profile across the solvent-solute boundary.
 
-#### Geometric Flow algorithm
-
-To increase the accuracy of our implicit solvent modeling, we have recently implemented a differential geometry based geometric flow solvation model. In this model, polar and nonpolar free energies are coupled through a characteristic function. This function describes a smooth dielectric interface profile across the solvent-solute boundary. 
+#### Geometric Flow algorithm 
 
 For our modeling, a generalized form of the Poisson equation for computing the electrostatic is used.  The solutions for the electrostatic potential ($\phi$) and the characteristic function ($S$) are obtained by minimizing the free energy functional. The dielectric function $\epsilon$($S$) takes on the value $\epsilon_m$ in the solute region ($S$=1) and the value $\epsilon_s$ in the solvent region ($S$=0).
 
