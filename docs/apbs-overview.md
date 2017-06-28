@@ -444,122 +444,6 @@ where <code>T</code> is the floating point value of the temperature for calculat
 
 
 
-
-<a href="javascript:ReverseDisplay('elec-keyword-bem-manual')">bem-manual</a>
-
-<div id="elec-keyword-bem-manual" style="display:none;">
-
-<p>Specifies that the TABI-PB solver should be used.</p>
-
-The syntax is:
-{% highlight bash %}
-bem-manual
-{% endhighlight %}
-
-<hr />
-
-</div>
-
-
-
-
-<a href="javascript:ReverseDisplay('treecode-keywords-tree_order')">tree_order</a>
-
-<div id="treecode-keywords-tree_order" style="display:none;">
-
-<p>TABI-PB parameter that specifies the order of the treecode multipole expansion.</p>
-
-The syntax is:
-{% highlight bash %}
-tree_order {order}
-{% endhighlight %}
-
-<p>where <code>order</code> is an integer that indicates the Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
-
-<hr />
-
-</div>
-
-
-
-
-<a href="javascript:ReverseDisplay('treecode-keywords-tree_n0')">tree_n0</a>
-
-<div id="treecode-keywords-tree_n0" style="display:none;">
-
-<p>TABI-PB parameter that specifies the maximum number of particles in a treecode leaf. This controls leaf size in the process of building the tree structure. </p>
-
-The syntax is:
-{% highlight bash %}
-tree_n0 {max_number}
-{% endhighlight %}
-
-<hr />
-
-</div>
-
-
-
-<a href="javascript:ReverseDisplay('treecode-keywords-mac')">mac</a>
-
-<div id="treecode-keywords-mac" style="display:none;">
-
-<p>TABI-PB parameter, multipole acceptance criterion (MAC), that controls distance ratio at which the method uses direct summation or Taylor approximation (a particle-cluster interaction) to calculate the integral kernels.</p>
-
-The syntax is:
-
-{% highlight bash %}
-mac {theta}
-{% endhighlight %}
-
-<p>where <code>theta</code> is a double from 0 to 1 controlling the distance ratio.</p>
-<p>This multipole acceptance criterion (MAC) is: $\frac{r_c}{R}\leqslant \theta$</p>
-<p>where $r_c$ is the cluster radius, and $R$ is the distance of the particle to the cluster center. If the above relationship is satisfied, the Taylor approximation will be used instead of direct summation.</p>
-
-<hr />
-
-</div>
-
-
-
-<a href="javascript:ReverseDisplay('treecode-keywords-mesh')">mesh</a>
-
-<div id="treecode-keywords-mesh" style="display:none;">
-
-<p>TABI-PB parameter that spceifies the meshing software used to generate surface mesh.</p>
-
-The syntax is:
-{% highlight bash %}
-mesh {flag}
-{% endhighlight %}
-
-<p>where <code>flag</code> is an integer indicating the meshing software to be used. 0 specifies MSMS, 1 specifies the SES implementation in NanoShaper, and 2 specifies the Skin surface implementation in NanoShaper. Not specifying the parameter will default the meshing software to MSMS. Note that the executables for MSMS and NanoShaper must be included in your path to use them.</p>
-
-<hr />
-
-</div>
-
-
-<a href="javascript:ReverseDisplay('treecode-keywords-outdata')">outdata</a>
-
-<div id="treecode-keywords-outdata" style="display:none;">
-
-<p>TABI-PB parameter that specifies the file type for printing the output data.</p>
-
-The syntax is:
-{% highlight bash %}
-outdata {flag}
-{% endhighlight %}
-
-<p>where <code>flag</code> is an integer indicating the output file types. 0 specifies the .dat format described below, and 1 specifies both the .dat format and a VTK polygonal data file that can be visualized in the ParaView software. The VTK file contains color mappable potentials and normal derivatives of potentials on the faces and vertices of the mesh.</p>
-
-<hr />
-
-</div>
-
-
-
-
 <!---- [bconc](apolar-keywords/#bconc)
 - [calcenergy](apolar-keywords/#calcenergy)
 - [calcforce](apolar-keywords/#calcforce)
@@ -1902,6 +1786,121 @@ writemat {type} {stem}
 <p>where <code>type</code> A string that indicates what type of operator to output.</p>
 <p style="margin-left:30px;"><code>poisson</code> Write out the Poisson operator -\nabla \cdot \epsilon \nabla.</p>
 <p><code>stem</code> A string that specifies the path for...</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('elec-keyword-bem-manual')">bem-manual</a>
+
+<div id="elec-keyword-bem-manual" style="display:none;">
+
+<p>Specifies that the TABI-PB solver should be used.</p>
+
+The syntax is:
+{% highlight bash %}
+bem-manual
+{% endhighlight %}
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('treecode-keywords-tree_order')">tree_order</a>
+
+<div id="treecode-keywords-tree_order" style="display:none;">
+
+<p>TABI-PB parameter that specifies the order of the treecode multipole expansion.</p>
+
+The syntax is:
+{% highlight bash %}
+tree_order {order}
+{% endhighlight %}
+
+<p>where <code>order</code> is an integer that indicates the Taylor expansion order. Users can adjust the order for different accuracy. In test, the results show that at order 3, treecode method can be used to evaluate solvation energy to a required level of accuracy and runtime speed.</p>
+
+<hr />
+
+</div>
+
+
+
+
+<a href="javascript:ReverseDisplay('treecode-keywords-tree_n0')">tree_n0</a>
+
+<div id="treecode-keywords-tree_n0" style="display:none;">
+
+<p>TABI-PB parameter that specifies the maximum number of particles in a treecode leaf. This controls leaf size in the process of building the tree structure. </p>
+
+The syntax is:
+{% highlight bash %}
+tree_n0 {max_number}
+{% endhighlight %}
+
+<hr />
+
+</div>
+
+
+
+<a href="javascript:ReverseDisplay('treecode-keywords-mac')">mac</a>
+
+<div id="treecode-keywords-mac" style="display:none;">
+
+<p>TABI-PB parameter, multipole acceptance criterion (MAC), that controls distance ratio at which the method uses direct summation or Taylor approximation (a particle-cluster interaction) to calculate the integral kernels.</p>
+
+The syntax is:
+
+{% highlight bash %}
+mac {theta}
+{% endhighlight %}
+
+<p>where <code>theta</code> is a double from 0 to 1 controlling the distance ratio.</p>
+<p>This multipole acceptance criterion (MAC) is: $\frac{r_c}{R}\leqslant \theta$</p>
+<p>where $r_c$ is the cluster radius, and $R$ is the distance of the particle to the cluster center. If the above relationship is satisfied, the Taylor approximation will be used instead of direct summation.</p>
+
+<hr />
+
+</div>
+
+
+
+<a href="javascript:ReverseDisplay('treecode-keywords-mesh')">mesh</a>
+
+<div id="treecode-keywords-mesh" style="display:none;">
+
+<p>TABI-PB parameter that spceifies the meshing software used to generate surface mesh.</p>
+
+The syntax is:
+{% highlight bash %}
+mesh {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is an integer indicating the meshing software to be used. 0 specifies MSMS, 1 specifies the SES implementation in NanoShaper, and 2 specifies the Skin surface implementation in NanoShaper. Not specifying the parameter will default the meshing software to MSMS. Note that the executables for MSMS and NanoShaper must be included in your path to use them.</p>
+
+<hr />
+
+</div>
+
+
+<a href="javascript:ReverseDisplay('treecode-keywords-outdata')">outdata</a>
+
+<div id="treecode-keywords-outdata" style="display:none;">
+
+<p>TABI-PB parameter that specifies the file type for printing the output data.</p>
+
+The syntax is:
+{% highlight bash %}
+outdata {flag}
+{% endhighlight %}
+
+<p>where <code>flag</code> is an integer indicating the output file types. 0 specifies the .dat format described below, and 1 specifies both the .dat format and a VTK polygonal data file that can be visualized in the ParaView software. The VTK file contains color mappable potentials and normal derivatives of potentials on the faces and vertices of the mesh.</p>
 
 <hr />
 
