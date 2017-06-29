@@ -5,4 +5,3 @@ baseurl:  http://www.poissonboltzmann.org
 markdown: kramdown
 kramdown:
     syntax_highlighter: rouge
-encoding: utf-8
