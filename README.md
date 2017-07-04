@@ -1,10 +1,4 @@
-#APBS and PDB2PQR - Molecular Solvation Software
+# APBS, PDB2PQR, and related software
 
-Content for http://electrostatics.github.io/ and http://www.poissonboltzmann.org/
-
-NOTE: Correct CSS directory is in the _includes directory, use other css directories as backups
-Docs directory is in root, and uses Markdown
-
-Running PDB2PQR: http://nbcr-222.ucsd.edu/pdb2pqr
-
-[![githalytics.com alpha](https://cruel-carlota.pagodabox.com/faf7ac19608b10a3ef5b797f3c2d78a6 "githalytics.com")](http://githalytics.com/electrostatics.github.io/apbs-pdb2pqr)
+This is a top-level page for our [electrostatics-related software GitHub organization](https://github.com/Electrostatics).
+You should have been redirected to the [APBS-PDB2PQR page](http://electrostatics.github.io/apbs-pdb2pqr) but @sobolevnrm probably messed up the CNAME file again.
