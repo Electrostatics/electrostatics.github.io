@@ -326,7 +326,7 @@ etol { e }
 
 An example input for the Geometric flow model is shown in the following table:
 
-{% highlight bash %}
+{% highlight tex %}
 read
     mol pqr 1a63.pqr
 end
@@ -337,12 +337,12 @@ elec name comp_solv         # Solvated complex
     bcfl mdh                # only supported BC (full multipole)
     mol 1
 
-    grid 0.25 0.25 0.25     # grid spacing                    
-    gamma 0.0001            # surface tension kcal/(mol*A^2) 
-    pdie 1.5                # Solute dielectric                 
-    sdie 80.00              # Solvent dielectric                
-    press 0.008             # pressure kcal/(mol*A^3)           
-    bconc 0.03346           # bulk solvent density A^-3   
+    grid 0.25 0.25 0.25     # grid spacing
+    gamma 0.0001            # surface tension kcal/(mol*A^2)
+    pdie 1.5                # Solute dielectric
+    sdie 80.00              # Solvent dielectric
+    press 0.008             # pressure kcal/(mol*A^3)
+    bconc 0.03346           # bulk solvent density A^-3
     vdwdisp 0               # van der wal dispersion (on/off)
     etol 0.00001            # error tolerance for the solver
 end

@@ -2072,6 +2072,17 @@ processor in the z-direction, and $p$ is the overall rank of the processor.
 <hr />
 </div>
 
+<a href="javascript:ReverseDisplay('geoflow-auto')">geoflow-auto: Geometric Flow Model</a>
+
+<div id="geoflow-auto" style="display:none;">
+
+<p>The geometric flow approach couples the polar and nonpolar components of the implicit solvent model with two primary benefits. First, this coupling eliminates the need for an ad hoc geometric definition for the solute-solvent boundary. In particular, the solute-solvent interface is optimized as part of the geometric flow calculation. Second, the optimization of this boundary ensures self-consistent calculation of polar and non-polar energetic contributions (using the same surface definitions, etc.), thereby reducing confusion and the likelihood of user error.
+</p> 
+<p>For a detailed explanation of the method as well as a full description of how to utilize the geoflow-auto method please refer to <a href="{{ site.baseurl }}/external_contributions/extern-geoflow">Geoflow contributions</a> page.
+</p>
+<hr />
+</div>
+
 <a href="javascript:ReverseDisplay('pbam-auto')">pbam-auto: Poisson-Boltzmann Analytical Method Solver</a>
 
 <div id="pbam-auto" style="display:none;">
