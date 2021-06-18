@@ -30,3 +30,6 @@ This service is intended to facilitate the setup and execution of electrostatics
 
 This software is made possible by generous support from the US National Institutes of Health through grant [GM69702](https://pubmed.ncbi.nlm.nih.gov/?term=R01+GM069702%2FGM%2FNIGMS+NIH+HHS%2FUnited+States%5BGrant+Number%5D).
 
+Please support the continued development of APBS by [registering your use](http://eepurl.com/by4eQr) and citing the following in your publication:
+
+Jurrus E, Engel D, Star K, Monson K, Brandi J, Felberg LE, Brookes DH, Wilson L, Chen J, Liles K, Chun M, Li P, Gohara DW, Dolinsky T, Konecny R, Koes DR, Nielsen JE, Head-Gordon T, Geng W, Krasny R, Wei G-W, Holst MJ, McCammon JA, Baker NA. Improvements to the APBS biomolecular solvation software suite. Protein Sci, 27 (1), 112-128, 2018. https://doi.org/10.1002/pro.3280
