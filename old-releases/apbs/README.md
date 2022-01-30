@@ -7,6 +7,7 @@ Please see [Github releases](https://github.com/Electrostatics/apbs/releases) fo
 
 | Version | Date | Release notes | Download |
 | ------- | ---- | ------------- | -------- |
+| 1.1.0 | 2009-03 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-1-0-mar-2009) | [Downloads](1.1.0/) |
 | 1.0.0 | 2008-04 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-0-0-apr-2008) | [Downloads](1.0.0/) |
 | 0.5.1 | 2007-07 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-0-5-1-jul-2007) | [Downloads](0.5.1/) |
 | 0.5.0 | 2007-01 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-0-5-0-jan-2007) | [Downloads](0.5.0/) |
