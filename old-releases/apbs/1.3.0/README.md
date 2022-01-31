@@ -7,3 +7,4 @@
 * [Linux IBM Power4 (TGZ)](apbs-1.3-pwr4.tar.gz)
 * [Mac Universal (TGZ)](apbs-1.3-mac-univ.tar.gz)
 * [Source code (TGZ)](apbs-1.3-source.tar.gz)
+* [Windows (EXE)](APBS-1.3.0.exe)
