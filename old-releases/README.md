@@ -5,4 +5,3 @@ These releases are provided here for historical reference purposes.
 
 * [Old APBS releases](apbs/README.md)
 * [Old PDB2PQR releases](pdb2pqr/README.md)
-
