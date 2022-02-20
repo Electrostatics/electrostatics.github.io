@@ -2,11 +2,14 @@
 
 This is an archive of old APBS releases that used to be hosted on Sourceforget.net.
 Please see [Github releases](https://github.com/Electrostatics/apbs/releases) for current releases.
+Old APBS ROCKS releases can be found [here](apbs-rocks/).
 
-*This is a work in progress.*
 
 | Version | Date | Release notes | Download |
 | ------- | ---- | ------------- | -------- |
+| 3.0.0 | 2020-05 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-3-0-may-2020) | [Downloads](3.0.0/) |
+| 1.5.0 | 2016-10 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-5-oct-2016) | [Downloads](1.5.0/) |
+| 1.4.2.1 | 2016-01 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-4-2-1-jan-2016) | [Downloads](1.4.2.1/) |
 | 1.4.2 | 2016-01 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-4-2-0-jan-2016) | [Downloads](1.4.2/) |
 | 1.4.1 | 2014-08 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-4-1-aug-2014) | [Downloads](1.4.1/) |
 | 1.4.0 | 2012-07 | [Release notes](https://apbs.readthedocs.io/en/latest/releases.html#apbs-1-4-0-jul-2012) | [Downloads](1.4.0/) |
