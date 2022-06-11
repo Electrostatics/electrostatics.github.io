@@ -1,6 +1,3 @@
 remote_theme: jekyll/jekyll-theme-slate
 title: APBS & PDB2PQR
 description:  Software for biomolecular electrostatics and solvation
-google_analytics: G-7FMXVFLGG3
-plugins:
- - jekyll-remote-theme
